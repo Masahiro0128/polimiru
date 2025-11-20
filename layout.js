@@ -21,29 +21,30 @@ function loadHeader() {
     </nav>
     <div class="menu-overlay" id="menu-overlay"></div>
     `;
-    // bodyの一番最初に挿入
+    
+    // HTMLを挿入
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
 
-    // --- ハンバーガーメニューの動きをここに書く ---
+    // ▼▼▼ ここから下が「動き」を作る重要な部分！ ▼▼▼
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const closeBtn = document.getElementById('close-btn');
     const navLinksContainer = document.getElementById('nav-links-container');
     const overlay = document.getElementById('menu-overlay');
 
-    // メニューを開く・閉じる関数
+    // メニューを開け閉めする機能
     const toggleMenu = () => {
-        navLinksContainer.classList.toggle('active'); // メニューに active クラスを付け外し
-        overlay.classList.toggle('active'); // 背景に active クラスを付け外し
-        document.body.classList.toggle('no-scroll'); // メニューが開いている間はスクロール禁止
+        navLinksContainer.classList.toggle('active'); // メニューを出す/隠す
+        overlay.classList.toggle('active');           // 背景を暗くする/戻す
+        document.body.classList.toggle('no-scroll');  // スクロール禁止にする/戻す
     };
 
-    // ボタンクリックで実行
+    // クリックした時の設定
     if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMenu);
     if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
-    if (overlay) overlay.addEventListener('click', toggleMenu); // 背景をクリックしても閉じる
+    if (overlay) overlay.addEventListener('click', toggleMenu);
 }
 
-// 共通フッターを作る関数（変更なし）
+// 共通フッターを作る関数
 function loadFooter() {
     const footerHTML = `
     <footer class="site-footer">
@@ -62,7 +63,7 @@ function loadFooter() {
     document.body.insertAdjacentHTML('beforeend', footerHTML);
 }
 
-// 読み込みと同時に実行
+// 読み込み完了時に実行
 document.addEventListener("DOMContentLoaded", () => {
     loadHeader();
     loadFooter();
