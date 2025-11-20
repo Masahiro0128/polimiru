@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding-top: 100px; /* ヘッダーの高さ分あける */
     color: #333;
+    -webkit-text-size-adjust: 100%; /* スマホでの勝手な文字拡大を防ぐ */
 }
 
 .container {
@@ -57,7 +58,6 @@ body {
     padding-bottom: 5px;
 }
 
-/* 下線アニメーション (PCのみ) */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -70,10 +70,10 @@ body {
 
 
 /* =========================================
-   3. メインコンテンツ（ヒーロー＆カード）
+   3. メインコンテンツ
 ========================================= */
 
-/* トップページのヒーローエリア */
+/* ヒーローエリア */
 .platform-hero {
     background: linear-gradient(135deg, #1a2e45 0%, #2a4a70 100%);
     color: white;
@@ -93,7 +93,8 @@ body {
     padding: 10px 20px; border-radius: 30px;
     border: 1px solid rgba(255,255,255,0.3);
     color: #ddd; font-size: 0.9em;
-    max-width: 400px; text-align: left;
+    max-width: 400px; width: 100%; /* スマホでは幅一杯に */
+    text-align: left;
     box-sizing: border-box;
 }
 
@@ -105,16 +106,14 @@ body {
 }
 
 .hero-btn {
-    background: rgba(255, 255, 255, 0.1); /* 半透明 */
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
     color: white;
-    padding: 10px 24px;
+    padding: 12px 24px; /* タップしやすいよう少し広めに */
     border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    display: flex; align-items: center; gap: 8px;
     transition: 0.3s;
     backdrop-filter: blur(5px);
 }
@@ -155,7 +154,7 @@ body {
     text-decoration: none; color: inherit;
     display: flex; flex-direction: column;
     height: 100%;
-    box-sizing: border-box; /* 枠線が内側に入るように */
+    box-sizing: border-box;
 }
 .election-card:hover {
     transform: translateY(-5px);
@@ -221,27 +220,28 @@ html { scroll-behavior: smooth; }
 
 
 /* =========================================
-   5. スマホ用ハンバーガーメニュー (BAKUTAN風)
+   ★ スマホ用スタイル調整（完全版） ★
+   Media Query for Mobile Devices
 ========================================= */
 
-/* PCでは隠すもの */
 .hamburger-menu, .close-menu, .menu-overlay { display: none; }
 body.no-scroll { overflow: hidden; }
 
-/* スマホ画面 (768px以下) の設定 */
 @media (max-width: 768px) {
 
-    .site-navbar { padding: 0 20px; }
+    /* --- ヒーローエリア（文字サイズ調整） --- */
+    .platform-hero { padding: 60px 20px; }
+    .platform-hero h1 { font-size: 1.8em; line-height: 1.3; }
+    .platform-hero p { font-size: 0.95em; margin-top: 10px; }
 
-    /* ハンバーガーボタン */
+    /* --- ハンバーガーメニュー --- */
+    .site-navbar { padding: 0 20px; }
     .hamburger-menu {
-        display: block;
-        background: none; border: none;
-        font-size: 24px; color: #1a2e45;
-        cursor: pointer; padding: 10px;
+        display: block; background: none; border: none;
+        font-size: 24px; color: #1a2e45; cursor: pointer; padding: 10px;
     }
 
-    /* メニュー本体（ドロワー） */
+    /* メニュー本体 */
     .nav-links {
         position: fixed; top: 0; right: -100%;
         width: 85%; height: 100vh;
@@ -254,25 +254,19 @@ body.no-scroll { overflow: hidden; }
         z-index: 2000;
     }
     .nav-links.active { right: 0; }
-
-    /* リンクのデザイン（リスト風） */
     .nav-links a {
         font-size: 16px; font-weight: 500; color: #333;
         padding: 20px 0; border-bottom: 1px solid #eee;
         width: 100%; display: block;
     }
-    .nav-links a::after { display: none; } /* PC用アニメーション無効化 */
+    .nav-links a::after { display: none; }
 
-    /* Contactボタン */
     .nav-links .contact-btn {
         margin-top: 40px;
-        border: 1px solid #1a2e45;
-        border-radius: 50px;
-        text-align: center; padding: 15px 0;
-        font-weight: bold;
+        border: 1px solid #1a2e45; border-radius: 50px;
+        text-align: center; padding: 15px 0; font-weight: bold;
     }
 
-    /* 閉じるボタン */
     .close-menu {
         display: block; position: absolute;
         top: 25px; right: 20px;
@@ -280,7 +274,6 @@ body.no-scroll { overflow: hidden; }
         font-size: 32px; color: #1a2e45; cursor: pointer;
     }
 
-    /* 背景暗転 */
     .menu-overlay {
         display: block; position: fixed;
         top: 0; left: 0; width: 100%; height: 100%;
@@ -291,7 +284,23 @@ body.no-scroll { overflow: hidden; }
     }
     .menu-overlay.active { opacity: 1; visibility: visible; }
 
-    /* フッターのスマホ調整 */
+    /* --- エリア選択モーダルのスマホ調整 --- */
+    .modal-content.modal-wide {
+        width: 100%; height: 100%; /* 全画面表示にする */
+        max-width: none; border-radius: 0;
+    }
+    
+    .pref-buttons {
+        /* スマホでは3列にして押しやすく */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .pref-buttons button {
+        padding: 12px 0; /* タップ領域を縦に広く */
+        font-size: 0.85rem;
+    }
+
+    /* --- フッター調整 --- */
     .site-footer {
         flex-direction: column; height: auto;
         padding: 30px 20px; gap: 20px;
@@ -300,83 +309,65 @@ body.no-scroll { overflow: hidden; }
 
 
 /* =========================================
-   ★エリア設定用モーダル（47都道府県対応版）
+   ★エリア設定モーダル共通
 ========================================= */
-
-/* ポップアップ画面（モーダル）背景 */
 .area-modal {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.6);
-    z-index: 3000;
+    background: rgba(0,0,0,0.6); z-index: 3000;
     display: flex; justify-content: center; align-items: center;
     opacity: 0; visibility: hidden; transition: 0.3s;
 }
 .area-modal.active { opacity: 1; visibility: visible; }
 
-/* モーダルの箱（幅広・スクロール対応） */
 .modal-content.modal-wide {
-    background: white;
-    padding: 0; /* 中身でpadding調整 */
-    border-radius: 16px;
-    width: 95%; max-width: 600px; /* 幅を広げる */
-    height: 80vh; /* 高さを画面の80%に */
+    background: white; padding: 0; border-radius: 16px;
+    width: 95%; max-width: 600px; height: 80vh;
     display: flex; flex-direction: column;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     overflow: hidden;
 }
 
-/* ヘッダー部分 */
 .modal-header {
     padding: 20px; border-bottom: 1px solid #eee;
     display: flex; justify-content: space-between; align-items: center;
 }
 .modal-header h3 { margin: 0; color: #1a2e45; font-size: 1.2rem; }
 
-/* 閉じるアイコン */
 .close-icon {
     background: none; border: none; font-size: 1.5rem;
     color: #999; cursor: pointer; padding: 5px;
 }
 
-/* スクロールエリア */
 .area-scroll-box {
-    padding: 20px;
-    overflow-y: auto; /* 縦スクロールさせる */
-    flex-grow: 1;
+    padding: 20px; overflow-y: auto; flex-grow: 1;
+    -webkit-overflow-scrolling: touch; /* スマホでスクロール滑らかに */
 }
 
-/* 地方ごとのグループ */
 .region-group { margin-bottom: 30px; }
 .region-group h4 {
     margin: 0 0 10px 0; font-size: 0.9rem; color: #666;
     border-left: 4px solid #e63946; padding-left: 10px;
 }
 
-/* 都道府県ボタンのグリッド配置 */
 .pref-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 10px;
 }
-
 .pref-buttons button {
-    padding: 10px 5px;
-    border: 1px solid #ddd; background: #fff;
-    border-radius: 6px; font-size: 0.9rem;
-    cursor: pointer; transition: 0.2s;
+    padding: 10px 5px; border: 1px solid #ddd; background: #fff;
+    border-radius: 6px; font-size: 0.9rem; cursor: pointer; transition: 0.2s;
 }
 .pref-buttons button:hover {
     background: #e7f1ff; border-color: #1a2e45; color: #1a2e45;
 }
 
-/* 解除ボタンエリア */
 .clear-area {
     margin-top: 20px; padding-top: 20px;
     border-top: 1px solid #eee; text-align: center;
 }
 .clear-btn {
-    background: none; border: none;
-    color: #888; font-size: 0.9rem; cursor: pointer;
+    background: none; border: none; color: #888;
+    font-size: 0.9rem; cursor: pointer;
     display: inline-flex; align-items: center; gap: 5px;
 }
-.clear-btn:hover { color: #e63946; }
