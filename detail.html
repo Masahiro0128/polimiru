@@ -3,54 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>polimiru | 政治を可視化する</title>
+    <title>polimiru | 検証詳細</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            /* ナビバーの分だけ余白を開ける */
-            padding-top: 70px; 
-            padding-bottom: 20px;
-            color: #333;
-        }
-
-        /* --- 新しく追加したサイト共通ナビバーの設定 --- */
-        .site-navbar {
-            background-color: #ffffff;
-            height: 60px;
-            width: 100%;
-            position: fixed; /* 画面上部に固定 */
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影をつけて浮き上がらせる */
-            z-index: 1000; /* 他の要素より手前に表示 */
-        }
-
-        .site-logo {
-            font-size: 24px;
-            font-weight: 800; /* 太文字 */
-            color: #1a2e45; /* ネイビー */
-            text-decoration: none; /* 下線を消す */
-            letter-spacing: 0.5px;
-        }
-        
-        .site-logo:hover {
-            opacity: 0.7; /* マウスを乗せた時に少し薄くする */
-        }
-        /* ----------------------------------------- */
-
-        .container {
-            padding: 0 20px;
-        }
-
+        /* カードのデザイン */
         .card {
             background: white;
-            max-width: 500px;
-            margin: 0 auto 20px auto;
+            max-width: 600px; /* 少し幅を広げました */
+            margin: 0 auto 30px auto;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             overflow: hidden;
@@ -59,7 +21,7 @@
         .header {
             background: #1a2e45;
             color: white;
-            padding: 16px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -67,36 +29,38 @@
         .candidate-name { font-size: 1.2em; font-weight: bold; }
         .party-label { font-size: 0.8em; background: #4a6fa5; padding: 4px 8px; border-radius: 4px; }
         
-        .topic { padding: 16px; border-bottom: 1px solid #eee; }
+        .topic { padding: 20px; border-bottom: 1px solid #eee; }
         .topic-tag { color: #e63946; font-size: 0.8em; font-weight: bold; text-transform: uppercase; }
         .topic-title { font-size: 1.4em; font-weight: bold; margin-top: 4px; }
         
+        /* ステータスバッジ */
         .status-badge { display: inline-block; margin-top: 8px; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9em; }
         .status-warning { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
         .status-good { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
 
-        .comparison { padding: 16px; }
-        .timeline-item { position: relative; padding-left: 24px; margin-bottom: 24px; border-left: 2px solid #ddd; }
+        /* タイムラインエリア */
+        .comparison { padding: 20px; }
+        .timeline-item { position: relative; padding-left: 24px; margin-bottom: 30px; border-left: 2px solid #ddd; }
         .timeline-item::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ddd; }
         .timeline-item.promise::before { background: #4a90e2; }
         .timeline-item.action::before { background: #e63946; }
 
-        .date { font-size: 0.8em; color: #888; margin-bottom: 4px; display: block; }
-        .content { font-weight: bold; margin-bottom: 8px; display: block; }
-        .quote-box { background: #f9f9f9; padding: 10px; border-radius: 6px; font-size: 0.9em; border-left: 3px solid #ccc; margin-bottom: 8px; }
+        .date { font-size: 0.85em; color: #888; margin-bottom: 6px; display: block; }
+        .content { font-weight: bold; margin-bottom: 10px; display: block; line-height: 1.5; }
         
-        .source-link { display: inline-flex; align-items: center; font-size: 0.75em; color: #666; text-decoration: none; border: 1px solid #ddd; padding: 4px 8px; border-radius: 4px; background: #fff; }
-        .source-link:hover { background: #f0f0f0; }
+        /* 引用ボックス */
+        .quote-box { background: #f9f9f9; padding: 15px; border-radius: 8px; font-size: 0.9em; border-left: 4px solid #ccc; margin-bottom: 10px; color: #555; }
+        
+        /* ソースリンク */
+        .source-link { display: inline-flex; align-items: center; font-size: 0.8em; color: #666; text-decoration: none; border: 1px solid #ddd; padding: 6px 12px; border-radius: 20px; background: #fff; transition: 0.2s; }
+        .source-link:hover { background: #f0f0f0; color: #333; border-color: #bbb; }
 
-        .ai-summary { background: #f0f7ff; padding: 16px; font-size: 0.9em; color: #333; border-top: 1px solid #e1e4e8; }
-        .ai-label { font-weight: bold; color: #0056b3; margin-bottom: 4px; display: block; }
+        /* AI要約エリア */
+        .ai-summary { background: #f0f7ff; padding: 20px; font-size: 0.95em; color: #333; border-top: 1px solid #e1e4e8; line-height: 1.6; }
+        .ai-label { font-weight: bold; color: #0056b3; margin-bottom: 8px; display: block; font-size: 0.9em; }
     </style>
 </head>
 <body>
-
-    <nav class="site-navbar">
-        <a href="index.html" class="site-logo">polimiru</a>
-    </nav>
 
     <div class="container">
         <div class="card">
@@ -120,11 +84,11 @@
                     <div class="quote-box">
                         「資材高騰の影響により、今年度の着工は困難であり...」
                     </div>
-                    <a href="#" class="source-link">📄 議事録(R6.9月) P.12を確認する</a>
+                    <a href="#" class="source-link"><i class="fa-regular fa-file-lines"></i> 議事録(R6.9月) P.12を確認</a>
                 </div>
             </div>
             <div class="ai-summary">
-                <span class="ai-label">🤖 AI解説</span>
+                <span class="ai-label"><i class="fa-solid fa-robot"></i> AI解説</span>
                 選挙時は「4年以内の完成」を約束しましたが、計画延長により公約達成は不可能となりました。
             </div>
         </div>
@@ -146,11 +110,12 @@
                 <div class="timeline-item action">
                     <span class="date">2023年12月 議案採決</span>
                     <span class="content">給食センター建設予算案に【賛成】し、可決</span>
-                    <a href="#" class="source-link">📄 議決結果一覧を見る</a>
+                    <a href="#" class="source-link"><i class="fa-regular fa-file-lines"></i> 議決結果一覧を見る</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="layout.js"></script>
 </body>
 </html>

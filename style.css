@@ -236,3 +236,110 @@
         .election-title { font-size: 1.2em; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
         .election-date { font-size: 0.85em; color: #666; margin-bottom: 10px; display: block;}
         .election-desc { font-size: 0.9em; color: #555; line-height: 1.5; }
+/* =========================================
+   ハンバーガーメニュー用スタイル（ここから追加）
+========================================= */
+
+/* --- PC表示の基本設定 --- */
+
+/* ハンバーガーボタンと閉じるボタンは、PCでは隠す */
+.hamburger-menu,
+.close-menu,
+.menu-overlay {
+    display: none;
+}
+
+/* メニューが開いている時のスクロール禁止設定 */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+/* --- スマホ表示（画面幅768px以下）の設定 --- */
+@media (max-width: 768px) {
+
+    /* 1. ナビバーの調整 */
+    .site-navbar {
+        justify-content: space-between; /* ロゴとバーガーを端に配置 */
+        padding: 0 20px; /* 横の余白を少し狭く */
+    }
+
+    /* 2. ハンバーガーボタンを表示 */
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #1a2e45;
+        cursor: pointer;
+    }
+
+    /* 3. メニュー本体のスタイル（最初は隠しておく） */
+    .nav-links {
+        position: fixed; /* 画面に固定 */
+        top: 0;
+        right: -100%; /* 画面の右外側に隠す */
+        width: 80%; /* 画面幅の80%の広さ */
+        height: 100vh; /* 画面の高さ一杯 */
+        background-color: #ffffff;
+        flex-direction: column; /* リンクを縦並びにする */
+        align-items: flex-start; /* 左寄せ */
+        padding: 80px 30px; /* 内側の余白 */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* 左側に影をつける */
+        transition: right 0.4s ease-in-out; /* スライドのアニメーション設定 */
+        z-index: 2000; /* 最前面に表示 */
+    }
+
+    /* 4. メニューが開いた時のスタイル（JSで active クラスがついた時） */
+    .nav-links.active {
+        right: 0; /* 画面内に出てくる */
+    }
+
+    /* 5. メニュー内のリンクのスタイル調整 */
+    .nav-links a {
+        font-size: 1.2rem; /* 文字を大きく */
+        margin: 15px 0; /* 上下の間隔を空ける */
+        width: 100%; /* 横幅一杯に */
+        display: block;
+    }
+    /* Contactボタンも他のリンクと同じ見た目に戻す */
+    .contact-btn {
+        background: none !important;
+        color: #1a2e45 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+
+    /* 6. 閉じるボタン（×）のスタイル */
+    .close-menu {
+        display: block;
+        position: absolute; /* メニュー内で位置を固定 */
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: #1a2e45;
+        cursor: pointer;
+    }
+
+    /* 7. 背景を暗くするオーバーレイ */
+    .menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5); /* 半透明の黒 */
+        opacity: 0; /* 最初は透明 */
+        visibility: hidden; /* 最初は触れない */
+        transition: opacity 0.4s;
+        z-index: 1500; /* メニューより奥、ヘッダーより手前 */
+    }
+    .menu-overlay.active {
+        opacity: 1; /* 表示 */
+        visibility: visible;
+    }
+}
