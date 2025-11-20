@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimiru | 町田市長選2026</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding-top: 70px; /* ナビバーの分 */
+            color: #333;
+        }
+
+        /* 共通ナビバー */
+        .site-navbar {
+            background-color: #fff;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            display: flex; align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .site-logo {
+            font-size: 24px; font-weight: 800; color: #1a2e45; text-decoration: none;
+        }
+
+        /* トップページ専用デザイン */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1a2e45;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .hero h1 { margin: 0; font-size: 1.8em; }
+        .hero p { margin-top: 10px; opacity: 0.8; }
+
+        .container {
+            max-width: 800px; /* 一覧は見やすく幅広に */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            border-left: 5px solid #e63946;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* 候補者リスト（グリッド表示） */
+        .candidate-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* スマホで自動折り返し */
+            gap: 20px;
+        }
+
+        .candidate-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s; /* ホバー時の動き */
+            text-decoration: none; /* リンクの下線を消す */
+            color: inherit;
+            display: block; /* リンクをブロック要素に */
+        }
+
+        .candidate-card:hover {
+            transform: translateY(-5px); /* 少し浮き上がる */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            background: #eee;
+            height: 100px;
+            position: relative;
+        }
+        
+        /* 丸い顔写真 */
+        .face-icon {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: #ddd;
+            border: 4px solid white;
+            position: absolute;
+            bottom: -40px;
+            left: 20px;
+            object-fit: cover; /* 写真の比率を維持 */
+        }
+
+        .card-body {
+            padding: 50px 20px 20px 20px; /* 写真の分だけ上を空ける */
+        }
+
+        .name { font-size: 1.4em; font-weight: bold; margin: 0; }
+        .party { font-size: 0.8em; color: #666; background: #eee; padding: 2px 6px; border-radius: 4px; margin-left: 8px;}
+        
+        .score-area {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .score-label { font-size: 0.8em; color: #666; }
+        .score-value { font-size: 1.2em; font-weight: bold; color: #1a2e45; }
+        .score-value.bad { color: #e63946; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="site-navbar">
+    <a href="index.html" class="site-logo">polimiru</a>
+</nav>
+
+    <div class="hero">
+        <h1>町田市長選 2026</h1>
+        <p>その公約、本当に守られましたか？<br>ファクトチェックで選ぶ新しい選挙。</p>
+    </div>
+
+    <div class="container">
+        <div class="section-title">立候補予定者一覧</div>
+
+        <div class="candidate-list">
+            
+            <a href="detail.html" class="candidate-card">
+                <div class="card-header" style="background-color: #4a6fa5;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Taro" class="face-icon" alt="顔写真">
+                </div>
+                <div class="card-body">
+                    <div class="name">町田 太郎 <span class="party">現職</span></div>
+                    <p style="font-size: 0.9em; color: #666;">「継続と安定」を掲げる3期目。</p>
+                    
+                    <div class="score-area">
+                        <div>
+                            <div class="score-label">公約達成率</div>
+                            <div class="score-value">75%</div>
+                        </div>
+                        <div>
+                            <div class="score-label">言動一致度</div>
+                            <div class="score-value bad">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="candidate-card">
+                <div class="card-header" style="background-color: #e63946;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Hanako" class="face-icon" alt="顔写真">
+                </div>
+                <div class="card-body">
+                    <div class="name">相模 花子 <span class="party">新人</span></div>
+                    <p style="font-size: 0.9em; color: #666;">元市議。子育て支援の拡充を主張。</p>
+                    
+                    <div class="score-area">
+                        <div>
+                            <div class="score-label">公約達成率</div>
+                            <div class="score-value">-</div>
+                        </div>
+                        <div>
+                            <div class="score-label">言動一致度</div>
+                            <div class="score-value">92%</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>

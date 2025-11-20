@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimiru | 政治を可視化するプラットフォーム</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding-top: 70px;
+            color: #333;
+        }
+
+        /* ナビバー（共通） */
+        .site-navbar {
+            background-color: #fff;
+            height: 60px; width: 100%;
+            position: fixed; top: 0; left: 0;
+            display: flex; align-items: center; padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+        .site-logo { font-size: 24px; font-weight: 800; color: #1a2e45; text-decoration: none; letter-spacing: 0.5px; }
+
+        /* プラットフォームとしてのヒーローエリア */
+        .platform-hero {
+            background: linear-gradient(135deg, #1a2e45 0%, #2a4a70 100%); /* グラデーションで少しリッチに */
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .platform-hero h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        .platform-hero p {
+            margin-top: 15px;
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto; margin-right: auto;
+            line-height: 1.6;
+        }
+
+        /* 検索バー風のデザイン */
+        .search-dummy {
+            margin-top: 30px;
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #ddd;
+            font-size: 0.9em;
+            max-width: 400px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        
+        .section-heading {
+            display: flex; justify-content: space-between; align-items: end;
+            margin-bottom: 20px; border-bottom: 2px solid #ddd; padding-bottom: 10px;
+        }
+        .section-title { font-size: 1.5em; font-weight: bold; color: #1a2e45; }
+        .section-link { font-size: 0.9em; color: #4a90e2; text-decoration: none; }
+
+        /* 選挙カードのグリッド */
+        .election-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* 選挙カードデザイン */
+        .election-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .election-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .card-thumb {
+            height: 140px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        /* カテゴリバッジ */
+        .badge {
+            position: absolute; top: 10px; left: 10px;
+            padding: 4px 8px; border-radius: 4px;
+            font-size: 0.7em; font-weight: bold; color: white;
+        }
+        .badge-local { background: #2a9d8f; } /* 地方選 */
+        .badge-national { background: #e76f51; } /* 国政 */
+
+        /* ステータス（開催中など） */
+        .status-label {
+            position: absolute; top: 10px; right: 10px;
+            background: rgba(0,0,0,0.7); color: white;
+            padding: 2px 8px; border-radius: 10px; font-size: 0.7em;
+        }
+        .status-active { background: #e63946; } /* 注目・開催中 */
+
+        .card-content { padding: 20px; flex-grow: 1; }
+        .election-title { font-size: 1.2em; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
+        .election-date { font-size: 0.85em; color: #666; margin-bottom: 10px; display: block;}
+        .election-desc { font-size: 0.9em; color: #555; line-height: 1.5; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="site-navbar">
+        <span class="site-logo">polimiru</span>
+    </nav>
+
+    <div class="platform-hero">
+        <h1>政治を、もっと透明に。</h1>
+        <p>「言ったこと」と「やったこと」のギャップを可視化する。<br>日本最大級の政治家ファクトチェックデータベース。</p>
+        
+        <div class="search-dummy">🔍 選挙区や政治家の名前で検索...</div>
+    </div>
+
+    <div class="container">
+        
+        <div class="section-heading">
+            <div class="section-title">注目の選挙</div>
+            <a href="#" class="section-link">すべて見る &rarr;</a>
+        </div>
+
+        <div class="election-grid">
+            
+            <a href="machida.html" class="election-card">
+                <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1540910419868-47a12421e520?auto=format&fit=crop&w=500&q=80');">
+                    <span class="badge badge-local">東京都</span>
+                    <span class="status-label status-active">2026年 注目</span>
+                </div>
+                <div class="card-content">
+                    <div class="election-title">町田市長選挙 2026</div>
+                    <span class="election-date">📅 2026年2月XX日 投票</span>
+                    <div class="election-desc">
+                        再開発、給食、子育て支援...。<br>
+                        現職の実績と新人の公約を徹底比較。
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="election-card">
+                <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1565627788441-4942d2302d7c?auto=format&fit=crop&w=500&q=80');">
+                    <span class="badge badge-local">長崎県</span>
+                    <span class="status-label">予定</span>
+                </div>
+                <div class="card-content">
+                    <div class="election-title">長崎県知事選挙</div>
+                    <span class="election-date">📅 2026年2月 予定</span>
+                    <div class="election-desc">
+                        石木ダム問題の行方は？<br>
+                        県政の長期的な課題を検証します。
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="election-card">
+                <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1529101091760-6149976f1581?auto=format&fit=crop&w=500&q=80');">
+                    <span class="badge badge-national">国政</span>
+                    <span class="status-label">アーカイブ</span>
+                </div>
+                <div class="card-content">
+                    <div class="election-title">第5X回 衆議院議員総選挙</div>
+                    <span class="election-date">📅 202X年 終了</span>
+                    <div class="election-desc">
+                        各党のマニフェスト達成状況を追跡。<br>
+                        当選議員のその後の活動をチェック。
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
