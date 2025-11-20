@@ -131,51 +131,50 @@
     <div class="container">
         <div class="section-title">立候補予定者一覧</div>
 
-        <div class="candidate-list">
-            
-            <a href="detail.html" class="candidate-card">
-                <div class="card-header" style="background-color: #4a6fa5;">
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Taro" class="face-icon" alt="顔写真">
+        <div class="candidate-list" id="candidate-container">
+    </div>
+
+<script src="candidates.js"></script>
+<script>
+    // ここに「カードを作る命令」を書きます
+    const container = document.getElementById('candidate-container');
+
+    // データを1つずつ取り出してHTMLを作るループ処理
+    candidates.forEach(person => {
+        // スコアの表示ルール（nullならハイフンにする）
+        const manifestoScore = person.score_manifesto ? person.score_manifesto + '%' : '-';
+        
+        // 一致度の色が悪い場合のクラス分け
+        const consistencyClass = person.score_consistency < 50 ? 'bad' : '';
+
+        // HTMLを組み立てる（バッククォート `` を使うと改行して書けます）
+        const cardHTML = `
+            <a href="${person.url}" class="candidate-card">
+                <div class="card-header" style="background-color: ${person.party === '現職' ? '#4a6fa5' : '#e63946'};">
+                    <img src="${person.image}" class="face-icon" alt="顔写真">
                 </div>
                 <div class="card-body">
-                    <div class="name">町田 太郎 <span class="party">現職</span></div>
-                    <p style="font-size: 0.9em; color: #666;">「継続と安定」を掲げる3期目。</p>
+                    <div class="name">${person.name} <span class="party">${person.party}</span></div>
+                    <p style="font-size: 0.9em; color: #666;">${person.desc}</p>
                     
                     <div class="score-area">
                         <div>
                             <div class="score-label">公約達成率</div>
-                            <div class="score-value">75%</div>
+                            <div class="score-value">${manifestoScore}</div>
                         </div>
                         <div>
                             <div class="score-label">言動一致度</div>
-                            <div class="score-value bad">40%</div>
+                            <div class="score-value ${consistencyClass}">${person.score_consistency}%</div>
                         </div>
                     </div>
                 </div>
             </a>
+        `;
 
-            <a href="#" class="candidate-card">
-                <div class="card-header" style="background-color: #e63946;">
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Hanako" class="face-icon" alt="顔写真">
-                </div>
-                <div class="card-body">
-                    <div class="name">相模 花子 <span class="party">新人</span></div>
-                    <p style="font-size: 0.9em; color: #666;">元市議。子育て支援の拡充を主張。</p>
-                    
-                    <div class="score-area">
-                        <div>
-                            <div class="score-label">公約達成率</div>
-                            <div class="score-value">-</div>
-                        </div>
-                        <div>
-                            <div class="score-label">言動一致度</div>
-                            <div class="score-value">92%</div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-        </div>
+        // 箱に追加する
+        container.insertAdjacentHTML('beforeend', cardHTML);
+    });
+</script>
     </div>
 
 </body>
