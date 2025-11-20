@@ -8,68 +8,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="platform-hero">
         <h1>政治を、もっと透明に。</h1>
         <p>「言ったこと」と「やったこと」のギャップを可視化する。<br>日本最大級の政治家ファクトチェックデータベース。</p>
         
         <div class="search-dummy">🔍 選挙区や政治家の名前で検索...</div>
+
+        <div class="hero-actions">
+            <button id="area-btn" class="area-select-btn hero-btn">
+                <i class="fa-solid fa-location-dot"></i> <span>エリア未設定</span>
+            </button>
+        </div>
     </div>
 
     <div class="container">
-        
         <div class="section-heading">
             <div class="section-title">注目の選挙</div>
             <a href="#" class="section-link">すべて見る &rarr;</a>
         </div>
 
-        <div class="election-grid">
-            
-            <a href="machida.html" class="election-card">
-                <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1540910419868-47a12421e520?auto=format&fit=crop&w=500&q=80');">
-                    <span class="badge badge-local">東京都</span>
-                    <span class="status-label status-active">2026年 注目</span>
-                </div>
-                <div class="card-content">
-                    <div class="election-title">町田市長選挙 2026</div>
-                    <span class="election-date">📅 2026年2月XX日 投票</span>
-                    <div class="election-desc">
-                        再開発、給食、子育て支援...。<br>
-                        現職の実績と新人の公約を徹底比較。
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="election-card">
-                <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1565627788441-4942d2302d7c?auto=format&fit=crop&w=500&q=80');">
-                    <span class="badge badge-local">長崎県</span>
-                    <span class="status-label">予定</span>
-                </div>
-                <div class="card-content">
-                    <div class="election-title">長崎県知事選挙</div>
-                    <span class="election-date">📅 2026年2月 予定</span>
-                    <div class="election-desc">
-                        石木ダム問題の行方は？<br>
-                        県政の長期的な課題を検証します。
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="election-card">
-                <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1529101091760-6149976f1581?auto=format&fit=crop&w=500&q=80');">
-                    <span class="badge badge-national">国政</span>
-                    <span class="status-label">アーカイブ</span>
-                </div>
-                <div class="card-content">
-                    <div class="election-title">第5X回 衆議院議員総選挙</div>
-                    <span class="election-date">📅 202X年 終了</span>
-                    <div class="election-desc">
-                        各党のマニフェスト達成状況を追跡。<br>
-                        当選議員のその後の活動をチェック。
-                    </div>
-                </div>
-            </a>
-
-        </div>
+        <div class="election-grid" id="election-grid"></div>
     </div>
-<script src="layout.js?v=2"></script>
-</body></html>
+
+    <script src="elections.js"></script>
+    
+    <script src="layout.js?v=3"></script>
+
+    <script>
+        const grid = document.getElementById('election-grid');
+        
+        // 1. 保存されたエリア名を取得（例：「東京都 町田市」）
+        const savedAreaName = localStorage.getItem('my_area_name') || "";
+
+        // 2. 並び替え処理
+        // 「東京都 町田市」の中に「東京都」という文字が含まれていれば、その選挙を先頭にする
+        elections.sort((a, b) => {
+            const isAMatch = savedAreaName.includes(a.prefecture);
+            const isBMatch = savedAreaName.includes(b.prefecture);
+
+            if (isAMatch && !isBMatch) return -1; // aを先頭へ
+            if (!isAMatch && isBMatch) return 1;  // bを先頭へ
+            return 0; // 変わらない
+        });
+
+        // 3. カードを生成して表示
+        elections.forEach(election => {
+            // バッジの色設定（localかnationalか）
+            const badgeClass = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
+            
+            // 「注目」が含まれていたら赤くする
+            const statusClass = election.status.includes('注目') ? 'status-active' : '';
+
+            // 自分のエリアと一致する場合、枠線を青くして強調する（オプション演出）
+            const highlightStyle = savedAreaName.includes(election.prefecture) ? 'border: 2px solid #1a2e45; box-shadow: 0 0 15px rgba(26, 46, 69, 0.2);' : '';
+
+            const html = `
+            <a href="${election.url}" class="election-card" style="${highlightStyle}">
+                <div class="card-thumb" style="background-image: url('${election.image}');">
+                    <span class="badge ${badgeClass}">${election.prefecture}</span>
+                    <span class="status-label ${statusClass}">${election.status}</span>
+                </div>
+                <div class="card-content">
+                    <div class="election-title">${election.title}</div>
+                    <span class="election-date">📅 ${election.date}</span>
+                    <div class="election-desc">${election.desc}</div>
+                </div>
+            </a>
+            `;
+            
+            // 画面に追加
+            grid.insertAdjacentHTML('beforeend', html);
+        });
+    </script>
+</body>
+</html>
