@@ -1,8 +1,26 @@
 // 共通ヘッダーを作る関数
 function loadHeader() {
+    // ★修正：自分の居場所を判定するロジックを「URL判定」から「scriptタグ判定」に変更
+    // これなら、どんなURLで開いても「layout.jsを ../ で読み込んでいればフォルダの中にいる」と確実に判定できます。
+    let homePath = 'index.html'; // デフォルト（トップページなど）
+    
+    // layout.js を読み込んでいる script タグを探す
+    const scripts = document.getElementsByTagName('script');
+    for (let i = 0; i < scripts.length; i++) {
+        const src = scripts[i].getAttribute('src');
+        if (src && src.includes('layout.js')) {
+            // もし "../js/layout.js" のように ../ がついていたら、深い階層にいるということ
+            if (src.includes('../')) {
+                homePath = '../index.html'; // 1つ上に戻るリンクにする
+            }
+            break;
+        }
+    }
+
     const headerHTML = `
     <nav class="site-navbar">
-        <a href="index.html" class="site-logo">polimiru</a>
+        <!-- 計算したパス(homePath)を使う -->
+        <a href="${homePath}" class="site-logo">polimiru</a>
         
         <button class="hamburger-menu" id="hamburger-btn">
             <i class="fa-solid fa-bars"></i>
@@ -145,14 +163,12 @@ function loadHeader() {
     const areaModal = document.getElementById('area-modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
 
-    // ボタンがあればクリックイベントを設定
     if (areaBtn) {
         areaBtn.addEventListener('click', () => {
             areaModal.classList.add('active');
         });
     }
 
-    // 閉じるボタン（モーダル内の×）
     if (closeModalBtn) {
         closeModalBtn.addEventListener('click', () => {
             areaModal.classList.remove('active');
@@ -172,7 +188,7 @@ window.setArea = function(areaId, areaName) {
         localStorage.removeItem('my_area_name');
     }
 
-    // 画面を再読み込みして並び替えを実行
+    // 再読み込みして反映
     location.reload();
 };
 

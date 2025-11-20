@@ -10,7 +10,7 @@ const candidates = [
         desc: "「継続と安定」を掲げる3期目。駅前再開発の完遂を目指す。",
         score_manifesto: 75,
         score_consistency: 40,
-        url: "detail.html"
+        url: "../detail.html"
     },
     {
         id: 2,
