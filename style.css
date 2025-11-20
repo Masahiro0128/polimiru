@@ -1,13 +1,23 @@
-/* 基本設定 */
+/* =========================================
+   1. 基本設定 & 共通レイアウト
+========================================= */
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     background-color: #f8f9fa;
     margin: 0;
-    padding-top: 100px; /* ヘッダーの分だけ空ける */
+    padding-top: 100px; /* ヘッダーの高さ分あける */
     color: #333;
 }
 
-/* --- ヘッダー (PC/共通) --- */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   2. ヘッダー (PC/共通)
+========================================= */
 .site-navbar {
     background-color: #ffffff;
     height: 80px;
@@ -31,7 +41,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* PC用メニュー */
+/* PC用メニューリンク */
 .nav-links {
     display: flex;
     gap: 40px;
@@ -47,7 +57,7 @@ body {
     padding-bottom: 5px;
 }
 
-/* 下線アニメーション (PC) */
+/* 下線アニメーション (PCのみ) */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -56,151 +66,188 @@ body {
     background-color: #1a2e45;
     transition: width 0.3s ease;
 }
-.nav-links a:hover::after {
-    width: 100%;
+.nav-links a:hover::after { width: 100%; }
+
+
+/* =========================================
+   3. メインコンテンツ（ここが抜けていました！）
+========================================= */
+
+/* トップページのヒーローエリア（青い背景） */
+.platform-hero {
+    background: linear-gradient(135deg, #1a2e45 0%, #2a4a70 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.platform-hero h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+.platform-hero p {
+    margin-top: 15px; font-size: 1.1em; opacity: 0.9;
+    max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;
 }
 
+/* 検索バー */
+.search-dummy {
+    margin-top: 30px; display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 10px 20px; border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #ddd; font-size: 0.9em;
+    max-width: 400px; text-align: left;
+    box-sizing: border-box;
+}
 
-/* --- フッター --- */
+/* 見出し */
+.section-heading {
+    display: flex; justify-content: space-between; align-items: end;
+    margin-bottom: 20px; border-bottom: 2px solid #ddd; padding-bottom: 10px;
+}
+.section-title { font-size: 1.5em; font-weight: bold; color: #1a2e45; }
+.section-link { font-size: 0.9em; color: #4a90e2; text-decoration: none; }
+
+/* 選挙カードグリッド */
+.election-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* カードデザイン */
+.election-card {
+    background: white;
+    border-radius: 12px; overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none; color: inherit;
+    display: flex; flex-direction: column;
+    height: 100%;
+}
+.election-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-thumb {
+    height: 140px; background-color: #ddd;
+    background-size: cover; background-position: center;
+    position: relative;
+}
+
+.card-content { padding: 20px; flex-grow: 1; }
+.election-title { font-size: 1.2em; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
+.election-date { font-size: 0.85em; color: #666; margin-bottom: 10px; display: block;}
+.election-desc { font-size: 0.9em; color: #555; line-height: 1.5; }
+
+/* バッジ類 */
+.badge {
+    position: absolute; top: 10px; left: 10px;
+    padding: 4px 8px; border-radius: 4px;
+    font-size: 0.7em; font-weight: bold; color: white;
+}
+.badge-local { background: #2a9d8f; }
+.badge-national { background: #e76f51; }
+
+.status-label {
+    position: absolute; top: 10px; right: 10px;
+    background: rgba(0,0,0,0.7); color: white;
+    padding: 2px 8px; border-radius: 10px; font-size: 0.7em;
+}
+.status-active { background: #e63946; }
+
+
+/* =========================================
+   4. フッター
+========================================= */
 .site-footer {
     background-color: #f2f2f2;
     padding: 0 40px;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; justify-content: space-between; align-items: center;
     margin-top: 60px;
 }
 
-.footer-social {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.follow-text {
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-right: 10px;
-}
-
+.footer-social { display: flex; align-items: center; gap: 20px; }
+.follow-text { font-weight: bold; font-size: 0.9em; margin-right: 10px; }
 .social-icon {
-    color: #333;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: color 0.2s;
+    color: #333; font-size: 1.2em; text-decoration: none; transition: color 0.2s;
 }
 .social-icon:hover { color: #1a2e45; }
 
 .back-to-top {
     background-color: #e6e6e6;
     padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9em;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    text-decoration: none; color: #333;
+    font-size: 0.9em; font-weight: bold;
+    border-radius: 4px; transition: background-color 0.2s;
+    display: flex; align-items: center; gap: 8px;
 }
 .back-to-top:hover { background-color: #d6d6d6; }
-
 html { scroll-behavior: smooth; }
 
 
-/* --- その他の共通パーツ --- */
-.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-
 /* =========================================
-   ★スマホ用ハンバーガーメニュー (BAKUTAN風)
+   5. スマホ用ハンバーガーメニュー (BAKUTAN風)
 ========================================= */
 
 /* PCでは隠すもの */
-.hamburger-menu, .close-menu, .menu-overlay {
-    display: none;
-}
+.hamburger-menu, .close-menu, .menu-overlay { display: none; }
 body.no-scroll { overflow: hidden; }
-
 
 /* スマホ画面 (768px以下) の設定 */
 @media (max-width: 768px) {
 
     .site-navbar { padding: 0 20px; }
 
-    /* 1. ハンバーガーボタン */
+    /* ハンバーガーボタン */
     .hamburger-menu {
         display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #1a2e45;
-        cursor: pointer;
-        padding: 10px;
+        background: none; border: none;
+        font-size: 24px; color: #1a2e45;
+        cursor: pointer; padding: 10px;
     }
 
-    /* 2. メニュー本体（ドロワー） */
+    /* メニュー本体（ドロワー） */
     .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%; /* 最初は画面外(右)に隠す */
-        width: 85%;   /* 画面の85%くらいの幅 */
-        height: 100vh;
+        position: fixed; top: 0; right: -100%;
+        width: 85%; height: 100vh;
         background-color: #ffffff;
-        flex-direction: column; /* 縦並びにする */
-        align-items: stretch;   /* 横幅いっぱいに広げる */
-        justify-content: flex-start;
-        padding: 80px 30px;     /* 上と左右の余白 */
+        flex-direction: column;
+        align-items: stretch; justify-content: flex-start;
+        padding: 80px 30px;
         box-shadow: -5px 0 20px rgba(0,0,0,0.1);
-        transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* シュッと出る動き */
+        transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         z-index: 2000;
     }
-    
-    /* JavaScriptで active クラスがついたら表示 */
     .nav-links.active { right: 0; }
 
-    /* 3. リンクのデザイン（リスト風） */
+    /* リンクのデザイン（リスト風） */
     .nav-links a {
-        font-size: 16px;
-        font-weight: 500;
-        color: #333;
-        padding: 20px 0; /* 上下の余白で高さを出す */
-        border-bottom: 1px solid #eee; /* 下線で区切る */
-        width: 100%;
-        display: block;
+        font-size: 16px; font-weight: 500; color: #333;
+        padding: 20px 0; border-bottom: 1px solid #eee;
+        width: 100%; display: block;
     }
-    
-    /* 下線アニメーションはスマホでは無効化 */
-    .nav-links a::after { display: none; }
+    .nav-links a::after { display: none; } /* PC用アニメーション無効化 */
 
-    /* 4. Contactボタンだけカプセル型にする */
+    /* Contactボタン */
     .nav-links .contact-btn {
-        margin-top: 40px; /* 上のリストと離す */
+        margin-top: 40px;
         border: 1px solid #1a2e45;
-        border-radius: 50px; /* 角丸（カプセル） */
-        text-align: center;
-        padding: 15px 0;
+        border-radius: 50px;
+        text-align: center; padding: 15px 0;
         font-weight: bold;
     }
 
-    /* 5. 閉じるボタン (×) */
+    /* 閉じるボタン */
     .close-menu {
-        display: block;
-        position: absolute;
-        top: 25px;
-        right: 20px;
-        background: none;
-        border: none;
-        font-size: 32px;
-        color: #1a2e45;
-        cursor: pointer;
+        display: block; position: absolute;
+        top: 25px; right: 20px;
+        background: none; border: none;
+        font-size: 32px; color: #1a2e45; cursor: pointer;
     }
 
-    /* 6. 背景暗転 */
+    /* 背景暗転 */
     .menu-overlay {
-        display: block;
-        position: fixed;
+        display: block; position: fixed;
         top: 0; left: 0; width: 100%; height: 100%;
         background: rgba(0,0,0,0.4);
         opacity: 0; visibility: hidden;
@@ -211,9 +258,7 @@ body.no-scroll { overflow: hidden; }
 
     /* フッターのスマホ調整 */
     .site-footer {
-        flex-direction: column;
-        height: auto;
-        padding: 30px 20px;
-        gap: 20px;
+        flex-direction: column; height: auto;
+        padding: 30px 20px; gap: 20px;
     }
 }
