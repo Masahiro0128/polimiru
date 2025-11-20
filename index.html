@@ -9,24 +9,79 @@
             font-family: "Helvetica Neue", Arial, sans-serif;
             background-color: #f8f9fa;
             margin: 0;
-            padding-top: 70px;
+            /* ヘッダーが80pxになったので、余裕を持って100px空ける */
+            padding-top: 100px;
             color: #333;
         }
 
-        /* ナビバー（共通） */
+        /* --- ヘッダーデザイン（BAKUTAN風） --- */
         .site-navbar {
-            background-color: #fff;
-            height: 60px; width: 100%;
-            position: fixed; top: 0; left: 0;
-            display: flex; align-items: center; padding: 0 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background-color: #ffffff;
+            height: 80px; /* 高さを少しリッチに */
+            width: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* ロゴとメニューを左右に離す */
+            padding: 0 40px; /* 左右の余白 */
+            box-shadow: 0 1px 0 rgba(0,0,0,0.05); /* 薄い影 */
             z-index: 1000;
+            box-sizing: border-box;
         }
-        .site-logo { font-size: 24px; font-weight: 800; color: #1a2e45; text-decoration: none; letter-spacing: 0.5px; }
+
+        .site-logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1a2e45;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        /* 右側のメニューエリア */
+        .nav-links {
+            display: flex;
+            gap: 40px; /* メニュー同士の間隔 */
+            align-items: center;
+        }
+
+        /* メニューのリンク文字 */
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative; /* 下線アニメーションの基準点 */
+            padding-bottom: 5px;
+        }
+
+        /* 下線アニメーションの設定 */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0; /* 最初は幅0 */
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #1a2e45; /* 線の色 */
+            transition: width 0.3s ease; /* 0.3秒かけて伸びる */
+        }
+
+        /* ホバー時に線を伸ばす */
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* スマホ対応：画面が狭い時はメニューを消す */
+        @media (max-width: 600px) {
+            .site-navbar { padding: 0 20px; }
+            .nav-links { display: none; }
+        }
+        /* --------------------------------------- */
 
         /* プラットフォームとしてのヒーローエリア */
         .platform-hero {
-            background: linear-gradient(135deg, #1a2e45 0%, #2a4a70 100%); /* グラデーションで少しリッチに */
+            background: linear-gradient(135deg, #1a2e45 0%, #2a4a70 100%);
             color: white;
             padding: 80px 20px;
             text-align: center;
@@ -102,22 +157,20 @@
             position: relative;
         }
         
-        /* カテゴリバッジ */
         .badge {
             position: absolute; top: 10px; left: 10px;
             padding: 4px 8px; border-radius: 4px;
             font-size: 0.7em; font-weight: bold; color: white;
         }
-        .badge-local { background: #2a9d8f; } /* 地方選 */
-        .badge-national { background: #e76f51; } /* 国政 */
+        .badge-local { background: #2a9d8f; }
+        .badge-national { background: #e76f51; }
 
-        /* ステータス（開催中など） */
         .status-label {
             position: absolute; top: 10px; right: 10px;
             background: rgba(0,0,0,0.7); color: white;
             padding: 2px 8px; border-radius: 10px; font-size: 0.7em;
         }
-        .status-active { background: #e63946; } /* 注目・開催中 */
+        .status-active { background: #e63946; }
 
         .card-content { padding: 20px; flex-grow: 1; }
         .election-title { font-size: 1.2em; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
@@ -129,7 +182,14 @@
 <body>
 
     <nav class="site-navbar">
-        <span class="site-logo">polimiru</span>
+        <a href="index.html" class="site-logo">polimiru</a>
+        
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Elections</a>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
     </nav>
 
     <div class="platform-hero">
