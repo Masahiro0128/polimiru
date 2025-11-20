@@ -23,63 +23,87 @@
     </div>
 
     <div class="container">
-        <div class="section-heading">
-            <div class="section-title">注目の選挙</div>
-            <a href="#" class="section-link">すべて見る &rarr;</a>
+        
+        <div class="filter-tabs">
+            <button class="filter-btn active" onclick="filterElections('all')">🔥 注目</button>
+            <button class="filter-btn" onclick="filterElections('national')">🏛️ 国政</button>
+            <button class="filter-btn" onclick="filterElections('local')">🗾 地方</button>
         </div>
 
         <div class="election-grid" id="election-grid"></div>
     </div>
 
     <script src="elections.js"></script>
-    
     <script src="layout.js?v=3"></script>
 
     <script>
         const grid = document.getElementById('election-grid');
-        
-        // 1. 保存されたエリア名を取得（例：「東京都 町田市」）
         const savedAreaName = localStorage.getItem('my_area_name') || "";
 
-        // 2. 並び替え処理
-        // 「東京都 町田市」の中に「東京都」という文字が含まれていれば、その選挙を先頭にする
-        elections.sort((a, b) => {
-            const isAMatch = savedAreaName.includes(a.prefecture);
-            const isBMatch = savedAreaName.includes(b.prefecture);
+        // ページ読み込み時は「すべて（注目）」を表示
+        renderCards('all');
 
-            if (isAMatch && !isBMatch) return -1; // aを先頭へ
-            if (!isAMatch && isBMatch) return 1;  // bを先頭へ
-            return 0; // 変わらない
-        });
+        // --- 1. タブを切り替える機能 ---
+        function filterElections(category) {
+            // ボタンの見た目（activeクラス）を切り替え
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
 
-        // 3. カードを生成して表示
-        elections.forEach(election => {
-            // バッジの色設定（localかnationalか）
-            const badgeClass = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
+            // カードを再描画
+            renderCards(category);
+        }
+
+        // --- 2. カードを描画する機能 ---
+        function renderCards(category) {
+            grid.innerHTML = ""; // 一旦中身を空っぽにする
+
+            // データの絞り込み
+            let filteredData = elections;
             
-            // 「注目」が含まれていたら赤くする
-            const statusClass = election.status.includes('注目') ? 'status-active' : '';
+            if (category === 'national') {
+                filteredData = elections.filter(e => e.category === 'national');
+            } else if (category === 'local') {
+                filteredData = elections.filter(e => e.category === 'local');
+            } else {
+                // 'all' の場合はとりあえず全部表示（将来的には「注目フラグ」で絞ってもOK）
+                filteredData = elections; 
+            }
 
-            // 自分のエリアと一致する場合、枠線を青くして強調する（オプション演出）
-            const highlightStyle = savedAreaName.includes(election.prefecture) ? 'border: 2px solid #1a2e45; box-shadow: 0 0 15px rgba(26, 46, 69, 0.2);' : '';
+            // 並び替え処理（自分のエリアを優先）
+            filteredData.sort((a, b) => {
+                const isAMatch = savedAreaName.includes(a.prefecture);
+                const isBMatch = savedAreaName.includes(b.prefecture);
 
-            const html = `
-            <a href="${election.url}" class="election-card" style="${highlightStyle}">
-                <div class="card-thumb" style="background-image: url('${election.image}');">
-                    <span class="badge ${badgeClass}">${election.prefecture}</span>
-                    <span class="status-label ${statusClass}">${election.status}</span>
-                </div>
-                <div class="card-content">
-                    <div class="election-title">${election.title}</div>
-                    <span class="election-date">📅 ${election.date}</span>
-                    <div class="election-desc">${election.desc}</div>
-                </div>
-            </a>
-            `;
-            
-            // 画面に追加
-            grid.insertAdjacentHTML('beforeend', html);
-        });
+                if (isAMatch && !isBMatch) return -1; // aを先頭へ
+                if (!isAMatch && isBMatch) return 1;  // bを先頭へ
+                return 0; // 変わらない
+            });
+
+            // 画面に表示
+            filteredData.forEach(election => {
+                const badgeClass = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
+                const statusClass = election.status.includes('注目') ? 'status-active' : '';
+
+                // 自分のエリアなら青い枠線をつける
+                const highlightStyle = savedAreaName.includes(election.prefecture) ? 'border: 2px solid #1a2e45; box-shadow: 0 0 15px rgba(26, 46, 69, 0.2);' : '';
+
+                const html = `
+                <a href="${election.url}" class="election-card" style="${highlightStyle}">
+                    <div class="card-thumb" style="background-image: url('${election.image}');">
+                        <span class="badge ${badgeClass}">${election.prefecture}</span>
+                        <span class="status-label ${statusClass}">${election.status}</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="election-title">${election.title}</div>
+                        <span class="election-date">📅 ${election.date}</span>
+                        <div class="election-desc">${election.desc}</div>
+                    </div>
+                </a>
+                `;
+                
+                grid.insertAdjacentHTML('beforeend', html);
+            });
+        }
     </script>
 </body>
 </html>

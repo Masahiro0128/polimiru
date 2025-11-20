@@ -403,3 +403,48 @@ body.no-scroll { overflow: hidden; }
     font-size: 0.9rem; cursor: pointer;
     display: inline-flex; align-items: center; gap: 5px;
 }
+/* =========================================
+   ★トップページのフィルタタブ
+========================================= */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.filter-btn.active {
+    background: #1a2e45;
+    color: white;
+    border-color: #1a2e45;
+    box-shadow: 0 4px 10px rgba(26, 46, 69, 0.3);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .filter-tabs {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
