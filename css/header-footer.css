@@ -111,11 +111,15 @@ body.no-scroll {
 
     /* ドロワーメニュー */
     .nav-links {
-        position: fixed; top: 0; right: -100%;
-        width: 85%; height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        height: 100vh;
         background-color: #ffffff;
         flex-direction: column;
-        align-items: stretch; justify-content: flex-start;
+        align-items: stretch;
+        justify-content: flex-start;
         padding: 80px 30px;
         box-shadow: -5px 0 20px rgba(0,0,0,0.1);
         transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -124,34 +128,47 @@ body.no-scroll {
     .nav-links.active { right: 0; }
 
     .nav-links a {
-        font-size: 16px; font-weight: 500; color: #333;
-        padding: 20px 0; border-bottom: 1px solid #eee;
-        width: 100%; display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        display: block;
     }
     .nav-links a::after { display: none; }
 
     .nav-links .contact-btn {
-        margin-top: 40px; border: 1px solid #1a2e45; border-radius: 50px;
-        text-align: center; padding: 15px 0; font-weight: bold;
+        margin-top: 40px;
+        border: 1px solid #1a2e45;
+        border-radius: 50px;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: bold;
     }
 
     .close-menu {
-        display: block; position: absolute;
-        top: 25px; right: 20px;
-        background: none; border: none;
-        font-size: 32px; color: #1a2e45; cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 32px;
+        color: #1a2e45;
+        cursor: pointer;
     }
 
-    /* ✅ 明るくして、閉じているときはタップをブロックしない */
+    /* スマホ用オーバーレイ */
     .menu-overlay {
         display: block;
         position: fixed;
         top: 0; left: 0;
         width: 100%; height: 100%;
-        background: rgba(0,0,0,0.18);   /* ← ここで明るさ調整（0.18 はお好みで） */
+        background: rgba(0,0,0,0.18);    /* 暗さはここで調整 */
         opacity: 0;
         visibility: hidden;
-        pointer-events: none;           /* ← 非表示時はクリックを通す */
+        pointer-events: none;            /* 非表示時はタップを通す */
         transition: opacity 0.4s;
         z-index: 1500;
     }
@@ -159,7 +176,7 @@ body.no-scroll {
     .menu-overlay.active {
         opacity: 1;
         visibility: visible;
-        pointer-events: auto;           /* ← 表示時だけクリックを受け付ける */
+        pointer-events: auto;            /* 表示時だけタップを受け付ける */
     }
 
     /* フッター調整 */
