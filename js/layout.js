@@ -1,17 +1,17 @@
 // 共通ヘッダーを作る関数
 function loadHeader() {
-    // ★修正：自分の居場所を判定するロジックを「URL判定」から「scriptタグ判定」に変更
-    // これなら、どんなURLで開いても「layout.jsを ../ で読み込んでいればフォルダの中にいる」と確実に判定できます。
-    let homePath = 'index.html'; // デフォルト（トップページなど）
-    
-    // layout.js を読み込んでいる script タグを探す
+    // ★ 自分の居場所を script タグから判定
+    let homePath = 'index.html';      // デフォルト（トップ）
+    let contactPath = 'contact.html'; // Contact へのパス
+
     const scripts = document.getElementsByTagName('script');
     for (let i = 0; i < scripts.length; i++) {
         const src = scripts[i].getAttribute('src');
         if (src && src.includes('layout.js')) {
-            // もし "../js/layout.js" のように ../ がついていたら、深い階層にいるということ
+            // "../js/layout.js" なら 1 つ上の階層にいる
             if (src.includes('../')) {
-                homePath = '../index.html'; // 1つ上に戻るリンクにする
+                homePath = '../index.html';
+                contactPath = '../contact.html';
             }
             break;
         }
@@ -34,7 +34,7 @@ function loadHeader() {
             <a href="#">About</a>
             <a href="#">News</a>
             <a href="#">Elections</a>
-            <a href="contact.html" class="contact-btn">Contact</a>
+            <a href="${contactPath}" class="contact-btn">Contact</a>
         </div>
     </nav>
     <div class="menu-overlay" id="menu-overlay"></div>
@@ -148,15 +148,35 @@ function loadHeader() {
     const navLinksContainer = document.getElementById('nav-links-container');
     const overlay = document.getElementById('menu-overlay');
 
-    const toggleMenu = () => {
-        navLinksContainer.classList.toggle('active');
-        overlay.classList.toggle('active');
-        document.body.classList.toggle('no-scroll');
+    const openMenu = () => {
+        if (!navLinksContainer) return;
+        navLinksContainer.classList.add('active');
+        if (overlay) overlay.classList.add('active');
+        document.body.classList.add('no-scroll');
     };
 
-    if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMenu);
-    if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
-    if (overlay) overlay.addEventListener('click', toggleMenu);
+    const closeMenu = () => {
+        if (!navLinksContainer) return;
+        navLinksContainer.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    };
+
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openMenu();
+        });
+    }
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
+
+    // メニュー内リンクを押したら閉じる（Contact も含む）
+    document.querySelectorAll('#nav-links-container a').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
+    });
 
     // --- エリア設定の処理 ---
     const areaBtn = document.getElementById('area-btn');
@@ -232,7 +252,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadHeader();
     loadFooter();
 
-    // 🔥 ここから追加：スコア説明リンクを自動で挿入する処理
+    // ★ スコア説明リンクを自動で挿入（階層に応じてパス切り替え）
+    let methodPath = 'method.html';
+
+    const scripts = document.getElementsByTagName('script');
+    for (let i = 0; i < scripts.length; i++) {
+        const src = scripts[i].getAttribute('src');
+        if (src && src.includes('layout.js')) {
+            if (src.includes('../')) {
+                methodPath = '../method.html';
+            }
+            break;
+        }
+    }
+
     const headers = document.querySelectorAll('.js-score-method-header');
 
     headers.forEach(header => {
@@ -240,11 +273,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (header.querySelector('.score-method-link')) return;
 
         const link = document.createElement('a');
-        link.href = '../method.html'; 
+        link.href = methodPath;
         link.className = 'score-method-link';
         link.textContent = 'スコアの計算方法を見る';
 
         header.appendChild(link);
     });
-    // 🔥 追加ここまで
 });
