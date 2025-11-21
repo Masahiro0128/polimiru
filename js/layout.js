@@ -82,7 +82,7 @@ function loadHeader() {
                         <button onclick="setArea('fukui', '福井県')">福井県</button>
                         <button onclick="setArea('yamanashi', '山梨県')">山梨県</button>
                         <button onclick="setArea('nagano', '長野県')">長野県</button>
-                        <button onclick="setArea('gifu', '岐阜県')">岐阜県</button>
+                        <button.onclick="setArea('gifu', '岐阜県')">岐阜県</button>
                         <button onclick="setArea('shizuoka', '静岡県')">静岡県</button>
                         <button onclick="setArea('aichi', '愛知県')">愛知県</button>
                     </div>
@@ -177,6 +177,16 @@ function loadHeader() {
             closeMenu();
         });
     });
+
+    // ★ Contact だけは確実に contactPath に飛ばす
+    const contactLink = document.querySelector('#nav-links-container .contact-btn');
+    if (contactLink) {
+        contactLink.addEventListener('click', (e) => {
+            e.preventDefault();              // ブラウザ任せをやめて
+            closeMenu();                     // 先にメニューを閉じて
+            window.location.href = contactPath; // 自分で遷移させる
+        });
+    }
 
     // --- エリア設定の処理 ---
     const areaBtn = document.getElementById('area-btn');
