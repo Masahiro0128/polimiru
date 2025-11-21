@@ -6,7 +6,13 @@
     <title>polimiru | 町田市長選2026</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- 共通CSS（分割版） -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/elections.css">
+    <link rel="stylesheet" href="../css/modal.css">
 
     <style>
         .hero {
@@ -61,9 +67,16 @@
 
         .card-body { padding: 50px 20px 20px 20px; }
         .name { font-size: 1.4em; font-weight: bold; margin: 0; }
-        .party { font-size: 0.8em; color: #666; background: #eee; padding: 2px 6px; border-radius: 4px; margin-left: 8px;}
+        .party {
+            font-size: 0.8em;
+            color: #666;
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
 
-        /* ⭐ 説明文（1行だけ） */
+        /* 説明文（1行だけ） */
         .candidate-desc {
             margin-top: 8px;
             font-size: 0.9em;
@@ -76,7 +89,7 @@
             text-overflow: ellipsis;
         }
 
-        /* ⭐ 続きを誘導する CTA */
+        /* 続きを誘導する CTA */
         .read-more {
             margin-top: 6px;
             font-size: 0.85em;
@@ -95,7 +108,11 @@
             border-radius: 8px;
         }
         .score-label { font-size: 0.8em; color: #666; }
-        .score-value { font-size: 1.2em; font-weight: bold; color: #1a2e45; }
+        .score-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1a2e45;
+        }
         .score-value.bad { color: #e63946; }
     </style>
 </head>

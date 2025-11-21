@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>polimiru | 検証詳細</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- ★修正1：最後の変な記号(›)を削除 -->
-    <link rel="stylesheet" href="css/style.css">
 
+    <!-- ここを分割CSSに変更 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/elections.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <!-- このページ専用（本当は detail.css を作るべき） -->
     <style>
-        /* カードのデザイン */
         .card {
             background: white;
-            max-width: 600px; /* 少し幅を広げました */
-            margin: 0 auto 30px auto;
+            max-width: 600px;
+            margin: 0 auto 30px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             overflow: hidden;
@@ -30,52 +34,112 @@
         }
         .candidate-name { font-size: 1.2em; font-weight: bold; }
         .party-label { font-size: 0.8em; background: #4a6fa5; padding: 4px 8px; border-radius: 4px; }
-        
-        .topic { padding: 20px; border-bottom: 1px solid #eee; }
-        .topic-tag { color: #e63946; font-size: 0.8em; font-weight: bold; text-transform: uppercase; }
-        .topic-title { font-size: 1.4em; font-weight: bold; margin-top: 4px; }
-        
-        /* ステータスバッジ */
-        .status-badge { display: inline-block; margin-top: 8px; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9em; }
-        .status-warning { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
-        .status-good { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
 
-        /* タイムラインエリア */
+        .topic { padding: 20px; border-bottom: 1px solid #eee; }
+        .topic-tag { color: #e63946; font-size: 0.8em; font-weight: bold; }
+        .topic-title { font-size: 1.4em; font-weight: bold; margin-top: 4px; }
+
+        .status-badge {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .status-warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+        .status-good {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
         .comparison { padding: 20px; }
-        .timeline-item { position: relative; padding-left: 24px; margin-bottom: 30px; border-left: 2px solid #ddd; }
-        .timeline-item::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: #ddd; }
+        .timeline-item {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 30px;
+            border-left: 2px solid #ddd;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ddd;
+        }
         .timeline-item.promise::before { background: #4a90e2; }
-        .timeline-item.action::before { background: #e63946; }
+        .timeline-item.action::before  { background: #e63946; }
 
         .date { font-size: 0.85em; color: #888; margin-bottom: 6px; display: block; }
-        .content { font-weight: bold; margin-bottom: 10px; display: block; line-height: 1.5; }
-        
-        /* 引用ボックス */
-        .quote-box { background: #f9f9f9; padding: 15px; border-radius: 8px; font-size: 0.9em; border-left: 4px solid #ccc; margin-bottom: 10px; color: #555; }
-        
-        /* ソースリンク */
-        .source-link { display: inline-flex; align-items: center; font-size: 0.8em; color: #666; text-decoration: none; border: 1px solid #ddd; padding: 6px 12px; border-radius: 20px; background: #fff; transition: 0.2s; }
-        .source-link:hover { background: #f0f0f0; color: #333; border-color: #bbb; }
+        .content { font-weight: bold; margin-bottom: 10px; line-height: 1.5; }
 
-        /* AI要約エリア */
-        .ai-summary { background: #f0f7ff; padding: 20px; font-size: 0.95em; color: #333; border-top: 1px solid #e1e4e8; line-height: 1.6; }
-        .ai-label { font-weight: bold; color: #0056b3; margin-bottom: 8px; display: block; font-size: 0.9em; }
+        .quote-box {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            border-left: 4px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .source-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.8em;
+            color: #666;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: white;
+            transition: 0.2s;
+        }
+        .source-link:hover {
+            background: #f0f0f0;
+            color: #333;
+            border-color: #bbb;
+        }
+
+        .ai-summary {
+            background: #f0f7ff;
+            padding: 20px;
+            font-size: 0.95em;
+            color: #333;
+            border-top: 1px solid #e1e4e8;
+            line-height: 1.6;
+        }
+        .ai-label {
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
-    <!-- コンテンツ部分 -->
     <div class="container">
         <div class="card">
             <div class="header">
                 <span class="candidate-name">町田 太郎 (現職)</span>
                 <span class="party-label">無所属</span>
             </div>
+
             <div class="topic">
                 <div class="topic-tag">#駅前再開発 #渋滞対策</div>
                 <div class="topic-title">駅周辺の渋滞完全解消</div>
                 <div class="status-badge status-warning">⚠️ 公約と矛盾の可能性あり</div>
             </div>
+
             <div class="comparison">
                 <div class="timeline-item promise">
                     <span class="date">2022年2月 選挙公報</span>
@@ -90,6 +154,7 @@
                     <a href="#" class="source-link"><i class="fa-regular fa-file-lines"></i> 議事録(R6.9月) P.12を確認</a>
                 </div>
             </div>
+
             <div class="ai-summary">
                 <span class="ai-label"><i class="fa-solid fa-robot"></i> AI解説</span>
                 選挙時は「4年以内の完成」を約束しましたが、計画延長により公約達成は不可能となりました。
@@ -100,11 +165,13 @@
             <div class="header">
                 <span class="candidate-name">町田 太郎 (現職)</span>
             </div>
+
             <div class="topic">
                 <div class="topic-tag">#子育て #教育</div>
                 <div class="topic-title">中学校給食の全員実施</div>
                 <div class="status-badge status-good">✅ 順調に進行中</div>
             </div>
+
             <div class="comparison">
                 <div class="timeline-item promise">
                     <span class="date">2022年2月 所信表明演説</span>
@@ -119,7 +186,6 @@
         </div>
     </div>
 
-   <!-- ★修正2：jsフォルダの中を指定 -->
-   <script src="js/layout.js?v=3"></script>
+    <script src="js/layout.js?v=3"></script>
 </body>
 </html>

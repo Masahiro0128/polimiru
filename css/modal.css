@@ -1,0 +1,166 @@
+/* =========================================
+   エリア設定モーダル 共通
+========================================= */
+.area-modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.area-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content.modal-wide {
+    background: white;
+    padding: 0;
+    border-radius: 16px;
+    width: 95%;
+    max-width: 600px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header h3 {
+    margin: 0;
+    color: #1a2e45;
+    font-size: 1.2rem;
+}
+
+.close-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.area-scroll-box {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+.region-group {
+    margin-bottom: 30px;
+}
+.region-group h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-left: 4px solid #e63946;
+    padding-left: 10px;
+}
+
+.pref-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+}
+.pref-buttons button {
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.pref-buttons button:hover {
+    background: #e7f1ff;
+    border-color: #1a2e45;
+    color: #1a2e45;
+}
+
+.clear-area {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.clear-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* =========================================
+   モーダルのスマホ用レイアウト
+========================================= */
+@media (max-width: 768px) {
+
+    .area-modal {
+        align-items: flex-end;  /* 下寄せ（ハーフモーダル風） */
+    }
+
+    .modal-content.modal-wide {
+        width: 100%;
+        max-width: none;
+        height: 85vh;
+        border-radius: 20px 20px 0 0;   /* 上だけ角丸 */
+        box-shadow: 0 -5px 25px rgba(0,0,0,0.2);
+        margin: 0;
+    }
+
+    .modal-header {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .area-scroll-box {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .region-group h4 {
+        font-size: 1rem;
+        margin-top: 10px;
+        background: #f4f4f4;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border-left: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .pref-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .pref-buttons button {
+        padding: 12px 0;
+        font-size: 0.9rem;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+}

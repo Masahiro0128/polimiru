@@ -1,0 +1,21 @@
+/* =========================================
+   1. 基本設定 & 共通レイアウト
+========================================= */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 100px; /* ヘッダーの高さ分あける */
+    color: #333;
+    -webkit-text-size-adjust: 100%; /* スマホでの勝手な文字拡大を防ぐ */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

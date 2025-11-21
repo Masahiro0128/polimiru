@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>polimiru | 参議院選挙（東京都選挙区）</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- 共通CSS（分割版） -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/elections.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
     <style>
         /* --- このページ独自のスタイル（タブなど） --- */
         
-        /* 衆参切り替えタブ */
+        /* 衆参切り替えタブ（今は未使用だが将来用） */
         .election-tabs {
             display: flex;
             justify-content: center;
@@ -58,14 +65,36 @@
         }
         .p-card:hover { transform: translateY(-5px); }
 
-        .p-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-        .p-icon { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid #f0f2f5; }
+        .p-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .p-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f0f2f5;
+        }
         
-        .p-info .name { font-size: 1.3em; font-weight: bold; display: block; }
-        .p-info .kana { font-size: 0.8em; color: #888; }
+        .p-info .name {
+            font-size: 1.3em;
+            font-weight: bold;
+            display: block;
+        }
+        .p-info .kana {
+            font-size: 0.8em;
+            color: #888;
+        }
         .p-party { 
-            display: inline-block; font-size: 0.8em; background: #eee; 
-            padding: 2px 8px; border-radius: 4px; margin-top: 4px; 
+            display: inline-block;
+            font-size: 0.8em;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-top: 4px;
         }
 
         /* パラメータバー */
@@ -76,14 +105,20 @@
             margin-bottom: 15px;
         }
         .stat-row {
-            display: flex; justify-content: space-between; align-items: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 8px;
         }
         .stat-row:last-child { margin-bottom: 0; }
         .stat-label { font-size: 0.85em; color: #666; }
         .stat-val { font-weight: bold; font-size: 1.1em; color: #1a2e45; }
         
-        .p-desc { font-size: 0.9em; color: #555; line-height: 1.6; }
+        .p-desc {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.6;
+        }
 
     </style>
 </head>
@@ -95,8 +130,6 @@
     </div>
 
     <div class="container">
-
-
         <div class="section-heading">
             <div class="section-title">立候補予定者</div>
         </div>
@@ -105,45 +138,6 @@
     </div>
 
     <script src="politicians.js"></script>
-    <script src="layout.js?v=3"></script>
-
-    <script>
-        const container = document.getElementById('politician-container');
-
-        // 1. データをフィルタリング（東京都 かつ 参議院 の人だけ抽出）
-        const targetPoliticians = politicians.filter(p => p.area === '東京都' && p.type === 'sangiin');
-
-        // 2. カードを生成
-        targetPoliticians.forEach(p => {
-            const html = `
-            <a href="${p.url}" class="p-card">
-                <div class="p-header">
-                    <img src="${p.icon}" class="p-icon" alt="${p.name}">
-                    <div class="p-info">
-                        <span class="kana">${p.kana}</span>
-                        <span class="name">${p.name}</span>
-                        <span class="p-party">${p.party}</span>
-                    </div>
-                </div>
-                
-                <div class="p-stats">
-                    <div class="stat-row">
-                        <span class="stat-label">公約達成率</span>
-                        <span class="stat-val">${p.manifesto_rate}%</span>
-                    </div>
-                    <div class="stat-row">
-                        <span class="stat-label">言動一致度</span>
-                        <span class="stat-val">${p.consistency_rate}%</span>
-                    </div>
-                </div>
-
-                <div class="p-desc">
-                    ${p.desc}
-                </div>
-            </a>
-            `;
-            container.insertAdjacentHTML('beforeend', html);
-        });
-    </script>
+    <script src="../js/layout.js?v=3"></script>
 </body>
 </html>

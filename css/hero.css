@@ -1,0 +1,154 @@
+/* =========================================
+   トップページ・ヒーローエリア
+========================================= */
+
+/* ヒーローエリア全体 */
+.platform-hero {
+    background: linear-gradient(135deg, #1a2e45 0%, #2a4a70 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.platform-hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.platform-hero p {
+    margin-top: 15px;
+    font-size: 1.1em;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* ヒーロー直下のスコア説明 */
+.score-short-explain {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.1em;          /* ヒーローの本文と揃える */
+    color: #e5e7eb;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   検索バー（入力機能付き）
+========================================= */
+
+.search-wrapper {
+    position: relative;
+    max-width: 400px;
+    margin: 30px auto 0;
+    width: 100%;
+}
+
+/* 虫眼鏡アイコン */
+.search-icon-overlay {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.96);
+    pointer-events: none;
+    z-index: 2;
+    filter: none;
+    text-shadow: none;
+}
+
+/* 入力欄本体 */
+.search-input {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 20px 12px 45px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+/* プレースホルダー */
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* フォーカス時 */
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* エリア設定ボタン（ヒーローエリア内） */
+.hero-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.hero-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+}
+
+.hero-btn.is-set {
+    background: white;
+    color: #1a2e45;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================
+   ヒーローエリア・スマホ用
+========================================= */
+@media (max-width: 768px) {
+
+    .platform-hero {
+        padding: 60px 20px;
+    }
+
+    .platform-hero h1 {
+        font-size: 1.8em;
+        line-height: 1.3;
+    }
+
+    .platform-hero p {
+        font-size: 0.95em;
+        margin-top: 10px;
+    }
+
+    .score-short-explain {
+        font-size: 0.95em;
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+}

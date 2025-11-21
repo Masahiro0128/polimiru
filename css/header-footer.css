@@ -1,0 +1,162 @@
+/* =========================================
+   2. ヘッダー (PC/共通)
+========================================= */
+.site-navbar {
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.site-logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a2e45;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* PC用メニューリンク */
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    bottom: 0; left: 0;
+    background-color: #1a2e45;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover::after { width: 100%; }
+
+/* PCでは隠すもの（ハンバーガー関連） */
+.hamburger-menu,
+.close-menu,
+.menu-overlay {
+    display: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* =========================================
+   4. フッター
+========================================= */
+.site-footer {
+    background-color: #f2f2f2;
+    padding: 0 40px;
+    height: 80px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 60px;
+}
+
+.footer-social { display: flex; align-items: center; gap: 20px; }
+.follow-text { font-weight: bold; font-size: 0.9em; margin-right: 10px; }
+.social-icon {
+    color: #333; font-size: 1.2em; text-decoration: none; transition: color 0.2s;
+}
+.social-icon:hover { color: #1a2e45; }
+
+.back-to-top {
+    background-color: #e6e6e6;
+    padding: 10px 20px;
+    text-decoration: none; color: #333;
+    font-size: 0.9em; font-weight: bold;
+    border-radius: 4px; transition: background-color 0.2s;
+    display: flex; align-items: center; gap: 8px;
+}
+.back-to-top:hover { background-color: #d6d6d6; }
+
+
+/* =========================================
+   スマホ用ナビ & フッター
+========================================= */
+@media (max-width: 768px) {
+
+    .site-navbar {
+        padding: 0 20px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #1a2e45;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    /* ドロワーメニュー */
+    .nav-links {
+        position: fixed; top: 0; right: -100%;
+        width: 85%; height: 100vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: stretch; justify-content: flex-start;
+        padding: 80px 30px;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+        transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        z-index: 2000;
+    }
+    .nav-links.active { right: 0; }
+
+    .nav-links a {
+        font-size: 16px; font-weight: 500; color: #333;
+        padding: 20px 0; border-bottom: 1px solid #eee;
+        width: 100%; display: block;
+    }
+    .nav-links a::after { display: none; }
+
+    .nav-links .contact-btn {
+        margin-top: 40px; border: 1px solid #1a2e45; border-radius: 50px;
+        text-align: center; padding: 15px 0; font-weight: bold;
+    }
+
+    .close-menu {
+        display: block; position: absolute;
+        top: 25px; right: 20px;
+        background: none; border: none;
+        font-size: 32px; color: #1a2e45; cursor: pointer;
+    }
+
+    .menu-overlay {
+        display: block; position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.4);
+        opacity: 0; visibility: hidden;
+        transition: 0.4s;
+        z-index: 1500;
+    }
+    .menu-overlay.active { opacity: 1; visibility: visible; }
+
+    /* フッター調整 */
+    .site-footer {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+}
