@@ -231,4 +231,20 @@ function loadFooter() {
 document.addEventListener("DOMContentLoaded", () => {
     loadHeader();
     loadFooter();
+
+    // 🔥 ここから追加：スコア説明リンクを自動で挿入する処理
+    const headers = document.querySelectorAll('.js-score-method-header');
+
+    headers.forEach(header => {
+        // 二重追加防止
+        if (header.querySelector('.score-method-link')) return;
+
+        const link = document.createElement('a');
+        link.href = '../method.html'; 
+        link.className = 'score-method-link';
+        link.textContent = 'スコアの計算方法を見る';
+
+        header.appendChild(link);
+    });
+    // 🔥 追加ここまで
 });

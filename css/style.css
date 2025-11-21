@@ -505,3 +505,23 @@ body.no-scroll { overflow: hidden; }
         font-size: 0.9rem;
     }
 }
+
+/* 🔥 共通：スコア説明リンクの表示と配置 */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.score-method-link {
+    font-size: 0.8em;
+    color: #1a2e45;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.score-method-link:hover {
+    text-decoration: underline;
+}

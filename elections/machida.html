@@ -87,8 +87,12 @@
 
         .score-area {
             margin-top: 15px;
-            display: flex; justify-content: space-between; align-items: center;
-            background: #f9f9f9; padding: 10px; border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
         }
         .score-label { font-size: 0.8em; color: #666; }
         .score-value { font-size: 1.2em; font-weight: bold; color: #1a2e45; }
@@ -103,7 +107,10 @@
     </div>
 
     <div class="container">
-        <div class="section-title">立候補予定者一覧</div>
+        <!-- JS がリンクを自動で挿入するターゲット -->
+        <div class="section-header js-score-method-header">
+            <div class="section-title">立候補予定者一覧</div>
+        </div>
 
         <div class="candidate-list" id="candidate-container"></div>
     </div>
@@ -115,8 +122,17 @@
         const container = document.getElementById('candidate-container');
         
         candidates.forEach(person => {
-            const manifestoScore = person.score_manifesto ? person.score_manifesto + '%' : '-';
-            const consistencyClass = person.score_consistency < 50 ? 'bad' : '';
+            // 表示用の総合スコア
+            let overallScore = null;
+            if (typeof person.overall_score === 'number') {
+                overallScore = person.overall_score;
+            } else if (typeof person.score_manifesto === 'number') {
+                // 旧データ互換：overall_score がなければ一旦これを使う
+                overallScore = person.score_manifesto;
+            }
+
+            const scoreText = overallScore !== null ? `${overallScore} / 100` : '-';
+            const scoreClass = overallScore !== null && overallScore < 50 ? 'bad' : '';
 
             const cardHTML = `
                 <a href="${person.url}" class="candidate-card">
@@ -132,12 +148,8 @@
 
                         <div class="score-area">
                             <div>
-                                <div class="score-label">公約達成率</div>
-                                <div class="score-value">${manifestoScore}</div>
-                            </div>
-                            <div>
-                                <div class="score-label">言動一致度</div>
-                                <div class="score-value ${consistencyClass}">${person.score_consistency}%</div>
+                                <div class="score-label">政策の信頼度スコア</div>
+                                <div class="score-value ${scoreClass}">${scoreText}</div>
                             </div>
                         </div>
                     </div>
