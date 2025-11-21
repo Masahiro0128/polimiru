@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>polimiru | 町田市長選2026</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+
     <style>
         .hero {
             text-align: center;
@@ -48,7 +49,7 @@
         }
 
         .card-header { height: 100px; position: relative; }
-        
+
         .face-icon {
             width: 80px; height: 80px;
             border-radius: 50%;
@@ -61,7 +62,29 @@
         .card-body { padding: 50px 20px 20px 20px; }
         .name { font-size: 1.4em; font-weight: bold; margin: 0; }
         .party { font-size: 0.8em; color: #666; background: #eee; padding: 2px 6px; border-radius: 4px; margin-left: 8px;}
-        
+
+        /* ⭐ 説明文（1行だけ） */
+        .candidate-desc {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; 
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* ⭐ 続きを誘導する CTA */
+        .read-more {
+            margin-top: 6px;
+            font-size: 0.85em;
+            color: #1a2e45;
+            font-weight: bold;
+            display: inline-block;
+        }
+
         .score-area {
             margin-top: 15px;
             display: flex; justify-content: space-between; align-items: center;
@@ -87,7 +110,7 @@
 
     <script src="../js/candidates.js"></script>
     <script src="../js/layout.js?v=3"></script>
-    
+
     <script>
         const container = document.getElementById('candidate-container');
         
@@ -100,10 +123,13 @@
                     <div class="card-header" style="background-color: ${person.party === '現職' ? '#4a6fa5' : '#e63946'};">
                         <img src="${person.image}" class="face-icon" alt="顔写真">
                     </div>
+
                     <div class="card-body">
                         <div class="name">${person.name} <span class="party">${person.party}</span></div>
-                        <p style="font-size: 0.9em; color: #666;">${person.desc}</p>
-                        
+
+                        <p class="candidate-desc">${person.desc}</p>
+                        <div class="read-more">続きを読む →</div>
+
                         <div class="score-area">
                             <div>
                                 <div class="score-label">公約達成率</div>
@@ -120,5 +146,6 @@
             container.insertAdjacentHTML('beforeend', cardHTML);
         });
     </script>
+
 </body>
 </html>
