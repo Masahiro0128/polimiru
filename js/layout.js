@@ -171,10 +171,19 @@ function loadHeader() {
     if (closeBtn) closeBtn.addEventListener('click', closeMenu);
     if (overlay) overlay.addEventListener('click', closeMenu);
 
-    // メニュー内リンクを押したら閉じる（Contact も含む）
+    // メニュー内リンクを押したら閉じる（Contact も確実に遷移させる）
     document.querySelectorAll('#nav-links-container a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+
+            // 先にメニューを閉じる
             closeMenu();
+
+            // href が "#" 以外なら、明示的にページ遷移
+            if (href && href !== '#') {
+                e.preventDefault();          // ブラウザ任せをやめて
+                window.location.href = href; // 自分で遷移させる
+            }
         });
     });
 
