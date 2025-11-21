@@ -1,25 +1,32 @@
-// 共通ヘッダーを作る関数
-function loadHeader() {
-    // ★ 自分の居場所を script タグから判定
-    let homePath = 'index.html';      // デフォルト（トップ）
-    let contactPath = 'contact.html'; // Contact へのパス
+// =========================================
+//  ベースURLを求めるヘルパー
+// =========================================
+function getBaseUrl() {
+    const origin = window.location.origin;   // 例: https://masahiro0128.github.io
+    const path   = window.location.pathname; // 例: /polimiru/index.html
 
-    const scripts = document.getElementsByTagName('script');
-    for (let i = 0; i < scripts.length; i++) {
-        const src = scripts[i].getAttribute('src');
-        if (src && src.includes('layout.js')) {
-            // "../js/layout.js" なら 1 つ上の階層にいる
-            if (src.includes('../')) {
-                homePath = '../index.html';
-                contactPath = '../contact.html';
-            }
-            break;
-        }
+    const repoSegment = '/polimiru/';
+
+    if (path.includes(repoSegment)) {
+        // GitHub Pages /polimiru/ 配下にいるとき
+        return origin + repoSegment;        // 例: https://.../polimiru/
+    } else {
+        // ローカル開発など /polimiru/ が含まれない場合
+        const dir = path.replace(/[^\/]+$/, ''); // 最後のファイル名を削る
+        return origin + dir;                     // 例: http://127.0.0.1:5500/polimiru/
     }
+}
+
+// =========================================
+//  共通ヘッダー
+// =========================================
+function loadHeader() {
+    const baseUrl     = getBaseUrl();
+    const homePath    = baseUrl + 'index.html';
+    const contactPath = baseUrl + 'contact.html';
 
     const headerHTML = `
     <nav class="site-navbar">
-        <!-- 計算したパス(homePath)を使う -->
         <a href="${homePath}" class="site-logo">polimiru</a>
         
         <button class="hamburger-menu" id="hamburger-btn">
@@ -82,7 +89,7 @@ function loadHeader() {
                         <button onclick="setArea('fukui', '福井県')">福井県</button>
                         <button onclick="setArea('yamanashi', '山梨県')">山梨県</button>
                         <button onclick="setArea('nagano', '長野県')">長野県</button>
-                        <button.onclick="setArea('gifu', '岐阜県')">岐阜県</button>
+                        <button onclick="setArea('gifu', '岐阜県')">岐阜県</button>
                         <button onclick="setArea('shizuoka', '静岡県')">静岡県</button>
                         <button onclick="setArea('aichi', '愛知県')">愛知県</button>
                     </div>
@@ -139,14 +146,14 @@ function loadHeader() {
         </div>
     </div>
     `;
-    
+
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
 
     // --- ハンバーガーメニューの処理 ---
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const closeBtn = document.getElementById('close-btn');
+    const hamburgerBtn      = document.getElementById('hamburger-btn');
+    const closeBtn          = document.getElementById('close-btn');
     const navLinksContainer = document.getElementById('nav-links-container');
-    const overlay = document.getElementById('menu-overlay');
+    const overlay           = document.getElementById('menu-overlay');
 
     const openMenu = () => {
         if (!navLinksContainer) return;
@@ -168,29 +175,22 @@ function loadHeader() {
             openMenu();
         });
     }
-    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-    if (overlay) overlay.addEventListener('click', closeMenu);
+    if (closeBtn)  closeBtn.addEventListener('click', closeMenu);
+    if (overlay)   overlay.addEventListener('click', closeMenu);
 
-    // メニュー内リンクを押したら閉じるだけ（遷移はブラウザに任せる）
-    document.querySelectorAll('#nav-links-container a').forEach(link => {
-        link.addEventListener('click', () => {
-            closeMenu();
-        });
-    });
-
-    // ★ Contact だけは確実に contactPath に飛ばす
+    // ★ Contact だけは「絶対 contact に飛ぶ」保険をかける
     const contactLink = document.querySelector('#nav-links-container .contact-btn');
     if (contactLink) {
         contactLink.addEventListener('click', (e) => {
-            e.preventDefault();              // ブラウザ任せをやめて
-            closeMenu();                     // 先にメニューを閉じて
-            window.location.href = contactPath; // 自分で遷移させる
+            e.preventDefault();              // デフォルト動作を止めて
+            closeMenu();                     // メニューを閉じてから
+            window.location.href = contactPath; // 絶対に contact.html に遷移
         });
     }
 
-    // --- エリア設定の処理 ---
-    const areaBtn = document.getElementById('area-btn');
-    const areaModal = document.getElementById('area-modal');
+    // --- エリア設定モーダル ---
+    const areaBtn      = document.getElementById('area-btn');
+    const areaModal    = document.getElementById('area-modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
 
     if (areaBtn) {
@@ -208,21 +208,20 @@ function loadHeader() {
     checkSavedArea();
 }
 
-// エリアを保存して画面を更新する関数
+// =========================================
+//  エリア保存 / 反映
+// =========================================
 window.setArea = function(areaId, areaName) {
     if (areaId) {
-        localStorage.setItem('my_area_id', areaId);
+        localStorage.setItem('my_area_id',   areaId);
         localStorage.setItem('my_area_name', areaName);
     } else {
         localStorage.removeItem('my_area_id');
         localStorage.removeItem('my_area_name');
     }
-
-    // 再読み込みして反映
     location.reload();
 };
 
-// 保存されたデータを読み込んでボタンの文字を変える関数
 function checkSavedArea() {
     const savedName = localStorage.getItem('my_area_name');
     const btn = document.getElementById('area-btn');
@@ -239,7 +238,9 @@ function checkSavedArea() {
     }
 }
 
-// 共通フッター
+// =========================================
+//  共通フッター
+// =========================================
 function loadFooter() {
     const footerHTML = `
     <footer class="site-footer">
@@ -258,32 +259,24 @@ function loadFooter() {
     document.body.insertAdjacentHTML('beforeend', footerHTML);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// =========================================
+//  DOMContentLoaded
+// =========================================
+document.addEventListener('DOMContentLoaded', () => {
     loadHeader();
     loadFooter();
 
-    // ★ スコア説明リンクを自動で挿入（階層に応じてパス切り替え）
-    let methodPath = 'method.html';
-
-    const scripts = document.getElementsByTagName('script');
-    for (let i = 0; i < scripts.length; i++) {
-        const src = scripts[i].getAttribute('src');
-        if (src && src.includes('layout.js')) {
-            if (src.includes('../')) {
-                methodPath = '../method.html';
-            }
-            break;
-        }
-    }
+    // スコア説明リンク（method.html）のパスも baseUrl から作る
+    const baseUrl    = getBaseUrl();
+    const methodPath = baseUrl + 'method.html';
 
     const headers = document.querySelectorAll('.js-score-method-header');
 
     headers.forEach(header => {
-        // 二重追加防止
         if (header.querySelector('.score-method-link')) return;
 
         const link = document.createElement('a');
-        link.href = methodPath;
+        link.href      = methodPath;
         link.className = 'score-method-link';
         link.textContent = 'スコアの計算方法を見る';
 
