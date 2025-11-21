@@ -87,15 +87,72 @@ body {
 }
 
 /* 検索バー */
-.search-dummy {
-    margin-top: 30px; display: inline-block;
-    background: rgba(255,255,255,0.15);
-    padding: 10px 20px; border-radius: 30px;
-    border: 1px solid rgba(255,255,255,0.3);
-    color: #ddd; font-size: 0.9em;
-    max-width: 400px; width: 100%; /* スマホでは幅一杯に */
-    text-align: left;
+/* =========================================
+   ★検索バー（入力機能付き）
+========================================= */
+/* =========================================
+   ★検索バー（入力機能付き）
+========================================= */
+.search-wrapper {
+    position: relative;
+    max-width: 400px;
+    margin: 30px auto 0;
+    width: 100%;
+}
+
+/* 虫眼鏡アイコン */
+.search-icon-overlay {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.96);  /* ほぼ真っ白でコントラストUP */
+    pointer-events: none;
+    z-index: 2;                         /* 入力欄より前面に固定 */
+    filter: none;                       /* 念のため */
+    text-shadow: none;
+}
+
+/* 入力欄本体 */
+.search-input {
+    position: relative;
+    z-index: 1;                         /* アイコンより一段下のレイヤー */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15); /* 半透明 */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 20px 12px 45px;       /* 左にアイコン分の余白 */
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);         /* ガラス効果は維持 */
     box-sizing: border-box;
+}
+
+/* プレースホルダー（入力前の薄い文字）の色 */
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 入力中の見た目 */
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+
+/* プレースホルダー（入力前の薄い文字）の色 */
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 入力中の見た目 */
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 /* エリア設定ボタン（ヒーローエリア内） */

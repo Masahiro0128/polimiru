@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>polimiru | 政治を可視化するプラットフォーム</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- CSSフォルダを見るように指定 -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +14,16 @@
         <h1>政治を、もっと透明に。</h1>
         <p>「言ったこと」と「やったこと」のギャップを可視化する。<br>日本最大級の政治家ファクトチェックデータベース。</p>
         
-        <div class="search-dummy">🔍 選挙区や政治家の名前で検索...</div>
+        <!-- 🔍 本物の検索バーに置き換え -->
+        <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon-overlay"></i>
+            <input
+                id="search-input"
+                class="search-input"
+                type="text"
+                placeholder="選挙区名・都道府県・キーワードで検索..."
+            >
+        </div>
 
         <!-- エリア設定ボタン -->
         <div class="hero-actions">
@@ -29,86 +37,120 @@
         
         <!-- タブ切り替え -->
         <div class="filter-tabs">
-            <button class="filter-btn active" onclick="filterElections('all')">🔥 注目</button>
-            <button class="filter-btn" onclick="filterElections('national')">🏛️ 国政</button>
-            <button class="filter-btn" onclick="filterElections('local')">🗾 地方</button>
+            <button class="filter-btn active" data-category="all" onclick="filterElections('all')">🔥 注目</button>
+            <button class="filter-btn" data-category="national" onclick="filterElections('national')">🏛️ 国政</button>
+            <button class="filter-btn" data-category="local" onclick="filterElections('local')">🗾 地方</button>
         </div>
 
         <!-- カードが表示される場所 -->
         <div class="election-grid" id="election-grid"></div>
     </div>
 
-    <!-- ★ここが修正ポイント！ js/ をつけてフォルダの中を指定 -->
+    <!-- JS 読み込み -->
     <script src="js/elections.js"></script>
     <script src="js/layout.js?v=3"></script>
 
-    <!-- 自動並び替え＆表示ロジック -->
+    <!-- カード描画 & 検索ロジック -->
     <script>
         const grid = document.getElementById('election-grid');
         const savedAreaName = localStorage.getItem('my_area_name') || "";
+        const searchInput = document.getElementById('search-input');
 
-        // ページ読み込み時は「すべて（注目）」を表示
+        // 初期表示
         renderCards('all');
 
-        // --- 1. タブを切り替える機能 ---
+        // --- タブ切り替え機能 ---
         function filterElections(category) {
             document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             renderCards(category);
         }
 
-        // --- 2. カードを描画する機能 ---
+        // --- 描画メイン関数 ---
         function renderCards(category) {
-            // データが読み込めていない場合の安全策
             if (typeof elections === 'undefined') {
                 console.error("electionsデータが見つかりません");
                 return;
             }
 
-            grid.innerHTML = ""; // リセット
+            grid.innerHTML = ""; // 一旦リセット
 
-            // データの絞り込み
+            // 1. カテゴリ絞り込み
             let filteredData = elections;
-            
             if (category === 'national') {
                 filteredData = elections.filter(e => e.category === 'national');
             } else if (category === 'local') {
                 filteredData = elections.filter(e => e.category === 'local');
-            } else {
-                filteredData = elections; 
             }
 
-            // 並び替え（居住地優先）
+            // 2. 検索キーワード絞り込み
+            const queryRaw = searchInput.value.trim();
+            const query = queryRaw.toLowerCase();
+
+            if (query) {
+                filteredData = filteredData.filter(e => {
+                    const title = e.title.toLowerCase();
+                    const pref = e.prefecture.toLowerCase();
+                    const desc = (e.desc || '').replace(/<br\s*\/?>/gi, ' ').toLowerCase();
+                    return (
+                        title.includes(query) ||
+                        pref.includes(query) ||
+                        desc.includes(query)
+                    );
+                });
+            }
+
+            // 3. 居住地優先ソート
             filteredData.sort((a, b) => {
                 const isAMatch = savedAreaName.includes(a.prefecture);
                 const isBMatch = savedAreaName.includes(b.prefecture);
                 if (isAMatch && !isBMatch) return -1;
-                if (!isAMatch && isBMatch) return 1; 
-                return 0; 
+                if (!isAMatch && isBMatch) return 1;
+                return 0;
             });
 
-            // 表示
+            // 4. 該当なし
+            if (filteredData.length === 0) {
+                grid.insertAdjacentHTML('beforeend', `
+                    <p style="text-align:center; color:#666; grid-column: 1 / -1;">
+                        該当する選挙が見つかりませんでした。
+                    </p>
+                `);
+                return;
+            }
+
+            // 5. カード描画
             filteredData.forEach(election => {
                 const badgeClass = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
                 const statusClass = election.status.includes('注目') ? 'status-active' : '';
-                const highlightStyle = savedAreaName.includes(election.prefecture) ? 'border: 2px solid #1a2e45; box-shadow: 0 0 15px rgba(26, 46, 69, 0.2);' : '';
+                const highlightStyle =
+                    savedAreaName.includes(election.prefecture)
+                        ? 'border: 2px solid #1a2e45; box-shadow: 0 0 15px rgba(26, 46, 69, 0.2);'
+                        : '';
 
                 const html = `
-                <a href="${election.url}" class="election-card" style="${highlightStyle}">
-                    <div class="card-thumb" style="background-image: url('${election.image}');">
-                        <span class="badge ${badgeClass}">${election.prefecture}</span>
-                        <span class="status-label ${statusClass}">${election.status}</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="election-title">${election.title}</div>
-                        <span class="election-date">📅 ${election.date}</span>
-                        <div class="election-desc">${election.desc}</div>
-                    </div>
-                </a>
+                    <a href="${election.url}" class="election-card" style="${highlightStyle}">
+                        <div class="card-thumb" style="background-image: url('${election.image}');">
+                            <span class="badge ${badgeClass}">${election.prefecture}</span>
+                            <span class="status-label ${statusClass}">${election.status}</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="election-title">${election.title}</div>
+                            <span class="election-date">📅 ${election.date}</span>
+                            <div class="election-desc">${election.desc}</div>
+                        </div>
+                    </a>
                 `;
                 grid.insertAdjacentHTML('beforeend', html);
             });
         }
+
+        // --- 検索テキスト変更時にリアルタイム更新 ---
+        searchInput.addEventListener('input', () => {
+            const activeBtn = document.querySelector('.filter-btn.active');
+            const category = activeBtn ? activeBtn.dataset.category : 'all';
+            renderCards(category);
+        });
     </script>
 </body>
 </html>

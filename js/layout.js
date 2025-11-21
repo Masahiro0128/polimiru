@@ -218,7 +218,7 @@ function loadFooter() {
             <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/polimiru?igsh=MXRjdXE2dG9vcHk0MA%3D%3D&utm_source=qr" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <a href="#" class="back-to-top">
             <i class="fa-solid fa-arrow-up"></i> Back to top
