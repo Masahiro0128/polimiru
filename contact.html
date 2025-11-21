@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimiru | Contact</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/elections.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <!-- Contactページ専用スタイル -->
+    <style>
+        .contact-hero {
+            padding: 70px 20px 40px;
+            background: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+        .contact-hero-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .contact-title {
+            font-size: 2rem;
+            letter-spacing: 0.15em;
+            margin: 0 0 4px;
+        }
+        .contact-sub {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .contact-main {
+            max-width: 900px;
+            margin: 24px auto 60px;
+            padding: 0 20px 40px;
+        }
+
+        .contact-lead {
+            font-size: 0.95rem;
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        /* Googleフォーム埋め込み用の枠 */
+        .form-embed-wrapper {
+            background: #fafafa;
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid #e5e7eb;
+        }
+        .form-embed-wrapper iframe {
+            width: 100%;
+            min-height: 1100px; /* 足りなければあとで調整 */
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero {
+                padding-top: 60px;
+            }
+            .contact-title {
+                font-size: 1.6rem;
+            }
+            .form-embed-wrapper iframe {
+                min-height: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 共通ヘッダーは layout.js が差し込む -->
+
+    <section class="contact-hero">
+        <div class="contact-hero-inner">
+            <h1 class="contact-title">CONTACT</h1>
+            <p class="contact-sub">お問い合わせ・ご意見</p>
+        </div>
+    </section>
+
+    <main class="contact-main">
+        <p class="contact-lead">
+            polimiru に関するご意見・ご感想、取材・共同研究のご相談、データの誤りに関するご指摘などは、下記フォームからお送りください。<br>
+            いただいた内容はすべて拝見しますが、個別のご返信ができない場合もあります。あらかじめご了承ください。
+        </p>
+
+        <div class="form-embed-wrapper">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSezEn_05B5WK5qh6ARVQcFew3WP7-Mnbg85fh0LJ_1DduMKcg/viewform?embedded=true"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+            >
+                読み込んでいます…
+            </iframe>
+        </div>
+    </main>
+
+    <!-- 共通フッターなど -->
+    <script src="js/layout.js?v=3"></script>
+</body>
+</html>

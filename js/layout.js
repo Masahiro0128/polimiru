@@ -34,7 +34,7 @@ function loadHeader() {
             <a href="#">About</a>
             <a href="#">News</a>
             <a href="#">Elections</a>
-            <a href="#" class="contact-btn">Contact</a>
+            <a href="contact.html" class="contact-btn">Contact</a>
         </div>
     </nav>
     <div class="menu-overlay" id="menu-overlay"></div>
