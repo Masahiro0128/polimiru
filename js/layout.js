@@ -25,7 +25,7 @@ function loadHeader() {
     const contactPath = pathPrefix + 'contact.html';
     const methodPath  = pathPrefix + 'method.html';
 
-    // --- ヘッダーとモーダルのHTML生成（完全版） ---
+    // --- HTML生成 ---
     const headerHTML = `
     <nav class="site-navbar">
         <a href="${homePath}" class="site-logo">polimiru</a>
@@ -39,7 +39,8 @@ function loadHeader() {
             <a href="#">About</a>
             <a href="#">News</a>
             <a href="#">Elections</a>
-            <a href="${contactPath}" class="contact-btn" onclick="window.location.href='${contactPath}'; return false;">Contact</a>
+            
+            <a href="${contactPath}" id="global-contact-btn" class="contact-btn">Contact</a>
         </div>
     </nav>
     <div class="menu-overlay" id="menu-overlay"></div>
@@ -50,7 +51,6 @@ function loadHeader() {
                 <h3>居住地を選択</h3>
                 <button id="close-modal-btn" class="close-icon"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            
             <div class="area-scroll-box">
                 <div class="region-group">
                     <h4>北海道・東北</h4>
@@ -64,7 +64,6 @@ function loadHeader() {
                         <button onclick="setArea('fukushima', '福島県')">福島県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>関東</h4>
                     <div class="pref-buttons">
@@ -77,7 +76,6 @@ function loadHeader() {
                         <button onclick="setArea('kanagawa', '神奈川県')">神奈川県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>中部</h4>
                     <div class="pref-buttons">
@@ -92,7 +90,6 @@ function loadHeader() {
                         <button onclick="setArea('aichi', '愛知県')">愛知県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>近畿</h4>
                     <div class="pref-buttons">
@@ -105,7 +102,6 @@ function loadHeader() {
                         <button onclick="setArea('wakayama', '和歌山県')">和歌山県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>中国・四国</h4>
                     <div class="pref-buttons">
@@ -120,7 +116,6 @@ function loadHeader() {
                         <button onclick="setArea('kochi', '高知県')">高知県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>九州・沖縄</h4>
                     <div class="pref-buttons">
@@ -134,7 +129,6 @@ function loadHeader() {
                         <button onclick="setArea('okinawa', '沖縄県')">沖縄県</button>
                     </div>
                 </div>
-
                 <div class="clear-area">
                     <button onclick="setArea(null, 'エリア未設定')" class="clear-btn">
                         <i class="fa-regular fa-trash-can"></i> 設定を解除する
@@ -176,15 +170,28 @@ function loadHeader() {
     const closeModalBtn = document.getElementById('close-modal-btn');
 
     if (areaBtn && areaModal) {
-        areaBtn.addEventListener('click', () => {
-            areaModal.classList.add('active');
-        });
+        areaBtn.addEventListener('click', () => { areaModal.classList.add('active'); });
+    }
+    if (closeModalBtn && areaModal) {
+        closeModalBtn.addEventListener('click', () => { areaModal.classList.remove('active'); });
     }
 
-    if (closeModalBtn && areaModal) {
-        closeModalBtn.addEventListener('click', () => {
-            areaModal.classList.remove('active');
-        });
+    // --- ★Contactボタンの強制発火処理 (ここが最強の修正) ---
+    const contactBtn = document.getElementById('global-contact-btn');
+    if (contactBtn) {
+        // 通常のクリックと、スマホのタッチ終了時(touchend)の両方を監視
+        const forceNavigate = (e) => {
+            // デフォルトのリンク動作を一旦止める（二重遷移防止）
+            e.preventDefault();
+            e.stopPropagation();
+            // メニューを閉じる
+            toggleMenu(false);
+            // JSで強制的にページを飛ばす
+            window.location.href = contactPath;
+        };
+
+        contactBtn.addEventListener('click', forceNavigate);
+        contactBtn.addEventListener('touchend', forceNavigate); // スマホ用
     }
     
     checkSavedArea();
@@ -232,7 +239,7 @@ function checkSavedArea() {
 }
 
 // =========================================
-//  共通フッター（SNSアイコン完全復活版）
+//  共通フッター（SNSアイコン入り）
 // =========================================
 function loadFooter() {
     const footerHTML = `
@@ -250,7 +257,6 @@ function loadFooter() {
     </footer>
     `;
     
-    // もし既にフッターがあったら消す（念の為の重複防止）
     const existingFooter = document.querySelector('footer');
     if (existingFooter) existingFooter.remove();
 
