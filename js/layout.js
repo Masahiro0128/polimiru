@@ -80,7 +80,7 @@ function loadHeader() {
                         <button onclick="setArea('kanagawa', '神奈川県')">神奈川県</button>
                     </div>
                 </div>
-                 <div class="region-group">
+                <div class="region-group">
                     <h4>中部</h4>
                     <div class="pref-buttons">
                         <button onclick="setArea('niigata', '新潟県')">新潟県</button>
@@ -180,9 +180,6 @@ function loadHeader() {
     if (closeModalBtn && areaModal) {
         closeModalBtn.addEventListener('click', () => { areaModal.classList.remove('active'); });
     }
-
-    // ★修正：Contactボタンに対するJS制御（addEventListener）は全て削除しました。
-    // これにより、ブラウザ標準の「リンク遷移」が邪魔されずに発動します。
     
     checkSavedArea();
     

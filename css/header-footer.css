@@ -157,65 +157,48 @@ body.no-scroll {
         font-size: 32px; 
         color: #1a2e45; 
         cursor: pointer;
+        /* ★重要：バツボタンは絶対配置のままにする */
+        z-index: 2147483647 !important; 
     }
 
-    /* ←← ここが “暗さ” と “押せない” を支配してるやつ */
+    /* オーバーレイ */
     .menu-overlay {
         display: block;
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        /* ほぼ透明レベルまで薄くする。気になるなら 0 にしてOK */
+        top: 0; left: 0;
+        width: 100%; height: 100%;
         background: rgba(0, 0, 0, 0.05);
-
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;      /* 閉じているときはクリック通す */
+        opacity: 0; visibility: hidden;
+        pointer-events: none;
         transition: opacity 0.4s;
         z-index: 1500;
     }
 
     .menu-overlay.active {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;      /* 開いてるときだけブロック */
+        opacity: 1; visibility: visible;
+        pointer-events: auto;
     }
 
-    /* フッター調整（元のままでOK） */
     .site-footer {
         flex-direction: column;
         height: auto;
         padding: 30px 20px;
         gap: 20px;
     }
-}
-/* =========================================
-   緊急修正：スマホメニューのクリックを強制許可
-   ========================================= */
-@media (max-width: 768px) {
-    /* 1. メニュー本体を、画面の何よりも手前に持ってくる */
+
+    /* === 最強の修正：バツボタン以外を手前に持ってくる === */
     .nav-links.active {
-        z-index: 2147483647 !important; /* CSSで指定できる最大値 */
-        pointer-events: auto !important; /* クリックを確実に許可 */
+        z-index: 2147483647 !important;
+        pointer-events: auto !important;
     }
 
-    /* 2. リンクとボタンをさらに手前にし、タッチ判定を強化する */
+    /* リンクとコンタクトボタンだけを対象にする（buttonタグを除外） */
     .nav-links a,
-    .nav-links button,
     .nav-links .contact-btn {
-        position: relative !important;     /* z-indexを効かせるため */
-        z-index: 2147483647 !important;    /* 最前面 */
-        pointer-events: auto !important;   /* クリック許可 */
-        cursor: pointer !important;        /* 指マークにする */
-        touch-action: manipulation !important; /* スマホのタップ遅延を防ぐ */
-    }
-
-    /* 3. 背景の黒い幕は、メニューより確実に後ろにする */
-    .menu-overlay.active {
-        z-index: 1500 !important; /* メニュー(MAX)より小さければOK */
-        pointer-events: auto !important; /* 背景タップで閉じる機能を維持 */
+        position: relative !important;
+        z-index: 2147483647 !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
+        touch-action: manipulation !important;
     }
 }
