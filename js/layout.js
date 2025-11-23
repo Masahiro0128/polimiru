@@ -1,5 +1,5 @@
 // =========================================
-//  ベースURLを求めるヘルパー（修正版）
+//  ベースURLを求めるヘルパー
 // =========================================
 function getBaseUrl() {
     const origin = window.location.origin;   // 例: http://127.0.0.1:5500
@@ -10,15 +10,13 @@ function getBaseUrl() {
         return origin + '/polimiru/';
     }
 
-    // 2. ローカル開発環境の修正ポイント
-    // URLに /elections/ が含まれている場合、それはサブフォルダなので
-    // ルート（トップ）に戻るために origin + '/' を返します。
+    // 2. ローカル開発環境 (/elections/ フォルダ内にいる場合)
+    // ここで「親フォルダに戻る」のではなく「ルート(TOP)のURL」を返します
     if (path.includes('/elections/')) {
         return origin + '/';
     }
 
     // 3. それ以外（ルート直下など）
-    // 基本的にローカルのLive Serverならルートは '/' です
     return origin + '/';
 }
 
@@ -26,6 +24,7 @@ function getBaseUrl() {
 //  共通ヘッダー
 // =========================================
 function loadHeader() {
+    // ここで正しいリンク先（絶対パス）を作っておく
     const baseUrl     = getBaseUrl();
     const homePath    = baseUrl + 'index.html';
     const contactPath = baseUrl + 'contact.html';
@@ -177,17 +176,9 @@ function loadHeader() {
     }
     if (closeBtn)  closeBtn.addEventListener('click', closeMenu);
     if (overlay)   overlay.addEventListener('click', closeMenu);
-
-    // ★ Contact だけは「絶対 contact に飛ぶ」保険をかける
-    const contactLink = document.querySelector('#nav-links-container .contact-btn');
-    if (contactLink) {
-        contactLink.addEventListener('click', (e) => {
-            // 念の為デフォルト動作を一度止めて、確実に遷移させる
-            e.preventDefault();
-            closeMenu();
-            window.location.href = contactPath;
-        });
-    }
+    
+    // ★ 修正：Contactボタンへの余計なJS干渉を削除しました。
+    // HTML上の href="${contactPath}" が正しければ自然にページ遷移します。
 
     // --- エリア設定モーダル ---
     const areaBtn      = document.getElementById('area-btn');
@@ -267,20 +258,17 @@ document.addEventListener('DOMContentLoaded', () => {
     loadHeader();
     loadFooter();
 
-    // スコア説明リンク（method.html）のパスも baseUrl から作る
+    // スコア説明リンク生成
     const baseUrl    = getBaseUrl();
     const methodPath = baseUrl + 'method.html';
 
     const headers = document.querySelectorAll('.js-score-method-header');
-
     headers.forEach(header => {
         if (header.querySelector('.score-method-link')) return;
-
         const link = document.createElement('a');
         link.href      = methodPath;
         link.className = 'score-method-link';
         link.textContent = 'スコアの計算方法を見る';
-
         header.appendChild(link);
     });
 });
