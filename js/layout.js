@@ -40,7 +40,7 @@ function loadHeader() {
             <a href="#">News</a>
             <a href="#">Elections</a>
             
-            <a href="${contactPath}" id="global-contact-btn" class="contact-btn">Contact</a>
+            <a href="${contactPath}" class="contact-btn">Contact</a>
         </div>
     </nav>
     <div class="menu-overlay" id="menu-overlay"></div>
@@ -176,23 +176,25 @@ function loadHeader() {
         closeModalBtn.addEventListener('click', () => { areaModal.classList.remove('active'); });
     }
 
-    // --- ★Contactボタンの強制発火処理 (ここが最強の修正) ---
-    const contactBtn = document.getElementById('global-contact-btn');
-    if (contactBtn) {
-        // 通常のクリックと、スマホのタッチ終了時(touchend)の両方を監視
-        const forceNavigate = (e) => {
-            // デフォルトのリンク動作を一旦止める（二重遷移防止）
-            e.preventDefault();
-            e.stopPropagation();
-            // メニューを閉じる
-            toggleMenu(false);
-            // JSで強制的にページを飛ばす
-            window.location.href = contactPath;
-        };
-
-        contactBtn.addEventListener('click', forceNavigate);
-        contactBtn.addEventListener('touchend', forceNavigate); // スマホ用
-    }
+    // --- ★ここが新修正：JSから強制的にCSSを注入して、ボタンを押せるようにする ---
+    // これならCSSファイルがどうなっていても、強制的にメニューが一番手前に来ます。
+    const styleFix = document.createElement('style');
+    styleFix.innerHTML = `
+        /* スマホメニューを強制的に最前面へ */
+        @media (max-width: 768px) {
+            .nav-links.active {
+                z-index: 2147483647 !important; /* CSSで設定できる最大値に近い値 */
+                pointer-events: auto !important; /* クリックを確実に許可 */
+            }
+            .contact-btn {
+                position: relative;
+                z-index: 2147483647 !important;
+                pointer-events: auto !important;
+                cursor: pointer !important;
+            }
+        }
+    `;
+    document.head.appendChild(styleFix);
     
     checkSavedArea();
     
