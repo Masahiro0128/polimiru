@@ -18,7 +18,7 @@ function getBaseUrl() {
 //  共通ヘッダー & モーダル制御
 // =========================================
 function loadHeader() {
-    // ★修正ポイント：現在の階層からルートまでの相対パスを自動計算
+    // ★現在の階層からルートまでの相対パスを自動計算
     const pathParts = window.location.pathname.split('/').filter(p => p !== '');
     
     // GitHub Pages (/polimiru/...) の場合は1つ分浅く計算する調整
@@ -34,9 +34,12 @@ function loadHeader() {
     }
 
     // リンク先を生成
-    const homePath    = pathPrefix + 'index.html';
-    const contactPath = pathPrefix + 'contact.html';
-    const methodPath  = pathPrefix + 'method.html';
+    const homePath      = pathPrefix + 'index.html';
+    const aboutPath     = pathPrefix + 'about.html';
+    const electionsPath = pathPrefix + 'elections/index.html';
+    const newsPath      = homePath + '#news';        // index.html 内の News セクション想定
+    const contactPath   = pathPrefix + 'contact.html';
+    const methodPath    = pathPrefix + 'method.html';
 
     // HTML生成
     const headerHTML = `
@@ -49,10 +52,9 @@ function loadHeader() {
             <button class="close-menu" id="close-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <a href="#">About</a>
-            <a href="#">News</a>
-            <a href="#">Elections</a>
-            
+            <a href="${aboutPath}">About</a>
+            <a href="${newsPath}">News</a>
+            <a href="${electionsPath}">Elections</a>
             <a href="${contactPath}" class="contact-btn">Contact</a>
         </div>
     </nav>
@@ -174,13 +176,16 @@ function loadHeader() {
         }
     };
 
-    if (hamburgerBtn) hamburgerBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleMenu(true); });
+    if (hamburgerBtn) hamburgerBtn.addEventListener('click', (e) => { 
+        e.stopPropagation(); 
+        toggleMenu(true); 
+    });
     if (closeBtn) closeBtn.addEventListener('click', () => toggleMenu(false));
     if (overlay) overlay.addEventListener('click', () => toggleMenu(false));
 
     // --- エリア選択ボタンの動作 ---
-    const areaBtn = document.getElementById('area-btn');
-    const areaModal = document.getElementById('area-modal');
+    const areaBtn      = document.getElementById('area-btn');
+    const areaModal    = document.getElementById('area-modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
 
     if (areaBtn && areaModal) {
