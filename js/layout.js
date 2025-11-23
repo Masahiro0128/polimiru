@@ -1,20 +1,25 @@
 // =========================================
-//  ベースURLを求めるヘルパー
+//  ベースURLを求めるヘルパー（修正版）
 // =========================================
 function getBaseUrl() {
-    const origin = window.location.origin;   // 例: https://masahiro0128.github.io
-    const path   = window.location.pathname; // 例: /polimiru/index.html
+    const origin = window.location.origin;   // 例: http://127.0.0.1:5500
+    const path   = window.location.pathname; // 例: /elections/machida.html
 
-    const repoSegment = '/polimiru/';
-
-    if (path.includes(repoSegment)) {
-        // GitHub Pages /polimiru/ 配下にいるとき
-        return origin + repoSegment;        // 例: https://.../polimiru/
-    } else {
-        // ローカル開発など /polimiru/ が含まれない場合
-        const dir = path.replace(/[^\/]+$/, ''); // 最後のファイル名を削る
-        return origin + dir;                     // 例: http://127.0.0.1:5500/polimiru/
+    // 1. GitHub Pages 対応 (/polimiru/ 配下の場合)
+    if (path.includes('/polimiru/')) {
+        return origin + '/polimiru/';
     }
+
+    // 2. ローカル開発環境の修正ポイント
+    // URLに /elections/ が含まれている場合、それはサブフォルダなので
+    // ルート（トップ）に戻るために origin + '/' を返します。
+    if (path.includes('/elections/')) {
+        return origin + '/';
+    }
+
+    // 3. それ以外（ルート直下など）
+    // 基本的にローカルのLive Serverならルートは '/' です
+    return origin + '/';
 }
 
 // =========================================
@@ -66,7 +71,6 @@ function loadHeader() {
                         <button onclick="setArea('fukushima', '福島県')">福島県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>関東</h4>
                     <div class="pref-buttons">
@@ -79,7 +83,6 @@ function loadHeader() {
                         <button onclick="setArea('kanagawa', '神奈川県')">神奈川県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>中部</h4>
                     <div class="pref-buttons">
@@ -94,7 +97,6 @@ function loadHeader() {
                         <button onclick="setArea('aichi', '愛知県')">愛知県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>近畿</h4>
                     <div class="pref-buttons">
@@ -107,7 +109,6 @@ function loadHeader() {
                         <button onclick="setArea('wakayama', '和歌山県')">和歌山県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>中国・四国</h4>
                     <div class="pref-buttons">
@@ -122,7 +123,6 @@ function loadHeader() {
                         <button onclick="setArea('kochi', '高知県')">高知県</button>
                     </div>
                 </div>
-
                 <div class="region-group">
                     <h4>九州・沖縄</h4>
                     <div class="pref-buttons">
@@ -182,9 +182,10 @@ function loadHeader() {
     const contactLink = document.querySelector('#nav-links-container .contact-btn');
     if (contactLink) {
         contactLink.addEventListener('click', (e) => {
-            e.preventDefault();              // デフォルト動作を止めて
-            closeMenu();                     // メニューを閉じてから
-            window.location.href = contactPath; // 絶対に contact.html に遷移
+            // 念の為デフォルト動作を一度止めて、確実に遷移させる
+            e.preventDefault();
+            closeMenu();
+            window.location.href = contactPath;
         });
     }
 
