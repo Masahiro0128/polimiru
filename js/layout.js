@@ -1,5 +1,5 @@
 // =========================================
-//  ベースURLを求めるヘルパー
+//  ベースURLを求めるヘルパー（最強版）
 // =========================================
 function getBaseUrl() {
     const origin = window.location.origin;
@@ -9,22 +9,31 @@ function getBaseUrl() {
     if (path.includes('/polimiru/')) {
         return origin + '/polimiru/';
     }
-    // ローカル開発環境対応（electionsフォルダ内にいる場合）
-    if (path.includes('/elections/')) {
-        return origin + '/';
-    }
-    // それ以外（ルート）
-    return origin + '/';
+    
+    // ローカル環境 (Live Server) の場合はルートを返す
+    return origin + '/'; 
 }
 
 // =========================================
 //  共通ヘッダー & モーダル制御
 // =========================================
 function loadHeader() {
-    // パス生成ロジック
-    const isDeepPath = window.location.pathname.includes('/elections/');
-    const pathPrefix = isDeepPath ? '../' : './';
+    // ★修正ポイント：現在の階層からルートまでの相対パスを自動計算
+    const pathParts = window.location.pathname.split('/').filter(p => p !== '');
+    
+    // GitHub Pages (/polimiru/...) の場合は1つ分浅く計算する調整
+    const isGitHub = window.location.pathname.includes('/polimiru/');
+    const depth = isGitHub ? pathParts.length - 2 : pathParts.length - 1; 
+    
+    // 深さの分だけ "../" を繋げる。ルートなら "./"
+    let pathPrefix = '';
+    if (depth > 0) {
+        pathPrefix = '../'.repeat(depth);
+    } else {
+        pathPrefix = './';
+    }
 
+    // リンク先を生成
     const homePath    = pathPrefix + 'index.html';
     const contactPath = pathPrefix + 'contact.html';
     const methodPath  = pathPrefix + 'method.html';

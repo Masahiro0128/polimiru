@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉村 洋文 | 大阪府知事選2023 - polimiru</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header-footer.css">
+    <link rel="stylesheet" href="../../../css/hero.css">
+    <link rel="stylesheet" href="../../../css/elections.css">
+    <link rel="stylesheet" href="../../../css/modal.css">
+
+    <style>
+        .profile-header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .profile-img {
+            /* 大きさを変更 (120px → 160px) */
+            width: 160px; 
+            height: 160px;
+            
+            /* 形を変更 (50% → 24px) 角丸四角形に */
+            border-radius: 24px;
+            
+            /* 画像の表示調整 */
+            object-fit: cover;
+            object-position: center top; /* 顔の位置合わせ */
+            
+            /* 装飾 */
+            border: 5px solid #8cc63f; /* 枠線を少し太くして強調 */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* 影を強めて浮き上がらせる */
+            background-color: #eee;
+            
+            /* 配置 */
+            display: block;
+            margin: 0 auto 20px auto; /* 下の余白も少し広げる */
+        }
+        .profile-name { font-size: 1.8em; font-weight: bold; margin-bottom: 5px; }
+        .profile-party { font-size: 0.9em; color: #666; background: #eee; padding: 4px 10px; border-radius: 4px; }
+        
+        .primary-sources {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .source-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #ddd;
+            color: #333;
+            background: #fff;
+        }
+        .source-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: #f9f9f9;
+        }
+        .source-btn.pdf { color: #e63946; border-color: #e63946; }
+        .source-btn.web { color: #1a2e45; border-color: #1a2e45; }
+        .source-btn.movie { color: #ff0000; border-color: #ff0000; }
+
+        .policy-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-label {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a2e45;
+            padding-left: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .policy-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-top: 4px solid #ddd;
+        }
+        .policy-card.education { border-top-color: #4cc9f0; }
+        .policy-card.economy { border-top-color: #f72585; }
+
+        .policy-title { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .policy-tag { font-size: 0.7em; color: white; padding: 2px 8px; border-radius: 4px; background: #999; }
+        
+        .policy-desc { line-height: 1.7; color: #555; margin-bottom: 15px; }
+
+        .evidence-box {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.85em;
+        }
+        .evidence-title { font-weight: bold; color: #666; margin-bottom: 5px; }
+        .evidence-link { color: #1a2e45; text-decoration: underline; word-break: break-all; }
+
+        .policy-score {
+            float: right;
+            font-size: 1.4em;
+            font-weight: 800;
+            color: #1a2e45;
+        }
+        .score-sub { font-size: 0.5em; color: #888; font-weight: normal; }
+
+        @media (max-width: 768px) {
+            .primary-sources { flex-direction: column; padding: 0 40px; }
+            .source-btn { justify-content: center; width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <script src="../../../js/layout.js?v=9999"></script>
+
+    <div class="profile-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_%28cropped%29.jpg" 
+             alt="吉村洋文" class="profile-img">
+        
+        <div class="profile-name">吉村 洋文 <span style="font-size:0.6em; vertical-align:middle;">候補</span></div>
+        <span class="profile-party">大阪維新の会 / 現職</span>
+
+        <div style="font-size:0.6em; color:#999; margin-top:5px;">
+            写真出典: <a href="https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_(cropped).jpg" target="_blank" style="color:#999; text-decoration:underline;">Wikimedia Commons</a> / 
+            経済産業省 (CC BY 4.0)
+        </div>
+
+        <div class="primary-sources">
+            <a href="#" class="source-btn pdf">
+                <i class="fa-regular fa-file-pdf"></i> マニフェスト原本 (PDF)
+            </a>
+            <a href="#" class="source-btn web">
+                <i class="fa-solid fa-globe"></i> 公式サイト
+            </a>
+            <a href="#" class="source-btn movie">
+                <i class="fa-brands fa-youtube"></i> 街頭演説・会見動画
+            </a>
+            <a href="#" class="source-btn">
+                <i class="fa-solid fa-scale-balanced"></i> 選挙公報 (選管)
+            </a>
+        </div>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-label">
+            主要政策のファクトチェック
+            <span style="font-size:0.8em; color:#666; font-weight:normal;">総合スコア: 85点</span>
+        </div>
+
+        <div class="policy-card education">
+            <div class="policy-title">
+                <span class="policy-tag" style="background:#4cc9f0;">教育・子育て</span>
+                所得制限なしの教育無償化
+                <div class="policy-score">92<span class="score-sub">/100</span></div>
+            </div>
+            <p class="policy-desc">
+                大阪府内の高校授業料、および大阪公立大学の授業料を、世帯年収にかかわらず「完全無償化」することを目指す。<br>
+                財源は行財政改革による浮いた予算と、基金の活用によって捻出するとしている。
+            </p>
+            <div class="evidence-box">
+                <div class="evidence-title">🔍 一次情報・根拠</div>
+                <a href="#" class="evidence-link">大阪維新の会 2023マニフェスト P.4 「次世代への投資」</a><br>
+                <a href="#" class="evidence-link">2023年3月XX日 記者会見での発言ログ</a>
+            </div>
+        </div>
+
+        <div class="policy-card economy">
+            <div class="policy-title">
+                <span class="policy-tag" style="background:#f72585;">経済・成長</span>
+                大阪・関西万博の成功とIR推進
+                <div class="policy-score">78<span class="score-sub">/100</span></div>
+            </div>
+            <p class="policy-desc">
+                2025年大阪・関西万博を成功させ、経済波及効果を府内全域に広げる。<br>
+                統合型リゾート（IR）については、依存症対策を徹底した上で、観光産業の起爆剤として誘致を進める方針を維持。
+            </p>
+            <div class="evidence-box">
+                <div class="evidence-title">🔍 一次情報・根拠</div>
+                <a href="#" class="evidence-link">大阪府 ＩＲ整備計画（認定版）PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center; margin-bottom:60px;">
+        <a href="index.html" style="color:#666; text-decoration:underline;">← 大阪府知事選一覧に戻る</a>
+    </div>
+
+</body>
+</html>

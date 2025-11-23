@@ -48,7 +48,6 @@ const elections = [
         badgeType: "national",
         status: "アーカイブ"
     },
-    // ★ここに追加しました
     {
         id: 10,
         title: "大阪府知事選挙 2023",
@@ -57,7 +56,10 @@ const elections = [
         prefecture: "大阪府",
         desc: "万博・IR誘致の是非と、維新府政への評価が問われた選挙。<br>公約達成度の最終評価を公開。",
         image: "https://images.unsplash.com/photo-1590552515252-3a5a1bce7bed?auto=format&fit=crop&w=500&q=80",
-        url: "elections/osaka.html",
+        
+        // ★修正ポイント：新しいフォルダ構成に合わせました
+        url: "elections/osaka/2023_governor/index.html",
+        
         badgeType: "local",
         status: "アーカイブ"
     }

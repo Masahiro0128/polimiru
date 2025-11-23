@@ -7,11 +7,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/header-footer.css">
-    <link rel="stylesheet" href="../css/hero.css">
-    <link rel="stylesheet" href="../css/elections.css">
-    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header-footer.css">
+    <link rel="stylesheet" href="../../../css/hero.css">
+    <link rel="stylesheet" href="../../../css/elections.css">
+    <link rel="stylesheet" href="../../../css/modal.css">
 
     <style>
         /* 大阪独自のヘッダーカラー */
@@ -142,11 +142,11 @@
         <div class="candidate-list" id="candidate-container"></div>
         
         <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
-            <a href="../index.html" style="color:#666; text-decoration:underline;">← 選挙一覧に戻る</a>
+            <a href="../../../index.html" style="color:#666; text-decoration:underline;">← 選挙一覧に戻る</a>
         </div>
     </div>
 
-    <script src="../js/layout.js?v=10"></script>
+    <script src="../../../js/layout.js?v=9999"></script>
 
     <script>
         const container = document.getElementById('candidate-container');
@@ -156,22 +156,19 @@
         // ==========================================
         async function loadData() {
             try {
-                // 外部JSONファイルを読み込む
-                const response = await fetch('../js/data/osaka_2023.json');
+                // ★修正：JSONファイルの読み込みパスを ../../../ に変更
+                const response = await fetch('../../../js/data/osaka_2023.json');
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
 
-                // JSONをJSオブジェクトに変換
                 const candidates = await response.json();
-
-                // 画面に表示
                 renderCards(candidates);
 
             } catch (error) {
                 console.error('データの読み込みに失敗しました:', error);
-                container.innerHTML = '<p style="text-align:center; padding:30px;">データの読み込みに失敗しました。<br>VS CodeのLive Serverを使用しているか確認してください。</p>';
+                container.innerHTML = '<p style="text-align:center; padding:30px;">データの読み込みに失敗しました。<br>パスが間違っている可能性があります。</p>';
             }
         }
 
@@ -187,21 +184,28 @@
             data.forEach(person => {
                 const overallScore = person.overall_score || '-';
                 
-                // 大阪独自の政党カラー分けロジック
+                // 色分けロジック
                 let headerColor = '#999';
                 let partyClass = 'party-other';
                 
                 if (person.party.includes('維新')) {
-                    headerColor = '#8cc63f'; // 維新グリーン
+                    headerColor = '#8cc63f'; 
                     partyClass = 'party-ishin';
                 } else if (person.party.includes('共産') || person.name.includes('辰巳')) {
-                    headerColor = '#e63946'; // 共産/野党系レッド
+                    headerColor = '#e63946'; 
                 } else {
-                    headerColor = '#4a6fa5'; // その他ブルー
+                    headerColor = '#4a6fa5'; 
+                }
+
+                // ★修正：吉村候補の場合だけ、強制的に yoshimura.html へ飛ばす
+                // (本来はJSONの "url" を書き換えるべきですが、一旦HTML側で対応します)
+                let linkUrl = person.url;
+                if(person.id === 'osaka_yoshimura') {
+                    linkUrl = 'yoshimura.html'; // 同じフォルダ内なのでファイル名だけでOK
                 }
 
                 const cardHTML = `
-                    <a href="${person.url}" class="candidate-card">
+                    <a href="${linkUrl}" class="candidate-card">
                         <div class="card-header" style="background-color: ${headerColor};">
                             <img src="${person.image}" class="face-icon" alt="顔写真">
                         </div>
@@ -230,7 +234,6 @@
             });
         }
 
-        // ページ読み込み時に実行
         document.addEventListener('DOMContentLoaded', loadData);
     </script>
 
