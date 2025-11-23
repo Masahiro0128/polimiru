@@ -88,10 +88,26 @@
 
             grid.innerHTML = "";
 
+            // 1. まず全データを用意
             let filteredData = elections;
-            if (category === 'national') filteredData = elections.filter(e => e.category === 'national');
-            else if (category === 'local') filteredData = elections.filter(e => e.category === 'local');
 
+            // 2. 「エリア設定」がある場合、その地域の選挙だけに絞り込む (ここが変更点)
+            if (savedAreaName && savedAreaName !== 'エリア未設定') {
+                filteredData = filteredData.filter(e => {
+                    // 選んだ県（東京都など） または '国政' なら表示する
+                    // ※もし「国政」も消して厳密にその県だけにしたい場合は || e.prefecture === '国政' を消してください
+                    return e.prefecture === savedAreaName || e.prefecture === '国政';
+                });
+            }
+
+            // 3. タブ（注目・国政・地方）で絞り込む
+            if (category === 'national') {
+                filteredData = filteredData.filter(e => e.category === 'national');
+            } else if (category === 'local') {
+                filteredData = filteredData.filter(e => e.category === 'local');
+            }
+
+            // 4. 検索ワードで絞り込む
             const query = searchInput.value.trim().toLowerCase();
             if (query) {
                 filteredData = filteredData.filter(e => {
@@ -102,30 +118,31 @@
                 });
             }
 
-            filteredData.sort((a, b) => {
-                const aMatch = savedAreaName.includes(a.prefecture);
-                const bMatch = savedAreaName.includes(b.prefecture);
-                if (aMatch && !bMatch) return -1;
-                if (!aMatch && bMatch) return 1;
-                return 0;
-            });
-
+            // 5. 表示データがない場合のメッセージ
             if (filteredData.length === 0) {
+                const msg = savedAreaName && savedAreaName !== 'エリア未設定' 
+                    ? `「${savedAreaName}」に関連する選挙は見つかりませんでした。` 
+                    : `該当する選挙は見つかりませんでした。`;
+
                 grid.insertAdjacentHTML('beforeend', `
-                    <p style="text-align:center; color:#666; grid-column:1/-1;">
-                        該当する選挙が見つかりませんでした。
+                    <p style="text-align:center; color:#666; grid-column:1/-1; padding: 40px;">
+                        ${msg}<br>
+                        <small>※右上の「設定を解除する」ボタンで全ての選挙を表示できます。</small>
                     </p>
                 `);
                 return;
             }
 
+            // 6. カードを描画
             filteredData.forEach(election => {
                 const badgeClass = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
                 const statusClass = election.status.includes('注目') ? 'status-active' : '';
-                const highlight =
-                    savedAreaName.includes(election.prefecture)
-                        ? 'border:2px solid #1a2e45; box-shadow:0 0 15px rgba(26,46,69,.2);'
-                        : '';
+                
+                // エリア選択中かどうかで枠線の強調をするか決める（お好みで削除してもOK）
+                const isAreaMatch = savedAreaName === election.prefecture;
+                const highlight = isAreaMatch 
+                    ? 'border:2px solid #1a2e45; box-shadow:0 0 15px rgba(26,46,69,.2);' 
+                    : '';
 
                 const html = `
                     <a href="${election.url}" class="election-card" style="${highlight}">

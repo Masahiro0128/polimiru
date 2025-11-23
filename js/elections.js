@@ -8,10 +8,7 @@ const elections = [
         prefecture: "東京都",
         desc: "再開発、給食、子育て支援...。<br>現職の実績と新人の公約を徹底比較。",
         image: "https://images.unsplash.com/photo-1540910419868-47a12421e520?auto=format&fit=crop&w=500&q=80",
-        
-        // ★修正ポイント： elections/ をつけて「フォルダの中」を指すようにする
-        url: "elections/machida.html", 
-        
+        url: "elections/machida.html",
         badgeType: "local",
         status: "2026年 注目"
     },
@@ -23,10 +20,7 @@ const elections = [
         prefecture: "東京都",
         desc: "首都決戦。定数6を巡る各党の攻防。<br>公約達成率で現職を評価。",
         image: "https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&w=500&q=80",
-        
-        // ★修正ポイント： ここも elections/ をつける
-        url: "elections/sangiin_tokyo.html", 
-        
+        url: "elections/sangiin_tokyo.html",
         badgeType: "national", 
         status: "2025年 注目"
     },
@@ -52,6 +46,19 @@ const elections = [
         image: "https://images.unsplash.com/photo-1529101091760-6149976f1581?auto=format&fit=crop&w=500&q=80",
         url: "#",
         badgeType: "national",
+        status: "アーカイブ"
+    },
+    // ★ここに追加しました
+    {
+        id: 10,
+        title: "大阪府知事選挙 2023",
+        category: "local",
+        date: "2023年4月9日 投開票（終了）",
+        prefecture: "大阪府",
+        desc: "万博・IR誘致の是非と、維新府政への評価が問われた選挙。<br>公約達成度の最終評価を公開。",
+        image: "https://images.unsplash.com/photo-1590552515252-3a5a1bce7bed?auto=format&fit=crop&w=500&q=80",
+        url: "elections/osaka.html",
+        badgeType: "local",
         status: "アーカイブ"
     }
 ];

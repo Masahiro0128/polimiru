@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- 共通CSS（分割版） -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/hero.css">
@@ -76,7 +75,6 @@
             margin-left: 8px;
         }
 
-        /* 説明文（1行だけ） */
         .candidate-desc {
             margin-top: 8px;
             font-size: 0.9em;
@@ -89,7 +87,6 @@
             text-overflow: ellipsis;
         }
 
-        /* 続きを誘導する CTA */
         .read-more {
             margin-top: 6px;
             font-size: 0.85em;
@@ -124,7 +121,6 @@
     </div>
 
     <div class="container">
-        <!-- JS がリンクを自動で挿入するターゲット -->
         <div class="section-header js-score-method-header">
             <div class="section-title">立候補予定者一覧</div>
         </div>
@@ -132,48 +128,74 @@
         <div class="candidate-list" id="candidate-container"></div>
     </div>
 
-    <script src="../js/candidates.js"></script>
-    <script src="../js/layout.js?v=5"></script>
+    <script src="../js/layout.js?v=10"></script>
 
     <script>
         const container = document.getElementById('candidate-container');
         
-        candidates.forEach(person => {
-            // 表示用の総合スコア
-            let overallScore = null;
-            if (typeof person.overall_score === 'number') {
-                overallScore = person.overall_score;
-            } else if (typeof person.score_manifesto === 'number') {
-                // 旧データ互換：overall_score がなければ一旦これを使う
-                overallScore = person.score_manifesto;
+        // ==========================================
+        //  1. 町田のJSONデータを取得 (Fetch)
+        // ==========================================
+        async function loadData() {
+            try {
+                // 外部JSONファイルを読み込む
+                const response = await fetch('../js/data/machida_2026.json');
+                
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                // JSONを変換
+                const candidates = await response.json();
+
+                // 画面に描画
+                renderCards(candidates);
+
+            } catch (error) {
+                console.error('Error:', error);
+                container.innerHTML = '<p style="text-align:center; padding:30px;">データを読み込めませんでした。<br>Live Serverで開いているか確認してください。</p>';
             }
+        }
 
-            const scoreText = overallScore !== null ? `${overallScore} / 100` : '-';
-            const scoreClass = overallScore !== null && overallScore < 50 ? 'bad' : '';
+        // ==========================================
+        //  2. カード描画処理
+        // ==========================================
+        function renderCards(data) {
+            data.forEach(person => {
+                // スコア表示の処理
+                const overallScore = person.overall_score ? `${person.overall_score} / 100` : '-';
+                const scoreClass = person.overall_score && person.overall_score < 50 ? 'bad' : '';
 
-            const cardHTML = `
-                <a href="${person.url}" class="candidate-card">
-                    <div class="card-header" style="background-color: ${person.party === '現職' ? '#4a6fa5' : '#e63946'};">
-                        <img src="${person.image}" class="face-icon" alt="顔写真">
-                    </div>
+                // 町田用の色分け（現職は青、それ以外は赤）
+                const headerColor = person.party === '現職' ? '#4a6fa5' : '#e63946';
 
-                    <div class="card-body">
-                        <div class="name">${person.name} <span class="party">${person.party}</span></div>
+                const cardHTML = `
+                    <a href="${person.url}" class="candidate-card">
+                        <div class="card-header" style="background-color: ${headerColor};">
+                            <img src="${person.image}" class="face-icon" alt="顔写真">
+                        </div>
 
-                        <p class="candidate-desc">${person.desc}</p>
-                        <div class="read-more">続きを読む →</div>
+                        <div class="card-body">
+                            <div class="name">${person.name} <span class="party">${person.party}</span></div>
 
-                        <div class="score-area">
-                            <div>
-                                <div class="score-label">政策の信頼度スコア</div>
-                                <div class="score-value ${scoreClass}">${scoreText}</div>
+                            <p class="candidate-desc">${person.desc}</p>
+                            <div class="read-more">続きを読む →</div>
+
+                            <div class="score-area">
+                                <div>
+                                    <div class="score-label">政策の信頼度スコア</div>
+                                    <div class="score-value ${scoreClass}">${overallScore}</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            `;
-            container.insertAdjacentHTML('beforeend', cardHTML);
-        });
+                    </a>
+                `;
+                container.insertAdjacentHTML('beforeend', cardHTML);
+            });
+        }
+
+        // ページ読み込み完了時に実行
+        document.addEventListener('DOMContentLoaded', loadData);
     </script>
 
 </body>

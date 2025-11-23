@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimiru | 大阪府知事選挙2023</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/elections.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <style>
+        /* 大阪独自のヘッダーカラー */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #1a2e45 0%, #2a5298 100%);
+            color: white;
+            margin-bottom: 30px;
+        }
+        .hero h1 { margin: 0; font-size: 2em; font-weight: 800; }
+        .hero .status-badge {
+            background: #e63946;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .hero p { margin-top: 15px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;}
+
+        /* 候補者カードのデザイン */
+        .candidate-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding-bottom: 60px;
+        }
+
+        .candidate-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border: 1px solid #eee;
+        }
+        .candidate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        }
+
+        .card-header { height: 110px; position: relative; }
+        
+        .face-icon {
+            width: 84px; height: 84px;
+            border-radius: 50%;
+            background: #ddd;
+            border: 4px solid white;
+            position: absolute; bottom: -42px; left: 24px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-body { padding: 55px 24px 24px 24px; }
+        
+        .name-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+        .name { font-size: 1.5em; font-weight: bold; color: #333; }
+        .party-label {
+            font-size: 0.75em;
+            color: #fff;
+            background: #666;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        /* 維新カラー */
+        .party-ishin { background: #8cc63f; } 
+        /* 無所属など */
+        .party-other { background: #999; }
+
+        .candidate-desc {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .score-area {
+            margin-top: 20px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #1a2e45;
+        }
+        .score-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .score-label { font-size: 0.85em; color: #666; font-weight: bold; }
+        .score-value { font-size: 1.4em; font-weight: 800; color: #1a2e45; }
+        
+        .read-more {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #1a2e45;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>大阪府知事選挙 2023 <span class="status-badge">アーカイブ</span></h1>
+        <p>
+            維新府政の「継続」か「刷新」か。<br>
+            過去4年間の公約達成率と、各候補者の提言を比較検証しました。
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="section-header js-score-method-header">
+            <div class="section-title" style="font-size:1.4em; font-weight:bold; margin-bottom:20px; border-left:5px solid #2a5298; padding-left:15px;">
+                候補者一覧・評価スコア
+            </div>
+        </div>
+
+        <div class="candidate-list" id="candidate-container"></div>
+        
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
+            <a href="../index.html" style="color:#666; text-decoration:underline;">← 選挙一覧に戻る</a>
+        </div>
+    </div>
+
+    <script src="../js/layout.js?v=10"></script>
+
+    <script>
+        const container = document.getElementById('candidate-container');
+
+        // ==========================================
+        //  1. JSONデータを取得する関数 (Fetch)
+        // ==========================================
+        async function loadData() {
+            try {
+                // 外部JSONファイルを読み込む
+                const response = await fetch('../js/data/osaka_2023.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                // JSONをJSオブジェクトに変換
+                const candidates = await response.json();
+
+                // 画面に表示
+                renderCards(candidates);
+
+            } catch (error) {
+                console.error('データの読み込みに失敗しました:', error);
+                container.innerHTML = '<p style="text-align:center; padding:30px;">データの読み込みに失敗しました。<br>VS CodeのLive Serverを使用しているか確認してください。</p>';
+            }
+        }
+
+        // ==========================================
+        //  2. カードを描画する関数
+        // ==========================================
+        function renderCards(data) {
+            if (!data || data.length === 0) {
+                container.innerHTML = '<p>データがありません。</p>';
+                return;
+            }
+
+            data.forEach(person => {
+                const overallScore = person.overall_score || '-';
+                
+                // 大阪独自の政党カラー分けロジック
+                let headerColor = '#999';
+                let partyClass = 'party-other';
+                
+                if (person.party.includes('維新')) {
+                    headerColor = '#8cc63f'; // 維新グリーン
+                    partyClass = 'party-ishin';
+                } else if (person.party.includes('共産') || person.name.includes('辰巳')) {
+                    headerColor = '#e63946'; // 共産/野党系レッド
+                } else {
+                    headerColor = '#4a6fa5'; // その他ブルー
+                }
+
+                const cardHTML = `
+                    <a href="${person.url}" class="candidate-card">
+                        <div class="card-header" style="background-color: ${headerColor};">
+                            <img src="${person.image}" class="face-icon" alt="顔写真">
+                        </div>
+
+                        <div class="card-body">
+                            <div class="name-row">
+                                <div class="name">${person.name}</div>
+                                <span class="party-label ${partyClass}">${person.status}</span>
+                            </div>
+                            <div style="font-size:0.85em; color:#888; margin-bottom:5px;">${person.party}</div>
+
+                            <p class="candidate-desc">${person.desc}</p>
+
+                            <div class="score-area">
+                                <div class="score-row">
+                                    <span class="score-label">政策実現・信頼度スコア</span>
+                                    <span class="score-value">${overallScore} <span style="font-size:0.6em; font-weight:normal;">/ 100</span></span>
+                                </div>
+                            </div>
+
+                            <div class="read-more">詳細データを見る →</div>
+                        </div>
+                    </a>
+                `;
+                container.insertAdjacentHTML('beforeend', cardHTML);
+            });
+        }
+
+        // ページ読み込み時に実行
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+
+</body>
+</html>
