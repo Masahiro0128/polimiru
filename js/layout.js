@@ -5,12 +5,15 @@ function getBaseUrl() {
     const origin = window.location.origin;
     const path   = window.location.pathname;
 
+    // GitHub Pages対応
     if (path.includes('/polimiru/')) {
         return origin + '/polimiru/';
     }
+    // ローカル開発環境対応（electionsフォルダ内にいる場合）
     if (path.includes('/elections/')) {
         return origin + '/';
     }
+    // それ以外（ルート）
     return origin + '/';
 }
 
@@ -18,6 +21,7 @@ function getBaseUrl() {
 //  共通ヘッダー & モーダル制御
 // =========================================
 function loadHeader() {
+    // パス生成ロジック
     const isDeepPath = window.location.pathname.includes('/elections/');
     const pathPrefix = isDeepPath ? '../' : './';
 
@@ -25,7 +29,7 @@ function loadHeader() {
     const contactPath = pathPrefix + 'contact.html';
     const methodPath  = pathPrefix + 'method.html';
 
-    // --- HTML生成 ---
+    // HTML生成
     const headerHTML = `
     <nav class="site-navbar">
         <a href="${homePath}" class="site-logo">polimiru</a>
@@ -76,7 +80,7 @@ function loadHeader() {
                         <button onclick="setArea('kanagawa', '神奈川県')">神奈川県</button>
                     </div>
                 </div>
-                <div class="region-group">
+                 <div class="region-group">
                     <h4>中部</h4>
                     <div class="pref-buttons">
                         <button onclick="setArea('niigata', '新潟県')">新潟県</button>
@@ -129,6 +133,7 @@ function loadHeader() {
                         <button onclick="setArea('okinawa', '沖縄県')">沖縄県</button>
                     </div>
                 </div>
+
                 <div class="clear-area">
                     <button onclick="setArea(null, 'エリア未設定')" class="clear-btn">
                         <i class="fa-regular fa-trash-can"></i> 設定を解除する
@@ -176,25 +181,8 @@ function loadHeader() {
         closeModalBtn.addEventListener('click', () => { areaModal.classList.remove('active'); });
     }
 
-    // --- ★ここが新修正：JSから強制的にCSSを注入して、ボタンを押せるようにする ---
-    // これならCSSファイルがどうなっていても、強制的にメニューが一番手前に来ます。
-    const styleFix = document.createElement('style');
-    styleFix.innerHTML = `
-        /* スマホメニューを強制的に最前面へ */
-        @media (max-width: 768px) {
-            .nav-links.active {
-                z-index: 2147483647 !important; /* CSSで設定できる最大値に近い値 */
-                pointer-events: auto !important; /* クリックを確実に許可 */
-            }
-            .contact-btn {
-                position: relative;
-                z-index: 2147483647 !important;
-                pointer-events: auto !important;
-                cursor: pointer !important;
-            }
-        }
-    `;
-    document.head.appendChild(styleFix);
+    // ★修正：Contactボタンに対するJS制御（addEventListener）は全て削除しました。
+    // これにより、ブラウザ標準の「リンク遷移」が邪魔されずに発動します。
     
     checkSavedArea();
     
@@ -241,7 +229,7 @@ function checkSavedArea() {
 }
 
 // =========================================
-//  共通フッター（SNSアイコン入り）
+//  共通フッター
 // =========================================
 function loadFooter() {
     const footerHTML = `
