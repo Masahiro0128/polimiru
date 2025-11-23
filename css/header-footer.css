@@ -12,7 +12,10 @@
     justify-content: space-between;
     padding: 0 40px;
     box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-    z-index: 1000;
+    
+    /* ★修正ポイント1：ヘッダー全体をオーバーレイ(1500)より手前に出す */
+    z-index: 2000; 
+    
     box-sizing: border-box;
 }
 
@@ -135,6 +138,10 @@ body.no-scroll {
         border-bottom: 1px solid #eee;
         width: 100%; 
         display: block;
+        
+        /* スマホで押しやすくする */
+        cursor: pointer;
+        pointer-events: auto;
     }
     .nav-links a::after { display: none; }
 
@@ -145,11 +152,16 @@ body.no-scroll {
         text-align: center; 
         padding: 15px 0; 
         font-weight: bold;
+        
+        /* スマホで押しやすくする */
+        cursor: pointer;
+        pointer-events: auto;
+        touch-action: manipulation;
     }
 
     .close-menu {
         display: block; 
-        position: absolute;
+        position: absolute; /* ★ここ大事：絶対配置に戻す */
         top: 25px; 
         right: 20px;
         background: none; 
@@ -157,25 +169,28 @@ body.no-scroll {
         font-size: 32px; 
         color: #1a2e45; 
         cursor: pointer;
-        /* ★重要：バツボタンは絶対配置のままにする */
-        z-index: 2147483647 !important; 
+        z-index: 2001; /* メニューよりさらに手前 */
     }
 
     /* オーバーレイ */
     .menu-overlay {
         display: block;
         position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.05);
-        opacity: 0; visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
         pointer-events: none;
         transition: opacity 0.4s;
-        z-index: 1500;
+        z-index: 1500; /* ヘッダー(2000)より後ろになるのでクリックを邪魔しない */
     }
 
     .menu-overlay.active {
-        opacity: 1; visibility: visible;
+        opacity: 1;
+        visibility: visible;
         pointer-events: auto;
     }
 
@@ -184,21 +199,5 @@ body.no-scroll {
         height: auto;
         padding: 30px 20px;
         gap: 20px;
-    }
-
-    /* === 最強の修正：バツボタン以外を手前に持ってくる === */
-    .nav-links.active {
-        z-index: 2147483647 !important;
-        pointer-events: auto !important;
-    }
-
-    /* リンクとコンタクトボタンだけを対象にする（buttonタグを除外） */
-    .nav-links a,
-    .nav-links .contact-btn {
-        position: relative !important;
-        z-index: 2147483647 !important;
-        pointer-events: auto !important;
-        cursor: pointer !important;
-        touch-action: manipulation !important;
     }
 }
