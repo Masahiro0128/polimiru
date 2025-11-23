@@ -192,3 +192,30 @@ body.no-scroll {
         gap: 20px;
     }
 }
+/* =========================================
+   緊急修正：スマホメニューのクリックを強制許可
+   ========================================= */
+@media (max-width: 768px) {
+    /* 1. メニュー本体を、画面の何よりも手前に持ってくる */
+    .nav-links.active {
+        z-index: 2147483647 !important; /* CSSで指定できる最大値 */
+        pointer-events: auto !important; /* クリックを確実に許可 */
+    }
+
+    /* 2. リンクとボタンをさらに手前にし、タッチ判定を強化する */
+    .nav-links a,
+    .nav-links button,
+    .nav-links .contact-btn {
+        position: relative !important;     /* z-indexを効かせるため */
+        z-index: 2147483647 !important;    /* 最前面 */
+        pointer-events: auto !important;   /* クリック許可 */
+        cursor: pointer !important;        /* 指マークにする */
+        touch-action: manipulation !important; /* スマホのタップ遅延を防ぐ */
+    }
+
+    /* 3. 背景の黒い幕は、メニューより確実に後ろにする */
+    .menu-overlay.active {
+        z-index: 1500 !important; /* メニュー(MAX)より小さければOK */
+        pointer-events: auto !important; /* 背景タップで閉じる機能を維持 */
+    }
+}
