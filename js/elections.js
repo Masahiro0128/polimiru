@@ -55,11 +55,12 @@ const elections = [
         date: "2023年4月9日 投開票（終了）",
         prefecture: "大阪府",
         desc: "万博・IR誘致の是非と、維新府政への評価が問われた選挙。<br>公約達成度の最終評価を公開。",
-        image: "https://images.unsplash.com/photo-1590552515252-3a5a1bce7bed?auto=format&fit=crop&w=500&q=80",
         
-        // ★修正ポイント：新しいフォルダ構成に合わせました
+        // ★ここを修正しました！
+        // URLを消して空っぽにすることで、index.htmlで設定した「osaka.jpg」が自動的に適用されます。
+        image: "", 
+        
         url: "elections/osaka/2023_governor/index.html",
-        
         badgeType: "local",
         status: "アーカイブ"
     }

@@ -17,27 +17,28 @@
         /* 大阪独自のヘッダーカラー */
         .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             background: linear-gradient(135deg, #1a2e45 0%, #2a5298 100%);
             color: white;
             margin-bottom: 30px;
         }
-        .hero h1 { margin: 0; font-size: 2em; font-weight: 800; }
+        .hero h1 { margin: 0; font-size: 2.2em; font-weight: 800; }
         .hero .status-badge {
             background: #e63946;
             color: white;
             padding: 4px 12px;
             border-radius: 20px;
-            font-size: 0.8em;
+            font-size: 0.5em;
             vertical-align: middle;
             margin-left: 10px;
+            position: relative; top: -5px;
         }
-        .hero p { margin-top: 15px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;}
+        .hero p { margin-top: 15px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.8;}
 
         /* 候補者カードのデザイン */
         .candidate-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
             padding-bottom: 60px;
         }
@@ -58,49 +59,62 @@
             box-shadow: 0 12px 24px rgba(0,0,0,0.12);
         }
 
+        /* ヘッダー色分け */
         .card-header { height: 110px; position: relative; }
+        .bg-ishin { background-color: #8cc63f; } /* 維新グリーン */
+        .bg-red { background-color: #e63946; }   /* 共産系レッド */
+        .bg-gray { background-color: #6c757d; }  /* 無所属グレー */
+        .bg-orange { background-color: #fca311; } /* 参政オレンジ */
+        .bg-purple { background-color: #9d4edd; } /* N党パープル */
         
         .face-icon {
-            width: 84px; height: 84px;
+            width: 90px; height: 90px;
             border-radius: 50%;
             background: #ddd;
             border: 4px solid white;
-            position: absolute; bottom: -42px; left: 24px;
+            position: absolute; bottom: -45px; left: 24px;
             object-fit: cover;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            object-position: top;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
 
         .card-body { padding: 55px 24px 24px 24px; }
         
-        .name-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-        .name { font-size: 1.5em; font-weight: bold; color: #333; }
-        .party-label {
-            font-size: 0.75em;
-            color: #fff;
-            background: #666;
-            padding: 3px 8px;
+        .name-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+        .name { font-size: 1.4em; font-weight: bold; color: #333; }
+        .age { font-size: 0.8em; font-weight: normal; color: #666; }
+        
+        .status-tag {
+            font-size: 0.7em;
+            padding: 2px 8px;
             border-radius: 4px;
+            background: #eee;
+            color: #555;
         }
-        /* 維新カラー */
-        .party-ishin { background: #8cc63f; } 
-        /* 無所属など */
-        .party-other { background: #999; }
+        .status-win { background: #ffe0e0; color: #d62828; font-weight: bold; border:1px solid #ffcccc;}
+
+        .party-name {
+            font-size: 0.85em;
+            color: #666;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
 
         .candidate-desc {
-            margin-top: 10px;
-            font-size: 0.95em;
+            font-size: 0.9em;
             color: #555;
             line-height: 1.6;
-            display: -webkit-box;
-            -webkit-line-clamp: 2; 
-            -webkit-box-orient: vertical;
+            margin-bottom: 20px;
+            height: 4.8em; /* 3行分確保 */
             overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
 
         .score-area {
-            margin-top: 20px;
             background: #f8f9fa;
-            padding: 15px;
+            padding: 12px 15px;
             border-radius: 8px;
             border-left: 4px solid #1a2e45;
         }
@@ -109,14 +123,14 @@
             justify-content: space-between;
             align-items: baseline;
         }
-        .score-label { font-size: 0.85em; color: #666; font-weight: bold; }
-        .score-value { font-size: 1.4em; font-weight: 800; color: #1a2e45; }
+        .score-label { font-size: 0.8em; color: #666; font-weight: bold; }
+        .score-value { font-size: 1.3em; font-weight: 800; color: #1a2e45; }
         
         .read-more {
             display: block;
-            text-align: center;
+            text-align: right;
             margin-top: 15px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             color: #1a2e45;
             font-weight: bold;
         }
@@ -133,109 +147,161 @@
     </div>
 
     <div class="container">
-        <div class="section-header js-score-method-header">
-            <div class="section-title" style="font-size:1.4em; font-weight:bold; margin-bottom:20px; border-left:5px solid #2a5298; padding-left:15px;">
-                候補者一覧・評価スコア
-            </div>
+        
+        <div style="margin-bottom: 20px;">
+            <a href="../../../index.html" style="color:#666; text-decoration:none;">
+                <i class="fa-solid fa-arrow-left"></i> トップに戻る
+            </a>
         </div>
 
-        <div class="candidate-list" id="candidate-container"></div>
-        
-        <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
-            <a href="../../../index.html" style="color:#666; text-decoration:underline;">← 選挙一覧に戻る</a>
+        <div class="section-title" style="font-size:1.4em; font-weight:bold; margin-bottom:20px; border-left:5px solid #2a5298; padding-left:15px;">
+            候補者一覧（6名）
+        </div>
+
+        <div class="candidate-list">
+            
+            <a href="yoshimura.html" class="candidate-card">
+                <div class="card-header bg-ishin">
+                    <img src="../../../images/yoshimura.jpg" class="face-icon" alt="吉村洋文" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="name-row">
+                        <span class="name">吉村 洋文 <span class="age">(47)</span></span>
+                        <span class="status-tag status-win">現職・当選</span>
+                    </div>
+                    <div class="party-name">大阪維新の会</div>
+                    <p class="candidate-desc">
+                        「大阪の成長を止めるな」。高校授業料の完全無償化、大阪万博の成功、府市一体の改革継続を掲げる。
+                    </p>
+                    <div class="score-area">
+                        <div class="score-row">
+                            <span class="score-label">公約達成・信頼度</span>
+                            <span class="score-value">82 <span style="font-size:0.6em;">/ 100</span></span>
+                        </div>
+                    </div>
+                    <div class="read-more">詳細データを見る <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
+
+            <a href="#" class="candidate-card">
+                <div class="card-header bg-gray">
+                    <img src="../../../images/taniguchi.jpg" class="face-icon" alt="谷口真由美" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="name-row">
+                        <span class="name">谷口 真由美 <span class="age">(48)</span></span>
+                        <span class="status-tag">新人</span>
+                    </div>
+                    <div class="party-name">無所属（アップデートおおさか）</div>
+                    <p class="candidate-desc">
+                        「カジノより、子どもや暮らしに投資を」。IR誘致計画の撤回を主張し、対話型の府政への転換を訴える。
+                    </p>
+                    <div class="score-area">
+                        <div class="score-row">
+                            <span class="score-label">公約具体性スコア</span>
+                            <span class="score-value">65 <span style="font-size:0.6em;">/ 100</span></span>
+                        </div>
+                    </div>
+                    <div class="read-more">詳細データを見る <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
+
+            <a href="#" class="candidate-card">
+                <div class="card-header bg-red">
+                    <img src="../../../images/tatsumi.jpg" class="face-icon" alt="辰巳孝太郎" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="name-row">
+                        <span class="name">辰巳 孝太郎 <span class="age">(46)</span></span>
+                        <span class="status-tag">新人</span>
+                    </div>
+                    <div class="party-name">無所属（共産党 推薦）</div>
+                    <p class="candidate-desc">
+                        「カジノあかん！」。カジノ誘致の中止を最優先課題に掲げ、ケア労働者の待遇改善や教育費負担軽減を訴える。
+                    </p>
+                    <div class="score-area">
+                        <div class="score-row">
+                            <span class="score-label">公約具体性スコア</span>
+                            <span class="score-value">68 <span style="font-size:0.6em;">/ 100</span></span>
+                        </div>
+                    </div>
+                    <div class="read-more">詳細データを見る <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
+
+            <a href="#" class="candidate-card">
+                <div class="card-header bg-orange">
+                    <img src="../../../images/yoshino.jpg" class="face-icon" alt="吉野敏明" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="name-row">
+                        <span class="name">吉野 敏明 <span class="age">(55)</span></span>
+                        <span class="status-tag">新人</span>
+                    </div>
+                    <div class="party-name">参政党</div>
+                    <p class="candidate-desc">
+                        「大阪を、日本を取り戻す」。メガソーラー建設反対や、大阪都構想の完全撤回、教育改革を主張。
+                    </p>
+                    <div class="score-area">
+                        <div class="score-row">
+                            <span class="score-label">公約具体性スコア</span>
+                            <span class="score-value">55 <span style="font-size:0.6em;">/ 100</span></span>
+                        </div>
+                    </div>
+                    <div class="read-more">詳細データを見る <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
+
+            <a href="#" class="candidate-card">
+                <div class="card-header bg-purple">
+                    <img src="../../../images/sato.jpg" class="face-icon" alt="佐藤さやか" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="name-row">
+                        <span class="name">佐藤 さやか <span class="age">(34)</span></span>
+                        <span class="status-tag">新人</span>
+                    </div>
+                    <div class="party-name">政治家女子48党</div>
+                    <p class="candidate-desc">
+                        政治をもっと身近に。女性の社会進出支援や、既得権益の打破を訴えるキャンペーンを展開。
+                    </p>
+                    <div class="score-area">
+                        <div class="score-row">
+                            <span class="score-label">公約具体性スコア</span>
+                            <span class="score-value">40 <span style="font-size:0.6em;">/ 100</span></span>
+                        </div>
+                    </div>
+                    <div class="read-more">詳細データを見る <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
+            
+             <a href="#" class="candidate-card">
+                <div class="card-header bg-gray">
+                    <img src="../../../images/inagaki.jpg" class="face-icon" alt="稲垣秀哉" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="name-row">
+                        <span class="name">稲垣 秀哉 <span class="age">(53)</span></span>
+                        <span class="status-tag">新人</span>
+                    </div>
+                    <div class="party-name">その他</div>
+                    <p class="candidate-desc">
+                        独自の政治改革案を掲げ、現職の政治手法を批判。府民への直接還元を訴える。
+                    </p>
+                    <div class="score-area">
+                        <div class="score-row">
+                            <span class="score-label">公約具体性スコア</span>
+                            <span class="score-value">- <span style="font-size:0.6em;">/ 100</span></span>
+                        </div>
+                    </div>
+                    <div class="read-more">詳細データを見る <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
+
         </div>
     </div>
 
     <script src="../../../js/layout.js?v=9999"></script>
-
-    <script>
-        const container = document.getElementById('candidate-container');
-
-        // ==========================================
-        //  1. JSONデータを取得する関数 (Fetch)
-        // ==========================================
-        async function loadData() {
-            try {
-                // ★修正：JSONファイルの読み込みパスを ../../../ に変更
-                const response = await fetch('../../../js/data/osaka_2023.json');
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const candidates = await response.json();
-                renderCards(candidates);
-
-            } catch (error) {
-                console.error('データの読み込みに失敗しました:', error);
-                container.innerHTML = '<p style="text-align:center; padding:30px;">データの読み込みに失敗しました。<br>パスが間違っている可能性があります。</p>';
-            }
-        }
-
-        // ==========================================
-        //  2. カードを描画する関数
-        // ==========================================
-        function renderCards(data) {
-            if (!data || data.length === 0) {
-                container.innerHTML = '<p>データがありません。</p>';
-                return;
-            }
-
-            data.forEach(person => {
-                const overallScore = person.overall_score || '-';
-                
-                // 色分けロジック
-                let headerColor = '#999';
-                let partyClass = 'party-other';
-                
-                if (person.party.includes('維新')) {
-                    headerColor = '#8cc63f'; 
-                    partyClass = 'party-ishin';
-                } else if (person.party.includes('共産') || person.name.includes('辰巳')) {
-                    headerColor = '#e63946'; 
-                } else {
-                    headerColor = '#4a6fa5'; 
-                }
-
-                // ★修正：吉村候補の場合だけ、強制的に yoshimura.html へ飛ばす
-                // (本来はJSONの "url" を書き換えるべきですが、一旦HTML側で対応します)
-                let linkUrl = person.url;
-                if(person.id === 'osaka_yoshimura') {
-                    linkUrl = 'yoshimura.html'; // 同じフォルダ内なのでファイル名だけでOK
-                }
-
-                const cardHTML = `
-                    <a href="${linkUrl}" class="candidate-card">
-                        <div class="card-header" style="background-color: ${headerColor};">
-                            <img src="${person.image}" class="face-icon" alt="顔写真">
-                        </div>
-
-                        <div class="card-body">
-                            <div class="name-row">
-                                <div class="name">${person.name}</div>
-                                <span class="party-label ${partyClass}">${person.status}</span>
-                            </div>
-                            <div style="font-size:0.85em; color:#888; margin-bottom:5px;">${person.party}</div>
-
-                            <p class="candidate-desc">${person.desc}</p>
-
-                            <div class="score-area">
-                                <div class="score-row">
-                                    <span class="score-label">政策実現・信頼度スコア</span>
-                                    <span class="score-value">${overallScore} <span style="font-size:0.6em; font-weight:normal;">/ 100</span></span>
-                                </div>
-                            </div>
-
-                            <div class="read-more">詳細データを見る →</div>
-                        </div>
-                    </a>
-                `;
-                container.insertAdjacentHTML('beforeend', cardHTML);
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', loadData);
-    </script>
 
 </body>
 </html>

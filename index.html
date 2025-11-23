@@ -55,7 +55,6 @@
     </div>
 
     <script src="js/elections.js"></script>
-    
     <script src="js/layout.js?v=999"></script>
 
     <script>
@@ -63,10 +62,11 @@
         const savedAreaName = localStorage.getItem('my_area_name') || "";
         const searchInput = document.getElementById('search-input');
 
-        // ★追加：都道府県ごとのデフォルト画像リスト
+        // ★修正箇所：都道府県ごとのデフォルト画像リスト
+        // 大阪府の画像を有効なURL（Unsplashの大阪城）に変更しました
         const prefectureImages = {
             "東京都": "https://images.unsplash.com/photo-1540910419868-47a12421e520?auto=format&fit=crop&w=600&q=80", // 東京タワー
-            "大阪府": "https://images.unsplash.com/photo-1590552515252-3a5a1bce7bed?auto=format&fit=crop&w=800&q=80", // 大阪城
+            "大阪府": "images/osaka.jpg", // 大阪城 (修正済み)
             "長崎県": "https://images.unsplash.com/photo-1565627788441-4942d2302d7c?auto=format&fit=crop&w=600&q=80", // 眼鏡橋
             "神奈川県": "https://images.unsplash.com/photo-1559517441-2c922da62641?auto=format&fit=crop&w=600&q=80", // 横浜
             "国政": "https://images.unsplash.com/photo-1529101091760-6149976f1581?auto=format&fit=crop&w=600&q=80",   // 国会議事堂
@@ -83,8 +83,10 @@
         }
 
         function renderCards(category) {
+            // データが存在しない場合のエラーハンドリング
             if (typeof elections === 'undefined') {
-                console.error("electionsデータが見つかりません");
+                console.error("electionsデータが見つかりません。js/elections.jsが正しく読み込まれているか確認してください。");
+                grid.innerHTML = `<p style="text-align:center; color:red;">データの読み込みに失敗しました。</p>`;
                 return;
             }
 
@@ -111,9 +113,9 @@
             const query = searchInput.value.trim().toLowerCase();
             if (query) {
                 filteredData = filteredData.filter(e => {
-                    const title = e.title.toLowerCase();
-                    const pref = e.prefecture.toLowerCase();
-                    const desc = (e.desc || '').replace(/<br\s*\/?>/gi,' ').toLowerCase();
+                    const title = e.title ? e.title.toLowerCase() : "";
+                    const pref = e.prefecture ? e.prefecture.toLowerCase() : "";
+                    const desc = e.desc ? e.desc.replace(/<br\s*\/?>/gi,' ').toLowerCase() : "";
                     return title.includes(query) || pref.includes(query) || desc.includes(query);
                 });
             }
@@ -136,19 +138,19 @@
             // 6. カードを描画
             filteredData.forEach(election => {
                 const badgeClass = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
-                const statusClass = election.status.includes('注目') ? 'status-active' : '';
+                const statusClass = (election.status && election.status.includes('注目')) ? 'status-active' : '';
                 
                 const isAreaMatch = savedAreaName === election.prefecture;
                 const highlight = isAreaMatch 
                     ? 'border:2px solid #1a2e45; box-shadow:0 0 15px rgba(26,46,69,.2);' 
                     : '';
 
-                // ★修正：自動画像判定ロジック
+                // 画像判定ロジック
                 // 都道府県ごとの画像を辞書から取得、なければdefault
                 let imageUrl = prefectureImages[election.prefecture] || prefectureImages['default'];
                 
-                // もしデータ個別に画像URLが指定されていたら、そちらを優先する
-                if (election.image && election.image.length > 10) {
+                // もしデータ個別に有効な画像URLが指定されていたら、そちらを優先する
+                if (election.image && election.image.startsWith('http')) {
                     imageUrl = election.image;
                 }
 
