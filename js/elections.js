@@ -43,7 +43,7 @@ const elections = [
         date: "202X年 終了",
         prefecture: "国政",
         desc: "各党のマニフェスト達成状況を追跡。<br>当選議員のその後の活動をチェック。",
-        image: "https://images.unsplash.com/photo-1529101091760-6149976f1581?auto=format&fit=crop&w=500&q=80",
+        image: "",
         url: "#",
         badgeType: "national",
         status: "アーカイブ"

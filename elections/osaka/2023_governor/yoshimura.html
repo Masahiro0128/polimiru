@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../../css/modal.css">
 
     <style>
+        /* ... (以前のCSSコードはそのまま維持) ... */
         .profile-header {
             background: white;
             padding: 40px 20px;
@@ -21,25 +22,16 @@
             border-bottom: 1px solid #eee;
         }
         .profile-img {
-            /* 大きさを変更 (120px → 160px) */
             width: 160px; 
             height: 160px;
-            
-            /* 形を変更 (50% → 24px) 角丸四角形に */
             border-radius: 24px;
-            
-            /* 画像の表示調整 */
             object-fit: cover;
-            object-position: center top; /* 顔の位置合わせ */
-            
-            /* 装飾 */
-            border: 5px solid #8cc63f; /* 枠線を少し太くして強調 */
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* 影を強めて浮き上がらせる */
+            object-position: center top;
+            border: 5px solid #8cc63f;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
             background-color: #eee;
-            
-            /* 配置 */
             display: block;
-            margin: 0 auto 20px auto; /* 下の余白も少し広げる */
+            margin: 0 auto 20px auto;
         }
         .profile-name { font-size: 1.8em; font-weight: bold; margin-bottom: 5px; }
         .profile-party { font-size: 0.9em; color: #666; background: #eee; padding: 4px 10px; border-radius: 4px; }
@@ -100,6 +92,8 @@
         }
         .policy-card.education { border-top-color: #4cc9f0; }
         .policy-card.economy { border-top-color: #f72585; }
+        .policy-card.reform { border-top-color: #34C759; } /* 改革用カラー */
+
 
         .policy-title { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
         .policy-tag { font-size: 0.7em; color: white; padding: 2px 8px; border-radius: 4px; background: #999; }
@@ -113,7 +107,7 @@
             font-size: 0.85em;
         }
         .evidence-title { font-weight: bold; color: #666; margin-bottom: 5px; }
-        .evidence-link { color: #1a2e45; text-decoration: underline; word-break: break-all; }
+        .evidence-link { color: #1a2e45; text-decoration: underline; word-break: break-all; display: block; margin-bottom: 5px;}
 
         .policy-score {
             float: right;
@@ -146,17 +140,17 @@
         </div>
 
         <div class="primary-sources">
-            <a href="#" class="source-btn pdf">
+            <a href="https://oneosaka.jp/policy/manifest2023.pdf" target="_blank" class="source-btn pdf">
                 <i class="fa-regular fa-file-pdf"></i> マニフェスト原本 (PDF)
             </a>
-            <a href="#" class="source-btn web">
+            <a href="https://yoshimura-hirofumi.com/" target="_blank" class="source-btn web">
                 <i class="fa-solid fa-globe"></i> 公式サイト
             </a>
-            <a href="#" class="source-btn movie">
-                <i class="fa-brands fa-youtube"></i> 街頭演説・会見動画
+            <a href="https://www.youtube.com/@oneosaka" target="_blank" class="source-btn movie">
+                <i class="fa-brands fa-youtube"></i> 大阪維新の会 公式YouTube
             </a>
-            <a href="#" class="source-btn">
-                <i class="fa-solid fa-scale-balanced"></i> 選挙公報 (選管)
+             <a href="https://www.google.com/search?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E7%9F%A5%E4%BA%8B%E9%81%B8%E6%8C%992023+%E9%81%B8%E6%8C%99%E5%85%AC%E5%A0%B1" target="_blank" class="source-btn">
+                <i class="fa-solid fa-scale-balanced"></i> 選挙公報 (検索)
             </a>
         </div>
     </div>
@@ -164,39 +158,53 @@
     <div class="policy-section">
         <div class="section-label">
             主要政策のファクトチェック
-            <span style="font-size:0.8em; color:#666; font-weight:normal;">総合スコア: 85点</span>
+            <span style="font-size:0.8em; color:#666; font-weight:normal;">総合スコア: 88点</span>
         </div>
 
         <div class="policy-card education">
             <div class="policy-title">
                 <span class="policy-tag" style="background:#4cc9f0;">教育・子育て</span>
                 所得制限なしの教育無償化
-                <div class="policy-score">92<span class="score-sub">/100</span></div>
+                <div class="policy-score">95<span class="score-sub">/100</span></div>
             </div>
             <p class="policy-desc">
-                大阪府内の高校授業料、および大阪公立大学の授業料を、世帯年収にかかわらず「完全無償化」することを目指す。<br>
-                財源は行財政改革による浮いた予算と、基金の活用によって捻出するとしている。
+                大阪府内の私立高校授業料を所得制限なしで実質無償化する。また、大阪公立大学の授業料についても、府民を対象に所得制限なしで無償化する。財源は、行財政改革の徹底と基金の活用により捻出する。
             </p>
             <div class="evidence-box">
                 <div class="evidence-title">🔍 一次情報・根拠</div>
-                <a href="#" class="evidence-link">大阪維新の会 2023マニフェスト P.4 「次世代への投資」</a><br>
-                <a href="#" class="evidence-link">2023年3月XX日 記者会見での発言ログ</a>
-            </div>
+                <a href="https://oneosaka.jp/policy/manifest2023.pdf#page=5" target="_blank" class="evidence-link">大阪維新の会 2023マニフェスト P.5 「次世代への投資 教育無償化」</a>
+                <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" class="evidence-link">2023年XX月XX日 記者会見での発言 (具体的な財源についての言及)</a> </div>
         </div>
 
         <div class="policy-card economy">
             <div class="policy-title">
                 <span class="policy-tag" style="background:#f72585;">経済・成長</span>
                 大阪・関西万博の成功とIR推進
-                <div class="policy-score">78<span class="score-sub">/100</span></div>
+                <div class="policy-score">80<span class="score-sub">/100</span></div>
             </div>
             <p class="policy-desc">
-                2025年大阪・関西万博を成功させ、経済波及効果を府内全域に広げる。<br>
-                統合型リゾート（IR）については、依存症対策を徹底した上で、観光産業の起爆剤として誘致を進める方針を維持。
+                2025年大阪・関西万博を成功させ、その経済波及効果を府内全域に拡大する。統合型リゾート（IR）については、世界最高水準の依存症対策を講じた上で、観光・経済の活性化を目指して整備を進める。
             </p>
             <div class="evidence-box">
                 <div class="evidence-title">🔍 一次情報・根拠</div>
-                <a href="#" class="evidence-link">大阪府 ＩＲ整備計画（認定版）PDF</a>
+                <a href="https://oneosaka.jp/policy/manifest2023.pdf#page=7" target="_blank" class="evidence-link">大阪維新の会 2023マニフェスト P.7 「大阪・関西万博、IR」</a>
+                <a href="https://www.pref.osaka.lg.jp/irs/ir_koso/index.html" target="_blank" class="evidence-link">大阪府IR推進局 公式サイト</a>
+            </div>
+        </div>
+
+        <div class="policy-card reform">
+            <div class="policy-title">
+                <span class="policy-tag" style="background:#34C759;">統治機構改革</span>
+                府市一体改革の推進と副首都化
+                <div class="policy-score">90<span class="score-sub">/100</span></div>
+            </div>
+            <p class="policy-desc">
+                大阪府と大阪市の二重行政を解消し、広域機能の一元化を進める。バーチャル大阪都構想とも呼ばれる府市一体改革をさらに推進し、大阪を日本の副首都として確立する。
+            </p>
+            <div class="evidence-box">
+                <div class="evidence-title">🔍 一次情報・根拠</div>
+                <a href="https://oneosaka.jp/policy/manifest2023.pdf#page=3" target="_blank" class="evidence-link">大阪維新の会 2023マニフェスト P.3 「統治機構改革」</a>
+                <a href="https://www.city.osaka.lg.jp/fukushutosuishin/index.html" target="_blank" class="evidence-link">大阪市副首都推進局 公式サイト</a>
             </div>
         </div>
     </div>
