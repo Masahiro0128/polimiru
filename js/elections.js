@@ -7,7 +7,7 @@ const elections = [
         date: "2026年2月XX日 投票",
         prefecture: "東京都",
         desc: "再開発、給食、子育て支援...。<br>現職の実績と新人の公約を徹底比較。",
-        image: "https://images.unsplash.com/photo-1540910419868-47a12421e520?auto=format&fit=crop&w=500&q=80",
+        image: "",   // ← ここを空にして東京都の共通画像（東京タワー）を使用
         url: "elections/machida.html",
         badgeType: "local",
         status: "2026年 注目"
@@ -19,7 +19,7 @@ const elections = [
         date: "2025年7月 予定",
         prefecture: "東京都",
         desc: "首都決戦。定数6を巡る各党の攻防。<br>公約達成率で現職を評価。",
-        image: "https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&w=500&q=80",
+        image: "",   // ← **東京都はこっちも空に**（東京タワーに統一される）
         url: "elections/sangiin_tokyo.html",
         badgeType: "national", 
         status: "2025年 注目"
@@ -55,11 +55,7 @@ const elections = [
         date: "2023年4月9日 投開票（終了）",
         prefecture: "大阪府",
         desc: "万博・IR誘致の是非と、維新府政への評価が問われた選挙。<br>公約達成度の最終評価を公開。",
-        
-        // ★ここを修正しました！
-        // URLを消して空っぽにすることで、index.htmlで設定した「osaka.jpg」が自動的に適用されます。
-        image: "", 
-        
+        image: "",   // 大阪も空（prefectureImages の osaka.jpg が反映）
         url: "elections/osaka/2023_governor/index.html",
         badgeType: "local",
         status: "アーカイブ"
