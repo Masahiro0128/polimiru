@@ -31,7 +31,7 @@ const elections = [
         date: "2026年2月 予定",
         prefecture: "長崎県",
         desc: "石木ダム問題の行方は？<br>県政の長期的な課題を検証します。",
-        image: "https://images.unsplash.com/photo-1565627788441-4942d2302d7c?auto=format&fit=crop&w=500&q=80",
+        image: "",
         url: "#",
         badgeType: "local",
         status: "予定"
