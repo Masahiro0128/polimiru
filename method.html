@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>polimiru | スコアの計算方法</title>
+    <title>polimiru | 評価ロジックについて</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- 共通CSS（分割後バージョン） -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header-footer.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/elections.css">
     <link rel="stylesheet" href="./css/modal.css">
 
-    <!-- このページ専用のちょい足しスタイルだけ（body のフォントは上書きしない） -->
     <style>
         .method-hero {
             background: #f8f9fc;
@@ -58,193 +56,196 @@
             margin: 0 0 10px;
         }
         .method-main h2 {
-            font-size: 1.1rem;
-            margin-top: 24px;
-            margin-bottom: 6px;
+            font-size: 1.2rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 6px;
         }
         .method-main h3 {
-            font-size: 1rem;
-            margin-top: 18px;
-            margin-bottom: 4px;
+            font-size: 1.05rem;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-weight: 600;
         }
         .method-main p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 1.8;
-            margin: 4px 0 10px;
+            margin: 4px 0 12px;
+            color: #374151;
         }
         .method-main ul {
             font-size: 0.9rem;
             padding-left: 1.2rem;
-            margin: 4px 0 10px;
+            margin: 4px 0 12px;
+            color: #4b5563;
         }
 
         .badge {
             display: inline-block;
             font-size: 0.7rem;
-            padding: 1px 6px;
-            border-radius: 999px;
-            background: #e5e7eb;
-            margin-left: 4px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-left: 6px;
+            vertical-align: middle;
         }
+        .badge-incumbent { background: #dbeafe; color: #1e40af; } /* 青系 */
+        .badge-new { background: #d1fae5; color: #065f46; } /* 緑系 */
 
         .formula-box {
-            border-left: 3px solid #2563eb;
-            background: #ffffff;
-            padding: 8px 10px;
-            margin: 10px 0 14px;
-            font-size: 0.85rem;
+            border-left: 4px solid #2563eb;
+            background: #f8fafc;
+            padding: 12px 16px;
+            margin: 16px 0 20px;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.9rem;
         }
+        .formula-box strong { display: block; margin-bottom: 4px; color: #1f2937; }
         .formula-box code {
-            background: #f3f4f6;
-            padding: 1px 4px;
-            border-radius: 3px;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 0.8rem;
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+            font-size: 0.85rem;
+            color: #0f172a;
+        }
+
+        /* 比較レイアウト用の追加スタイル */
+        .role-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0 30px;
+        }
+        .role-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fff;
+        }
+        .role-card.incumbent { border-top: 4px solid #2563eb; }
+        .role-card.challenger { border-top: 4px solid #10b981; }
+        .role-head { font-weight: bold; font-size: 1.1rem; display: block; margin-bottom: 10px; }
+        
+        @media (max-width: 640px) {
+            .role-comparison { grid-template-columns: 1fr; }
         }
 
         details.method-details {
-            margin-top: 14px;
-            padding: 8px 10px;
+            margin-top: 20px;
+            padding: 12px 16px;
             background: #f3f4f6;
             border-radius: 8px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
         details.method-details summary {
             cursor: pointer;
             font-weight: 600;
+            color: #4b5563;
         }
     </style>
 </head>
 <body>
-    <!-- 共通ヘッダーは layout.js が差し込む -->
-
     <div class="method-hero">
         <div class="method-hero-inner">
             <p class="method-breadcrumb">
                 <a href="./index.html">← 選挙一覧に戻る</a>
             </p>
-            <h1 class="method-hero-title">政策の信頼度スコアとは？</h1>
+            <h1 class="method-hero-title">評価・スコアリングの仕組み</h1>
             <p class="method-hero-sub">
-                公約の「中身の具体性」と「実現のしやすさ」、そして現職の「これまでの行動」をもとに算出した、polimiru 独自の指標です。
+                polimiruでは、現職の「過去の実績」と新人の「計画の具体性」を、それぞれの立場に適した科学的な手法で分析・可視化しています。
             </p>
         </div>
     </div>
 
     <main class="method-main">
         <p>
-            このサイトで表示している <strong>「政策の信頼度スコア（0〜100点）」</strong> は、<br>
-            候補者の公約がどれだけ具体的か、どれだけ実現的に実行できそうか、<br>
-            そして（現職の場合は）過去の言動とどれだけ一致しているかをもとに、一定のルールで計算した独自指標です。
+            政治家の評価において、実績のある「現職」と、これから実績を作る「新人」を同じ物差しで測ることは不公平であり、科学的ではありません。<br>
+            当サイトでは、<strong>「現職は実績（過去）を問う」</strong>、<strong>「新人は計画（未来）を問う」</strong>というコンセプトのもと、立場ごとに異なる評価指標を採用しています。
         </p>
+
+        <h2>1. 立場によって「見るべき数字」を変える</h2>
+        <p>各候補者のカードには、その立場（現職・新人）に応じて、最も重要視すべき指標が表示されています。</p>
+
+        <div class="role-comparison">
+            <div class="role-card incumbent">
+                <span class="role-head"><i class="fa-solid fa-user-tie"></i> 現職・元職の場合</span>
+                <p><strong>指標：公約達成率 & 言行一致度</strong></p>
+                <p style="font-size:0.85rem; color:#666;">
+                    「言ったことを本当にやったか？」を評価します。前回の選挙公報と、任期中の議会活動データを突合して算出します。
+                </p>
+            </div>
+
+            <div class="role-card challenger">
+                <span class="role-head"><i class="fa-solid fa-user-graduate"></i> 新人候補の場合</span>
+                <p><strong>指標：計画解像度（具体性）</strong></p>
+                <p style="font-size:0.85rem; color:#666;">
+                    「その計画は具体的か？」を評価します。夢物語ではなく、期限・財源・プロセスが明記されているかを解析します。
+                </p>
+            </div>
+        </div>
+
+        <h2>2. 各指標の算出ロジック</h2>
+
+        <h3>2-1. 実績トラッキング <span class="badge badge-incumbent">現職のみ</span></h3>
         <p>
-            一般の利用者向けページでは「点数」だけを表示し、このページでその計算方法を公開しています。<br>
-            内容の良し悪し（イデオロギー）ではなく、あくまで<strong>「約束の具体性・現実性」</strong>に注目しています。
+            「やりたい」という願望ではなく、「やった」という事実を重視します。<br>
+            前回の選挙で掲げたマニフェスト項目をリスト化し、議会議事録や行政報告書から進捗状況を追跡します。
         </p>
+        <div class="formula-box">
+            <strong>評価ロジック（概念図）</strong><br>
+            <code>達成スコア = (完了した政策数 + 着手した政策数 × 0.5) ÷ 全公約数</code><br>
+            <small>※議会での提案、予算成立、条例可決などを「着手・完了」の証拠としてカウントします。</small>
+        </div>
 
-        <h2>1. 表示しているスコアの中身</h2>
-        <p>各候補者のカードに表示している <strong>総合スコア</strong> は、内部的には次の要素を組み合わせて作られています：</p>
+        <h3>2-2. 計画解像度（具体性スコア） <span class="badge badge-new">全候補共通</span></h3>
+        <p>
+            政治的な左右（イデオロギー）ではなく、<strong>「計画としての完成度」</strong>を自然言語処理（NLP）で機械的に判定します。<br>
+            「教育を良くする」といった抽象的なスローガンよりも、5W1Hが明確な政策が高く評価されます。
+        </p>
         <ul>
-            <li><strong>公約の具体性</strong>（どこまで数値・期限・手段まで書かれているか）</li>
-            <li><strong>実現可能性</strong>（法律・財源・権限の面から見てどれくらい現実的か）</li>
-            <li><strong>言行一致度</strong><span class="badge">現職のみ</span>（過去の公約と実際の行動がどれだけ一致しているか）</li>
-        </ul>
-
-        <h3>1-1. 新人候補の場合</h3>
-        <p>新人候補には過去の実績がないため、次の2つを中心に評価します：</p>
-        <ul>
-            <li>公約の具体性（内部指標: <code>specificity</code>）</li>
-            <li>実現可能性（内部指標: <code>feasibility</code>）</li>
+            <li><strong>KPI（数値目標）:</strong> 「◯%削減」「◯人増員」などの定量的指標があるか</li>
+            <li><strong>期限:</strong> 「202X年までに」「就任後100日以内に」といったタイムスパンがあるか</li>
+            <li><strong>財源・手段:</strong> 「◯◯税を充てる」「条例を改正する」といったプロセスが書かれているか</li>
         </ul>
         <div class="formula-box">
-            <strong>新人候補の総合スコア（イメージ）</strong><br>
-            <code>overall_score = 100 × (0.5 × 公約の具体性 + 0.5 × 実現可能性)</code>
+            <strong>評価ロジック（概念図）</strong><br>
+            <code>具体性スコア = (数値・期限・手段を含む文の数) ÷ 全テキスト量</code>
         </div>
+
+        <h3>2-3. 情報公開レベル（Transparency）</h3>
         <p>
-            具体的には、曖昧なスローガンよりも、
-            「いつまでに」「どの程度」「どの手段で」「誰がやるか」が書かれている公約を高く評価します。
+            上記のスコアが「どれだけ信頼できる情報に基づいているか」を示す指標です。<br>
+            選挙公報の短いテキストしかない候補者は低くなり、公式サイトや詳細な政策PDF、過去の活動記録を公開している候補者は高くなります。
         </p>
 
-        <h3>1-2. 現職候補の場合</h3>
-        <p>現職の候補者には、上記に加えて<strong>「これまでの言行一致」</strong>も加味します：</p>
+        <h2>3. データの限界と公平性について</h2>
+        <p>
+            polimiruは可能な限り客観的なデータ処理を行っていますが、以下の限界をご理解の上でご利用ください。
+        </p>
         <ul>
-            <li>言行一致度（内部指標: <code>manifesto</code>）</li>
-            <li>公約の具体性</li>
-            <li>実現可能性</li>
+            <li><strong>情報の非対称性:</strong> 現職は公的な記録（議事録）が豊富ですが、新人は自ら発信した情報しか評価材料がありません。Webでの発信が少ない候補者は、どうしてもスコアが低く出る傾向があります。</li>
+            <li><strong>AI解析の限界:</strong> 文脈の機微や、皮肉表現などをAIが誤読する可能性があります。</li>
+            <li><strong>実現可能性の除外:</strong> 「その財源で本当に足りるか」「法的に可能か」といった判断は、専門家の間でも意見が分かれるため、当サイトのスコアには含めていません。</li>
         </ul>
-        <div class="formula-box">
-            <strong>現職候補の総合スコア（イメージ）</strong><br>
-            <code>overall_score = 100 × (0.5 × 言行一致度 + 0.25 × 公約の具体性 + 0.25 × 実現可能性)</code>
-        </div>
-        <p>
-            たとえば、過去に掲げた公約と、実際の議会での賛否や予算配分が大きく食い違う場合は、
-            言行一致度が低くなります。
-        </p>
-
-        <h2>2. 各内部指標の概要</h2>
-
-        <h3>2-1. 公約の具体性（specificity）</h3>
-        <p>公約テキストを文ごとに分解し、次のような要素が含まれているかを機械的に判定します：</p>
-        <ul>
-            <li>数値目標（例：◯％、◯人、◯億円 など）</li>
-            <li>期限（例：2028年までに、4年以内に）</li>
-            <li>主体（市として、府として、市長として など）</li>
-            <li>具体的な手段（制度名、条例改正、補助金創設 など）</li>
-            <li>成果指標（待機児童数、利用率、CO₂排出量 など）</li>
-        </ul>
-        <p>
-            これらが多く含まれるほどスコアが高くなり、
-            「教育を良くします」のような抽象的な文だけの場合は低いスコアになります。
-        </p>
-
-        <h3>2-2. 実現可能性（feasibility）</h3>
-        <p>各公約について、主に次の3つの観点から評価します：</p>
-        <ul>
-            <li><strong>法律面</strong>：現行法や条例で実施可能か、法改正が必要か</li>
-            <li><strong>財政面</strong>：自治体の予算規模に対してどの程度の負担か</li>
-            <li><strong>権限</strong>：その自治体の長が実行できる範囲か、国レベルの専管事項か</li>
-        </ul>
-        <p>
-            いずれかが明らかに不可能（違憲、予算規模的に非現実的、権限外）であれば、
-            実現可能性スコアは低くなります。
-        </p>
-
-        <h3>2-3. 言行一致度（manifesto）<span class="badge">現職のみ</span></h3>
-        <p>
-            過去の選挙で掲げた公約と、実際の投票行動・予算配分・政策実行を突き合わせ、
-            「どれだけ約束が守られてきたか」をスコア化します。
-        </p>
-        <p>
-            この指標は、現職の評価に限定して使用し、新人候補には適用しません。
-        </p>
 
         <details class="method-details">
-            <summary>より技術的な説明（数式レベル）を見る</summary>
-            <p>
-                サイト内部では、これらの指標を 0〜1 の連続値として扱い、
-                将来的には過去データに基づいて重みを推定し直すことも検討しています。
+            <summary>技術的な補足（データソースについて）</summary>
+            <p style="margin-top:10px;">
+                <strong>使用しているデータセット：</strong>
             </p>
+            <ul>
+                <li>各自治体の公式選挙公報（デジタルアーカイブ）</li>
+                <li>公式・私設の候補者WebサイトおよびSNS</li>
+                <li>各自治体の議会議事録検索システム（APIまたはスクレイピング）</li>
+            </ul>
             <p>
-                例として、新人候補については
-                <code>score_new = 100 × (w1 × PSI + w2 × F)</code>
-                （初期値では <code>w1 = w2 = 0.5</code>）のような形をとり、<br>
-                現職については
-                <code>score_inc = 100 × (wM × 言行一致度 + wP × PSI + wF × F)</code>
-                （例：<code>wM = 0.5, wP = 0.25, wF = 0.25</code>）といった比率を想定しています。
+                これらのテキストデータを、政治学のマニフェスト分析手法（MARPOR等）を参考にした独自アルゴリズムとLLM（大規模言語モデル）を用いて解析しています。
             </p>
         </details>
-
-        <h2>3. 限界と注意点</h2>
-        <p>
-            このスコアは、あくまで<strong>「公約の書き方」と「制度的な実現のしやすさ」</strong>に関する指標であり、<br>
-            特定の政党・候補者を推すことを目的としたものではありません。
-        </p>
-        <p>
-            政策内容の善悪（右か左か、賛成か反対か）はスコアに含めていません。<br>
-            実際の投票の際には、公約全文や討論会・インタビューなどもあわせてご確認ください。
-        </p>
     </main>
 
-    <!-- 共通ヘッダー／フッター & 「スコアの計算方法」自動リンク用 -->
     <script src="./js/layout.js?v=3"></script>
 </body>
 </html>
