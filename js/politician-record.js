@@ -24,6 +24,90 @@
         `).join('');
     }
 
+    function renderCareerItem(item) {
+        return `
+            <li class="career-row">
+                <span class="career-period">${escapeHtml(item.period)}</span>
+                <span class="career-text">${escapeHtml(item.text || item.role || item.title)}</span>
+            </li>
+        `;
+    }
+
+    function renderElectionLinks(links) {
+        if (!links || !links.length) return '';
+        return `
+            <section>
+                <div class="section-label">
+                    <h2>選挙との紐づき</h2>
+                    <span>election history</span>
+                </div>
+                <div class="focus-grid">
+                    ${links.map(link => `
+                        <article class="focus-card">
+                            <div class="focus-context">${escapeHtml(link.role || '選挙')}</div>
+                            <h3 class="focus-title">${escapeHtml(link.title)}</h3>
+                            <p class="focus-desc">${escapeHtml(link.result || '')}</p>
+                        </article>
+                    `).join('')}
+                </div>
+            </section>
+        `;
+    }
+
+    function statusLabel(status) {
+        const labels = {
+            achieved: '完了',
+            started: '着手',
+            partial: '一部実現',
+            pending: '未着手',
+            unknown: '不明',
+            initial_review: '初期レビュー'
+        };
+        return labels[status] || status || '確認中';
+    }
+
+    function renderPromiseCycles(cycles) {
+        if (!cycles || !cycles.length) return '';
+        return `
+            <section>
+                <div class="section-label">
+                    <h2>公約・実績の追跡</h2>
+                    <span>promise tracking</span>
+                </div>
+                <div class="cycle-grid">
+                    ${cycles.map(cycle => `
+                        <article class="cycle-card">
+                            <div class="cycle-head">
+                                <div>
+                                    <div class="focus-context">${escapeHtml(cycle.context || cycle.source || '')}</div>
+                                    <h3 class="focus-title">${escapeHtml(cycle.title)}</h3>
+                                </div>
+                                <span class="cycle-score">${escapeHtml(cycle.score ?? '-')}<small>/100</small></span>
+                            </div>
+                            <div class="cycle-meter">
+                                <span class="done" style="width:${Number(cycle.done || 0) / Number(cycle.total || 1) * 100}%"></span>
+                                <span class="started" style="width:${Number(cycle.started || 0) / Number(cycle.total || 1) * 100}%"></span>
+                                <span class="pending" style="width:${Number(cycle.pending || 0) / Number(cycle.total || 1) * 100}%"></span>
+                            </div>
+                            <div class="cycle-legend">
+                                <span>完了 ${escapeHtml(cycle.done || 0)}</span>
+                                <span>着手 ${escapeHtml(cycle.started || 0)}</span>
+                                <span>未着手 ${escapeHtml(cycle.pending || 0)}</span>
+                                <span>計 ${escapeHtml(cycle.total || 0)}</span>
+                            </div>
+                            ${(cycle.highlights || []).slice(0, 4).map(item => `
+                                <a class="cycle-highlight" href="${escapeHtml(item.evidence_url || cycle.source_url || '#')}" target="_blank" rel="noopener">
+                                    <span class="cycle-status">${escapeHtml(statusLabel(item.status))}</span>
+                                    <span>${escapeHtml(item.title)}</span>
+                                </a>
+                            `).join('')}
+                        </article>
+                    `).join('')}
+                </div>
+            </section>
+        `;
+    }
+
     function render(data) {
         const accent = data.accent || {};
         root.style.setProperty('--party-from', accent.from || '#1e3a6e');
@@ -40,7 +124,7 @@
                 <div class="record-hero-inner">
                     ${photo}
                     <div>
-                        <div class="record-kicker">${escapeHtml(data.party)} / ${escapeHtml(data.party_role)}</div>
+                        <div class="record-kicker">${escapeHtml(data.party)} / ${escapeHtml(data.party_role || data.current_status)}</div>
                         <h1 class="record-name">${escapeHtml(data.name)}</h1>
                         <p class="record-lead">${escapeHtml(data.summary)}</p>
                         <div class="record-meta">
@@ -68,15 +152,14 @@
                 <div class="panel">
                     <h2 class="panel-title">履歴 <small>career</small></h2>
                     <ol class="career-list">
-                        ${(data.career || []).map(item => `
-                            <li class="career-row">
-                                <span class="career-period">${escapeHtml(item.period)}</span>
-                                <span class="career-text">${escapeHtml(item.text)}</span>
-                            </li>
-                        `).join('')}
+                        ${(data.career || []).map(renderCareerItem).join('')}
                     </ol>
                 </div>
             </section>
+
+            ${renderElectionLinks(data.election_links)}
+
+            ${renderPromiseCycles(data.promise_cycles)}
 
             <section>
                 <div class="section-label">

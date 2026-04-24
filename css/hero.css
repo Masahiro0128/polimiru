@@ -226,6 +226,31 @@
     margin-left: 4px;
 }
 
+.search-result-tabs {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 0 60px;
+    gap: 8px;
+}
+
+.search-result-tab {
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text-secondary);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.search-result-tab.active {
+    background: var(--navy-900);
+    color: #fff;
+    border-color: var(--navy-900);
+}
+
 /* ── スマホ ─────────────────────────────── */
 @media (max-width: 768px) {
     .hero-container {
@@ -276,5 +301,11 @@
 
     .area-link-btn {
         padding: 4px 0;
+    }
+
+    .search-result-tabs {
+        padding: 0 20px;
+        margin-top: 12px;
+        overflow-x: auto;
     }
 }
