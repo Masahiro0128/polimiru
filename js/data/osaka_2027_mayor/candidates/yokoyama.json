@@ -9,11 +9,22 @@
   "confirmed": false,
   "note": "現職。2027年出馬は未確定。",
   "past_roles": [
-    { "title": "大阪府議会議員", "period": "2011年〜2023年", "source": "https://www.pref.osaka.lg.jp/" },
-    { "title": "大阪市長", "period": "2023年〜現在", "source": "https://www.city.osaka.lg.jp/" }
+    {
+      "title": "大阪府議会議員",
+      "period": "2011年〜2023年",
+      "source": "https://www.pref.osaka.lg.jp/"
+    },
+    {
+      "title": "大阪市長",
+      "period": "2023年〜現在",
+      "source": "https://www.city.osaka.lg.jp/"
+    }
   ],
   "source_urls": [
-    { "label": "大阪市長プロフィール", "url": "https://www.city.osaka.lg.jp/mayor/page/0000000009.html" }
+    {
+      "label": "大阪市長プロフィール",
+      "url": "https://www.city.osaka.lg.jp/mayor/page/0000000009.html"
+    }
   ],
   "manifesto_text": "",
   "manifesto_source": "",
@@ -23,9 +34,10 @@
     "incumbent": {
       "progress": null,
       "consistency": null,
-      "total": 72
+      "total": null
     },
     "challenger": null
   },
-  "score_status": "暫定"
+  "score_status": "暫定",
+  "score_incumbent": null
 }

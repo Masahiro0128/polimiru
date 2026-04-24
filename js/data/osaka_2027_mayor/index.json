@@ -4,7 +4,7 @@
     "election_day": "2027年4月（予定）",
     "source_note": "大阪市選挙管理委員会",
     "source_index_url": "https://www.city.osaka.lg.jp/senkyokanri/",
-    "last_updated": "2026-04-23T00:00:00Z",
+    "last_updated": "2026-04-24T16:13:28Z",
     "status": "upcoming"
   },
   "candidates": [
@@ -16,7 +16,7 @@
       "role": "incumbent",
       "age": 42,
       "image": "",
-      "score_incumbent": 72,
+      "score_incumbent": null,
       "score_challenger": null,
       "score_status": "暫定",
       "confirmed": false,

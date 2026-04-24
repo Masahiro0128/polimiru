@@ -36,7 +36,7 @@
     "incumbent": {
       "progress": null,
       "consistency": null,
-      "total": 78
+      "total": null
     },
     "challenger": null
   },
@@ -779,5 +779,6 @@
     }
   ],
   "manifesto_source_2023": "https://osaka-ishin.jp/pdf/manifesto/ishinfugidan_manifesto2023.pdf",
-  "manifesto_note_2023": "大阪維新の会 大阪府議会議員団 マニフェスト2023（知事選同時期）"
+  "manifesto_note_2023": "大阪維新の会 大阪府議会議員団 マニフェスト2023（知事選同時期）",
+  "score_incumbent": null
 }
