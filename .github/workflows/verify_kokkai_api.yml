@@ -1,0 +1,15 @@
+name: Verify kokkai api access
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check kokkai API headers
+        run: |
+          curl -sSI -A "Mozilla/5.0" "https://kokkai.ndl.go.jp/api/search?count=1&from=1&keyword=%E6%B6%88%E8%B2%BB%E7%A8%8E" | head -n 20
+      - name: Check kokkai API body
+        run: |
+          curl -sS -A "Mozilla/5.0" "https://kokkai.ndl.go.jp/api/search?count=1&from=1&keyword=%E6%B6%88%E8%B2%BB%E7%A8%8E" | head -n 20

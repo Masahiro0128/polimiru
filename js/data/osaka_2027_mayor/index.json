@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "election": "大阪市長選挙 2027",
+    "election_day": "2027年4月（予定）",
+    "source_note": "大阪市選挙管理委員会",
+    "source_index_url": "https://www.city.osaka.lg.jp/senkyokanri/",
+    "last_updated": "2026-04-23T00:00:00Z",
+    "status": "upcoming"
+  },
+  "candidates": [
+    {
+      "id": "yokoyama",
+      "name": "横山 英幸",
+      "kana": "よこやま ひでゆき",
+      "party": "大阪維新の会",
+      "role": "incumbent",
+      "age": 42,
+      "image": "",
+      "score_incumbent": 72,
+      "score_challenger": null,
+      "score_status": "暫定",
+      "confirmed": false,
+      "note": "現職。2027年出馬は未確定。"
+    }
+  ]
+}

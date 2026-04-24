@@ -1,21 +1,51 @@
 /* =========================================
-   1. 基本設定 & 共通レイアウト
+   Design Tokens
 ========================================= */
+:root {
+    --navy-900: #0f1f3d;
+    --navy-700: #1e3a6e;
+    --navy-200: #c8d4e8;
+    --navy-100: #e8edf6;
+    --navy-50:  #f4f6fb;
+
+    --text-primary:   #0f1f3d;
+    --text-secondary: #4a5a72;
+    --text-muted:     #8fa0b5;
+
+    --surface:  #ffffff;
+    --bg:       #f4f6fa;
+    --border:   rgba(15, 31, 61, 0.09);
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    --shadow-sm: 0 1px 3px rgba(15, 31, 61, 0.06);
+    --shadow-md: 0 4px 16px rgba(15, 31, 61, 0.09);
+    --shadow-lg: 0 8px 28px rgba(15, 31, 61, 0.12);
+}
+
+/* =========================================
+   Base
+========================================= */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    background-color: #f8f9fa;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDGothic",
+                 "Meiryo", Arial, sans-serif;
+    background-color: var(--bg);
     margin: 0;
-    padding-top: 100px; /* ヘッダーの高さ分あける */
-    color: #333;
-    -webkit-text-size-adjust: 100%; /* スマホでの勝手な文字拡大を防ぐ */
+    padding-top: 72px;
+    color: var(--text-primary);
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.7;
+    font-size: 15px;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-html {
-    scroll-behavior: smooth;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
 }

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "election": "大阪府知事選挙 2023",
+    "election_day": "2023年4月9日",
+    "status": "archived",
+    "source_note": "大阪府選挙管理委員会",
+    "last_updated": "2026-04-24T00:00:00Z"
+  },
+  "candidates": [
+    {
+      "id": "yoshimura",
+      "name": "吉村 洋文",
+      "kana": "よしむら ひろふみ",
+      "party": "大阪維新の会",
+      "role": "incumbent",
+      "age": 48,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_%28cropped%29.jpg",
+      "result": "当選",
+      "votes": 2,
+      "vote_rate": 82.7,
+      "score_incumbent": 50,
+      "score_status": "初期評価（要チームレビュー）",
+      "confirmed": true,
+      "note": "現職として3期目当選。得票率82.7%。"
+    },
+    {
+      "id": "tatsumi",
+      "name": "辰巳 孝太郎",
+      "kana": "たつみ こうたろう",
+      "party": "無所属（共産推薦）",
+      "role": "challenger",
+      "age": 47,
+      "image": "",
+      "result": "落選",
+      "score_challenger": null,
+      "score_status": "落選候補",
+      "confirmed": true,
+      "note": "元参議院議員。カジノ反対・物価高対策を訴えた。"
+    },
+    {
+      "id": "taniguchi",
+      "name": "谷口 真由美",
+      "kana": "たにぐち まゆみ",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 49,
+      "image": "",
+      "result": "落選",
+      "score_challenger": null,
+      "score_status": "落選候補",
+      "confirmed": true,
+      "note": "法学者・元大阪弁護士会所属。"
+    }
+  ]
+}

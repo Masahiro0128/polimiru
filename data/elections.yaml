@@ -1,0 +1,105 @@
+# 全選挙の定義 — ここだけ編集すれば全ページ・js/elections.js が再生成される
+# python scripts/build.py を実行すると反映される
+#
+# template フィールド:
+#   standard … 候補者グリッドページを自動生成
+#   custom   … 手作りページ。build ではスキップ（js/elections.js には含める）
+
+elections:
+
+  # ── 2027 大阪 ─────────────────────────────────────────────────────────
+  - id: osaka_2027_governor
+    title: 大阪府知事選挙 2027
+    category: local
+    date: "2027年4月（予定）"
+    prefecture: 大阪府
+    badge_type: local
+    list_status: "2027年 注目"
+    list_id: 20
+    list_desc: "現職の4年間の公約達成度と、新候補者のマニフェストを比較。<br>候補者情報は選管データから自動更新。"
+    list_image: ""
+    output_path: elections/osaka/2027_governor/index.html
+    hero_from: "#1a3a1a"
+    hero_to: "#2d6a2d"
+    accent: "#2d6a2d"
+    hero_desc: "現職の公約達成度と、新候補者のマニフェスト具体性を比較。<br>候補者情報は大阪府選挙管理委員会の公式データをもとに自動更新されます。"
+    template: standard
+
+  - id: osaka_2027_mayor
+    title: 大阪市長選挙 2027
+    category: local
+    date: "2027年4月（予定）"
+    prefecture: 大阪府
+    badge_type: local
+    list_status: "2027年 注目"
+    list_id: 21
+    list_desc: "現職の実績評価と新候補者の公約具体性を数値で比較。<br>候補者情報は選管データから自動更新。"
+    list_image: ""
+    output_path: elections/osaka/2027_mayor/index.html
+    hero_from: "#1a1a3a"
+    hero_to: "#2d2d7a"
+    accent: "#2d2d7a"
+    hero_desc: "現職の実績評価と、新候補者のマニフェスト具体性を比較。<br>候補者情報は大阪市選挙管理委員会の公式データをもとに自動更新されます。"
+    template: standard
+
+  # ── 2026 国政・地方 ────────────────────────────────────────────────────
+  - id: shugiin_tokyo_2026
+    title: 第51回 衆議院議員総選挙（東京）
+    category: national
+    date: "2026年2月8日 投開票"
+    prefecture: 東京都
+    badge_type: national
+    list_status: "2026年 注目"
+    list_id: 11
+    list_desc: "東京の小選挙区と比例代表の最新情報を整理。<br>候補者データは順次更新。"
+    list_image: ""
+    output_path: elections/shugiin_tokyo_2026.html
+    template: custom
+
+  - id: machida_2026
+    title: 町田市長選挙 2026
+    category: local
+    date: "2026年2月XX日 投票"
+    prefecture: 東京都
+    badge_type: local
+    list_status: "2026年 注目"
+    list_id: 1
+    list_desc: "再開発、給食、子育て支援...。<br>現職の実績と新人の公約を徹底比較。"
+    list_image: ""
+    output_path: elections/machida.html
+    template: custom
+
+  - id: nagasaki_2026_governor
+    title: 長崎県知事選挙 2026
+    category: local
+    date: "2026年2月 予定"
+    prefecture: 長崎県
+    badge_type: local
+    list_status: 予定
+    list_id: 2
+    list_desc: "石木ダム問題の行方は？<br>県政の長期的な課題を検証します。"
+    list_image: ""
+    output_path: elections/nagasaki/2026_governor/index.html
+    hero_from: "#1a2a3a"
+    hero_to: "#2d4a6a"
+    accent: "#2d4a6a"
+    hero_desc: "石木ダム問題の行方は？長崎県政の長期的な課題を検証します。"
+    template: standard
+
+  # ── アーカイブ ────────────────────────────────────────────────────────
+  - id: osaka_2023_governor
+    title: 大阪府知事選挙 2023
+    category: local
+    date: "2023年4月9日 投開票（終了）"
+    prefecture: 大阪府
+    badge_type: local
+    list_status: アーカイブ
+    list_id: 10
+    list_desc: "万博・IR誘致の是非と、維新府政への評価が問われた選挙。<br>公約達成度の最終評価を公開。"
+    list_image: ""
+    output_path: elections/osaka/2023_governor/index.html
+    hero_from: "#3a2a1a"
+    hero_to: "#7a5a2d"
+    accent: "#7a5a2d"
+    hero_desc: "万博・IR誘致の是非と、維新府政への評価が問われた選挙。公約達成度の検証結果を公開中。"
+    template: standard

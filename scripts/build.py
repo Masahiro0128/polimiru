@@ -1,24 +1,52 @@
+"""
+build.py — elections.yaml から選挙ページと js/elections.js を生成する
+
+使い方:
+  python scripts/build.py          # 全選挙を再生成
+  python scripts/build.py --dry    # 変更内容を表示するだけ（書き込まない）
+  python scripts/build.py --id osaka_2027_governor  # 1件だけ再生成
+"""
+
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+try:
+    import yaml
+except ImportError:
+    print("[ERROR] PyYAML が必要です: pip install pyyaml")
+    sys.exit(1)
+
+ROOT       = Path(__file__).resolve().parents[1]
+YAML_PATH  = ROOT / "data" / "elections.yaml"
+JS_OUT     = ROOT / "js" / "elections.js"
+
+# ── HTML テンプレート ──────────────────────────────────────────────────────
+# プレースホルダーは __KEY__ 形式（JS/CSS の {} と衝突しない）
+TEMPLATE = """\
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>polimiru | 大阪府知事選挙 2023</title>
-    <meta property="og:title" content="polimiru | 大阪府知事選挙 2023">
-    <meta property="og:description" content="万博・IR誘致の是非と、維新府政への評価が問われた選挙。公約達成度の検証結果を公開中。">
+    <title>polimiru | __TITLE__</title>
+    <meta property="og:title" content="polimiru | __TITLE__">
+    <meta property="og:description" content="__HERO_DESC_PLAIN__">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../../../css/base.css">
-    <link rel="stylesheet" href="../../../css/header-footer.css">
-    <link rel="stylesheet" href="../../../css/elections.css">
-    <link rel="stylesheet" href="../../../css/modal.css">
-    <link rel="stylesheet" href="../../../css/candidate-modal.css">
+    <link rel="stylesheet" href="__ROOT__css/base.css">
+    <link rel="stylesheet" href="__ROOT__css/header-footer.css">
+    <link rel="stylesheet" href="__ROOT__css/elections.css">
+    <link rel="stylesheet" href="__ROOT__css/modal.css">
+    <link rel="stylesheet" href="__ROOT__css/candidate-modal.css">
 
     <style>
         body { background: #f5f2ec; }
 
         .election-hero {
-            background: linear-gradient(135deg, #3a2a1a, #7a5a2d);
+            background: linear-gradient(135deg, __HERO_FROM__, __HERO_TO__);
             color: #fff;
             padding: 40px 20px 32px;
         }
@@ -72,7 +100,7 @@
             align-items: baseline;
             justify-content: space-between;
             margin-bottom: 16px;
-            border-left: 4px solid #7a5a2d;
+            border-left: 4px solid __ACCENT__;
             padding-left: 12px;
         }
         .section-head h2 {
@@ -97,18 +125,18 @@
 
     <div class="election-hero">
         <div class="election-hero-inner">
-            <h1>大阪府知事選挙 2023</h1>
-            <p>万博・IR誘致の是非と、維新府政への評価が問われた選挙。公約達成度の検証結果を公開中。</p>
+            <h1>__TITLE__</h1>
+            <p>__HERO_DESC__</p>
             <div class="election-hero-meta">
-                <span><i class="fa-regular fa-calendar"></i> 2023年4月9日 投開票（終了）</span>
-                <span><i class="fa-solid fa-location-dot"></i> 大阪府</span>
+                <span><i class="fa-regular fa-calendar"></i> __DATE__</span>
+                <span><i class="fa-solid fa-location-dot"></i> __PREFECTURE__</span>
                 <span id="last-updated-chip"><i class="fa-regular fa-clock"></i> 取得中...</span>
             </div>
         </div>
     </div>
 
     <div class="page-body">
-        <a href="../../../index.html" class="back-link">
+        <a href="__ROOT__index.html" class="back-link">
             <i class="fa-solid fa-arrow-left"></i> トップへ戻る
         </a>
 
@@ -129,10 +157,10 @@
         <div class="candidate-grid" id="candidate-grid"></div>
     </div>
 
-    <script src="../../../js/layout.js?v=999"></script>
-    <script src="../../../js/candidate-modal.js"></script>
+    <script src="__ROOT__js/layout.js?v=999"></script>
+    <script src="__ROOT__js/candidate-modal.js"></script>
     <script>
-        const ELECTION_KEY = 'osaka_2023_governor';
+        const ELECTION_KEY = '__ELECTION_KEY__';
 
         function partyHeaderClass(party) {
             if (!party) return '';
@@ -247,3 +275,138 @@
 
 </body>
 </html>
+"""
+
+
+# ── ヘルパー ───────────────────────────────────────────────────────────────
+
+def render(template: str, ctx: dict) -> str:
+    for key, value in ctx.items():
+        template = template.replace(f"__{key}__", str(value))
+    return template
+
+
+def rel_root(output_path: str) -> str:
+    """output_path からサイトルートへの相対パスを返す。例: 'elections/osaka/2027_governor/index.html' → '../../../'"""
+    depth = len(Path(output_path).parent.parts)
+    return "../" * depth if depth > 0 else "./"
+
+
+def plain_text(html: str) -> str:
+    return re.sub(r"<[^>]+>", "", html).replace("  ", " ").strip()
+
+
+# ── HTML 生成 ──────────────────────────────────────────────────────────────
+
+def build_election_page(e: dict, dry: bool) -> bool:
+    out_path = ROOT / e["output_path"]
+    root     = rel_root(e["output_path"])
+
+    ctx = {
+        "TITLE":           e["title"],
+        "ELECTION_KEY":    e["id"],
+        "DATE":            e["date"],
+        "PREFECTURE":      e["prefecture"],
+        "HERO_FROM":       e.get("hero_from", "#1a2a3a"),
+        "HERO_TO":         e.get("hero_to",   "#2d4a6a"),
+        "ACCENT":          e.get("accent",    "#2d4a6a"),
+        "HERO_DESC":       e.get("hero_desc", e.get("list_desc", "")),
+        "HERO_DESC_PLAIN": plain_text(e.get("hero_desc", e.get("list_desc", ""))),
+        "ROOT":            root,
+    }
+
+    html = render(TEMPLATE, ctx)
+
+    existing = out_path.read_text("utf-8") if out_path.exists() else ""
+    if existing == html:
+        print(f"  [SKIP] {out_path.relative_to(ROOT)}  (変更なし)")
+        return False
+
+    if dry:
+        print(f"  [DRY]  {out_path.relative_to(ROOT)}  (変更あり)")
+        return True
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(html, "utf-8")
+    print(f"  [WRITE] {out_path.relative_to(ROOT)}")
+    return True
+
+
+# ── js/elections.js 生成 ──────────────────────────────────────────────────
+
+def build_elections_js(elections: list[dict], dry: bool) -> bool:
+    entries = []
+    for e in elections:
+        entry = {
+            "id":          e["list_id"],
+            "title":       e["title"],
+            "category":    e["category"],
+            "date":        e["date"],
+            "prefecture":  e["prefecture"],
+            "desc":        e.get("list_desc", ""),
+            "image":       e.get("list_image", ""),
+            "url":         e["output_path"],
+            "badgeType":   e.get("badge_type", "local"),
+            "status":      e.get("list_status", ""),
+        }
+        entries.append(entry)
+
+    js = "// 選挙データを管理するリスト\n"
+    js += "// このファイルは scripts/build.py が自動生成します。直接編集しないでください。\n"
+    js += "// 選挙を追加・変更するには data/elections.yaml を編集してください。\n"
+    js += "const elections = "
+    js += json.dumps(entries, ensure_ascii=False, indent=4)
+    js += ";\n"
+
+    existing = JS_OUT.read_text("utf-8") if JS_OUT.exists() else ""
+    if existing == js:
+        print(f"  [SKIP] js/elections.js  (変更なし)")
+        return False
+
+    if dry:
+        print(f"  [DRY]  js/elections.js  ({len(entries)} 件、変更あり)")
+        return True
+
+    JS_OUT.write_text(js, "utf-8")
+    print(f"  [WRITE] js/elections.js  ({len(entries)} 件)")
+    return True
+
+
+# ── エントリポイント ──────────────────────────────────────────────────────
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="elections.yaml から選挙ページを生成")
+    parser.add_argument("--dry", action="store_true", help="書き込まず変更内容だけ表示")
+    parser.add_argument("--id",  help="特定の選挙IDだけ再生成")
+    args = parser.parse_args()
+
+    data      = yaml.safe_load(YAML_PATH.read_text("utf-8"))
+    elections = data["elections"]
+
+    if args.id:
+        elections = [e for e in elections if e["id"] == args.id]
+        if not elections:
+            print(f"[ERROR] ID '{args.id}' が見つかりません")
+            return
+
+    print(f"{'[DRY RUN] ' if args.dry else ''}ビルド開始: {len(elections)} 件")
+    changed = 0
+
+    for e in elections:
+        if e.get("template") == "standard":
+            if build_election_page(e, args.dry):
+                changed += 1
+        else:
+            print(f"  [SKIP] {e['id']}  (template: custom)")
+
+    if not args.id:
+        if build_elections_js(elections, args.dry):
+            changed += 1
+
+    print(f"\n完了。{'変更予定' if args.dry else '変更'}: {changed} ファイル")
+    if not args.dry and changed:
+        print("git add -A && git commit -m 'build: 選挙ページ再生成' で反映できます")
+
+
+if __name__ == "__main__":
+    main()

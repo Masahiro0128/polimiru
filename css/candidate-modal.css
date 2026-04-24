@@ -1,0 +1,636 @@
+/* =========================================
+   候補者詳細モーダル
+========================================= */
+
+.cand-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 4000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s, visibility 0.25s;
+}
+.cand-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* パネル（右スライド） */
+.cand-modal-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 460px;
+    max-width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 4001;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+.cand-modal-overlay.active .cand-modal-panel {
+    transform: translateX(0);
+}
+
+/* ヘッダー */
+.cand-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    flex-shrink: 0;
+}
+.cand-modal-header h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+.cand-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #999;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    line-height: 1;
+}
+.cand-modal-close:hover { color: #333; }
+
+/* スクロールエリア */
+.cand-modal-body {
+    overflow-y: auto;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ローディング・エラー */
+.cand-modal-loading,
+.cand-modal-error {
+    padding: 60px 20px;
+    text-align: center;
+    color: #999;
+    font-size: 0.95rem;
+}
+
+/* --- プロフィールセクション --- */
+.cand-profile {
+    padding: 24px 20px 20px;
+    background: linear-gradient(135deg, #0f2a43, #1c3b5b);
+    color: #fff;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+.cand-profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid rgba(255,255,255,0.4);
+    flex-shrink: 0;
+    background: #2a4a6b;
+}
+.cand-profile-photo-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    flex-shrink: 0;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+.cand-profile-info { flex: 1; min-width: 0; }
+.cand-profile-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 2px;
+    line-height: 1.2;
+}
+.cand-profile-kana {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+.cand-profile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+.cand-tag {
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.15);
+}
+.cand-tag-incumbent {
+    background: rgba(100, 200, 150, 0.3);
+    border-color: rgba(100, 200, 150, 0.6);
+}
+.cand-tag-challenger {
+    background: rgba(255, 165, 50, 0.3);
+    border-color: rgba(255, 165, 50, 0.6);
+}
+.cand-tag-unconfirmed {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+    font-size: 0.68rem;
+    opacity: 0.8;
+}
+
+/* --- スコアセクション --- */
+.cand-section {
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.cand-section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #999;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+}
+
+.score-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 16px;
+}
+.score-type-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.score-type-incumbent {
+    background: #dff0e8;
+    color: #1a7a4a;
+}
+.score-type-challenger {
+    background: #fff0dc;
+    color: #a05a00;
+}
+
+.score-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 12px;
+}
+.score-row:last-child { margin-bottom: 0; }
+
+.score-label {
+    font-size: 0.82rem;
+    color: #555;
+    flex: 1;
+}
+.score-bar-wrap {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.score-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.score-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: #1a7a4a;
+    transition: width 0.5s ease;
+}
+.score-bar-fill-orange { background: #e07a00; }
+.score-value-num {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #1a2e45;
+    min-width: 28px;
+    text-align: right;
+}
+
+.score-divider {
+    border: none;
+    border-top: 1px dashed #ddd;
+    margin: 10px 0;
+}
+.score-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score-total-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1a2e45;
+}
+.score-total-value {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #1a2e45;
+}
+.score-total-value span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #999;
+    margin-left: 2px;
+}
+
+.score-pending {
+    color: #aaa;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/* --- 公約セクション --- */
+.manifesto-text {
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.75;
+    white-space: pre-wrap;
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 14px;
+    border-left: 3px solid #1a2e45;
+    max-height: 240px;
+    overflow-y: auto;
+}
+.manifesto-pending {
+    font-size: 0.85rem;
+    color: #aaa;
+    font-style: italic;
+    padding: 8px 0;
+}
+
+/* --- 経歴セクション --- */
+.past-roles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.past-role-item {
+    display: flex;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+.past-role-period {
+    color: #999;
+    white-space: nowrap;
+    min-width: 100px;
+}
+.past-role-title {
+    color: #333;
+    font-weight: 600;
+}
+
+/* --- ソースリンク --- */
+.source-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #1a6fb5;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+.source-link:hover { text-decoration: underline; }
+
+/* =========================================
+   候補者カード（一覧ページ）
+========================================= */
+.candidate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.cand-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s;
+    overflow: hidden;
+    position: relative;
+}
+.cand-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.cand-card-header {
+    height: 80px;
+    background: linear-gradient(135deg, #1a2e45, #2a5298);
+    position: relative;
+}
+.cand-card-header.party-ishin { background: linear-gradient(135deg, #2d6a1f, #4a9e2f); }
+.cand-card-header.party-jimin { background: linear-gradient(135deg, #8b1a1a, #c0392b); }
+.cand-card-header.party-komei { background: linear-gradient(135deg, #4a2570, #7b3fa0); }
+.cand-card-header.party-other { background: linear-gradient(135deg, #3a3a3a, #5a5a5a); }
+
+.cand-card-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    bottom: -36px;
+    left: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background: #ddd;
+}
+.cand-card-photo-placeholder {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: -36px;
+    left: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.cand-card-body {
+    padding: 46px 20px 18px;
+}
+.cand-card-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1a2e45;
+    margin-bottom: 2px;
+}
+.cand-card-party {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cand-card-badges {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+.cand-badge {
+    font-size: 0.7rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.cand-badge-incumbent { background: #dff0e8; color: #1a7a4a; }
+.cand-badge-challenger { background: #fff0dc; color: #a05a00; }
+.cand-badge-unconfirmed { background: #f0f0f0; color: #888; }
+
+.cand-card-score-area {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cand-card-score-label {
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: 600;
+}
+.cand-card-score-value {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #1a2e45;
+}
+.cand-card-score-value.type-challenger { color: #a05a00; }
+.cand-card-score-pending {
+    font-size: 0.82rem;
+    color: #bbb;
+}
+
+.cand-card-detail-hint {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.78rem;
+    color: #aaa;
+}
+
+/* アップカミングバナー */
+.upcoming-banner {
+    background: linear-gradient(135deg, #fff8e1, #fff3cc);
+    border: 1px solid #ffe082;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    font-size: 0.88rem;
+    color: #7a5c00;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.upcoming-banner-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+/* =========================================
+   公約達成度 視覚化
+========================================= */
+
+/* スタック棒グラフ */
+.promise-chart { margin-top: 4px; }
+
+.promise-stacked-bar {
+    display: flex;
+    height: 14px;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #eee;
+    gap: 2px;
+}
+.bar-done    { background: #4caf50; transition: width 0.6s ease; }
+.bar-started { background: #ff9800; transition: width 0.6s ease; }
+.bar-pending { background: #ef5350; transition: width 0.6s ease; }
+.bar-unknown { background: #bdbdbd; transition: width 0.6s ease; }
+
+.promise-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin-top: 8px;
+    font-size: 0.78rem;
+}
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-item::before {
+    content: '';
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 2px;
+}
+.legend-done::before    { background: #4caf50; }
+.legend-started::before { background: #ff9800; }
+.legend-pending::before { background: #ef5350; }
+.legend-unknown::before { background: #bdbdbd; }
+.legend-total { margin-left: auto; color: #999; }
+
+/* カテゴリ別内訳 */
+.cat-breakdown { margin-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+
+.cat-row {
+    display: grid;
+    grid-template-columns: 72px 1fr 36px;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+}
+.cat-name  { color: #555; white-space: nowrap; }
+.cat-bar-wrap { flex: 1; }
+.cat-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #eee;
+    gap: 1px;
+}
+.cat-count { color: #aaa; text-align: right; }
+
+/* 公約リスト（折りたたみ） */
+.promise-details {
+    margin-top: 4px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.promise-details-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    background: #fafafa;
+    list-style: none;
+    user-select: none;
+}
+.promise-details-summary::-webkit-details-marker { display: none; }
+.promise-chevron {
+    font-size: 0.75rem;
+    color: #aaa;
+    transition: transform 0.2s;
+}
+.promise-details[open] .promise-chevron { transform: rotate(180deg); }
+
+.promise-details-body { padding: 10px 14px; }
+
+.promise-group { margin-bottom: 12px; }
+.promise-group:last-child { margin-bottom: 0; }
+
+.promise-group-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+.promise-group-done    { background: #e8f5e9; color: #2e7d32; }
+.promise-group-started { background: #fff3e0; color: #e65100; }
+.promise-group-pending { background: #ffebee; color: #c62828; }
+.promise-group-unknown { background: #f5f5f5; color: #757575; }
+.promise-group-count   { opacity: 0.7; }
+
+.promise-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+
+.promise-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border-left: 3px solid transparent;
+}
+.promise-item-done    { border-color: #4caf50; background: #f9fef9; }
+.promise-item-started { border-color: #ff9800; background: #fffaf5; }
+.promise-item-pending { border-color: #ef5350; background: #fff5f5; }
+.promise-item-unknown { border-color: #bdbdbd; background: #fafafa; }
+
+.promise-level-badge {
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #aaa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin-top: 2px;
+}
+.promise-text { flex: 1; color: #333; }
+.promise-evidence-link {
+    flex-shrink: 0;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.72rem;
+    margin-top: 3px;
+}
+.promise-evidence-link:hover { color: #1565c0; }
+
+/* スマホ */
+@media (max-width: 768px) {
+    .cand-modal-panel {
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        height: 92vh;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(100%);
+        box-shadow: 0 -4px 24px rgba(0,0,0,0.15);
+    }
+    .cand-modal-overlay.active .cand-modal-panel {
+        transform: translateY(0);
+    }
+    .candidate-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -44,7 +44,10 @@ function loadHeader() {
     // HTML生成
     const headerHTML = `
     <nav class="site-navbar">
-        <a href="${homePath}" class="site-logo">polimiru</a>
+        <div class="nav-logo-group">
+            <a href="${homePath}" class="site-logo">polimiru</a>
+            <span class="site-tagline">公約と実績を見える化する、<br>日本最大級の政治家ファクトチェック・データベース</span>
+        </div>
         <button class="hamburger-menu" id="hamburger-btn">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -52,11 +55,27 @@ function loadHeader() {
             <button class="close-menu" id="close-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <a href="${aboutPath}">About</a>
-            <a href="${newsPath}">News</a>
-            <a href="${electionsPath}">Elections</a>
-            <a href="${contactPath}" class="contact-btn">Contact</a>
+            <a href="${aboutPath}">
+                <span class="nav-en">About</span>
+                <span class="nav-ja">私たちについて</span>
+            </a>
+            <a href="${newsPath}">
+                <span class="nav-en">News</span>
+                <span class="nav-ja">ニュース</span>
+            </a>
+            <a href="${electionsPath}">
+                <span class="nav-en">Elections</span>
+                <span class="nav-ja">選挙・データ</span>
+            </a>
+            <a href="${contactPath}" class="contact-btn">
+                <span class="nav-en">Contact</span>
+                <span class="nav-ja">お問い合わせ</span>
+            </a>
         </div>
+        <button class="area-btn-nav" id="area-btn">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>エリアを設定</span>
+        </button>
     </nav>
     <div class="menu-overlay" id="menu-overlay"></div>
 

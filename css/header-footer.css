@@ -2,8 +2,10 @@
    2. ヘッダー (PC/共通)
 ========================================= */
 .site-navbar {
-    background-color: #ffffff;
-    height: 80px;
+    background-color: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 72px;
     width: 100%;
     position: fixed;
     top: 0; left: 0;
@@ -11,47 +13,116 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-    
-    /* ★修正ポイント1：ヘッダー全体をオーバーレイ(1500)より手前に出す */
-    z-index: 2000; 
-    
+    border-bottom: 1px solid var(--border);
+    z-index: 2000;
     box-sizing: border-box;
+    gap: 32px;
+}
+
+/* ロゴ + タグライン */
+.nav-logo-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 .site-logo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
-    color: #1a2e45;
+    color: var(--navy-900);
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.site-tagline {
+    font-size: 9.5px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    max-width: 190px;
+    border-left: 1px solid var(--border);
+    padding-left: 12px;
 }
 
 /* PC用メニューリンク */
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 32px;
     align-items: center;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
+    transition: opacity 0.15s;
+}
+.nav-links a:hover { opacity: 0.7; }
+
+.nav-en {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.nav-ja {
+    font-size: 9.5px;
+    color: var(--text-muted);
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .nav-links a::after {
     content: '';
     position: absolute;
-    width: 0; height: 2px;
+    width: 0; height: 1.5px;
     bottom: 0; left: 0;
-    background-color: #1a2e45;
-    transition: width 0.3s ease;
+    background-color: var(--navy-900);
+    transition: width 0.2s ease;
 }
 .nav-links a:hover::after { width: 100%; }
+
+/* エリアボタン */
+.area-btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1.5px solid var(--navy-700);
+    background: transparent;
+    color: var(--navy-900);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.area-btn-nav:hover {
+    background: var(--navy-900);
+    color: #fff;
+}
+.area-btn-nav i {
+    font-size: 0.85em;
+}
+.area-btn-nav.is-set {
+    background: var(--navy-100);
+    border-color: var(--navy-200);
+}
 
 /* PCでは隠すもの（ハンバーガー関連） */
 .hamburger-menu,
@@ -68,29 +139,31 @@ body.no-scroll {
    4. フッター
 ========================================= */
 .site-footer {
-    background-color: #f2f2f2;
+    background-color: var(--navy-900);
+    color: rgba(255,255,255,0.6);
     padding: 0 40px;
-    height: 80px;
+    height: 72px;
     display: flex; justify-content: space-between; align-items: center;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .footer-social { display: flex; align-items: center; gap: 20px; }
-.follow-text { font-weight: bold; font-size: 0.9em; margin-right: 10px; }
+.follow-text { font-weight: 600; font-size: 0.8em; margin-right: 8px; color: rgba(255,255,255,0.5); }
 .social-icon {
-    color: #333; font-size: 1.2em; text-decoration: none; transition: color 0.2s;
+    color: rgba(255,255,255,0.5); font-size: 1.1em; text-decoration: none; transition: color 0.2s;
 }
-.social-icon:hover { color: #1a2e45; }
+.social-icon:hover { color: #fff; }
 
 .back-to-top {
-    background-color: #e6e6e6;
-    padding: 10px 20px;
-    text-decoration: none; color: #333;
-    font-size: 0.9em; font-weight: bold;
-    border-radius: 4px; transition: background-color 0.2s;
-    display: flex; align-items: center; gap: 8px;
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.14);
+    padding: 8px 18px;
+    text-decoration: none; color: rgba(255,255,255,0.6);
+    font-size: 0.8em; font-weight: 500;
+    border-radius: var(--radius-sm); transition: background-color 0.2s;
+    display: flex; align-items: center; gap: 6px;
 }
-.back-to-top:hover { background-color: #d6d6d6; }
+.back-to-top:hover { background-color: rgba(255,255,255,0.14); color: #fff; }
 
 
 /* =========================================
@@ -100,7 +173,10 @@ body.no-scroll {
 
     .site-navbar {
         padding: 0 20px;
+        height: 64px;
     }
+
+    .site-tagline { display: none; }
 
     .hamburger-menu {
         display: block;
@@ -112,64 +188,65 @@ body.no-scroll {
         padding: 10px;
     }
 
+    .area-btn-nav { display: none; }
+
     /* ドロワーメニュー */
     .nav-links {
-        position: fixed; 
-        top: 0; 
+        position: fixed;
+        top: 0;
         right: -100%;
-        width: 85%; 
+        width: 85%;
         height: 100vh;
         background-color: #ffffff;
         flex-direction: column;
-        align-items: stretch; 
+        align-items: stretch;
         justify-content: flex-start;
         padding: 80px 30px;
         box-shadow: -5px 0 20px rgba(0,0,0,0.1);
         transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         z-index: 2000;
+        gap: 0;
     }
     .nav-links.active { right: 0; }
 
     .nav-links a {
-        font-size: 16px; 
-        font-weight: 500; 
-        color: #333;
-        padding: 20px 0; 
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 20px 0;
         border-bottom: 1px solid #eee;
-        width: 100%; 
-        display: block;
-        
-        /* スマホで押しやすくする */
+        width: 100%;
+        display: flex;
         cursor: pointer;
         pointer-events: auto;
     }
     .nav-links a::after { display: none; }
 
+    .nav-en { font-size: 15px; font-weight: 600; color: #333; }
+    .nav-ja { font-size: 12px; color: #999; font-weight: 400; }
+
     .nav-links .contact-btn {
-        margin-top: 40px; 
-        border: 1px solid #1a2e45; 
+        margin-top: 40px;
+        border: 1px solid #1a2e45;
         border-radius: 50px;
-        text-align: center; 
-        padding: 15px 0; 
-        font-weight: bold;
-        
-        /* スマホで押しやすくする */
+        justify-content: center;
+        padding: 15px 0;
         cursor: pointer;
         pointer-events: auto;
         touch-action: manipulation;
     }
 
     .close-menu {
-        display: block; 
-        position: absolute; /* ★ここ大事：絶対配置に戻す */
-        top: 25px; 
+        display: block;
+        position: absolute;
+        top: 25px;
         right: 20px;
-        background: none; 
+        background: none;
         border: none;
-        font-size: 32px; 
-        color: #1a2e45; 
+        font-size: 32px;
+        color: #1a2e45;
         cursor: pointer;
-        z-index: 2001; /* メニューよりさらに手前 */
+        z-index: 2001;
     }
 
     /* オーバーレイ */
@@ -185,7 +262,7 @@ body.no-scroll {
         visibility: hidden;
         pointer-events: none;
         transition: opacity 0.4s;
-        z-index: 1500; /* ヘッダー(2000)より後ろになるのでクリックを邪魔しない */
+        z-index: 1500;
     }
 
     .menu-overlay.active {

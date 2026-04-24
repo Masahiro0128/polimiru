@@ -1,0 +1,53 @@
+name: Update Osaka 2027 election data
+
+on:
+  schedule:
+    - cron: "20 15 * * *"  # JST 00:20 毎日
+  workflow_dispatch:
+    inputs:
+      election:
+        description: "対象選挙 (governor / mayor / all)"
+        required: false
+        default: "all"
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Update candidate data
+        run: |
+          ELECTION="${{ github.event.inputs.election || 'all' }}"
+          python scripts/update_osaka_2027.py --election "$ELECTION"
+
+      - name: Score candidates
+        run: |
+          ELECTION="${{ github.event.inputs.election || 'all' }}"
+          python scripts/score_osaka_2027.py --election "$ELECTION"
+
+      - name: Commit changes
+        run: |
+          if git status --porcelain | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add js/data/osaka_2027_governor/
+            git add js/data/osaka_2027_mayor/
+            git commit -m "chore: update osaka 2027 election data"
+            git push
+          else
+            echo "No changes"
+          fi
