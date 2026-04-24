@@ -29,12 +29,23 @@
 }
 
 .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 20px;
     font-weight: 800;
     color: var(--navy-900);
     text-decoration: none;
     letter-spacing: 0.04em;
     line-height: 1;
+    flex-shrink: 0;
+}
+
+.site-logo-img {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+    border-radius: 6px;
     flex-shrink: 0;
 }
 
