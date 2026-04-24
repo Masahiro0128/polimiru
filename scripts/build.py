@@ -226,12 +226,14 @@ TEMPLATE = """\
 
         function getDataBase() {
             const path = window.location.pathname;
-            if (path.includes('/polimiru/')) {
-                const parts = path.replace('/polimiru/', '').split('/').filter(Boolean);
-                return '/polimiru/' + '../'.repeat(parts.length);
+            const dir  = path.replace(/\/[^\/]*$/, '/');
+            if (dir.includes('/polimiru/')) {
+                const subdir = dir.replace(/^.*\/polimiru\//, '');
+                const depth  = subdir.split('/').filter(Boolean).length;
+                return '../'.repeat(depth) || './';
             }
-            const parts = path.split('/').filter(Boolean);
-            return parts.length <= 1 ? './' : '../'.repeat(parts.length - 1);
+            const parts = dir.split('/').filter(Boolean);
+            return parts.length === 0 ? './' : '../'.repeat(parts.length);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
