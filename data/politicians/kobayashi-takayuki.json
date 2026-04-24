@@ -24,6 +24,91 @@
     {"context": "政策立案", "title": "政権公約の設計と実装", "desc": "高市総裁の政策カラーを、予算・法案・選挙公約にどう具体化するかを見る。"},
     {"context": "経済安保", "title": "先端技術・供給網・安全保障", "desc": "経済安全保障や科学技術投資を、成長戦略として measurable に進められるかが焦点。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "kobayashi_sousai2024",
+      "title": "2024年自民党総裁選 公約・所見追跡",
+      "context": "2024年9月 自民党総裁選候補者として",
+      "source": "自由民主党 総裁選2024 候補者情報",
+      "source_url": "https://www.jimin.jp/election/results/sousai24/candidate/kobayashi_takayuki.html",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 55,
+      "total": 4,
+      "done": 0,
+      "started": 3,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "経済安全保障の制度強化・法整備",
+          "category": "経済安全保障",
+          "status": "追跡中",
+          "progress_score": 60,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/kobayashi_takayuki.html"
+        },
+        {
+          "title": "AI・量子・半導体への重点投資",
+          "category": "科学技術",
+          "status": "追跡中",
+          "progress_score": 55,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/kobayashi_takayuki.html"
+        },
+        {
+          "title": "若い世代の政治参加促進・党改革",
+          "category": "党改革",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/kobayashi_takayuki.html"
+        },
+        {
+          "title": "少子化・子育て支援の抜本強化",
+          "category": "少子化対策",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/kobayashi_takayuki.html"
+        }
+      ]
+    },
+    {
+      "id": "kobayashi_seichoukaichou_2025",
+      "title": "政務調査会長期の政策立案（高市体制）",
+      "context": "2025年10月〜 自民党政務調査会長",
+      "source": "自民党 政調会長就任・政策発表",
+      "source_url": "https://www.jimin.jp/news/information/212315.html",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "高市政権の経済・科学技術政策の党内策定",
+          "category": "政策立案",
+          "status": "追跡中",
+          "progress_score": 55,
+          "evidence_url": "https://www.jimin.jp/news/information/212315.html"
+        },
+        {
+          "title": "2026年度予算への政策反映",
+          "category": "財政",
+          "status": "追跡中",
+          "progress_score": 50,
+          "evidence_url": "https://www.jimin.jp/news/information/212315.html"
+        },
+        {
+          "title": "衆院選公約の立案・取りまとめ",
+          "category": "選挙公約",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.jimin.jp/news/information/212315.html"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/102061.html"},
     {"label": "政調会長記事", "url": "https://www.jimin.jp/news/information/212315.html"}

@@ -24,6 +24,91 @@
     {"context": "党務", "title": "高市体制の実務運営", "desc": "執行部方針を党内合意に落とし込み、国会・選挙対応を進められるかを見る。"},
     {"context": "財政", "title": "財務大臣経験と積極財政の接点", "desc": "財政規律と物価高対策・減税論のバランスをどう扱うかが検証対象。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "suzuki_zaimusho_track",
+      "title": "財務大臣期の政策トラック（2021-2024）",
+      "context": "岸田内閣 財務大臣として財政・予算を担当",
+      "source": "財務省 大臣プロフィール",
+      "source_url": "https://www.mof.go.jp/about_mof/minister/profile/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "historical_review",
+      "score": 55,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "財政健全化：PB黒字化目標の維持",
+          "category": "財政",
+          "status": "継続",
+          "progress_score": 50,
+          "evidence_url": "https://www.mof.go.jp/about_mof/minister/profile/"
+        },
+        {
+          "title": "新型コロナ後の財政正常化",
+          "category": "財政",
+          "status": "進行",
+          "progress_score": 55,
+          "evidence_url": "https://www.mof.go.jp/about_mof/minister/profile/"
+        },
+        {
+          "title": "防衛費増額に対応した財源確保",
+          "category": "防衛財源",
+          "status": "実施",
+          "progress_score": 75,
+          "evidence_url": "https://www.mof.go.jp/about_mof/minister/profile/"
+        },
+        {
+          "title": "社会保障費の適正化・世代間格差の是正",
+          "category": "社会保障",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.mof.go.jp/about_mof/minister/profile/"
+        }
+      ]
+    },
+    {
+      "id": "suzuki_kanji_2025",
+      "title": "自民党幹事長期の活動（高市体制）",
+      "context": "2025年10月〜 高市内閣での自民党幹事長",
+      "source": "自民党 役員発表・幹事長活動",
+      "source_url": "https://www.jimin.jp/member/officer/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 45,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "党内統一と政権安定の維持",
+          "category": "党運営",
+          "status": "追跡中",
+          "progress_score": 50,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        },
+        {
+          "title": "次期衆院選に向けた候補者擁立・選挙戦略",
+          "category": "選挙",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        },
+        {
+          "title": "東日本大震災被災地への継続支援",
+          "category": "復興支援",
+          "status": "公約",
+          "progress_score": 55,
+          "evidence_url": "https://www.jimin.jp/member/100566.html"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100566.html"},
     {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}

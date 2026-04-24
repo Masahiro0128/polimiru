@@ -252,7 +252,7 @@ window.setArea = function(areaId, areaName) {
 function checkSavedArea() {
     const savedName = localStorage.getItem('my_area_name');
     const btn = document.getElementById('area-btn');
-    
+
     if (btn) {
         const btnSpan = btn.querySelector('span');
         if (savedName) {
@@ -262,6 +262,15 @@ function checkSavedArea() {
             btnSpan.textContent = 'エリア未設定';
             btn.classList.remove('is-set');
         }
+    }
+
+    const areaLinkTitle = document.querySelector('.area-link-title');
+    if (areaLinkTitle) {
+        areaLinkTitle.textContent = savedName || 'エリアを設定';
+    }
+    const areaLinkSub = document.querySelector('.area-link-sub');
+    if (areaLinkSub) {
+        areaLinkSub.textContent = savedName ? '設定済み — タップして変更' : '地域を選択して情報を最適化';
     }
 }
 

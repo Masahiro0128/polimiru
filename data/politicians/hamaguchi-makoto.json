@@ -24,6 +24,91 @@
     {"context": "政策立案", "title": "賃上げと産業政策の具体化", "desc": "製造業・労働現場の経験を、賃上げ税制や産業競争力強化へどう落とし込むかを見る。"},
     {"context": "雇用", "title": "働く人の可処分所得と制度改革", "desc": "社会保険料、税制、労働政策を横断し、手取り増の実装を担えるかが焦点。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "dpfp_sangiin_hamaguchi",
+      "title": "2022年参院選 国民民主党公約 追跡",
+      "context": "第26回参議院議員通常選挙（2022年7月）",
+      "source": "国民民主党 参院選2022 政策・公約",
+      "source_url": "https://new-kokumin.jp/policies",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 60,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "年収の壁（103→178万円）引き上げ",
+          "category": "税制・手取り増",
+          "status": "実現",
+          "progress_score": 90,
+          "evidence_url": "https://www.jimin.jp/news/information/212124.html"
+        },
+        {
+          "title": "賃上げ税制の強化・中小企業への支援",
+          "category": "賃上げ・雇用",
+          "status": "実施",
+          "progress_score": 65,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        },
+        {
+          "title": "製造業・自動車産業の競争力強化",
+          "category": "産業政策",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        },
+        {
+          "title": "社会保険料の適正化・手取り増の実現",
+          "category": "手取り増",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        }
+      ]
+    },
+    {
+      "id": "dpfp_seichoukaichou_hamaguchi",
+      "title": "政務調査会長期の政策立案",
+      "context": "国民民主党 政務調査会長として政策の立案・調整を主導",
+      "source": "国民民主党 政調活動・役員一覧",
+      "source_url": "https://new-kokumin.jp/about/board-member",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 55,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "産業・雇用・賃上げ政策のパッケージ策定",
+          "category": "産業・雇用",
+          "status": "追跡中",
+          "progress_score": 55,
+          "evidence_url": "https://new-kokumin.jp/about/board-member"
+        },
+        {
+          "title": "EV・次世代自動車政策への提言",
+          "category": "自動車・産業",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://new-kokumin.jp/member/hamaguchi-makoto"
+        },
+        {
+          "title": "2026年衆院選公約の立案",
+          "category": "選挙公約",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://new-kokumin.jp/about/board-member"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/hamaguchi-makoto"},
     {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}

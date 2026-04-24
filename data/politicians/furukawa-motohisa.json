@@ -24,6 +24,91 @@
     {"context": "国会対応", "title": "実務型の与野党交渉", "desc": "政策協議・国会日程・修正協議を通じて、党の要求をどこまで実現できるかを見る。"},
     {"context": "経済財政", "title": "成長戦略と財政設計", "desc": "経済財政担当相経験を踏まえ、所得増・投資・財源論をどうまとめるかが焦点。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "dpfp_shugiin2024_furukawa",
+      "title": "2024年衆院選 国民民主党公約 追跡",
+      "context": "第50回衆議院議員総選挙（2024年10月）",
+      "source": "国民民主党 2024衆院選政策",
+      "source_url": "https://new-kokumin.jp/policies",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 55,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "年収の壁（103→178万円）引き上げ",
+          "category": "税制・手取り増",
+          "status": "実現",
+          "progress_score": 90,
+          "evidence_url": "https://www.jimin.jp/news/information/212124.html"
+        },
+        {
+          "title": "成長と分配の好循環を実現する経済財政政策",
+          "category": "経済財政",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        },
+        {
+          "title": "科学技術・デジタル・イノベーション投資の強化",
+          "category": "科学技術",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        },
+        {
+          "title": "外交・安全保障の現実路線",
+          "category": "外交・安保",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        }
+      ]
+    },
+    {
+      "id": "dpfp_daihyodaikoutrack",
+      "title": "代表代行・国会対策委員長としての活動",
+      "context": "国民民主党代表代行として与党・他野党との交渉を主導",
+      "source": "国民民主党 国会対応・役員活動",
+      "source_url": "https://new-kokumin.jp/about/board-member",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "税制改正・予算審議での政策実現",
+          "category": "国会対応",
+          "status": "追跡中",
+          "progress_score": 55,
+          "evidence_url": "https://new-kokumin.jp/about/board-member"
+        },
+        {
+          "title": "大蔵省・財政経験を活かした政策設計",
+          "category": "経済財政",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://new-kokumin.jp/member/furukawa-motohisa"
+        },
+        {
+          "title": "衆院選を見据えた党内・連携調整",
+          "category": "党運営",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://new-kokumin.jp/about/board-member"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/furukawa-motohisa"},
     {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}

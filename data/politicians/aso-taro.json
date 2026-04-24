@@ -24,6 +24,91 @@
     {"context": "党運営", "title": "政権安定と保守本流の調整役", "desc": "党内各派やベテラン層との調整力が、総裁・執行部の政策遂行力にどの程度寄与するかを見る。"},
     {"context": "財政・外交", "title": "財政運営と外交経験の継承", "desc": "財務・外交の経験を、積極財政や安全保障政策の現実的な設計にどう反映させるかが注目点。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "aso_cabinet_2008",
+      "title": "麻生内閣（第92代）の政策トラック",
+      "context": "2008年9月〜2009年9月 内閣総理大臣在任期間",
+      "source": "首相官邸 麻生内閣閣僚名簿",
+      "source_url": "https://www.kantei.go.jp/jp/asonaikaku/meibo/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "historical_review",
+      "score": 65,
+      "total": 4,
+      "done": 2,
+      "started": 1,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "リーマンショック後の緊急経済対策（15兆円規模）",
+          "category": "経済・財政",
+          "status": "実施",
+          "progress_score": 90,
+          "evidence_url": "https://www.jimin.jp/member/100551.html"
+        },
+        {
+          "title": "消費者庁の設置",
+          "category": "行政改革",
+          "status": "実現",
+          "progress_score": 100,
+          "evidence_url": "https://www.caa.go.jp/about_us/about/organization/history/"
+        },
+        {
+          "title": "地球温暖化対策中期目標（2020年▲15%）の設定",
+          "category": "環境・エネルギー",
+          "status": "見直し",
+          "progress_score": 40,
+          "evidence_url": "https://www.kantei.go.jp/jp/asonaikaku/meibo/"
+        },
+        {
+          "title": "郵政見直し・民営化路線の修正",
+          "category": "行政改革",
+          "status": "論点化",
+          "progress_score": 30,
+          "evidence_url": "https://www.jimin.jp/member/100551.html"
+        }
+      ]
+    },
+    {
+      "id": "aso_vicepresident_2025",
+      "title": "副総裁・党重鎮としての役割（高市体制）",
+      "context": "2025年10月〜 高市内閣での自民党副総裁",
+      "source": "自民党 副総裁就任・党役員発表",
+      "source_url": "https://www.jimin.jp/member/officer/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "G7・外交チャンネルの維持・活用",
+          "category": "外交",
+          "status": "追跡中",
+          "progress_score": 55,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        },
+        {
+          "title": "財政健全化路線の党内調整",
+          "category": "財政",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/member/100551.html"
+        },
+        {
+          "title": "世代交代・後継育成への関与",
+          "category": "党運営",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100551.html"},
     {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}

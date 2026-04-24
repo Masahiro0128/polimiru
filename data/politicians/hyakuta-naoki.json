@@ -43,6 +43,98 @@
       "desc": "中国への強硬姿勢を訴えるなか、経済的相互依存と安全保障をどう両立する具体策を示せるかが焦点。"
     }
   ],
+  "promise_cycles": [
+    {
+      "id": "hoshuto_shugiin2024",
+      "title": "2024年衆院選 日本保守党公約 追跡",
+      "context": "第50回衆議院議員総選挙（2024年10月）",
+      "source": "日本保守党 2024衆院選公約・政策",
+      "source_url": "https://hoshuto.jp/policies/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 30,
+      "total": 5,
+      "done": 0,
+      "started": 1,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "移民・外国人受け入れ政策の抜本見直し",
+          "category": "移民・外国人政策",
+          "status": "追跡中",
+          "progress_score": 30,
+          "evidence_url": "https://hoshuto.jp/policies/"
+        },
+        {
+          "title": "NHK受信料制度の廃止・公共放送改革",
+          "category": "メディア改革",
+          "status": "公約",
+          "progress_score": 10,
+          "evidence_url": "https://hoshuto.jp/policies/"
+        },
+        {
+          "title": "憲法改正（緊急事態条項・自衛権の明記）",
+          "category": "憲法改正",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://hoshuto.jp/policies/"
+        },
+        {
+          "title": "選択的夫婦別姓・LGBT法の見直し",
+          "category": "家族制度・価値保守",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://hoshuto.jp/policies/"
+        },
+        {
+          "title": "対中強硬路線の実行と経済安全保障",
+          "category": "外交・安全保障",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://hoshuto.jp/policies/"
+        }
+      ]
+    },
+    {
+      "id": "hoshuto_sangiin2025",
+      "title": "2025年参院選 日本保守党・百田代表の活動",
+      "context": "第27回参議院議員通常選挙（2025年）初当選",
+      "source": "日本保守党 参院選活動・当選後活動",
+      "source_url": "https://hoshuto.jp/member/hyakuta/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "initial_review",
+      "score": 35,
+      "total": 3,
+      "done": 0,
+      "started": 1,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "参院委員会での外国人政策・移民問題への質疑",
+          "category": "移民政策",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://hoshuto.jp/member/hyakuta/"
+        },
+        {
+          "title": "NHK改革関連法案の提出・議論",
+          "category": "メディア改革",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://hoshuto.jp/member/hyakuta/"
+        },
+        {
+          "title": "日本保守党の議席・支持拡大",
+          "category": "党運営",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://hoshuto.jp/member/hyakuta/"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "日本保守党 公式プロフィール", "url": "https://hoshuto.jp/member/hyakuta/"},
     {"label": "参議院 議員プロフィール", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025050.htm"}

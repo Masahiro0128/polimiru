@@ -42,6 +42,98 @@
       "desc": "議席を減らした2024年衆院選の結果を踏まえ、与野党双方との連携・対立をどう設計するかが問われる。"
     }
   ],
+  "promise_cycles": [
+    {
+      "id": "ishin_shugiin2024",
+      "title": "2024年衆院選 日本維新の会公約 追跡",
+      "context": "第50回衆議院議員総選挙（2024年10月）",
+      "source": "日本維新の会 2024衆院選マニフェスト",
+      "source_url": "https://o-ishin.jp/action/manifesto/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 40,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "身を切る改革：議員定数削減・歳費3割カット",
+          "category": "政治改革",
+          "status": "法案提出",
+          "progress_score": 35,
+          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+        },
+        {
+          "title": "高校・大学の授業料完全無償化",
+          "category": "教育無償化",
+          "status": "追跡中",
+          "progress_score": 30,
+          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+        },
+        {
+          "title": "道州制の導入・地方分権の抜本強化",
+          "category": "地方分権",
+          "status": "検討中",
+          "progress_score": 20,
+          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+        },
+        {
+          "title": "規制改革・行政のデジタル化推進",
+          "category": "行政改革",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+        },
+        {
+          "title": "憲法改正（緊急事態条項の整備）",
+          "category": "憲法改正",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+        }
+      ]
+    },
+    {
+      "id": "ishin_kanji_track_2025",
+      "title": "幹事長としての政策実現・党運営（2025-現在）",
+      "context": "日本維新の会幹事長として国会対応・政策立案を主導",
+      "source": "日本維新の会 党役員・活動記録",
+      "source_url": "https://o-ishin.jp/about/officer/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 45,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "教育無償化推進法の法案化・国会提出",
+          "category": "教育",
+          "status": "法案準備",
+          "progress_score": 40,
+          "evidence_url": "https://o-ishin.jp/about/officer/"
+        },
+        {
+          "title": "大阪・関西万博後の維新の党勢立て直し",
+          "category": "党運営",
+          "status": "進行",
+          "progress_score": 45,
+          "evidence_url": "https://o-ishin.jp/about/officer/"
+        },
+        {
+          "title": "野党連携と対与党戦略の明確化",
+          "category": "国会対応",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://o-ishin.jp/about/officer/"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "日本維新の会 公式プロフィール", "url": "https://o-ishin.jp/member/detail/fujita_fumitake.html"},
     {"label": "党役員一覧", "url": "https://o-ishin.jp/about/officer/"}

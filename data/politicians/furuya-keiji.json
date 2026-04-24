@@ -24,6 +24,84 @@
     {"context": "選挙", "title": "候補者調整と重点区対応", "desc": "総選挙・補選・地方選で、党勢回復につながる候補者戦略を組めるかを見る。"},
     {"context": "安全・憲法", "title": "治安・拉致・憲法改正の継続論点", "desc": "担当経験の深い安全保障・憲法分野で、党としての優先順位をどう示すかが焦点。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "furuya_rachi_minister",
+      "title": "拉致問題担当大臣期の取り組み（2012-2014）",
+      "context": "第2次安倍内閣 国家公安委員長・拉致問題担当大臣",
+      "source": "内閣府 拉致問題担当",
+      "source_url": "https://www.rachi.go.jp/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "historical_review",
+      "score": 45,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "北朝鮮との交渉・ストックホルム合意の推進",
+          "category": "拉致問題",
+          "status": "進行",
+          "progress_score": 40,
+          "evidence_url": "https://www.rachi.go.jp/"
+        },
+        {
+          "title": "拉致被害者の帰国実現への取り組み",
+          "category": "拉致問題",
+          "status": "追跡中",
+          "progress_score": 20,
+          "evidence_url": "https://www.rachi.go.jp/"
+        },
+        {
+          "title": "国家公安体制の強化・テロ対策",
+          "category": "治安",
+          "status": "進行",
+          "progress_score": 60,
+          "evidence_url": "https://www.jimin.jp/member/100405.html"
+        }
+      ]
+    },
+    {
+      "id": "furuya_sentai_2025",
+      "title": "選挙対策委員長期の活動（高市体制）",
+      "context": "2025年10月〜 高市内閣での自民党選挙対策委員長",
+      "source": "自民党 役員発表・選対活動",
+      "source_url": "https://www.jimin.jp/member/officer/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 45,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "次期衆院選の重点選挙区・候補者戦略",
+          "category": "選挙",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        },
+        {
+          "title": "補選・地方選での党勢回復",
+          "category": "選挙",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        },
+        {
+          "title": "憲法改正推進本部との連携",
+          "category": "憲法改正",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://www.jimin.jp/member/100405.html"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100405.html"},
     {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}

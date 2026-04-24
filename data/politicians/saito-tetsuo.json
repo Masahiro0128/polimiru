@@ -1,0 +1,153 @@
+{
+  "id": "saito-tetsuo",
+  "name": "斎藤 鉄夫",
+  "kana": "さいとう てつお",
+  "party": "公明党",
+  "party_role": "元国土交通大臣",
+  "area": "広島県第3区",
+  "current_status": "衆議院議員",
+  "photo_url": "https://www.komei.or.jp/giin/img/giin_saito_tetsuo.jpg",
+  "photo_credit": "公明党公式サイト",
+  "official_url": "https://www.komei.or.jp/giin/saito_tetsuo/",
+  "accent": {"from": "#003087", "to": "#001a4d", "color": "#0050a0"},
+  "summary": "東京工業大学大学院理工学研究科修了（工学博士）。1993年衆院選で初当選し、環境大臣、国土交通大臣などを歴任。2021〜2024年に国土交通大臣として防災・インフラ整備・住宅政策を主導した公明党の重鎮。現在は野党として国会活動を継続。",
+  "stats": [
+    {"label": "党役職", "value": "公明党"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "広島3区"},
+    {"label": "出身", "value": "広島県"},
+    {"label": "元職", "value": "国土交通大臣"}
+  ],
+  "education": [
+    {"school": "東京工業大学 大学院 理工学研究科", "period": "修了", "note": "工学博士"}
+  ],
+  "career": [
+    {"period": "1952", "text": "広島県生まれ"},
+    {"period": "1977", "text": "東京工業大学大学院修了（工学博士）"},
+    {"period": "1993", "text": "第40回衆院選で初当選（広島3区）"},
+    {"period": "2003", "text": "環境大臣（小泉内閣）"},
+    {"period": "2008", "text": "公明党幹事長に就任"},
+    {"period": "2021-2024", "text": "国土交通大臣（第1次〜3次岸田内閣）"},
+    {"period": "現在", "text": "衆議院議員（広島3区）、野党・公明党として国会活動"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "saito_kokudokotsusho_track",
+      "title": "国土交通大臣期の政策トラック（2021-2024）",
+      "context": "第1次〜3次岸田内閣 国土交通大臣として防災・インフラ・住宅政策を担当",
+      "source": "国土交通省 大臣メッセージ・政策発表",
+      "source_url": "https://www.mlit.go.jp/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "historical_review",
+      "score": 65,
+      "total": 5,
+      "done": 2,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "防災・国土強靱化への重点投資",
+          "category": "防災・インフラ",
+          "status": "実施",
+          "progress_score": 75,
+          "evidence_url": "https://www.mlit.go.jp/"
+        },
+        {
+          "title": "空港・港湾インフラの整備促進",
+          "category": "インフラ整備",
+          "status": "実施",
+          "progress_score": 70,
+          "evidence_url": "https://www.mlit.go.jp/"
+        },
+        {
+          "title": "住宅確保要配慮者への居住支援強化",
+          "category": "住宅政策",
+          "status": "進行",
+          "progress_score": 55,
+          "evidence_url": "https://www.mlit.go.jp/"
+        },
+        {
+          "title": "自動運転・MaaS推進による交通革新",
+          "category": "交通・DX",
+          "status": "追跡中",
+          "progress_score": 50,
+          "evidence_url": "https://www.mlit.go.jp/"
+        },
+        {
+          "title": "観光立国の推進・訪日外客4000万人目標",
+          "category": "観光",
+          "status": "追跡中",
+          "progress_score": 60,
+          "evidence_url": "https://www.mlit.go.jp/"
+        }
+      ]
+    },
+    {
+      "id": "komeito_shugiin2024",
+      "title": "2024年衆院選 公明党公約 追跡",
+      "context": "第50回衆議院議員総選挙（2024年10月）",
+      "source": "公明党 2024衆院選マニフェスト",
+      "source_url": "https://www.komei.or.jp/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 40,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "子育て支援・教育費の無償化拡大",
+          "category": "子育て・教育",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://www.komei.or.jp/"
+        },
+        {
+          "title": "物価高対策・生活困窮者支援",
+          "category": "物価・生活支援",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://www.komei.or.jp/"
+        },
+        {
+          "title": "平和外交の推進・核廃絶への取り組み",
+          "category": "外交・平和",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://www.komei.or.jp/"
+        },
+        {
+          "title": "防災・減災・国土強靱化の継続",
+          "category": "防災",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://www.komei.or.jp/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "防災・インフラ",
+      "title": "国土強靱化の継続と財源の持続可能性",
+      "desc": "国土交通大臣として積み上げた防災・インフラ投資の方針を、野党立場からどう継続・主張するかが注目点。"
+    },
+    {
+      "context": "公明党の立場",
+      "title": "連立離脱後の存在感と政策実現力",
+      "desc": "自民との連立離脱後、野党として公明党がどれだけ政策実現に関与できるかが検証点となる。"
+    },
+    {
+      "context": "福祉・生活",
+      "title": "生活者支援・社会的弱者への配慮",
+      "desc": "公明党の看板政策である生活者支援・福祉強化を、野党の立場から具体的な法案として実現できるかを見る。"
+    }
+  ],
+  "source_urls": [
+    {"label": "公明党 公式プロフィール", "url": "https://www.komei.or.jp/giin/saito_tetsuo/"},
+    {"label": "国土交通省 大臣一覧", "url": "https://www.mlit.go.jp/"}
+  ]
+}

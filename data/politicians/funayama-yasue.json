@@ -24,6 +24,91 @@
     {"context": "参議院", "title": "参院側の政策・国会運営", "desc": "衆参両院の意見をまとめ、党の意思決定を安定させられるかを見る。"},
     {"context": "農業・地域", "title": "農政と地方の所得向上", "desc": "農林水産省出身の経験を、地域経済・食料安全保障の政策にどう反映するかが焦点。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "dpfp_sangiin_funayama",
+      "title": "2022年参院選 国民民主党公約 追跡",
+      "context": "第26回参議院議員通常選挙（2022年7月）",
+      "source": "国民民主党 参院選2022 政策・公約",
+      "source_url": "https://new-kokumin.jp/policies",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 55,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "年収の壁（103→178万円）引き上げ",
+          "category": "税制・手取り増",
+          "status": "実現",
+          "progress_score": 90,
+          "evidence_url": "https://www.jimin.jp/news/information/212124.html"
+        },
+        {
+          "title": "食料安全保障の強化・農業所得の向上",
+          "category": "農業・食料",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        },
+        {
+          "title": "地方経済の活性化・農林水産業支援",
+          "category": "地方・農業",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        },
+        {
+          "title": "子育て支援・教育費負担の軽減",
+          "category": "子育て",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://new-kokumin.jp/policies"
+        }
+      ]
+    },
+    {
+      "id": "dpfp_sangiin_kaicho_funayama",
+      "title": "参議院議員会長としての活動",
+      "context": "国民民主党 参院議員会長・両院議員総会長として参院側を主導",
+      "source": "国民民主党 参院活動・役員一覧",
+      "source_url": "https://new-kokumin.jp/about/board-member",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "農業・食料政策への参院委員会での質疑・提言",
+          "category": "農業政策",
+          "status": "実施",
+          "progress_score": 55,
+          "evidence_url": "https://new-kokumin.jp/about/board-member"
+        },
+        {
+          "title": "参院での与野党交渉・法案修正の実現",
+          "category": "国会対応",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://new-kokumin.jp/about/board-member"
+        },
+        {
+          "title": "山形県を中心とした農村・地域再生政策",
+          "category": "地方再生",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://new-kokumin.jp/member/funayama-yasue"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/funayama-yasue"},
     {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}

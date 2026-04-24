@@ -43,6 +43,98 @@
       "desc": "農薬規制強化、食料自給率向上、種苗保護など農業・食の安全に関する政策立案の進捗を追跡する。"
     }
   ],
+  "promise_cycles": [
+    {
+      "id": "sanseito_sangiin2022",
+      "title": "2022年参院選 参政党公約 追跡",
+      "context": "第26回参議院議員通常選挙（2022年7月）",
+      "source": "参政党 2022年参院選政策・選挙公報",
+      "source_url": "https://sanseito.jp/election/sangiin2022/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 35,
+      "total": 5,
+      "done": 0,
+      "started": 2,
+      "pending": 3,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "日米地位協定の抜本的見直し・主権回復",
+          "category": "主権・安全保障",
+          "status": "追跡中",
+          "progress_score": 15,
+          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+        },
+        {
+          "title": "食の安全・農薬規制強化・有機農業推進",
+          "category": "食・農業",
+          "status": "追跡中",
+          "progress_score": 30,
+          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+        },
+        {
+          "title": "歴史・伝統文化を重視した教育改革",
+          "category": "教育",
+          "status": "法案提出",
+          "progress_score": 25,
+          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+        },
+        {
+          "title": "子育て支援・少子化対策の強化",
+          "category": "少子化対策",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+        },
+        {
+          "title": "グローバリズムに対抗する経済自立路線",
+          "category": "経済政策",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+        }
+      ]
+    },
+    {
+      "id": "sanseito_basic_policy_track",
+      "title": "参政党 基本政策の国会活動実績",
+      "context": "2022年初当選〜 参議院議員・党代表として",
+      "source": "参政党 基本政策・国会活動報告",
+      "source_url": "https://sanseito.jp/about/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 40,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "参院委員会での食の安全・農薬問題への質疑",
+          "category": "食・農業",
+          "status": "実施",
+          "progress_score": 55,
+          "evidence_url": "https://sanseito.jp/about/"
+        },
+        {
+          "title": "教育基本法改正・歴史教育強化への提言",
+          "category": "教育",
+          "status": "追跡中",
+          "progress_score": 30,
+          "evidence_url": "https://sanseito.jp/about/"
+        },
+        {
+          "title": "参政党の党勢拡大と次回選挙準備",
+          "category": "党運営",
+          "status": "進行",
+          "progress_score": 40,
+          "evidence_url": "https://sanseito.jp/about/"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "参政党 議員プロフィール", "url": "https://sanseito.jp/member/"},
     {"label": "参政党 ボードメンバー", "url": "https://sanseito.jp/about/"}

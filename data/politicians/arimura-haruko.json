@@ -24,6 +24,84 @@
     {"context": "意思決定", "title": "総務会での合意形成", "desc": "党内の幅広い意見を、最終的な党決定へまとめる調整力が注目点。"},
     {"context": "社会政策", "title": "少子化・女性活躍・行政改革", "desc": "過去の担当領域を、現政権の人づくり・制度改革へどう接続するかを見る。"}
   ],
+  "promise_cycles": [
+    {
+      "id": "arimura_minister_track",
+      "title": "女性活躍・少子化担当大臣期の政策トラック",
+      "context": "第2次〜3次安倍内閣 女性活躍・行政改革担当大臣",
+      "source": "内閣府 女性活躍推進施策",
+      "source_url": "https://www.gender.go.jp/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "historical_review",
+      "score": 60,
+      "total": 3,
+      "done": 1,
+      "started": 2,
+      "pending": 0,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "女性活躍推進法の成立・施行",
+          "category": "女性活躍",
+          "status": "実現",
+          "progress_score": 85,
+          "evidence_url": "https://www.gender.go.jp/"
+        },
+        {
+          "title": "待機児童対策・保育所拡充への取り組み",
+          "category": "子育て",
+          "status": "進行",
+          "progress_score": 55,
+          "evidence_url": "https://www.gender.go.jp/"
+        },
+        {
+          "title": "行政改革・規制緩和の推進",
+          "category": "行政改革",
+          "status": "進行",
+          "progress_score": 50,
+          "evidence_url": "https://www.jimin.jp/member/100542.html"
+        }
+      ]
+    },
+    {
+      "id": "arimura_soumukaicho_2025",
+      "title": "総務会長期の意思決定・政策調整（高市体制）",
+      "context": "2025年10月〜 高市内閣での自民党総務会長",
+      "source": "自民党 役員発表・総務会活動",
+      "source_url": "https://www.jimin.jp/member/officer/",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "総務会での重要政策の党内合意形成",
+          "category": "党運営",
+          "status": "追跡中",
+          "progress_score": 55,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        },
+        {
+          "title": "女性・子育て政策の現政権への継続反映",
+          "category": "社会政策",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/member/100542.html"
+        },
+        {
+          "title": "参院選に向けた候補者・組織基盤の整備",
+          "category": "選挙",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://www.jimin.jp/member/officer/"
+        }
+      ]
+    }
+  ],
   "source_urls": [
     {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100542.html"},
     {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}
