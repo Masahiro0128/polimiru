@@ -26,6 +26,66 @@ const politicians = [
         desc: "九州大学法学部卒、弁護士を経て大阪市会議員、衆議院議員、大阪市長、大阪府知事を歴任。2023年府政公約の達成度を蓄積。"
     },
     {
+        id: "yamada-miki",
+        name: "山田 みき",
+        kana: "やまだ みき",
+        party: "自民党",
+        role: "東京1区候補",
+        area: "東京都第1区",
+        photo: "images/elections/shugiin_tokyo_2026/tokyo_101.jpg",
+        url: "politicians/yamada-miki/index.html",
+        tags: ["山田みき", "やまだみき", "東京1区", "第51回衆議院選挙", "自民党", "外務大臣政務官", "環境副大臣", "東京大学", "コロンビア大学"],
+        desc: "通商産業省、内閣官房、民間企業を経て国政へ。東京1区候補として経済成長、社会保障、安全保障、教育、都心税制を掲げる。"
+    },
+    {
+        id: "kaieda-banri",
+        name: "海江田 万里",
+        kana: "かいえだ ばんり",
+        party: "中道改革連合",
+        role: "東京1区候補",
+        area: "東京都第1区",
+        photo: "images/elections/shugiin_tokyo_2026/tokyo_102.jpg",
+        url: "politicians/kaieda-banri/index.html",
+        tags: ["海江田万里", "かいえだばんり", "東京1区", "第51回衆議院選挙", "中道改革連合", "経済産業大臣", "民主党代表", "衆議院副議長"],
+        desc: "経済産業大臣、民主党代表、衆議院副議長などを歴任。政治資金透明化、現役世代投資、社会保障改革を掲げる。"
+    },
+    {
+        id: "yoshikawa-rina",
+        name: "吉川 りな",
+        kana: "よしかわ りな",
+        party: "参政党",
+        role: "東京1区候補",
+        area: "東京都第1区",
+        photo: "images/elections/shugiin_tokyo_2026/tokyo_103.jpg",
+        url: "politicians/yoshikawa-rina/index.html",
+        tags: ["吉川りな", "よしかわりな", "東京1区", "第51回衆議院選挙", "参政党", "減税", "移民政策", "食料安全保障", "教育給付金"],
+        desc: "看護師・保健師として医療現場に従事。参政党副代表として、減税、食料安全保障、移民政策、教育給付を掲げる。"
+    },
+    {
+        id: "haruyama-asuka",
+        name: "春山 あすか",
+        kana: "はるやま あすか",
+        party: "日本維新の会",
+        role: "東京1区候補",
+        area: "東京都第1区",
+        photo: "images/elections/shugiin_tokyo_2026/tokyo_104.jpg",
+        url: "politicians/haruyama-asuka/index.html",
+        tags: ["春山あすか", "はるやまあすか", "東京1区", "第51回衆議院選挙", "日本維新の会", "千代田区議", "DX", "消費税0", "東京大学大学院"],
+        desc: "元千代田区議。IT、NPO、都市まちづくりの経験を背景に、食料品消費税0%、DX、教育自由化を掲げる。"
+    },
+    {
+        id: "kuroda-asahi",
+        name: "黒田 あさひ",
+        kana: "くろだ あさひ",
+        party: "日本共産党",
+        role: "東京1区候補",
+        area: "東京都第1区",
+        photo: "",
+        url: "politicians/kuroda-asahi/index.html",
+        tags: ["黒田あさひ", "くろだあさひ", "東京1区", "第51回衆議院選挙", "日本共産党", "消費税5%", "最低賃金", "核兵器禁止条約", "選択的夫婦別姓"],
+        desc: "日本共産党の東京1区候補。消費税減税、最低賃金引き上げ、外交による平和、人権・多様性を掲げる。"
+    },
+    {
         id: "aso-taro",
         name: "麻生 太郎",
         kana: "あそう たろう",

@@ -1,0 +1,62 @@
+{
+  "id": "kaieda-banri",
+  "name": "海江田 万里",
+  "kana": "かいえだ ばんり",
+  "party": "中道改革連合",
+  "party_role": "東京1区候補",
+  "area": "東京都第1区",
+  "current_status": "衆議院議員候補",
+  "photo_url": "../../images/elections/shugiin_tokyo_2026/tokyo_102.jpg",
+  "official_url": "https://kaiedabanri.jp",
+  "accent": {"from": "#23324d", "to": "#0f1f3d", "color": "#334155"},
+  "summary": "経済評論家、民主党代表、経済産業大臣、衆議院副議長などを歴任。東京1区では政治資金透明化、現実的な安全保障、現役世代への投資、社会保障改革を掲げる。",
+  "stats": [
+    {"label": "政党", "value": "中道改革連合"},
+    {"label": "選挙区", "value": "東京1区"},
+    {"label": "候補者ID", "value": "102"}
+  ],
+  "career": [
+    {"period": "1949", "text": "東京都生まれ"},
+    {"period": "学歴", "text": "慶應義塾大学卒業"},
+    {"period": "1993", "text": "衆議院議員初当選、民主党結党に参加"},
+    {"period": "2010", "text": "内閣府特命担当大臣、経済産業大臣"},
+    {"period": "2012", "text": "民主党代表"},
+    {"period": "2021-2024", "text": "第68代衆議院副議長"},
+    {"period": "2026", "text": "第51回衆議院議員総選挙 東京1区候補"}
+  ],
+  "election_links": [
+    {"election_id": "shugiin_tokyo_2026", "title": "第51回衆議院議員総選挙 東京1区", "role": "候補者", "result": "結果未反映"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "shugiin_tokyo_2026_platform",
+      "title": "2026年衆院選 東京1区 公約整理",
+      "context": "選挙公報・公式サイト",
+      "source": "東京都選挙管理委員会 選挙公報",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "initial_review",
+      "score": 75,
+      "total": 5,
+      "done": 0,
+      "started": 0,
+      "pending": 5,
+      "unknown": 0,
+      "highlights": [
+        {"title": "政治資金の透明化と選挙制度改革", "category": "政治改革", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf"},
+        {"title": "日米同盟と憲法にもとづく平和外交", "category": "外交・安全保障", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf"},
+        {"title": "教育・現役世代への投資", "category": "教育・世代政策", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf"},
+        {"title": "医療・介護・ベーシックサービスを含む社会保障改革", "category": "社会保障", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf"}
+      ]
+    }
+  ],
+  "focus_cards": [
+    {"context": "政治改革", "title": "政治資金と制度改革", "desc": "政治資金の透明化、選挙制度改革を中心に、政治への信頼回復を訴えている。"},
+    {"context": "経済・社会保障", "title": "現役世代と持続可能性", "desc": "現役世代への投資と医療・介護などの制度維持を両立できるかが検証点。"}
+  ],
+  "source_urls": [
+    {"label": "公式サイト", "url": "https://kaiedabanri.jp"},
+    {"label": "東京都選管 候補者一覧", "url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/candidate01.html"},
+    {"label": "選挙公報 音声版PDF", "url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf"}
+  ]
+}

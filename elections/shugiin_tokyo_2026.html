@@ -533,6 +533,20 @@
 
                     const card = document.createElement('div');
                     card.className = 'candidate-card';
+                    if (candidate.profile_url) {
+                        card.setAttribute('role', 'link');
+                        card.tabIndex = 0;
+                        card.addEventListener('click', event => {
+                            if (event.target.closest('a')) return;
+                            window.location.href = candidate.profile_url;
+                        });
+                        card.addEventListener('keydown', event => {
+                            if (event.key === 'Enter' || event.key === ' ') {
+                                event.preventDefault();
+                                window.location.href = candidate.profile_url;
+                            }
+                        });
+                    }
                     card.innerHTML = `
                         <div class="candidate-header">
                             <div class="avatar">${avatarHtml}</div>
@@ -560,6 +574,7 @@
                             ${candidate.source_url ? `<a href="${candidate.source_url}" target="_blank" rel="noopener">候補者一覧</a>` : ''}
                             ${candidate.bulletin_pdf ? `<a href="${candidate.bulletin_pdf}" target="_blank" rel="noopener">公報PDF</a>` : ''}
                             ${candidate.manifesto_source ? `<a href="${candidate.manifesto_source}" target="_blank" rel="noopener">公報（読み上げ対応）</a>` : ''}
+                            ${candidate.profile_url ? `<a href="${candidate.profile_url}">人物カード</a>` : ''}
                         </div>
                     `;
                     grid.appendChild(card);

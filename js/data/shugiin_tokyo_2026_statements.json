@@ -3,8 +3,8 @@
     "election_id": "shugiin_tokyo_2026",
     "election": "衆議院議員総選挙（東京）",
     "description": "候補者発言を争点別に比較するためのスターターデータ",
-    "last_updated": "2026-03-11T10:00:00Z",
-    "record_status": "starter"
+    "last_updated": "2026-04-24T00:00:00Z",
+    "record_status": "first_batch_review"
   },
   "topics": [
     {
@@ -47,38 +47,134 @@
     {
       "candidate_id": 101,
       "topic_id": "tax",
-      "stance_label": "都心部向けの税負担見直しを前面化",
-      "summary": "住宅ローン減税の拡充や固定資産税・相続税の見直しを打ち出している。",
+      "stance_label": "都心部の住宅・資産税制見直し",
+      "summary": "住宅ローン減税の拡充、固定資産税・相続税の見直し、投機目的の不動産取得制限を掲げる。",
+      "evidence_ids": [
+        "stmt-101-tax-01"
+      ],
       "status": "supported",
-      "updated_at": "2026-03-11T10:00:00Z",
-      "evidence_ids": ["stmt-101-tax-01"]
+      "updated_at": "2026-04-24T00:00:00Z"
     },
     {
       "candidate_id": 101,
       "topic_id": "security",
-      "stance_label": "抑止力強化と憲法改正を主張",
-      "summary": "自衛隊明記や自衛官の処遇改善など、安全保障の強化を掲げている。",
+      "stance_label": "抑止力強化と自衛隊明記",
+      "summary": "自由で開かれたインド太平洋、自衛隊明記、自衛官処遇改善を掲げる。",
+      "evidence_ids": [
+        "stmt-101-security-01"
+      ],
       "status": "supported",
-      "updated_at": "2026-03-11T10:00:00Z",
-      "evidence_ids": ["stmt-101-security-01"]
+      "updated_at": "2026-04-24T00:00:00Z"
     },
     {
       "candidate_id": 102,
       "topic_id": "governance",
-      "stance_label": "政治資金の透明化と制度改革を強調",
-      "summary": "政治資金の透明化や選挙制度改革を主張している。",
+      "stance_label": "政治資金透明化と選挙制度改革",
+      "summary": "政治資金の透明化、選挙制度改革を掲げる。",
+      "evidence_ids": [
+        "stmt-102-gov-01"
+      ],
       "status": "supported",
-      "updated_at": "2026-03-11T10:00:00Z",
-      "evidence_ids": ["stmt-102-gov-01"]
+      "updated_at": "2026-04-24T00:00:00Z"
     },
     {
       "candidate_id": 102,
       "topic_id": "childcare",
-      "stance_label": "教育・現役世代支援を政策の柱に配置",
-      "summary": "教育や現役世代への投資を前面に置いた整理になっている。",
+      "stance_label": "教育・現役世代への投資",
+      "summary": "教育、現役世代への投資、医療・介護などの社会保障改革を掲げる。",
+      "evidence_ids": [
+        "stmt-102-child-01"
+      ],
       "status": "supported",
-      "updated_at": "2026-03-11T10:00:00Z",
-      "evidence_ids": ["stmt-102-child-01"]
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 103,
+      "topic_id": "tax",
+      "stance_label": "減税と社会保険料削減",
+      "summary": "減税と社会保険料削減で国民負担率35％を目指すと掲げる。",
+      "evidence_ids": [
+        "stmt-103-tax-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 103,
+      "topic_id": "immigration",
+      "stance_label": "移民依存に頼らない人口政策",
+      "summary": "労働力不足を安易な移民依存に委ねないと主張する。",
+      "evidence_ids": [
+        "stmt-103-immigration-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 103,
+      "topic_id": "childcare",
+      "stance_label": "子ども一人月10万円の教育給付",
+      "summary": "0〜15歳の子ども一人につき月10万円の教育給付金を掲げる。",
+      "evidence_ids": [
+        "stmt-103-child-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 104,
+      "topic_id": "tax",
+      "stance_label": "食料品の消費税0％",
+      "summary": "食料品の消費税0％を主要公約として掲げる。",
+      "evidence_ids": [
+        "stmt-104-tax-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 104,
+      "topic_id": "governance",
+      "stance_label": "DXによる行政効率化と使途透明化",
+      "summary": "DXで行政効率化と使途透明化を進め、手取り増につなげると訴える。",
+      "evidence_ids": [
+        "stmt-104-gov-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 105,
+      "topic_id": "tax",
+      "stance_label": "消費税5％と将来的廃止",
+      "summary": "消費税を一律5％に引き下げ、将来的な廃止を掲げる。",
+      "evidence_ids": [
+        "stmt-105-tax-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 105,
+      "topic_id": "security",
+      "stance_label": "軍備拡大より外交",
+      "summary": "軍備拡大より外交、核兵器禁止条約批准を掲げる。",
+      "evidence_ids": [
+        "stmt-105-security-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
+    },
+    {
+      "candidate_id": 105,
+      "topic_id": "immigration",
+      "stance_label": "多文化共生とヘイト反対",
+      "summary": "多文化共生、外国人差別やヘイトスピーチへの反対を掲げる。",
+      "evidence_ids": [
+        "stmt-105-immigration-01"
+      ],
+      "status": "supported",
+      "updated_at": "2026-04-24T00:00:00Z"
     },
     {
       "candidate_id": 205,
@@ -87,7 +183,9 @@
       "summary": "政治資金の全公開ツールなど、政治とカネの透明化を訴えている。",
       "status": "supported",
       "updated_at": "2026-03-11T10:00:00Z",
-      "evidence_ids": ["stmt-205-gov-01"]
+      "evidence_ids": [
+        "stmt-205-gov-01"
+      ]
     },
     {
       "candidate_id": 205,
@@ -96,7 +194,9 @@
       "summary": "子どもの人数に応じた所得税率引き下げなどを打ち出している。",
       "status": "supported",
       "updated_at": "2026-03-11T10:00:00Z",
-      "evidence_ids": ["stmt-205-child-01"]
+      "evidence_ids": [
+        "stmt-205-child-01"
+      ]
     },
     {
       "candidate_id": 206,
@@ -109,66 +209,6 @@
     }
   ],
   "statements": [
-    {
-      "id": "stmt-101-tax-01",
-      "candidate_id": 101,
-      "topic_id": "tax",
-      "platform": "election_bulletin",
-      "platform_label": "選挙公報音声版",
-      "date": "2026-01-27",
-      "summary": "住宅ローン減税の拡充、固定資産税・相続税の見直しを訴える。",
-      "quote_excerpt": "住宅ローン減税の拡充・固定資産税・相続税の見直し",
-      "source_title": "東京都第1区 選挙公報音声版",
-      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_01_onsei.pdf",
-      "source_type": "primary",
-      "verification_status": "verified",
-      "notes": "OCR済みテキストから要点を抽出。"
-    },
-    {
-      "id": "stmt-101-security-01",
-      "candidate_id": 101,
-      "topic_id": "security",
-      "platform": "election_bulletin",
-      "platform_label": "選挙公報音声版",
-      "date": "2026-01-27",
-      "summary": "憲法改正による自衛隊明記と自衛官の処遇改善を掲げる。",
-      "quote_excerpt": "憲法改正による「自衛隊」明記・自衛官の処遇改善",
-      "source_title": "東京都第1区 選挙公報音声版",
-      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_01_onsei.pdf",
-      "source_type": "primary",
-      "verification_status": "verified",
-      "notes": "安全保障セクションの記載。"
-    },
-    {
-      "id": "stmt-102-gov-01",
-      "candidate_id": 102,
-      "topic_id": "governance",
-      "platform": "election_bulletin",
-      "platform_label": "選挙公報音声版",
-      "date": "2026-01-27",
-      "summary": "政治資金の透明化や選挙制度改革を訴える。",
-      "quote_excerpt": "政治資金の透明化と改革・選挙制度改革",
-      "source_title": "東京都第1区 選挙公報音声版",
-      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area02/R8shuin_shou_02_02_onsei.pdf",
-      "source_type": "primary",
-      "verification_status": "verified",
-      "notes": "OCR済みテキストの政策項目から整理。"
-    },
-    {
-      "id": "stmt-102-child-01",
-      "candidate_id": 102,
-      "topic_id": "childcare",
-      "platform": "election_bulletin",
-      "platform_label": "選挙公報音声版",
-      "date": "2026-01-27",
-      "summary": "教育や現役世代への投資を政策の主要項目として掲げる。",
-      "quote_excerpt": "教育・現役世代への投資",
-      "source_title": "東京都第1区 選挙公報音声版",
-      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area02/R8shuin_shou_02_02_onsei.pdf",
-      "source_type": "primary",
-      "verification_status": "needs_review",
-      "notes": "district/source の整合性確認が必要。現状はスターターデータ。"
-    },
     {
       "id": "stmt-205-gov-01",
       "candidate_id": 205,
@@ -198,6 +238,186 @@
       "source_type": "primary",
       "verification_status": "verified",
       "notes": "子育て減税の項目。"
+    },
+    {
+      "id": "stmt-101-tax-01",
+      "candidate_id": 101,
+      "topic_id": "tax",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "住宅ローン減税の拡充、固定資産税・相続税の見直し、投機目的の不動産取得制限を訴える。",
+      "quote_excerpt": "住宅ローン減税の拡充・固定資産税・相続税の見直し",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_01_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-101-security-01",
+      "candidate_id": 101,
+      "topic_id": "security",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "憲法改正による自衛隊明記、自由で開かれたインド太平洋、自衛官処遇改善を掲げる。",
+      "quote_excerpt": "憲法改正による「自衛隊」明記・自衛官の処遇改善",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_01_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-102-gov-01",
+      "candidate_id": 102,
+      "topic_id": "governance",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "政治資金の透明化や選挙制度改革を訴える。",
+      "quote_excerpt": "政治資金の透明化と改革・選挙制度改革",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-102-child-01",
+      "candidate_id": 102,
+      "topic_id": "childcare",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "教育・現役世代への投資、医療・介護などの社会保障改革を掲げる。",
+      "quote_excerpt": "教育・現役世代への投資",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_02_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-103-tax-01",
+      "candidate_id": 103,
+      "topic_id": "tax",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "減税と社会保険料削減で国民負担率35％を目指すと掲げる。",
+      "quote_excerpt": "減税と社会保険料の削減により、国民負担率を35％に抑え",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-103-immigration-01",
+      "candidate_id": 103,
+      "topic_id": "immigration",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "安易な移民依存に頼らない人口・労働政策を掲げる。",
+      "quote_excerpt": "労働力不足の解決を、安易な移民依存に委ねません",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-103-child-01",
+      "candidate_id": 103,
+      "topic_id": "childcare",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "0〜15歳の子ども一人につき月10万円の教育給付金を掲げる。",
+      "quote_excerpt": "0〜15歳の子ども一人につき月10万円の教育給付金",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-104-tax-01",
+      "candidate_id": 104,
+      "topic_id": "tax",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "食料品の消費税0％を掲げる。",
+      "quote_excerpt": "食料品の消費税0%",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_04_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-104-gov-01",
+      "candidate_id": 104,
+      "topic_id": "governance",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "DXで行政効率化と使途透明化を進め、手取り増につなげると訴える。",
+      "quote_excerpt": "DXで手取りを増やす",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_04_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-105-tax-01",
+      "candidate_id": 105,
+      "topic_id": "tax",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "消費税一律5％と将来的な廃止を掲げる。",
+      "quote_excerpt": "消費税一律５％で年12万円減税、そして廃止",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_05_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-105-security-01",
+      "candidate_id": 105,
+      "topic_id": "security",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "軍備拡大より外交、核兵器禁止条約批准を掲げる。",
+      "quote_excerpt": "軍備拡大より外交を・核兵器禁止条約批准",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_05_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
+    },
+    {
+      "id": "stmt-105-immigration-01",
+      "candidate_id": 105,
+      "topic_id": "immigration",
+      "platform": "election_bulletin",
+      "platform_label": "選挙公報音声版",
+      "date": "2026-01-27",
+      "summary": "多文化共生、外国人差別やヘイトスピーチへの反対を掲げる。",
+      "quote_excerpt": "多文化共生・外国人差別やヘイトスピーチに反対",
+      "source_title": "東京都第1区 選挙公報音声版",
+      "source_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_05_onsei.pdf",
+      "source_type": "primary",
+      "verification_status": "verified",
+      "notes": "第1バッチとしてOCR済みテキストから要点を手整理。"
     }
   ]
 }
