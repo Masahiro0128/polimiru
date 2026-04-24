@@ -441,6 +441,74 @@
     line-height: 1.4;
 }
 
+/* ── お知らせ ─────────────────────────── */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 48px;
+}
+
+.news-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 16px 20px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.news-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    letter-spacing: 0.03em;
+}
+
+.news-badge--feature {
+    background: #e8f0fe;
+    color: #1e3a8a;
+}
+
+.news-badge--update {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.news-badge--launch {
+    background: #fdf4ff;
+    color: #7e22ce;
+}
+
+.news-text {
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    line-height: 1.65;
+}
+
+.news-text strong {
+    color: var(--navy-700);
+}
+
 /* ── スマホ ───────────────────────────── */
 @media (max-width: 768px) {
     .election-grid    { grid-template-columns: 1fr; gap: 12px; }
@@ -457,5 +525,10 @@
     .elections-header-right {
         width: 100%;
         justify-content: space-between;
+    }
+
+    .news-item {
+        padding: 14px 16px;
+        gap: 8px;
     }
 }
