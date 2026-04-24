@@ -89,6 +89,17 @@
         <div id="politician-grid" style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:32px;"></div>
     </div>
 
+    <!-- 注目の政治家（常時表示、検索結果が出たら非表示） -->
+    <div class="featured-politicians-section" id="featured-politicians">
+        <div class="featured-politicians-inner">
+            <div class="featured-politicians-header">
+                <h2 class="featured-politicians-title">注目の政治家</h2>
+                <span class="featured-politicians-hint">名前や政党で検索できます</span>
+            </div>
+            <div class="featured-politicians-row" id="featured-politicians-row"></div>
+        </div>
+    </div>
+
     <!-- 選挙一覧 -->
     <div class="container" id="election-results">
         <div class="elections-section-header">
@@ -113,6 +124,7 @@
 
     <script src="js/elections.js"></script>
     <script src="js/politicians.js"></script>
+    <script src="js/likes.js"></script>
     <script src="js/layout.js?v=999"></script>
 
     <script>
@@ -130,6 +142,7 @@
         };
 
         renderCards('all');
+        renderFeaturedPoliticians();
 
         document.querySelector('.search-submit-btn').addEventListener('click', () => {
             const active = document.querySelector('.filter-btn.active');
@@ -240,6 +253,49 @@
             }
         }
 
+        function renderFeaturedPoliticians() {
+            const row   = document.getElementById('featured-politicians-row');
+            const likes = window.pLikes;
+            const all   = (window.politicians || []).filter(p => p.url);
+
+            // Pre-compute totals once; reuse for sort and display.
+            const withTotals = all.map(p => ({
+                p,
+                total: likes ? likes.getTotalLikes(p) : (p.baseLikes || 0),
+                liked: likes ? likes.isLiked(p.id) : false,
+            }));
+            if (likes) withTotals.sort((a, b) => b.total - a.total);
+
+            row.innerHTML = withTotals.slice(0, 8).map(({ p, total, liked }) => {
+                const count = likes ? likes.formatLikes(total) : String(total);
+                return `
+                <a href="${p.url}" class="pol-feat-card">
+                    ${p.photo
+                        ? `<img src="${p.photo}" alt="${p.name}" class="pol-feat-photo"
+                               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                           <div class="pol-feat-initial" style="display:none">${(p.name||'?').replace(/\s+/g,'').slice(0,1)}</div>`
+                        : `<div class="pol-feat-initial">${(p.name||'?').replace(/\s+/g,'').slice(0,1)}</div>`
+                    }
+                    <div class="pol-feat-name">${p.name}</div>
+                    <div class="pol-feat-sub">${p.party}</div>
+                    <button class="pol-feat-like${liked ? ' liked' : ''}"
+                            onclick="event.preventDefault();event.stopPropagation();toggleFeaturedLike(this,'${p.id}')">
+                        <i class="fa-${liked ? 'solid' : 'regular'} fa-heart"></i>
+                        <span>${count}</span>
+                    </button>
+                </a>`;
+            }).join('');
+        }
+
+        function toggleFeaturedLike(btn, id) {
+            if (!window.pLikes) return;
+            const nowLiked = pLikes.toggleLike(id);
+            const p = (window.politicians || []).find(p => p.id === id);
+            btn.classList.toggle('liked', nowLiked);
+            btn.querySelector('i').className = `fa-${nowLiked ? 'solid' : 'regular'} fa-heart`;
+            if (p) btn.querySelector('span').textContent = pLikes.formatLikes(pLikes.getTotalLikes(p));
+        }
+
         function renderPoliticians() {
             const normalizeSearchText = value => (value || '')
                 .toString()
@@ -251,7 +307,12 @@
             const section = document.getElementById('politician-results');
             const grid    = document.getElementById('politician-grid');
 
-            if (!query || searchMode === 'elections') { section.style.display = 'none'; return; }
+            const featured = document.getElementById('featured-politicians');
+            if (!query || searchMode === 'elections') {
+                section.style.display = 'none';
+                featured.style.display = 'block';
+                return;
+            }
 
             const politicianData = window.politicians || [];
             const matched = politicianData.filter(p => {
@@ -262,9 +323,14 @@
                 return normalizedHaystack.includes(query);
             });
 
-            if (matched.length === 0) { section.style.display = 'none'; return; }
+            if (matched.length === 0) {
+                section.style.display = 'none';
+                featured.style.display = 'block';
+                return;
+            }
 
             section.style.display = 'block';
+            featured.style.display = 'none';
             grid.innerHTML = matched.map(p => `
                 <a href="${p.url}" style="
                     display:flex; align-items:center; gap:12px;

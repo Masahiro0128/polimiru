@@ -39,18 +39,6 @@ const elections = [
         "status": "2026年 注目"
     },
     {
-        "id": 1,
-        "title": "町田市長選挙 2026",
-        "category": "local",
-        "date": "2026年2月XX日 投票",
-        "prefecture": "東京都",
-        "desc": "再開発、給食、子育て支援...。<br>現職の実績と新人の公約を徹底比較。",
-        "image": "",
-        "url": "elections/machida.html",
-        "badgeType": "local",
-        "status": "2026年 注目"
-    },
-    {
         "id": 2,
         "title": "長崎県知事選挙 2026",
         "category": "local",

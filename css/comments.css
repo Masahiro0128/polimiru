@@ -1,0 +1,155 @@
+/* =========================================
+   発言板
+========================================= */
+.cb-section {
+    padding: 40px 0 60px;
+}
+
+.cb-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    border-left: 4px solid var(--navy-700);
+}
+
+.cb-title {
+    margin: 0;
+    font-size: 1.08rem;
+    font-weight: 800;
+    color: var(--navy-900);
+}
+
+.cb-count {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+/* フォーム */
+.cb-form {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.cb-form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cb-nick-input {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    background: var(--bg);
+    outline: none;
+    min-width: 0;
+}
+.cb-nick-input:focus {
+    border-color: var(--navy-700);
+    background: #fff;
+}
+
+.cb-submit {
+    background: var(--navy-900);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.15s;
+}
+.cb-submit:hover    { background: var(--navy-700); }
+.cb-submit:disabled { opacity: 0.5; cursor: default; }
+
+.cb-body-input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    background: var(--bg);
+    resize: vertical;
+    outline: none;
+    line-height: 1.7;
+}
+.cb-body-input:focus {
+    border-color: var(--navy-700);
+    background: #fff;
+}
+
+.cb-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    min-height: 18px;
+}
+
+.cb-char  { font-size: 0.72rem; color: var(--text-muted); }
+.cb-error { font-size: 0.75rem; color: #e63946; font-weight: 700; }
+
+/* コメント一覧 */
+.cb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cb-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.cb-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.cb-nick { font-size: 0.82rem; font-weight: 700; color: var(--navy-700); }
+.cb-time { font-size: 0.72rem; color: var(--text-muted); }
+
+.cb-body {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.75;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.cb-empty {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cb-section   { padding: 32px 0 48px; }
+    .cb-form-row  { flex-direction: column; }
+    .cb-submit    { width: 100%; padding: 10px; }
+}

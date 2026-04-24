@@ -341,6 +341,104 @@
 }
 .score-method-link:hover { color: var(--navy-700); text-decoration: underline; }
 
+/* ── 注目の政治家セクション ───────────── */
+.featured-politicians-section {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 0;
+}
+
+.featured-politicians-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.featured-politicians-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.featured-politicians-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy-900);
+    margin: 0;
+}
+
+.featured-politicians-hint {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.featured-politicians-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.featured-politicians-row::-webkit-scrollbar { display: none; }
+
+.pol-feat-card {
+    flex: 0 0 130px;
+    background: var(--bg);
+    border-radius: var(--radius-lg);
+    padding: 16px 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--border);
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+}
+.pol-feat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background: #fff;
+}
+
+.pol-feat-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    background: var(--navy-100);
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.pol-feat-initial {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--navy-100);
+    color: var(--navy-700);
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.pol-feat-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--navy-900);
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+.pol-feat-sub {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
 /* ── スマホ ───────────────────────────── */
 @media (max-width: 768px) {
     .election-grid    { grid-template-columns: 1fr; gap: 12px; }

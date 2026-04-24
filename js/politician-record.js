@@ -201,6 +201,26 @@
 
             <div class="back-home"><a href="../../index.html">トップへ戻る</a></div>
         `;
+
+        const sourceButtons = root.querySelector('.source-buttons');
+        if (sourceButtons) {
+            if (window.pLikes) {
+                window.pLikes.insertButton(id, sourceButtons);
+            } else {
+                document.addEventListener('plikesready', function () {
+                    window.pLikes.insertButton(id, root.querySelector('.source-buttons'));
+                }, { once: true });
+            }
+        }
+
+        const backHome = root.querySelector('.back-home');
+        if (window.pComments) {
+            window.pComments.init(id, root, backHome);
+        } else {
+            document.addEventListener('pcommentsready', function () {
+                window.pComments.init(id, root, root.querySelector('.back-home'));
+            }, { once: true });
+        }
     }
 
     if (!root || !id) return;
