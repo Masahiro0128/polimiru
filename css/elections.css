@@ -347,4 +347,15 @@
     .candidate-grid   { grid-template-columns: 1fr; }
     .filter-tabs      { gap: 4px; }
     .filter-btn       { padding: 5px 12px; font-size: 0.78rem; }
+
+    .elections-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .elections-header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
