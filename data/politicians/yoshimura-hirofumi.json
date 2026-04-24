@@ -1,0 +1,113 @@
+{
+  "id": "yoshimura-hirofumi",
+  "name": "吉村 洋文",
+  "kana": "よしむら ひろふみ",
+  "party": "大阪維新の会",
+  "area": "大阪府",
+  "current_status": "大阪府知事",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_%28cropped%29.jpg",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://www.pref.osaka.lg.jp/o020020/hisho/tijiprofile/index.html",
+  "twitter": "hiroyoshimura",
+  "education": [
+    { "school": "九州大学 法学部", "period": "1998年3月卒業", "note": "" }
+  ],
+  "career": [
+    { "role": "大阪府生まれ", "period": "1975", "type": "profile" },
+    { "role": "九州大学法学部卒業", "period": "1998-03", "type": "education" },
+    { "role": "司法試験合格", "period": "1998", "type": "law" },
+    { "role": "弁護士登録", "period": "2000-10", "type": "law" },
+    { "role": "大阪市会議員", "period": "2011-04", "type": "local_assembly" },
+    { "role": "衆議院議員", "period": "2014-12", "type": "national_assembly" },
+    { "role": "大阪市長", "period": "2015-12 〜 2019-03", "type": "mayor" },
+    { "role": "大阪府知事（第1期）", "period": "2019-04", "type": "governor" },
+    { "role": "大阪府知事（第2期）", "period": "2023-04", "type": "governor" }
+  ],
+  "election_links": [
+    {
+      "election_id": "osaka_2023_governor",
+      "title": "大阪府知事選挙 2023",
+      "role": "現職候補",
+      "result": "当選",
+      "candidate_data": "js/data/osaka_2023_governor/candidates/yoshimura.json"
+    },
+    {
+      "election_id": "osaka_2027_governor",
+      "title": "大阪府知事選挙 2027",
+      "role": "現職",
+      "result": "出馬未確定",
+      "candidate_data": "js/data/osaka_2027_governor/candidates/yoshimura.json"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "osaka_2023_manifesto",
+      "title": "2023年府政・維新マニフェスト検証",
+      "context": "大阪府知事選挙 2023",
+      "source": "大阪維新の会 大阪府議会議員団 マニフェスト2023",
+      "source_url": "https://osaka-ishin.jp/pdf/manifesto/ishinfugidan_manifesto2023.pdf",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "initial_review",
+      "score": 50,
+      "total": 49,
+      "done": 5,
+      "started": 38,
+      "pending": 5,
+      "unknown": 1,
+      "category_summary": [
+        { "category": "行財政", "total": 4, "done": 1, "started": 3, "pending": 0, "unknown": 0 },
+        { "category": "教育", "total": 12, "done": 1, "started": 9, "pending": 1, "unknown": 1 },
+        { "category": "経済", "total": 11, "done": 2, "started": 7, "pending": 2, "unknown": 0 },
+        { "category": "インフラ", "total": 7, "done": 0, "started": 7, "pending": 0, "unknown": 0 },
+        { "category": "医療福祉", "total": 7, "done": 0, "started": 7, "pending": 0, "unknown": 0 },
+        { "category": "都市開発", "total": 4, "done": 0, "started": 3, "pending": 1, "unknown": 0 },
+        { "category": "その他", "total": 2, "done": 1, "started": 0, "pending": 1, "unknown": 0 },
+        { "category": "環境", "total": 2, "done": 0, "started": 2, "pending": 0, "unknown": 0 }
+      ],
+      "highlights": [
+        {
+          "title": "高等学校等授業料・大阪公立大学の無償化",
+          "category": "教育",
+          "status": "完了",
+          "progress_score": 100,
+          "evidence_url": "https://www.pref.osaka.lg.jp/kyoikusomu/mushouka/"
+        },
+        {
+          "title": "大阪・関西万博の開催と波及効果づくり",
+          "category": "経済",
+          "status": "完了",
+          "progress_score": 100,
+          "evidence_url": "https://www.expo2025.or.jp/"
+        },
+        {
+          "title": "副首都・大阪に向けた府市一体の改革",
+          "category": "経済",
+          "status": "着手",
+          "progress_score": 60,
+          "evidence_url": "https://www.pref.osaka.lg.jp/fukushuto/"
+        },
+        {
+          "title": "府域水道事業の一元化・水道民営化",
+          "category": "都市開発",
+          "status": "未着手",
+          "progress_score": 20,
+          "evidence_url": ""
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "大阪府 知事のプロフィール",
+      "url": "https://www.pref.osaka.lg.jp/o020020/hisho/tijiprofile/index.html"
+    },
+    {
+      "label": "全国知事会 知事プロフィール",
+      "url": "https://www.nga.gr.jp/app/chijifile/profile/333/"
+    },
+    {
+      "label": "日本維新の会 吉村洋文",
+      "url": "https://o-ishin.jp/member/detail/yoshimura_hirofumi.html"
+    }
+  ]
+}

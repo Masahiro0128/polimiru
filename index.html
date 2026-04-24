@@ -73,6 +73,16 @@
         </div>
     </div>
 
+    <!-- 政治家検索結果（検索時のみ表示） -->
+    <div class="container" id="politician-results" style="display:none; margin-bottom:0; padding-bottom:0;">
+        <div class="elections-section-header" style="margin-bottom:12px;">
+            <div class="elections-header-left">
+                <h2 class="elections-section-title" style="font-size:1em; color:#666;">政治家</h2>
+            </div>
+        </div>
+        <div id="politician-grid" style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:32px;"></div>
+    </div>
+
     <!-- 選挙一覧 -->
     <div class="container">
         <div class="elections-section-header">
@@ -96,6 +106,7 @@
     </div>
 
     <script src="js/elections.js"></script>
+    <script src="js/politicians.js"></script>
     <script src="js/layout.js?v=999"></script>
 
     <script>
@@ -111,6 +122,12 @@
         };
 
         renderCards('all');
+
+        document.querySelector('.search-submit-btn').addEventListener('click', () => {
+            const active = document.querySelector('.filter-btn.active');
+            renderCards(active ? active.dataset.category : 'all');
+            renderPoliticians();
+        });
 
         function filterElections(category) {
             document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
@@ -180,7 +197,63 @@
         searchInput.addEventListener('input', () => {
             const active = document.querySelector('.filter-btn.active');
             renderCards(active ? active.dataset.category : 'all');
+            renderPoliticians();
         });
+
+        function renderPoliticians() {
+            const normalizeSearchText = value => (value || '')
+                .toString()
+                .toLowerCase()
+                .normalize('NFKC')
+                .replace(/\s+/g, '');
+
+            const query = normalizeSearchText(searchInput.value);
+            const section = document.getElementById('politician-results');
+            const grid    = document.getElementById('politician-grid');
+
+            if (!query) { section.style.display = 'none'; return; }
+
+            const politicianData = window.politicians || [];
+            const matched = politicianData.filter(p => {
+                if (!p.url) return false;
+                const haystack = [p.name, p.kana, p.party, p.role, p.area, p.desc, ...(p.tags || [])]
+                    .join(' ');
+                const normalizedHaystack = normalizeSearchText(haystack);
+                return normalizedHaystack.includes(query);
+            });
+
+            if (matched.length === 0) { section.style.display = 'none'; return; }
+
+            section.style.display = 'block';
+            grid.innerHTML = matched.map(p => `
+                <a href="${p.url}" style="
+                    display:flex; align-items:center; gap:12px;
+                    background:white; border-radius:12px; padding:14px 18px;
+                    text-decoration:none; color:inherit;
+                    box-shadow:0 2px 8px rgba(0,0,0,0.07);
+                    border:1px solid #eee;
+                    transition:box-shadow 0.2s;
+                    min-width:260px; max-width:340px;
+                " onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)'"
+                   onmouseout="this.style.boxShadow='0 2px 8px rgba(0,0,0,0.07)'">
+                    ${p.photo ? `
+                        <img src="${p.photo}" alt="${p.name}"
+                             style="width:52px; height:52px; border-radius:50%; object-fit:cover; object-position:top; flex-shrink:0; background:#eee;"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    ` : ''}
+                    <div style="
+                        width:52px; height:52px; border-radius:50%; flex-shrink:0;
+                        display:${p.photo ? 'none' : 'flex'}; align-items:center; justify-content:center;
+                        background:#edf2f7; color:#334155; font-weight:800;
+                    ">${(p.name || '?').replace(/\s+/g, '').slice(0, 1)}</div>
+                    <div>
+                        <div style="font-weight:bold; font-size:1em; margin-bottom:2px;">${p.name}</div>
+                        <div style="font-size:0.78em; color:#888;">${p.party}・${p.role}</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right" style="margin-left:auto; color:#ccc; font-size:0.8em;"></i>
+                </a>
+            `).join('');
+        }
     </script>
 </body>
 </html>

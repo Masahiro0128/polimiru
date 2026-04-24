@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉村 洋文 - polimiru</title>
+    <meta property="og:title" content="吉村洋文 公約検証 - polimiru">
+    <meta property="og:description" content="吉村洋文の公約・実績を蓄積型カードで検証。2023年大阪府知事選の公約達成度を可視化。">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/header-footer.css">
+    <link rel="stylesheet" href="../../css/elections.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+
+    <style>
+        body { background: #f5f2ec; }
+
+        .person-page {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 24px 20px 72px;
+        }
+        .person-hero {
+            background:
+                linear-gradient(135deg, rgba(18, 58, 35, 0.96), rgba(26, 111, 61, 0.92)),
+                #123a23;
+            color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 18px 44px rgba(22, 31, 48, 0.18);
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+        .person-hero-inner {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 28px;
+            align-items: center;
+            padding: 34px;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 18px;
+            object-fit: cover;
+            object-position: center top;
+            border: 1px solid rgba(255,255,255,0.52);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.24);
+            background: #eee;
+        }
+        .profile-kicker {
+            font-size: 0.76rem;
+            letter-spacing: 0.14em;
+            font-weight: 700;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 8px;
+        }
+        .profile-name {
+            margin: 0 0 8px;
+            font-size: 2rem;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        .profile-lead {
+            margin: 0 0 18px;
+            max-width: 700px;
+            color: rgba(255,255,255,0.84);
+            line-height: 1.8;
+            font-size: 0.94rem;
+        }
+        .profile-meta {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+        .profile-tag {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.9);
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+        .profile-tag.primary {
+            background: rgba(255,255,255,0.92);
+            color: #166534;
+            border-color: transparent;
+        }
+        .primary-sources {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .source-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 700;
+            border: 1px solid rgba(255,255,255,0.22);
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+        .source-btn:hover { background: rgba(255,255,255,0.16); }
+        .photo-credit {
+            padding: 0 34px 22px;
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.48);
+        }
+        .photo-credit a { color: rgba(255,255,255,0.62); }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+            gap: 18px;
+            margin: 24px 0;
+        }
+        .panel {
+            background: #fff;
+            border: 1px solid rgba(15, 31, 61, 0.08);
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(15, 31, 61, 0.07);
+            padding: 22px;
+        }
+        .panel-title {
+            margin: 0 0 14px;
+            color: #0f1f3d;
+            font-size: 0.9rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .panel-title small {
+            color: #8fa0b5;
+            font-size: 0.72rem;
+            font-weight: 700;
+        }
+        .score-overview {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+        .score-tile {
+            background: #f7f8fb;
+            border: 1px solid rgba(15, 31, 61, 0.07);
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .score-tile-label {
+            display: block;
+            color: #718096;
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .score-tile-value {
+            color: #0f1f3d;
+            font-size: 1.4rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        .score-tile-value small {
+            color: #8fa0b5;
+            font-size: 0.72rem;
+            font-weight: 700;
+        }
+        .status-stack {
+            display: flex;
+            height: 14px;
+            border-radius: 999px;
+            overflow: hidden;
+            background: #eceff4;
+            gap: 2px;
+        }
+        .stack-done { background: #2f855a; }
+        .stack-started { background: #d69e2e; }
+        .stack-pending { background: #c53030; }
+        .stack-unknown { background: #a0aec0; }
+        .status-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            margin-top: 12px;
+            color: #526177;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+        .legend-dot {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-dot::before {
+            content: '';
+            width: 9px;
+            height: 9px;
+            border-radius: 2px;
+            background: var(--dot-color);
+        }
+        .review-note {
+            margin: 12px 0 0;
+            color: #8fa0b5;
+            font-size: 0.76rem;
+            line-height: 1.7;
+        }
+
+        .career-list,
+        .election-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .career-row,
+        .election-row {
+            display: grid;
+            grid-template-columns: 88px 1fr;
+            gap: 10px;
+            align-items: baseline;
+            font-size: 0.84rem;
+        }
+        .career-period,
+        .election-year {
+            color: #8fa0b5;
+            font-weight: 800;
+            font-size: 0.78rem;
+            white-space: nowrap;
+        }
+        .career-text,
+        .election-text {
+            color: #23324d;
+            line-height: 1.55;
+        }
+
+        .section-label {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+            margin: 28px 0 16px;
+            padding-left: 14px;
+            border-left: 4px solid #166534;
+        }
+        .section-label h2 {
+            margin: 0;
+            color: #0f1f3d;
+            font-size: 1.08rem;
+            line-height: 1.35;
+        }
+        .section-label span {
+            color: #718096;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 14px;
+        }
+        .category-card,
+        .promise-card {
+            background: #fff;
+            border: 1px solid rgba(15, 31, 61, 0.09);
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(15, 31, 61, 0.055);
+            padding: 18px;
+        }
+        .category-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .category-name {
+            color: #0f1f3d;
+            font-size: 0.92rem;
+            font-weight: 900;
+        }
+        .category-total {
+            color: #8fa0b5;
+            font-size: 0.74rem;
+            font-weight: 800;
+        }
+        .mini-stack {
+            display: flex;
+            height: 9px;
+            border-radius: 999px;
+            overflow: hidden;
+            background: #eceff4;
+            gap: 1px;
+            margin-bottom: 10px;
+        }
+        .category-counts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            color: #526177;
+            font-size: 0.74rem;
+            font-weight: 700;
+        }
+        .count-chip {
+            background: #f7f8fb;
+            border: 1px solid rgba(15, 31, 61, 0.07);
+            border-radius: 999px;
+            padding: 2px 7px;
+        }
+
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 14px;
+        }
+        .promise-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .promise-card::before {
+            content: '';
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 5px;
+            background: var(--accent, #166534);
+        }
+        .promise-card.done { --accent: #2f855a; }
+        .promise-card.started { --accent: #d69e2e; }
+        .promise-card.pending { --accent: #c53030; }
+        .promise-context {
+            color: #718096;
+            font-size: 0.74rem;
+            font-weight: 800;
+            margin-bottom: 7px;
+        }
+        .promise-title {
+            margin: 0 0 14px;
+            color: #0f1f3d;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            font-weight: 900;
+        }
+        .progress-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            align-items: center;
+        }
+        .progress-track {
+            height: 7px;
+            border-radius: 999px;
+            background: #e6e9ef;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            width: var(--progress);
+            background: var(--accent);
+            border-radius: 999px;
+        }
+        .progress-label {
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 900;
+            white-space: nowrap;
+        }
+        .evidence-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #1e3a6e;
+            background: #fff;
+            border: 1px solid rgba(30, 58, 110, 0.13);
+            border-radius: 8px;
+            padding: 7px 10px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-top: 12px;
+        }
+        .evidence-link:hover {
+            border-color: rgba(30, 58, 110, 0.32);
+            background: #f5f8fd;
+        }
+
+        .back-home {
+            text-align: center;
+            padding-top: 36px;
+        }
+        .back-home a {
+            color: #718096;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        .back-home a:hover { color: #0f1f3d; }
+
+        @media (max-width: 820px) {
+            .person-page { padding: 16px 14px 56px; }
+            .person-hero-inner {
+                grid-template-columns: 1fr;
+                padding: 24px;
+                gap: 18px;
+            }
+            .profile-img {
+                width: 132px;
+                height: 132px;
+            }
+            .profile-name { font-size: 1.65rem; }
+            .photo-credit { padding: 0 24px 20px; }
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            .score-overview {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .career-row,
+            .election-row {
+                grid-template-columns: 76px 1fr;
+            }
+            .section-label {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <script src="../../js/layout.js?v=9999"></script>
+
+    <main class="person-page">
+        <section class="person-hero">
+            <div class="person-hero-inner">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/f0/%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_%28cropped%29.jpg"
+                    alt="吉村洋文"
+                    class="profile-img"
+                >
+
+                <div>
+                    <div class="profile-kicker">POLITICIAN RECORD</div>
+                    <h1 class="profile-name">吉村 洋文</h1>
+                    <p class="profile-lead">
+                        大阪府知事としての公約と実績を、選挙ごとに作り直さず人物単位で蓄積。2023年大阪府知事選の検証結果を軸に、2027年以降の候補者カードにも同じ人物データを割り当てます。
+                    </p>
+                    <div class="profile-meta">
+                        <span class="profile-tag primary">大阪維新の会</span>
+                        <span class="profile-tag">大阪府知事</span>
+                        <span class="profile-tag">九州大学法学部卒</span>
+                    </div>
+
+                    <div class="primary-sources">
+                        <a href="https://www.pref.osaka.lg.jp/o020020/hisho/tijiprofile/index.html" target="_blank" rel="noopener" class="source-btn">
+                            <i class="fa-solid fa-landmark"></i> 大阪府プロフィール
+                        </a>
+                        <a href="https://o-ishin.jp/member/detail/yoshimura_hirofumi.html" target="_blank" rel="noopener" class="source-btn">
+                            <i class="fa-solid fa-building-columns"></i> 日本維新の会
+                        </a>
+                        <a href="https://x.com/hiroyoshimura" target="_blank" rel="noopener" class="source-btn">
+                            <i class="fa-brands fa-x-twitter"></i> @hiroyoshimura
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-credit">
+                写真: <a href="https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_(cropped).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>
+            </div>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="panel">
+                <h2 class="panel-title">
+                    2023年公約達成状況
+                    <small>49項目を初期検証</small>
+                </h2>
+                <div class="score-overview">
+                    <div class="score-tile">
+                        <span class="score-tile-label">総合評価</span>
+                        <span class="score-tile-value">50<small> /100</small></span>
+                    </div>
+                    <div class="score-tile">
+                        <span class="score-tile-label">完了</span>
+                        <span class="score-tile-value">5</span>
+                    </div>
+                    <div class="score-tile">
+                        <span class="score-tile-label">着手</span>
+                        <span class="score-tile-value">38</span>
+                    </div>
+                    <div class="score-tile">
+                        <span class="score-tile-label">未着手・不明</span>
+                        <span class="score-tile-value">6</span>
+                    </div>
+                </div>
+                <div class="status-stack" aria-label="公約達成状況">
+                    <div class="stack-done" style="width:10.2%"></div>
+                    <div class="stack-started" style="width:77.6%"></div>
+                    <div class="stack-pending" style="width:10.2%"></div>
+                    <div class="stack-unknown" style="width:2%"></div>
+                </div>
+                <div class="status-legend">
+                    <span class="legend-dot" style="--dot-color:#2f855a">完了 5</span>
+                    <span class="legend-dot" style="--dot-color:#d69e2e">着手 38</span>
+                    <span class="legend-dot" style="--dot-color:#c53030">未着手 5</span>
+                    <span class="legend-dot" style="--dot-color:#a0aec0">不明 1</span>
+                </div>
+                <p class="review-note">初期評価。公知情報をもとに自動付与しており、個別項目はチームレビューで精査予定です。</p>
+            </div>
+
+            <div class="panel">
+                <h2 class="panel-title">主な履歴</h2>
+                <ul class="career-list">
+                    <li class="career-row">
+                        <span class="career-period">1975</span>
+                        <span class="career-text">大阪府生まれ</span>
+                    </li>
+                    <li class="career-row">
+                        <span class="career-period">1998</span>
+                        <span class="career-text">九州大学法学部卒業、司法試験合格</span>
+                    </li>
+                    <li class="career-row">
+                        <span class="career-period">2000</span>
+                        <span class="career-text">弁護士登録</span>
+                    </li>
+                    <li class="career-row">
+                        <span class="career-period">2011</span>
+                        <span class="career-text">大阪市会議員</span>
+                    </li>
+                    <li class="career-row">
+                        <span class="career-period">2014</span>
+                        <span class="career-text">衆議院議員</span>
+                    </li>
+                    <li class="career-row">
+                        <span class="career-period">2015-19</span>
+                        <span class="career-text">大阪市長</span>
+                    </li>
+                    <li class="career-row">
+                        <span class="career-period">2019-</span>
+                        <span class="career-text">大阪府知事</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">
+                <h2>カテゴリ別の進捗</h2>
+                <span>2023年マニフェスト検証</span>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-head"><span class="category-name">教育</span><span class="category-total">12件</span></div>
+                    <div class="mini-stack"><div class="stack-done" style="width:8.3%"></div><div class="stack-started" style="width:75%"></div><div class="stack-pending" style="width:8.3%"></div><div class="stack-unknown" style="width:8.3%"></div></div>
+                    <div class="category-counts"><span class="count-chip">完了 1</span><span class="count-chip">着手 9</span><span class="count-chip">未着手 1</span><span class="count-chip">不明 1</span></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-head"><span class="category-name">経済</span><span class="category-total">11件</span></div>
+                    <div class="mini-stack"><div class="stack-done" style="width:18.2%"></div><div class="stack-started" style="width:63.6%"></div><div class="stack-pending" style="width:18.2%"></div></div>
+                    <div class="category-counts"><span class="count-chip">完了 2</span><span class="count-chip">着手 7</span><span class="count-chip">未着手 2</span></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-head"><span class="category-name">インフラ</span><span class="category-total">7件</span></div>
+                    <div class="mini-stack"><div class="stack-started" style="width:100%"></div></div>
+                    <div class="category-counts"><span class="count-chip">着手 7</span></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-head"><span class="category-name">医療福祉</span><span class="category-total">7件</span></div>
+                    <div class="mini-stack"><div class="stack-started" style="width:100%"></div></div>
+                    <div class="category-counts"><span class="count-chip">着手 7</span></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-head"><span class="category-name">都市開発</span><span class="category-total">4件</span></div>
+                    <div class="mini-stack"><div class="stack-started" style="width:75%"></div><div class="stack-pending" style="width:25%"></div></div>
+                    <div class="category-counts"><span class="count-chip">着手 3</span><span class="count-chip">未着手 1</span></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-head"><span class="category-name">行財政</span><span class="category-total">4件</span></div>
+                    <div class="mini-stack"><div class="stack-done" style="width:25%"></div><div class="stack-started" style="width:75%"></div></div>
+                    <div class="category-counts"><span class="count-chip">完了 1</span><span class="count-chip">着手 3</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">
+                <h2>代表的な公約</h2>
+                <span>完了・着手・未着手を比較</span>
+            </div>
+            <div class="promise-grid">
+                <article class="promise-card done">
+                    <div class="promise-context">教育 / 完了</div>
+                    <h3 class="promise-title">高等学校等授業料の無償化、大阪公立大学の無償化</h3>
+                    <div class="progress-row">
+                        <div class="progress-track"><div class="progress-fill" style="--progress:100%"></div></div>
+                        <span class="progress-label">完了</span>
+                    </div>
+                    <a href="https://www.pref.osaka.lg.jp/kyoikusomu/mushouka/" target="_blank" rel="noopener" class="evidence-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 根拠を見る
+                    </a>
+                </article>
+
+                <article class="promise-card done">
+                    <div class="promise-context">経済 / 完了</div>
+                    <h3 class="promise-title">大阪・関西万博を成功させ、開催後の府域全体への波及効果をつくる</h3>
+                    <div class="progress-row">
+                        <div class="progress-track"><div class="progress-fill" style="--progress:100%"></div></div>
+                        <span class="progress-label">完了</span>
+                    </div>
+                    <a href="https://www.expo2025.or.jp/" target="_blank" rel="noopener" class="evidence-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 根拠を見る
+                    </a>
+                </article>
+
+                <article class="promise-card started">
+                    <div class="promise-context">経済 / 着手</div>
+                    <h3 class="promise-title">副首都・大阪に向けた府市一体の改革と施策推進</h3>
+                    <div class="progress-row">
+                        <div class="progress-track"><div class="progress-fill" style="--progress:60%"></div></div>
+                        <span class="progress-label">着手</span>
+                    </div>
+                    <a href="https://www.pref.osaka.lg.jp/fukushuto/" target="_blank" rel="noopener" class="evidence-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 根拠を見る
+                    </a>
+                </article>
+
+                <article class="promise-card pending">
+                    <div class="promise-context">都市開発 / 未着手</div>
+                    <h3 class="promise-title">水道事業の民営化を推進し、府域水道事業の一元化を図る</h3>
+                    <div class="progress-row">
+                        <div class="progress-track"><div class="progress-fill" style="--progress:20%"></div></div>
+                        <span class="progress-label">未着手</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">
+                <h2>選挙との紐づけ</h2>
+                <span>同じ人物カードを再利用</span>
+            </div>
+            <div class="panel">
+                <ul class="election-list">
+                    <li class="election-row">
+                        <span class="election-year">2023</span>
+                        <span class="election-text">大阪府知事選挙 2023: 現職候補として当選。2023年マニフェストの達成度をこのカードに蓄積。</span>
+                    </li>
+                    <li class="election-row">
+                        <span class="election-year">2027</span>
+                        <span class="election-text">大阪府知事選挙 2027: 出馬・候補者確定後も同じ人物IDを参照し、過去の実績評価を引き継ぐ。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="back-home">
+            <a href="../../index.html">
+                <i class="fa-solid fa-house"></i> トップに戻る
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

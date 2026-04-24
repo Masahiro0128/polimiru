@@ -1,0 +1,179 @@
+{
+  "id": "takaichi-sanae",
+  "name": "高市 早苗",
+  "kana": "たかいち さなえ",
+  "party": "自民党",
+  "area": "奈良2区",
+  "current_status": "第104・105代 内閣総理大臣",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Sanae_Takaichi_portrait_%28HD%29_%28cropped_1%29.jpg",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://www.sanae.gr.jp/",
+  "twitter": "takaichi_sanae",
+
+  "education": [
+    { "school": "神戸大学 経営学部 経営学科", "period": "1984年3月卒業", "note": "経営数学専攻" },
+    { "school": "松下政経塾", "period": "1980年代", "note": "卒塾" }
+  ],
+
+  "career": [
+    { "role": "奈良県生まれ", "period": "1961", "type": "profile" },
+    { "role": "神戸大学経営学部経営学科卒業", "period": "1984-03", "type": "education" },
+    { "role": "松下政経塾卒塾", "period": "1980年代", "type": "education" },
+    { "role": "米国連邦議会 Congressional Fellow", "period": "1980年代", "type": "fellowship" },
+    { "role": "衆議院議員 初当選", "period": "1993", "type": "election", "result": "won" },
+    { "role": "通商産業政務次官", "period": "1998-1999", "type": "minister" },
+    { "role": "近畿大学経済学部教授", "period": "2000年代", "type": "academic" },
+    { "role": "経済産業副大臣", "period": "2000年代", "type": "minister" },
+    { "role": "内閣府特命担当大臣", "period": "2000年代", "type": "minister" },
+    { "role": "総務大臣", "period": "2014-09 〜 2017-08", "type": "minister" },
+    { "role": "総務大臣",             "period": "2019-09 〜 2020-09", "type": "minister" },
+    { "role": "経済安全保障担当大臣", "period": "2021-10 〜 2023-09", "type": "minister" },
+    { "role": "自民党政務調査会長", "period": "2021-10 〜 2022-08", "type": "party" },
+    { "role": "自民党総裁選",         "period": "2021-09",            "type": "election", "result": "lost", "note": "1回目3位（72票）" },
+    { "role": "自民党総裁選",         "period": "2024-09",            "type": "election", "result": "lost", "note": "1回目1位（181票）→ 決選投票2位（194票）敗北" },
+    { "role": "内閣総理大臣", "period": "2025-10 〜", "type": "pm", "note": "第104代内閣総理大臣に選出" }
+  ],
+
+  "promises": [
+    {
+      "id": "sosai2025-01",
+      "title": "ガソリン税・軽油引取税の暫定税率廃止",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "物価高対策",
+      "status": "achieved",
+      "progress_score": 100,
+      "note": "関連法が成立し、ガソリン税の暫定税率は2025年12月31日、軽油引取税の暫定税率は2026年4月1日に廃止。代替財源の整理は継続課題。",
+      "evidence": [
+        {
+          "label": "TBS NEWS DIG 総裁選政策発表（2025年9月19日）",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1"
+        },
+        {
+          "label": "スポニチ ガソリン税暫定税率廃止法成立",
+          "url": "https://www.sponichi.co.jp/society/news/2025/11/29/articles/20251129s00042000028000c.html"
+        }
+      ]
+    },
+    {
+      "id": "sosai2025-02",
+      "title": "「年収の壁」の178万円への引き上げ",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "税制・手取り増",
+      "status": "achieved",
+      "progress_score": 100,
+      "note": "自民党と国民民主党が178万円への引き上げで合意し、2026年度税制改正に反映。",
+      "evidence": [
+        {
+          "label": "FNN 総裁選政策発表",
+          "url": "https://www.fnn.jp/articles/-/934122"
+        },
+        {
+          "label": "自由民主党 年収の壁178万円合意",
+          "url": "https://www.jimin.jp/news/information/212124.html"
+        }
+      ]
+    },
+    {
+      "id": "sosai2025-03",
+      "title": "給付付き税額控除の制度設計",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "税制・生活支援",
+      "status": "started",
+      "progress_score": 45,
+      "note": "制度設計の検討は開始。制度導入・給付開始は未了。",
+      "evidence": [
+        {
+          "label": "TBS NEWS DIG 総裁選政策発表",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1"
+        },
+        {
+          "label": "TBS NEWS DIG 給付付き税額控除の制度設計",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2391665"
+        }
+      ]
+    },
+    {
+      "id": "sosai2025-04",
+      "title": "外国人政策の司令塔設置と制度適正化",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "在留管理・土地取得",
+      "status": "started",
+      "progress_score": 70,
+      "note": "総合的な外国人政策を取りまとめ。在留資格審査の厳格化、土地取得ルール検討などを明記。法制化・運用実績は継続確認。",
+      "evidence": [
+        {
+          "label": "ニューズウィーク日本版／ロイター 総裁選公約",
+          "url": "https://www.newsweekjapan.jp/articles/-/301891?display=b"
+        },
+        {
+          "label": "自由民主党 高市政権が外国人政策を取りまとめ",
+          "url": "https://www.jimin.jp/news/information/212341.html"
+        }
+      ]
+    },
+    {
+      "id": "sosai2025-05",
+      "title": "国家情報局の新設とスパイ防止法の制定着手",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "安全保障・情報機能",
+      "status": "started",
+      "progress_score": 55,
+      "note": "情報機能強化の検討は進行。国家情報局の制度設計や関連法案は進むが、スパイ防止法は未成立。",
+      "evidence": [
+        {
+          "label": "ニューズウィーク日本版／ロイター 総裁選公約",
+          "url": "https://www.newsweekjapan.jp/articles/-/301891?display=b"
+        },
+        {
+          "label": "テレビ朝日 情報収集能力強化の動き",
+          "url": "https://news.tv-asahi.co.jp/news_politics/articles/900183826.html"
+        }
+      ]
+    },
+    {
+      "id": "sosai2025-06",
+      "title": "首都機能バックアップ体制の構築",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "危機管理・副首都構想",
+      "status": "started",
+      "progress_score": 40,
+      "note": "自民・維新の連立合意で協議体設置と2026年通常国会での法案成立方針を確認。体制の実装は未了。",
+      "evidence": [
+        {
+          "label": "TBS NEWS DIG 総裁選政策発表",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1"
+        },
+        {
+          "label": "福岡TNCニュース 連立合意の法案方針",
+          "url": "https://news.tnc.co.jp/news/articles/NID2025102227700/"
+        }
+      ]
+    },
+    {
+      "id": "sosai2025-07",
+      "title": "経済安全保障と成長分野への官民投資",
+      "context": "自民党総裁選2025（2025年9月）",
+      "context_type": "ldp_presidential_election",
+      "category": "成長投資・経済安全保障",
+      "status": "partial",
+      "progress_score": 60,
+      "note": "AI、半導体、量子、核融合、バイオ等への投資方針。2026年度税制改正で研究開発税制や重点産業向け投資減税の拡充が一部反映。",
+      "evidence": [
+        {
+          "label": "ニューズウィーク日本版／ロイター 総裁選公約",
+          "url": "https://www.newsweekjapan.jp/articles/-/301891?display=b"
+        },
+        {
+          "label": "ダイヤモンド・オンライン 2026年度税制改正",
+          "url": "https://diamond.jp/articles/-/382140"
+        }
+      ]
+    }
+  ]
+}

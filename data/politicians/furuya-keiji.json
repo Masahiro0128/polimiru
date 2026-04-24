@@ -1,0 +1,31 @@
+{
+  "id": "furuya-keiji",
+  "name": "古屋 圭司",
+  "kana": "ふるや けいじ",
+  "party": "自由民主党",
+  "party_role": "選挙対策委員長",
+  "area": "岐阜県第5区",
+  "current_status": "衆議院議員",
+  "photo_url": "https://www.jimin.jp/member/img/furuya-keiji.jpg",
+  "official_url": "https://www.jimin.jp/member/100405.html",
+  "accent": {"from": "#12376b", "to": "#0d1f3f", "color": "#1f4f91"},
+  "summary": "国家公安委員長、拉致問題担当大臣、防災担当大臣などを歴任。選挙対策委員長として候補者擁立と選挙戦略を担う。",
+  "stats": [
+    {"label": "党役職", "value": "選対委員長"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "岐阜5区"}
+  ],
+  "career": [
+    {"period": "現職", "text": "自由民主党選挙対策委員長"},
+    {"period": "歴任", "text": "国家公安委員会委員長、拉致問題担当大臣、防災担当大臣"},
+    {"period": "党務", "text": "憲法改正推進本部長代行などを歴任"}
+  ],
+  "focus_cards": [
+    {"context": "選挙", "title": "候補者調整と重点区対応", "desc": "総選挙・補選・地方選で、党勢回復につながる候補者戦略を組めるかを見る。"},
+    {"context": "安全・憲法", "title": "治安・拉致・憲法改正の継続論点", "desc": "担当経験の深い安全保障・憲法分野で、党としての優先順位をどう示すかが焦点。"}
+  ],
+  "source_urls": [
+    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100405.html"},
+    {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}
+  ]
+}

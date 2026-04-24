@@ -1,0 +1,31 @@
+{
+  "id": "shimba-kazuya",
+  "name": "榛葉 賀津也",
+  "kana": "しんば かづや",
+  "party": "国民民主党",
+  "party_role": "幹事長",
+  "area": "静岡県",
+  "current_status": "参議院議員",
+  "photo_url": "https://new-kokumin.jp/wp-content/uploads/2024/08/83adbecc191cd73da251eeec6cf245c0-scaled-e1738200045606.jpg",
+  "official_url": "https://new-kokumin.jp/member/shimba-kazuya",
+  "accent": {"from": "#f2b705", "to": "#0b75bb", "color": "#0b75bb"},
+  "summary": "防衛副大臣、外務副大臣を歴任。国民民主党幹事長として、党運営・選挙・メッセージ発信を担う。",
+  "stats": [
+    {"label": "党役職", "value": "幹事長"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "静岡県"}
+  ],
+  "career": [
+    {"period": "現職", "text": "国民民主党幹事長"},
+    {"period": "歴任", "text": "防衛副大臣、外務副大臣"},
+    {"period": "国会", "text": "参議院議員、静岡県選挙区"}
+  ],
+  "focus_cards": [
+    {"context": "党運営", "title": "支持拡大と候補者戦略", "desc": "地方組織・候補者擁立・選挙協力の判断が、党勢拡大に直結する。"},
+    {"context": "安全保障", "title": "現実路線の安全保障発信", "desc": "防衛・外交の経験を、国民民主の安全保障政策にどう反映するかを見る。"}
+  ],
+  "source_urls": [
+    {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/shimba-kazuya"},
+    {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}
+  ]
+}

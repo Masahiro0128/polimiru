@@ -1,0 +1,31 @@
+{
+  "id": "furukawa-motohisa",
+  "name": "古川 元久",
+  "kana": "ふるかわ もとひさ",
+  "party": "国民民主党",
+  "party_role": "代表代行",
+  "area": "愛知県第2区",
+  "current_status": "衆議院議員",
+  "photo_url": "https://new-kokumin.jp/wp-content/uploads/2020/11/member_img5.jpg",
+  "official_url": "https://new-kokumin.jp/member/furukawa-motohisa",
+  "accent": {"from": "#f2b705", "to": "#0b75bb", "color": "#0b75bb"},
+  "summary": "大蔵省出身。国家戦略担当大臣、経済財政政策担当大臣などを歴任し、代表代行・国会対策の中核を担う。",
+  "stats": [
+    {"label": "党役職", "value": "代表代行"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "愛知2区"}
+  ],
+  "career": [
+    {"period": "現職", "text": "国民民主党代表代行、国会対策委員長"},
+    {"period": "歴任", "text": "国家戦略担当大臣、経済財政政策担当大臣、科学技術政策担当大臣"},
+    {"period": "学歴・官歴", "text": "東京大学法学部卒、大蔵省入省、コロンビア大学大学院で国際関係論を学ぶ"}
+  ],
+  "focus_cards": [
+    {"context": "国会対応", "title": "実務型の与野党交渉", "desc": "政策協議・国会日程・修正協議を通じて、党の要求をどこまで実現できるかを見る。"},
+    {"context": "経済財政", "title": "成長戦略と財政設計", "desc": "経済財政担当相経験を踏まえ、所得増・投資・財源論をどうまとめるかが焦点。"}
+  ],
+  "source_urls": [
+    {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/furukawa-motohisa"},
+    {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}
+  ]
+}

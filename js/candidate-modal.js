@@ -307,6 +307,13 @@
                 ${s.label}
             </a>`).join('');
 
+        const profileLink = data.profile_url
+            ? `<a href="${data.profile_url}" class="source-link" style="color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:999px;padding:3px 9px;text-decoration:none;background:rgba(255,255,255,0.12)">
+                   <i class="fa-solid fa-id-card" style="font-size:0.75em"></i>
+                   人物カードを見る
+               </a>`
+            : '';
+
         const manifesto = data.manifesto_text
             ? `<div class="manifesto-text">${data.manifesto_text}</div>`
             : `<p class="manifesto-pending">候補者発表後に公約テキストを更新します。</p>`;
@@ -331,6 +338,7 @@
                         ${roleBadge}
                         ${unconfirmed}
                     </div>
+                    ${profileLink ? `<div class="cand-profile-meta" style="margin-top:10px">${profileLink}</div>` : ''}
                 </div>
             </div>
 

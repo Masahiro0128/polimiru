@@ -33,6 +33,13 @@ function loadHeader() {
         pathPrefix = './';
     }
 
+    if (!document.querySelector('link[href$="css/modal.css"]')) {
+        const modalStyle = document.createElement('link');
+        modalStyle.rel = 'stylesheet';
+        modalStyle.href = pathPrefix + 'css/modal.css';
+        document.head.appendChild(modalStyle);
+    }
+
     // リンク先を生成
     const homePath      = pathPrefix + 'index.html';
     const aboutPath     = pathPrefix + 'about.html';

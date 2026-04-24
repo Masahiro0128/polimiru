@@ -1,0 +1,31 @@
+{
+  "id": "tamaki-yuichiro",
+  "name": "玉木 雄一郎",
+  "kana": "たまき ゆういちろう",
+  "party": "国民民主党",
+  "party_role": "代表",
+  "area": "香川県第2区",
+  "current_status": "衆議院議員",
+  "photo_url": "https://new-kokumin.jp/wp-content/uploads/2020/11/member_img3.jpg",
+  "official_url": "https://new-kokumin.jp/member/tamaki-yuichiro",
+  "accent": {"from": "#f2b705", "to": "#0b75bb", "color": "#0b75bb"},
+  "summary": "大蔵省・財務省を経て国政へ。国民民主党代表として「手取りを増やす」経済政策と現実路線の政策実現を掲げる。",
+  "stats": [
+    {"label": "党役職", "value": "代表"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "香川2区"}
+  ],
+  "career": [
+    {"period": "現職", "text": "国民民主党代表"},
+    {"period": "2020", "text": "新国民民主党設立、代表に就任"},
+    {"period": "学歴・官歴", "text": "東京大学法学部卒、大蔵省入省、ハーバード大学大学院修了"}
+  ],
+  "focus_cards": [
+    {"context": "経済政策", "title": "手取りを増やす政策の実現度", "desc": "年収の壁、減税、社会保険料負担など、家計の可処分所得に直結する提案の実現度を見る。"},
+    {"context": "政策実現", "title": "与野党協議で成果を出す路線", "desc": "少数政党として、与党との協議を通じて公約を法案・予算に反映できるかが検証軸。"}
+  ],
+  "source_urls": [
+    {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/tamaki-yuichiro"},
+    {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}
+  ]
+}

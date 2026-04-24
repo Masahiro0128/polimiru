@@ -1,5 +1,7 @@
 {
   "id": "yoshimura",
+  "person_id": "yoshimura-hirofumi",
+  "profile_url": "../../../politicians/yoshimura-hirofumi/index.html",
   "name": "吉村 洋文",
   "kana": "よしむら ひろふみ",
   "party": "大阪維新の会",
@@ -23,7 +25,7 @@
   "manifesto_source_2023": "https://osaka-ishin.jp/pdf/manifesto/ishinfugidan_manifesto2023.pdf",
   "manifesto_note_2023": "大阪維新の会 大阪府議会議員団 マニフェスト2023（知事選同時期）",
   "progress": {
-    "total": 48,
+    "total": 49,
     "done": 5,
     "started": 38,
     "pending": 5,

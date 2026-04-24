@@ -1,0 +1,31 @@
+{
+  "id": "hamaguchi-makoto",
+  "name": "浜口 誠",
+  "kana": "はまぐち まこと",
+  "party": "国民民主党",
+  "party_role": "政務調査会長",
+  "area": "比例区",
+  "current_status": "参議院議員",
+  "photo_url": "https://new-kokumin.jp/wp-content/uploads/2021/03/bf7c646c5acc33a00f095dc8ec02c885.jpg",
+  "official_url": "https://new-kokumin.jp/member/hamaguchi-makoto",
+  "accent": {"from": "#f2b705", "to": "#0b75bb", "color": "#0b75bb"},
+  "summary": "トヨタ自動車、自動車総連での実務経験を持つ参議院議員。政務調査会長として産業・賃上げ・雇用政策の具体化を担う。",
+  "stats": [
+    {"label": "党役職", "value": "政務調査会長"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "比例区"}
+  ],
+  "career": [
+    {"period": "現職", "text": "国民民主党政務調査会長"},
+    {"period": "2016", "text": "参議院議員に初当選"},
+    {"period": "民間・労組", "text": "トヨタ自動車、自動車総連などで勤務・活動"}
+  ],
+  "focus_cards": [
+    {"context": "政策立案", "title": "賃上げと産業政策の具体化", "desc": "製造業・労働現場の経験を、賃上げ税制や産業競争力強化へどう落とし込むかを見る。"},
+    {"context": "雇用", "title": "働く人の可処分所得と制度改革", "desc": "社会保険料、税制、労働政策を横断し、手取り増の実装を担えるかが焦点。"}
+  ],
+  "source_urls": [
+    {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/hamaguchi-makoto"},
+    {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}
+  ]
+}

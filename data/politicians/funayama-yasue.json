@@ -1,0 +1,31 @@
+{
+  "id": "funayama-yasue",
+  "name": "舟山 康江",
+  "kana": "ふなやま やすえ",
+  "party": "国民民主党",
+  "party_role": "参議院議員会長兼両院議員総会長",
+  "area": "山形県",
+  "current_status": "参議院議員",
+  "photo_url": "https://new-kokumin.jp/wp-content/uploads/2020/11/member_img14.jpg",
+  "official_url": "https://new-kokumin.jp/member/funayama-yasue",
+  "accent": {"from": "#f2b705", "to": "#0b75bb", "color": "#0b75bb"},
+  "summary": "農林水産省出身。農林水産大臣政務官、党政調会長を経て、参議院議員会長兼両院議員総会長を担う。",
+  "stats": [
+    {"label": "党役職", "value": "参院議員会長"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "山形県"}
+  ],
+  "career": [
+    {"period": "現職", "text": "国民民主党参議院議員会長兼両院議員総会長"},
+    {"period": "2020", "text": "国民民主党入党、政務調査会長に就任"},
+    {"period": "学歴・官歴", "text": "北海道大学農学部卒、農林水産省入省"}
+  ],
+  "focus_cards": [
+    {"context": "参議院", "title": "参院側の政策・国会運営", "desc": "衆参両院の意見をまとめ、党の意思決定を安定させられるかを見る。"},
+    {"context": "農業・地域", "title": "農政と地方の所得向上", "desc": "農林水産省出身の経験を、地域経済・食料安全保障の政策にどう反映するかが焦点。"}
+  ],
+  "source_urls": [
+    {"label": "国民民主党公式プロフィール", "url": "https://new-kokumin.jp/member/funayama-yasue"},
+    {"label": "党役員一覧", "url": "https://new-kokumin.jp/about/board-member"}
+  ]
+}
