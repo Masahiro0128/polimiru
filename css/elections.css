@@ -380,6 +380,8 @@
     padding-bottom: 4px;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    width: 100%;
+    min-width: 0;
 }
 .featured-politicians-row::-webkit-scrollbar { display: none; }
 

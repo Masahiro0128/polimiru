@@ -42,6 +42,7 @@ body {
     -webkit-text-size-adjust: 100%;
     line-height: 1.7;
     font-size: 15px;
+    overflow-x: hidden;
 }
 
 .container {
