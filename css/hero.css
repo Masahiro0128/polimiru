@@ -22,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 
 .hero-content h1 {
@@ -46,50 +45,6 @@
         inset 0 1px 0 rgba(255,255,255,0.9),
         inset 0 -1px 0 rgba(15,31,61,0.08);
     color: rgba(10, 31, 68, 0.9);
-}
-
-.hero-data-layer {
-    position: absolute;
-    inset: 38px 28px 34px 32px;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.data-chip {
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    height: 28px;
-    padding: 0 10px;
-    border: 1px solid rgba(20, 46, 84, 0.09);
-    border-radius: 8px;
-    background: rgba(255,255,255,0.54);
-    color: rgba(20, 46, 84, 0.2);
-    font-size: 0.72rem;
-    font-weight: 800;
-    box-shadow: 0 10px 28px rgba(20, 46, 84, 0.04);
-}
-
-.chip-score { top: 10px; left: 8px; }
-.chip-source { top: 92px; right: 16px; }
-.chip-log { bottom: 18px; left: 132px; }
-
-.data-line {
-    position: absolute;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(20, 46, 84, 0.12), transparent);
-}
-
-.line-a {
-    top: 72px;
-    left: 20px;
-    width: 62%;
-}
-
-.line-b {
-    bottom: 74px;
-    right: 20px;
-    width: 48%;
 }
 
 .hero-lead {
@@ -153,99 +108,9 @@
     content: '';
     position: absolute;
     top: 0; left: 0; bottom: 0;
-    width: 130px;
-    background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0.72) 30%, transparent 100%);
+    width: 100px;
+    background: linear-gradient(to right, #fff 0%, transparent 100%);
     z-index: 1;
-}
-
-.hero-image-wrap::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(135deg, rgba(255,255,255,0.06), rgba(15,31,61,0.12)),
-        repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 72px);
-    z-index: 0;
-}
-
-.hero-insight-panel {
-    position: absolute;
-    right: 42px;
-    bottom: 34px;
-    width: min(300px, calc(100% - 72px));
-    padding: 16px;
-    z-index: 2;
-    border: 1px solid rgba(255,255,255,0.42);
-    border-radius: 10px;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 18px 42px rgba(8, 20, 42, 0.18);
-    color: #fff;
-}
-
-.insight-head,
-.insight-row,
-.insight-foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.insight-head {
-    margin-bottom: 14px;
-    font-size: 0.72rem;
-    font-weight: 800;
-    color: rgba(255,255,255,0.76);
-}
-
-.insight-head strong {
-    color: #0f1f3d;
-    background: rgba(255,255,255,0.78);
-    border-radius: 999px;
-    padding: 3px 8px;
-    font-size: 0.68rem;
-}
-
-.insight-row {
-    margin: 9px 0;
-    font-size: 0.76rem;
-    font-weight: 800;
-}
-
-.insight-row span { width: 38px; }
-.insight-row b {
-    width: 34px;
-    text-align: right;
-    font-size: 0.74rem;
-}
-
-.insight-bar {
-    flex: 1;
-    height: 7px;
-    border-radius: 999px;
-    overflow: hidden;
-    background: rgba(255,255,255,0.28);
-}
-
-.insight-bar i {
-    display: block;
-    height: 100%;
-    border-radius: inherit;
-    background: #31c48d;
-}
-
-.insight-bar i.started { background: #f2b705; }
-
-.insight-foot {
-    justify-content: flex-start;
-    margin-top: 13px;
-    padding-top: 11px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.72);
-    font-size: 0.72rem;
-    font-weight: 700;
 }
 
 /* =========================================
@@ -417,19 +282,6 @@
         padding: 40px 24px 36px;
     }
 
-    .hero-data-layer {
-        inset: 26px 10px 26px 10px;
-    }
-
-    .data-chip {
-        font-size: 0.66rem;
-        height: 24px;
-        opacity: 0.72;
-    }
-
-    .chip-source { display: none; }
-    .chip-log { left: auto; right: 8px; bottom: 6px; }
-
     .hero-content h1 {
         font-size: clamp(1.8rem, 6vw, 2.4rem);
     }
@@ -446,13 +298,6 @@
 
     .hero-image-wrap::before {
         display: none;
-    }
-
-    .hero-insight-panel {
-        right: 18px;
-        bottom: 18px;
-        width: min(280px, calc(100% - 36px));
-        padding: 13px;
     }
 
     .search-section-inner {
