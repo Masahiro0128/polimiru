@@ -54,7 +54,6 @@ function loadHeader() {
         <div class="nav-logo-group">
             <a href="${homePath}" class="site-logo">
                 <img src="${pathPrefix}images/logo.jpg" alt="polimiru" class="site-logo-img">
-                polimiru
             </a>
             <span class="site-tagline">公約と実績を見える化する、<br>日本最大級の政治家ファクトチェック・データベース</span>
         </div>

@@ -42,10 +42,10 @@
 }
 
 .site-logo-img {
-    height: 36px;
-    width: 36px;
+    height: 44px;
+    width: 44px;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 8px;
     flex-shrink: 0;
 }
 
