@@ -2,51 +2,221 @@
   "id": "noda-yoshihiko",
   "name": "野田 佳彦",
   "kana": "のだ よしひこ",
-  "party": "立憲民主党",
+  "party": "中道改革連合",
   "party_role": "代表",
-  "area": "千葉県第4区",
-  "current_status": "衆議院議員",
+  "area": "千葉県第14区",
+  "current_status": "中道改革連合代表・衆議院議員",
   "photo_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yoshihiko_Noda%2C_official_portrait_2009.jpg",
-  "official_url": "https://www.cdp-japan.jp/",
-  "accent": {"from": "#1a1a5a", "to": "#2a3a9a", "color": "#3050c0"},
-  "summary": "早稲田大学政治経済学部卒。衆議院議員を経て財務大臣、第95代内閣総理大臣を歴任。「どじょう内閣」を標榜し消費税増税・社会保障一体改革を推進。2024年9月に立憲民主党代表へ就任し、政権交代を掲げて野党連携の強化に取り組む。",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://cdp-japan.jp/member/3009/%E9%87%8E%E7%94%B0%E4%BD%B3%E5%BD%A6",
+  "accent": {"from": "#14336b", "to": "#0f1f3d", "color": "#2454a6"},
+  "summary": "千葉県船橋市出身。早稲田大学政治経済学部、松下政経塾、千葉県議を経て1993年に衆議院初当選。財務大臣、第95代内閣総理大臣を歴任し、社会保障と税の一体改革を推進した。2024年9月に立憲民主党代表へ就任し、2026年には公明党との合流を経て中道改革連合代表として「政権交代能力を持つ中道勢力」の結集を掲げる。",
   "stats": [
     {"label": "党役職", "value": "代表"},
     {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "千葉4区"},
+    {"label": "当選", "value": "10期"},
+    {"label": "選挙区", "value": "千葉14区"},
     {"label": "出身", "value": "千葉県船橋市"},
     {"label": "元職", "value": "第95代内閣総理大臣"}
+  ],
+  "education": [
+    {"school": "早稲田大学 政治経済学部", "period": "1980年卒業", "note": ""},
+    {"school": "松下政経塾", "period": "1980年代", "note": "1期生"}
   ],
   "career": [
     {"period": "1957", "text": "千葉県船橋市生まれ"},
     {"period": "1980", "text": "早稲田大学政治経済学部卒業"},
-    {"period": "1990", "text": "第39回衆院選で初当選（千葉4区）"},
-    {"period": "2009", "text": "民主党・鳩山内閣で副財務大臣就任"},
-    {"period": "2010", "text": "財務大臣就任（菅内閣）"},
-    {"period": "2011", "text": "第95代内閣総理大臣就任。「どじょう内閣」"},
-    {"period": "2012", "text": "消費税増税・社会保障一体改革関連法成立後、衆院解散・総選挙で民主党大敗"},
-    {"period": "2021", "text": "立憲民主党代表選に出馬"},
-    {"period": "2024", "text": "立憲民主党代表に就任"}
+    {"period": "1980年代", "text": "松下政経塾で学ぶ"},
+    {"period": "1987", "text": "千葉県議会議員に初当選"},
+    {"period": "1993", "text": "第40回衆院選で初当選"},
+    {"period": "2009", "text": "鳩山内閣で副財務大臣"},
+    {"period": "2010", "text": "菅内閣で財務大臣"},
+    {"period": "2011-2012", "text": "第95代内閣総理大臣、民主党代表"},
+    {"period": "2012", "text": "社会保障と税の一体改革関連法成立後、衆議院を解散"},
+    {"period": "2024", "text": "立憲民主党代表に就任、野田「次の内閣」を発足"},
+    {"period": "2026", "text": "中道改革連合の代表として衆院選準備を主導"}
+  ],
+  "election_links": [
+    {
+      "election_id": "shugiin_chiba_1993",
+      "title": "第40回衆議院議員総選挙 千葉県旧1区",
+      "role": "候補者",
+      "result": "初当選"
+    },
+    {
+      "election_id": "shugiin_chiba_2024",
+      "title": "第50回衆議院議員総選挙 千葉14区",
+      "role": "候補者",
+      "result": "当選"
+    },
+    {
+      "election_id": "cdp_leadership_2024",
+      "title": "立憲民主党代表選挙 2024",
+      "role": "候補者",
+      "result": "代表就任"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "cdp_2024_governing_platform",
+      "title": "2024年 政権政策・7つの約束",
+      "context": "第50回衆院選に向けた野田代表下の政権政策",
+      "source": "立憲民主党 政権政策2024",
+      "source_url": "https://cdp-japan.jp/news/20241007_8336",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 55,
+      "total": 7,
+      "done": 0,
+      "started": 4,
+      "pending": 3,
+      "unknown": 0,
+      "category_summary": [
+        {"category": "政治改革", "total": 1, "done": 0, "started": 1, "pending": 0, "unknown": 0},
+        {"category": "物価・経済", "total": 1, "done": 0, "started": 1, "pending": 0, "unknown": 0},
+        {"category": "外交安保", "total": 1, "done": 0, "started": 1, "pending": 0, "unknown": 0},
+        {"category": "社会保障", "total": 1, "done": 0, "started": 0, "pending": 1, "unknown": 0},
+        {"category": "子育て・教育", "total": 1, "done": 0, "started": 0, "pending": 1, "unknown": 0},
+        {"category": "地域再生", "total": 1, "done": 0, "started": 1, "pending": 0, "unknown": 0},
+        {"category": "共生社会", "total": 1, "done": 0, "started": 0, "pending": 1, "unknown": 0}
+      ],
+      "highlights": [
+        {
+          "title": "政治改革と企業・団体献金禁止",
+          "category": "政治改革",
+          "status": "法案提出・追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://cdp-japan.jp/news/20241007_8335"
+        },
+        {
+          "title": "分厚い中間層の復活、家計・賃上げ支援",
+          "category": "物価・経済",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://cdp-japan.jp/news/20241007_8336"
+        },
+        {
+          "title": "日米同盟を基軸にした安定した外交・安全保障",
+          "category": "外交安保",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://cdp-japan.jp/news/20241007_8336"
+        },
+        {
+          "title": "地方と農林水産業の再興",
+          "category": "地域再生",
+          "status": "公約",
+          "progress_score": 25,
+          "evidence_url": "https://cdp-japan.jp/news/20241007_8336"
+        }
+      ]
+    },
+    {
+      "id": "next_cabinet_2024_2025",
+      "title": "野田『次の内閣』の政権担当力検証",
+      "context": "代表就任後の政策形成・国会対応",
+      "source": "立憲民主党 次の内閣ニュース・国会レポート",
+      "source_url": "https://cdp-japan.jp/news/20241001_8309",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 5,
+      "done": 0,
+      "started": 4,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "ネクスト内閣総理大臣として政策チームを編成",
+          "category": "党運営",
+          "status": "実施",
+          "progress_score": 60,
+          "evidence_url": "https://cdp-japan.jp/news/20241001_8309"
+        },
+        {
+          "title": "物価高対策と財政規律の両立",
+          "category": "経済財政",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://cdp-japan.jp/news/20251113_9853"
+        },
+        {
+          "title": "高市政権への対抗軸として経済・社会保障・安保を質問",
+          "category": "国会対応",
+          "status": "実施",
+          "progress_score": 45,
+          "evidence_url": "https://cdp-japan.jp/news/20251104_9813"
+        }
+      ]
+    },
+    {
+      "id": "centrist_reform_alliance_2026",
+      "title": "中道改革連合への移行と基本政策",
+      "context": "2026年の新党・衆院選準備",
+      "source": "中道改革連合発表・基本政策発表",
+      "source_url": "https://cdp-japan.jp/news/20260116_0071",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "initial_review",
+      "score": 45,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "中道勢力の結集と衆院選準備",
+          "category": "党再編",
+          "status": "進行",
+          "progress_score": 45,
+          "evidence_url": "https://cdp-japan.jp/news/20260116_0071"
+        },
+        {
+          "title": "生活者ファースト、食料品消費税ゼロ",
+          "category": "物価・税制",
+          "status": "公約化",
+          "progress_score": 35,
+          "evidence_url": "https://cdp-japan.jp/news/20260119_0074"
+        },
+        {
+          "title": "ジャパンファンド創設を含む成長投資",
+          "category": "経済成長",
+          "status": "公約化",
+          "progress_score": 25,
+          "evidence_url": "https://cdp-japan.jp/news/20260119_0074"
+        }
+      ]
+    }
   ],
   "focus_cards": [
     {
-      "context": "野党連携",
-      "title": "与党過半数割れ後の野党共闘の実効性",
-      "desc": "2024年衆院選で自公連立が過半数割れした後、立憲主導の野党連携が政策実現・政権交代にどこまで結びつくかを見る。"
+      "context": "中道再編",
+      "title": "政権交代可能な中道勢力を作れるか",
+      "desc": "立憲民主党代表から中道改革連合代表へ移る中で、候補者調整、政策統合、支持層拡大を実務として進められるかが最大の検証点。"
     },
     {
-      "context": "財政・社会保障",
-      "title": "消費税路線と現役世代負担軽減の整合性",
-      "desc": "総理時代に推進した消費税増税路線と、現在の手取り増・負担軽減の訴えが政策として整合しているかが問われる。"
+      "context": "政治改革",
+      "title": "企業・団体献金禁止と政治資金透明化",
+      "desc": "裏金問題への対抗軸として掲げた政治改革を、法案提出にとどめず制度改正まで持ち込めるかを見る。"
     },
     {
-      "context": "憲法・安全保障",
-      "title": "改憲論議への向き合い方",
-      "desc": "自衛隊の憲法明記など改憲の動きが加速するなか、立憲民主党として護憲・改憲をどう整理するかが問われる。"
+      "context": "経済財政",
+      "title": "財政規律と家計支援の両立",
+      "desc": "消費税増税を担った元首相としての財政規律イメージと、食料品消費税ゼロ・賃上げ支援をどう整合させるかが問われる。"
+    },
+    {
+      "context": "外交・安全保障",
+      "title": "日米同盟基軸と独自外交のバランス",
+      "desc": "安定した現実路線を掲げつつ、中東や沖縄基地問題などで日本独自の外交余地をどこまで示せるかを追う。"
     }
   ],
   "source_urls": [
-    {"label": "立憲民主党 代表選出ニュース", "url": "https://cdp-japan.jp/news/20240923_8283"},
-    {"label": "首相官邸（野田内閣当時）", "url": "https://www.kantei.go.jp/"}
+    {"label": "公式プロフィール", "url": "https://cdp-japan.jp/member/3009/%E9%87%8E%E7%94%B0%E4%BD%B3%E5%BD%A6"},
+    {"label": "代表選2024", "url": "https://cdp-japan.jp/leadership-election/2024"},
+    {"label": "政権政策2024発表", "url": "https://cdp-japan.jp/news/20241007_8336"},
+    {"label": "野田『次の内閣』第1回閣議", "url": "https://cdp-japan.jp/news/20241001_8309"},
+    {"label": "新党名 中道改革連合", "url": "https://cdp-japan.jp/news/20260116_0071"},
+    {"label": "基本政策発表", "url": "https://cdp-japan.jp/news/20260119_0074"},
+    {"label": "首相官邸 野田内閣", "url": "https://www.kantei.go.jp/jp/noda/meibo/daijin/noda.html"}
   ]
 }

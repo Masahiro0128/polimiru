@@ -239,14 +239,14 @@ const politicians = [
         id: "noda-yoshihiko",
         name: "野田 佳彦",
         kana: "のだ よしひこ",
-        party: "立憲民主党",
+        party: "中道改革連合",
         role: "代表",
-        area: "千葉4区",
+        area: "千葉14区",
         photo: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yoshihiko_Noda%2C_official_portrait_2009.jpg",
         url: "politicians/noda-yoshihiko/index.html",
         baseLikes: 4800,
-        tags: ["野田佳彦", "のだよしひこ", "野田", "立憲民主党", "代表", "総理大臣", "首相", "千葉4区", "早稲田大学", "財務大臣", "民主党", "どじょう内閣"],
-        desc: "早稲田大学政治経済学部卒。第95代内閣総理大臣。財務大臣、民主党代表などを歴任後、2024年9月に立憲民主党代表へ就任。"
+        tags: ["野田佳彦", "のだよしひこ", "野田", "中道改革連合", "立憲民主党", "代表", "総理大臣", "首相", "千葉14区", "早稲田大学", "松下政経塾", "財務大臣", "民主党", "どじょう内閣", "政治改革"],
+        desc: "早稲田大学政治経済学部、松下政経塾を経て千葉県議、衆議院議員へ。第95代内閣総理大臣、財務大臣、立憲民主党代表を歴任し、中道改革連合代表として中道再編を主導。"
     },
     {
         id: "fujita-fumitake",
