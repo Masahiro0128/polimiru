@@ -8,6 +8,7 @@
   "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Sanae_Takaichi_portrait_%28HD%29_%28cropped_1%29.jpg",
   "photo_credit": "Wikimedia Commons",
   "official_url": "https://www.sanae.gr.jp/",
+  "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
   "twitter": "takaichi_sanae",
 
   "education": [

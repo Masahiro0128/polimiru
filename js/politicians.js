@@ -242,7 +242,7 @@ const politicians = [
         party: "中道改革連合",
         role: "代表",
         area: "千葉14区",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yoshihiko_Noda%2C_official_portrait_2009.jpg",
+        photo: "https://cdp-japan.jp/assets/images/leadership_election/2024/01_portrait.w768.jpg",
         url: "politicians/noda-yoshihiko/index.html",
         baseLikes: 4800,
         tags: ["野田佳彦", "のだよしひこ", "野田", "中道改革連合", "立憲民主党", "代表", "総理大臣", "首相", "千葉14区", "早稲田大学", "松下政経塾", "財務大臣", "民主党", "どじょう内閣", "政治改革"],
