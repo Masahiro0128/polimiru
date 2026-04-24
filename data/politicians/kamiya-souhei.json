@@ -1,0 +1,50 @@
+{
+  "id": "kamiya-souhei",
+  "name": "神谷 宗幣",
+  "kana": "かみや そうへい",
+  "party": "参政党",
+  "party_role": "代表",
+  "area": "参議院比例代表",
+  "current_status": "参議院議員",
+  "photo_url": "https://sanseito.jp/nppoj/wp-content/themes/wp_310/images/bmember/kamiya_sohei.webp?20250910",
+  "official_url": "https://sanseito.jp/member/",
+  "accent": {"from": "#5a2a00", "to": "#aa5500", "color": "#cc7700"},
+  "summary": "関西大学法科大学院修了。2007年に吹田市議会議員へ初当選し、龍馬プロジェクトやネットチャンネルCGSで政治・歴史・経済を発信。2020年に参政党を結党し、2022年参院選で比例代表から初当選。党代表・事務局長・ボードメンバーとして活動する。",
+  "stats": [
+    {"label": "党役職", "value": "代表"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "参議院比例代表"},
+    {"label": "出身", "value": "福井県"},
+    {"label": "元職", "value": "吹田市議会議員"}
+  ],
+  "career": [
+    {"period": "1977", "text": "福井県生まれ"},
+    {"period": "学歴", "text": "関西大学法科大学院修了"},
+    {"period": "2007", "text": "吹田市議会議員に初当選、2期6年務める"},
+    {"period": "2013", "text": "ネットチャンネルCGSを開設"},
+    {"period": "2020", "text": "参政党を設立、代表に就任"},
+    {"period": "2022", "text": "第26回参院選で比例代表から初当選。参政党として初の国会議席獲得"},
+    {"period": "現在", "text": "参政党代表・参議院議員"}
+  ],
+  "focus_cards": [
+    {
+      "context": "主権・安全保障",
+      "title": "日本の主権回復と外交自立",
+      "desc": "日米地位協定の見直し、米軍基地問題など対米関係の自立化をどこまで具体的に政策化できるかを見る。"
+    },
+    {
+      "context": "教育・文化",
+      "title": "歴史教育・愛国心教育の政策化",
+      "desc": "日本の伝統・文化・歴史を重視する教育改革の実現度と、教育の中立性との兼ね合いが問われる。"
+    },
+    {
+      "context": "健康・食",
+      "title": "食の安全・農業保護政策の実効性",
+      "desc": "農薬規制強化、食料自給率向上、種苗保護など農業・食の安全に関する政策立案の進捗を追跡する。"
+    }
+  ],
+  "source_urls": [
+    {"label": "参政党 議員プロフィール", "url": "https://sanseito.jp/member/"},
+    {"label": "参政党 ボードメンバー", "url": "https://sanseito.jp/about/"}
+  ]
+}

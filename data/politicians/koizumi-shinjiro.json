@@ -1,0 +1,222 @@
+{
+  "id": "koizumi-shinjiro",
+  "name": "小泉 進次郎",
+  "kana": "こいずみ しんじろう",
+  "party": "自由民主党",
+  "party_role": "農林水産大臣",
+  "area": "神奈川県第11区",
+  "current_status": "農林水産大臣・衆議院議員",
+  "photo_url": "https://www.jimin.jp/election/results/sousai24/img/profile/koizumi_shinjiro.png",
+  "official_url": "https://www.shinjiro.info/profile/",
+  "accent": {"from": "#12376b", "to": "#0d1f3f", "color": "#1f4f91"},
+  "summary": "神奈川県横須賀市出身。関東学院大学経済学部、米コロンビア大学大学院政治学部を経て、CSIS研究員、小泉純一郎秘書を経験。2009年に神奈川11区で初当選し、環境大臣、衆議院安全保障委員長、農林水産大臣を歴任。2024年自民党総裁選では「新時代の扉をあける」を掲げて出馬した。",
+  "stats": [
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "神奈川11区"},
+    {"label": "出身", "value": "神奈川県横須賀市"},
+    {"label": "現職", "value": "農林水産大臣"},
+    {"label": "元職", "value": "環境大臣"}
+  ],
+  "career": [
+    {"period": "1981", "text": "神奈川県横須賀市生まれ"},
+    {"period": "2004", "text": "関東学院大学経済学部卒業"},
+    {"period": "2006", "text": "米国コロンビア大学大学院政治学部修了、政治学修士号取得"},
+    {"period": "2006-2007", "text": "米国戦略国際問題研究所（CSIS）研究員"},
+    {"period": "2007-2009", "text": "衆議院議員 小泉純一郎の秘書"},
+    {"period": "2009", "text": "第45回衆議院議員総選挙で初当選（神奈川11区）"},
+    {"period": "2011", "text": "自由民主党青年局長"},
+    {"period": "2013-2015", "text": "内閣府大臣政務官兼復興大臣政務官"},
+    {"period": "2015", "text": "自由民主党農林部会長"},
+    {"period": "2017", "text": "自由民主党筆頭副幹事長"},
+    {"period": "2018", "text": "自由民主党厚生労働部会長"},
+    {"period": "2019-2021", "text": "環境大臣、内閣府特命担当大臣（原子力防災）"},
+    {"period": "2021", "text": "自由民主党総務会長代理"},
+    {"period": "2024", "text": "衆議院安全保障委員長、自民党総裁選に出馬"},
+    {"period": "2025", "text": "農林水産大臣（第2次石破内閣）"},
+    {"period": "現在", "text": "農林水産大臣・衆議院議員（神奈川11区）"}
+  ],
+  "education": [
+    {"label": "小中高", "value": "関東学院六浦小学校・中学校・高等学校"},
+    {"label": "大学", "value": "関東学院大学経済学部"},
+    {"label": "大学院", "value": "米国コロンビア大学大学院政治学部"}
+  ],
+  "election_links": [
+    {
+      "election_id": "shugiin_kanagawa_2009",
+      "title": "第45回衆議院議員総選挙 神奈川11区",
+      "role": "候補者",
+      "result": "初当選"
+    },
+    {
+      "election_id": "shugiin_kanagawa_2024",
+      "title": "第50回衆議院議員総選挙 神奈川11区",
+      "role": "候補者",
+      "result": "当選"
+    },
+    {
+      "election_id": "jimin_sousai_2024",
+      "title": "2024年自由民主党総裁選挙",
+      "role": "候補者",
+      "result": "落選"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "jimin_sousai_2024_platform",
+      "title": "2024年自民党総裁選 公約・所見の追跡",
+      "context": "自民党総裁選候補者ページ・所見PDF",
+      "source": "自由民主党 総裁選2024 候補者情報",
+      "source_url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 60,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "政治改革と自民党の信頼回復",
+          "category": "政治改革",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"
+        },
+        {
+          "title": "少子高齢化を見据えた社会保障・子育て政策",
+          "category": "社会保障・子育て",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"
+        },
+        {
+          "title": "解雇規制を含む労働市場改革",
+          "category": "雇用・経済",
+          "status": "論点化",
+          "progress_score": 20,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"
+        },
+        {
+          "title": "安全保障と同盟・抑止力の強化",
+          "category": "外交・安全保障",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"
+        },
+        {
+          "title": "若い世代に開かれた党運営",
+          "category": "党改革",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"
+        }
+      ]
+    },
+    {
+      "id": "environment_minister_track",
+      "title": "環境大臣期の政策トラック",
+      "context": "2019-2021年 環境大臣・原子力防災担当",
+      "source": "首相官邸 閣僚等名簿",
+      "source_url": "https://www.kantei.go.jp/jp/98_abe/meibo/daijin/koizumi_shinjiro.html",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "historical_review",
+      "score": 70,
+      "total": 4,
+      "done": 2,
+      "started": 1,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "2050年カーボンニュートラルに向けた政策転換",
+          "category": "脱炭素",
+          "status": "進行",
+          "progress_score": 55,
+          "evidence_url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"
+        },
+        {
+          "title": "気候変動担当としての国際発信",
+          "category": "環境外交",
+          "status": "実施",
+          "progress_score": 60,
+          "evidence_url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"
+        },
+        {
+          "title": "原子力防災担当としての危機管理",
+          "category": "原子力防災",
+          "status": "担当",
+          "progress_score": 45,
+          "evidence_url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"
+        }
+      ]
+    },
+    {
+      "id": "agriculture_minister_track",
+      "title": "農林水産大臣期の政策トラック",
+      "context": "2025年5月以降 農林水産大臣",
+      "source": "首相官邸 第2次石破内閣 閣僚等名簿",
+      "source_url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html",
+      "reviewed_at": "2026-04-24T00:00:00Z",
+      "status": "tracking",
+      "score": 50,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "食料安全保障と農業生産基盤の強化",
+          "category": "農政",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"
+        },
+        {
+          "title": "農林水産物の輸出拡大と所得向上",
+          "category": "産業政策",
+          "status": "追跡中",
+          "progress_score": 30,
+          "evidence_url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"
+        },
+        {
+          "title": "米価・物価高への対応",
+          "category": "物価・生活",
+          "status": "要検証",
+          "progress_score": 25,
+          "evidence_url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "農政・物価",
+      "title": "農水大臣として食料安全保障をどう実装するか",
+      "desc": "農業生産基盤、輸出、米価・物価対応を、生活者と生産者の双方に納得できる制度へ落とせるかを追う。"
+    },
+    {
+      "context": "総裁選後",
+      "title": "改革イメージを政策実装へ変換できるか",
+      "desc": "総裁選で掲げた党改革、政治改革、労働市場改革が、閣僚・党内でどこまで具体化されるかが検証点。"
+    },
+    {
+      "context": "環境・エネルギー",
+      "title": "脱炭素と安定供給のバランス",
+      "desc": "環境大臣期の脱炭素路線を、エネルギー安全保障や産業競争力と矛盾なく接続できるかを見る。"
+    },
+    {
+      "context": "世代交代",
+      "title": "若年層・子育て世代への訴求力",
+      "desc": "子育て経験や青年局長の経歴を政策形成と支持拡大に結びつけられるかを蓄積して見る。"
+    }
+  ],
+  "source_urls": [
+    {"label": "小泉進次郎 公式プロフィール", "url": "https://www.shinjiro.info/profile/"},
+    {"label": "首相官邸 農林水産大臣プロフィール", "url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"},
+    {"label": "自民党 総裁選2024 候補者情報", "url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"},
+    {"label": "首相官邸 環境大臣プロフィール", "url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"}
+  ]
+}

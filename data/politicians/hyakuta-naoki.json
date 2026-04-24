@@ -1,0 +1,50 @@
+{
+  "id": "hyakuta-naoki",
+  "name": "百田 尚樹",
+  "kana": "ひゃくた なおき",
+  "party": "日本保守党",
+  "party_role": "代表",
+  "area": "参議院比例代表",
+  "current_status": "参議院議員・日本保守党代表",
+  "photo_url": "https://hoshuto.jp/contents/wp-content/uploads/2023/09/photo-hyakuta.jpg",
+  "official_url": "https://hoshuto.jp/member/hyakuta/",
+  "accent": {"from": "#1a0a4a", "to": "#2a1a7a", "color": "#3a2a9a"},
+  "summary": "放送作家として活躍後、「永遠の０」「海賊とよばれた男」などのベストセラー小説を発表。2023年に日本保守党を設立し代表へ就任。2024年衆院選では落選したが、2025年参院選で比例代表から初当選し、参議院議員として活動している。",
+  "stats": [
+    {"label": "党役職", "value": "代表"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "比例代表"},
+    {"label": "出身", "value": "大阪府大阪市"}
+  ],
+  "career": [
+    {"period": "1956", "text": "大阪府大阪市生まれ"},
+    {"period": "1980年代-", "text": "放送作家として活躍（吉本興業関連番組など）"},
+    {"period": "2006", "text": "小説「永遠の０」を出版。後に映画化され国民的ベストセラーとなる"},
+    {"period": "2013", "text": "「海賊とよばれた男」本屋大賞受賞"},
+    {"period": "2023", "text": "有本香とともに日本保守党を設立、代表に就任"},
+    {"period": "2024", "text": "第50回衆院選で比例ブロックから出馬。落選"},
+    {"period": "2025", "text": "第27回参院選で比例代表から初当選"},
+    {"period": "現在", "text": "参議院議員・日本保守党代表として活動"}
+  ],
+  "focus_cards": [
+    {
+      "context": "保守・伝統",
+      "title": "選択的夫婦別姓・LGBTへの反対姿勢の影響",
+      "desc": "選択的夫婦別姓反対やLGBT理解増進法への批判など、価値保守的な立場が有権者・政界でどう評価されるかを見る。"
+    },
+    {
+      "context": "メディア・言論",
+      "title": "NHK改革・公共放送のあり方への提言",
+      "desc": "NHK受信料制度や報道姿勢への批判を党政策に落とし込み、具体的な改革法案として提出できるかが問われる。"
+    },
+    {
+      "context": "対中・安全保障",
+      "title": "対中強硬路線の実効性",
+      "desc": "中国への強硬姿勢を訴えるなか、経済的相互依存と安全保障をどう両立する具体策を示せるかが焦点。"
+    }
+  ],
+  "source_urls": [
+    {"label": "日本保守党 公式プロフィール", "url": "https://hoshuto.jp/member/hyakuta/"},
+    {"label": "参議院 議員プロフィール", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025050.htm"}
+  ]
+}
