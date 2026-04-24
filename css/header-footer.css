@@ -42,11 +42,18 @@
 }
 
 .site-logo-img {
-    height: 44px;
-    width: 44px;
+    height: 40px;
+    width: auto;
     object-fit: contain;
-    border-radius: 8px;
     flex-shrink: 0;
+}
+
+.site-logo-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy-900);
+    letter-spacing: 0.04em;
+    line-height: 1;
 }
 
 .site-tagline {

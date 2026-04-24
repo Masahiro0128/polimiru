@@ -53,7 +53,8 @@ function loadHeader() {
     <nav class="site-navbar">
         <div class="nav-logo-group">
             <a href="${homePath}" class="site-logo">
-                <img src="${pathPrefix}images/logo.jpg" alt="polimiru" class="site-logo-img">
+                <img src="${pathPrefix}images/logo-icon.png" alt="polimiru" class="site-logo-img">
+                <span class="site-logo-text">polimiru</span>
             </a>
             <span class="site-tagline">公約と実績を見える化する、<br>日本最大級の政治家ファクトチェック・データベース</span>
         </div>
