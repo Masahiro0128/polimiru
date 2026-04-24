@@ -16,6 +16,13 @@
         return String(name || '?').replace(/\s+/g, '').slice(0, 1) || '?';
     }
 
+    function assetUrl(value) {
+        const url = String(value || '');
+        if (!url) return '';
+        if (/^(https?:|data:|\/)/.test(url)) return url;
+        return `../../${url.replace(/^\.?\//, '')}`;
+    }
+
     function renderSourceButtons(sources) {
         return (sources || []).slice(0, 3).map(source => `
             <a class="source-btn" href="${escapeHtml(source.url)}" target="_blank" rel="noopener">
@@ -115,8 +122,9 @@
         root.style.setProperty('--party-accent', accent.color || '#1e3a6e');
         document.title = `${data.name} - polimiru`;
 
-        const photo = data.photo_url
-            ? `<img class="record-photo" src="${escapeHtml(data.photo_url)}" alt="${escapeHtml(data.name)}">`
+        const photoSrc = assetUrl(data.photo_url);
+        const photo = photoSrc
+            ? `<img class="record-photo" src="${escapeHtml(photoSrc)}" alt="${escapeHtml(data.name)}">`
             : `<div class="record-photo-placeholder">${escapeHtml(initials(data.name))}</div>`;
 
         root.innerHTML = `

@@ -6,23 +6,53 @@
   "party_role": "東京1区候補",
   "area": "東京都第1区",
   "current_status": "衆議院議員候補",
-  "photo_url": "../../images/elections/shugiin_tokyo_2026/tokyo_103.jpg",
+  "photo_url": "images/elections/shugiin_tokyo_2026/tokyo_103.jpg",
   "official_url": "https://yoshikawa-rina.jp",
-  "accent": {"from": "#b45309", "to": "#7c2d12", "color": "#b45309"},
+  "accent": {
+    "from": "#b45309",
+    "to": "#7c2d12",
+    "color": "#b45309"
+  },
   "summary": "看護師・保健師として医療現場に従事し、参政党副代表として活動。東京1区では減税、移民政策、食料・エネルギー安全保障、子育て教育給付を前面に掲げる。",
   "stats": [
-    {"label": "政党", "value": "参政党"},
-    {"label": "選挙区", "value": "東京1区"},
-    {"label": "候補者ID", "value": "103"}
+    {
+      "label": "政党",
+      "value": "参政党"
+    },
+    {
+      "label": "選挙区",
+      "value": "東京1区"
+    },
+    {
+      "label": "候補者ID",
+      "value": "103"
+    }
   ],
   "career": [
-    {"period": "1987", "text": "生まれ"},
-    {"period": "職歴", "text": "看護師・保健師として医療現場に従事"},
-    {"period": "党務", "text": "参政党副代表"},
-    {"period": "2026", "text": "第51回衆議院議員総選挙 東京1区候補"}
+    {
+      "period": "1987",
+      "text": "生まれ"
+    },
+    {
+      "period": "職歴",
+      "text": "看護師・保健師として医療現場に従事"
+    },
+    {
+      "period": "党務",
+      "text": "参政党副代表"
+    },
+    {
+      "period": "2026",
+      "text": "第51回衆議院議員総選挙 東京1区候補"
+    }
   ],
   "election_links": [
-    {"election_id": "shugiin_tokyo_2026", "title": "第51回衆議院議員総選挙 東京1区", "role": "候補者", "result": "結果未反映"}
+    {
+      "election_id": "shugiin_tokyo_2026",
+      "title": "第51回衆議院議員総選挙 東京1区",
+      "role": "候補者",
+      "result": "結果未反映"
+    }
   ],
   "promise_cycles": [
     {
@@ -40,20 +70,61 @@
       "pending": 5,
       "unknown": 0,
       "highlights": [
-        {"title": "減税と社会保険料削減で国民負担率35％を目標", "category": "税・負担", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"},
-        {"title": "安易な移民依存に頼らない人口・労働政策", "category": "移民政策", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"},
-        {"title": "食料自給力向上と食の安全", "category": "食料安全保障", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"},
-        {"title": "0〜15歳の子ども一人月10万円の教育給付金", "category": "子育て・教育", "status": "公約", "progress_score": 0, "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"}
+        {
+          "title": "減税と社会保険料削減で国民負担率35％を目標",
+          "category": "税・負担",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"
+        },
+        {
+          "title": "安易な移民依存に頼らない人口・労働政策",
+          "category": "移民政策",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"
+        },
+        {
+          "title": "食料自給力向上と食の安全",
+          "category": "食料安全保障",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"
+        },
+        {
+          "title": "0〜15歳の子ども一人月10万円の教育給付金",
+          "category": "子育て・教育",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"
+        }
       ]
     }
   ],
   "focus_cards": [
-    {"context": "税・社会保険料", "title": "負担率35％目標の実現性", "desc": "減税と社会保険料削減を掲げる一方、財源と制度設計の具体性が検証点。"},
-    {"context": "食と移民", "title": "食料安全保障と移民政策", "desc": "食料自給、エネルギー、外国人労働者政策を国家観と結びつけて訴えている。"}
+    {
+      "context": "税・社会保険料",
+      "title": "負担率35％目標の実現性",
+      "desc": "減税と社会保険料削減を掲げる一方、財源と制度設計の具体性が検証点。"
+    },
+    {
+      "context": "食と移民",
+      "title": "食料安全保障と移民政策",
+      "desc": "食料自給、エネルギー、外国人労働者政策を国家観と結びつけて訴えている。"
+    }
   ],
   "source_urls": [
-    {"label": "公式サイト", "url": "https://yoshikawa-rina.jp"},
-    {"label": "東京都選管 候補者一覧", "url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/candidate01.html"},
-    {"label": "選挙公報 音声版PDF", "url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"}
+    {
+      "label": "公式サイト",
+      "url": "https://yoshikawa-rina.jp"
+    },
+    {
+      "label": "東京都選管 候補者一覧",
+      "url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/candidate01.html"
+    },
+    {
+      "label": "選挙公報 音声版PDF",
+      "url": "https://r8shugiinsen.metro.tokyo.lg.jp/constituency/area01/R8shuin_shou_01_03_onsei.pdf"
+    }
   ]
 }
