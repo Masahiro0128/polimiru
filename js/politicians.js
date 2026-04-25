@@ -318,13 +318,13 @@ const politicians = [
         name: "大石 あきこ",
         kana: "おおいし あきこ",
         party: "れいわ新選組",
-        role: "共同代表",
-        area: "衆議院比例近畿",
+        role: "共同代表（前衆議院議員）",
+        area: "前・衆議院比例近畿",
         photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Akiko_Oishi_%28cropped%29.jpg/440px-Akiko_Oishi_%28cropped%29.jpg",
         url: "politicians/oishi-akiko/index.html",
         baseLikes: 3400,
         tags: ["大石あきこ", "おおいしあきこ", "大石", "れいわ新選組", "共同代表", "消費税廃止", "大阪", "衆議院", "元大阪府職員"],
-        desc: "元大阪府職員。2021年衆院選で初当選し、れいわ新選組共同代表として消費税廃止・ジェンダー平等・大阪維新対抗の旗手として活動。"
+        desc: "元大阪府職員。2021年衆院選で初当選し、れいわ新選組共同代表として消費税廃止・ジェンダー平等・大阪維新対抗の旗手として活動。2026年衆院選で落選。"
     },
     {
         id: "koike-yuriko",

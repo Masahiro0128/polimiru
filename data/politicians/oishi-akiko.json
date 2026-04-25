@@ -5,7 +5,7 @@
   "party": "れいわ新選組",
   "party_role": "共同代表",
   "area": "衆議院比例近畿",
-  "current_status": "衆議院議員・れいわ新選組共同代表",
+  "current_status": "前衆議院議員・れいわ新選組共同代表",
   "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Akiko_Oishi_%28cropped%29.jpg/440px-Akiko_Oishi_%28cropped%29.jpg",
   "photo_credit": "Wikimedia Commons",
   "official_url": "https://reiwa-shinsengumi.com/member/oishi-akiko/",
@@ -13,8 +13,8 @@
   "summary": "大阪府職員出身。2021年衆院選で比例近畿ブロックから初当選し、れいわ新選組共同代表に就任。消費税廃止・ジェンダー平等・大阪維新への対抗軸として活動し、歯に衣着せぬ発言とSNSでの発信力で注目を集める。",
   "stats": [
     {"label": "党役職", "value": "共同代表"},
-    {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "比例近畿"},
+    {"label": "国会", "value": "前・衆議院"},
+    {"label": "選挙区", "value": "比例近畿（落選中）"},
     {"label": "出身", "value": "大阪府"},
     {"label": "元職", "value": "大阪府職員"}
   ],
