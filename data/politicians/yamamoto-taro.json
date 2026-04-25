@@ -1,0 +1,144 @@
+{
+  "id": "yamamoto-taro",
+  "name": "山本 太郎",
+  "kana": "やまもと たろう",
+  "party": "れいわ新選組",
+  "party_role": "代表",
+  "area": "参議院比例代表",
+  "current_status": "参議院議員・れいわ新選組代表",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Taro_Yamamoto_2022_%28cropped%29.jpg/440px-Taro_Yamamoto_2022_%28cropped%29.jpg",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://reiwa-shinsengumi.com/",
+  "accent": {"from": "#b91c1c", "to": "#7f1d1d", "color": "#dc2626"},
+  "summary": "俳優出身。東日本大震災・福島原発事故を機に政治活動を開始し、2013年参院選で無所属初当選。2019年にれいわ新選組を結成し代表に就任。消費税廃止・積極財政・脱原発・奨学金帳消しを旗印に、路上演説や独自の選挙スタイルで無党派層を中心に幅広い支持を集める。",
+  "stats": [
+    {"label": "党役職", "value": "代表"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "比例代表"},
+    {"label": "出身", "value": "大阪府"},
+    {"label": "元職", "value": "俳優"}
+  ],
+  "career": [
+    {"period": "1974", "text": "大阪府生まれ"},
+    {"period": "1990年代〜", "text": "俳優として活動（「ガメラ」「GTO」「ちゅらさん」「渡る世間は鬼ばかり」等）"},
+    {"period": "2011", "text": "東日本大震災・福島原発事故を機に反原発・政治活動を開始"},
+    {"period": "2013", "text": "第23回参院選で無所属東京選挙区から初当選"},
+    {"period": "2019", "text": "れいわ新選組を結成、代表就任。参院選比例で228万票を獲得、2議席"},
+    {"period": "2021", "text": "衆院選に出馬するため参院を辞職、落選。れいわは比例で3議席獲得"},
+    {"period": "2022", "text": "第26回参院選で比例から1位当選（比例最多得票）"},
+    {"period": "現在", "text": "れいわ新選組代表・参議院議員"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "reiwa_sangiin2022",
+      "title": "2022年参院選 れいわ新選組公約 追跡",
+      "context": "第26回参議院議員通常選挙（2022年7月）",
+      "source": "れいわ新選組 参院選2022 政策",
+      "source_url": "https://reiwa-shinsengumi.com/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 15,
+      "total": 5,
+      "done": 0,
+      "started": 1,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "消費税廃止（段階的に5%→0%）",
+          "category": "税制",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "奨学金の返済帳消し",
+          "category": "教育・生活支援",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "最低賃金1500円・全国一律",
+          "category": "労働・賃上げ",
+          "status": "進行中",
+          "progress_score": 30,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "原発即時停止・再生可能エネルギー100%",
+          "category": "エネルギー",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "全国民へのベーシックサービス拡充（医療・介護・教育無償化）",
+          "category": "社会保障",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        }
+      ]
+    },
+    {
+      "id": "reiwa_kokkai_track",
+      "title": "国会活動・野党提案の追跡",
+      "context": "参議院議員として野党の立場から政府に対案・質疑",
+      "source": "れいわ新選組 国会活動報告",
+      "source_url": "https://reiwa-shinsengumi.com/activity/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 30,
+      "total": 3,
+      "done": 0,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "消費税廃止法案の国会提出",
+          "category": "税制",
+          "status": "進行中",
+          "progress_score": 35,
+          "evidence_url": "https://reiwa-shinsengumi.com/activity/"
+        },
+        {
+          "title": "物価高騰対策・給付金法案の提出",
+          "category": "生活支援",
+          "status": "進行中",
+          "progress_score": 40,
+          "evidence_url": "https://reiwa-shinsengumi.com/activity/"
+        },
+        {
+          "title": "軍拡予算への反対・平和外交の主張",
+          "category": "安全保障",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://reiwa-shinsengumi.com/activity/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "税制・物価",
+      "title": "消費税廃止の現実的な実現経路",
+      "desc": "野党の立場で消費税廃止を訴え続けるなか、与党との税制協議や国民的議論にどうつなげるかが問われる。"
+    },
+    {
+      "context": "党勢拡大",
+      "title": "れいわの勢力拡大と政権影響力",
+      "desc": "衆参合わせた議席数と、政策実現に向けた他野党との連携・対立の設計が注目点。"
+    },
+    {
+      "context": "社会保障",
+      "title": "奨学金帳消し・ベーシックサービスの財源設計",
+      "desc": "大規模な政策の財源を積極財政論でどう説明し、有権者の納得を得るかが検証対象。"
+    }
+  ],
+  "source_urls": [
+    {"label": "れいわ新選組 公式", "url": "https://reiwa-shinsengumi.com/"},
+    {"label": "山本太郎 活動報告", "url": "https://reiwa-shinsengumi.com/member/yamamoto-taro/"}
+  ]
+}

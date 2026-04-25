@@ -1,0 +1,134 @@
+{
+  "id": "kamikawa-yoko",
+  "name": "上川 陽子",
+  "kana": "かみかわ ようこ",
+  "party": "自由民主党",
+  "party_role": "衆議院議員",
+  "area": "静岡県第1区",
+  "current_status": "衆議院議員（元外務大臣）",
+  "photo_url": "https://www.jimin.jp/member/img/kamikawa-yoko.jpg",
+  "photo_credit": "自由民主党",
+  "official_url": "https://www.jimin.jp/member/100397.html",
+  "accent": {"from": "#7e22ce", "to": "#4a044e", "color": "#9333ea"},
+  "summary": "静岡市出身。東京大学教養学部・ハーバード大学行政大学院卒業。外務大臣・法務大臣（3回）・少子化対策担当大臣などを歴任。女性首相候補としても注目される。2024年自民党総裁選に出馬。",
+  "stats": [
+    {"label": "当選", "value": "8期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "静岡1区"},
+    {"label": "出身", "value": "静岡県"},
+    {"label": "元職", "value": "外務大臣・法務大臣"}
+  ],
+  "career": [
+    {"period": "1953", "text": "静岡市生まれ"},
+    {"period": "1977", "text": "東京大学教養学部卒業"},
+    {"period": "1993", "text": "ハーバード大学ケネディスクール行政学修士取得"},
+    {"period": "1996", "text": "第41回衆院選で初当選"},
+    {"period": "2008-2009", "text": "法務大臣（第1次）（福田内閣）"},
+    {"period": "2014-2015", "text": "法務大臣（第2次）（第2次安倍内閣）"},
+    {"period": "2017-2018", "text": "法務大臣（第3次）（第3次安倍内閣）"},
+    {"period": "2023-2024", "text": "外務大臣（第2次岸田内閣）"},
+    {"period": "2024-09", "text": "自民党総裁選に出馬（1回目投票5位）"},
+    {"period": "現在", "text": "衆議院議員（自民党）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "kamikawa_sousai2024",
+      "title": "2024年自民党総裁選公約 追跡",
+      "context": "2024年9月 自民党総裁選",
+      "source": "自由民主党 総裁選2024 上川陽子候補",
+      "source_url": "https://www.jimin.jp/election/results/sousai24/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 15,
+      "total": 4,
+      "done": 0,
+      "started": 1,
+      "pending": 3,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "女性活躍推進・女性リーダー育成",
+          "category": "ジェンダー・政治",
+          "status": "進行中",
+          "progress_score": 35,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "少子化対策・子育て支援の強化",
+          "category": "少子化",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "経済安全保障・外交力の強化",
+          "category": "外交・安全保障",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "法の支配・司法制度改革",
+          "category": "司法・法制度",
+          "status": "公約",
+          "progress_score": 10,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        }
+      ]
+    },
+    {
+      "id": "kamikawa_gaimu_track",
+      "title": "外務大臣期の主要外交実績（2023-2024）",
+      "context": "外務大臣在任中の実績",
+      "source": "外務省",
+      "source_url": "https://www.mofa.go.jp/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 55,
+      "total": 3,
+      "done": 1,
+      "started": 2,
+      "pending": 0,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "G7広島サミット議長国として多国間外交の推進",
+          "category": "多国間外交",
+          "status": "実現",
+          "progress_score": 100,
+          "evidence_url": "https://www.mofa.go.jp/"
+        },
+        {
+          "title": "日米同盟強化・インド太平洋戦略の推進",
+          "category": "安全保障外交",
+          "status": "進行中",
+          "progress_score": 55,
+          "evidence_url": "https://www.mofa.go.jp/"
+        },
+        {
+          "title": "グローバルサウスとの関係強化",
+          "category": "途上国外交",
+          "status": "進行中",
+          "progress_score": 45,
+          "evidence_url": "https://www.mofa.go.jp/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "女性リーダー",
+      "title": "初の女性首相への道筋",
+      "desc": "自民党初の女性総裁候補として注目を集めた2024年総裁選以降、党内での影響力と次の機会を追う。"
+    },
+    {
+      "context": "外交・安全保障",
+      "title": "外交大臣経験を活かした国際貢献",
+      "desc": "G7広島サミット・ウクライナ支援・インド太平洋外交など在任中の外交実績の継続性が問われる。"
+    }
+  ],
+  "source_urls": [
+    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100397.html"},
+    {"label": "外務省", "url": "https://www.mofa.go.jp/"}
+  ]
+}

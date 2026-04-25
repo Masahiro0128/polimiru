@@ -1,0 +1,149 @@
+{
+  "id": "ishiba-shigeru",
+  "name": "石破 茂",
+  "kana": "いしば しげる",
+  "party": "自由民主党",
+  "party_role": "衆議院議員",
+  "area": "鳥取県第1区",
+  "current_status": "衆議院議員（元・第103代内閣総理大臣）",
+  "photo_url": "https://www.jimin.jp/member/img/ishiba-shigeru.jpg",
+  "photo_credit": "自由民主党",
+  "official_url": "https://www.jimin.jp/member/100357.html",
+  "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
+  "summary": "鳥取県出身。慶應義塾大学法学部卒業後、三井銀行勤務を経て1986年衆院初当選。防衛大臣・農林水産大臣・地方創生担当大臣などを歴任。2024年9月に自民党総裁に選出され、第103代内閣総理大臣に就任。地方創生・安全保障・石破派の党内ポジションで知られる。",
+  "stats": [
+    {"label": "当選", "value": "13期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "鳥取1区"},
+    {"label": "出身", "value": "鳥取県"},
+    {"label": "元職", "value": "第103代内閣総理大臣"}
+  ],
+  "career": [
+    {"period": "1957", "text": "鳥取県生まれ"},
+    {"period": "1979", "text": "慶應義塾大学法学部卒業、三井銀行入行"},
+    {"period": "1986", "text": "第38回衆院選で初当選（鳥取全県区）"},
+    {"period": "2002-2004", "text": "防衛庁長官（小泉内閣）"},
+    {"period": "2007-2008", "text": "防衛大臣（第1次安倍内閣・福田内閣）"},
+    {"period": "2008-2009", "text": "農林水産大臣（麻生内閣）"},
+    {"period": "2012-2014", "text": "自由民主党幹事長"},
+    {"period": "2014-2016", "text": "地方創生担当大臣・国家戦略特区担当大臣"},
+    {"period": "2024-09", "text": "自由民主党第28代総裁に選出"},
+    {"period": "2024-10", "text": "第103代内閣総理大臣に就任"},
+    {"period": "2025-10", "text": "高市早苗が新総裁・新首相となり退任"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "ishiba_sousai2024",
+      "title": "2024年自民党総裁選公約 追跡",
+      "context": "2024年9月 自民党総裁選",
+      "source": "自由民主党 総裁選2024 石破茂候補",
+      "source_url": "https://www.jimin.jp/election/results/sousai24/candidate/ishiba_shigeru.html",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 50,
+      "total": 5,
+      "done": 1,
+      "started": 3,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "アジア版NATO構想・日米同盟の深化",
+          "category": "安全保障",
+          "status": "進行中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/ishiba_shigeru.html"
+        },
+        {
+          "title": "地方創生2.0・東京一極集中の是正",
+          "category": "地方創生",
+          "status": "進行中",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/ishiba_shigeru.html"
+        },
+        {
+          "title": "防災庁の創設",
+          "category": "防災",
+          "status": "実現",
+          "progress_score": 90,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/ishiba_shigeru.html"
+        },
+        {
+          "title": "政治資金の透明化・政治改革",
+          "category": "政治改革",
+          "status": "進行中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/ishiba_shigeru.html"
+        },
+        {
+          "title": "核共有・非核三原則の見直し議論",
+          "category": "核政策",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/candidate/ishiba_shigeru.html"
+        }
+      ]
+    },
+    {
+      "id": "ishiba_pm_track",
+      "title": "石破内閣（第103代）の政策トラック",
+      "context": "2024年10月〜2025年10月 内閣総理大臣在任",
+      "source": "首相官邸 石破内閣",
+      "source_url": "https://www.kantei.go.jp/jp/103_ishiba/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 45,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "防災庁の設置（2025年4月発足）",
+          "category": "防災",
+          "status": "実現",
+          "progress_score": 100,
+          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+        },
+        {
+          "title": "少数与党での政権運営・野党との政策協議",
+          "category": "政権運営",
+          "status": "進行中",
+          "progress_score": 45,
+          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+        },
+        {
+          "title": "物価高・賃上げ対策の実施",
+          "category": "経済",
+          "status": "進行中",
+          "progress_score": 50,
+          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+        },
+        {
+          "title": "地方創生交付金の拡充",
+          "category": "地方創生",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "退任後の動向",
+      "title": "高市体制での党内ポジションと影響力",
+      "desc": "首相退任後も13期の当選回数と安保・地方創生への見識が党内でどう活かされるかを見る。"
+    },
+    {
+      "context": "安全保障",
+      "title": "アジア版NATO構想の現実性",
+      "desc": "首相在任中に提唱したアジア版NATO構想が、高市政権下でどのように継承・変容するかが注目点。"
+    }
+  ],
+  "source_urls": [
+    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100357.html"},
+    {"label": "首相官邸 石破内閣", "url": "https://www.kantei.go.jp/jp/103_ishiba/"}
+  ]
+}

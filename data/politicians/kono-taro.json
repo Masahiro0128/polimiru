@@ -1,0 +1,142 @@
+{
+  "id": "kono-taro",
+  "name": "河野 太郎",
+  "kana": "こうの たろう",
+  "party": "自由民主党",
+  "party_role": "衆議院議員",
+  "area": "神奈川県第15区",
+  "current_status": "衆議院議員（元デジタル大臣・元防衛大臣）",
+  "photo_url": "https://www.jimin.jp/member/img/kouno-tarou.jpg",
+  "photo_credit": "自由民主党",
+  "official_url": "https://www.jimin.jp/member/100322.html",
+  "accent": {"from": "#0e4d92", "to": "#062d57", "color": "#1565c0"},
+  "summary": "神奈川県平塚市出身。ジョージタウン大学卒業。元外務大臣・防衛大臣・行政改革担当大臣・デジタル大臣。ハンコ廃止・規制改革・デジタル改革を積極推進し、SNSでの率直な発信でも知られる。2024年自民党総裁選に出馬。",
+  "stats": [
+    {"label": "当選", "value": "10期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "神奈川15区"},
+    {"label": "出身", "value": "神奈川県"},
+    {"label": "元職", "value": "デジタル大臣・防衛大臣"}
+  ],
+  "career": [
+    {"period": "1963", "text": "神奈川県平塚市生まれ"},
+    {"period": "1988", "text": "ジョージタウン大学卒業"},
+    {"period": "1996", "text": "第41回衆院選で初当選"},
+    {"period": "2015-2016", "text": "国家公安委員会委員長・行政改革担当大臣（第3次安倍内閣）"},
+    {"period": "2017-2019", "text": "外務大臣（第3次・4次安倍内閣）"},
+    {"period": "2019-2020", "text": "防衛大臣（第4次安倍内閣）"},
+    {"period": "2020-2021", "text": "行政改革担当大臣・規制改革担当大臣（菅内閣）"},
+    {"period": "2021-2022", "text": "ワクチン接種推進担当大臣（菅内閣）"},
+    {"period": "2022-2024", "text": "デジタル大臣（第2次・3次岸田内閣）"},
+    {"period": "2024-09", "text": "自民党総裁選に出馬（決選投票で石破茂に敗れる）"},
+    {"period": "現在", "text": "衆議院議員（自民党）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "kono_sousai2024",
+      "title": "2024年自民党総裁選公約 追跡",
+      "context": "2024年9月 自民党総裁選",
+      "source": "自由民主党 総裁選2024 河野太郎候補",
+      "source_url": "https://www.jimin.jp/election/results/sousai24/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 20,
+      "total": 4,
+      "done": 0,
+      "started": 1,
+      "pending": 3,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "エネルギー安全保障・脱炭素の推進",
+          "category": "エネルギー",
+          "status": "進行中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "デジタル社会の加速・マイナンバー活用",
+          "category": "デジタル",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "規制改革・行政スリム化の継続",
+          "category": "行政改革",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "社会保障制度の持続可能性確保",
+          "category": "社会保障",
+          "status": "公約",
+          "progress_score": 10,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        }
+      ]
+    },
+    {
+      "id": "kono_digital_track",
+      "title": "デジタル大臣期の主要実績（2022-2024）",
+      "context": "デジタル大臣在任中の実績",
+      "source": "デジタル庁",
+      "source_url": "https://www.digital.go.jp/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 55,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "マイナンバーカードの普及・健康保険証との一体化",
+          "category": "デジタル・行政",
+          "status": "実現",
+          "progress_score": 80,
+          "evidence_url": "https://www.digital.go.jp/"
+        },
+        {
+          "title": "行政手続きのデジタル化・ハンコ廃止",
+          "category": "行政改革",
+          "status": "進行中",
+          "progress_score": 65,
+          "evidence_url": "https://www.digital.go.jp/"
+        },
+        {
+          "title": "デジタル田園都市国家構想の推進",
+          "category": "地方デジタル",
+          "status": "進行中",
+          "progress_score": 50,
+          "evidence_url": "https://www.digital.go.jp/"
+        },
+        {
+          "title": "マイナポータルの機能拡充",
+          "category": "デジタル",
+          "status": "公約",
+          "progress_score": 45,
+          "evidence_url": "https://www.digital.go.jp/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "デジタル改革",
+      "title": "マイナンバー・行政DXの定着度",
+      "desc": "大臣退任後もデジタル改革の基盤がどれだけ機能し続けるかが、政策の真の評価軸となる。"
+    },
+    {
+      "context": "エネルギー政策",
+      "title": "原発再稼働・再エネ拡大の立場変化",
+      "desc": "かつての脱原発路線から現実路線への転換がどのように評価され、政策に反映されるかを追う。"
+    }
+  ],
+  "source_urls": [
+    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100322.html"},
+    {"label": "デジタル庁", "url": "https://www.digital.go.jp/"}
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "koike-yuriko",
+  "name": "小池 百合子",
+  "kana": "こいけ ゆりこ",
+  "party": "無所属",
+  "party_role": "東京都知事",
+  "area": "東京都",
+  "current_status": "東京都知事（3期目）",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Yuriko_Koike_official_portrait_%28cropped%29.jpg/440px-Yuriko_Koike_official_portrait_%28cropped%29.jpg",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/",
+  "accent": {"from": "#5b21b6", "to": "#3b0764", "color": "#7c3aed"},
+  "summary": "カイロ大学卒業。テレビキャスターを経て政界入り。環境大臣・防衛大臣を歴任後、2016年東京都知事選に出馬し初当選。東京五輪開催・ゼロエミッション東京・子育て支援などを推進し、2020年・2024年と3選を果たした。",
+  "stats": [
+    {"label": "役職", "value": "東京都知事"},
+    {"label": "当選", "value": "3期"},
+    {"label": "出身", "value": "兵庫県芦屋市"},
+    {"label": "学歴", "value": "カイロ大学卒"},
+    {"label": "元職", "value": "防衛大臣・環境大臣"}
+  ],
+  "career": [
+    {"period": "1952", "text": "兵庫県芦屋市生まれ"},
+    {"period": "1976", "text": "カイロ大学文学部社会学科卒業"},
+    {"period": "1976〜", "text": "テレビキャスターとして活動"},
+    {"period": "1992", "text": "参議院議員に初当選（日本新党）"},
+    {"period": "1993", "text": "衆議院議員に転出（細川連立政権に参加）"},
+    {"period": "2003", "text": "環境大臣（第2次小泉内閣）"},
+    {"period": "2007", "text": "防衛大臣（第1次安倍内閣）"},
+    {"period": "2016", "text": "東京都知事選に出馬・当選（初代女性都知事）"},
+    {"period": "2017", "text": "希望の党を設立"},
+    {"period": "2020", "text": "東京都知事2期目当選"},
+    {"period": "2024", "text": "東京都知事3期目当選"},
+    {"period": "現在", "text": "東京都知事（3期目）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "koike_chiji_3rd",
+      "title": "2024年都知事選公約 追跡（3期目）",
+      "context": "2024年東京都知事選挙（2024年7月）",
+      "source": "小池百合子 2024都知事選公約",
+      "source_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 45,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "ゼロエミッション東京の推進（2050年カーボンニュートラル）",
+          "category": "環境・エネルギー",
+          "status": "進行中",
+          "progress_score": 55,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        },
+        {
+          "title": "子育て支援・保育所拡充・0〜18歳の医療費無償化",
+          "category": "子育て",
+          "status": "進行中",
+          "progress_score": 70,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        },
+        {
+          "title": "東京の国際競争力強化・スタートアップ支援",
+          "category": "経済",
+          "status": "進行中",
+          "progress_score": 45,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        },
+        {
+          "title": "防災・首都直下地震対策の強化",
+          "category": "防災",
+          "status": "公約",
+          "progress_score": 35,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        },
+        {
+          "title": "デジタル都庁の推進・行政DX",
+          "category": "行政DX",
+          "status": "公約",
+          "progress_score": 40,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        }
+      ]
+    },
+    {
+      "id": "koike_chiji_track",
+      "title": "都知事1〜2期の主要公約レビュー（2016-2024）",
+      "context": "東京都知事1〜2期在任中の主要実績",
+      "source": "東京都 知事プロフィール・都政成果",
+      "source_url": "https://www.metro.tokyo.lg.jp/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 65,
+      "total": 4,
+      "done": 2,
+      "started": 1,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "東京2020オリンピック・パラリンピックの開催",
+          "category": "大型イベント",
+          "status": "実現",
+          "progress_score": 100,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+        },
+        {
+          "title": "0〜5歳の保育無償化・待機児童解消",
+          "category": "子育て",
+          "status": "実現",
+          "progress_score": 85,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+        },
+        {
+          "title": "東京都の情報公開・都政改革",
+          "category": "行政改革",
+          "status": "進行中",
+          "progress_score": 55,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+        },
+        {
+          "title": "豊洲移転問題の解決",
+          "category": "行政・市場問題",
+          "status": "実現",
+          "progress_score": 80,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "環境・エネルギー",
+      "title": "ゼロエミッション東京の実現可能性",
+      "desc": "2050年カーボンニュートラルに向けたロードマップが3期目でどこまで具体化されるかを追う。"
+    },
+    {
+      "context": "国政との関係",
+      "title": "都知事の立場での国政影響力",
+      "desc": "補助金・都区財政調整・国との協議を通じて、国政にどの程度影響力を発揮できるかが焦点。"
+    },
+    {
+      "context": "子育て・教育",
+      "title": "18歳以下無償化の全都展開",
+      "desc": "0〜18歳医療費無償化・給食費無償化など子育て支援策の進捗と財源の持続性を見る。"
+    }
+  ],
+  "source_urls": [
+    {"label": "東京都知事プロフィール", "url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"},
+    {"label": "東京都公式サイト", "url": "https://www.metro.tokyo.lg.jp/"}
+  ]
+}

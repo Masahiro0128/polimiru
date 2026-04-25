@@ -1,0 +1,92 @@
+{
+  "id": "onoda-kimi",
+  "name": "小野田 紀美",
+  "kana": "おのだ きみ",
+  "party": "自由民主党",
+  "party_role": "参議院議員",
+  "area": "岡山県選挙区",
+  "current_status": "参議院議員（元内閣府大臣政務官）",
+  "photo_url": "https://www.jimin.jp/member/img/onoda-kimi.jpg",
+  "photo_credit": "自由民主党",
+  "official_url": "https://www.jimin.jp/member/101767.html",
+  "accent": {"from": "#9f1239", "to": "#500724", "color": "#be123c"},
+  "summary": "岡山県出身。アメリカ育ち（日米二重国籍問題で注目）。上智大学卒。2016年参院選で岡山選挙区から初当選。内閣府大臣政務官を歴任。保守系の政策スタンスとSNSでの積極的な情報発信で若い世代から支持を集める。",
+  "stats": [
+    {"label": "当選", "value": "2期"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "岡山県"},
+    {"label": "出身", "value": "岡山県"},
+    {"label": "元職", "value": "内閣府大臣政務官"}
+  ],
+  "career": [
+    {"period": "1984", "text": "岡山県生まれ"},
+    {"period": "幼少期〜", "text": "家族の転勤でアメリカ在住（日米二重国籍）"},
+    {"period": "2007", "text": "上智大学外国語学部英語学科卒業"},
+    {"period": "2016", "text": "第24回参院選で岡山県選挙区から初当選"},
+    {"period": "2019-2020", "text": "内閣府大臣政務官（第4次安倍内閣）"},
+    {"period": "2022", "text": "第26回参院選で岡山県選挙区から再選"},
+    {"period": "現在", "text": "参議院議員（自民党）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "onoda_sangiin2022",
+      "title": "2022年参院選公約 追跡",
+      "context": "第26回参議院議員通常選挙（2022年7月）岡山県選挙区",
+      "source": "小野田紀美 参院選2022 公約",
+      "source_url": "https://www.jimin.jp/member/101767.html",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 30,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "日本の文化・伝統・皇室制度の守護",
+          "category": "文化・保守政策",
+          "status": "進行中",
+          "progress_score": 40,
+          "evidence_url": "https://www.jimin.jp/member/101767.html"
+        },
+        {
+          "title": "国防・安全保障の強化（防衛費増額支持）",
+          "category": "安全保障",
+          "status": "進行中",
+          "progress_score": 50,
+          "evidence_url": "https://www.jimin.jp/member/101767.html"
+        },
+        {
+          "title": "岡山の農業・地域産業振興",
+          "category": "農業・地域経済",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.jimin.jp/member/101767.html"
+        },
+        {
+          "title": "子育て支援・少子化対策",
+          "category": "少子化",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://www.jimin.jp/member/101767.html"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "保守系若手",
+      "title": "SNS世代への保守層の浸透",
+      "desc": "X（旧Twitter）での積極的な発信とアメリカ育ちのバックグラウンドを活かし、保守政治を若い世代へどう伝えるかが注目点。"
+    },
+    {
+      "context": "岡山県政",
+      "title": "岡山の地域課題への取り組み",
+      "desc": "農業県・地方都市としての岡山が直面する人口減少・産業振興課題に参院議員としてどう応えるかを追う。"
+    }
+  ],
+  "source_urls": [
+    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/101767.html"}
+  ]
+}

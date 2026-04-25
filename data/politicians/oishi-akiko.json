@@ -1,0 +1,90 @@
+{
+  "id": "oishi-akiko",
+  "name": "大石 あきこ",
+  "kana": "おおいし あきこ",
+  "party": "れいわ新選組",
+  "party_role": "共同代表",
+  "area": "衆議院比例近畿",
+  "current_status": "衆議院議員・れいわ新選組共同代表",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Akiko_Oishi_%28cropped%29.jpg/440px-Akiko_Oishi_%28cropped%29.jpg",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://reiwa-shinsengumi.com/member/oishi-akiko/",
+  "accent": {"from": "#b91c1c", "to": "#7f1d1d", "color": "#dc2626"},
+  "summary": "大阪府職員出身。2021年衆院選で比例近畿ブロックから初当選し、れいわ新選組共同代表に就任。消費税廃止・ジェンダー平等・大阪維新への対抗軸として活動し、歯に衣着せぬ発言とSNSでの発信力で注目を集める。",
+  "stats": [
+    {"label": "党役職", "value": "共同代表"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "比例近畿"},
+    {"label": "出身", "value": "大阪府"},
+    {"label": "元職", "value": "大阪府職員"}
+  ],
+  "career": [
+    {"period": "1979", "text": "大阪府生まれ"},
+    {"period": "大学卒業後", "text": "大阪府庁に入庁、行政職として勤務"},
+    {"period": "2021", "text": "第49回衆院選で比例近畿から初当選"},
+    {"period": "2022", "text": "れいわ新選組共同代表に就任"},
+    {"period": "現在", "text": "れいわ新選組共同代表・衆議院議員"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "reiwa_shugiin2021_oishi",
+      "title": "2021年衆院選 れいわ公約 追跡",
+      "context": "第49回衆議院議員総選挙（2021年10月）",
+      "source": "れいwa新選組 2021衆院選政策",
+      "source_url": "https://reiwa-shinsengumi.com/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 12,
+      "total": 4,
+      "done": 0,
+      "started": 1,
+      "pending": 3,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "消費税廃止",
+          "category": "税制",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "選択的夫婦別姓・同性婚の実現",
+          "category": "ジェンダー・家族制度",
+          "status": "進行中",
+          "progress_score": 30,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "大阪都構想・維新政治への対抗",
+          "category": "地方政治",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        },
+        {
+          "title": "気候危機対策・グリーン雇用",
+          "category": "環境",
+          "status": "公約",
+          "progress_score": 0,
+          "evidence_url": "https://reiwa-shinsengumi.com/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "大阪・維新対抗",
+      "title": "近畿での議席拡大と維新への対抗軸",
+      "desc": "維新の牙城である近畿でれいわがどこまで勢力を伸ばせるかが、党勢を測る重要指標となる。"
+    },
+    {
+      "context": "ジェンダー政策",
+      "title": "選択的夫婦別姓・同性婚の立法化",
+      "desc": "野党内の推進役として法案化・連携をどこまで進められるかを追う。"
+    }
+  ],
+  "source_urls": [
+    {"label": "れいわ新選組 大石あきこ", "url": "https://reiwa-shinsengumi.com/member/oishi-akiko/"}
+  ]
+}

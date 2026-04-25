@@ -1,0 +1,139 @@
+{
+  "id": "saito-motohiko",
+  "name": "斎藤 元彦",
+  "kana": "さいとう もとひこ",
+  "party": "無所属",
+  "party_role": "兵庫県知事",
+  "area": "兵庫県",
+  "current_status": "兵庫県知事（2期目）",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Motohiko_Saito_%28cropped%2C_2%29.jpg/440px-Motohiko_Saito_%28cropped%2C_2%29.jpg",
+  "photo_credit": "Wikimedia Commons",
+  "official_url": "https://web.pref.hyogo.lg.jp/governor/",
+  "accent": {"from": "#065f46", "to": "#022c22", "color": "#059669"},
+  "summary": "神戸市出身。東京大学経済学部卒業後、総務省入省。2021年兵庫県知事選に自民・維新推薦で出馬し初当選。2024年に元部下による内部告発問題・パワハラ疑惑が浮上し、県議会で不信任決議を受けて失職。しかし同年の出直し知事選で再選を果たし、2期目を継続中。",
+  "stats": [
+    {"label": "役職", "value": "兵庫県知事"},
+    {"label": "当選", "value": "2期"},
+    {"label": "出身", "value": "兵庫県神戸市"},
+    {"label": "学歴", "value": "東京大学経済学部"},
+    {"label": "元職", "value": "総務省官僚"}
+  ],
+  "career": [
+    {"period": "1977", "text": "神戸市生まれ"},
+    {"period": "2000", "text": "東京大学経済学部卒業、総務省入省"},
+    {"period": "2000-2021", "text": "総務省にて地方財政・行政担当、大阪府・岡山県への出向も経験"},
+    {"period": "2021", "text": "兵庫県知事選に出馬・初当選（自民・維新推薦）"},
+    {"period": "2024-07", "text": "元局長による内部告発問題・パワハラ疑惑が表面化"},
+    {"period": "2024-09", "text": "兵庫県議会による不信任決議を受けて失職"},
+    {"period": "2024-11", "text": "出直し知事選で再選・2期目開始"},
+    {"period": "現在", "text": "兵庫県知事（2期目）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "saito_hyogo2021",
+      "title": "2021年兵庫県知事選公約 追跡（1期目）",
+      "context": "2021年兵庫県知事選挙",
+      "source": "斎藤元彦 兵庫県知事選2021 公約",
+      "source_url": "https://web.pref.hyogo.lg.jp/governor/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "historical_review",
+      "score": 40,
+      "total": 4,
+      "done": 1,
+      "started": 2,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "行財政改革・県庁のスリム化",
+          "category": "行政改革",
+          "status": "実現",
+          "progress_score": 70,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        },
+        {
+          "title": "産業・スタートアップ振興（神戸医療産業都市など）",
+          "category": "経済・産業",
+          "status": "進行中",
+          "progress_score": 50,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        },
+        {
+          "title": "播磨・阪神・但馬など県内各地域の活性化",
+          "category": "地域振興",
+          "status": "進行中",
+          "progress_score": 40,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        },
+        {
+          "title": "県立大学・高校の教育改革",
+          "category": "教育",
+          "status": "公約",
+          "progress_score": 30,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        }
+      ]
+    },
+    {
+      "id": "saito_hyogo2024",
+      "title": "2024年出直し知事選公約 追跡（2期目）",
+      "context": "2024年11月 出直し兵庫県知事選挙",
+      "source": "兵庫県知事 斎藤元彦",
+      "source_url": "https://web.pref.hyogo.lg.jp/governor/",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 20,
+      "total": 4,
+      "done": 0,
+      "started": 1,
+      "pending": 3,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "内部告発・公益通報制度の整備と職場環境改善",
+          "category": "ガバナンス",
+          "status": "進行中",
+          "progress_score": 35,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        },
+        {
+          "title": "県民との対話強化・透明な県政運営",
+          "category": "県政改革",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        },
+        {
+          "title": "経済再生・播磨臨海地域道路の整備推進",
+          "category": "経済・インフラ",
+          "status": "公約",
+          "progress_score": 15,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        },
+        {
+          "title": "子育て支援・人口減少対策",
+          "category": "少子化",
+          "status": "公約",
+          "progress_score": 10,
+          "evidence_url": "https://web.pref.hyogo.lg.jp/governor/"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "ガバナンス",
+      "title": "内部告発問題後の県政ガバナンス再構築",
+      "desc": "パワハラ疑惑・不信任・再選という異例の経緯の後、県庁組織の信頼回復と透明性確保がどう進むかが注目点。"
+    },
+    {
+      "context": "出直し選挙の意味",
+      "title": "SNS世論と民意の乖離をどう読むか",
+      "desc": "既存メディアと反比例してSNSで支持を集めた再選劇は、地方政治における新たな民意形成の事例として研究価値がある。"
+    }
+  ],
+  "source_urls": [
+    {"label": "兵庫県知事室", "url": "https://web.pref.hyogo.lg.jp/governor/"},
+    {"label": "兵庫県公式サイト", "url": "https://web.pref.hyogo.lg.jp/"}
+  ]
+}
