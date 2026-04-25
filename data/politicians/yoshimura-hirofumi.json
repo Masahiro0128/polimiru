@@ -3,8 +3,18 @@
   "name": "吉村 洋文",
   "kana": "よしむら ひろふみ",
   "party": "大阪維新の会",
+  "party_role": "大阪府知事",
   "area": "大阪府",
-  "current_status": "大阪府知事",
+  "current_status": "大阪府知事（2期目）",
+  "accent": {"from": "#154a2a", "to": "#0a2c18", "color": "#15803d"},
+  "summary": "大阪府出身。九州大学法学部卒業後、弁護士を経て2011年大阪市議会議員。2014年衆議院議員。2015年大阪市長就任後、2019年府知事へ転身。大阪・関西万博開催、高校授業料無償化、大阪公立大学無償化などを実現。維新政治の象徴的存在として全国的知名度を持つ。",
+  "stats": [
+    {"label": "役職", "value": "大阪府知事"},
+    {"label": "当選", "value": "2期"},
+    {"label": "出身", "value": "大阪府"},
+    {"label": "学歴", "value": "九州大学法学部"},
+    {"label": "元職", "value": "弁護士・大阪市長"}
+  ],
   "photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%9F%A5%E4%BA%8B_%E5%90%89%E6%9D%91%E6%B4%8B%E6%96%87_%28cropped%29.jpg",
   "photo_credit": "Wikimedia Commons",
   "official_url": "https://www.pref.osaka.lg.jp/o020020/hisho/tijiprofile/index.html",
@@ -94,6 +104,23 @@
           "evidence_url": ""
         }
       ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "2027年府知事選",
+      "title": "3選出馬と公約達成度の評価",
+      "desc": "2期8年の実績を踏まえ、2027年府知事選で有権者がどう評価するかが維新府政の信任投票となる。"
+    },
+    {
+      "context": "万博・IR後の経済政策",
+      "title": "大阪・関西万博後の経済波及効果",
+      "desc": "万博閉幕後のIR誘致・副首都構想が具体的な経済効果につながるかが、次期公約の核心的争点となる。"
+    },
+    {
+      "context": "教育・福祉",
+      "title": "高校・大学無償化の持続可能性",
+      "desc": "財源を伴う無償化政策の継続性と、他府県への波及・国政への影響を引き続き注視する。"
     }
   ],
   "source_urls": [
