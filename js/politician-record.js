@@ -63,14 +63,28 @@
 
     function statusLabel(status) {
         const labels = {
-            achieved: '完了',
-            started: '着手',
-            partial: '一部実現',
-            pending: '未着手',
-            unknown: '不明',
-            initial_review: '初期レビュー'
+            achieved: '実現', done: '実現', '実施': '実現', '完了': '実現', '実現': '実現',
+            started: '進行中', partial: '進行中', tracking: '進行中',
+            '追跡中': '進行中', '進行': '進行中', '進行中': '進行中',
+            '法案提出': '進行中', '法案準備': '進行中', '担当': '進行中',
+            '論点化': '進行中', '公約化': '進行中', '着手': '進行中',
+            '継続': '進行中', '見直し': '進行中', '要検証': '進行中', '実施中': '進行中',
+            pending: '公約', '公約': '公約',
+            reversed: '撤回', '後退': '撤回', '撤回': '撤回',
+            historical_review: '確認済', initial_review: '初期確認', unknown: '確認中',
         };
         return labels[status] || status || '確認中';
+    }
+
+    function statusClass(status) {
+        const achieved = ['achieved', 'done', '実施', '完了', '実現', 'historical_review', '確認済'];
+        const inprogress = ['started', 'partial', 'tracking', '追跡中', '進行', '進行中',
+            '法案提出', '法案準備', '担当', '論点化', '公約化', '着手', '継続', '見直し', '要検証', '実施中'];
+        const reversed = ['reversed', '後退', '撤回'];
+        if (achieved.some(k => status === k || statusLabel(status) === '実現')) return 'status-achieved';
+        if (reversed.some(k => status === k)) return 'status-reversed';
+        if (inprogress.some(k => status === k || statusLabel(status) === '進行中')) return 'status-started';
+        return 'status-pending';
     }
 
     function renderPromiseCycles(cycles) {
@@ -82,7 +96,9 @@
                     <span>promise tracking</span>
                 </div>
                 <div class="cycle-grid">
-                    ${cycles.map(cycle => `
+                    ${cycles.map(cycle => {
+                        const highlights = cycle.highlights || [];
+                        return `
                         <article class="cycle-card">
                             <div class="cycle-head">
                                 <div>
@@ -97,19 +113,32 @@
                                 <span class="pending" style="width:${Number(cycle.pending || 0) / Number(cycle.total || 1) * 100}%"></span>
                             </div>
                             <div class="cycle-legend">
-                                <span>完了 ${escapeHtml(cycle.done || 0)}</span>
-                                <span>着手 ${escapeHtml(cycle.started || 0)}</span>
-                                <span>未着手 ${escapeHtml(cycle.pending || 0)}</span>
-                                <span>計 ${escapeHtml(cycle.total || 0)}</span>
+                                <span class="legend-done">● 実現 ${escapeHtml(cycle.done || 0)}</span>
+                                <span class="legend-started">● 進行中 ${escapeHtml(cycle.started || 0)}</span>
+                                <span class="legend-pending">● 公約 ${escapeHtml(cycle.pending || 0)}</span>
+                                <span class="legend-total">計 ${escapeHtml(cycle.total || 0)}</span>
                             </div>
-                            ${(cycle.highlights || []).slice(0, 4).map(item => `
-                                <a class="cycle-highlight" href="${escapeHtml(item.evidence_url || cycle.source_url || '#')}" target="_blank" rel="noopener">
-                                    <span class="cycle-status">${escapeHtml(statusLabel(item.status))}</span>
-                                    <span>${escapeHtml(item.title)}</span>
-                                </a>
-                            `).join('')}
+                            ${highlights.length > 0 ? `
+                                <details class="cycle-details">
+                                    <summary class="cycle-details-summary">
+                                        <i class="fa-solid fa-chevron-right cycle-details-icon"></i>
+                                        公約の内訳を見る
+                                        <span class="cycle-details-count">${highlights.length}件</span>
+                                    </summary>
+                                    <div class="cycle-details-body">
+                                        ${highlights.map(item => `
+                                            <a class="cycle-highlight" href="${escapeHtml(item.evidence_url || cycle.source_url || '#')}" target="_blank" rel="noopener">
+                                                <span class="cycle-status ${statusClass(item.status)}">${escapeHtml(statusLabel(item.status))}</span>
+                                                <span class="cycle-highlight-title">${escapeHtml(item.title)}</span>
+                                                <i class="fa-solid fa-arrow-up-right-from-square cycle-highlight-icon"></i>
+                                            </a>
+                                        `).join('')}
+                                    </div>
+                                </details>
+                            ` : ''}
                         </article>
-                    `).join('')}
+                        `;
+                    }).join('')}
                 </div>
             </section>
         `;

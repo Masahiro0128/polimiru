@@ -204,7 +204,59 @@
             ※このスコアは、公開情報をもとにした推計値であり、候補者の活動の全てを完全に反映するものではありません。
         </p>
 
-        <h3>2-1. 実績トラッキング <span class="badge badge-incumbent">現職のみ</span></h3>
+        <h3>2-1. 公約ステータスの定義</h3>
+        <p>
+            各公約の進捗は、<strong>4つのステータス</strong>で管理されます。
+            ステータスの変更は必ず<strong>信頼できるメディア記事・公的文書へのリンク</strong>とともに行います。
+        </p>
+
+        <div style="overflow-x:auto; margin: 20px 0;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+                <thead>
+                    <tr style="background:#f4f6fb; text-align:left;">
+                        <th style="padding:10px 14px; border:1px solid #e2e8f0;">ステータス</th>
+                        <th style="padding:10px 14px; border:1px solid #e2e8f0;">スコア換算</th>
+                        <th style="padding:10px 14px; border:1px solid #e2e8f0;">定義・更新条件</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;"><span style="background:#dcfce7;color:#15803d;font-weight:700;padding:2px 8px;border-radius:99px;font-size:0.8rem;">実現</span></td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0; font-weight:700; color:#15803d;">100点</td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;">公約した内容が実施・成立したと、信頼できるメディアまたは公的文書で確認できる</td>
+                    </tr>
+                    <tr style="background:#fafafa;">
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;"><span style="background:#fef9c3;color:#a16207;font-weight:700;padding:2px 8px;border-radius:99px;font-size:0.8rem;">進行中</span></td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0; font-weight:700; color:#a16207;">40点</td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;">法案提出・閣議決定・党内決定・予算計上など、具体的な動きが記事1本以上で確認できる</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;"><span style="background:#f1f5f9;color:#64748b;font-weight:700;padding:2px 8px;border-radius:99px;font-size:0.8rem;">公約</span></td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0; font-weight:700; color:#64748b;">0点</td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;">選挙公約・マニフェスト等で宣言されているが、具体的な動きを確認できない（初期値）</td>
+                    </tr>
+                    <tr style="background:#fafafa;">
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;"><span style="background:#fee2e2;color:#dc2626;font-weight:700;padding:2px 8px;border-radius:99px;font-size:0.8rem;">撤回・後退</span></td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0; font-weight:700; color:#dc2626;">0点</td>
+                        <td style="padding:10px 14px; border:1px solid #e2e8f0;">断念・方針転換・骨抜きが報じられた。一度「実現」になった後に撤回された場合も適用</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>2-2. サイクルスコアの計算式</h3>
+        <p>
+            各政治家のページには、文脈ごと（選挙公約・大臣在任期・党代表期など）に
+            <strong>「公約サイクル」</strong>という単位でまとめた追跡結果が表示されます。<br>
+            サイクルスコアは、そのサイクル内の全公約のステータス換算点の<strong>単純平均</strong>です。
+        </p>
+        <div class="formula-box">
+            <strong>サイクルスコア計算式</strong><br>
+            <code>スコア = (実現件数 × 100 + 進行中件数 × 40 + 公約件数 × 0) ÷ 全件数</code><br>
+            <small>例：全5件のうち「実現1件・進行中2件・公約2件」→ (100 + 40 + 40 + 0 + 0) ÷ 5 = <strong>36点</strong></small>
+        </div>
+
+        <h3>2-3. 実績トラッキング <span class="badge badge-incumbent">現職のみ</span></h3>
         <p>
             「やりたい」という願望ではなく、「取り組んだ」という事実を重視します。<br>
             前回の選挙で掲げたマニフェスト項目をリスト化し、議会議事録や行政報告書から進捗状況を追跡します。

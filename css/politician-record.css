@@ -279,11 +279,48 @@ body { background: #f5f2ec; }
 .cycle-legend {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    color: #718096;
-    font-size: 0.74rem;
-    font-weight: 800;
-    margin-bottom: 12px;
+    gap: 10px;
+    font-size: 0.73rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.legend-done    { color: #16a34a; }
+.legend-started { color: #d97706; }
+.legend-pending { color: #94a3b8; }
+.legend-total   { color: #94a3b8; margin-left: auto; }
+
+/* ── 公約内訳トグル ─────────────────────── */
+.cycle-details {
+    margin-top: 12px;
+    border-top: 1px solid rgba(15, 31, 61, 0.07);
+}
+.cycle-details-summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--party-accent);
+    list-style: none;
+    user-select: none;
+}
+.cycle-details-summary::-webkit-details-marker { display: none; }
+.cycle-details-icon {
+    font-size: 0.65rem;
+    transition: transform 0.2s;
+}
+details[open] .cycle-details-icon { transform: rotate(90deg); }
+.cycle-details-count {
+    margin-left: auto;
+    font-size: 0.72rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+.cycle-details-body {
+    display: flex;
+    flex-direction: column;
 }
 .cycle-highlight {
     display: flex;
@@ -291,18 +328,30 @@ body { background: #f5f2ec; }
     gap: 8px;
     color: #23324d;
     text-decoration: none;
-    font-size: 0.83rem;
+    font-size: 0.82rem;
     line-height: 1.55;
-    padding: 8px 0;
-    border-top: 1px solid rgba(15, 31, 61, 0.07);
+    padding: 9px 0;
+    border-top: 1px solid rgba(15, 31, 61, 0.06);
 }
-.cycle-highlight:hover { color: var(--party-accent); }
+.cycle-highlight:hover .cycle-highlight-title { color: var(--party-accent); }
+.cycle-highlight-title { flex: 1; }
+.cycle-highlight-icon {
+    font-size: 0.65rem;
+    color: #cbd5e1;
+    flex-shrink: 0;
+    margin-bottom: 1px;
+}
 .cycle-status {
     flex-shrink: 0;
-    color: var(--party-accent);
-    font-weight: 900;
-    font-size: 0.72rem;
+    font-weight: 800;
+    font-size: 0.7rem;
+    padding: 2px 7px;
+    border-radius: 99px;
 }
+.status-achieved { background: #dcfce7; color: #15803d; }
+.status-started  { background: #fef9c3; color: #a16207; }
+.status-pending  { background: #f1f5f9; color: #64748b; }
+.status-reversed { background: #fee2e2; color: #dc2626; }
 .source-list {
     display: flex;
     flex-wrap: wrap;
