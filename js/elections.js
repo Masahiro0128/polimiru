@@ -3,6 +3,18 @@
 // 選挙を追加・変更するには data/elections.yaml を編集してください。
 const elections = [
     {
+        "id": 30,
+        "title": "新潟県知事選挙 2026",
+        "category": "local",
+        "date": "2026年6月（予定）",
+        "prefecture": "新潟県",
+        "desc": "現職・花角英世が3選を目指す。柏崎刈羽原発の再稼働判断・人口減少対策が最大の争点。",
+        "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=600&q=80",
+        "url": "elections/niigata/2026_governor/index.html",
+        "badgeType": "local",
+        "status": "2026年 注目"
+    },
+    {
         "id": 20,
         "title": "大阪府知事選挙 2027",
         "category": "local",

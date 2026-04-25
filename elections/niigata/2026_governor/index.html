@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimiru | 新潟県知事選挙 2026</title>
+    <meta property="og:title" content="polimiru | 新潟県知事選挙 2026">
+    <meta property="og:description" content="柏崎刈羽原発の再稼働判断・人口減少対策が争点。現職・花角英世の公約達成度と候補者情報を追跡。">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header-footer.css">
+    <link rel="stylesheet" href="../../../css/elections.css">
+    <link rel="stylesheet" href="../../../css/modal.css">
+    <link rel="stylesheet" href="../../../css/candidate-modal.css">
+
+    <style>
+        body { background: #f5f2ec; }
+
+        .election-hero {
+            background: linear-gradient(135deg, #0b3d20, #1a6e3c);
+            color: #fff;
+            padding: 40px 20px 32px;
+        }
+        .election-hero-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .election-hero h1 {
+            margin: 0 0 8px;
+            font-size: 1.7em;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+        .election-hero p {
+            margin: 0 0 16px;
+            opacity: 0.88;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+        .election-hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.82em;
+            opacity: 0.85;
+        }
+        .election-hero-meta span {
+            background: rgba(255,255,255,0.15);
+            padding: 3px 10px;
+            border-radius: 999px;
+        }
+
+        .issue-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .issue-tag {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: rgba(255,255,255,0.95);
+            font-size: 0.78em;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+
+        .page-body {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 28px 16px 60px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+        .back-link:hover { color: #333; }
+
+        .section-head {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            border-left: 4px solid #1a6e3c;
+            padding-left: 12px;
+        }
+        .section-head h2 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #1a2e45;
+        }
+        .section-head .count {
+            font-size: 0.82em;
+            color: #999;
+        }
+
+        #loading-msg {
+            padding: 40px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        .context-panel {
+            background: #fff;
+            border: 1px solid rgba(15,31,61,0.09);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 16px rgba(15,31,61,0.06);
+        }
+        .context-panel h3 {
+            margin: 0 0 10px;
+            font-size: 0.92em;
+            color: #0f1f3d;
+            font-weight: 800;
+        }
+        .context-panel p {
+            margin: 0 0 8px;
+            font-size: 0.85em;
+            color: #445566;
+            line-height: 1.75;
+        }
+        .context-panel p:last-child { margin: 0; }
+        .context-issues {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .context-issue {
+            background: #f0faf4;
+            border: 1px solid #bbddc9;
+            color: #166534;
+            font-size: 0.78em;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="election-hero">
+        <div class="election-hero-inner">
+            <h1>新潟県知事選挙 2026</h1>
+            <p>現職・花角英世の2期の実績を検証し、3選出馬の可能性と争点を整理。<br>候補者情報は確定次第順次追加されます。</p>
+            <div class="election-hero-meta">
+                <span><i class="fa-regular fa-calendar"></i> 2026年6月（予定）</span>
+                <span><i class="fa-solid fa-location-dot"></i> 新潟県</span>
+                <span id="last-updated-chip"><i class="fa-regular fa-clock"></i> 取得中...</span>
+            </div>
+            <div class="issue-tags">
+                <span class="issue-tag">柏崎刈羽原発</span>
+                <span class="issue-tag">人口減少対策</span>
+                <span class="issue-tag">農業振興</span>
+                <span class="issue-tag">北陸新幹線延伸</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-body">
+        <a href="../../../index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> トップへ戻る
+        </a>
+
+        <div class="context-panel">
+            <h3>この選挙の背景と主な争点</h3>
+            <p>花角英世知事は2018年初当選、2022年2期目当選。2026年6月の任期満了に伴い、3選出馬が焦点となる。</p>
+            <p>最大の争点は<strong>柏崎刈羽原発（東京電力）の再稼働判断</strong>。花角知事は「地域の理解なき再稼働は行わない」姿勢を貫いてきたが、国のエネルギー政策との間で判断が問われる局面が続いている。</p>
+            <p>また全国有数の人口減少県として、若者流出の歯止めと移住定住促進も重要な評価軸となる。</p>
+            <div class="context-issues">
+                <span class="context-issue"><i class="fa-solid fa-bolt"></i> 原発再稼働の可否</span>
+                <span class="context-issue"><i class="fa-solid fa-people-arrows"></i> 人口減少・移住促進</span>
+                <span class="context-issue"><i class="fa-solid fa-seedling"></i> 農業・食の王国にいがた</span>
+                <span class="context-issue"><i class="fa-solid fa-train"></i> 北陸新幹線・交通網</span>
+            </div>
+        </div>
+
+        <div id="upcoming-banner" class="upcoming-banner" style="display:none">
+            <span class="upcoming-banner-icon">📋</span>
+            <div>
+                <strong>候補者情報は選挙公示後に更新されます。</strong><br>
+                現時点では現職情報のみ掲載しています。立候補が確定した候補者から順次追加されます。
+            </div>
+        </div>
+
+        <div class="section-head">
+            <h2>候補者一覧</h2>
+            <span class="count" id="candidate-count"></span>
+        </div>
+
+        <div id="loading-msg">候補者データを読み込み中...</div>
+        <div class="candidate-grid" id="candidate-grid"></div>
+    </div>
+
+    <script src="../../../js/layout.js?v=999"></script>
+    <script src="../../../js/candidate-modal.js"></script>
+    <script>
+        const ELECTION_KEY = 'niigata_2026_governor';
+
+        function partyHeaderClass(party) {
+            if (!party) return '';
+            if (party.includes('自由民主') || party.includes('自民')) return 'party-jimin';
+            if (party.includes('公明')) return 'party-komei';
+            if (party.includes('立憲')) return 'party-rikken';
+            if (party.includes('共産')) return 'party-kyosan';
+            return 'party-other';
+        }
+
+        function renderScoreSummary(c) {
+            if (c.role === 'incumbent') {
+                const v = c.score_incumbent;
+                return `
+                    <div class="cand-card-score-area">
+                        <span class="cand-card-score-label">現職評価（公約追跡スコア）</span>
+                        ${v !== null && v !== undefined
+                            ? `<span class="cand-card-score-value">${v}<small style="font-size:0.55em;color:#999"> /100</small></span>`
+                            : '<span class="cand-card-score-pending">集計中</span>'}
+                    </div>`;
+            }
+            if (c.role === 'challenger') {
+                const v = c.score_challenger;
+                return `
+                    <div class="cand-card-score-area">
+                        <span class="cand-card-score-label">新人評価（公約具体性）</span>
+                        ${v !== null && v !== undefined
+                            ? `<span class="cand-card-score-value type-challenger">${v}<small style="font-size:0.55em;color:#999"> /100</small></span>`
+                            : '<span class="cand-card-score-pending">公約情報収集中</span>'}
+                    </div>`;
+            }
+            return `<div class="cand-card-score-area"><span class="cand-card-score-pending">情報準備中</span></div>`;
+        }
+
+        function renderCard(c) {
+            const photo = c.image
+                ? `<img src="${c.image}" class="cand-card-photo" alt="${c.name}" onerror="this.style.display='none'">`
+                : `<div class="cand-card-photo-placeholder">👤</div>`;
+
+            const roleBadge = c.role === 'incumbent'
+                ? '<span class="cand-badge cand-badge-incumbent">現職</span>'
+                : c.role === 'challenger'
+                    ? '<span class="cand-badge cand-badge-challenger">新人</span>'
+                    : '';
+
+            const unconfirmed = !c.confirmed
+                ? '<span class="cand-badge cand-badge-unconfirmed">出馬未確定</span>'
+                : '';
+
+            const cardTag = c.profile_url ? 'a' : 'div';
+            const cardAttrs = c.profile_url
+                ? `href="${c.profile_url}"`
+                : `data-election="${ELECTION_KEY}" data-candidate-id="${c.id}" role="button" tabindex="0"`;
+
+            return `
+                <${cardTag} class="cand-card" ${cardAttrs} style="text-decoration:none;color:inherit">
+                    <div class="cand-card-header ${partyHeaderClass(c.party)}">
+                        ${photo}
+                    </div>
+                    <div class="cand-card-body">
+                        <div class="cand-card-name">${c.name}</div>
+                        <div class="cand-card-party">${c.party || ''}</div>
+                        <div class="cand-card-badges">${roleBadge}${unconfirmed}</div>
+                        ${renderScoreSummary(c)}
+                        <div class="cand-card-detail-hint">詳細を見る <i class="fa-solid fa-arrow-right" style="font-size:0.8em"></i></div>
+                    </div>
+                </${cardTag}>`;
+        }
+
+        function getDataBase() {
+            const path = window.location.pathname;
+            const dir  = path.replace(/\/[^\/]*$/, '/');
+            if (dir.includes('/polimiru/')) {
+                const subdir = dir.replace(/^.*\/polimiru\//, '');
+                const depth  = subdir.split('/').filter(Boolean).length;
+                return '../'.repeat(depth) || './';
+            }
+            const parts = dir.split('/').filter(Boolean);
+            return parts.length === 0 ? './' : '../'.repeat(parts.length);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const base = getDataBase();
+            fetch(`${base}js/data/${ELECTION_KEY}/index.json`)
+                .then(r => r.json())
+                .then(data => {
+                    const grid   = document.getElementById('candidate-grid');
+                    const msg    = document.getElementById('loading-msg');
+                    const count  = document.getElementById('candidate-count');
+                    const chip   = document.getElementById('last-updated-chip');
+                    const banner = document.getElementById('upcoming-banner');
+
+                    msg.style.display = 'none';
+
+                    const candidates = data.candidates || [];
+                    count.textContent = `${candidates.length}名`;
+
+                    if (data.meta?.status === 'upcoming') {
+                        banner.style.display = 'flex';
+                    }
+
+                    if (data.meta?.last_updated) {
+                        const d = new Date(data.meta.last_updated);
+                        chip.innerHTML = `<i class="fa-regular fa-clock"></i> 更新: ${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+                    }
+
+                    grid.innerHTML = candidates.map(renderCard).join('');
+
+                    grid.querySelectorAll('.cand-card').forEach(el => {
+                        el.addEventListener('keydown', e => {
+                            if (e.key === 'Enter' || e.key === ' ') el.click();
+                        });
+                    });
+                })
+                .catch(() => {
+                    document.getElementById('loading-msg').textContent = 'データを取得できませんでした。';
+                });
+        });
+    </script>
+
+</body>
+</html>

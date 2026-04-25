@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "election": "新潟県知事選挙 2026",
+    "election_day": "2026年6月（予定）",
+    "status": "upcoming",
+    "source_note": "新潟県選挙管理委員会",
+    "last_updated": "2026-04-25T00:00:00Z"
+  },
+  "candidates": [
+    {
+      "id": "hanakado",
+      "person_id": "hanakado-hideyo",
+      "profile_url": "../../../politicians/hanakado-hideyo/index.html",
+      "name": "花角 英世",
+      "kana": "はなかど ひでよ",
+      "party": "無所属（自民・公明推薦）",
+      "role": "incumbent",
+      "age": 68,
+      "image": "https://www.pref.niigata.lg.jp/site/chiji/img/chiji_photo.jpg",
+      "result": null,
+      "score_incumbent": 42,
+      "score_status": "2022年公約の追跡スコア（2026-04-25時点）",
+      "confirmed": false,
+      "note": "現職知事として3選を目指すとみられる。柏崎刈羽原発の再稼働対応・人口減少対策が争点の中心。"
+    }
+  ]
+}

@@ -403,6 +403,19 @@ const politicians = [
         baseLikes: 2900,
         tags: ["小野田紀美", "おのだきみ", "小野田", "自民党", "参議院", "岡山", "日米ハーフ", "外交安保", "SNS"],
         desc: "米国生まれの日米ハーフ。岡山県選出の参議院議員として外交・安全保障・拉致問題に取り組む。SNSでの発信力と国際感覚で注目される。"
+    },
+    {
+        id: "hanakado-hideyo",
+        name: "花角 英世",
+        kana: "はなかど ひでよ",
+        party: "無所属（自民・公明推薦）",
+        role: "新潟県知事",
+        area: "新潟県",
+        photo: "https://www.pref.niigata.lg.jp/site/chiji/img/chiji_photo.jpg",
+        url: "politicians/hanakado-hideyo/index.html",
+        baseLikes: 2100,
+        tags: ["花角英世", "はなかどひでよ", "花角", "新潟県知事", "新潟", "知事", "原発", "柏崎刈羽", "人口減少", "農業"],
+        desc: "元国土交通省官僚。2018年新潟県知事初当選、2022年2期目。柏崎刈羽原発の再稼働判断・人口減少対策を主な政策課題とし、2026年知事選が注目される。"
     }
 ];
 
