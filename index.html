@@ -238,6 +238,8 @@
                 const href = isDeadLink ? '' : `href="${election.url}"`;
                 const style = isDeadLink ? 'cursor:default;opacity:0.6' : '';
 
+                const bm = window.pBookmarks;
+                const elecSaved = bm ? bm.isBookmarked(String(election.id), 'election') : false;
                 grid.insertAdjacentHTML('beforeend', `
                     <${tag} ${href} class="election-card" style="${style}">
                         <div class="card-thumb" style="background-image:url('${imageUrl}')">
@@ -251,11 +253,18 @@
                                 ${election.date}
                             </div>
                             <div class="election-desc">${election.desc}</div>
-                            ${!isDeadLink ? `
-                            <div class="card-footer-hint">
-                                詳細を見る
-                                <i class="fa-solid fa-arrow-right" style="font-size:0.75em"></i>
-                            </div>` : ''}
+                            <div class="card-footer-row">
+                                ${!isDeadLink ? `
+                                <div class="card-footer-hint">
+                                    詳細を見る
+                                    <i class="fa-solid fa-arrow-right" style="font-size:0.75em"></i>
+                                </div>` : '<div></div>'}
+                                <button class="elec-card-bookmark${elecSaved ? ' bookmarked' : ''}"
+                                        aria-label="${elecSaved ? '保存済み' : '保存する'}"
+                                        onclick="event.preventDefault();event.stopPropagation();toggleElectionBookmark(this,'${election.id}')">
+                                    <i class="fa-${elecSaved ? 'solid' : 'regular'} fa-bookmark"></i>
+                                </button>
+                            </div>
                         </div>
                     </${tag}>
                 `);
@@ -315,6 +324,14 @@
         function toggleFeaturedBookmark(btn, id) {
             if (!window.pBookmarks) return;
             const nowSaved = pBookmarks.toggle(id);
+            btn.classList.toggle('bookmarked', nowSaved);
+            btn.querySelector('i').className = `fa-${nowSaved ? 'solid' : 'regular'} fa-bookmark`;
+            btn.setAttribute('aria-label', nowSaved ? '保存済み' : '保存する');
+        }
+
+        function toggleElectionBookmark(btn, id) {
+            if (!window.pBookmarks) return;
+            const nowSaved = pBookmarks.toggle(String(id), 'election');
             btn.classList.toggle('bookmarked', nowSaved);
             btn.querySelector('i').className = `fa-${nowSaved ? 'solid' : 'regular'} fa-bookmark`;
             btn.setAttribute('aria-label', nowSaved ? '保存済み' : '保存する');

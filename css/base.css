@@ -116,3 +116,43 @@ body {
     color: #1e64dc;
 }
 .pol-feat-bookmark i { font-size: 0.75rem; }
+
+/* 選挙カード内ブックマーク */
+.card-footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+}
+.card-footer-row .card-footer-hint {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.elec-card-bookmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.elec-card-bookmark:hover {
+    border-color: #1e64dc;
+    color: #1e64dc;
+    background: rgba(30, 100, 220, 0.06);
+}
+.elec-card-bookmark.bookmarked {
+    background: rgba(30, 100, 220, 0.1);
+    border-color: rgba(30, 100, 220, 0.45);
+    color: #1e64dc;
+}
