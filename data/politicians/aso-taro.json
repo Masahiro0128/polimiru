@@ -8,21 +8,51 @@
   "current_status": "衆議院議員",
   "photo_url": "https://www.jimin.jp/member/img/asou-tarou.jpg",
   "official_url": "https://www.jimin.jp/member/100551.html",
-  "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "第92代内閣総理大臣、財務大臣、外務大臣、党幹事長などを歴任。高市体制では副総裁として、党運営と政権基盤を支える重鎮。",
   "stats": [
-    {"label": "党役職", "value": "副総裁"},
-    {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "福岡8区"}
+    {
+      "label": "党役職",
+      "value": "副総裁"
+    },
+    {
+      "label": "国会",
+      "value": "衆議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "福岡8区"
+    }
   ],
   "career": [
-    {"period": "現職", "text": "自由民主党副総裁、選挙対策本部長代行"},
-    {"period": "2008-09", "text": "第92代内閣総理大臣、第23代自由民主党総裁"},
-    {"period": "歴任", "text": "副総理、財務大臣、外務大臣、総務大臣、党幹事長"}
+    {
+      "period": "現職",
+      "text": "自由民主党副総裁、選挙対策本部長代行"
+    },
+    {
+      "period": "2008-09",
+      "text": "第92代内閣総理大臣、第23代自由民主党総裁"
+    },
+    {
+      "period": "歴任",
+      "text": "副総理、財務大臣、外務大臣、総務大臣、党幹事長"
+    }
   ],
   "focus_cards": [
-    {"context": "党運営", "title": "政権安定と保守本流の調整役", "desc": "党内各派やベテラン層との調整力が、総裁・執行部の政策遂行力にどの程度寄与するかを見る。"},
-    {"context": "財政・外交", "title": "財政運営と外交経験の継承", "desc": "財務・外交の経験を、積極財政や安全保障政策の現実的な設計にどう反映させるかが注目点。"}
+    {
+      "context": "党運営",
+      "title": "政権安定と保守本流の調整役",
+      "desc": "党内各派やベテラン層との調整力が、総裁・執行部の政策遂行力にどの程度寄与するかを見る。"
+    },
+    {
+      "context": "財政・外交",
+      "title": "財政運営と外交経験の継承",
+      "desc": "財務・外交の経験を、積極財政や安全保障政策の現実的な設計にどう反映させるかが注目点。"
+    }
   ],
   "promise_cycles": [
     {
@@ -110,7 +140,13 @@
     }
   ],
   "source_urls": [
-    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100551.html"},
-    {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}
+    {
+      "label": "自民党公式プロフィール",
+      "url": "https://www.jimin.jp/member/100551.html"
+    },
+    {
+      "label": "自民党役員ページ",
+      "url": "https://www.jimin.jp/member/officer/"
+    }
   ]
 }

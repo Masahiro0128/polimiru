@@ -9,26 +9,75 @@
   "photo_url": "https://www.jimin.jp/member/img/kamikawa-yoko.jpg",
   "photo_credit": "自由民主党",
   "official_url": "https://www.jimin.jp/member/100397.html",
-  "accent": {"from": "#7e22ce", "to": "#4a044e", "color": "#9333ea"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "静岡県出身。東京大学教養学部・ハーバード大学行政大学院卒業。外務大臣・法務大臣（5回）・少子化対策担当大臣などを歴任。女性首相候補としても注目される。2024年自民党総裁選に出馬。",
   "stats": [
-    {"label": "当選", "value": "8期"},
-    {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "静岡1区"},
-    {"label": "出身", "value": "静岡県"},
-    {"label": "元職", "value": "外務大臣・法務大臣"}
+    {
+      "label": "当選",
+      "value": "8期"
+    },
+    {
+      "label": "国会",
+      "value": "衆議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "静岡1区"
+    },
+    {
+      "label": "出身",
+      "value": "静岡県"
+    },
+    {
+      "label": "元職",
+      "value": "外務大臣・法務大臣"
+    }
   ],
   "career": [
-    {"period": "1953", "text": "静岡市生まれ"},
-    {"period": "1977", "text": "東京大学教養学部卒業"},
-    {"period": "1993", "text": "ハーバード大学ケネディスクール行政学修士取得"},
-    {"period": "1996", "text": "第41回衆院選で初当選"},
-    {"period": "2008-2009", "text": "法務大臣（第1次）（福田内閣）"},
-    {"period": "2014-2015", "text": "法務大臣（第2次）（第2次安倍内閣）"},
-    {"period": "2017-2018", "text": "法務大臣（第3次）（第3次安倍内閣）"},
-    {"period": "2023-2024", "text": "外務大臣（第2次岸田内閣）"},
-    {"period": "2024-09", "text": "自民党総裁選に出馬（1回目投票5位）"},
-    {"period": "現在", "text": "衆議院議員（自民党）"}
+    {
+      "period": "1953",
+      "text": "静岡市生まれ"
+    },
+    {
+      "period": "1977",
+      "text": "東京大学教養学部卒業"
+    },
+    {
+      "period": "1993",
+      "text": "ハーバード大学ケネディスクール行政学修士取得"
+    },
+    {
+      "period": "1996",
+      "text": "第41回衆院選で初当選"
+    },
+    {
+      "period": "2008-2009",
+      "text": "法務大臣（第1次）（福田内閣）"
+    },
+    {
+      "period": "2014-2015",
+      "text": "法務大臣（第2次）（第2次安倍内閣）"
+    },
+    {
+      "period": "2017-2018",
+      "text": "法務大臣（第3次）（第3次安倍内閣）"
+    },
+    {
+      "period": "2023-2024",
+      "text": "外務大臣（第2次岸田内閣）"
+    },
+    {
+      "period": "2024-09",
+      "text": "自民党総裁選に出馬（1回目投票5位）"
+    },
+    {
+      "period": "現在",
+      "text": "衆議院議員（自民党）"
+    }
   ],
   "promise_cycles": [
     {
@@ -128,7 +177,13 @@
     }
   ],
   "source_urls": [
-    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100397.html"},
-    {"label": "外務省", "url": "https://www.mofa.go.jp/"}
+    {
+      "label": "自民党公式プロフィール",
+      "url": "https://www.jimin.jp/member/100397.html"
+    },
+    {
+      "label": "外務省",
+      "url": "https://www.mofa.go.jp/"
+    }
   ]
 }

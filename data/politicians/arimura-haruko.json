@@ -8,21 +8,51 @@
   "current_status": "参議院議員",
   "photo_url": "https://www.jimin.jp/member/img/arimura-haruko.jpg",
   "official_url": "https://www.jimin.jp/member/100542.html",
-  "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "女性活躍・行政改革・少子化対策などの担当大臣を歴任。総務会長として、党内意思決定の最終調整を担う。",
   "stats": [
-    {"label": "党役職", "value": "総務会長"},
-    {"label": "国会", "value": "参議院"},
-    {"label": "選出", "value": "比例代表"}
+    {
+      "label": "党役職",
+      "value": "総務会長"
+    },
+    {
+      "label": "国会",
+      "value": "参議院"
+    },
+    {
+      "label": "選出",
+      "value": "比例代表"
+    }
   ],
   "career": [
-    {"period": "現職", "text": "自由民主党総務会長"},
-    {"period": "歴任", "text": "両院議員総会長、参議院情報監視審査会会長"},
-    {"period": "閣僚", "text": "女性活躍・行政改革・国家公務員制度担当、少子化対策担当など"}
+    {
+      "period": "現職",
+      "text": "自由民主党総務会長"
+    },
+    {
+      "period": "歴任",
+      "text": "両院議員総会長、参議院情報監視審査会会長"
+    },
+    {
+      "period": "閣僚",
+      "text": "女性活躍・行政改革・国家公務員制度担当、少子化対策担当など"
+    }
   ],
   "focus_cards": [
-    {"context": "意思決定", "title": "総務会での合意形成", "desc": "党内の幅広い意見を、最終的な党決定へまとめる調整力が注目点。"},
-    {"context": "社会政策", "title": "少子化・女性活躍・行政改革", "desc": "過去の担当領域を、現政権の人づくり・制度改革へどう接続するかを見る。"}
+    {
+      "context": "意思決定",
+      "title": "総務会での合意形成",
+      "desc": "党内の幅広い意見を、最終的な党決定へまとめる調整力が注目点。"
+    },
+    {
+      "context": "社会政策",
+      "title": "少子化・女性活躍・行政改革",
+      "desc": "過去の担当領域を、現政権の人づくり・制度改革へどう接続するかを見る。"
+    }
   ],
   "promise_cycles": [
     {
@@ -103,7 +133,13 @@
     }
   ],
   "source_urls": [
-    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/100542.html"},
-    {"label": "自民党役員ページ", "url": "https://www.jimin.jp/member/officer/"}
+    {
+      "label": "自民党公式プロフィール",
+      "url": "https://www.jimin.jp/member/100542.html"
+    },
+    {
+      "label": "自民党役員ページ",
+      "url": "https://www.jimin.jp/member/officer/"
+    }
   ]
 }

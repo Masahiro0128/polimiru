@@ -9,23 +9,63 @@
   "photo_url": "https://www.jimin.jp/member/img/onoda-kimi.jpg",
   "photo_credit": "自由民主党",
   "official_url": "https://www.jimin.jp/member/101767.html",
-  "accent": {"from": "#9f1239", "to": "#500724", "color": "#be123c"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "岡山県出身。アメリカ育ち（日米二重国籍問題で注目）。拓殖大学政経学部政治学科卒。2016年参院選で岡山選挙区から初当選。内閣府大臣政務官を歴任。保守系の政策スタンスとSNSでの積極的な情報発信で若い世代から支持を集める。",
   "stats": [
-    {"label": "当選", "value": "2期"},
-    {"label": "国会", "value": "参議院"},
-    {"label": "選挙区", "value": "岡山県"},
-    {"label": "出身", "value": "岡山県"},
-    {"label": "元職", "value": "内閣府大臣政務官"}
+    {
+      "label": "当選",
+      "value": "2期"
+    },
+    {
+      "label": "国会",
+      "value": "参議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "岡山県"
+    },
+    {
+      "label": "出身",
+      "value": "岡山県"
+    },
+    {
+      "label": "元職",
+      "value": "内閣府大臣政務官"
+    }
   ],
   "career": [
-    {"period": "1982", "text": "岡山県生まれ"},
-    {"period": "幼少期〜", "text": "家族の転勤でアメリカ在住（日米二重国籍）"},
-    {"period": "2005", "text": "拓殖大学政経学部政治学科卒業"},
-    {"period": "2016", "text": "第24回参院選で岡山県選挙区から初当選"},
-    {"period": "2019-2020", "text": "内閣府大臣政務官（第4次安倍内閣）"},
-    {"period": "2022", "text": "第26回参院選で岡山県選挙区から再選"},
-    {"period": "現在", "text": "参議院議員（自民党）"}
+    {
+      "period": "1982",
+      "text": "岡山県生まれ"
+    },
+    {
+      "period": "幼少期〜",
+      "text": "家族の転勤でアメリカ在住（日米二重国籍）"
+    },
+    {
+      "period": "2005",
+      "text": "拓殖大学政経学部政治学科卒業"
+    },
+    {
+      "period": "2016",
+      "text": "第24回参院選で岡山県選挙区から初当選"
+    },
+    {
+      "period": "2019-2020",
+      "text": "内閣府大臣政務官（第4次安倍内閣）"
+    },
+    {
+      "period": "2022",
+      "text": "第26回参院選で岡山県選挙区から再選"
+    },
+    {
+      "period": "現在",
+      "text": "参議院議員（自民党）"
+    }
   ],
   "promise_cycles": [
     {
@@ -87,6 +127,9 @@
     }
   ],
   "source_urls": [
-    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/101767.html"}
+    {
+      "label": "自民党公式プロフィール",
+      "url": "https://www.jimin.jp/member/101767.html"
+    }
   ]
 }

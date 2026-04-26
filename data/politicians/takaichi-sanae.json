@@ -2,45 +2,108 @@
   "id": "takaichi-sanae",
   "name": "高市 早苗",
   "kana": "たかいち さなえ",
-  "party": "自民党",
+  "party": "自由民主党",
   "party_role": "内閣総理大臣",
   "area": "奈良2区",
   "current_status": "第104・105代 内閣総理大臣",
   "summary": "奈良県出身。神戸大学経営学部卒、松下政経塾、米連邦議会 Congressional Fellow を経て1993年衆院初当選（11期）。総務大臣3期、経済安全保障担当大臣などを歴任。2025年自民党総裁選を制し第104代内閣総理大臣に就任。積極財政・経済安保・エネルギー安全保障を政権の柱に据える。",
   "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Sanae_Takaichi_portrait_%28HD%29_%28cropped_1%29.jpg",
   "photo_credit": "Wikimedia Commons",
-  "accent": { "from": "#8c1515", "to": "#c9171e", "color": "#c9171e" },
-
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "source_urls": [
-    { "label": "公式サイト",  "url": "https://www.sanae.gr.jp/" },
-    { "label": "首相官邸",    "url": "https://www.kantei.go.jp/" },
-    { "label": "X (Twitter)", "url": "https://x.com/takaichi_sanae" }
+    {
+      "label": "公式サイト",
+      "url": "https://www.sanae.gr.jp/"
+    },
+    {
+      "label": "首相官邸",
+      "url": "https://www.kantei.go.jp/"
+    },
+    {
+      "label": "X (Twitter)",
+      "url": "https://x.com/takaichi_sanae"
+    }
   ],
-
   "stats": [
-    { "label": "役職",     "value": "内閣総理大臣" },
-    { "label": "選挙区",   "value": "奈良2区（比例近畿）" },
-    { "label": "当選回数", "value": "11回" },
-    { "label": "生年",     "value": "1961年（奈良県生まれ）" },
-    { "label": "学歴",     "value": "神戸大学経営学部" },
-    { "label": "党内役職", "value": "政務調査会長（2021〜22）" }
+    {
+      "label": "役職",
+      "value": "内閣総理大臣"
+    },
+    {
+      "label": "選挙区",
+      "value": "奈良2区（比例近畿）"
+    },
+    {
+      "label": "当選回数",
+      "value": "11回"
+    },
+    {
+      "label": "生年",
+      "value": "1961年（奈良県生まれ）"
+    },
+    {
+      "label": "学歴",
+      "value": "神戸大学経営学部"
+    },
+    {
+      "label": "党内役職",
+      "value": "政務調査会長（2021〜22）"
+    }
   ],
-
   "career": [
-    { "period": "1961",       "role": "奈良県生まれ" },
-    { "period": "1984",       "role": "神戸大学経営学部経営学科卒業（経営数学専攻）" },
-    { "period": "1980年代",   "role": "松下政経塾卒塾・米国連邦議会 Congressional Fellow" },
-    { "period": "1993",       "role": "衆議院議員初当選（新生党→無所属→自民党）" },
-    { "period": "1998〜99",   "role": "通商産業政務次官" },
-    { "period": "2000年代",   "role": "近畿大学経済学部教授、経済産業副大臣、内閣府特命担当大臣を歴任" },
-    { "period": "2014〜17",   "role": "総務大臣（第1・2次安倍政権）" },
-    { "period": "2019〜20",   "role": "総務大臣（第4次安倍政権）" },
-    { "period": "2021",       "role": "自民党政務調査会長・自民党総裁選出馬（1回目3位）" },
-    { "period": "2021〜23",   "role": "経済安全保障担当大臣（岸田政権）" },
-    { "period": "2024",       "role": "自民党総裁選 1回目1位→決選投票で石破茂に敗北" },
-    { "period": "2025〜",     "role": "第104・105代 内閣総理大臣" }
+    {
+      "period": "1961",
+      "role": "奈良県生まれ"
+    },
+    {
+      "period": "1984",
+      "role": "神戸大学経営学部経営学科卒業（経営数学専攻）"
+    },
+    {
+      "period": "1980年代",
+      "role": "松下政経塾卒塾・米国連邦議会 Congressional Fellow"
+    },
+    {
+      "period": "1993",
+      "role": "衆議院議員初当選（新生党→無所属→自民党）"
+    },
+    {
+      "period": "1998〜99",
+      "role": "通商産業政務次官"
+    },
+    {
+      "period": "2000年代",
+      "role": "近畿大学経済学部教授、経済産業副大臣、内閣府特命担当大臣を歴任"
+    },
+    {
+      "period": "2014〜17",
+      "role": "総務大臣（第1・2次安倍政権）"
+    },
+    {
+      "period": "2019〜20",
+      "role": "総務大臣（第4次安倍政権）"
+    },
+    {
+      "period": "2021",
+      "role": "自民党政務調査会長・自民党総裁選出馬（1回目3位）"
+    },
+    {
+      "period": "2021〜23",
+      "role": "経済安全保障担当大臣（岸田政権）"
+    },
+    {
+      "period": "2024",
+      "role": "自民党総裁選 1回目1位→決選投票で石破茂に敗北"
+    },
+    {
+      "period": "2025〜",
+      "role": "第104・105代 内閣総理大臣"
+    }
   ],
-
   "promise_cycles": [
     {
       "title": "2025年自民党総裁選 公約",
@@ -116,7 +179,6 @@
       ]
     }
   ],
-
   "focus_cards": [
     {
       "context": "2026年 最大の焦点",

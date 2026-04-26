@@ -8,39 +8,121 @@
   "current_status": "防衛大臣・衆議院議員",
   "photo_url": "https://www.jimin.jp/election/results/sousai24/img/profile/koizumi_shinjiro.png",
   "official_url": "https://www.shinjiro.info/profile/",
-  "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "神奈川県横須賀市出身。関東学院大学経済学部、米コロンビア大学大学院政治学部を経て、CSIS研究員、小泉純一郎秘書を経験。2009年に神奈川11区で初当選し、環境大臣、衆議院安全保障委員長、農林水産大臣を歴任。高市内閣では防衛大臣を務め、2024年自民党総裁選では「新時代の扉をあける」を掲げて出馬した。",
   "stats": [
-    {"label": "当選", "value": "7期"},
-    {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "神奈川11区"},
-    {"label": "出身", "value": "神奈川県横須賀市"},
-    {"label": "現職", "value": "防衛大臣"},
-    {"label": "元職", "value": "環境大臣"}
+    {
+      "label": "当選",
+      "value": "7期"
+    },
+    {
+      "label": "国会",
+      "value": "衆議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "神奈川11区"
+    },
+    {
+      "label": "出身",
+      "value": "神奈川県横須賀市"
+    },
+    {
+      "label": "現職",
+      "value": "防衛大臣"
+    },
+    {
+      "label": "元職",
+      "value": "環境大臣"
+    }
   ],
   "career": [
-    {"period": "1981", "text": "神奈川県横須賀市生まれ"},
-    {"period": "2004", "text": "関東学院大学経済学部卒業"},
-    {"period": "2006", "text": "米国コロンビア大学大学院政治学部修了、政治学修士号取得"},
-    {"period": "2006-2007", "text": "米国戦略国際問題研究所（CSIS）研究員"},
-    {"period": "2007-2009", "text": "衆議院議員 小泉純一郎の秘書"},
-    {"period": "2009", "text": "第45回衆議院議員総選挙で初当選（神奈川11区）"},
-    {"period": "2011", "text": "自由民主党青年局長"},
-    {"period": "2013-2015", "text": "内閣府大臣政務官兼復興大臣政務官"},
-    {"period": "2015", "text": "自由民主党農林部会長"},
-    {"period": "2017", "text": "自由民主党筆頭副幹事長"},
-    {"period": "2018", "text": "自由民主党厚生労働部会長"},
-    {"period": "2019-2021", "text": "環境大臣、内閣府特命担当大臣（原子力防災）"},
-    {"period": "2021", "text": "自由民主党総務会長代理"},
-    {"period": "2024", "text": "衆議院安全保障委員長、自民党総裁選に出馬"},
-    {"period": "2025-05", "text": "農林水産大臣（第2次石破内閣）"},
-    {"period": "2025-10", "text": "防衛大臣（高市内閣）"},
-    {"period": "現在", "text": "防衛大臣・衆議院議員（神奈川11区）"}
+    {
+      "period": "1981",
+      "text": "神奈川県横須賀市生まれ"
+    },
+    {
+      "period": "2004",
+      "text": "関東学院大学経済学部卒業"
+    },
+    {
+      "period": "2006",
+      "text": "米国コロンビア大学大学院政治学部修了、政治学修士号取得"
+    },
+    {
+      "period": "2006-2007",
+      "text": "米国戦略国際問題研究所（CSIS）研究員"
+    },
+    {
+      "period": "2007-2009",
+      "text": "衆議院議員 小泉純一郎の秘書"
+    },
+    {
+      "period": "2009",
+      "text": "第45回衆議院議員総選挙で初当選（神奈川11区）"
+    },
+    {
+      "period": "2011",
+      "text": "自由民主党青年局長"
+    },
+    {
+      "period": "2013-2015",
+      "text": "内閣府大臣政務官兼復興大臣政務官"
+    },
+    {
+      "period": "2015",
+      "text": "自由民主党農林部会長"
+    },
+    {
+      "period": "2017",
+      "text": "自由民主党筆頭副幹事長"
+    },
+    {
+      "period": "2018",
+      "text": "自由民主党厚生労働部会長"
+    },
+    {
+      "period": "2019-2021",
+      "text": "環境大臣、内閣府特命担当大臣（原子力防災）"
+    },
+    {
+      "period": "2021",
+      "text": "自由民主党総務会長代理"
+    },
+    {
+      "period": "2024",
+      "text": "衆議院安全保障委員長、自民党総裁選に出馬"
+    },
+    {
+      "period": "2025-05",
+      "text": "農林水産大臣（第2次石破内閣）"
+    },
+    {
+      "period": "2025-10",
+      "text": "防衛大臣（高市内閣）"
+    },
+    {
+      "period": "現在",
+      "text": "防衛大臣・衆議院議員（神奈川11区）"
+    }
   ],
   "education": [
-    {"label": "小中高", "value": "関東学院六浦小学校・中学校・高等学校"},
-    {"label": "大学", "value": "関東学院大学経済学部"},
-    {"label": "大学院", "value": "米国コロンビア大学大学院政治学部"}
+    {
+      "label": "小中高",
+      "value": "関東学院六浦小学校・中学校・高等学校"
+    },
+    {
+      "label": "大学",
+      "value": "関東学院大学経済学部"
+    },
+    {
+      "label": "大学院",
+      "value": "米国コロンビア大学大学院政治学部"
+    }
   ],
   "election_links": [
     {
@@ -260,10 +342,25 @@
     }
   ],
   "source_urls": [
-    {"label": "小泉進次郎 公式プロフィール", "url": "https://www.shinjiro.info/profile/"},
-    {"label": "首相官邸 防衛大臣プロフィール", "url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"},
-    {"label": "首相官邸 農林水産大臣プロフィール", "url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"},
-    {"label": "自民党 総裁選2024 候補者情報", "url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"},
-    {"label": "首相官邸 環境大臣プロフィール", "url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"}
+    {
+      "label": "小泉進次郎 公式プロフィール",
+      "url": "https://www.shinjiro.info/profile/"
+    },
+    {
+      "label": "首相官邸 防衛大臣プロフィール",
+      "url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"
+    },
+    {
+      "label": "首相官邸 農林水産大臣プロフィール",
+      "url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"
+    },
+    {
+      "label": "自民党 総裁選2024 候補者情報",
+      "url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"
+    },
+    {
+      "label": "首相官邸 環境大臣プロフィール",
+      "url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"
+    }
   ]
 }

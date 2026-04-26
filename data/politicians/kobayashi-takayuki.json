@@ -8,21 +8,51 @@
   "current_status": "衆議院議員",
   "photo_url": "https://www.jimin.jp/member/img/kobayashi-takayuki.jpg",
   "official_url": "https://www.jimin.jp/member/102061.html",
-  "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "経済安全保障担当大臣、内閣府特命担当大臣を歴任。政務調査会長として、政権公約と政策立案の実務を担う。",
   "stats": [
-    {"label": "党役職", "value": "政務調査会長"},
-    {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "千葉2区"}
+    {
+      "label": "党役職",
+      "value": "政務調査会長"
+    },
+    {
+      "label": "国会",
+      "value": "衆議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "千葉2区"
+    }
   ],
   "career": [
-    {"period": "現職", "text": "自由民主党政務調査会長"},
-    {"period": "歴任", "text": "経済安全保障担当大臣、科学技術・宇宙担当大臣"},
-    {"period": "党務", "text": "経済安全保障推進本部幹事長、知的財産戦略調査会長など"}
+    {
+      "period": "現職",
+      "text": "自由民主党政務調査会長"
+    },
+    {
+      "period": "歴任",
+      "text": "経済安全保障担当大臣、科学技術・宇宙担当大臣"
+    },
+    {
+      "period": "党務",
+      "text": "経済安全保障推進本部幹事長、知的財産戦略調査会長など"
+    }
   ],
   "focus_cards": [
-    {"context": "政策立案", "title": "政権公約の設計と実装", "desc": "高市総裁の政策カラーを、予算・法案・選挙公約にどう具体化するかを見る。"},
-    {"context": "経済安保", "title": "先端技術・供給網・安全保障", "desc": "経済安全保障や科学技術投資を、成長戦略として measurable に進められるかが焦点。"}
+    {
+      "context": "政策立案",
+      "title": "政権公約の設計と実装",
+      "desc": "高市総裁の政策カラーを、予算・法案・選挙公約にどう具体化するかを見る。"
+    },
+    {
+      "context": "経済安保",
+      "title": "先端技術・供給網・安全保障",
+      "desc": "経済安全保障や科学技術投資を、成長戦略として measurable に進められるかが焦点。"
+    }
   ],
   "promise_cycles": [
     {
@@ -110,7 +140,13 @@
     }
   ],
   "source_urls": [
-    {"label": "自民党公式プロフィール", "url": "https://www.jimin.jp/member/102061.html"},
-    {"label": "政調会長記事", "url": "https://www.jimin.jp/news/information/212315.html"}
+    {
+      "label": "自民党公式プロフィール",
+      "url": "https://www.jimin.jp/member/102061.html"
+    },
+    {
+      "label": "政調会長記事",
+      "url": "https://www.jimin.jp/news/information/212315.html"
+    }
   ]
 }
