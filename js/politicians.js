@@ -227,39 +227,39 @@ const politicians = [
         name: "小泉 進次郎",
         kana: "こいずみ しんじろう",
         party: "自民党",
-        role: "農林水産大臣",
+        role: "防衛大臣",
         area: "神奈川11区",
         photo: "https://www.jimin.jp/election/results/sousai24/img/profile/koizumi_shinjiro.png",
         url: "politicians/koizumi-shinjiro/index.html",
         baseLikes: 7200,
-        tags: ["小泉進次郎", "こいずみしんじろう", "小泉", "自民党", "農林水産大臣", "環境大臣", "神奈川11区", "横須賀", "関東学院大学", "コロンビア大学", "CSIS", "小泉純一郎", "総裁選2024"],
-        desc: "関東学院大学、米コロンビア大学大学院を経てCSIS研究員、秘書、衆院議員へ。環境大臣、衆院安全保障委員長、農林水産大臣を歴任。"
+        tags: ["小泉進次郎", "こいずみしんじろう", "小泉", "自民党", "防衛大臣", "農林水産大臣", "環境大臣", "神奈川11区", "横須賀", "関東学院大学", "コロンビア大学", "CSIS", "小泉純一郎", "総裁選2024"],
+        desc: "関東学院大学、米コロンビア大学大学院を経てCSIS研究員、秘書、衆院議員へ。環境大臣、衆院安全保障委員長、農林水産大臣を歴任し、高市内閣で防衛大臣。"
     },
     {
         id: "noda-yoshihiko",
         name: "野田 佳彦",
         kana: "のだ よしひこ",
         party: "中道改革連合",
-        role: "代表",
+        role: "顧問",
         area: "千葉14区",
         photo: "https://cdp-japan.jp/assets/images/leadership_election/2024/01_portrait.w768.jpg",
         url: "politicians/noda-yoshihiko/index.html",
         baseLikes: 4800,
-        tags: ["野田佳彦", "のだよしひこ", "野田", "中道改革連合", "立憲民主党", "代表", "総理大臣", "首相", "千葉14区", "早稲田大学", "松下政経塾", "財務大臣", "民主党", "どじょう内閣", "政治改革"],
-        desc: "早稲田大学政治経済学部、松下政経塾を経て千葉県議、衆議院議員へ。第95代内閣総理大臣、財務大臣、立憲民主党代表を歴任し、中道改革連合代表として中道再編を主導。"
+        tags: ["野田佳彦", "のだよしひこ", "野田", "中道改革連合", "立憲民主党", "顧問", "元代表", "総理大臣", "首相", "千葉14区", "早稲田大学", "松下政経塾", "財務大臣", "民主党", "どじょう内閣", "政治改革"],
+        desc: "早稲田大学政治経済学部、松下政経塾を経て千葉県議、衆議院議員へ。第95代内閣総理大臣、財務大臣、立憲民主党代表、中道改革連合共同代表を歴任。"
     },
     {
         id: "fujita-fumitake",
         name: "藤田 文武",
         kana: "ふじた ふみたけ",
         party: "日本維新の会",
-        role: "幹事長",
+        role: "共同代表",
         area: "大阪12区",
         photo: "https://o-ishin.jp/member/images/member/fujita_fumitake.jpg",
         url: "politicians/fujita-fumitake/index.html",
         baseLikes: 2100,
-        tags: ["藤田文武", "ふじたふみたけ", "藤田", "日本維新の会", "維新", "幹事長", "大阪12区", "法政大学"],
-        desc: "法政大学経済学部卒。音楽活動を経て政界へ。2019年衆院初当選。日本維新の会幹事長として党運営を担う。"
+        tags: ["藤田文武", "ふじたふみたけ", "藤田", "日本維新の会", "維新", "共同代表", "幹事長", "大阪12区", "法政大学"],
+        desc: "法政大学経済学部卒。音楽活動を経て政界へ。2019年衆院初当選。日本維新の会共同代表・国会議員団の長として党運営を担う。"
     },
     {
         id: "kamiya-souhei",
@@ -291,14 +291,14 @@ const politicians = [
         id: "saito-tetsuo",
         name: "斎藤 鉄夫",
         kana: "さいとう てつお",
-        party: "公明党",
-        role: "元国土交通大臣",
-        area: "広島県第3区",
+        party: "中道改革連合",
+        role: "顧問",
+        area: "中国比例",
         photo: "https://www.komei.or.jp/giin/img/giin_saito_tetsuo.jpg",
         url: "politicians/saito-tetsuo/index.html",
         baseLikes: 1450,
-        tags: ["斎藤鉄夫", "さいとうてつお", "斎藤", "公明党", "国土交通大臣", "広島", "広島3区", "衆議院"],
-        desc: "東京工業大学大学院修了（工学博士）。1993年初当選以来の公明党ベテラン。2021〜2024年に国土交通大臣を務め、防災・インフラ・住宅政策を主導。"
+        tags: ["斎藤鉄夫", "さいとうてつお", "斎藤", "中道改革連合", "公明党", "顧問", "共同代表", "国土交通大臣", "広島", "中国比例", "衆議院"],
+        desc: "東京工業大学大学院修了（工学博士）。環境大臣、国土交通大臣、公明党代表を歴任。中道改革連合共同代表を経て顧問。"
     },
     {
         id: "yamamoto-taro",
@@ -350,7 +350,7 @@ const politicians = [
         url: "politicians/ishiba-shigeru/index.html",
         baseLikes: 5600,
         tags: ["石破茂", "いしばしげる", "石破", "自民党", "前首相", "総理大臣", "防衛大臣", "地方創生", "鳥取", "安全保障"],
-        desc: "第103代内閣総理大臣。防衛大臣・農林水産大臣・地方創生担当大臣などを歴任。安全保障・地方分権を軸とした政策で知られる。"
+        desc: "第102・103代内閣総理大臣。防衛大臣・農林水産大臣・地方創生担当大臣などを歴任。安全保障・地方分権を軸とした政策で知られる。"
     },
     {
         id: "kono-taro",
@@ -385,7 +385,7 @@ const politicians = [
         party: "無所属",
         role: "兵庫県知事",
         area: "兵庫県",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Motohiko_Saito_20211013.jpg/440px-Motohiko_Saito_20211013.jpg",
+        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Motohiko_Saito_%28cropped%2C_2%29.jpg/440px-Motohiko_Saito_%28cropped%2C_2%29.jpg",
         url: "politicians/saito-motohiko/index.html",
         baseLikes: 4200,
         tags: ["斎藤元彦", "さいとうもとひこ", "斎藤", "兵庫県知事", "兵庫", "知事", "維新", "不祥事", "再選"],

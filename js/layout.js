@@ -44,9 +44,10 @@ function loadHeader() {
     const homePath      = pathPrefix + 'index.html';
     const aboutPath     = pathPrefix + 'about.html';
     const electionsPath = pathPrefix + 'elections/index.html';
-    const newsPath      = homePath + '#news';        // index.html 内の News セクション想定
+    const newsPath      = homePath + '#news';
     const contactPath   = pathPrefix + 'contact.html';
     const methodPath    = pathPrefix + 'method.html';
+    const savedPath     = pathPrefix + 'bookmarks.html';
 
     // HTML生成
     const headerHTML = `
@@ -76,6 +77,10 @@ function loadHeader() {
             <a href="${electionsPath}">
                 <span class="nav-en">Elections</span>
                 <span class="nav-ja">選挙・データ</span>
+            </a>
+            <a href="${savedPath}" id="nav-saved-link">
+                <span class="nav-en">Saved</span>
+                <span class="nav-ja">保存済み</span>
             </a>
             <a href="${contactPath}" class="contact-btn">
                 <span class="nav-en">Contact</span>

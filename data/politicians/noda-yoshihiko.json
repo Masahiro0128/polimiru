@@ -3,18 +3,18 @@
   "name": "野田 佳彦",
   "kana": "のだ よしひこ",
   "party": "中道改革連合",
-  "party_role": "代表",
+  "party_role": "顧問",
   "area": "千葉県第14区",
-  "current_status": "中道改革連合代表・衆議院議員",
+  "current_status": "中道改革連合顧問・衆議院議員",
   "photo_url": "https://cdp-japan.jp/assets/images/leadership_election/2024/01_portrait.w768.jpg",
   "photo_credit": "立憲民主党 代表選2024",
-  "official_url": "https://cdp-japan.jp/member/3009/%E9%87%8E%E7%94%B0%E4%BD%B3%E5%BD%A6",
+  "official_url": "https://craj.jp/member/3009",
   "accent": {"from": "#14336b", "to": "#0f1f3d", "color": "#2454a6"},
-  "summary": "千葉県船橋市出身。早稲田大学政治経済学部、松下政経塾、千葉県議を経て1993年に衆議院初当選。財務大臣、第95代内閣総理大臣を歴任し、社会保障と税の一体改革を推進した。2024年9月に立憲民主党代表へ就任し、2026年には公明党との合流を経て中道改革連合代表として「政権交代能力を持つ中道勢力」の結集を掲げる。",
+  "summary": "千葉県船橋市出身。早稲田大学政治経済学部、松下政経塾、千葉県議を経て1993年に衆議院初当選。財務大臣、第95代内閣総理大臣を歴任し、社会保障と税の一体改革を推進した。2024年9月に立憲民主党代表へ就任し、2026年には中道改革連合の共同代表を務めた後、現在は同党顧問として活動する。",
   "stats": [
-    {"label": "党役職", "value": "代表"},
+    {"label": "党役職", "value": "顧問"},
     {"label": "国会", "value": "衆議院"},
-    {"label": "当選", "value": "10期"},
+    {"label": "当選", "value": "11期"},
     {"label": "選挙区", "value": "千葉14区"},
     {"label": "出身", "value": "千葉県船橋市"},
     {"label": "元職", "value": "第95代内閣総理大臣"}
@@ -34,7 +34,9 @@
     {"period": "2011-2012", "text": "第95代内閣総理大臣、民主党代表"},
     {"period": "2012", "text": "社会保障と税の一体改革関連法成立後、衆議院を解散"},
     {"period": "2024", "text": "立憲民主党代表に就任、野田「次の内閣」を発足"},
-    {"period": "2026", "text": "中道改革連合の代表として衆院選準備を主導"}
+    {"period": "2026-01", "text": "中道改革連合の共同代表に就任"},
+    {"period": "2026-02", "text": "衆院選後に共同代表を辞任"},
+    {"period": "現在", "text": "中道改革連合顧問として活動"}
   ],
   "election_links": [
     {
@@ -46,6 +48,12 @@
     {
       "election_id": "shugiin_chiba_2024",
       "title": "第50回衆議院議員総選挙 千葉14区",
+      "role": "候補者",
+      "result": "当選"
+    },
+    {
+      "election_id": "shugiin_chiba_2026",
+      "title": "第51回衆議院議員総選挙 千葉14区",
       "role": "候補者",
       "result": "当選"
     },
@@ -156,7 +164,7 @@
       "source": "中道改革連合発表・基本政策発表",
       "source_url": "https://cdp-japan.jp/news/20260116_0071",
       "reviewed_at": "2026-04-24T00:00:00Z",
-      "status": "initial_review",
+      "status": "historical_review",
       "score": 45,
       "total": 4,
       "done": 0,
@@ -167,8 +175,8 @@
         {
           "title": "中道勢力の結集と衆院選準備",
           "category": "党再編",
-          "status": "進行",
-          "progress_score": 45,
+          "status": "実施",
+          "progress_score": 70,
           "evidence_url": "https://cdp-japan.jp/news/20260116_0071"
         },
         {
@@ -191,8 +199,8 @@
   "focus_cards": [
     {
       "context": "中道再編",
-      "title": "政権交代可能な中道勢力を作れるか",
-      "desc": "立憲民主党代表から中道改革連合代表へ移る中で、候補者調整、政策統合、支持層拡大を実務として進められるかが最大の検証点。"
+      "title": "中道再編後の経験値をどう活かすか",
+      "desc": "共同代表退任後も元首相・元党首として、候補者調整、政策統合、支持層拡大にどう関与するかを見る。"
     },
     {
       "context": "政治改革",
@@ -211,11 +219,14 @@
     }
   ],
   "source_urls": [
-    {"label": "公式プロフィール", "url": "https://cdp-japan.jp/member/3009/%E9%87%8E%E7%94%B0%E4%BD%B3%E5%BD%A6"},
+    {"label": "中道改革連合 公式プロフィール", "url": "https://craj.jp/member/3009"},
+    {"label": "中道改革連合 2026衆院選結果", "url": "https://craj.jp/election2026/"},
+    {"label": "立憲民主党 公式プロフィール", "url": "https://cdp-japan.jp/member/3009/%E9%87%8E%E7%94%B0%E4%BD%B3%E5%BD%A6"},
     {"label": "代表選2024", "url": "https://cdp-japan.jp/leadership-election/2024"},
     {"label": "政権政策2024発表", "url": "https://cdp-japan.jp/news/20241007_8336"},
     {"label": "野田『次の内閣』第1回閣議", "url": "https://cdp-japan.jp/news/20241001_8309"},
     {"label": "新党名 中道改革連合", "url": "https://cdp-japan.jp/news/20260116_0071"},
+    {"label": "中道改革連合 役員一覧", "url": "https://craj.jp/party/officers"},
     {"label": "基本政策発表", "url": "https://cdp-japan.jp/news/20260119_0074"},
     {"label": "首相官邸 野田内閣", "url": "https://www.kantei.go.jp/jp/noda/meibo/daijin/noda.html"}
   ]

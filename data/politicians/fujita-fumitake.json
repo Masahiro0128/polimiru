@@ -3,15 +3,15 @@
   "name": "藤田 文武",
   "kana": "ふじた ふみたけ",
   "party": "日本維新の会",
-  "party_role": "幹事長",
+  "party_role": "共同代表",
   "area": "大阪府第12区",
   "current_status": "衆議院議員",
   "photo_url": "https://o-ishin.jp/member/images/member/fujita_fumitake.jpg",
   "official_url": "https://o-ishin.jp/",
   "accent": {"from": "#0a2a0a", "to": "#1a5a1a", "color": "#2a7a2a"},
-  "summary": "法政大学経済学部卒。音楽活動（ベーシスト）を経て政界へ転身。2019年衆院初当選後、日本維新の会の幹事長として党の政策立案・国会運営を主導。身を切る改革・教育無償化・道州制などを旗印に活動。",
+  "summary": "法政大学経済学部卒。音楽活動（ベーシスト）を経て政界へ転身。2019年衆院初当選後、日本維新の会の幹事長を歴任し、現在は共同代表・国会議員団の長として党運営と国会対応を担う。身を切る改革・教育無償化・道州制などを旗印に活動。",
   "stats": [
-    {"label": "党役職", "value": "幹事長"},
+    {"label": "党役職", "value": "共同代表"},
     {"label": "国会", "value": "衆議院"},
     {"label": "選挙区", "value": "大阪12区"},
     {"label": "出身", "value": "大阪府"},
@@ -23,7 +23,8 @@
     {"period": "2003-2018", "text": "ベーシストとして音楽活動に従事"},
     {"period": "2019", "text": "衆議院議員として国政へ"},
     {"period": "2021", "text": "日本維新の会幹事長に就任"},
-    {"period": "現在", "text": "日本維新の会幹事長（大阪12区選出）"}
+    {"period": "2025", "text": "日本維新の会共同代表に就任"},
+    {"period": "現在", "text": "日本維新の会共同代表・国会議員団の長（大阪12区選出）"}
   ],
   "focus_cards": [
     {
@@ -96,11 +97,11 @@
       ]
     },
     {
-      "id": "ishin_kanji_track_2025",
-      "title": "幹事長としての政策実現・党運営（2025-現在）",
-      "context": "日本維新の会幹事長として国会対応・政策立案を主導",
+      "id": "ishin_co_leader_track_2025",
+      "title": "共同代表としての政策実現・党運営（2025-現在）",
+      "context": "日本維新の会共同代表・国会議員団の長として国会対応・政策立案を主導",
       "source": "日本維新の会 党役員・活動記録",
-      "source_url": "https://o-ishin.jp/about/officer/",
+      "source_url": "https://o-ishin.jp/member/directorate/",
       "reviewed_at": "2026-04-24T00:00:00Z",
       "status": "tracking",
       "score": 45,
@@ -115,27 +116,27 @@
           "category": "教育",
           "status": "法案準備",
           "progress_score": 40,
-          "evidence_url": "https://o-ishin.jp/about/officer/"
+          "evidence_url": "https://o-ishin.jp/member/directorate/"
         },
         {
           "title": "大阪・関西万博後の維新の党勢立て直し",
           "category": "党運営",
           "status": "進行",
           "progress_score": 45,
-          "evidence_url": "https://o-ishin.jp/about/officer/"
+          "evidence_url": "https://o-ishin.jp/member/directorate/"
         },
         {
           "title": "野党連携と対与党戦略の明確化",
           "category": "国会対応",
           "status": "公約",
           "progress_score": 35,
-          "evidence_url": "https://o-ishin.jp/about/officer/"
+          "evidence_url": "https://o-ishin.jp/member/directorate/"
         }
       ]
     }
   ],
   "source_urls": [
     {"label": "日本維新の会 公式プロフィール", "url": "https://o-ishin.jp/member/detail/fujita_fumitake.html"},
-    {"label": "党役員一覧", "url": "https://o-ishin.jp/about/officer/"}
+    {"label": "党役員一覧", "url": "https://o-ishin.jp/member/directorate/"}
   ]
 }

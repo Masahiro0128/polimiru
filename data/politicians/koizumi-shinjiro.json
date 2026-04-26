@@ -3,19 +3,19 @@
   "name": "小泉 進次郎",
   "kana": "こいずみ しんじろう",
   "party": "自由民主党",
-  "party_role": "農林水産大臣",
+  "party_role": "防衛大臣",
   "area": "神奈川県第11区",
-  "current_status": "農林水産大臣・衆議院議員",
+  "current_status": "防衛大臣・衆議院議員",
   "photo_url": "https://www.jimin.jp/election/results/sousai24/img/profile/koizumi_shinjiro.png",
   "official_url": "https://www.shinjiro.info/profile/",
   "accent": {"from": "#1e3a6e", "to": "#0f1f3d", "color": "#1e3a6e"},
-  "summary": "神奈川県横須賀市出身。関東学院大学経済学部、米コロンビア大学大学院政治学部を経て、CSIS研究員、小泉純一郎秘書を経験。2009年に神奈川11区で初当選し、環境大臣、衆議院安全保障委員長、農林水産大臣を歴任。2024年自民党総裁選では「新時代の扉をあける」を掲げて出馬した。",
+  "summary": "神奈川県横須賀市出身。関東学院大学経済学部、米コロンビア大学大学院政治学部を経て、CSIS研究員、小泉純一郎秘書を経験。2009年に神奈川11区で初当選し、環境大臣、衆議院安全保障委員長、農林水産大臣を歴任。高市内閣では防衛大臣を務め、2024年自民党総裁選では「新時代の扉をあける」を掲げて出馬した。",
   "stats": [
     {"label": "当選", "value": "7期"},
     {"label": "国会", "value": "衆議院"},
     {"label": "選挙区", "value": "神奈川11区"},
     {"label": "出身", "value": "神奈川県横須賀市"},
-    {"label": "現職", "value": "農林水産大臣"},
+    {"label": "現職", "value": "防衛大臣"},
     {"label": "元職", "value": "環境大臣"}
   ],
   "career": [
@@ -33,8 +33,9 @@
     {"period": "2019-2021", "text": "環境大臣、内閣府特命担当大臣（原子力防災）"},
     {"period": "2021", "text": "自由民主党総務会長代理"},
     {"period": "2024", "text": "衆議院安全保障委員長、自民党総裁選に出馬"},
-    {"period": "2025", "text": "農林水産大臣（第2次石破内閣）"},
-    {"period": "現在", "text": "農林水産大臣・衆議院議員（神奈川11区）"}
+    {"period": "2025-05", "text": "農林水産大臣（第2次石破内閣）"},
+    {"period": "2025-10", "text": "防衛大臣（高市内閣）"},
+    {"period": "現在", "text": "防衛大臣・衆議院議員（神奈川11区）"}
   ],
   "education": [
     {"label": "小中高", "value": "関東学院六浦小学校・中学校・高等学校"},
@@ -155,11 +156,11 @@
     {
       "id": "agriculture_minister_track",
       "title": "農林水産大臣期の政策トラック",
-      "context": "2025年5月以降 農林水産大臣",
+      "context": "2025年5月〜10月 農林水産大臣",
       "source": "首相官邸 第2次石破内閣 閣僚等名簿",
       "source_url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html",
       "reviewed_at": "2026-04-24T00:00:00Z",
-      "status": "tracking",
+      "status": "historical_review",
       "score": 50,
       "total": 4,
       "done": 0,
@@ -189,13 +190,58 @@
           "evidence_url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"
         }
       ]
+    },
+    {
+      "id": "defense_minister_track",
+      "title": "防衛大臣期の政策トラック",
+      "context": "2025年10月以降 防衛大臣",
+      "source": "首相官邸 高市内閣 閣僚等名簿",
+      "source_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html",
+      "reviewed_at": "2026-04-25T00:00:00Z",
+      "status": "tracking",
+      "score": 35,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "防衛力整備計画の実行と財源管理",
+          "category": "防衛政策",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"
+        },
+        {
+          "title": "日米同盟・抑止力の運用",
+          "category": "外交・安全保障",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"
+        },
+        {
+          "title": "自衛官の処遇改善と人材確保",
+          "category": "組織運営",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"
+        },
+        {
+          "title": "防衛産業基盤・装備移転の強化",
+          "category": "産業・技術",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"
+        }
+      ]
     }
   ],
   "focus_cards": [
     {
-      "context": "農政・物価",
-      "title": "農水大臣として食料安全保障をどう実装するか",
-      "desc": "農業生産基盤、輸出、米価・物価対応を、生活者と生産者の双方に納得できる制度へ落とせるかを追う。"
+      "context": "防衛・安全保障",
+      "title": "防衛大臣として抑止力をどう実装するか",
+      "desc": "防衛力整備、日米同盟、自衛官の処遇改善を、財源と国民説明を含めて実行できるかを追う。"
     },
     {
       "context": "総裁選後",
@@ -215,6 +261,7 @@
   ],
   "source_urls": [
     {"label": "小泉進次郎 公式プロフィール", "url": "https://www.shinjiro.info/profile/"},
+    {"label": "首相官邸 防衛大臣プロフィール", "url": "https://www.kantei.go.jp/jp/104/meibo/daijin/koizumi_shinjirou.html"},
     {"label": "首相官邸 農林水産大臣プロフィール", "url": "https://www.kantei.go.jp/jp/103/meibo/daijin/koizumi_shinjiro.html"},
     {"label": "自民党 総裁選2024 候補者情報", "url": "https://www.jimin.jp/election/results/sousai24/candidate/koizumi_shinjiro.html"},
     {"label": "首相官邸 環境大臣プロフィール", "url": "https://www.kantei.go.jp/jp/99_suga/meibo/daijin/koizumi_shinjiro.html"}

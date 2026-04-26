@@ -6,105 +6,354 @@
     <title>polimiru | Contact</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- 共通CSS -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/elections.css">
     <link rel="stylesheet" href="css/modal.css">
 
-    <!-- Contactページ専用スタイル -->
     <style>
         .contact-hero {
-            padding: 70px 20px 40px;
-            background: #ffffff;
-            border-bottom: 1px solid #eee;
+            padding: 72px 20px 38px;
+            background:
+                linear-gradient(135deg, rgba(15, 31, 61, 0.96), rgba(30, 58, 110, 0.92)),
+                url("images/kokkaigizidou.jpg") center/cover;
+            color: #ffffff;
+            border-bottom: 1px solid rgba(15, 31, 61, 0.12);
         }
         .contact-hero-inner {
-            max-width: 1000px;
+            max-width: 1060px;
             margin: 0 auto;
             padding: 0 20px;
         }
+        .contact-kicker {
+            margin: 0 0 8px;
+            color: rgba(255, 255, 255, 0.72);
+            font-family: "Raleway", sans-serif;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
         .contact-title {
-            font-size: 2rem;
-            letter-spacing: 0.15em;
-            margin: 0 0 4px;
+            margin: 0;
+            font-family: "Raleway", sans-serif;
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 1.1;
         }
         .contact-sub {
-            font-size: 0.9rem;
-            color: #6b7280;
-            margin: 0;
+            max-width: 680px;
+            margin: 14px 0 0;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.96rem;
+            line-height: 1.85;
         }
 
         .contact-main {
-            max-width: 900px;
-            margin: 24px auto 60px;
-            padding: 0 20px 40px;
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 34px 24px 78px;
         }
-
-        .contact-lead {
-            font-size: 0.95rem;
-            color: #4b5563;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 320px;
+            gap: 22px;
+            align-items: start;
+        }
+        .contact-panel,
+        .contact-note {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-panel {
+            padding: 26px;
+        }
+        .contact-note {
+            padding: 22px;
+        }
+        .contact-note h2 {
+            margin: 0 0 12px;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        .contact-note p,
+        .contact-note li {
+            color: var(--text-secondary);
+            font-size: 0.88rem;
             line-height: 1.8;
-            margin-bottom: 24px;
+        }
+        .contact-note p {
+            margin: 0 0 16px;
+        }
+        .contact-note ul {
+            margin: 0;
+            padding-left: 18px;
         }
 
-        /* Googleフォーム埋め込み用の枠 */
-        .form-embed-wrapper {
-            background: #fafafa;
-            border-radius: 16px;
-            padding: 16px;
-            border: 1px solid #e5e7eb;
+        .contact-form {
+            display: grid;
+            gap: 18px;
         }
-        .form-embed-wrapper iframe {
+        .contact-field {
+            display: grid;
+            gap: 7px;
+        }
+        .contact-label {
+            color: var(--text-primary);
+            font-size: 0.86rem;
+            font-weight: 800;
+        }
+        .contact-required {
+            margin-left: 6px;
+            color: #b91c1c;
+            font-size: 0.72rem;
+            font-weight: 800;
+        }
+        .contact-input,
+        .contact-select,
+        .contact-textarea {
             width: 100%;
-            min-height: 1100px; /* 足りなければあとで調整 */
-            border: none;
+            border: 1px solid rgba(15, 31, 61, 0.16);
+            border-radius: 8px;
+            background: #ffffff;
+            color: var(--text-primary);
+            font: inherit;
+            outline: none;
+            transition: border-color 0.16s, box-shadow 0.16s, background 0.16s;
+        }
+        .contact-input,
+        .contact-select {
+            min-height: 46px;
+            padding: 10px 12px;
+        }
+        .contact-textarea {
+            min-height: 170px;
+            resize: vertical;
+            padding: 12px;
+            line-height: 1.8;
+        }
+        .contact-input:focus,
+        .contact-select:focus,
+        .contact-textarea:focus {
+            border-color: rgba(30, 58, 110, 0.58);
+            box-shadow: 0 0 0 3px rgba(30, 58, 110, 0.12);
+            background: #fbfdff;
+        }
+        .contact-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .contact-help {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            line-height: 1.6;
+        }
+        .contact-footer-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .contact-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            color: var(--text-secondary);
+            font-size: 0.84rem;
+            line-height: 1.65;
+        }
+        .contact-check input {
+            width: 17px;
+            height: 17px;
+            margin-top: 4px;
+            accent-color: var(--navy-700);
+            flex: 0 0 auto;
+        }
+        .contact-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 46px;
+            padding: 0 20px;
+            border: 0;
+            border-radius: 8px;
+            background: var(--navy-900);
+            color: #ffffff;
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            transition: background 0.16s, transform 0.16s, opacity 0.16s;
+        }
+        .contact-submit:hover {
+            background: var(--navy-700);
+            transform: translateY(-1px);
+        }
+        .contact-submit:disabled {
+            cursor: not-allowed;
+            opacity: 0.62;
+            transform: none;
+        }
+        .contact-status {
+            min-height: 24px;
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.86rem;
+            line-height: 1.7;
+        }
+        .contact-status.is-error {
+            color: #b91c1c;
+        }
+        .contact-status.is-success {
+            color: #047857;
+            font-weight: 800;
+        }
+        .contact-honeypot {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            overflow: hidden;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 860px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-note {
+                order: -1;
+            }
+        }
+        @media (max-width: 620px) {
             .contact-hero {
-                padding-top: 60px;
+                padding: 52px 18px 30px;
             }
-            .contact-title {
-                font-size: 1.6rem;
+            .contact-main {
+                padding: 22px 16px 58px;
             }
-            .form-embed-wrapper iframe {
-                min-height: 1200px;
+            .contact-panel,
+            .contact-note {
+                padding: 18px;
+            }
+            .contact-row {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .contact-submit {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <!-- 共通ヘッダーは layout.js が差し込む -->
-
     <section class="contact-hero">
         <div class="contact-hero-inner">
-            <h1 class="contact-title">CONTACT</h1>
-            <p class="contact-sub">お問い合わせ・ご意見</p>
+            <p class="contact-kicker">Contact</p>
+            <h1 class="contact-title">お問い合わせ</h1>
+            <p class="contact-sub">
+                データの誤り、候補者情報の追加、取材・共同研究、サイトの不具合などはこちらから送信できます。
+            </p>
         </div>
     </section>
 
     <main class="contact-main">
-        <p class="contact-lead">
-            polimiru に関するご意見・ご感想、取材・共同研究のご相談、データの誤りに関するご指摘などは、下記フォームからお送りください。<br>
-            いただいた内容はすべて拝見しますが、個別のご返信ができない場合もあります。あらかじめご了承ください。
-        </p>
+        <div class="contact-grid">
+            <section class="contact-panel" aria-label="お問い合わせフォーム">
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="contact-honeypot" aria-hidden="true">
+                        <label for="contact-company">会社名</label>
+                        <input id="contact-company" name="company" type="text" tabindex="-1" autocomplete="off">
+                    </div>
 
-        <div class="form-embed-wrapper">
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSezEn_05B5WK5qh6ARVQcFew3WP7-Mnbg85fh0LJ_1DduMKcg/viewform?embedded=true"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-            >
-                読み込んでいます…
-            </iframe>
+                    <div class="contact-field">
+                        <label class="contact-label" for="contact-category">
+                            種別<span class="contact-required">必須</span>
+                        </label>
+                        <select class="contact-select" id="contact-category" name="category" required>
+                            <option value="">選択してください</option>
+                            <option value="factcheck">ファクト修正</option>
+                            <option value="candidate_info">候補者情報提供</option>
+                            <option value="bug">不具合報告</option>
+                            <option value="research">取材・共同研究</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="contact-field">
+                            <label class="contact-label" for="contact-name">名前</label>
+                            <input class="contact-input" id="contact-name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="任意">
+                        </div>
+                        <div class="contact-field">
+                            <label class="contact-label" for="contact-email">メールアドレス</label>
+                            <input class="contact-input" id="contact-email" name="email" type="email" maxlength="160" autocomplete="email" placeholder="返信が必要な場合のみ">
+                        </div>
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label" for="contact-page-url">対象ページURL</label>
+                        <input class="contact-input" id="contact-page-url" name="page_url" type="url" maxlength="500" placeholder="https://...">
+                        <span class="contact-help">特定の政治家カード・選挙ページに関する内容なら入れてください。</span>
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label" for="contact-subject">
+                            件名<span class="contact-required">必須</span>
+                        </label>
+                        <input class="contact-input" id="contact-subject" name="subject" type="text" maxlength="120" required placeholder="例：候補者プロフィールの出典修正">
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label" for="contact-message">
+                            内容<span class="contact-required">必須</span>
+                        </label>
+                        <textarea class="contact-textarea" id="contact-message" name="message" maxlength="2000" required placeholder="確認してほしい内容、根拠、修正案などを入力してください。"></textarea>
+                        <span class="contact-help" id="contact-char-count">0 / 2000</span>
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label" for="contact-source-url">参考URL・出典</label>
+                        <input class="contact-input" id="contact-source-url" name="source_url" type="url" maxlength="500" placeholder="https://...">
+                    </div>
+
+                    <label class="contact-check">
+                        <input id="contact-confirm" name="confirm" type="checkbox" required>
+                        <span>送信内容と参考URLを確認しました。</span>
+                    </label>
+
+                    <div class="contact-footer-row">
+                        <p class="contact-status" id="contact-status" aria-live="polite"></p>
+                        <button class="contact-submit" id="contact-submit" type="submit">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            <span>送信する</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="contact-note" aria-label="送信前の確認事項">
+                <h2>ファクト修正は出典つきが助かります</h2>
+                <p>
+                    公的機関、政党・候補者の公式ページ、選挙管理委員会、一次資料に近いものから確認します。
+                </p>
+                <ul>
+                    <li>候補者名やページURLがあると確認が速くなります。</li>
+                    <li>返信が必要な場合のみメールアドレスを入力してください。</li>
+                    <li>個人情報や公開前の機密情報は送らないでください。</li>
+                </ul>
+            </aside>
         </div>
     </main>
 
-    <!-- 共通フッターなど -->
     <script src="js/layout.js?v=3"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
