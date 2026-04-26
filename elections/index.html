@@ -154,8 +154,13 @@
             return url.replace(/^elections\//, '');
         }
 
+        function getUserArea() {
+            return localStorage.getItem('my_area_name') || '';
+        }
+
         function renderCards() {
-            const query = searchInput.value.trim().toLowerCase();
+            const query    = searchInput.value.trim().toLowerCase();
+            const userArea = getUserArea();
             grid.innerHTML = '';
 
             let data = elections || [];
@@ -171,7 +176,17 @@
                 });
             }
 
-            countEl.innerHTML = `<strong>${data.length}</strong> 件`;
+            // エリア設定があれば一致する選挙を先頭に（検索中はソートしない）
+            if (userArea && !query) {
+                data = [...data].sort((a, b) => {
+                    const aMatch = (a.prefecture || '').includes(userArea) ? 0 : 1;
+                    const bMatch = (b.prefecture || '').includes(userArea) ? 0 : 1;
+                    return aMatch - bMatch;
+                });
+            }
+
+            countEl.innerHTML = `<strong>${data.length}</strong> 件` +
+                (userArea ? ` <span style="font-size:0.75rem;color:var(--navy-700);font-weight:600;">— ${userArea}を優先表示中</span>` : '');
 
             if (!data.length) {
                 grid.innerHTML = '<div class="no-results"><i class="fa-regular fa-calendar-xmark"></i>該当する選挙が見つかりませんでした。</div>';

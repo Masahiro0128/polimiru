@@ -198,6 +198,10 @@
             renderCards(category);
         }
 
+        function getUserArea() {
+            return localStorage.getItem('my_area_name') || '';
+        }
+
         function renderCards(category) {
             const electionSection = document.getElementById('election-results');
             const query = searchInput.value.trim().toLowerCase();
@@ -218,6 +222,16 @@
                     const p = (e.prefecture || '').toLowerCase();
                     const d = (e.desc       || '').replace(/<[^>]+>/g,'').toLowerCase();
                     return t.includes(query) || p.includes(query) || d.includes(query);
+                });
+            }
+
+            // エリア設定があれば一致する選挙を先頭に
+            const userArea = getUserArea();
+            if (userArea && !query) {
+                data = [...data].sort((a, b) => {
+                    const aMatch = (a.prefecture || '').includes(userArea) ? 0 : 1;
+                    const bMatch = (b.prefecture || '').includes(userArea) ? 0 : 1;
+                    return aMatch - bMatch;
                 });
             }
 
@@ -296,10 +310,16 @@
             const bm   = window.pBookmarks;
             const all  = (window.politicians || []).filter(p => p.url);
 
-            // ブックマーク済みを先頭に、それ以外は元の順序を維持
-            const sorted = bm
-                ? [...all].sort((a, b) => (bm.isBookmarked(b.id) ? 1 : 0) - (bm.isBookmarked(a.id) ? 1 : 0))
-                : all;
+            // ブックマーク済み → エリア一致 → デフォルト順
+            const userArea = getUserArea();
+            const sorted = [...all].sort((a, b) => {
+                const aBm   = bm && bm.isBookmarked(a.id) ? 0 : 1;
+                const bBm   = bm && bm.isBookmarked(b.id) ? 0 : 1;
+                if (aBm !== bBm) return aBm - bBm;
+                const aArea = userArea && (a.area || '').includes(userArea) ? 0 : 1;
+                const bArea = userArea && (b.area || '').includes(userArea) ? 0 : 1;
+                return aArea - bArea;
+            });
 
             row.innerHTML = sorted.slice(0, 8).map(p => {
                 const saved = bm ? bm.isBookmarked(p.id) : false;
