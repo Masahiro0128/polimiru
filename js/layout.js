@@ -286,7 +286,7 @@ function loadFooter() {
         <div class="footer-social">
             <span class="follow-text">Follow polimiru</span>
             <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://x.com/polimiru?s=21" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.instagram.com/polimiru?igsh=MXRjdXE2dG9vcHk0MA%3D%3D&utm_source=qr" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
         </div>
