@@ -132,9 +132,9 @@
         </div>
         <div class="news-list">
             <div class="news-item">
-                <span class="news-date">2026.04.24</span>
+                <span class="news-date">2026.04.26</span>
                 <span class="news-badge news-badge--feature">新機能</span>
-                <span class="news-text">各政治家ページに<strong>いいね機能</strong>と<strong>掲示板（コメント）機能</strong>を追加しました。ぜひご意見をお聞かせください。</span>
+                <span class="news-text">各政治家ページに<strong>ブックマーク機能</strong>（個人保存）と<strong>掲示板（コメント）機能</strong>を追加しました。</span>
             </div>
             <div class="news-item">
                 <span class="news-date">2026.04.22</span>
@@ -282,20 +282,17 @@
         }
 
         function renderFeaturedPoliticians() {
-            const row   = document.getElementById('featured-politicians-row');
-            const likes = window.pLikes;
-            const all   = (window.politicians || []).filter(p => p.url);
+            const row  = document.getElementById('featured-politicians-row');
+            const bm   = window.pBookmarks;
+            const all  = (window.politicians || []).filter(p => p.url);
 
-            // Pre-compute totals once; reuse for sort and display.
-            const withTotals = all.map(p => ({
-                p,
-                total: likes ? likes.getTotalLikes(p) : (p.baseLikes || 0),
-                liked: likes ? likes.isLiked(p.id) : false,
-            }));
-            if (likes) withTotals.sort((a, b) => b.total - a.total);
+            // ブックマーク済みを先頭に、それ以外は元の順序を維持
+            const sorted = bm
+                ? [...all].sort((a, b) => (bm.isBookmarked(b.id) ? 1 : 0) - (bm.isBookmarked(a.id) ? 1 : 0))
+                : all;
 
-            row.innerHTML = withTotals.slice(0, 8).map(({ p, total, liked }) => {
-                const count = likes ? likes.formatLikes(total) : String(total);
+            row.innerHTML = sorted.slice(0, 8).map(p => {
+                const saved = bm ? bm.isBookmarked(p.id) : false;
                 return `
                 <a href="${p.url}" class="pol-feat-card">
                     ${p.photo
@@ -306,22 +303,21 @@
                     }
                     <div class="pol-feat-name">${p.name}</div>
                     <div class="pol-feat-sub">${p.party}</div>
-                    <button class="pol-feat-like${liked ? ' liked' : ''}"
-                            onclick="event.preventDefault();event.stopPropagation();toggleFeaturedLike(this,'${p.id}')">
-                        <i class="fa-${liked ? 'solid' : 'regular'} fa-heart"></i>
-                        <span>${count}</span>
+                    <button class="pol-feat-bookmark${saved ? ' bookmarked' : ''}"
+                            aria-label="${saved ? '保存済み' : '保存する'}"
+                            onclick="event.preventDefault();event.stopPropagation();toggleFeaturedBookmark(this,'${p.id}')">
+                        <i class="fa-${saved ? 'solid' : 'regular'} fa-bookmark"></i>
                     </button>
                 </a>`;
             }).join('');
         }
 
-        function toggleFeaturedLike(btn, id) {
-            if (!window.pLikes) return;
-            const nowLiked = pLikes.toggleLike(id);
-            const p = (window.politicians || []).find(p => p.id === id);
-            btn.classList.toggle('liked', nowLiked);
-            btn.querySelector('i').className = `fa-${nowLiked ? 'solid' : 'regular'} fa-heart`;
-            if (p) btn.querySelector('span').textContent = pLikes.formatLikes(pLikes.getTotalLikes(p));
+        function toggleFeaturedBookmark(btn, id) {
+            if (!window.pBookmarks) return;
+            const nowSaved = pBookmarks.toggle(id);
+            btn.classList.toggle('bookmarked', nowSaved);
+            btn.querySelector('i').className = `fa-${nowSaved ? 'solid' : 'regular'} fa-bookmark`;
+            btn.setAttribute('aria-label', nowSaved ? '保存済み' : '保存する');
         }
 
         function renderPoliticians() {

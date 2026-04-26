@@ -54,11 +54,11 @@ body {
 }
 
 /* =========================================
-   いいねボタン
+   ブックマークボタン
 ========================================= */
 
 /* 政治家ページ（ヒーロー内） */
-.pol-like-btn {
+.pol-bookmark-btn {
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -74,26 +74,25 @@ body {
     cursor: pointer;
     transition: background 0.18s, border-color 0.18s, color 0.18s;
 }
-.pol-like-btn:hover {
+.pol-bookmark-btn:hover {
     background: rgba(255, 255, 255, 0.18);
     border-color: rgba(255, 255, 255, 0.5);
 }
-.pol-like-btn.liked {
-    background: rgba(220, 53, 69, 0.22);
-    border-color: rgba(220, 53, 69, 0.55);
-    color: #ffb3bc;
+.pol-bookmark-btn.bookmarked {
+    background: rgba(30, 100, 220, 0.22);
+    border-color: rgba(30, 100, 220, 0.55);
+    color: #a8c4ff;
 }
-.pol-like-btn.liked i { color: #ff4d6a; }
-.pol-like-btn i { font-size: 0.9rem; transition: transform 0.15s; }
-.pol-like-btn:active i { transform: scale(1.35); }
-.pol-like-label { font-size: 0.7rem; opacity: 0.7; }
+.pol-bookmark-btn.bookmarked i { color: #5b9bff; }
+.pol-bookmark-btn i { font-size: 0.9rem; transition: transform 0.15s; }
+.pol-bookmark-btn:active i { transform: scale(1.2); }
+.pol-bookmark-label { font-size: 0.8rem; }
 
 /* 注目の政治家カード内 */
-.pol-feat-like {
+.pol-feat-bookmark {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     margin-top: 8px;
     width: 100%;
     padding: 5px 0;
@@ -102,19 +101,18 @@ body {
     background: transparent;
     color: var(--text-muted);
     font-family: inherit;
-    font-size: 0.72rem;
-    font-weight: 700;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
-.pol-feat-like:hover {
-    border-color: #ff4d6a;
-    color: #ff4d6a;
-    background: rgba(255, 77, 106, 0.05);
+.pol-feat-bookmark:hover {
+    border-color: #1e64dc;
+    color: #1e64dc;
+    background: rgba(30, 100, 220, 0.05);
 }
-.pol-feat-like.liked {
-    background: rgba(255, 77, 106, 0.08);
-    border-color: rgba(255, 77, 106, 0.4);
-    color: #e63946;
+.pol-feat-bookmark.bookmarked {
+    background: rgba(30, 100, 220, 0.08);
+    border-color: rgba(30, 100, 220, 0.4);
+    color: #1e64dc;
 }
-.pol-feat-like i { font-size: 0.75rem; }
+.pol-feat-bookmark i { font-size: 0.75rem; }

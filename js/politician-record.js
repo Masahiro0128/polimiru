@@ -233,11 +233,11 @@
 
         const sourceButtons = root.querySelector('.source-buttons');
         if (sourceButtons) {
-            if (window.pLikes) {
-                window.pLikes.insertButton(id, sourceButtons);
+            if (window.pBookmarks) {
+                window.pBookmarks.insertButton(id, sourceButtons);
             } else {
                 document.addEventListener('plikesready', function () {
-                    window.pLikes.insertButton(id, root.querySelector('.source-buttons'));
+                    window.pBookmarks.insertButton(id, root.querySelector('.source-buttons'));
                 }, { once: true });
             }
         }
