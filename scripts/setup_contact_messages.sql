@@ -27,3 +27,18 @@ alter table public.contact_messages
 
 create index if not exists contact_messages_created_at_idx
 on public.contact_messages (created_at desc);
+
+create table if not exists public.contact_rate_limits (
+    id uuid primary key default gen_random_uuid(),
+    ip_address text not null,
+    window_started_at timestamptz not null,
+    request_count integer not null default 1,
+    created_at timestamptz not null default now(),
+    updated_at timestamptz not null default now(),
+    unique (ip_address, window_started_at)
+);
+
+alter table public.contact_rate_limits enable row level security;
+
+create index if not exists contact_rate_limits_window_idx
+on public.contact_rate_limits (window_started_at desc);

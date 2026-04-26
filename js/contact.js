@@ -32,6 +32,7 @@
             },
             body: JSON.stringify(payload),
         });
+        if (res.status === 429) throw new Error('rate_limited');
         if (!res.ok) throw new Error(String(res.status));
     }
 
@@ -98,8 +99,12 @@
                 form.reset();
                 counter.textContent = `0 / ${MAX_MESSAGE_LEN}`;
                 setStatus(status, '送信しました。内容を確認します。', 'success');
-            } catch {
-                setStatus(status, '送信できませんでした。時間をおいて再度お試しください。', 'error');
+            } catch (error) {
+                if (error instanceof Error && error.message === 'rate_limited') {
+                    setStatus(status, '短時間に送信が集中しています。10分ほど待ってから再度お試しください。', 'error');
+                } else {
+                    setStatus(status, '送信できませんでした。時間をおいて再度お試しください。', 'error');
+                }
             } finally {
                 submit.disabled = false;
                 submit.querySelector('span').textContent = '送信する';

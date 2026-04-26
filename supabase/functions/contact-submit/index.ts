@@ -12,10 +12,12 @@ type ContactPayload = {
 };
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
 };
+
+const CONTACT_RATE_LIMIT_MAX = 5;
+const CONTACT_RATE_LIMIT_WINDOW_SECONDS = 10 * 60;
 
 const categoryLabels: Record<ContactCategory, string> = {
   factcheck: 'ファクト修正',
@@ -25,10 +27,20 @@ const categoryLabels: Record<ContactCategory, string> = {
   other: 'その他',
 };
 
-function jsonResponse(body: unknown, status = 200) {
+function corsHeadersFor(req: Request) {
+  const origin = req.headers.get('origin') || '';
+  const allowed = (Deno.env.get('CONTACT_ALLOWED_ORIGINS') || '')
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean);
+  const allowOrigin = allowed.length === 0 || allowed.includes(origin) ? origin || '*' : 'null';
+  return { ...corsHeaders, 'Access-Control-Allow-Origin': allowOrigin, Vary: 'Origin' };
+}
+
+function jsonResponse(req: Request, body: unknown, status = 200) {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json; charset=utf-8' },
+    headers: { ...corsHeadersFor(req), 'Content-Type': 'application/json; charset=utf-8' },
   });
 }
 
@@ -129,6 +141,60 @@ async function updateNotification(id: string, status: 'sent' | 'failed', error?:
   });
 }
 
+function getClientIp(req: Request): string {
+  const forwardedFor = req.headers.get('x-forwarded-for');
+  if (forwardedFor) return forwardedFor.split(',')[0].trim();
+  return req.headers.get('cf-connecting-ip') ||
+    req.headers.get('x-real-ip') ||
+    req.headers.get('fly-client-ip') ||
+    'unknown';
+}
+
+async function checkRateLimit(ipAddress: string) {
+  const now = new Date();
+  const windowStartedAt = new Date(
+    Math.floor(now.getTime() / (CONTACT_RATE_LIMIT_WINDOW_SECONDS * 1000)) *
+      CONTACT_RATE_LIMIT_WINDOW_SECONDS *
+      1000,
+  ).toISOString();
+
+  const existingRes = await supabaseRequest(
+    `contact_rate_limits?ip_address=eq.${encodeURIComponent(ipAddress)}&window_started_at=eq.${encodeURIComponent(windowStartedAt)}&select=id,request_count`,
+    { method: 'GET' },
+  );
+  if (!existingRes.ok) throw new Error(`Rate limit lookup failed: ${existingRes.status}`);
+
+  const rows = await existingRes.json();
+  const current = rows[0] as { id: string; request_count: number } | undefined;
+
+  if (current && current.request_count >= CONTACT_RATE_LIMIT_MAX) {
+    return false;
+  }
+
+  if (current) {
+    const updateRes = await supabaseRequest(
+      `contact_rate_limits?id=eq.${encodeURIComponent(current.id)}`,
+      {
+        method: 'PATCH',
+        body: JSON.stringify({ request_count: current.request_count + 1 }),
+      },
+    );
+    if (!updateRes.ok) throw new Error(`Rate limit update failed: ${updateRes.status}`);
+    return true;
+  }
+
+  const insertRes = await supabaseRequest('contact_rate_limits', {
+    method: 'POST',
+    body: JSON.stringify({
+      ip_address: ipAddress,
+      window_started_at: windowStartedAt,
+      request_count: 1,
+    }),
+  });
+  if (!insertRes.ok) throw new Error(`Rate limit insert failed: ${insertRes.status}`);
+  return true;
+}
+
 async function sendNotification(payload: Required<ContactPayload>) {
   const resendApiKey = Deno.env.get('RESEND_API_KEY');
   const notifyTo = Deno.env.get('CONTACT_NOTIFY_TO');
@@ -159,17 +225,17 @@ async function sendNotification(payload: Required<ContactPayload>) {
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
-    return new Response('ok', { headers: corsHeaders });
+    return new Response('ok', { headers: corsHeadersFor(req) });
   }
   if (req.method !== 'POST') {
-    return jsonResponse({ error: 'Method not allowed' }, 405);
+    return jsonResponse(req, { error: 'Method not allowed' }, 405);
   }
 
   let body: ContactPayload;
   try {
     body = await req.json();
   } catch {
-    return jsonResponse({ error: 'Invalid JSON' }, 400);
+    return jsonResponse(req, { error: 'Invalid JSON' }, 400);
   }
 
   const category = cleanText(body.category, 40) as ContactCategory;
@@ -185,30 +251,35 @@ Deno.serve(async (req) => {
   };
 
   if (!Object.hasOwn(categoryLabels, payload.category)) {
-    return jsonResponse({ error: 'Invalid category' }, 400);
+    return jsonResponse(req, { error: 'Invalid category' }, 400);
   }
   if (!payload.subject) {
-    return jsonResponse({ error: 'Subject is required' }, 400);
+    return jsonResponse(req, { error: 'Subject is required' }, 400);
   }
   if (payload.message.length < 10) {
-    return jsonResponse({ error: 'Message is too short' }, 400);
+    return jsonResponse(req, { error: 'Message is too short' }, 400);
   }
   if (!isHttpUrl(payload.page_url) || !isHttpUrl(payload.source_url)) {
-    return jsonResponse({ error: 'Invalid URL' }, 400);
+    return jsonResponse(req, { error: 'Invalid URL' }, 400);
   }
 
   try {
+    const withinLimit = await checkRateLimit(getClientIp(req));
+    if (!withinLimit) {
+      return jsonResponse(req, { error: 'Too many requests' }, 429);
+    }
+
     const saved = await saveMessage(payload);
     try {
       await sendNotification(payload);
       await updateNotification(saved.id, 'sent');
-      return jsonResponse({ ok: true, notified: true }, 201);
+      return jsonResponse(req, { ok: true, notified: true }, 201);
     } catch (error) {
       await updateNotification(saved.id, 'failed', error instanceof Error ? error.message : String(error));
-      return jsonResponse({ ok: true, notified: false }, 201);
+      return jsonResponse(req, { ok: true, notified: false }, 201);
     }
   } catch (error) {
     console.error(error);
-    return jsonResponse({ error: 'Submission failed' }, 500);
+    return jsonResponse(req, { error: 'Submission failed' }, 500);
   }
 });

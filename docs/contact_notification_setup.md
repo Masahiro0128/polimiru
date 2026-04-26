@@ -42,6 +42,7 @@ Set these secrets in Supabase:
 RESEND_API_KEY=your_resend_api_key
 CONTACT_NOTIFY_TO=your_destination_email@example.com
 CONTACT_FROM=Polimiru <contact@your-domain.com>
+CONTACT_ALLOWED_ORIGINS=https://your-domain.com,http://localhost:5500
 ```
 
 If you use the Supabase CLI:
@@ -50,6 +51,7 @@ If you use the Supabase CLI:
 supabase secrets set RESEND_API_KEY=your_resend_api_key
 supabase secrets set CONTACT_NOTIFY_TO=your_destination_email@example.com
 supabase secrets set "CONTACT_FROM=Polimiru <contact@your-domain.com>"
+supabase secrets set CONTACT_ALLOWED_ORIGINS=https://your-domain.com,http://localhost:5500
 ```
 
 ## 4. Deploy the function
@@ -77,3 +79,13 @@ Useful columns:
 - `notification_status`: `sent`, `failed`, or `pending`
 - `notified_at`: when the email was sent
 - `notify_error`: Resend or configuration error when notification failed
+
+## Rate limit
+
+`contact-submit` allows up to 5 accepted requests per IP address per 10-minute window.
+
+Rate limit state is stored in:
+
+```text
+public.contact_rate_limits
+```
