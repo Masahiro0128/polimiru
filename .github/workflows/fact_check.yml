@@ -31,7 +31,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install anthropic
+        run: pip install google-genai
 
       - name: Run fact check
         run: |
@@ -41,7 +41,7 @@ jobs:
           fi
           python tools/fact_check.py $ARGS
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit updates
         if: github.event.inputs.dry_run != 'true'

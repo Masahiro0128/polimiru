@@ -2,17 +2,22 @@
 """
 Automated fact-check for politician promise tracking.
 
-Reads data/politicians/*.json, uses Claude API (with web search) to assess
-whether promise statuses have changed, then updates files in place.
+Uses Gemini 2.0 Flash (free tier) with Google Search grounding to assess
+whether promise statuses have changed, then updates JSON files in place.
+
+Free tier: 1,500 requests/day — ample for weekly runs.
+
+Setup:
+  1. Get free API key: https://aistudio.google.com/apikey
+  2. export GEMINI_API_KEY=your_key
+  3. pip install google-genai
 
 Usage:
-  export ANTHROPIC_API_KEY=sk-ant-...
-  python tools/fact_check.py              # check all
+  python tools/fact_check.py              # check all politicians
   python tools/fact_check.py koike        # match by filename substring
   python tools/fact_check.py --dry-run    # print findings without saving
 """
 
-import anthropic
 import json
 import os
 import re
@@ -20,11 +25,17 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-MODEL = "claude-opus-4-7"
+try:
+    from google import genai
+    from google.genai import types
+except ImportError:
+    print("Error: run `pip install google-genai`", file=sys.stderr)
+    sys.exit(1)
+
+MODEL = "gemini-2.0-flash"
 
 SCORE_WEIGHT = {"実現": 100, "進行中": 50, "公約": 0, "撤回": 0}
-
-TERMINAL_STATUSES = {"実現", "撤回"}
+TERMINAL = {"実現", "撤回"}
 
 
 def recompute_cycle(cycle: dict) -> None:
@@ -32,18 +43,18 @@ def recompute_cycle(cycle: dict) -> None:
     if not highlights:
         return
     total = len(highlights)
-    done = sum(1 for h in highlights if h["status"] == "実現")
-    started = sum(1 for h in highlights if h["status"] == "進行中")
-    pending = sum(1 for h in highlights if h["status"] == "公約")
     weights = [SCORE_WEIGHT.get(h["status"], 0) for h in highlights]
-    score = round(sum(weights) / total) if total else 0
+    cycle.update({
+        "total": total,
+        "done":    sum(1 for h in highlights if h["status"] == "実現"),
+        "started": sum(1 for h in highlights if h["status"] == "進行中"),
+        "pending": sum(1 for h in highlights if h["status"] == "公約"),
+        "score":   round(sum(weights) / total),
+        "reviewed_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    })
 
-    cycle.update({"total": total, "done": done, "started": started, "pending": pending, "score": score})
-    cycle["reviewed_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-
-def check_politician(client: anthropic.Anthropic, data: dict, dry_run: bool) -> bool:
-    """Check all non-final promises for one politician. Returns True if any change was made."""
+def check_politician(client: "genai.Client", data: dict, dry_run: bool) -> bool:
     name = data.get("name", "?")
     changed = False
 
@@ -52,7 +63,7 @@ def check_politician(client: anthropic.Anthropic, data: dict, dry_run: bool) -> 
         checkable = [
             {"idx": i, "title": h["title"], "current_status": h["status"]}
             for i, h in enumerate(highlights)
-            if h["status"] not in TERMINAL_STATUSES
+            if h["status"] not in TERMINAL
         ]
         if not checkable:
             continue
@@ -62,51 +73,51 @@ def check_politician(client: anthropic.Anthropic, data: dict, dry_run: bool) -> 
 政治家: {name}
 公約セット: {cycle.get('title', '')}
 
-以下の公約について、最新ニュースを必要に応じて検索し、2026年4月時点の達成状況を判定してください。
-確信が持てない場合は "変化なし" にしてください。
+以下の公約について、Google検索で最新情報を調べ、2026年4月時点の達成状況を判定してください。
+確信が持てない場合は "変化なし" を選んでください。
 
-公約リスト (JSON):
+公約リスト:
 {json.dumps(checkable, ensure_ascii=False, indent=2)}
 
-各公約について以下の形式でJSONを返してください（コードブロック不要）:
+回答はJSONのみ（コードブロック不要）:
 [
   {{
     "idx": <元のidx>,
     "new_status": "実現" | "進行中" | "公約" | "撤回" | "変化なし",
     "confidence": "high" | "medium" | "low",
-    "evidence_url": "<根拠URL、なければ空文字>",
-    "note": "<判断理由を1文で>"
+    "evidence_url": "<根拠となるニュースURL、なければ空文字>",
+    "note": "<判断理由を1文>"
   }}
 ]"""
 
         try:
-            response = client.messages.create(
+            response = client.models.generate_content(
                 model=MODEL,
-                max_tokens=2048,
-                tools=[{"type": "web_search_20250305", "name": "web_search"}],
-                messages=[{"role": "user", "content": prompt}],
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    temperature=0.1,
+                ),
             )
+            text = response.text.strip()
         except Exception as e:
             print(f"  ⚠ API error for {name}: {e}", file=sys.stderr)
             continue
 
-        # Extract text from final response
-        text = ""
-        for block in response.content:
-            if hasattr(block, "text"):
-                text += block.text
-
-        # Parse JSON — strip any stray markdown
-        text = re.sub(r"```[a-z]*\n?", "", text).strip()
+        # Strip markdown fences if present
+        text = re.sub(r"```[a-z]*\n?", "", text).strip().rstrip("`")
         try:
             results = json.loads(text)
         except json.JSONDecodeError:
-            # Try to extract JSON array
             m = re.search(r"\[[\s\S]+\]", text)
             if not m:
                 print(f"  ⚠ Could not parse response for {name}", file=sys.stderr)
                 continue
-            results = json.loads(m.group())
+            try:
+                results = json.loads(m.group())
+            except json.JSONDecodeError:
+                print(f"  ⚠ JSON parse failed for {name}", file=sys.stderr)
+                continue
 
         for r in results:
             idx = r.get("idx")
@@ -115,7 +126,7 @@ def check_politician(client: anthropic.Anthropic, data: dict, dry_run: bool) -> 
 
             if new_status == "変化なし" or confidence == "low":
                 continue
-            if idx is None or idx >= len(highlights):
+            if idx is None or not (0 <= idx < len(highlights)):
                 continue
 
             old_status = highlights[idx]["status"]
@@ -123,10 +134,12 @@ def check_politician(client: anthropic.Anthropic, data: dict, dry_run: bool) -> 
                 continue
 
             print(
-                f"  [{name}] {highlights[idx]['title'][:40]}...\n"
-                f"    {old_status} → {new_status}  (conf:{confidence})\n"
+                f"  [{name}] {highlights[idx]['title'][:45]}\n"
+                f"    {old_status} → {new_status}  ({confidence})\n"
                 f"    {r.get('note', '')}"
             )
+            if r.get("evidence_url"):
+                print(f"    {r['evidence_url']}")
 
             if not dry_run:
                 highlights[idx]["status"] = new_status
@@ -145,19 +158,14 @@ def main() -> int:
     dry_run = "--dry-run" in args
     filter_arg = next((a for a in args if not a.startswith("--")), None)
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("Error: ANTHROPIC_API_KEY is not set.", file=sys.stderr)
+        print("Error: GEMINI_API_KEY is not set.\nGet a free key at https://aistudio.google.com/apikey", file=sys.stderr)
         return 1
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = genai.Client(api_key=api_key)
 
-    # Resolve data directory relative to this script
     data_dir = Path(__file__).parent.parent / "data" / "politicians"
-    if not data_dir.exists():
-        print(f"Error: {data_dir} not found.", file=sys.stderr)
-        return 1
-
     json_files = sorted(data_dir.glob("*.json"))
     if filter_arg:
         json_files = [f for f in json_files if filter_arg.lower() in f.stem.lower()]
@@ -174,18 +182,17 @@ def main() -> int:
         try:
             with open(path, encoding="utf-8") as f:
                 data = json.load(f)
-
             if check_politician(client, data, dry_run):
                 if not dry_run:
                     with open(path, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
                         f.write("\n")
-                    print(f"  ✓ Saved {path.name}")
+                    print(f"  ✓ {path.name} saved")
                 updated += 1
         except Exception as e:
-            print(f"  ⚠ Error: {e}", file=sys.stderr)
+            print(f"  ⚠ {path.name}: {e}", file=sys.stderr)
 
-    print(f"\nDone. {updated} file(s) {'would be ' if dry_run else ''}updated.")
+    print(f"\nDone. {updated}/{len(json_files)} file(s) {'would be ' if dry_run else ''}updated.")
     return 0
 
 
