@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選挙・注目情報 | polimiru</title>
+    <meta name="description" content="いま注目すべき日本の選挙情報を一覧で確認。候補者の公約・実績データをもとにした公正な比較。">
+    <meta property="og:title" content="選挙・注目情報 | polimiru">
+    <meta property="og:description" content="いま注目すべき日本の選挙情報。候補者の公約・実績データを比較。">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/elections.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <style>
+        .elections-hero {
+            background: linear-gradient(135deg, var(--navy-900), var(--navy-700));
+            color: #fff;
+            padding: 48px 24px 40px;
+        }
+        .elections-hero-inner {
+            max-width: 1060px;
+            margin: 0 auto;
+        }
+        .elections-hero h1 {
+            margin: 0 0 8px;
+            font-size: 1.7rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+        .elections-hero p {
+            margin: 0 0 24px;
+            opacity: 0.75;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .elections-search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 999px;
+            padding: 10px 18px;
+            max-width: 420px;
+        }
+        .elections-search i { opacity: 0.65; }
+        .elections-search input {
+            flex: 1;
+            background: none;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 0.9rem;
+            font-family: inherit;
+        }
+        .elections-search input::placeholder { color: rgba(255,255,255,0.45); }
+
+        .elections-body {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 36px 24px 80px;
+        }
+
+        .elections-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .elections-count {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+        .elections-count strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 80px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            grid-column: 1 / -1;
+        }
+        .no-results i { display: block; font-size: 2rem; margin-bottom: 12px; opacity: 0.3; }
+    </style>
+</head>
+<body>
+
+    <div class="elections-hero">
+        <div class="elections-hero-inner">
+            <h1>選挙・注目情報</h1>
+            <p>いま注目すべき日本の選挙情報を一覧で確認。<br>候補者の公約・実績データをもとに比較します。</p>
+            <div class="elections-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="search-input" placeholder="都道府県・選挙名で検索...">
+            </div>
+        </div>
+    </div>
+
+    <div class="elections-body">
+        <div class="elections-toolbar">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all"      onclick="filterElections(this,'all')">すべて</button>
+                <span class="filter-sep">|</span>
+                <button class="filter-btn"        data-category="national" onclick="filterElections(this,'national')">国政</button>
+                <span class="filter-sep">|</span>
+                <button class="filter-btn"        data-category="local"    onclick="filterElections(this,'local')">地方</button>
+            </div>
+            <div class="elections-count" id="elections-count"></div>
+        </div>
+
+        <div class="election-grid" id="election-grid"></div>
+    </div>
+
+    <script src="../js/supabase-config.js"></script>
+    <script src="../js/likes.js"></script>
+    <script src="../js/elections.js"></script>
+    <script src="../js/layout.js"></script>
+
+    <script>
+    (function () {
+        const grid        = document.getElementById('election-grid');
+        const searchInput = document.getElementById('search-input');
+        const countEl     = document.getElementById('elections-count');
+
+        const prefectureImages = {
+            "東京都":  "../images/tokyo.jpg",
+            "大阪府":  "../images/osaka.jpg",
+            "長崎県":  "../images/nagasaki.jpg",
+            "新潟県":  "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=600&q=80",
+            "国政":    "../images/kokkaigizidou.jpg",
+            "default": "https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&w=600&q=80"
+        };
+
+        let currentCategory = 'all';
+
+        window.filterElections = function(btn, category) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentCategory = category;
+            renderCards();
+        };
+
+        function electionUrl(url) {
+            // elections.js のURLは "elections/..." 形式 → このページは elections/ 配下なので prefix を除去
+            if (!url) return '';
+            return url.replace(/^elections\//, '');
+        }
+
+        function renderCards() {
+            const query = searchInput.value.trim().toLowerCase();
+            grid.innerHTML = '';
+
+            let data = elections || [];
+            if (currentCategory === 'national') data = data.filter(e => e.category === 'national');
+            else if (currentCategory === 'local')  data = data.filter(e => e.category === 'local');
+
+            if (query) {
+                data = data.filter(e => {
+                    const t = (e.title      || '').toLowerCase();
+                    const p = (e.prefecture || '').toLowerCase();
+                    const d = (e.desc       || '').replace(/<[^>]+>/g, '').toLowerCase();
+                    return t.includes(query) || p.includes(query) || d.includes(query);
+                });
+            }
+
+            countEl.innerHTML = `<strong>${data.length}</strong> 件`;
+
+            if (!data.length) {
+                grid.innerHTML = '<div class="no-results"><i class="fa-regular fa-calendar-xmark"></i>該当する選挙が見つかりませんでした。</div>';
+                return;
+            }
+
+            const bm = window.pBookmarks;
+            data.forEach(function(election) {
+                const badgeClass  = election.badgeType === 'national' ? 'badge-national' : 'badge-local';
+                const badgeLabel  = election.badgeType === 'national' ? '国政' : '地方';
+                const statusClass = (election.status && election.status.includes('注目')) ? 'status-active' : '';
+                const isDeadLink  = !election.url || election.url === '#';
+                const elecSaved   = bm ? bm.isBookmarked(String(election.id), 'election') : false;
+
+                let imageUrl = prefectureImages[election.prefecture] || prefectureImages['default'];
+                if (election.image && election.image.startsWith('http')) imageUrl = election.image;
+
+                const tag  = isDeadLink ? 'div' : 'a';
+                const href = isDeadLink ? '' : `href="${electionUrl(election.url)}"`;
+                const style = isDeadLink ? 'cursor:default;opacity:0.6' : '';
+
+                grid.insertAdjacentHTML('beforeend', `
+                    <${tag} ${href} class="election-card" style="${style}">
+                        <div class="card-thumb" style="background-image:url('${imageUrl}')">
+                            <span class="badge ${badgeClass}">${badgeLabel}</span>
+                            <span class="status-label ${statusClass}">${election.status}</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="election-title">${election.title}</div>
+                            <div class="election-date">
+                                <i class="fa-regular fa-calendar" style="font-size:0.85em"></i>
+                                ${election.date}
+                            </div>
+                            <div class="election-desc">${(election.desc || '').replace(/<br\s*\/?>/gi, ' ')}</div>
+                            <div class="card-footer-row">
+                                ${!isDeadLink ? `<div class="card-footer-hint">詳細を見る <i class="fa-solid fa-arrow-right" style="font-size:0.75em"></i></div>` : '<div></div>'}
+                                <button class="elec-card-bookmark${elecSaved ? ' bookmarked' : ''}"
+                                        aria-label="${elecSaved ? '保存済み' : '保存する'}"
+                                        onclick="event.preventDefault();event.stopPropagation();toggleElectionBookmark(this,'${election.id}')">
+                                    <i class="fa-${elecSaved ? 'solid' : 'regular'} fa-bookmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </${tag}>
+                `);
+            });
+        }
+
+        function toggleElectionBookmark(btn, id) {
+            if (!window.pBookmarks) return;
+            const nowSaved = pBookmarks.toggle(String(id), 'election');
+            btn.classList.toggle('bookmarked', nowSaved);
+            btn.querySelector('i').className = `fa-${nowSaved ? 'solid' : 'regular'} fa-bookmark`;
+            btn.setAttribute('aria-label', nowSaved ? '保存済み' : '保存する');
+        }
+        window.toggleElectionBookmark = toggleElectionBookmark;
+
+        searchInput.addEventListener('input', renderCards);
+
+        document.addEventListener('plikesready', renderCards);
+        if (window.pBookmarks) renderCards();
+        else renderCards(); // pBookmarks未ロードでも表示
+
+    }());
+    </script>
+
+</body>
+</html>
