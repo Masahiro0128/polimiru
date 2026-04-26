@@ -47,7 +47,6 @@ function loadHeader() {
     const newsPath      = homePath + '#news';
     const contactPath   = pathPrefix + 'contact.html';
     const methodPath    = pathPrefix + 'method.html';
-    const savedPath     = pathPrefix + 'bookmarks.html';
 
     // HTML生成
     const headerHTML = `
@@ -78,11 +77,7 @@ function loadHeader() {
                 <span class="nav-en">Elections</span>
                 <span class="nav-ja">選挙・データ</span>
             </a>
-            <a href="${savedPath}" id="nav-saved-link">
-                <span class="nav-en">Saved</span>
-                <span class="nav-ja">保存済み</span>
-            </a>
-            <a href="${contactPath}" class="contact-btn">
+<a href="${contactPath}" class="contact-btn">
                 <span class="nav-en">Contact</span>
                 <span class="nav-ja">お問い合わせ</span>
             </a>
