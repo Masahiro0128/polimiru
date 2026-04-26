@@ -1,0 +1,58 @@
+name: Fact Check — Promise Tracking Update
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"   # 毎週月曜 2:00 UTC (11:00 JST)
+  workflow_dispatch:
+    inputs:
+      politician:
+        description: "対象政治家 (ファイル名の一部、空欄=全員)"
+        required: false
+        default: ""
+      dry_run:
+        description: "ドライラン (変更を保存しない)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  fact-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Run fact check
+        run: |
+          ARGS="${{ github.event.inputs.politician }}"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python tools/fact_check.py $ARGS
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit updates
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          if git status --porcelain data/politicians/ | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/politicians/
+            git commit -m "auto: fact-check update $(date +'%Y-%m-%d')"
+            git push
+            echo "✓ Changes committed."
+          else
+            echo "No changes detected."
+          fi

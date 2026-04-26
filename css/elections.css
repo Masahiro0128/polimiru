@@ -214,8 +214,8 @@
 /* ── 候補者グリッド（選挙詳細ページ） ──── */
 .candidate-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
 }
 
 .cand-card {
@@ -223,10 +223,11 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid var(--border);
+    border-top: 3px solid var(--navy-200);
     cursor: pointer;
     transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s;
     box-shadow: var(--shadow-sm);
-    padding: 20px 14px 16px;
+    padding: 22px 16px 18px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -238,9 +239,16 @@
     background: var(--navy-50);
 }
 
+/* Party accent colors on top border */
+.cand-card.party-ishin  { border-top-color: #2d6a2d; }
+.cand-card.party-jimin  { border-top-color: #c9171e; }
+.cand-card.party-komei  { border-top-color: #4a90d9; }
+.cand-card.party-rikken { border-top-color: #1d4e89; }
+.cand-card.party-kyosan { border-top-color: #cc0000; }
+
 .cand-card-photo {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
@@ -249,13 +257,13 @@
     display: block;
 }
 .cand-card-photo-placeholder {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: var(--navy-100);
     color: var(--navy-700);
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -509,7 +517,7 @@
 /* ── スマホ ───────────────────────────── */
 @media (max-width: 768px) {
     .election-grid    { grid-template-columns: 1fr; gap: 12px; }
-    .candidate-grid   { grid-template-columns: 1fr; }
+    .candidate-grid   { grid-template-columns: repeat(2, 1fr); gap: 10px; }
     .filter-tabs      { gap: 4px; }
     .filter-btn       { padding: 5px 12px; font-size: 0.78rem; }
 

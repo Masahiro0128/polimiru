@@ -6,150 +6,185 @@
   "party_role": "東京都知事",
   "area": "東京都",
   "current_status": "東京都知事（3期目）",
-  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Yuriko_Koike_official_portrait_%28cropped%29.jpg/440px-Yuriko_Koike_official_portrait_%28cropped%29.jpg",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Yuriko_Koike_January_2026_%28cropped_1%29.jpg/440px-Yuriko_Koike_January_2026_%28cropped_1%29.jpg",
   "photo_credit": "Wikimedia Commons",
-  "official_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/",
-  "accent": {"from": "#5b21b6", "to": "#3b0764", "color": "#7c3aed"},
-  "summary": "カイロ大学卒業。テレビキャスターを経て政界入り。環境大臣・防衛大臣を歴任後、2016年東京都知事選に出馬し初当選。東京五輪開催・ゼロエミッション東京・子育て支援などを推進し、2020年・2024年と3選を果たした。",
+  "accent": {"from": "#1a5276", "to": "#2e86c1", "color": "#2e86c1"},
+  "summary": "兵庫県芦屋市出身。カイロ大学卒業後テレビキャスターを経て1992年参院初当選。環境大臣・防衛大臣を歴任し、2016年東京都知事選で日本初の女性都知事に就任。東京五輪開催・ゼロエミッション・子育て支援を推進し2020・2024年と3選。「東京大改革」を旗印に行政の透明化・デジタル化を進める。",
   "stats": [
     {"label": "役職", "value": "東京都知事"},
-    {"label": "当選", "value": "3期"},
+    {"label": "当選", "value": "3期（2016・2020・2024）"},
     {"label": "出身", "value": "兵庫県芦屋市"},
-    {"label": "学歴", "value": "カイロ大学卒"},
-    {"label": "元職", "value": "防衛大臣・環境大臣"}
+    {"label": "学歴", "value": "カイロ大学文学部卒"},
+    {"label": "元職", "value": "防衛大臣・環境大臣（衆院議員12期）"}
   ],
   "career": [
     {"period": "1952", "text": "兵庫県芦屋市生まれ"},
     {"period": "1976", "text": "カイロ大学文学部社会学科卒業"},
-    {"period": "1976〜", "text": "テレビキャスターとして活動"},
-    {"period": "1992", "text": "参議院議員に初当選（日本新党）"},
-    {"period": "1993", "text": "衆議院議員に転出（細川連立政権に参加）"},
+    {"period": "1976〜", "text": "テレビキャスター（テレビ東京・日本テレビ系）"},
+    {"period": "1992", "text": "参議院議員初当選（日本新党）"},
+    {"period": "1993", "text": "衆議院議員に転出。細川連立政権に参加"},
     {"period": "2003", "text": "環境大臣（第2次小泉内閣）"},
-    {"period": "2007", "text": "防衛大臣（第1次安倍内閣）"},
-    {"period": "2016", "text": "東京都知事選に出馬・当選（初代女性都知事）"},
-    {"period": "2017", "text": "希望の党を設立"},
-    {"period": "2020", "text": "東京都知事2期目当選"},
-    {"period": "2024", "text": "東京都知事3期目当選"},
-    {"period": "現在", "text": "東京都知事（3期目）"}
+    {"period": "2007", "text": "防衛大臣（第1次安倍内閣）。女性初の防衛大臣"},
+    {"period": "2016", "text": "東京都知事選に出馬・当選。日本初の女性都知事に就任"},
+    {"period": "2017", "text": "希望の党を設立。衆院選で失速し代表辞任"},
+    {"period": "2020", "text": "東京都知事2期目当選。東京五輪の延期対応"},
+    {"period": "2021", "text": "東京2020オリンピック・パラリンピックを開催（無観客）"},
+    {"period": "2024", "text": "東京都知事3期目当選（得票率42.8%・291万票）"},
+    {"period": "現在", "text": "東京都知事（3期目）。東京大改革3.0を推進"}
   ],
   "promise_cycles": [
     {
       "id": "koike_chiji_3rd",
-      "title": "2024年都知事選公約 追跡（3期目）",
-      "context": "2024年東京都知事選挙（2024年7月）",
-      "source": "小池百合子 2024都知事選公約",
-      "source_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/",
-      "reviewed_at": "2026-04-25T00:00:00Z",
-      "status": "tracking",
-      "score": 45,
-      "total": 5,
-      "done": 0,
-      "started": 3,
+      "title": "2024年都知事選 公約追跡（3期目）",
+      "context": "2024年7月 東京都知事選挙（3選）後の実行状況",
+      "source": "小池百合子 2024年都知事選公約（東京大改革3.0）",
+      "source_url": "https://www.yuriko.or.jp/policy",
+      "reviewed_at": "2026-04-26T00:00:00Z",
+      "score": 54,
+      "total": 12,
+      "done": 3,
+      "started": 7,
       "pending": 2,
-      "unknown": 0,
       "highlights": [
         {
-          "title": "ゼロエミッション東京の推進（2050年カーボンニュートラル）",
-          "category": "環境・エネルギー",
+          "title": "都内高校授業料の実質無償化（所得制限撤廃・私立含む）",
+          "status": "実現",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2024/03/27/01.html"
+        },
+        {
+          "title": "無痛分娩の費用助成制度の創設",
+          "status": "実現",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOCC178C10X10C24A6000000/"
+        },
+        {
+          "title": "新築住宅への太陽光パネル設置義務化（2025年4月施行）",
+          "status": "実現",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2024/12/20/01.html"
+        },
+        {
+          "title": "保育無償化の対象を第1子以降に拡大（認可保育所）",
           "status": "進行中",
-          "progress_score": 55,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2024/06/18/01.html"
+        },
+        {
+          "title": "学童保育の待機児童ゼロ化",
+          "status": "進行中",
           "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
         },
         {
-          "title": "子育て支援・保育所拡充・0〜18歳の医療費無償化",
-          "category": "子育て",
+          "title": "木造住宅密集地域の解消促進（不燃化10年プロジェクト継続）",
           "status": "進行中",
-          "progress_score": 70,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2025/03/01.html"
+        },
+        {
+          "title": "無電柱化の推進（都道4,000km計画）",
+          "status": "進行中",
           "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
         },
         {
-          "title": "東京の国際競争力強化・スタートアップ支援",
-          "category": "経済",
+          "title": "行政手続き100%デジタル化・TOKYOスーパーアプリ開発",
           "status": "進行中",
-          "progress_score": 45,
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2025/01/20/01.html"
+        },
+        {
+          "title": "東京都版大学給付型奨学金制度の創設",
+          "status": "進行中",
           "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
         },
         {
-          "title": "防災・首都直下地震対策の強化",
-          "category": "防災",
+          "title": "スタートアップ支援・Tokyo Innovation Base拡充",
+          "status": "進行中",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2025/02/01.html"
+        },
+        {
+          "title": "女性活躍基本条例の制定",
           "status": "公約",
-          "progress_score": 35,
-          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+          "evidence_url": "https://www.yuriko.or.jp/policy"
         },
         {
-          "title": "デジタル都庁の推進・行政DX",
-          "category": "行政DX",
+          "title": "認知症専門病院の創設・在宅医療介護支援の強化",
           "status": "公約",
-          "progress_score": 40,
-          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+          "evidence_url": "https://www.yuriko.or.jp/policy"
         }
       ]
     },
     {
-      "id": "koike_chiji_track",
-      "title": "都知事1〜2期の主要公約レビュー（2016-2024）",
-      "context": "東京都知事1〜2期在任中の主要実績",
-      "source": "東京都 知事プロフィール・都政成果",
+      "id": "koike_chiji_12",
+      "title": "都知事1・2期 実績レビュー（2016〜2024）",
+      "context": "東京都知事1〜2期（8年）の主要公約と達成状況",
+      "source": "東京都 知事プロフィール・都政成果・各年度報告",
       "source_url": "https://www.metro.tokyo.lg.jp/",
-      "reviewed_at": "2026-04-25T00:00:00Z",
-      "status": "historical_review",
-      "score": 65,
-      "total": 4,
-      "done": 2,
-      "started": 1,
+      "reviewed_at": "2026-04-26T00:00:00Z",
+      "score": 75,
+      "total": 8,
+      "done": 5,
+      "started": 2,
       "pending": 1,
-      "unknown": 0,
       "highlights": [
         {
           "title": "東京2020オリンピック・パラリンピックの開催",
-          "category": "大型イベント",
           "status": "実現",
-          "progress_score": 100,
-          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
         },
         {
-          "title": "0〜5歳の保育無償化・待機児童解消",
-          "category": "子育て",
+          "title": "0〜5歳の保育無償化・待機児童の大幅削減",
           "status": "実現",
-          "progress_score": 85,
-          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2023/04/01/01.html"
         },
         {
-          "title": "東京都の情報公開・都政改革",
-          "category": "行政改革",
+          "title": "18歳以下の医療費無償化（所得制限なし・2023年4月〜）",
+          "status": "実現",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2023/01/20/01.html"
+        },
+        {
+          "title": "豊洲市場への移転問題の解決（2018年10月移転完了）",
+          "status": "実現",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        },
+        {
+          "title": "新型コロナウイルス対策（ワクチン接種・宿泊療養・病床確保）",
+          "status": "実現",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
+        },
+        {
+          "title": "東京大改革・都政の透明化（事業評価制度・情報公開推進）",
           "status": "進行中",
-          "progress_score": 55,
-          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
         },
         {
-          "title": "豊洲移転問題の解決",
-          "category": "行政・市場問題",
-          "status": "実現",
-          "progress_score": 80,
-          "evidence_url": "https://www.metro.tokyo.lg.jp/"
+          "title": "ゼロエミッション東京推進（2050年カーボンニュートラル宣言）",
+          "status": "進行中",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2024/04/01/01.html"
+        },
+        {
+          "title": "中学校給食の無償化（都立中・区市町村支援）",
+          "status": "公約",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"
         }
       ]
     }
   ],
   "focus_cards": [
     {
-      "context": "環境・エネルギー",
-      "title": "ゼロエミッション東京の実現可能性",
-      "desc": "2050年カーボンニュートラルに向けたロードマップが3期目でどこまで具体化されるかを追う。"
+      "context": "2026年 最大の焦点",
+      "title": "少子化対策の実効性",
+      "desc": "保育無償化第1子拡大・無痛分娩助成など打ち出した施策が、実際の出生数・出産率に影響を与えるかが問われる3期目の最重要課題。"
     },
     {
-      "context": "国政との関係",
-      "title": "都知事の立場での国政影響力",
-      "desc": "補助金・都区財政調整・国との協議を通じて、国政にどの程度影響力を発揮できるかが焦点。"
+      "context": "環境政策",
+      "title": "太陽光パネル義務化の定着と再エネ転換",
+      "desc": "2025年4月から始まった新築住宅への太陽光パネル設置義務が普及率向上につながるか。ゼロエミッション2050目標との整合性も注目。"
     },
     {
-      "context": "子育て・教育",
-      "title": "18歳以下無償化の全都展開",
-      "desc": "0〜18歳医療費無償化・給食費無償化など子育て支援策の進捗と財源の持続性を見る。"
+      "context": "行政DX",
+      "title": "デジタル都庁・TOKYOスーパーアプリの実現",
+      "desc": "行政手続き100%デジタル化とTOKYOスーパーアプリ構想がどこまで具体化されるか。GovTech東京の開発進捗が試金石となる。"
     }
   ],
   "source_urls": [
-    {"label": "東京都知事プロフィール", "url": "https://www.metro.tokyo.lg.jp/tosei/chiji/"},
-    {"label": "東京都公式サイト", "url": "https://www.metro.tokyo.lg.jp/"}
+    {"label": "小池ゆりこ公式サイト", "url": "https://www.yuriko.or.jp/"},
+    {"label": "東京都知事プロフィール", "url": "https://www.metro.tokyo.lg.jp/governor/goaisatsu"},
+    {"label": "東京都公式サイト", "url": "https://www.metro.tokyo.lg.jp/"},
+    {"label": "X (Twitter)", "url": "https://twitter.com/ecoyuri"}
   ]
 }

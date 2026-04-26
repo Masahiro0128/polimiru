@@ -189,7 +189,7 @@
                 : `data-election="${ELECTION_KEY}" data-candidate-id="${c.id}" role="button" tabindex="0"`;
 
             return `
-                <${cardTag} class="cand-card" ${cardAttrs} style="text-decoration:none;color:inherit">
+                <${cardTag} class="cand-card ${partyHeaderClass(c.party)}" ${cardAttrs} style="text-decoration:none;color:inherit">
                     ${photo}
                     <div class="cand-card-name">${c.name}</div>
                     <div class="cand-card-party">${c.party || ''}</div>
