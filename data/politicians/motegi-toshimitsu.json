@@ -1,0 +1,253 @@
+{
+  "id": "motegi-toshimitsu",
+  "name": "茂木 敏充",
+  "kana": "もてぎ としみつ",
+  "party": "自由民主党",
+  "party_role": "外務大臣",
+  "area": "栃木県第5区",
+  "current_status": "外務大臣・衆議院議員",
+  "photo_url": "https://www.kantei.go.jp/jp/content/motegi_toshimitsu_r.jpg",
+  "photo_credit": "首相官邸",
+  "official_url": "https://www.jimin.jp/member/100535.html",
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
+  "summary": "栃木県足利市出身。東京大学卒業、ハーバード大学大学院修了後、丸紅、読売新聞政治部、マッキンゼーを経て政界へ。経済産業大臣、経済再生担当大臣、外務大臣、自民党幹事長などを歴任し、高市内閣で外務大臣を務める実務型の自民党重鎮。",
+  "stats": [
+    {
+      "label": "当選",
+      "value": "12期"
+    },
+    {
+      "label": "国会",
+      "value": "衆議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "栃木5区"
+    },
+    {
+      "label": "出身",
+      "value": "栃木県足利市"
+    },
+    {
+      "label": "現職",
+      "value": "外務大臣"
+    },
+    {
+      "label": "元職",
+      "value": "自民党幹事長"
+    }
+  ],
+  "education": [
+    {
+      "school": "東京大学",
+      "period": "1978年卒業",
+      "note": ""
+    },
+    {
+      "school": "ハーバード大学大学院",
+      "period": "1983年修了",
+      "note": "公共政策専攻"
+    }
+  ],
+  "career": [
+    {
+      "period": "1955",
+      "text": "栃木県足利市生まれ"
+    },
+    {
+      "period": "1978",
+      "text": "東京大学卒業。丸紅、読売新聞政治部、マッキンゼー社などで勤務"
+    },
+    {
+      "period": "1983",
+      "text": "米国ハーバード大学大学院修了（公共政策専攻）"
+    },
+    {
+      "period": "1993",
+      "text": "第40回衆議院議員総選挙で初当選（栃木5区）"
+    },
+    {
+      "period": "2003",
+      "text": "内閣府特命担当大臣（沖縄及び北方対策、個人情報保護、科学技術政策）"
+    },
+    {
+      "period": "2011",
+      "text": "自由民主党政務調査会長に就任"
+    },
+    {
+      "period": "2012-2014",
+      "text": "経済産業大臣、原子力経済被害担当、産業競争力担当"
+    },
+    {
+      "period": "2017-2019",
+      "text": "経済再生担当大臣、全世代型社会保障改革担当大臣、内閣府特命担当大臣（経済財政政策）"
+    },
+    {
+      "period": "2019-2021",
+      "text": "外務大臣"
+    },
+    {
+      "period": "2021-2024",
+      "text": "自由民主党幹事長"
+    },
+    {
+      "period": "2025-10",
+      "text": "高市内閣で外務大臣に就任"
+    },
+    {
+      "period": "現在",
+      "text": "外務大臣・衆議院議員（栃木5区）"
+    }
+  ],
+  "election_links": [
+    {
+      "election_id": "shugiin_tochigi_1993",
+      "title": "第40回衆議院議員総選挙 栃木県第5区",
+      "role": "候補者",
+      "result": "初当選"
+    },
+    {
+      "election_id": "shugiin_tochigi_2024",
+      "title": "第50回衆議院議員総選挙 栃木5区",
+      "role": "候補者",
+      "result": "当選"
+    },
+    {
+      "election_id": "jimin_sousai_2024",
+      "title": "2024年自由民主党総裁選挙",
+      "role": "候補者",
+      "result": "落選"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "motegi_sousai2024",
+      "title": "2024年自民党総裁選公約 追跡",
+      "context": "2024年9月 自民党総裁選",
+      "source": "自由民主党 総裁選2024 候補者情報",
+      "source_url": "https://www.jimin.jp/election/results/sousai24/",
+      "reviewed_at": "2026-04-27T00:00:00Z",
+      "status": "historical_review",
+      "score": 35,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "成長戦略と所得向上を軸にした経済政策",
+          "category": "経済成長",
+          "status": "追跡中",
+          "progress_score": 35,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "外交・安全保障の実務経験を活かした対米・対中外交",
+          "category": "外交・安全保障",
+          "status": "着手",
+          "progress_score": 50,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
+        },
+        {
+          "title": "党改革と政治資金の透明化",
+          "category": "政治改革",
+          "status": "公約",
+          "progress_score": 20,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        },
+        {
+          "title": "地方の産業競争力強化",
+          "category": "地方・産業",
+          "status": "公約",
+          "progress_score": 25,
+          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
+        }
+      ]
+    },
+    {
+      "id": "motegi_foreign_minister_track",
+      "title": "外務大臣期の政策トラック",
+      "context": "高市内閣 外務大臣",
+      "source": "首相官邸 高市内閣 閣僚等名簿",
+      "source_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html",
+      "reviewed_at": "2026-04-27T00:00:00Z",
+      "status": "tracking",
+      "score": 45,
+      "total": 4,
+      "done": 0,
+      "started": 3,
+      "pending": 1,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "日米同盟を基軸にした外交・安全保障運営",
+          "category": "外交・安全保障",
+          "status": "追跡中",
+          "progress_score": 50,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
+        },
+        {
+          "title": "中国・ロシア・北朝鮮への対応",
+          "category": "地域安全保障",
+          "status": "追跡中",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/news/information/214000.html"
+        },
+        {
+          "title": "経済安全保障と国際経済交渉",
+          "category": "経済外交",
+          "status": "追跡中",
+          "progress_score": 40,
+          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
+        },
+        {
+          "title": "外交演説で示した基本方針の実行",
+          "category": "外交方針",
+          "status": "着手",
+          "progress_score": 45,
+          "evidence_url": "https://www.jimin.jp/news/policy/213980.html"
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "外交・安全保障",
+      "title": "高市内閣の外相として対米・対中外交をどう動かすか",
+      "desc": "外務大臣経験と経済交渉の実績を使い、日米同盟、中国・ロシア・北朝鮮対応、経済安全保障をどう接続するかを見る。"
+    },
+    {
+      "context": "党運営",
+      "title": "幹事長経験を持つ実務型重鎮の影響力",
+      "desc": "自民党幹事長を務めた経験を、高市体制の政策調整や国会運営でどこまで活かすかを追う。"
+    },
+    {
+      "context": "経済政策",
+      "title": "成長戦略と外交の接続",
+      "desc": "経産相・経済再生担当相の経験を背景に、外交を成長戦略や産業競争力強化へ結びつけられるかが焦点。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "自由民主党 公式プロフィール",
+      "url": "https://www.jimin.jp/member/100535.html"
+    },
+    {
+      "label": "首相官邸 外務大臣プロフィール",
+      "url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
+    },
+    {
+      "label": "茂木敏充 公式サイト",
+      "url": "https://www.motegi.gr.jp/"
+    },
+    {
+      "label": "自由民主党 総裁選2024",
+      "url": "https://www.jimin.jp/election/results/sousai24/"
+    }
+  ]
+}
