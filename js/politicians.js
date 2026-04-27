@@ -47,7 +47,7 @@ const politicians = [
         party: "中道改革連合",
         role: "東京1区候補",
         area: "東京都第1区",
-        photo: "https://kaiedabanri.jp/wp-content/uploads/2024/09/240615110633700-400x400.jpg",
+        photo: "https://kaiedabanri.jp/wp-content/uploads/2024/10/2021.jpg",
         url: "politicians/kaieda-banri/index.html",
         baseLikes: 830,
         tags: ["海江田万里", "かいえだばんり", "東京1区", "第51回衆議院選挙", "中道改革連合", "経済産業大臣", "民主党代表", "衆議院副議長"],
