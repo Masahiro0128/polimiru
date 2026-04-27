@@ -1,5 +1,5 @@
 /* =========================================
-   発言板
+   あの時ああ言ってたぞ欄
 ========================================= */
 .cb-section {
     padding: 40px 0 60px;
@@ -37,13 +37,21 @@
     box-shadow: var(--shadow-sm);
 }
 
+.cb-guidance {
+    margin: 0 0 12px;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
 .cb-form-row {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.cb-nick-input {
+.cb-nick-input,
+.cb-source-input {
     flex: 1;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
@@ -55,7 +63,14 @@
     outline: none;
     min-width: 0;
 }
-.cb-nick-input:focus {
+.cb-source-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cb-nick-input:focus,
+.cb-source-input:focus {
     border-color: var(--navy-700);
     background: #fff;
 }
@@ -138,6 +153,29 @@
     line-height: 1.75;
     white-space: pre-wrap;
     word-break: break-word;
+}
+.cb-source {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    color: var(--navy-700);
+    background: rgba(30, 58, 110, 0.06);
+    border: 1px solid rgba(30, 58, 110, 0.12);
+    border-radius: 999px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 0.76rem;
+    font-weight: 800;
+}
+.cb-source:hover {
+    background: rgba(30, 58, 110, 0.1);
+    border-color: rgba(30, 58, 110, 0.24);
+}
+.cb-source-missing {
+    color: var(--text-muted);
+    background: #f8f8f8;
+    border-color: var(--border);
 }
 
 .cb-empty {
