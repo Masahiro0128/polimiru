@@ -117,6 +117,7 @@
                                 <span class="legend-started">● 進行中 ${escapeHtml(cycle.started || 0)}</span>
                                 <span class="legend-pending">● 公約 ${escapeHtml(cycle.pending || 0)}</span>
                                 <span class="legend-total">計 ${escapeHtml(cycle.total || 0)}</span>
+                                <a class="score-method-link" href="/#score-guide" target="_blank" rel="noopener">採点基準 <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.6em"></i></a>
                             </div>
                             ${highlights.length > 0 ? `
                                 <details class="cycle-details">

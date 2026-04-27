@@ -11,13 +11,13 @@
 .hero-container {
     display: flex;
     align-items: stretch;
-    min-height: 400px;
+    min-height: 340px;
 }
 
 /* 左：テキストエリア */
 .hero-content {
     flex: 0 0 56%;
-    padding: 64px 56px 64px 60px;
+    padding: 48px 56px 48px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;

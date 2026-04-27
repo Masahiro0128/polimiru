@@ -350,7 +350,7 @@
 .featured-politicians-section {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
-    padding: 32px 0;
+    padding: 24px 0;
 }
 
 .featured-politicians-inner {
@@ -514,6 +514,85 @@
     color: var(--navy-700);
 }
 
+/* ── スコアガイドstrip ────────────────── */
+.score-guide-strip {
+    background: var(--navy-50);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+}
+
+.score-guide-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.score-guide-heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    padding-top: 1px;
+}
+
+.score-guide-heading i {
+    color: var(--navy-700);
+    font-size: 0.8rem;
+}
+
+.score-guide-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 0;
+}
+
+.score-guide-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.76rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.score-guide-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.score-guide-dot.dot-done    { background: #16a34a; }
+.score-guide-dot.dot-started { background: #f59e0b; }
+.score-guide-dot.dot-pending { background: #94a3b8; }
+
+.score-guide-item strong {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-right: 2px;
+}
+
+.score-guide-formula {
+    font-size: 0.73rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding-top: 1px;
+    border-left: 1px solid var(--border);
+    padding-left: 20px;
+}
+
+.score-guide-formula strong {
+    color: var(--text-secondary);
+}
+
 /* ── スマホ ───────────────────────────── */
 @media (max-width: 768px) {
     .election-grid    { grid-template-columns: 1fr; gap: 12px; }
@@ -535,5 +614,22 @@
     .news-item {
         padding: 14px 16px;
         gap: 8px;
+    }
+
+    .score-guide-inner {
+        gap: 12px;
+    }
+
+    .score-guide-formula {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid var(--border);
+        padding-top: 10px;
+        width: 100%;
+        white-space: normal;
+    }
+
+    .score-guide-items {
+        gap: 12px;
     }
 }
