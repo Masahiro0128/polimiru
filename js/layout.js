@@ -20,11 +20,14 @@ function getBaseUrl() {
 function loadHeader() {
     // ★現在の階層からルートまでの相対パスを自動計算
     const pathParts = window.location.pathname.split('/').filter(p => p !== '');
-    
-    // GitHub Pages (/polimiru/...) の場合は1つ分浅く計算する調整
     const isGitHub = window.location.pathname.includes('/polimiru/');
-    const depth = isGitHub ? pathParts.length - 2 : pathParts.length - 1; 
-    
+
+    // 末尾スラッシュ（ディレクトリURL）の場合はファイル名がないため +1 する
+    const fileDepth = window.location.pathname.endsWith('/')
+        ? pathParts.length
+        : pathParts.length - 1;
+    const depth = isGitHub ? fileDepth - 1 : fileDepth;
+
     // 深さの分だけ "../" を繋げる。ルートなら "./"
     let pathPrefix = '';
     if (depth > 0) {
@@ -44,7 +47,7 @@ function loadHeader() {
     const homePath      = pathPrefix + 'index.html';
     const aboutPath     = pathPrefix + 'about.html';
     const electionsPath = pathPrefix + 'elections/index.html';
-    const newsPath      = homePath + '#news';
+    const newsPath      = pathPrefix + 'news.html';
     const contactPath   = pathPrefix + 'contact.html';
     const methodPath    = pathPrefix + 'method.html';
 
