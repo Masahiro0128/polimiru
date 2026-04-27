@@ -457,6 +457,10 @@
     margin-bottom: 48px;
 }
 
+.news-list--timeline {
+    margin-top: 8px;
+}
+
 .news-item {
     display: flex;
     align-items: baseline;
@@ -512,6 +516,17 @@
 
 .news-text strong {
     color: var(--navy-700);
+}
+
+.news-text a {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.news-page {
+    padding-top: 52px;
 }
 
 /* ── スコアガイドstrip ────────────────── */
