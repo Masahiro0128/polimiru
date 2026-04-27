@@ -135,7 +135,7 @@
                                 <span class="cycle-count total"><b>${escapeHtml(total)}</b>合計</span>
                             </div>
                             <div class="cycle-score-foot">
-                                <a class="score-method-link" href="/#score-guide" target="_blank" rel="noopener">採点基準 <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.6em"></i></a>
+                                <a class="score-method-link" href="../../method.html" target="_blank" rel="noopener">採点基準 <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.6em"></i></a>
                             </div>
                             ${highlights.length > 0 ? `
                                 <details class="cycle-details">
