@@ -53,7 +53,37 @@ Both must be updated when changing a photo.
 
 `score = Math.round((done × 100 + started × 50) / total)`
 
-Status values in JSON: `"実現"` (done=100), `"進行中"` (started=50), `"公約"` (pending=0), `"撤回"` (0). The `done`/`started`/`pending` count fields must be kept in sync manually with `highlights[].status`.
+All accepted `status` strings and their weight:
+
+| status 文字列 | 重み | 意味 |
+|---|---|---|
+| `"実現"` `"完了"` `"done"` `"achieved"` | done (100) | 法律成立・制度開始・予算執行確認済み |
+| `"進行中"` `"着手"` `"started"` `"partial"` | started (50) | 法案提出・予算計上・事業開始など具体的進展あり |
+| `"公約"` `"未着手"` `"pending"` | pending (0) | 具体的動きなし |
+| `"撤回"` `"reversed"` | 0 | 明示的取り下げ |
+| `"不明"` `"unknown"` | 0 | 確認不能 |
+
+The `done`/`started`/`pending`/`unknown` count fields in `promise_cycles[]` must be kept in sync manually with the individual item statuses. The score formula and status legend are shown publicly on the home page at `#score-guide`.
+
+### Promise data: two levels
+
+Politician promises exist at two granularities:
+
+1. **Profile level** — `data/politicians/{id}.json` → `promise_cycles[].highlights[]`  
+   A curated list of 5–15 key highlights with `evidence_url` and `evidence_source` objects. This is what renders on the politician profile page.
+
+2. **Election detail level** — `js/data/{election_key}/candidates/{id}.json` → `promises_2023[]` (or equivalent key)  
+   The full deduplicated list from the original manifesto (e.g. 161 items for yoshimura). Contains `id`, `text`, `category`, `section`, `status`, `evidence_url`, `evidence_source`.
+
+When updating scores, sync both files: totals/counts in `data/politicians/` and the per-item statuses in `js/data/`.
+
+### Manifesto source accuracy (yoshimura)
+
+The correct 2023 manifesto source for 吉村洋文 is the **府市マニフェスト** (知事・市長統一選):
+- URL: `https://oneosaka.jp/touitsu2023/pdf/fushi_manifest_full.pdf`
+- 161 deduplicated items across 10 categories
+
+Do NOT use `osaka-ishin.jp/pdf/manifesto/ishinfugidan_manifesto2023.pdf` — that is the separate 府議団マニフェスト (different document, different organization).
 
 ### CSS cascade (important)
 
@@ -61,18 +91,37 @@ Status values in JSON: `"実現"` (done=100), `"進行中"` (started=50), `"公�
 
 Party color classes on `.cand-card`: `party-jimin`, `party-ishin`, `party-komei`, `party-rikken`, `party-kyosan` — applied in `partyHeaderClass()` inside each election page's inline script.
 
-### Layout injection
+### Layout injection and path calculation
 
-`js/layout.js` injects navbar and footer HTML into every page on `DOMContentLoaded`. The note.com support URL (`https://note.com/limber_gibbon907`) appears in two places in that file.
+`js/layout.js` injects navbar, footer, and `#area-modal` HTML into every page on `DOMContentLoaded`. It also dynamically injects `css/modal.css` if not already present.
+
+**Critical**: `layout.js` computes `pathPrefix` (relative path to root) from `window.location.pathname`. The formula handles both trailing-slash URLs (`/politicians/id/`) and explicit file URLs (`/politicians/id/index.html`):
+
+```js
+const fileDepth = pathname.endsWith('/') ? pathParts.length : pathParts.length - 1;
+const depth = isGitHub ? fileDepth - 1 : fileDepth;
+```
+
+If you ever touch this calculation, verify all URL patterns:
+- `/ ` → depth 0 → `./`
+- `/politicians/yoshimura-hirofumi/` → depth 2 → `../../`
+- `/elections/osaka_2023_governor/` → depth 2 → `../../`
+- GitHub Pages versions of the same paths
+
+Without `modal.css`, `#area-modal` renders unstyled and fully visible, flooding the page with province buttons.
+
+The note.com support URL (`https://note.com/limber_gibbon907`) appears in two places in `layout.js`.
 
 ## Data quality rules
 
 Evidence URLs must point to official sources in priority order:
 1. Government / parliament: `go.jp`, `lg.jp`, `shugiin.go.jp`, `sangiin.go.jp`, `ndl.go.jp`
-2. Party official sites: `jimin.jp`, `cdp-japan.jp`, `nippon-ishin.jp`, etc.
+2. Party official sites: `jimin.jp`, `cdp-japan.jp`, `nippon-ishin.jp`, `oneosaka.jp`, etc.
 3. News (only as a last resort; replace with official source when possible)
 
-Status thresholds: use `"進行中"` for anything between 法案提出 and 制度施行. Upgrade to `"実現"` only when法案成立・制度開始・予算執行 is confirmed.
+Status thresholds: use `"進行中"` for anything between 法案提出 and 制度施行. Upgrade to `"実現"` only when 法案成立・制度開始・予算執行 is confirmed.
+
+Every `evidence_source` object must have: `title`, `accessed` (YYYY-MM-DD), `note`.
 
 ## Adding a new politician
 
@@ -80,12 +129,14 @@ Status thresholds: use `"進行中"` for anything between 法案提出 and 制�
 2. Create `data/politicians/{id}.json` (profile JSON, `photo_url` field)
 3. Create `politicians/{id}/index.html` — copy an existing one, change `data-politician-id` on `<body>` and the `<title>`
 4. Optionally add `election_links` in the JSON to connect to election pages
+
 # Claude Code instructions
 
 - You may edit files in this project.
 - You may run safe commands such as npm run dev, npm run build, git diff, git status.
 - Before deleting files, changing Git history, installing packages, or touching files outside this project, ask me first.
 - Do not ask for confirmation for ordinary code edits.
+
 ## Information source policy for Polimiru
 
 Polimiru must prioritise accuracy and neutrality.
@@ -107,18 +158,14 @@ For every factual claim, include:
 - Date accessed
 - Brief note on what the source supports
 
-Do not use anonymous social media posts,まとめサイト, blogs, or unsourced claims as factual evidence.
+Do not use anonymous social media posts、まとめサイト、blogs、or unsourced claims as factual evidence.
 
-If a claim cannot be verified, mark it as:
-“未確認”
-or do not include it.
+If a claim cannot be verified, mark it as "未確認" or do not include it.
 
-When sources conflict, do not choose one silently.
-Write that the information differs depending on the source, and keep the wording neutral.
+When sources conflict, do not choose one silently. Write that the information differs depending on the source, and keep the wording neutral.
 
-Do not write opinionated or promotional descriptions.
-Use neutral wording such as:
-- “〜と述べている”
-- “〜を掲げている”
-- “〜と報じられている”
-- “公式サイトでは〜と記載されている”
+Do not write opinionated or promotional descriptions. Use neutral wording such as:
+- 「〜と述べている」
+- 「〜を掲げている」
+- 「〜と報じられている」
+- 「公式サイトでは〜と記載されている」
