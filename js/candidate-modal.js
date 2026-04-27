@@ -101,13 +101,28 @@
         const colorClass = isOrange ? 'score-bar-fill-orange' : '';
         return `
             <div class="score-row">
-                <span class="score-label">${label}</span>
-                <div class="score-bar-wrap">
-                    <div class="score-bar-bg">
-                        <div class="score-bar-fill ${colorClass}" style="width:${value}%"></div>
-                    </div>
+                <div class="score-row-head">
+                    <span class="score-label">${label}</span>
                     <span class="score-value-num">${value}</span>
                 </div>
+                <div class="score-bar-bg">
+                    <div class="score-bar-fill ${colorClass}" style="width:${value}%"></div>
+                </div>
+            </div>`;
+    }
+
+    function scoreSummary(label, total, isOrange) {
+        const typeClass = isOrange ? 'type-challenger' : '';
+        const value = total !== null && total !== undefined
+            ? `${total}<span>/100</span>`
+            : '<span class="score-total-pending">集計中</span>';
+        return `
+            <div class="score-summary">
+                <div>
+                    <span class="score-summary-label">総合</span>
+                    <span class="score-summary-text">${label}</span>
+                </div>
+                <span class="score-total-value ${typeClass}">${value}</span>
             </div>`;
     }
 
@@ -243,15 +258,12 @@
 
             return `
                 <div class="score-card">
-                    <span class="score-type-label score-type-incumbent">現職評価</span>
-                    ${rows || '<p class="score-pending">詳細スコアは現在集計中です</p>'}
-                    ${rows ? '<hr class="score-divider">' : ''}
-                    <div class="score-total-row">
-                        <span class="score-total-label">総合評価</span>
-                        <span class="score-total-value">
-                            ${total !== null ? `${total}<span>/ 100</span>` : '<span style="font-size:1rem;color:#aaa">集計中</span>'}
-                        </span>
+                    <div class="score-card-head">
+                        <span class="score-type-label score-type-incumbent">現職評価</span>
+                        <span class="score-card-sub">公約進捗</span>
                     </div>
+                    ${scoreSummary('達成度と一貫性', total)}
+                    ${rows ? `<div class="score-metrics">${rows}</div>` : '<p class="score-pending">詳細スコアは現在集計中です</p>'}
                 </div>`;
         }
 
@@ -262,15 +274,12 @@
 
             return `
                 <div class="score-card">
-                    <span class="score-type-label score-type-challenger">新人評価</span>
-                    ${scoreRow('公約具体性', specificity, true) || '<p class="score-pending">公約情報を収集中です</p>'}
-                    <hr class="score-divider">
-                    <div class="score-total-row">
-                        <span class="score-total-label">総合評価</span>
-                        <span class="score-total-value type-challenger">
-                            ${total !== null ? `${total}<span>/ 100</span>` : '<span style="font-size:1rem;color:#aaa">集計中</span>'}
-                        </span>
+                    <div class="score-card-head">
+                        <span class="score-type-label score-type-challenger">新人評価</span>
+                        <span class="score-card-sub">公約具体性</span>
                     </div>
+                    ${scoreSummary('公約の具体性', total, true)}
+                    ${scoreRow('公約具体性', specificity, true) || '<p class="score-pending">公約情報を収集中です</p>'}
                 </div>`;
         }
 

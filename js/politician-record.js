@@ -98,6 +98,15 @@
                 <div class="cycle-grid">
                     ${cycles.map(cycle => {
                         const highlights = cycle.highlights || [];
+                        const total = Number(cycle.total || 0);
+                        const safeTotal = total || 1;
+                        const done = Number(cycle.done || 0);
+                        const started = Number(cycle.started || 0);
+                        const pending = Number(cycle.pending || 0);
+                        const score = cycle.score ?? '-';
+                        const reviewedAt = cycle.reviewed_at
+                            ? String(cycle.reviewed_at).slice(0, 10).replaceAll('-', '.')
+                            : '';
                         return `
                         <article class="cycle-card">
                             <div class="cycle-head">
@@ -105,18 +114,27 @@
                                     <div class="focus-context">${escapeHtml(cycle.context || cycle.source || '')}</div>
                                     <h3 class="focus-title">${escapeHtml(cycle.title)}</h3>
                                 </div>
-                                <span class="cycle-score">${escapeHtml(cycle.score ?? '-')}<small>/100</small></span>
+                                <span class="cycle-progress-chip">公約進捗</span>
+                            </div>
+                            <div class="cycle-progress-summary">
+                                <div>
+                                    <span class="cycle-progress-label">進捗スコア</span>
+                                    <span class="cycle-progress-note">${reviewedAt ? `確認 ${escapeHtml(reviewedAt)}` : '出典確認中'}</span>
+                                </div>
+                                <span class="cycle-score">${escapeHtml(score)}<small>/100</small></span>
                             </div>
                             <div class="cycle-meter">
-                                <span class="done" style="width:${Number(cycle.done || 0) / Number(cycle.total || 1) * 100}%"></span>
-                                <span class="started" style="width:${Number(cycle.started || 0) / Number(cycle.total || 1) * 100}%"></span>
-                                <span class="pending" style="width:${Number(cycle.pending || 0) / Number(cycle.total || 1) * 100}%"></span>
+                                <span class="done" style="width:${done / safeTotal * 100}%"></span>
+                                <span class="started" style="width:${started / safeTotal * 100}%"></span>
+                                <span class="pending" style="width:${pending / safeTotal * 100}%"></span>
                             </div>
-                            <div class="cycle-legend">
-                                <span class="legend-done">● 実現 ${escapeHtml(cycle.done || 0)}</span>
-                                <span class="legend-started">● 進行中 ${escapeHtml(cycle.started || 0)}</span>
-                                <span class="legend-pending">● 公約 ${escapeHtml(cycle.pending || 0)}</span>
-                                <span class="legend-total">計 ${escapeHtml(cycle.total || 0)}</span>
+                            <div class="cycle-counts">
+                                <span class="cycle-count done"><b>${escapeHtml(done)}</b>実現</span>
+                                <span class="cycle-count started"><b>${escapeHtml(started)}</b>進行中</span>
+                                <span class="cycle-count pending"><b>${escapeHtml(pending)}</b>公約</span>
+                                <span class="cycle-count total"><b>${escapeHtml(total)}</b>合計</span>
+                            </div>
+                            <div class="cycle-score-foot">
                                 <a class="score-method-link" href="/#score-guide" target="_blank" rel="noopener">採点基準 <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.6em"></i></a>
                             </div>
                             ${highlights.length > 0 ? `

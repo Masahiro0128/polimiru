@@ -254,10 +254,46 @@ body { background: #f5f2ec; }
     justify-content: space-between;
     gap: 14px;
 }
+.cycle-progress-chip {
+    flex-shrink: 0;
+    border: 1px solid rgba(15, 31, 61, 0.08);
+    border-radius: 999px;
+    background: #f8fafc;
+    color: #718096;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 9px;
+    white-space: nowrap;
+}
+.cycle-progress-summary {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 16px 0 10px;
+    padding: 12px 14px;
+    border: 1px solid rgba(15, 31, 61, 0.07);
+    border-radius: 10px;
+    background: #f8fafc;
+}
+.cycle-progress-label {
+    display: block;
+    color: #718096;
+    font-size: 0.72rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+.cycle-progress-note {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
 .cycle-score {
     color: var(--party-accent);
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     font-weight: 900;
+    line-height: 1;
     white-space: nowrap;
 }
 .cycle-score small {
@@ -266,23 +302,58 @@ body { background: #f5f2ec; }
 }
 .cycle-meter {
     display: flex;
-    height: 12px;
+    height: 14px;
     overflow: hidden;
     border-radius: 999px;
     background: #edf2f7;
-    margin: 14px 0 10px;
+    margin: 10px 0 12px;
 }
 .cycle-meter span { display: block; }
 .cycle-meter .done { background: #16a34a; }
 .cycle-meter .started { background: #f59e0b; }
 .cycle-meter .pending { background: #94a3b8; }
-.cycle-legend {
+.cycle-counts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 10px;
+}
+.cycle-count {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    font-size: 0.73rem;
-    font-weight: 700;
-    margin-bottom: 4px;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid rgba(15, 31, 61, 0.08);
+    border-radius: 8px;
+    background: #fff;
+    color: #718096;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 8px 9px;
+}
+.cycle-count b {
+    color: #0f1f3d;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+.cycle-count.done {
+    border-color: rgba(22, 163, 74, 0.22);
+    background: rgba(22, 163, 74, 0.05);
+}
+.cycle-count.started {
+    border-color: rgba(245, 158, 11, 0.24);
+    background: rgba(245, 158, 11, 0.06);
+}
+.cycle-count.pending {
+    border-color: rgba(148, 163, 184, 0.28);
+    background: rgba(148, 163, 184, 0.07);
+}
+.cycle-count.total {
+    background: #f8fafc;
+}
+.cycle-score-foot {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
 }
 .legend-done    { color: #16a34a; }
 .legend-started { color: #d97706; }
@@ -406,4 +477,9 @@ details[open] .cycle-details-icon { transform: rotate(90deg); }
         flex-direction: column;
         gap: 4px;
     }
+    .cycle-progress-summary {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .cycle-counts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
