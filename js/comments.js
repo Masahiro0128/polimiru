@@ -95,7 +95,7 @@
         section.className = 'cb-section';
         section.innerHTML = `
             <div class="cb-header">
-                <h2 class="cb-title">あの時ああ言ってたぞ欄</h2>
+                <h2 class="cb-title">発言ログ</h2>
                 <span class="cb-count" id="cb-count-${politicianId}">読み込み中…</span>
             </div>
             <form class="cb-form" id="cb-form-${politicianId}" novalidate>
