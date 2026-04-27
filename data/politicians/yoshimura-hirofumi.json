@@ -51,28 +51,30 @@
   ],
   "promise_cycles": [
     {
-      "id": "osaka_2023_manifesto",
-      "title": "2023年府政・維新マニフェスト検証",
-      "context": "大阪府知事選挙 2023",
-      "source": "大阪維新の会 大阪府議会議員団 マニフェスト2023",
-      "source_url": "https://osaka-ishin.jp/pdf/manifesto/ishinfugidan_manifesto2023.pdf",
-      "reviewed_at": "2026-04-24T00:00:00Z",
+      "id": "osaka_2023_fushi_manifest",
+      "title": "2023年大阪維新の会 府市マニフェスト検証",
+      "context": "大阪府知事選挙 2023（大阪市長選挙同時）",
+      "source": "大阪維新の会 府市マニフェスト2023「大阪を前へ 維新は挑戦をやめない」",
+      "source_url": "https://oneosaka.jp/touitsu2023/pdf/fushi_manifest_full.pdf",
+      "reviewed_at": "2026-04-27T00:00:00Z",
       "status": "initial_review",
-      "score": 50,
-      "total": 49,
-      "done": 5,
-      "started": 38,
-      "pending": 5,
+      "score": 55,
+      "total": 161,
+      "done": 18,
+      "started": 141,
+      "pending": 1,
       "unknown": 1,
       "category_summary": [
-        { "category": "行財政", "total": 4, "done": 1, "started": 3, "pending": 0, "unknown": 0 },
-        { "category": "教育", "total": 12, "done": 1, "started": 9, "pending": 1, "unknown": 1 },
-        { "category": "経済", "total": 11, "done": 2, "started": 7, "pending": 2, "unknown": 0 },
-        { "category": "インフラ", "total": 7, "done": 0, "started": 7, "pending": 0, "unknown": 0 },
-        { "category": "医療福祉", "total": 7, "done": 0, "started": 7, "pending": 0, "unknown": 0 },
-        { "category": "都市開発", "total": 4, "done": 0, "started": 3, "pending": 1, "unknown": 0 },
-        { "category": "その他", "total": 2, "done": 1, "started": 0, "pending": 1, "unknown": 0 },
-        { "category": "環境", "total": 2, "done": 0, "started": 2, "pending": 0, "unknown": 0 }
+        { "category": "教育",           "total": 29, "done": 7, "started": 22, "pending": 0, "unknown": 0 },
+        { "category": "行財政改革",     "total": 24, "done": 0, "started": 23, "pending": 1, "unknown": 0 },
+        { "category": "医療福祉",       "total": 16, "done": 3, "started": 13, "pending": 0, "unknown": 0 },
+        { "category": "経済・産業",     "total": 16, "done": 1, "started": 15, "pending": 0, "unknown": 0 },
+        { "category": "住民生活",       "total": 16, "done": 0, "started": 16, "pending": 0, "unknown": 0 },
+        { "category": "安心安全・防災", "total": 14, "done": 0, "started": 14, "pending": 0, "unknown": 0 },
+        { "category": "副首都・府市一体","total": 12, "done": 0, "started": 12, "pending": 0, "unknown": 0 },
+        { "category": "インフラ・都市開発","total": 12, "done": 1, "started": 11, "pending": 0, "unknown": 0 },
+        { "category": "子育て",         "total": 12, "done": 2, "started": 9,  "pending": 0, "unknown": 1 },
+        { "category": "万博・IR",       "total": 10, "done": 4, "started": 6,  "pending": 0, "unknown": 0 }
       ],
       "highlights": [
         {
@@ -80,28 +82,60 @@
           "category": "教育",
           "status": "完了",
           "progress_score": 100,
-          "evidence_url": "https://www.pref.osaka.lg.jp/kyoikusomu/mushouka/"
+          "evidence_url": "https://www.pref.osaka.lg.jp/o180140/kyoishisetsu/jugyoryoshienkin.html",
+          "evidence_source": {
+            "title": "大阪府「高校等授業料無償化制度（授業料支援金）について」",
+            "accessed": "2026-04-27",
+            "note": "2024年度から段階的に実施。2026年度から全学年・所得制限なしで完全無償化。大阪公立大学も2026年度より所得制限撤廃"
+          }
         },
         {
           "title": "大阪・関西万博の開催と波及効果づくり",
           "category": "経済",
           "status": "完了",
           "progress_score": 100,
-          "evidence_url": "https://www.expo2025.or.jp/"
+          "evidence_url": "https://www.pref.osaka.lg.jp/o030010020/bampaku_suishin/2025expo/index.html",
+          "evidence_source": {
+            "title": "大阪府「2025年日本国際博覧会（大阪・関西万博）」",
+            "accessed": "2026-04-27",
+            "note": "2025年4月13日〜10月13日開催。来場者2557万人超。経済波及効果約3兆6000億円（予測超）。運営収支320〜370億円の黒字見込み"
+          }
         },
         {
           "title": "副首都・大阪に向けた府市一体の改革",
           "category": "経済",
           "status": "着手",
           "progress_score": 60,
-          "evidence_url": "https://www.pref.osaka.lg.jp/fukushuto/"
+          "evidence_url": "https://www.pref.osaka.lg.jp/o010010/fukushutosuishin/fukusyutobijon/index.html",
+          "evidence_source": {
+            "title": "大阪府「副首都ビジョンの推進」",
+            "accessed": "2026-04-27",
+            "note": "副首都推進本部会議で具体施策を検討中。合同庁舎整備など国への要望案を取りまとめ中。政府（高市内閣・維新連立）との連携で法案化を目指している"
+          }
         },
         {
-          "title": "府域水道事業の一元化・水道民営化",
+          "title": "府域水道事業の一元化",
           "category": "都市開発",
-          "status": "未着手",
-          "progress_score": 20,
-          "evidence_url": ""
+          "status": "着手",
+          "progress_score": 40,
+          "evidence_url": "https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kigyodan/index.html",
+          "evidence_source": {
+            "title": "大阪府「大阪広域水道企業団に関すること」",
+            "accessed": "2026-04-27",
+            "note": "6市（岸和田・八尾・富田林・河内長野・高石・泉大津）との統合を2027年4月目標で推進中。東大阪市は2024年3月に統合断念"
+          }
+        },
+        {
+          "title": "大阪IR（統合型リゾート）の誘致・整備",
+          "category": "経済",
+          "status": "着手",
+          "progress_score": 60,
+          "evidence_url": "https://www.pref.osaka.lg.jp/o080020/irs-suishin/osakair/index.html",
+          "evidence_source": {
+            "title": "大阪府「大阪IRについて」",
+            "accessed": "2026-04-27",
+            "note": "2023年4月に国土交通大臣が区域整備計画を認定。2025年4月から施設本体工事着工。開業予定2029年秋〜冬。事業者はMGM・オリックス等"
+          }
         }
       ]
     }

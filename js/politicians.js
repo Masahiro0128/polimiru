@@ -366,6 +366,19 @@ const politicians = [
         desc: "元デジタル大臣・外務大臣・防衛大臣。行政改革・マイナンバー推進・再生可能エネルギー推進を主導。2024年自民党総裁選に出馬。"
     },
     {
+        id: "motegi-toshimitsu",
+        name: "茂木 敏充",
+        kana: "もてぎ としみつ",
+        party: "自由民主党",
+        role: "外務大臣",
+        area: "栃木県第5区",
+        photo: "https://www.kantei.go.jp/jp/content/motegi_toshimitsu_r.jpg",
+        url: "politicians/motegi-toshimitsu/index.html",
+        baseLikes: 4300,
+        tags: ["茂木敏充", "もてぎとしみつ", "茂木", "自由民主党", "自民党", "外務大臣", "幹事長", "経済産業大臣", "経済再生担当大臣", "栃木5区", "東京大学", "ハーバード", "マッキンゼー"],
+        desc: "東京大学、ハーバード大学大学院を経て丸紅、読売新聞、マッキンゼーへ。経産相、経済再生担当相、外相、自民党幹事長を歴任し、高市内閣で外務大臣。"
+    },
+    {
         id: "kamikawa-yoko",
         name: "上川 陽子",
         kana: "かみかわ ようこ",

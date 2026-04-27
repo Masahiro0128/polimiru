@@ -110,90 +110,161 @@
       "context": "2025年9月 総裁選 → 首相就任後の実行状況",
       "source": "自民党総裁選2025 政策発表",
       "source_url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1",
-      "score": 52,
-      "total": 12,
-      "done": 2,
-      "started": 8,
-      "pending": 2,
+      "score": 58,
+      "total": 13,
+      "done": 3,
+      "started": 9,
+      "pending": 1,
+      "reviewed_at": "2026-04-27T00:00:00Z",
       "highlights": [
         {
           "title": "ガソリン税・軽油引取税の暫定税率廃止",
           "status": "実現",
-          "evidence_url": "https://www.sponichi.co.jp/society/news/2025/11/29/articles/20251129s00042000028000c.html"
+          "evidence_url": "https://www.jimin.jp/news/information/211725.html",
+          "evidence_source": {
+            "title": "自民党「ガソリン減税年内実施へ与野党6党が合意」",
+            "accessed": "2026-04-27",
+            "note": "与野党6党合意（2025年10月31日）に基づきガソリン税12月末、軽油引取税2026年4月に廃止"
+          }
         },
         {
           "title": "年収の壁を178万円へ引き上げ（基礎控除の抜本改正）",
           "status": "実現",
-          "evidence_url": "https://www.jimin.jp/news/information/212124.html"
+          "evidence_url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_gaiyou.pdf",
+          "evidence_source": {
+            "title": "財務省「令和8年度税制改正の大綱の概要」",
+            "accessed": "2026-04-27",
+            "note": "2025年12月26日閣議決定。基礎控除178万円引き上げを明記"
+          }
         },
         {
           "title": "給付付き税額控除の制度設計・段階的導入",
           "status": "進行中",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2391665"
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260421/index.html",
+          "evidence_source": {
+            "title": "内閣官房「社会保障国民会議 有識者会議（第4回）」",
+            "accessed": "2026-04-27",
+            "note": "内閣官房主催の有識者会議で制度設計を審議中（2026年4月21日）。2026年中の設計完了を目指す"
+          }
         },
         {
           "title": "外国人政策の司令塔設置・在留資格審査の厳格化・土地取得規制強化",
           "status": "進行中",
-          "evidence_url": "https://www.jimin.jp/news/information/212341.html"
+          "evidence_url": "https://www.kantei.go.jp/jp/104/actions/202511/04gaikokujin.html",
+          "evidence_source": {
+            "title": "首相官邸「外国人の受入れ・秩序ある共生社会実現に関する関係閣僚会議」",
+            "accessed": "2026-04-27",
+            "note": "2025年11月4日 関係閣僚会議設置。担当大臣に小野田紀美議員を任命"
+          }
         },
         {
           "title": "国家情報局の新設・情報収集能力の抜本強化",
           "status": "進行中",
-          "evidence_url": "https://news.tv-asahi.co.jp/news_politics/articles/900183826.html"
+          "evidence_url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/houan/g22109024.htm",
+          "evidence_source": {
+            "title": "衆議院「国家情報会議設置法案」",
+            "accessed": "2026-04-27",
+            "note": "2026年3月13日閣議決定・今国会提出。7月設置予定"
+          }
         },
         {
           "title": "スパイ防止法（経済秘密保護法）の制定着手",
           "status": "進行中",
-          "evidence_url": "https://www.newsweekjapan.jp/articles/-/301891?display=b"
+          "evidence_url": "https://www.jimin.jp/news/information/212341.html",
+          "evidence_source": {
+            "title": "自民党・維新 連立政権合意（2025年10月）",
+            "accessed": "2026-04-27",
+            "note": "連立合意でスパイ防止関連法制の法案化を明記。ただし政府として単独の閣議決定は未確認。参政党・国民民主党が議員立法を提出（2025年11月）"
+          }
         },
         {
           "title": "首都機能バックアップ体制の構築（副首都機能・大阪連携）",
           "status": "進行中",
-          "evidence_url": "https://news.tnc.co.jp/news/articles/NID2025102227700/"
+          "evidence_url": "https://www.pref.osaka.lg.jp/o010010/renkeichosei/fukusyutosuishin/backup.html",
+          "evidence_source": {
+            "title": "大阪府「首都機能バックアップ」",
+            "accessed": "2026-04-27",
+            "note": "大阪府・市が政府へ提案要望中の段階。政府として閣議決定した公式ページは未確認"
+          }
         },
         {
           "title": "経済安全保障・成長分野への官民投資（AI・半導体・量子・核融合・バイオ）",
           "status": "進行中",
-          "evidence_url": "https://diamond.jp/articles/-/382140"
+          "evidence_url": "https://www.meti.go.jp/policy/mono_info_service/ai_semiconductor_frame/ai_semiconductor_frame.html",
+          "evidence_source": {
+            "title": "経済産業省「AI・半導体産業基盤強化フレーム」",
+            "accessed": "2026-04-27",
+            "note": "2026年度予算でAI・半導体等に1兆2390億円計上（前年比3.7倍）。ラピダス支援1500億円含む"
+          }
         },
         {
           "title": "原子力発電の積極活用と次世代炉（小型モジュール炉等）の開発推進",
           "status": "進行中",
-          "evidence_url": "https://www.newsweekjapan.jp/articles/-/301891?display=b"
+          "evidence_url": "https://www.meti.go.jp/press/2024/02/20250218001/20250218001.html",
+          "evidence_source": {
+            "title": "経済産業省「第7次エネルギー基本計画が閣議決定されました」",
+            "accessed": "2026-04-27",
+            "note": "2025年2月18日閣議決定。原子力の最大限活用・次世代炉開発推進を明記"
+          }
         },
         {
           "title": "防衛力整備と安保3文書の着実な実装（反撃能力の整備含む）",
           "status": "進行中",
-          "evidence_url": "https://www.newsweekjapan.jp/articles/-/301891?display=b"
+          "evidence_url": "https://www.mod.go.jp/j/policy/agenda/guideline/index.html",
+          "evidence_source": {
+            "title": "防衛省「国家安全保障戦略・国家防衛戦略・防衛力整備計画」",
+            "accessed": "2026-04-27",
+            "note": "2022年12月16日閣議決定の安保3文書に基づき整備中。2026年度防衛費8.8兆円（GDP比約2%）"
+          }
         },
         {
           "title": "少子化・人口減少対策の抜本的強化（子育て支援・教育費無償化の拡充）",
-          "status": "公約",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1"
+          "status": "進行中",
+          "evidence_url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_gaiyou.pdf",
+          "evidence_source": {
+            "title": "財務省「令和8年度税制改正の大綱の概要」",
+            "accessed": "2026-04-27",
+            "note": "2026年度予算で高校授業料・小学校給食の無償化に約7000億円計上。閣議決定済み"
+          }
+        },
+        {
+          "title": "防衛装備移転三原則の改正・殺傷兵器の輸出原則解禁",
+          "status": "実現",
+          "evidence_url": "https://www.mod.go.jp/j/press/news/2026/04/21a.html",
+          "evidence_source": {
+            "title": "防衛省「防衛装備移転三原則等の一部改正について」",
+            "accessed": "2026-04-27",
+            "note": "2026年4月21日閣議決定。5類型を撤廃し殺傷能力を持つ装備品の輸出を原則可能に。輸出先は協定締結国（約17カ国）に限定"
+          }
         },
         {
           "title": "農業・食料安全保障の強靭化（農家所得向上・輸出拡大）",
           "status": "公約",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1"
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2179794?display=1",
+          "evidence_source": {
+            "title": "TBS NEWS DIG「高市早苗氏 総裁選政策発表」",
+            "accessed": "2026-04-27",
+            "note": "公約段階。政府文書での具体的な進捗URL未確認"
+          }
         }
       ]
     }
   ],
   "focus_cards": [
     {
-      "context": "2026年 最大の焦点",
+      "context": "2026年4月 重大な政策転換",
+      "title": "武器輸出の原則解禁をどう評価するか",
+      "desc": "防衛装備移転三原則の改正（2026年4月21日閣議決定）により、戦後日本が維持してきた武器輸出禁止の大枠が転換した。輸出先限定・戦闘当事国除外などの歯止めが実効的か、国会による事後監視が機能するかが検証点。"
+    },
+    {
+      "context": "情報・安全保障",
       "title": "スパイ防止法・国家情報局の法制化",
-      "desc": "情報機能強化の政策が国会で具体的な法案になるか。野党・メディアの反発をどう乗り越えるかが政権の試金石。"
+      "desc": "国家情報局設置法案が2026年3月に閣議決定・国会提出。スパイ防止法（経済秘密保護法）とあわせ、情報機能強化の具体的な中身と人権・報道への影響が論点となっている。"
     },
     {
       "context": "経済政策",
       "title": "積極財政とエネルギー政策の行方",
-      "desc": "原子力再稼働・次世代炉推進、AI/半導体への公的投資をどの規模で実行するか。財政健全化との整合性が問われる。"
-    },
-    {
-      "context": "外交・安全保障",
-      "title": "日米同盟・防衛費増額の実績",
-      "desc": "安保3文書に基づく防衛力整備の進捗と、トランプ政権との関係構築が日本の安全保障の分かれ目となる。"
+      "desc": "原子力再稼働・次世代炉推進、AI/半導体への公的投資（2026年度予算1兆2390億円）をどの規模で実行するか。財政健全化との整合性が問われる。"
     }
   ]
 }
