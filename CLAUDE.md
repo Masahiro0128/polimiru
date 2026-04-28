@@ -164,6 +164,8 @@ If a claim cannot be verified, mark it as "未確認" or do not include it.
 
 When sources conflict, do not choose one silently. Write that the information differs depending on the source, and keep the wording neutral.
 
+When referring to a politician by name in public-facing text (news entries, descriptions, etc.), always append 氏 — e.g. 高市早苗氏, 吉村洋文氏.
+
 Do not write opinionated or promotional descriptions. Use neutral wording such as:
 - 「〜と述べている」
 - 「〜を掲げている」
