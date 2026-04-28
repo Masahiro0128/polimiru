@@ -1,0 +1,122 @@
+{
+  "id": "kiuchi-minoru",
+  "name": "城内 実",
+  "kana": "きうち みのる",
+  "party": "自由民主党",
+  "party_role": "日本成長戦略・経済財政政策担当大臣",
+  "area": "静岡県第7区",
+  "current_status": "日本成長戦略・経済財政政策担当大臣・衆議院議員（8期）",
+  "photo_url": "https://www.jimin.jp/member/img/kiuchi-minoru.jpg",
+  "official_url": "https://www.kiuchi.jp/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1965年生まれ。開成高校・東京大学教養学部（国際関係論）卒業後、外務省入省。在ドイツ大使館勤務・天皇・首相のドイツ語通訳官（1997年）を担当した後、2003年政界入り。静岡7区で8期当選。石破内閣で経済安全保障担当大臣を経て、2025年10月高市内閣で日本成長戦略・賃上げ・スタートアップ・経済財政政策担当大臣に就任。",
+  "stats": [
+    {"label": "役職", "value": "日本成長戦略・経済財政政策担当大臣"},
+    {"label": "当選", "value": "8期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "静岡7区"},
+    {"label": "生年", "value": "1965年"},
+    {"label": "前職", "value": "外務省官僚・ドイツ語通訳官"}
+  ],
+  "career": [
+    {"period": "1965", "text": "生まれ"},
+    {"period": "1989", "text": "東京大学教養学部国際関係論分科卒業、外務省入省"},
+    {"period": "1990", "text": "在ドイツ日本国大使館に赴任"},
+    {"period": "1997", "text": "天皇陛下・首相のドイツ語通訳官を担当"},
+    {"period": "2003", "text": "第43回衆院選で静岡7区から初当選"},
+    {"period": "2006", "text": "内閣府大臣政務官"},
+    {"period": "2014", "text": "外務副大臣"},
+    {"period": "2024", "text": "経済安全保障担当大臣（石破内閣）"},
+    {"period": "2025", "text": "日本成長戦略・賃上げ・スタートアップ・全世代型社会保障・経済財政政策・規制改革担当大臣（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "growth_takaichi2025",
+      "title": "成長戦略・経済財政政策担当大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 成長戦略・経済財政政策担当大臣（2025年10月〜）",
+      "source": "内閣府 経済財政政策",
+      "source_url": "https://www5.cao.go.jp/keizai1/index.html",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "骨太の方針・経済財政運営と改革の基本方針の策定",
+          "category": "経済財政",
+          "status": "進行中",
+          "evidence_url": "https://www5.cao.go.jp/keizai-shimon/kaigi/cabinet/index.html",
+          "evidence_source": {
+            "title": "内閣府 経済財政諮問会議",
+            "accessed": "2026-04-29",
+            "note": "経済財政諮問会議を主導し、毎年6月に「骨太の方針」を取りまとめる役割を担う"
+          }
+        },
+        {
+          "title": "賃上げ環境整備・最低賃金引き上げ支援",
+          "category": "賃上げ",
+          "status": "進行中",
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/chinagekankyoseibi/index.html",
+          "evidence_source": {
+            "title": "内閣官房 賃上げ環境整備",
+            "accessed": "2026-04-29",
+            "note": "賃上げ税制・中小企業への支援策が継続中。2024年度の賃上げ率は約5%（大企業）と高水準"
+          }
+        },
+        {
+          "title": "スタートアップ育成5か年計画の推進",
+          "category": "スタートアップ",
+          "status": "進行中",
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/atarashii_sihonsyugi/startup/index.html",
+          "evidence_source": {
+            "title": "内閣官房 スタートアップ育成",
+            "accessed": "2026-04-29",
+            "note": "2022年策定の5か年計画に基づき、VC投資額10倍・ユニコーン100社創出を目標に推進中"
+          }
+        },
+        {
+          "title": "規制改革の推進（デジタル・グリーン・農業等）",
+          "category": "規制改革",
+          "status": "公約",
+          "evidence_url": "https://www8.cao.go.jp/kisei-kaikaku/kisei/index.html",
+          "evidence_source": {
+            "title": "内閣府 規制改革推進会議",
+            "accessed": "2026-04-29",
+            "note": "規制改革推進会議の答申を受けた各省庁との調整・実施が課題"
+          }
+        },
+        {
+          "title": "全世代型社会保障改革の推進",
+          "category": "社会保障改革",
+          "status": "公約",
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/zensedai_hosyo/index.html",
+          "evidence_source": {
+            "title": "内閣官房 全世代型社会保障改革",
+            "accessed": "2026-04-29",
+            "note": "高齢化・少子化を踏まえた社会保障制度の持続可能性確保に向けた改革が継続中"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "経済政策",
+      "title": "「成長と分配の好循環」の実現",
+      "desc": "賃上げ・スタートアップ育成・規制改革を組み合わせた経済成長戦略の具体的な成果（実質賃金の持続的上昇）が問われる。"
+    },
+    {
+      "context": "財政",
+      "title": "財政再建と成長投資の両立",
+      "desc": "プライマリーバランス黒字化目標を維持しつつ、成長に必要な公共投資・研究開発費を確保するジレンマをどう解決するかが焦点。"
+    }
+  ],
+  "source_urls": [
+    {"label": "城内実 公式サイト", "url": "https://www.kiuchi.jp/"},
+    {"label": "内閣府 経済財政政策", "url": "https://www5.cao.go.jp/keizai1/index.html"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/116953.html"}
+  ]
+}

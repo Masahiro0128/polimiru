@@ -1,0 +1,111 @@
+{
+  "id": "matsumoto-yohei",
+  "name": "松本 洋平",
+  "kana": "まつもと ようへい",
+  "party": "自由民主党",
+  "party_role": "文部科学大臣",
+  "area": "東京都第19区",
+  "current_status": "文部科学大臣・衆議院議員（7期）",
+  "photo_url": "https://www.jimin.jp/member/img/matsumoto-yohei.jpg",
+  "official_url": "https://matsumoto-yohei.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1973年生まれ。慶應義塾大学経済学部卒業後、三和銀行（現・三菱UFJ銀行）に入行。2005年に東京19区から政界入りし7期当選。自民党青年局長、内閣府副大臣（防災）、経済産業副大臣などを歴任。2025年10月の高市内閣発足で初入閣（第33・34代文部科学大臣）。教育改革・科学技術振興を推進。",
+  "stats": [
+    {"label": "役職", "value": "文部科学大臣（第33・34代）"},
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "東京19区"},
+    {"label": "生年", "value": "1973年"},
+    {"label": "前職", "value": "銀行員（三和銀行）"}
+  ],
+  "career": [
+    {"period": "1973", "text": "生まれ"},
+    {"period": "1996", "text": "慶應義塾大学経済学部卒業、三和銀行（現・三菱UFJ銀行）入行"},
+    {"period": "2003", "text": "三和銀行退行、政治活動を開始"},
+    {"period": "2005", "text": "第44回衆院選で東京19区から初当選（32歳）"},
+    {"period": "2013", "text": "自民党青年局長"},
+    {"period": "2014", "text": "内閣府大臣政務官（防災担当）"},
+    {"period": "2016", "text": "内閣府副大臣（防災担当）"},
+    {"period": "2019", "text": "経済産業副大臣・内閣府副大臣"},
+    {"period": "2025", "text": "第33・34代文部科学大臣（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "mext_takaichi2025",
+      "title": "文部科学大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 文部科学大臣（2025年10月〜）",
+      "source": "文部科学省 政策・施策",
+      "source_url": "https://www.mext.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "高校授業料実質無償化の全国展開",
+          "category": "教育無償化",
+          "status": "進行中",
+          "evidence_url": "https://www.mext.go.jp/a_menu/shotou/mushouka/index.html",
+          "evidence_source": {
+            "title": "文部科学省 高等学校等就学支援金制度",
+            "accessed": "2026-04-29",
+            "note": "所得制限の見直し・拡充が進行中。完全無償化は未達成"
+          }
+        },
+        {
+          "title": "大学発スタートアップ・研究力強化",
+          "category": "科学技術",
+          "status": "進行中",
+          "evidence_url": "https://www.mext.go.jp/a_menu/kagaku/index.htm",
+          "evidence_source": {
+            "title": "文部科学省 科学技術・学術政策",
+            "accessed": "2026-04-29",
+            "note": "大学ファンド（10兆円規模）の運用開始・大学発スタートアップ育成が継続中"
+          }
+        },
+        {
+          "title": "GIGAスクール構想の第2ステージ推進",
+          "category": "教育DX",
+          "status": "公約",
+          "evidence_url": "https://www.mext.go.jp/a_menu/other/index_00001.htm",
+          "evidence_source": {
+            "title": "文部科学省 GIGAスクール構想",
+            "accessed": "2026-04-29",
+            "note": "1人1台端末整備後の活用促進・第2ステージとしてのAI活用が課題"
+          }
+        },
+        {
+          "title": "部活動の地域移行・スポーツ振興",
+          "category": "スポーツ・文化",
+          "status": "公約",
+          "evidence_url": "https://www.mext.go.jp/sports/index.html",
+          "evidence_source": {
+            "title": "文部科学省 スポーツ庁",
+            "accessed": "2026-04-29",
+            "note": "部活動の地域移行は段階的に進んでいるが、地域差が大きく完全移行には課題が残る"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "教育無償化",
+      "title": "大学・高校の授業料無償化の範囲",
+      "desc": "高校の実質無償化が進む一方、大学授業料無償化の対象拡大をどこまで進めるかが焦点。財政制約の中での優先順位づけが問われる。"
+    },
+    {
+      "context": "科学技術",
+      "title": "大学の研究力回復と国際競争力",
+      "desc": "日本の大学の論文数・被引用数の国際的地位低下に対し、10兆円大学ファンドの効果が問われている。"
+    }
+  ],
+  "source_urls": [
+    {"label": "松本洋平 公式サイト", "url": "https://matsumoto-yohei.com/"},
+    {"label": "文部科学省 公式サイト", "url": "https://www.mext.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/102100.html"}
+  ]
+}

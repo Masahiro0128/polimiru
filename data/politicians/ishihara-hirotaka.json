@@ -1,0 +1,110 @@
+{
+  "id": "ishihara-hirotaka",
+  "name": "石原 宏高",
+  "kana": "いしはら ひろたか",
+  "party": "自由民主党",
+  "party_role": "環境大臣",
+  "area": "東京都第3区",
+  "current_status": "環境大臣・衆議院議員（7期）",
+  "photo_url": "https://www.jimin.jp/member/img/ishihara-hirotaka.jpg",
+  "official_url": "https://www.ishihara-hirotaka.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1964年生まれ。慶應義塾大学経済学部卒業後、日本興業銀行（現・みずほ銀行）入行、ニューヨーク支店勤務を経て2002年に退職し政治活動を開始。石原慎太郎元東京都知事の三男。東京3区で7期当選。外務大臣政務官・環境副大臣を経て、2025年10月高市内閣で初入閣（環境大臣）。気候変動対策・脱炭素・原子力防災を担当。",
+  "stats": [
+    {"label": "役職", "value": "環境大臣"},
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "東京3区"},
+    {"label": "生年", "value": "1964年"},
+    {"label": "前職", "value": "銀行員（日本興業銀行）"}
+  ],
+  "career": [
+    {"period": "1964", "text": "生まれ（石原慎太郎元都知事の三男）"},
+    {"period": "卒業", "text": "慶應義塾大学経済学部卒業、日本興業銀行（現・みずほ銀行）入行"},
+    {"period": "1997", "text": "ニューヨーク支店勤務"},
+    {"period": "2002", "text": "銀行退職・政治活動開始"},
+    {"period": "2005", "text": "東京3区から初当選"},
+    {"period": "2013", "text": "外務大臣政務官（第2次安倍内閣）"},
+    {"period": "2019", "text": "環境副大臣・内閣府副大臣（第4次安倍改造内閣）"},
+    {"period": "2025", "text": "環境大臣・原子力防災担当（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "moej_takaichi2025",
+      "title": "環境大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 環境大臣（2025年10月〜）",
+      "source": "環境省 政策",
+      "source_url": "https://www.env.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "2050年カーボンニュートラル実現に向けた政策推進",
+          "category": "気候変動",
+          "status": "進行中",
+          "evidence_url": "https://www.env.go.jp/earth/2050carbon_neutral.html",
+          "evidence_source": {
+            "title": "環境省 2050年カーボンニュートラル",
+            "accessed": "2026-04-29",
+            "note": "2030年目標46%削減・2050年ネットゼロに向けた施策が継続中"
+          }
+        },
+        {
+          "title": "プラスチック資源循環・廃棄物削減",
+          "category": "循環経済",
+          "status": "進行中",
+          "evidence_url": "https://www.env.go.jp/recycle/plastic/index.html",
+          "evidence_source": {
+            "title": "環境省 プラスチック資源循環",
+            "accessed": "2026-04-29",
+            "note": "2022年施行のプラスチック資源循環促進法に基づく取り組みが進行中"
+          }
+        },
+        {
+          "title": "生物多様性国家戦略（昆明・モントリオール目標への対応）",
+          "category": "生物多様性",
+          "status": "公約",
+          "evidence_url": "https://www.env.go.jp/nature/biodic/biodiversity/nbsap/index.html",
+          "evidence_source": {
+            "title": "環境省 生物多様性国家戦略",
+            "accessed": "2026-04-29",
+            "note": "2023年策定の新・生物多様性国家戦略に基づく30by30目標の実現が課題"
+          }
+        },
+        {
+          "title": "原子力防災体制の強化",
+          "category": "原子力防災",
+          "status": "公約",
+          "evidence_url": "https://www.env.go.jp/chemi/rhm/h29kisoshiryo/h29kiso-02-02.html",
+          "evidence_source": {
+            "title": "環境省 放射線健康管理",
+            "accessed": "2026-04-29",
+            "note": "原発再稼働の進行に伴い、避難計画・防災訓練の実効性向上が課題"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "気候変動",
+      "title": "2030年CO₂削減目標の達成可能性",
+      "desc": "2030年に2013年比46%削減という高い目標に対し、現状の進捗が十分かが問われる。再生可能エネルギー普及・省エネの加速が焦点。"
+    },
+    {
+      "context": "環境と経済",
+      "title": "GXと環境政策の整合性",
+      "desc": "経産省主導のGX（原子力拡大を含む）と環境省の自然保護・脱炭素政策をどう整合させるかが閣内調整の課題。"
+    }
+  ],
+  "source_urls": [
+    {"label": "石原宏高 公式サイト", "url": "https://www.ishihara-hirotaka.com/"},
+    {"label": "環境省 公式サイト", "url": "https://www.env.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/102085.html"}
+  ]
+}

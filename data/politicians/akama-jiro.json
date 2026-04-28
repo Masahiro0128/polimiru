@@ -1,0 +1,111 @@
+{
+  "id": "akama-jiro",
+  "name": "あかま 二郎",
+  "kana": "あかま じろう",
+  "party": "自由民主党",
+  "party_role": "国家公安委員長",
+  "area": "神奈川県第14区",
+  "current_status": "国家公安委員長・内閣府特命担当大臣（防災・海洋政策）・衆議院議員（7期）",
+  "photo_url": "https://www.jimin.jp/member/img/akama-jiro.jpg",
+  "official_url": "https://www.akama.jp/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1968年生まれ（本名：赤間二郎）。立教大学経済学部卒・マンチェスター大学大学院修了（MA）。神奈川県議2期を経て2005年に初当選、神奈川14区で7期連続当選。総務大臣政務官・副大臣、内閣府副大臣などを歴任。2025年10月高市内閣で初入閣（国家公安委員会委員長・領土問題担当・内閣府特命担当大臣）。",
+  "stats": [
+    {"label": "役職", "value": "国家公安委員長・防災担当大臣"},
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "神奈川14区"},
+    {"label": "生年", "value": "1968年"},
+    {"label": "学歴", "value": "マンチェスター大学大学院修了（MA）"}
+  ],
+  "career": [
+    {"period": "1968", "text": "生まれ（本名：赤間二郎）"},
+    {"period": "1991", "text": "立教大学経済学部経済学科卒業"},
+    {"period": "1993", "text": "マンチェスター大学大学院修了（MA）"},
+    {"period": "1999", "text": "神奈川県議会議員初当選（無所属→自民、2期）"},
+    {"period": "2005", "text": "第44回衆院選で神奈川14区から初当選"},
+    {"period": "2012", "text": "総務大臣政務官"},
+    {"period": "2016", "text": "総務副大臣"},
+    {"period": "2019", "text": "内閣府副大臣"},
+    {"period": "2025", "text": "国家公安委員会委員長・領土問題担当・防災・海洋政策担当（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "npa_takaichi2025",
+      "title": "国家公安委員長としての主要課題（高市内閣）",
+      "context": "高市内閣 国家公安委員長（2025年10月〜）",
+      "source": "警察庁 政策",
+      "source_url": "https://www.npa.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "特殊詐欺・サイバー犯罪の取り締まり強化",
+          "category": "治安対策",
+          "status": "進行中",
+          "evidence_url": "https://www.npa.go.jp/bureau/criminal/index.html",
+          "evidence_source": {
+            "title": "警察庁 刑事局",
+            "accessed": "2026-04-29",
+            "note": "特殊詐欺は年間数百億円規模の被害が続く。SMS詐欺・闇バイト対策が強化されている"
+          }
+        },
+        {
+          "title": "テロ・組織犯罪対策の強化",
+          "category": "治安・テロ対策",
+          "status": "進行中",
+          "evidence_url": "https://www.npa.go.jp/bureau/security/index.html",
+          "evidence_source": {
+            "title": "警察庁 警備局",
+            "accessed": "2026-04-29",
+            "note": "2022年安倍元首相銃撃事件を受けた警護・警備強化の継続が課題"
+          }
+        },
+        {
+          "title": "領土問題対策（北方領土・竹島・尖閣）の啓発",
+          "category": "領土問題",
+          "status": "公約",
+          "evidence_url": "https://www.cao.go.jp/hoppo/index.html",
+          "evidence_source": {
+            "title": "内閣府 北方領土対策本部",
+            "accessed": "2026-04-29",
+            "note": "担当大臣として北方領土・竹島・尖閣に関する国民への啓発・外交的取り組みを推進"
+          }
+        },
+        {
+          "title": "防災対応力の強化（海洋政策含む）",
+          "category": "防災・海洋",
+          "status": "公約",
+          "evidence_url": "https://www.cao.go.jp/bousai/index.html",
+          "evidence_source": {
+            "title": "内閣府 防災情報のページ",
+            "accessed": "2026-04-29",
+            "note": "防災担当大臣として災害対応能力の強化・事前防災への取り組みを推進"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "治安",
+      "title": "闇バイト・特殊詐欺への総合対策",
+      "desc": "SNSでの「闇バイト」募集を通じた強盗・詐欺事件が深刻化。通信事業者・プラットフォームとの連携を含む実効的な対策が問われる。"
+    },
+    {
+      "context": "領土",
+      "title": "北方領土・竹島問題の現状維持と外交",
+      "desc": "領土問題担当大臣として、各領土問題での国際的な主張と外交的解決の模索をどう両立させるかが課題。"
+    }
+  ],
+  "source_urls": [
+    {"label": "あかま二郎 公式サイト", "url": "https://www.akama.jp/"},
+    {"label": "警察庁 公式サイト", "url": "https://www.npa.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/102081.html"}
+  ]
+}

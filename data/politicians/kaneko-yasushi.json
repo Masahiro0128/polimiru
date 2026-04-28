@@ -1,0 +1,110 @@
+{
+  "id": "kaneko-yasushi",
+  "name": "金子 恭之",
+  "kana": "かねこ やすし",
+  "party": "自由民主党",
+  "party_role": "国土交通大臣",
+  "area": "熊本県第4区",
+  "current_status": "国土交通大臣・衆議院議員（9期）",
+  "photo_url": "https://www.jimin.jp/member/img/kaneko-yasushi.jpg",
+  "official_url": "https://www.kaneko-yasushi.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1961年生まれ。早稲田大学商学部卒業後、参院議員・園田博之衆院議員の秘書を経て、2000年に熊本5区から無所属で初当選。自民党に入党し9期当選。農林水産大臣政務官・国土交通副大臣・総務大臣（岸田内閣）を歴任。2025年10月高市内閣で2度目の入閣（国土交通大臣）。インフラ整備・防災・物流政策を推進。",
+  "stats": [
+    {"label": "役職", "value": "国土交通大臣"},
+    {"label": "当選", "value": "9期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "熊本4区"},
+    {"label": "生年", "value": "1961年"},
+    {"label": "前職", "value": "議員秘書"}
+  ],
+  "career": [
+    {"period": "1961", "text": "生まれ"},
+    {"period": "1984", "text": "早稲田大学商学部卒業。参議院議員・園田博之衆院議員秘書"},
+    {"period": "2000", "text": "第42回衆院選で熊本5区から無所属初当選後、自民党入党"},
+    {"period": "2003", "text": "自民党青年局長"},
+    {"period": "2005", "text": "農林水産大臣政務官（第3次小泉改造内閣）"},
+    {"period": "2008", "text": "国土交通副大臣（福田改造内閣）"},
+    {"period": "2021", "text": "総務大臣（岸田内閣）— 1度目の入閣"},
+    {"period": "2025", "text": "国土交通大臣（高市内閣）— 2度目の入閣"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "mlit_takaichi2025",
+      "title": "国土交通大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 国土交通大臣（2025年10月〜）",
+      "source": "国土交通省 政策",
+      "source_url": "https://www.mlit.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "能登半島地震の復旧・復興加速",
+          "category": "防災・復旧",
+          "status": "進行中",
+          "evidence_url": "https://www.mlit.go.jp/report/press/content/001812049.pdf",
+          "evidence_source": {
+            "title": "国土交通省 令和6年能登半島地震への対応",
+            "accessed": "2026-04-29",
+            "note": "道路・港湾・住宅の復旧が進行中。仮設住宅から恒久住宅への移行が課題"
+          }
+        },
+        {
+          "title": "物流の2024年問題対策（トラックドライバー残業規制）",
+          "category": "物流",
+          "status": "進行中",
+          "evidence_url": "https://www.mlit.go.jp/jidosha/jidosha_fr7_000058.html",
+          "evidence_source": {
+            "title": "国土交通省 物流政策",
+            "accessed": "2026-04-29",
+            "note": "2024年4月施行のトラックドライバー残業規制に対応した物流効率化策が進行中"
+          }
+        },
+        {
+          "title": "老朽インフラの計画的更新（橋梁・トンネル等）",
+          "category": "インフラ整備",
+          "status": "公約",
+          "evidence_url": "https://www.mlit.go.jp/road/ir/ir-hyouka/index.html",
+          "evidence_source": {
+            "title": "国土交通省 道路メンテナンス年報",
+            "accessed": "2026-04-29",
+            "note": "2033年以降に建設後50年超の橋梁が全体の63%超になる見通し。計画的更新が急務"
+          }
+        },
+        {
+          "title": "住宅・建設業の担い手確保・賃上げ",
+          "category": "建設業",
+          "status": "公約",
+          "evidence_url": "https://www.mlit.go.jp/totikensangyo/const/index.html",
+          "evidence_source": {
+            "title": "国土交通省 建設業",
+            "accessed": "2026-04-29",
+            "note": "建設業の担い手不足解消・賃上げ促進・週休2日実現が課題"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "防災・インフラ",
+      "title": "能登復興と次の大規模災害への備え",
+      "desc": "能登半島地震の復旧・復興加速と同時に、南海トラフ地震・首都直下地震への備えをどう進めるかが問われる。"
+    },
+    {
+      "context": "物流・交通",
+      "title": "物流危機と自動運転・ドローン物流",
+      "desc": "ドライバー不足が深刻化する中、自動運転トラック・ドローン配送の実用化を加速できるかが国交大臣のレガシーになりうる。"
+    }
+  ],
+  "source_urls": [
+    {"label": "金子恭之 公式サイト", "url": "https://www.kaneko-yasushi.com/"},
+    {"label": "国土交通省 公式サイト", "url": "https://www.mlit.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/100401.html"}
+  ]
+}

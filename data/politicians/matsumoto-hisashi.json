@@ -1,0 +1,122 @@
+{
+  "id": "matsumoto-hisashi",
+  "name": "松本 尚",
+  "kana": "まつもと ひさし",
+  "party": "自由民主党",
+  "party_role": "デジタル大臣",
+  "area": "千葉県第13区",
+  "current_status": "デジタル大臣・衆議院議員（3期）",
+  "photo_url": "https://www.jimin.jp/member/img/matsumoto-hisashi.jpg",
+  "official_url": "https://matsumoto-hisashi.jp/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1962年生まれ。金沢大学医学部卒の外科医・救急医。日本医科大学救急医学教室教授・千葉北総病院副院長として日本のドクターヘリ事業普及に中心的な役割を果たした。テレビドラマ「コード・ブルー」の医療監修者として広く知られる。2021年政界入りし3期当選。防衛大臣政務官・外務大臣政務官を経て2025年10月高市内閣でデジタル大臣に就任。",
+  "stats": [
+    {"label": "役職", "value": "デジタル大臣"},
+    {"label": "当選", "value": "3期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "千葉13区"},
+    {"label": "生年", "value": "1962年"},
+    {"label": "前職", "value": "救急医・大学教授"}
+  ],
+  "career": [
+    {"period": "1962", "text": "生まれ"},
+    {"period": "1987", "text": "金沢大学医学部医学科卒業、外科医として勤務開始"},
+    {"period": "1995", "text": "日本医科大学救急医学教室に所属"},
+    {"period": "2001", "text": "千葉北総病院にドクターヘリ事業を導入。全国普及に向けた活動を開始"},
+    {"period": "2014", "text": "日本医科大学医学部救急医学教室教授・千葉北総病院副院長（〜2021年）"},
+    {"period": "〜2021", "text": "アングリア・ラスキン大学経営大学院修了（MBA）。ドラマ「コード・ブルー」医療監修"},
+    {"period": "2021", "text": "第49回衆院選で千葉13区から初当選（政界入り）"},
+    {"period": "2023", "text": "防衛大臣政務官（第2次岸田第2次改造内閣）"},
+    {"period": "2024", "text": "外務大臣政務官（第2次石破内閣）"},
+    {"period": "2025", "text": "デジタル大臣・サイバー安全保障担当・行政改革担当（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "dga_takaichi2025",
+      "title": "デジタル大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 デジタル大臣（2025年10月〜）",
+      "source": "デジタル庁 政策",
+      "source_url": "https://www.digital.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 30,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "マイナンバーカードの利活用推進・マイナ保険証定着",
+          "category": "マイナンバー",
+          "status": "進行中",
+          "evidence_url": "https://www.digital.go.jp/policies/mynumber",
+          "evidence_source": {
+            "title": "デジタル庁 マイナンバー",
+            "accessed": "2026-04-29",
+            "note": "マイナ保険証への移行が進行中。保険証廃止・マイナ一本化の定着が課題"
+          }
+        },
+        {
+          "title": "行政手続きのオンライン化・書類撤廃",
+          "category": "行政DX",
+          "status": "進行中",
+          "evidence_url": "https://www.digital.go.jp/policies/digitalization",
+          "evidence_source": {
+            "title": "デジタル庁 デジタル化の推進",
+            "accessed": "2026-04-29",
+            "note": "行政手続のオンライン化が進む一方、自治体システムの標準化が課題"
+          }
+        },
+        {
+          "title": "サイバーセキュリティの強化",
+          "category": "サイバー安保",
+          "status": "進行中",
+          "evidence_url": "https://www.digital.go.jp/policies/security",
+          "evidence_source": {
+            "title": "デジタル庁 セキュリティ",
+            "accessed": "2026-04-29",
+            "note": "重要インフラへのサイバー攻撃への対応・NISC（内閣サイバーセキュリティセンター）との連携"
+          }
+        },
+        {
+          "title": "デジタル行財政改革（業務効率化・人員最適化）",
+          "category": "行財政改革",
+          "status": "公約",
+          "evidence_url": "https://www.digital.go.jp/councils/digital-gyozaikaku",
+          "evidence_source": {
+            "title": "デジタル庁 デジタル行財政改革会議",
+            "accessed": "2026-04-29",
+            "note": "デジタル技術を活用した行政効率化・人員最適化の推進。自治体DX支援も含む"
+          }
+        },
+        {
+          "title": "AI・量子・次世代半導体への政府投資",
+          "category": "先端技術",
+          "status": "公約",
+          "evidence_url": "https://www.digital.go.jp/policies/ai",
+          "evidence_source": {
+            "title": "デジタル庁 AI政策",
+            "accessed": "2026-04-29",
+            "note": "政府のAI活用推進・規制整備が課題。医師出身の視点から医療AIへの期待も高い"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "デジタル行政",
+      "title": "マイナ保険証の定着と行政DX加速",
+      "desc": "保険証廃止・マイナ一本化の完成がデジタル庁発足以来の最大課題。医師出身の大臣として医療DXへの親和性が高く、利用率向上の具体策が注目される。"
+    },
+    {
+      "context": "AI・テクノロジー",
+      "title": "AIの行政活用と規制のバランス",
+      "desc": "生成AIの急速な普及を受け、行政での活用促進と誤情報・プライバシー侵害への規制の整備をどう両立させるかが問われる。"
+    }
+  ],
+  "source_urls": [
+    {"label": "デジタル庁 公式サイト", "url": "https://www.digital.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/202139.html"}
+  ]
+}

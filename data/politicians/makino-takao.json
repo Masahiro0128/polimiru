@@ -1,0 +1,109 @@
+{
+  "id": "makino-takao",
+  "name": "牧野 たかお",
+  "kana": "まきの たかお",
+  "party": "自由民主党",
+  "party_role": "復興大臣",
+  "area": "静岡県（参議院）",
+  "current_status": "復興大臣・参議院議員（4期）",
+  "photo_url": "https://www.jimin.jp/member/img/makino-takao.jpg",
+  "official_url": "https://makino-net.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1959年生まれ（本名：牧野京夫、「たかお」は通称）。早稲田大学法学部卒業後、テレビ静岡で報道記者・デスクとして活躍。静岡県議3期を経て2007年から参議院議員4期。外務大臣政務官・国土交通副大臣を歴任。2025年10月高市内閣で初入閣（復興大臣・福島原発事故再生総括担当・国土強靱化担当）。",
+  "stats": [
+    {"label": "役職", "value": "復興大臣・国土強靱化担当"},
+    {"label": "当選", "value": "4期"},
+    {"label": "国会", "value": "参議院"},
+    {"label": "選挙区", "value": "静岡県"},
+    {"label": "生年", "value": "1959年"},
+    {"label": "前職", "value": "テレビ静岡 記者・デスク"}
+  ],
+  "career": [
+    {"period": "1959", "text": "生まれ（本名：牧野京夫）"},
+    {"period": "1982", "text": "早稲田大学法学部卒業、テレビ静岡入社（報道部記者・デスク）"},
+    {"period": "1995", "text": "静岡県議会議員初当選（3期連続）"},
+    {"period": "2007", "text": "第21回参院選で静岡県から初当選"},
+    {"period": "2009", "text": "外務大臣政務官"},
+    {"period": "2019", "text": "国土交通副大臣"},
+    {"period": "2025", "text": "復興大臣・福島原発事故再生総括担当・防災庁設置準備担当・国土強靱化担当（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "reconstruction_takaichi2025",
+      "title": "復興大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 復興大臣（2025年10月〜）",
+      "source": "復興庁 政策",
+      "source_url": "https://www.reconstruction.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "東日本大震災の復興・福島の復興再生加速",
+          "category": "東日本大震災復興",
+          "status": "進行中",
+          "evidence_url": "https://www.reconstruction.go.jp/topics/main-cat1/sub-cat1-1/index.html",
+          "evidence_source": {
+            "title": "復興庁 東日本大震災の復興状況",
+            "accessed": "2026-04-29",
+            "note": "復興期間は2020年代まで継続。福島の帰還困難区域の復興が最大課題"
+          }
+        },
+        {
+          "title": "福島第一原発のALPS処理水海洋放出に関する風評対策",
+          "category": "福島復興",
+          "status": "進行中",
+          "evidence_url": "https://www.reconstruction.go.jp/topics/main-cat2/sub-cat2-4/20230824_01.html",
+          "evidence_source": {
+            "title": "復興庁 ALPS処理水の海洋放出関連情報",
+            "accessed": "2026-04-29",
+            "note": "2023年8月から処理水放出開始。国内外の風評被害対策・漁業者支援が継続中"
+          }
+        },
+        {
+          "title": "能登半島地震（2024年）の復旧・復興支援",
+          "category": "能登復興",
+          "status": "進行中",
+          "evidence_url": "https://www.reconstruction.go.jp/topics/main-cat1/sub-cat1-7/",
+          "evidence_source": {
+            "title": "復興庁 能登半島地震への対応",
+            "accessed": "2026-04-29",
+            "note": "復興庁が能登支援の取りまとめを担い、復旧・生活再建を推進"
+          }
+        },
+        {
+          "title": "防災庁の設置準備",
+          "category": "防災行政",
+          "status": "公約",
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/bousaicho/index.html",
+          "evidence_source": {
+            "title": "内閣官房 防災庁設置準備",
+            "accessed": "2026-04-29",
+            "note": "防災庁の設置に向けた準備が進行中。関係省庁との調整・組織設計が課題"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "復興",
+      "title": "東日本・能登の二重の復興課題",
+      "desc": "東日本大震災から14年が経過する中、福島の帰還困難区域の復興と、2024年の能登半島地震の復旧が同時進行する難しい局面。"
+    },
+    {
+      "context": "防災",
+      "title": "防災庁設置の意義と課題",
+      "desc": "大規模災害の頻発化を受けた防災庁設置は重要な政策。各省庁の権限調整・組織設計・財源確保をどう実現するかが問われる。"
+    }
+  ],
+  "source_urls": [
+    {"label": "牧野たかお 公式サイト", "url": "https://makino-net.com/"},
+    {"label": "復興庁 公式サイト", "url": "https://www.reconstruction.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/100532.html"}
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "kihara-minoru",
+  "name": "木原 稔",
+  "kana": "きはら みのる",
+  "party": "自由民主党",
+  "party_role": "内閣官房長官",
+  "area": "熊本県第1区",
+  "current_status": "内閣官房長官・衆議院議員（7期）",
+  "photo_url": "https://www.jimin.jp/member/img/kihara-minoru.jpg",
+  "official_url": "https://kiharaminoru.jp/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1969年生まれ。早稲田大学教育学部卒業後、日本航空入社。2005年に熊本1区から初当選し7期。財務副大臣・内閣総理大臣補佐官（国家安全保障担当）・防衛大臣（岸田内閣、2023年）を経て、2025年10月高市内閣で内閣官房長官（第90・91代）に就任。政府の要として沖縄基地負担軽減・拉致問題も担当。",
+  "stats": [
+    {"label": "役職", "value": "内閣官房長官（第90・91代）"},
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "熊本1区"},
+    {"label": "生年", "value": "1969年"},
+    {"label": "前職", "value": "航空会社員（日本航空）"}
+  ],
+  "career": [
+    {"period": "1969", "text": "生まれ"},
+    {"period": "1993", "text": "早稲田大学教育学部国語国文学科卒業、日本航空入社"},
+    {"period": "2004", "text": "日本航空退職、政治活動開始"},
+    {"period": "2005", "text": "第44回衆院選で熊本1区（比例九州ブロック）から初当選"},
+    {"period": "2012", "text": "熊本1区での当選に切り替え（以降連続）"},
+    {"period": "2016", "text": "財務副大臣"},
+    {"period": "2019", "text": "内閣総理大臣補佐官（国家安全保障担当）"},
+    {"period": "2023", "text": "防衛大臣（第2次岸田第2次改造内閣）"},
+    {"period": "2025", "text": "内閣官房長官（第90・91代）・沖縄基地負担軽減担当・拉致問題担当（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "cas_takaichi2025",
+      "title": "内閣官房長官としての主要課題（高市内閣）",
+      "context": "高市内閣 内閣官房長官（2025年10月〜）",
+      "source": "内閣官房 公式サイト",
+      "source_url": "https://www.cas.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "政府の情報発信・広報の一元化",
+          "category": "内閣機能",
+          "status": "進行中",
+          "evidence_url": "https://www.cas.go.jp/",
+          "evidence_source": {
+            "title": "内閣官房 公式サイト",
+            "accessed": "2026-04-29",
+            "note": "定例記者会見を週2回実施し政府方針を発信。内閣官房長官として閣内調整を担っている"
+          }
+        },
+        {
+          "title": "拉致問題の解決加速",
+          "category": "拉致問題",
+          "status": "進行中",
+          "evidence_url": "https://www.rachi.go.jp/",
+          "evidence_source": {
+            "title": "内閣官房 拉致問題対策本部",
+            "accessed": "2026-04-29",
+            "note": "日朝交渉の再開・早期解決に向けた外交努力を継続。具体的な進展は確認中"
+          }
+        },
+        {
+          "title": "沖縄の基地負担軽減",
+          "category": "沖縄・安全保障",
+          "status": "公約",
+          "evidence_url": "https://www.cas.go.jp/jp/ryodo_okinawa/okinawa/index.html",
+          "evidence_source": {
+            "title": "内閣官房 沖縄政策",
+            "accessed": "2026-04-29",
+            "note": "普天間飛行場代替施設（辺野古）建設が継続中。沖縄県との協議が課題"
+          }
+        },
+        {
+          "title": "経済安全保障・サイバーセキュリティ強化",
+          "category": "安全保障",
+          "status": "公約",
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/keizai_anzen/index.html",
+          "evidence_source": {
+            "title": "内閣官房 経済安全保障",
+            "accessed": "2026-04-29",
+            "note": "内閣官房長官として経済安保・サイバーセキュリティを横断的に取り組む立場"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "安全保障",
+      "title": "防衛大臣経験を活かした安全保障政策",
+      "desc": "防衛大臣経験を持つ官房長官として、安保3文書に基づく防衛力整備・日米同盟深化の推進と平和外交のバランスが問われる。"
+    },
+    {
+      "context": "政権運営",
+      "title": "高市内閣の「顔」としての情報発信",
+      "desc": "内閣官房長官は政府の公式スポークスマン。閣内の意見調整と対外メッセージの一貫性をどう保つかが安定政権の鍵。"
+    }
+  ],
+  "source_urls": [
+    {"label": "木原稔 公式サイト", "url": "https://kiharaminoru.jp/"},
+    {"label": "内閣官房 公式サイト", "url": "https://www.cas.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/102087.html"}
+  ]
+}

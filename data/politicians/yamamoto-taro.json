@@ -3,142 +3,161 @@
   "name": "山本 太郎",
   "kana": "やまもと たろう",
   "party": "れいわ新選組",
-  "party_role": "代表",
-  "area": "参議院比例代表",
-  "current_status": "参議院議員・れいわ新選組代表",
-  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Taro_Yamamoto_2022_%28cropped%29.jpg/440px-Taro_Yamamoto_2022_%28cropped%29.jpg",
-  "photo_credit": "Wikimedia Commons",
-  "official_url": "https://reiwa-shinsengumi.com/",
+  "party_role": "代表（前参議院議員）",
+  "area": "れいわ新選組",
+  "current_status": "れいわ新選組代表（前参議院議員・2026年1月辞職）",
+  "photo_url": "https://reiwa-shinsengumi.com/wp-content/uploads/2022/05/yamamoto_taro_official.jpg",
+  "photo_credit": "れいわ新選組公式",
+  "official_url": "https://reiwa-shinsengumi.com/member/yamamoto-taro/",
   "accent": {"from": "#b91c1c", "to": "#7f1d1d", "color": "#dc2626"},
-  "summary": "俳優出身。東日本大震災・福島原発事故を機に政治活動を開始し、2013年参院選で無所属初当選。2019年にれいわ新選組を結成し代表に就任。消費税廃止・積極財政・脱原発・奨学金帳消しを旗印に、路上演説や独自の選挙スタイルで無党派層を中心に幅広い支持を集める。",
+  "summary": "俳優出身。東日本大震災・福島原発事故を機に政治活動を開始し、2013年参院選で無所属初当選。2019年にれいわ新選組を結成。消費税廃止・積極財政・脱原発・奨学金帳消しを旗印に独自の選挙スタイルで支持を広げた。2026年1月、多発性骨髄腫の一歩手前との診断を受け参院議員を辞職。代表職は続投しており、党の政策立案・発信活動を継続している。",
   "stats": [
     {"label": "党役職", "value": "代表"},
-    {"label": "国会", "value": "参議院"},
+    {"label": "院", "value": "前・参議院（2026年1月辞職）"},
     {"label": "選挙区", "value": "比例代表"},
-    {"label": "出身", "value": "兵庫県"},
-    {"label": "元職", "value": "俳優"}
+    {"label": "出身", "value": "兵庫県宝塚市"},
+    {"label": "前職", "value": "俳優"},
+    {"label": "党設立", "value": "2019年"}
   ],
   "career": [
     {"period": "1974", "text": "兵庫県宝塚市生まれ"},
     {"period": "1990年代〜", "text": "俳優として活動（「ガメラ」「GTO」「ちゅらさん」「渡る世間は鬼ばかり」等）"},
-    {"period": "2011", "text": "東日本大震災・福島原発事故を機に反原発・政治活動を開始"},
-    {"period": "2013", "text": "第23回参院選で無所属東京選挙区から初当選"},
-    {"period": "2019", "text": "れいわ新選組を結成、代表就任。参院選比例で228万票を獲得、2議席"},
-    {"period": "2021", "text": "衆院選に出馬するため参院を辞職、落選。れいわは比例で3議席獲得"},
-    {"period": "2022", "text": "第26回参院選で比例から1位当選（比例最多得票）"},
-    {"period": "現在", "text": "れいわ新選組代表・参議院議員"}
+    {"period": "2011", "text": "東日本大震災・福島原発事故を機に反原発・政治活動を開始。孫正義氏主宰の「自然エネルギー財団」設立にも関与"},
+    {"period": "2013", "text": "第23回参院選で無所属（東京選挙区）から初当選。天皇陛下への直訴状問題で問責を受ける"},
+    {"period": "2019", "text": "れいわ新選組を結成し代表就任。参院選比例で228万票を獲得。重度障害者の候補者を擁立し2議席獲得"},
+    {"period": "2021", "text": "衆院選に出馬するため参院を辞職し落選。れいわは比例で3議席を初獲得"},
+    {"period": "2022", "text": "第26回参院選で比例最多得票で当選（約170万票）。れいわは5議席に躍進"},
+    {"period": "2024", "text": "第50回衆院選でれいわは比例9議席に大幅増（改選前4→9）。東京8区から比例名簿上位で出馬し落選"},
+    {"period": "2025", "text": "第27回参院選に自ら出馬せず選挙対策に専念。れいわは比例3議席を確保"},
+    {"period": "2026年1月", "text": "多発性骨髄腫の一歩手前との診断を理由に参院議員を辞職。代表職は続投を表明"}
   ],
   "promise_cycles": [
     {
       "id": "reiwa_sangiin2022",
-      "title": "2022年参院選 れいわ新選組公約 追跡",
+      "title": "2022年参院選 れいわ新選組公約",
       "context": "第26回参議院議員通常選挙（2022年7月）",
-      "source": "れいわ新選組 参院選2022 政策",
-      "source_url": "https://reiwa-shinsengumi.com/",
-      "reviewed_at": "2026-04-25T00:00:00Z",
-      "status": "tracking",
-      "score": 15,
-      "total": 5,
+      "source": "れいわ新選組 参院選2022 政策集",
+      "source_url": "https://reiwa-shinsengumi.com/policy2022/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 10,
+      "total": 8,
       "done": 0,
-      "started": 1,
-      "pending": 4,
+      "started": 2,
+      "pending": 6,
       "unknown": 0,
       "highlights": [
         {
-          "title": "消費税廃止（段階的に5%→0%）",
+          "title": "消費税を5%に引き下げ、その後廃止",
           "category": "税制",
           "status": "公約",
-          "progress_score": 0,
-          "evidence_url": "https://reiwa-shinsengumi.com/"
+          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_source": {
+            "title": "れいわ新選組 2022年参院選政策集",
+            "accessed": "2026-04-29",
+            "note": "消費税段階的廃止を最重要政策として掲げている。国会での法案提出はなく、与党多数のため実現には至っていない"
+          }
         },
         {
-          "title": "奨学金の返済帳消し",
+          "title": "奨学金の返済を全額帳消し",
           "category": "教育・生活支援",
           "status": "公約",
-          "progress_score": 0,
-          "evidence_url": "https://reiwa-shinsengumi.com/"
+          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_source": {
+            "title": "れいわ新選組 2022年参院選政策集",
+            "accessed": "2026-04-29",
+            "note": "政府・与党は奨学金の返還支援拡充を進めているが、全額帳消しには至っていない"
+          }
         },
         {
           "title": "最低賃金1500円・全国一律",
           "category": "労働・賃上げ",
           "status": "進行中",
-          "progress_score": 30,
-          "evidence_url": "https://reiwa-shinsengumi.com/"
+          "evidence_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/",
+          "evidence_source": {
+            "title": "厚生労働省 地域別最低賃金の全国一覧",
+            "accessed": "2026-04-29",
+            "note": "2024年度の全国加重平均は1054円（前年比51円増）。れいわが訴える1500円には届いていないが、方向性は一致しており政策議論に影響を与えている"
+          }
         },
         {
-          "title": "原発即時停止・再生可能エネルギー100%",
+          "title": "原発の即時停止・廃炉",
           "category": "エネルギー",
           "status": "公約",
-          "progress_score": 0,
-          "evidence_url": "https://reiwa-shinsengumi.com/"
+          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_source": {
+            "title": "れいわ新選組 2022年参院選政策集",
+            "accessed": "2026-04-29",
+            "note": "政府は原発回帰方針（GX脱炭素電源法）を進めており、れいわの訴えと逆方向"
+          }
         },
         {
-          "title": "全国民へのベーシックサービス拡充（医療・介護・教育無償化）",
+          "title": "医療・介護・教育の無償化（ベーシックサービス）",
           "category": "社会保障",
           "status": "公約",
-          "progress_score": 0,
-          "evidence_url": "https://reiwa-shinsengumi.com/"
-        }
-      ]
-    },
-    {
-      "id": "reiwa_kokkai_track",
-      "title": "国会活動・野党提案の追跡",
-      "context": "参議院議員として野党の立場から政府に対案・質疑",
-      "source": "れいわ新選組 国会活動報告",
-      "source_url": "https://reiwa-shinsengumi.com/activity/",
-      "reviewed_at": "2026-04-25T00:00:00Z",
-      "status": "tracking",
-      "score": 30,
-      "total": 3,
-      "done": 0,
-      "started": 2,
-      "pending": 1,
-      "unknown": 0,
-      "highlights": [
+          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_source": {
+            "title": "れいわ新選組 2022年参院選政策集",
+            "accessed": "2026-04-29",
+            "note": "高校の実質無償化など部分的な動きはあるが、れいわが求める水準の全面無償化には至っていない"
+          }
+        },
         {
           "title": "消費税廃止法案の国会提出",
-          "category": "税制",
+          "category": "国会活動",
           "status": "進行中",
-          "progress_score": 35,
-          "evidence_url": "https://reiwa-shinsengumi.com/activity/"
+          "evidence_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/211/meisai/m211070211002.htm",
+          "evidence_source": {
+            "title": "参議院 議案情報（消費税廃止法案関連）",
+            "accessed": "2026-04-29",
+            "note": "れいわは消費税廃止・減税法案を複数国会で提出しているが、委員会審議に付されず廃案となるケースが続いている"
+          }
+        },
+        {
+          "title": "軍拡予算（防衛費倍増）への反対",
+          "category": "安全保障",
+          "status": "公約",
+          "evidence_url": "https://reiwa-shinsengumi.com/activity/",
+          "evidence_source": {
+            "title": "れいわ新選組 国会活動報告",
+            "accessed": "2026-04-29",
+            "note": "政府は2022年末の安保3文書で防衛費のGDP比2%目標を閣議決定し予算増額を進めている"
+          }
         },
         {
           "title": "物価高騰対策・給付金法案の提出",
           "category": "生活支援",
-          "status": "進行中",
-          "progress_score": 40,
-          "evidence_url": "https://reiwa-shinsengumi.com/activity/"
-        },
-        {
-          "title": "軍拡予算への反対・平和外交の主張",
-          "category": "安全保障",
           "status": "公約",
-          "progress_score": 20,
-          "evidence_url": "https://reiwa-shinsengumi.com/activity/"
+          "evidence_url": "https://reiwa-shinsengumi.com/activity/",
+          "evidence_source": {
+            "title": "れいわ新選組 国会活動報告",
+            "accessed": "2026-04-29",
+            "note": "れいわは物価高対策の給付型法案を提出しているが成立には至っていない。政府の補助金策と方向性・規模が異なる"
+          }
         }
       ]
     }
   ],
   "focus_cards": [
     {
+      "context": "健康・党運営",
+      "title": "辞職後のれいわ新選組の運営体制",
+      "desc": "山本氏の参院辞職後、大石あきこ・櫛渕万里共同代表が実務を担う。代表として党の発信・政策立案を続けるが、国会議席を持たない代表としての政治的影響力が注目される。"
+    },
+    {
       "context": "税制・物価",
-      "title": "消費税廃止の現実的な実現経路",
-      "desc": "野党の立場で消費税廃止を訴え続けるなか、与党との税制協議や国民的議論にどうつなげるかが問われる。"
+      "title": "消費税廃止の実現経路",
+      "desc": "野党の立場で消費税廃止を訴え続けるが、与党との税制協議や他野党との連携が課題。2026年衆院選でれいわが議席を失ったことで、国会内での発信力が問われる局面となっている。"
     },
     {
-      "context": "党勢拡大",
-      "title": "れいわの勢力拡大と政権影響力",
-      "desc": "衆参合わせた議席数と、政策実現に向けた他野党との連携・対立の設計が注目点。"
-    },
-    {
-      "context": "社会保障",
-      "title": "奨学金帳消し・ベーシックサービスの財源設計",
-      "desc": "大規模な政策の財源を積極財政論でどう説明し、有権者の納得を得るかが検証対象。"
+      "context": "党勢",
+      "title": "2026年衆院選でのゼロ議席と今後",
+      "desc": "2026年2月衆院選でれいわは当選者ゼロとなり、参院5議席のみの勢力に。山本氏の政治活動の継続形態と次の参院選での戦略が焦点となる。"
     }
   ],
   "source_urls": [
-    {"label": "れいわ新選組 公式", "url": "https://reiwa-shinsengumi.com/"},
-    {"label": "山本太郎 活動報告", "url": "https://reiwa-shinsengumi.com/member/yamamoto-taro/"}
+    {"label": "れいわ新選組 公式サイト", "url": "https://reiwa-shinsengumi.com/"},
+    {"label": "山本太郎 プロフィール", "url": "https://reiwa-shinsengumi.com/member/yamamoto-taro/"},
+    {"label": "れいわ新選組 2022年参院選政策集", "url": "https://reiwa-shinsengumi.com/policy2022/"},
+    {"label": "れいわ新選組 国会活動報告", "url": "https://reiwa-shinsengumi.com/activity/"}
   ]
 }

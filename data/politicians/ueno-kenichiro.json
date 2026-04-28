@@ -1,0 +1,110 @@
+{
+  "id": "ueno-kenichiro",
+  "name": "上野 賢一郎",
+  "kana": "うえの けんいちろう",
+  "party": "自由民主党",
+  "party_role": "厚生労働大臣",
+  "area": "滋賀県第2区",
+  "current_status": "厚生労働大臣・衆議院議員（7期）",
+  "photo_url": "https://www.jimin.jp/member/img/ueno-kenichiro.jpg",
+  "official_url": "https://www.uenokenichiro.jp/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1965年生まれ。京都大学法学部卒業後、自治省（現・総務省）入省。国土庁・通商産業省・内閣官房など複数省庁を経験し、大学院講師も歴任。2005年に滋賀2区から政界入りし7期当選。財務副大臣・自民党副幹事長などを経て、2025年10月高市内閣で初入閣（厚生労働大臣）。社会保障制度改革・医療・介護政策を推進。",
+  "stats": [
+    {"label": "役職", "value": "厚生労働大臣"},
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "滋賀2区"},
+    {"label": "生年", "value": "1965年"},
+    {"label": "前職", "value": "自治省官僚"}
+  ],
+  "career": [
+    {"period": "1965", "text": "生まれ"},
+    {"period": "卒業", "text": "京都大学法学部卒業、自治省入省"},
+    {"period": "省庁勤務", "text": "国土庁・通商産業省・総務省・内閣官房等に出向。大学院非常勤講師も担当"},
+    {"period": "2005", "text": "滋賀2区から初当選"},
+    {"period": "2012", "text": "国土交通大臣政務官"},
+    {"period": "2015", "text": "財務副大臣"},
+    {"period": "2021", "text": "自民党副幹事長"},
+    {"period": "2025", "text": "厚生労働大臣（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "mhlw_takaichi2025",
+      "title": "厚生労働大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 厚生労働大臣（2025年10月〜）",
+      "source": "厚生労働省 政策",
+      "source_url": "https://www.mhlw.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "最低賃金の引き上げ（2025年度目標1100円超）",
+          "category": "労働・賃金",
+          "status": "進行中",
+          "evidence_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/",
+          "evidence_source": {
+            "title": "厚生労働省 地域別最低賃金一覧",
+            "accessed": "2026-04-29",
+            "note": "2024年度全国加重平均1054円。2025年度目標に向けた審議会での議論が継続中"
+          }
+        },
+        {
+          "title": "医療・介護のDX推進（マイナ保険証活用）",
+          "category": "医療DX",
+          "status": "進行中",
+          "evidence_url": "https://www.mhlw.go.jp/stf/newpage_08700.html",
+          "evidence_source": {
+            "title": "厚生労働省 医療DX推進",
+            "accessed": "2026-04-29",
+            "note": "マイナ保険証への移行が進行中。電子カルテ情報の共有推進も継続"
+          }
+        },
+        {
+          "title": "少子化対策・こども未来戦略の実施",
+          "category": "少子化対策",
+          "status": "公約",
+          "evidence_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/index.html",
+          "evidence_source": {
+            "title": "厚生労働省 子ども・子育て支援",
+            "accessed": "2026-04-29",
+            "note": "児童手当拡充・保育士処遇改善などが進行中。少子化傾向の反転には時間が必要"
+          }
+        },
+        {
+          "title": "年金制度の持続可能性の確保",
+          "category": "年金",
+          "status": "公約",
+          "evidence_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/nenkin/nenkin/index.html",
+          "evidence_source": {
+            "title": "厚生労働省 年金局",
+            "accessed": "2026-04-29",
+            "note": "5年に一度の財政検証（2024年）を踏まえた制度改革の議論が継続中"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "社会保障",
+      "title": "医療・年金・介護の一体改革",
+      "desc": "高齢化・人口減少を前提とした社会保障制度の持続可能性確保が最大の課題。給付と負担のバランス変更をどう国民に説明するかが問われる。"
+    },
+    {
+      "context": "労働",
+      "title": "賃上げと中小企業の両立",
+      "desc": "最低賃金引き上げと中小企業の経営支援をどう両立させるかが論点。非正規雇用の待遇改善と同一労働同一賃金の徹底も課題。"
+    }
+  ],
+  "source_urls": [
+    {"label": "上野賢一郎 公式サイト", "url": "https://www.uenokenichiro.jp/"},
+    {"label": "厚生労働省 公式サイト", "url": "https://www.mhlw.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/115967.html"}
+  ]
+}

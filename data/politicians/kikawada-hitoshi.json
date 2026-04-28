@@ -1,0 +1,123 @@
+{
+  "id": "kikawada-hitoshi",
+  "name": "黄川田 仁志",
+  "kana": "きかわだ ひとし",
+  "party": "自由民主党",
+  "party_role": "こども政策・少子化対策担当大臣",
+  "area": "埼玉県第3区",
+  "current_status": "こども政策・少子化対策担当大臣・衆議院議員（6期）",
+  "photo_url": "https://www.jimin.jp/member/img/kikawada-hitoshi.jpg",
+  "official_url": "https://kikawada.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1970年生まれ。東京理科大学理工学部卒・メリーランド大学大学院修士。松下政経塾27期生。環日本海環境協力センターへの出向・研究員経験を経て2012年初当選。外務大臣政務官・内閣府副大臣を歴任。2025年10月高市内閣でこども政策・少子化対策・沖縄及び北方対策・消費者・地方創生・共生社会担当大臣に就任。",
+  "stats": [
+    {"label": "役職", "value": "こども政策・少子化対策担当大臣"},
+    {"label": "当選", "value": "6期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "埼玉3区"},
+    {"label": "生年", "value": "1970年"},
+    {"label": "学歴", "value": "メリーランド大学大学院修士（沿岸海洋環境科学）"}
+  ],
+  "career": [
+    {"period": "1970", "text": "生まれ"},
+    {"period": "1994", "text": "東京理科大学理工学部土木工学科卒業"},
+    {"period": "1994", "text": "メリーランド大学大学院（沿岸海洋環境科学）修士修了"},
+    {"period": "2002", "text": "東和科学株式会社入社→環日本海環境協力センターへ出向"},
+    {"period": "2006〜2009", "text": "松下政経塾 第27期生"},
+    {"period": "2009〜2012", "text": "海洋政策研究財団 研究員"},
+    {"period": "2012", "text": "第46回衆院選で埼玉3区から初当選"},
+    {"period": "2017", "text": "外務大臣政務官"},
+    {"period": "2022", "text": "内閣府副大臣"},
+    {"period": "2025", "text": "こども政策・少子化対策・地方創生・共生社会担当大臣（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "kodomo_takaichi2025",
+      "title": "こども政策担当大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 こども政策担当大臣（2025年10月〜）",
+      "source": "こども家庭庁 政策",
+      "source_url": "https://www.cfa.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 25,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "こども未来戦略（3.6兆円規模）の実施",
+          "category": "こども政策",
+          "status": "進行中",
+          "evidence_url": "https://www.cfa.go.jp/policies/kodomo-mirai",
+          "evidence_source": {
+            "title": "こども家庭庁 こども未来戦略",
+            "accessed": "2026-04-29",
+            "note": "2023年策定のこども未来戦略に基づく施策が段階的に実施中"
+          }
+        },
+        {
+          "title": "児童手当の拡充（第3子以降の増額等）",
+          "category": "子育て支援",
+          "status": "進行中",
+          "evidence_url": "https://www.cfa.go.jp/policies/child-allowance",
+          "evidence_source": {
+            "title": "こども家庭庁 児童手当",
+            "accessed": "2026-04-29",
+            "note": "2024年10月に児童手当の拡充（所得制限撤廃・高校生まで延長・多子加算増額）が実施済み"
+          }
+        },
+        {
+          "title": "保育士処遇改善・保育所定員の拡充",
+          "category": "保育",
+          "status": "進行中",
+          "evidence_url": "https://www.cfa.go.jp/policies/hoiku",
+          "evidence_source": {
+            "title": "こども家庭庁 保育",
+            "accessed": "2026-04-29",
+            "note": "保育士の処遇改善加算が継続。待機児童数は減少傾向だが地域差が残る"
+          }
+        },
+        {
+          "title": "少子化傾向の反転（出生率向上目標の達成）",
+          "category": "少子化対策",
+          "status": "公約",
+          "evidence_url": "https://www.cfa.go.jp/policies/shoushika",
+          "evidence_source": {
+            "title": "こども家庭庁 少子化対策",
+            "accessed": "2026-04-29",
+            "note": "2023年の合計特殊出生率は過去最低の1.20。施策の効果が出生率に反映されるまで時間がかかる"
+          }
+        },
+        {
+          "title": "地方創生・人口減少対策の推進",
+          "category": "地方創生",
+          "status": "公約",
+          "evidence_url": "https://www.chisou.go.jp/sousei/index.html",
+          "evidence_source": {
+            "title": "内閣官房 まち・ひと・しごと創生",
+            "accessed": "2026-04-29",
+            "note": "第2期まち・ひと・しごと創生総合戦略の後継計画策定と実施が課題"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "少子化",
+      "title": "出生率1.20の底打ちをどう実現するか",
+      "desc": "2023年の出生率は過去最低の1.20。3.6兆円規模のこども未来戦略の効果が出生率に反映されるまで時間がかかる。実効的な施策の優先順位づけが問われる。"
+    },
+    {
+      "context": "子育て支援",
+      "title": "児童手当拡充の財源と持続可能性",
+      "desc": "児童手当の大幅拡充は重要だが、財源の一部は社会保険料への上乗せ（子ども・子育て支援金）に依拠しており、負担増への反発への対応が課題。"
+    }
+  ],
+  "source_urls": [
+    {"label": "黄川田仁志 公式サイト", "url": "https://kikawada.com/"},
+    {"label": "こども家庭庁 公式サイト", "url": "https://www.cfa.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/102052.html"}
+  ]
+}

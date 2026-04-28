@@ -1,0 +1,110 @@
+{
+  "id": "hiraguchi-hiroshi",
+  "name": "平口 洋",
+  "kana": "ひらぐち ひろし",
+  "party": "自由民主党",
+  "party_role": "法務大臣",
+  "area": "広島県第2区",
+  "current_status": "法務大臣・衆議院議員（7期）",
+  "photo_url": "https://www.jimin.jp/member/img/hiraguchi-hiroshi.jpg",
+  "official_url": "https://www.hiraguchi.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1948年生まれ。東京大学法学部卒後、建設省（現・国土交通省）に入省し官僚として要職を歴任。2005年に広島2区から政界入りし7期当選。環境副大臣・法務副大臣を経て、2025年10月の高市内閣発足で初入閣（第111・112代法務大臣）。法制度の整備・出入国在留管理などを主導している。",
+  "stats": [
+    {"label": "役職", "value": "法務大臣（第111・112代）"},
+    {"label": "当選", "value": "7期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "広島2区"},
+    {"label": "生年", "value": "1948年"},
+    {"label": "前職", "value": "建設省官僚"}
+  ],
+  "career": [
+    {"period": "1948", "text": "生まれ"},
+    {"period": "1972", "text": "東京大学法学部卒業、建設省入省"},
+    {"period": "1972〜2001", "text": "中部地方建設局総務部長、秋田県警本部長、日本道路公団総務部長、河川局次長などを歴任。ペンシルベニア大学大学院に留学"},
+    {"period": "2001", "text": "建設省退官"},
+    {"period": "2005", "text": "第44回衆院選で広島2区から初当選"},
+    {"period": "2017", "text": "環境副大臣（第4次安倍改造内閣）"},
+    {"period": "2019", "text": "法務副大臣（第4次安倍改造内閣）"},
+    {"period": "2025", "text": "第111・112代法務大臣（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "hojmu_takaichi2025",
+      "title": "法務大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 法務大臣（2025年10月〜）",
+      "source": "法務省 政策・取組",
+      "source_url": "https://www.moj.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 30,
+      "total": 4,
+      "done": 0,
+      "started": 2,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "出入国在留管理の適正化・難民認定制度の見直し",
+          "category": "出入国管理",
+          "status": "進行中",
+          "evidence_url": "https://www.moj.go.jp/isa/index.html",
+          "evidence_source": {
+            "title": "出入国在留管理庁 公式サイト",
+            "accessed": "2026-04-29",
+            "note": "2023年改正入管法成立後の運用を継続。難民認定制度の適正化が課題"
+          }
+        },
+        {
+          "title": "デジタル化推進（登記・戸籍のオンライン化）",
+          "category": "法制度改革",
+          "status": "進行中",
+          "evidence_url": "https://www.moj.go.jp/MINJI/minji06_00092.html",
+          "evidence_source": {
+            "title": "法務省 民事局 登記情報提供サービス",
+            "accessed": "2026-04-29",
+            "note": "不動産登記・商業登記のオンライン申請推進が進行中"
+          }
+        },
+        {
+          "title": "再犯防止・更生保護の充実",
+          "category": "更生保護",
+          "status": "公約",
+          "evidence_url": "https://www.moj.go.jp/hogo1/soumu/hogo_index.html",
+          "evidence_source": {
+            "title": "法務省 保護局",
+            "accessed": "2026-04-29",
+            "note": "再犯防止推進計画に基づく取り組みを継続中"
+          }
+        },
+        {
+          "title": "死刑制度の在り方に関する国民的議論",
+          "category": "刑事司法",
+          "status": "公約",
+          "evidence_url": "https://www.moj.go.jp/keiji1/index.html",
+          "evidence_source": {
+            "title": "法務省 刑事局",
+            "accessed": "2026-04-29",
+            "note": "死刑制度については従来通り慎重な姿勢。大臣就任後の具体的な制度見直し議論は確認できず"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "出入国管理",
+      "title": "改正入管法の運用と難民認定",
+      "desc": "2023年施行の改正入管法の適切な運用が求められる。難民認定数の低さ・収容問題についての国際的批判にどう応えるかが注目点。"
+    },
+    {
+      "context": "法制度改革",
+      "title": "選択的夫婦別姓・家族法改正",
+      "desc": "選択的夫婦別姓については自民党内で意見が分かれており、法務大臣としての対応姿勢が問われる。"
+    }
+  ],
+  "source_urls": [
+    {"label": "平口洋 公式サイト", "url": "https://www.hiraguchi.com/"},
+    {"label": "法務省 公式サイト", "url": "https://www.moj.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/102112.html"}
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "akazawa-ryosei",
+  "name": "赤澤 亮正",
+  "kana": "あかざわ りょうせい",
+  "party": "自由民主党",
+  "party_role": "経済産業大臣",
+  "area": "鳥取県第2区",
+  "current_status": "経済産業大臣・衆議院議員（8期）",
+  "photo_url": "https://www.jimin.jp/member/img/akazawa-ryosei.jpg",
+  "official_url": "https://www.ryosei-akazawa.com/",
+  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "summary": "1960年生まれ。東京大学法学部卒・コーネル大学経営大学院修了（MBA）、元運輸省官僚。鳥取2区で8期当選。石破内閣で経済財政政策・経済再生担当大臣を務めた後、2025年10月の高市内閣で経済産業大臣に就任。GX・原子力・産業競争力強化・国際博覧会担当も兼務する。祖父は元自治大臣・赤沢正道。",
+  "stats": [
+    {"label": "役職", "value": "経済産業大臣"},
+    {"label": "当選", "value": "8期"},
+    {"label": "国会", "value": "衆議院"},
+    {"label": "選挙区", "value": "鳥取2区"},
+    {"label": "生年", "value": "1960年"},
+    {"label": "前職", "value": "運輸省官僚"}
+  ],
+  "career": [
+    {"period": "1960", "text": "生まれ"},
+    {"period": "1984", "text": "東京大学法学部第1類卒業、運輸省入省"},
+    {"period": "1991", "text": "コーネル大学経営大学院（MBA）修了"},
+    {"period": "〜2005", "text": "国土交通省で要職を歴任後退官"},
+    {"period": "2005", "text": "第44回衆院選で鳥取2区から初当選"},
+    {"period": "2024", "text": "経済財政政策・経済再生担当大臣（石破内閣）"},
+    {"period": "2025", "text": "経済産業大臣・GX実行推進担当・国際博覧会担当（高市内閣）"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "meti_takaichi2025",
+      "title": "経済産業大臣としての主要課題（高市内閣）",
+      "context": "高市内閣 経済産業大臣（2025年10月〜）",
+      "source": "経済産業省 政策",
+      "source_url": "https://www.meti.go.jp/",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "score": 30,
+      "total": 5,
+      "done": 0,
+      "started": 3,
+      "pending": 2,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "GX（グリーントランスフォーメーション）の推進",
+          "category": "エネルギー・脱炭素",
+          "status": "進行中",
+          "evidence_url": "https://www.meti.go.jp/policy/energy_environment/global_warming/gx_jisshi_kaigi.html",
+          "evidence_source": {
+            "title": "経済産業省 GX実行会議",
+            "accessed": "2026-04-29",
+            "note": "2023年成立のGX推進法に基づき10年間で150兆円投資の計画を推進中"
+          }
+        },
+        {
+          "title": "原子力発電の最大限活用・次世代炉開発",
+          "category": "原子力",
+          "status": "進行中",
+          "evidence_url": "https://www.meti.go.jp/press/2023/02/20230210002/20230210002.html",
+          "evidence_source": {
+            "title": "経済産業省 GX脱炭素電源法関連",
+            "accessed": "2026-04-29",
+            "note": "2023年成立のGX脱炭素電源法により原子力活用の方針が制度化。既存炉の運転延長・次世代炉開発が進行中"
+          }
+        },
+        {
+          "title": "半導体・AI・量子など戦略分野への投資支援",
+          "category": "産業競争力",
+          "status": "進行中",
+          "evidence_url": "https://www.meti.go.jp/policy/mono_info_service/joho/kakushin/",
+          "evidence_source": {
+            "title": "経済産業省 半導体・デジタル産業戦略",
+            "accessed": "2026-04-29",
+            "note": "熊本・北海道への半導体工場誘致（TSMC等）が進行中。ラピダスへの支援も継続"
+          }
+        },
+        {
+          "title": "スタートアップ・中小企業の成長支援",
+          "category": "中小企業・スタートアップ",
+          "status": "公約",
+          "evidence_url": "https://www.meti.go.jp/policy/sme_chiiki/index.html",
+          "evidence_source": {
+            "title": "経済産業省 中小企業庁",
+            "accessed": "2026-04-29",
+            "note": "スタートアップ育成5か年計画の推進・事業承継支援が継続中"
+          }
+        },
+        {
+          "title": "経済安全保障の強化（サプライチェーン・重要物資）",
+          "category": "経済安保",
+          "status": "公約",
+          "evidence_url": "https://www.meti.go.jp/policy/economy/anzen_hosho/index.html",
+          "evidence_source": {
+            "title": "経済産業省 経済安全保障",
+            "accessed": "2026-04-29",
+            "note": "2022年成立の経済安全保障推進法に基づく特定重要物資の安定供給確保が進行中"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "エネルギー政策",
+      "title": "原子力回帰とGXの両立",
+      "desc": "GX脱炭素電源法による原子力活用拡大とカーボンニュートラルの両立が問われる。再生可能エネルギーとの比率・次世代炉の実用化スケジュールが焦点。"
+    },
+    {
+      "context": "産業政策",
+      "title": "半導体投資の効果と産業競争力",
+      "desc": "TSMC熊本工場・ラピダス北海道への巨額支援の効果検証が始まっている。国内産業の自立的競争力確保への道筋が問われる。"
+    }
+  ],
+  "source_urls": [
+    {"label": "赤澤亮正 公式サイト", "url": "https://www.ryosei-akazawa.com/"},
+    {"label": "経済産業省 公式サイト", "url": "https://www.meti.go.jp/"},
+    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/100478.html"}
+  ]
+}
