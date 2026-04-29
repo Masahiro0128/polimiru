@@ -7,7 +7,7 @@
   "area": "静岡県第7区",
   "current_status": "日本成長戦略・経済財政政策担当大臣・衆議院議員（8期）",
   "photo_url": "https://www.jimin.jp/member/img/kiuchi-minoru.jpg",
-  "official_url": "https://www.kiuchi.jp/",
+  "official_url": "https://www.m-kiuchi.com/",
   "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
   "summary": "1965年生まれ。開成高校・東京大学教養学部（国際関係論）卒業後、外務省入省。在ドイツ大使館勤務・天皇・首相のドイツ語通訳官（1997年）を担当した後、2003年政界入り。静岡7区で8期当選。石破内閣で経済安全保障担当大臣を経て、2025年10月高市内閣で日本成長戦略・賃上げ・スタートアップ・経済財政政策担当大臣に就任。",
   "stats": [
@@ -15,17 +15,20 @@
     {"label": "当選", "value": "8期"},
     {"label": "国会", "value": "衆議院"},
     {"label": "選挙区", "value": "静岡7区"},
-    {"label": "生年", "value": "1965年"},
+    {"label": "生年月日", "value": "1965年4月19日"},
     {"label": "前職", "value": "外務省官僚・ドイツ語通訳官"}
   ],
   "career": [
-    {"period": "1965", "text": "生まれ"},
+    {"period": "1965.4.19", "text": "生まれ"},
+    {"period": "1984", "text": "私立開成高等学校卒業"},
     {"period": "1989", "text": "東京大学教養学部国際関係論分科卒業、外務省入省"},
     {"period": "1990", "text": "在ドイツ日本国大使館に赴任"},
     {"period": "1997", "text": "天皇陛下・首相のドイツ語通訳官を担当"},
-    {"period": "2003", "text": "第43回衆院選で静岡7区から初当選"},
-    {"period": "2006", "text": "内閣府大臣政務官"},
-    {"period": "2014", "text": "外務副大臣"},
+    {"period": "2002", "text": "外務省退官"},
+    {"period": "2003", "text": "第43回衆院選で静岡7区から初当選（無所属）"},
+    {"period": "2012", "text": "外務大臣政務官（第2次安倍内閣）"},
+    {"period": "2014", "text": "外務副大臣（第2次安倍改造内閣・第3次安倍内閣）"},
+    {"period": "2018", "text": "環境副大臣（第4次安倍第1次改造内閣）"},
     {"period": "2024", "text": "経済安全保障担当大臣（石破内閣）"},
     {"period": "2025", "text": "日本成長戦略・賃上げ・スタートアップ・全世代型社会保障・経済財政政策・規制改革担当大臣（高市内閣）"}
   ],
@@ -115,7 +118,7 @@
     }
   ],
   "source_urls": [
-    {"label": "城内実 公式サイト", "url": "https://www.kiuchi.jp/"},
+    {"label": "城内実 公式サイト", "url": "https://www.m-kiuchi.com/"},
     {"label": "内閣府 経済財政政策", "url": "https://www5.cao.go.jp/keizai1/index.html"},
     {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/116953.html"}
   ]
