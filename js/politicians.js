@@ -340,6 +340,19 @@ const politicians = [
         desc: "元防衛大臣・環境大臣。2016年東京都知事就任後、東京五輪・ゼロエミッション東京・子育て支援などを推進。2024年都知事選で3選。"
     },
     {
+        id: "kishida-fumio",
+        name: "岸田 文雄",
+        kana: "きしだ ふみお",
+        party: "自民党",
+        role: "元・第100・101代 内閣総理大臣",
+        area: "広島1区（11選）",
+        photo: "https://kishida.gr.jp/wp-content/themes/new-theme/public/images/top/profile.png",
+        url: "politicians/kishida-fumio/index.html",
+        baseLikes: 4200,
+        tags: ["岸田", "岸田文雄", "きしだ", "元首相", "総理大臣", "自民党", "広島", "防衛費増額", "GX", "NISA", "新しい資本主義", "少子化対策"],
+        desc: "広島1区で11期当選。外務大臣を5年間務めた後、2021年に第100・101代内閣総理大臣に就任。防衛費増額・GX脱炭素電源法・NISA拡充・少子化対策を推進し、在任1094日で首相を退任。"
+    },
+    {
         id: "ishiba-shigeru",
         name: "石破 茂",
         kana: "いしば しげる",
