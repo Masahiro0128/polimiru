@@ -143,14 +143,28 @@ Polimiru must prioritise accuracy and neutrality.
 
 When adding or editing political information, always record the source.
 
+**Wikipedia is strictly forbidden as a source.** It may be used only for initial orientation, never as evidence. Always verify every claim from primary sources below.
+
 Use only reliable sources, prioritised in this order:
 
-1. Official government or election commission websites
-2. Official politician / party websites
-3. Diet, assembly, or council records
-4. Official policy documents or manifestos
-5. Major reputable news organisations
-6. Other sources only when clearly necessary
+1. Official politician website (usually linked in the JSON as `official_url`)
+2. `jimin.jp/member/{id}.html` for LDP members — confirms 当選回数、選挙区、生年月日
+3. `shugiin.go.jp` or `sangiin.go.jp` — official Diet records
+4. Official government / ministry sites: `go.jp`, `lg.jp`
+5. Major reputable news organisations (last resort; replace with official source when possible)
+
+### Primary source verification workflow (for new or updated politician profiles)
+
+When adding or editing a politician:
+1. Fetch `official_url` profile page for 学歴・職歴の詳細
+2. Fetch `jimin.jp/member/{member_id}.html` for 当選回数・生年月日（公式）
+3. Cross-check 役職の年 against 首相官邸 or ministry sites when in doubt
+4. Every career entry must be traceable to one of the above — if not confirmable, omit or mark 未確認
+
+### Photo URL pattern for LDP politicians
+
+`https://www.jimin.jp/member/img/{politician-id}.jpg`  
+where `{politician-id}` matches the JSON `id` field.
 
 For every factual claim, include:
 - Source title
