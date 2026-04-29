@@ -154,6 +154,112 @@
     box-shadow: 0 0 0 4px rgba(30, 58, 110, 0.18), 0 12px 30px rgba(15, 31, 61, 0.22);
 }
 
+.search-focus-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background:
+        radial-gradient(circle at 50% 42%, rgba(56, 108, 194, 0.22), transparent 34%),
+        rgba(15, 31, 61, 0.46);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+body.search-focus-mode {
+    overflow: hidden;
+}
+
+body.search-focus-mode .search-focus-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.search-focus-mode .search-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    width: min(920px, calc(100vw - 32px));
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow:
+        0 32px 80px rgba(15, 31, 61, 0.38),
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    transform: translate(-50%, -50%) scale(1);
+    overflow: hidden;
+    animation: searchFocusPop 0.34s cubic-bezier(0.18, 0.86, 0.3, 1.12);
+}
+
+body.search-focus-mode .search-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.16) 42%, transparent 58%);
+    transform: translateX(-130%);
+    pointer-events: none;
+    animation: searchFocusSweep 0.62s ease-out 0.08s;
+}
+
+body.search-focus-mode .search-section-inner {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    min-height: 96px;
+    padding: 22px 24px;
+}
+
+body.search-focus-mode .search-bar-group {
+    width: 100%;
+}
+
+body.search-focus-mode .search-input-wrap,
+body.search-focus-mode .search-submit-btn {
+    height: 56px;
+}
+
+body.search-focus-mode .search-input-wrap {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+body.search-focus-mode .search-input-wrap input {
+    font-size: 1rem;
+}
+
+body.search-focus-mode .search-v-divider,
+body.search-focus-mode .area-link-btn {
+    display: none;
+}
+
+@keyframes searchFocusPop {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -38%) scale(0.9);
+        filter: blur(8px);
+    }
+    72% {
+        opacity: 1;
+        transform: translate(-50%, -51%) scale(1.015);
+        filter: blur(0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes searchFocusSweep {
+    from {
+        transform: translateX(-130%);
+    }
+    to {
+        transform: translateX(130%);
+    }
+}
+
 .search-section-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -499,6 +605,16 @@
         padding: 16px 20px;
         gap: 12px;
         align-items: stretch;
+    }
+
+    body.search-focus-mode .search-section {
+        width: calc(100vw - 24px);
+        border-radius: 12px;
+    }
+
+    body.search-focus-mode .search-section-inner {
+        padding: 16px;
+        min-height: 88px;
     }
 
     .search-bar-group {

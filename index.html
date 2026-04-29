@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/hero.css?v=20260429">
+    <link rel="stylesheet" href="css/hero.css?v=20260429-2">
     <link rel="stylesheet" href="css/elections.css">
     <link rel="stylesheet" href="css/modal.css">
 </head>
@@ -88,6 +88,7 @@
             </button>
         </div>
     </div>
+    <div class="search-focus-backdrop" id="search-focus-backdrop" onclick="guideCloseSearchFocus()" aria-hidden="true"></div>
 
     <div class="search-result-tabs" id="search-result-tabs" style="display:none;">
         <button class="search-result-tab active" data-search-mode="all">すべて</button>
@@ -273,10 +274,16 @@
 
         window.guideFocusSearch = function() {
             const searchSection = document.getElementById('site-search');
-            scrollToElement(searchSection);
+            if (!searchSection) return;
+            document.body.classList.add('search-focus-mode');
             searchSection.classList.add('is-guide-highlight');
-            setTimeout(() => searchSection.classList.remove('is-guide-highlight'), 1300);
-            setTimeout(() => searchInput.focus(), 450);
+            setTimeout(() => searchInput.focus(), 180);
+        };
+
+        window.guideCloseSearchFocus = function() {
+            const searchSection = document.getElementById('site-search');
+            document.body.classList.remove('search-focus-mode');
+            if (searchSection) searchSection.classList.remove('is-guide-highlight');
         };
 
         window.guideOpenArea = function() {
@@ -318,6 +325,23 @@
             renderCards(active ? active.dataset.category : 'all');
             renderPoliticians();
             updateSearchTabs();
+            const hasQuery = searchInput.value.trim().length > 0;
+            guideCloseSearchFocus();
+            if (hasQuery) {
+                setTimeout(() => scrollToElement(document.getElementById('politician-results')), 80);
+            }
+        });
+
+        searchInput.addEventListener('keydown', event => {
+            if (event.key === 'Enter') {
+                document.querySelector('.search-submit-btn').click();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') {
+                guideCloseSearchFocus();
+            }
         });
 
         document.querySelectorAll('.search-result-tab').forEach(btn => {
