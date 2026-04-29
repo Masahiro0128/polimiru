@@ -125,92 +125,212 @@
   ],
   "promise_cycles": [
     {
-      "id": "motegi_sousai2024",
-      "title": "2024年自民党総裁選公約 追跡",
-      "context": "2024年9月 自民党総裁選",
-      "source": "自由民主党 総裁選2024 候補者情報",
-      "source_url": "https://www.jimin.jp/election/results/sousai24/",
-      "reviewed_at": "2026-04-27T00:00:00Z",
-      "status": "historical_review",
-      "score": 35,
-      "total": 4,
-      "done": 0,
-      "started": 2,
-      "pending": 2,
-      "unknown": 0,
-      "highlights": [
-        {
-          "title": "成長戦略と所得向上を軸にした経済政策",
-          "category": "経済成長",
-          "status": "追跡中",
-          "progress_score": 35,
-          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
-        },
-        {
-          "title": "外交・安全保障の実務経験を活かした対米・対中外交",
-          "category": "外交・安全保障",
-          "status": "着手",
-          "progress_score": 50,
-          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
-        },
-        {
-          "title": "党改革と政治資金の透明化",
-          "category": "政治改革",
-          "status": "公約",
-          "progress_score": 20,
-          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
-        },
-        {
-          "title": "地方の産業競争力強化",
-          "category": "地方・産業",
-          "status": "公約",
-          "progress_score": 25,
-          "evidence_url": "https://www.jimin.jp/election/results/sousai24/"
-        }
-      ]
-    },
-    {
       "id": "motegi_foreign_minister_track",
-      "title": "外務大臣期の政策トラック",
-      "context": "高市内閣 外務大臣",
-      "source": "首相官邸 高市内閣 閣僚等名簿",
-      "source_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html",
-      "reviewed_at": "2026-04-27T00:00:00Z",
-      "status": "tracking",
-      "score": 45,
-      "total": 4,
-      "done": 0,
-      "started": 3,
+      "title": "外務大臣期の政策トラック（高市内閣）",
+      "context": "2025年10月21日〜 高市内閣 外務大臣",
+      "source": "外務省 記者会見記録・首相官邸",
+      "source_url": "https://www.mofa.go.jp/mofaj/annai/honsho/gaisho/motegi2/index.html",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "status": "active",
+      "score": 68,
+      "total": 11,
+      "done": 5,
+      "started": 5,
       "pending": 1,
       "unknown": 0,
       "highlights": [
         {
-          "title": "日米同盟を基軸にした外交・安全保障運営",
-          "category": "外交・安全保障",
-          "status": "追跡中",
-          "progress_score": 50,
-          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
+          "title": "日米外相会談（ルビオ国務長官）・日米首脳会談同席・拉致問題への全面協力を確認（2025年10月）",
+          "category": "日米外交",
+          "status": "実現",
+          "evidence_source": {
+            "title": "外務省「茂木外務大臣会見記録」（2025年10月28日）・外務大臣就任記者会見（2025年10月22日）",
+            "note": "就任直後の2025年10月、茂木外相がルビオ米国務長官と日米外相会談を実施。高市首相とトランプ大統領の日米首脳会談に同席し、「日米同盟の新たな黄金時代」を確認。拉致被害者家族との面会でトランプ大統領・ルビオ長官から「拉致問題即時解決に向けた全面的な協力」の表明を得た。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.mofa.go.jp/mofaj/press/kaiken/kaikenw_000001_00182.html"
         },
         {
-          "title": "中国・ロシア・北朝鮮への対応",
-          "category": "地域安全保障",
-          "status": "追跡中",
-          "progress_score": 45,
-          "evidence_url": "https://www.jimin.jp/news/information/214000.html"
+          "title": "APEC慶州・日韓外相会談・日米韓外相会合の実施（2025年10月29〜31日）",
+          "category": "日韓・多国間外交",
+          "status": "実現",
+          "evidence_source": {
+            "title": "外務省「日韓外相会談」（2025年10月）",
+            "note": "韓国・慶州のAPEC閣僚会議で趙顕韓国外交部長官と日韓外相会談を実施。「日韓関係を未来志向で安定的に発展させていくことで一致」。日米韓外相会合も実施し、安全保障協力を確認。茂木大臣から韓国の拉致問題支持への謝意も表明。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.mofa.go.jp/mofaj/a_o/na/kr/pageit_000001_02529.html"
         },
         {
-          "title": "経済安全保障と国際経済交渉",
-          "category": "経済外交",
-          "status": "追跡中",
-          "progress_score": 40,
-          "evidence_url": "https://www.kantei.go.jp/jp/104/meibo/daijin/motegi_toshimitsu.html"
+          "title": "G7外相会合（カナダ・ナイアガラ）出席・重要鉱物・ウクライナ・中東を協議（2025年11月11〜12日）",
+          "category": "G7・多国間外交",
+          "status": "実現",
+          "evidence_source": {
+            "title": "時事通信「茂木氏、G7外相会合出席へ 重要鉱物議論」（2025年11月7日）",
+            "note": "2025年11月11〜12日のG7外相会合（カナダ・ナイアガラ）に出席。中東・ウクライナ情勢のほか、重要鉱物の安定確保・海洋安全保障を議題に協議。FOIPの進化や経済安全保障でG7の結束を確認。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.jiji.com/jc/article?k=2025110701141&g=pol"
         },
         {
-          "title": "外交演説で示した基本方針の実行",
+          "title": "G7外相会合（フランス）出席・イラン情勢で米欧の橋渡し役（2026年3月25〜29日）",
+          "category": "G7・中東外交",
+          "status": "実現",
+          "evidence_source": {
+            "title": "外務省「茂木外務大臣のG7外相会合出席（令和8年3月25日〜29日）」・読売新聞「G7会合出席の茂木外相、米欧の『橋渡し役』に腐心」（2026年3月28日）",
+            "note": "2026年3月25〜29日にフランスで開催されたG7外相会合に出席。イラン情勢を巡り「事態の早期沈静化の重要性について全ての国で考えを共有できた」と述べ、米欧の仲介役として機能。ウクライナ支援でもG7結束を確認。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00016.html"
+        },
+        {
+          "title": "対ウクライナ支援計200億ドル（約3兆1,000億円）の着実な実施（2026年2月確認）",
+          "category": "ウクライナ・人道支援",
+          "status": "実現",
+          "evidence_source": {
+            "title": "共同通信「日本のウクライナ支援計３兆円に 茂木外相『危機感持ち対応』」（2026年2月19日）",
+            "note": "2026年2月19日の記者会見で、日本のウクライナへの支援表明額が計約200億ドル（約3兆1,000億円）に達したと明らかにした。人道・財政・復旧復興分野での支援で、防弾チョッキや自衛隊車両の提供も含む。「今日のウクライナは明日の東アジアかもしれない、との危機感を持ち対応している」と述べた。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://kahoku.news/articles/knp2026021901000859.html"
+        },
+        {
+          "title": "日米同盟「新たな黄金時代」の構築・高市首相訪米調整",
+          "category": "日米外交",
+          "status": "進行中",
+          "evidence_source": {
+            "title": "j-defense「茂木外務大臣が記者会見 再任に際しての所感、対ウクライナ支援、進化後のFOIPなどについて」（2026年2月19日）",
+            "note": "高市内閣の外交方針として「日米同盟の新たな黄金時代を築く」を掲げ、日米首脳・外相間の緊密な連携を継続中。「本年春に調整中の高市総理の訪米の機会を含め、引き続き首脳・外相間のレベルで米国と緊密に連携する」と表明。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://j-defense.ikaros.jp/docs/mod/004700.html"
+        },
+        {
+          "title": "FOIP（自由で開かれたインド太平洋）の戦略的進化・経済安全保障との接続",
+          "category": "インド太平洋・経済安保",
+          "status": "進行中",
+          "evidence_source": {
+            "title": "j-defense「茂木外務大臣が記者会見」（2026年2月19日）",
+            "note": "「この10年で国際情勢が大きく変化した。経済安全保障や新興技術をめぐる国際競争に対応して、FOIPを戦略的に進化させる必要がある」と述べ、FOIPと経済安保・技術競争を接続する外交を展開中。具体的な成果はG7等で議論継続中。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://j-defense.ikaros.jp/docs/mod/004700.html"
+        },
+        {
+          "title": "拉致問題の即時解決に向けた多国間外交（米・韓・G7への継続的な働きかけ）",
+          "category": "拉致問題・北朝鮮",
+          "status": "進行中",
+          "evidence_source": {
+            "title": "外務省「茂木外務大臣会見記録」（2025年10月）・外務省「G7外相会合（セッション6：平和と安全保障）」（2026年3月）",
+            "note": "日米・日韓・G7の各外相会合で毎回、拉致問題の即時解決への協力・理解を求める外交を継続。日米首脳会談でトランプ大統領から全面協力の表明を得た。最終的な解決には至っていないが多国間での支持確保を継続中。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00022.html"
+        },
+        {
+          "title": "日中外相会談・戦略的互恵関係の構築（建設的かつ安定的な日中関係）",
+          "category": "日中外交",
+          "status": "進行中",
+          "evidence_source": {
+            "title": "外務省「日中外相会談」（2025年〜2026年）",
+            "note": "高市内閣の外務大臣として、中国外相との会談を通じて「建設的かつ安定的な日中関係」の構築を進めている。懸案事項（尖閣・台湾・人権・経済安保）と関係改善の双方を並行して対処する「戦略的互恵関係」の推進中だが具体的な進展は限定的。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_01930.html"
+        },
+        {
+          "title": "経済安全保障・重要鉱物の友好国との安定確保（G7・クアッド連携）",
+          "category": "経済安全保障",
+          "status": "進行中",
+          "evidence_source": {
+            "title": "時事通信「茂木氏、G7外相会合出席へ 重要鉱物議論」（2025年11月）・G7外相会合（2025年11月・2026年3月）",
+            "note": "G7外相会合で重要鉱物の安定確保を議題に2回協議（2025年11月・2026年3月）。友好国とのサプライチェーン強靭化・海洋安全保障との組み合わせで経済安保外交を推進中。具体的な枠組み合意は交渉継続中。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.jiji.com/jc/article?k=2025110701141&g=pol"
+        },
+        {
+          "title": "「責任ある日本外交」の全面展開（国会外交演説で方針表明）",
           "category": "外交方針",
-          "status": "着手",
-          "progress_score": 45,
-          "evidence_url": "https://www.jimin.jp/news/policy/213980.html"
+          "status": "公約",
+          "evidence_source": {
+            "title": "外務省「第221回国会における茂木外務大臣の外交演説」",
+            "note": "第221回国会（2026年）の外交演説で「平和と繁栄を創る『責任ある日本外交』」を基本方針として提示。日米同盟・FOIP・国際法の支配・ウクライナ支援・拉致問題解決を柱に据えた。演説段階であり、各課題の実施は個別に進行中。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.mofa.go.jp/mofaj/fp/pp/pageit_000001_02748.html"
+        }
+      ]
+    },
+    {
+      "id": "motegi_sousai2025",
+      "title": "2025年自民党総裁選公約 追跡（落選）",
+      "context": "2025年9〜10月 自民党総裁選（5人中5位・落選）",
+      "source": "自由民主党 総裁選2025 候補者情報",
+      "source_url": "https://www.jimin.jp/sousai25/candidate/motegi_toshimitsu.html",
+      "reviewed_at": "2026-04-29T00:00:00Z",
+      "status": "historical_review",
+      "score": 20,
+      "total": 5,
+      "done": 1,
+      "started": 0,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "ガソリン税暫定税率廃止を支持・2026年度税制改正での実現を主張",
+          "category": "税制・物価高",
+          "status": "実現",
+          "evidence_source": {
+            "title": "Bloomberg「自民・茂木氏、物価高対策で数兆円規模の特別地方交付金－総裁選公約」（2025年9月）",
+            "note": "茂木氏は総裁選でガソリン税暫定税率廃止を「2026年度の税制改正に盛り込むことが望ましい」と主張。最終的に6党合意で2025年12月31日廃止が実現したが、茂木氏の落選のため本人主導ではなく与野党協議による実現。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.bloomberg.co.jp/news/articles/2025-09-10/T2D08GGOT0JN00"
+        },
+        {
+          "title": "数兆円規模の生活支援特別地方交付金創設で2年以内の賃上げ定着",
+          "category": "経済・賃金",
+          "status": "公約",
+          "evidence_source": {
+            "title": "Bloomberg「自民・茂木氏、物価高対策で数兆円規模の特別地方交付金－総裁選公約」（2025年9月10日）",
+            "note": "2年以内に物価高を上回る賃上げを定着させるため、地域ごとのニーズに応じて自由に使える「これまでのものとは一桁異なる数兆円規模の生活支援特別地方交付金」を創設すると公約。総裁選5位落選のため未実施。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.bloomberg.co.jp/news/articles/2025-09-10/T2D08GGOT0JN00"
+        },
+        {
+          "title": "政策が一致する党との新連立枠組み追求（日本維新・国民民主を名指し）",
+          "category": "政治・連立",
+          "status": "公約",
+          "evidence_source": {
+            "title": "東京新聞「茂木敏充前幹事長が出馬を正式表明 『政策が一致する党と連立を追求』維新や国民民主を名指し」（2025年9月10日）",
+            "note": "「政策ごとに野党に協力を求めるのでは政治が前に進まない。外交安保や憲法など基本政策が一致する党と新たな連立の枠組みを追求する」と述べ、維新・国民民主との協議に意欲。5位落選で実現せず。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.tokyo-np.co.jp/article/434922"
+        },
+        {
+          "title": "党の規律と財務体質をゼロベースで見直す政治改革",
+          "category": "政治改革",
+          "status": "公約",
+          "evidence_source": {
+            "title": "選挙ドットコム「自民党総裁選に出馬表明！茂木敏充氏のプロフィール、政策は？【総裁選2025】」（2025年9月）",
+            "note": "派閥裏金事件を受けた政治改革について「党の規律と財務体質をゼロベースで見直す」と表明。5位落選（推薦人20人確保で出馬したが1回目投票で落選）のため、本人主導での改革は未実施。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://go2senkyo.com/articles/2025/09/10/120979.html"
+        },
+        {
+          "title": "日銀の異次元緩和の段階的正常化・金融政策の安定的な正常化",
+          "category": "経済・金融",
+          "status": "公約",
+          "evidence_source": {
+            "title": "第一生命経済研究所「自民党総裁選挙の5人候補の政策比較」（2025年9月）",
+            "note": "「日銀の金融政策については異次元緩和の段階的な正常化が基本方向」と主張。デフレからの脱却は近づいているとの認識を示したが、5位落選のため政策主導は実現せず。金融正常化自体は日銀主導で別途進行中。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.dlri.co.jp/report/macro/517324.html"
         }
       ]
     }
