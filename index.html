@@ -68,7 +68,7 @@
     </div>
 
     <!-- 検索セクション -->
-    <div class="search-section">
+    <div class="search-section" id="site-search">
         <div class="search-section-inner">
             <div class="search-bar-group">
                 <div class="search-input-wrap">
@@ -94,6 +94,55 @@
         <button class="search-result-tab" data-search-mode="politicians">政治家</button>
         <button class="search-result-tab" data-search-mode="elections">選挙</button>
     </div>
+
+    <!-- 主要導線 -->
+    <section class="action-guide-section" aria-labelledby="action-guide-title">
+        <div class="action-guide-inner">
+            <div class="action-guide-header">
+                <h2 class="action-guide-title" id="action-guide-title">Polimiruでできること</h2>
+                <p class="action-guide-subtitle">政治家・選挙区・注目選挙から、あなたに必要な政治情報へすばやくアクセスできます。</p>
+            </div>
+            <div class="action-guide-grid">
+                <article class="action-guide-card">
+                    <div class="action-guide-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="action-guide-content">
+                        <h3>政治家から探す</h3>
+                        <p>名前・政党・キーワードから、政治家の発言・公約・実績を確認できます。</p>
+                    </div>
+                    <button class="action-guide-cta" type="button" onclick="guideFocusSearch()">
+                        政治家を検索する
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </article>
+                <article class="action-guide-card">
+                    <div class="action-guide-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="action-guide-content">
+                        <h3>お住まいの選挙区から探す</h3>
+                        <p>地域を設定して、あなたに関係する選挙や候補者情報を確認できます。</p>
+                        <span class="action-guide-status" id="action-guide-area-status">
+                            <i class="fa-solid fa-circle"></i>
+                            エリア未設定
+                        </span>
+                    </div>
+                    <button class="action-guide-cta" type="button" onclick="guideOpenArea()">
+                        エリアを設定する
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </article>
+                <article class="action-guide-card">
+                    <div class="action-guide-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                    <div class="action-guide-content">
+                        <h3>注目の選挙から探す</h3>
+                        <p>今後予定されている選挙や、注目度の高い選挙情報を確認できます。</p>
+                    </div>
+                    <a class="action-guide-cta" href="#election-results" onclick="guideShowElections(event)">
+                        選挙情報を見る
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <!-- 政治家検索結果（検索時のみ表示） -->
     <div class="container" id="politician-results" style="display:none; margin-bottom:0; padding-bottom:0;">
@@ -153,6 +202,7 @@
 
     <script src="js/elections.js"></script>
     <script src="js/politicians.js"></script>
+    <script src="js/supabase-config.js"></script>
     <script src="js/likes.js"></script>
     <script src="js/layout.js?v=999"></script>
     <script src="js/news.js"></script>
@@ -162,6 +212,7 @@
         const searchInput = document.getElementById('search-input');
         const searchTabs = document.getElementById('search-result-tabs');
         let searchMode = 'all';
+        let bookmarkCounts = {};
 
         const prefectureImages = {
             "東京都":  "images/tokyo.jpg",
@@ -174,6 +225,93 @@
 
         renderCards('all');
         renderFeaturedPoliticians();
+        updateActionGuideState();
+        loadBookmarkCounts();
+
+        async function loadBookmarkCounts() {
+            if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY) return;
+            try {
+                const res = await fetch(`${window.SUPABASE_URL}/rest/v1/bookmark_counts?entity_type=eq.politician&select=entity_id,net_count`, {
+                    headers: {
+                        apikey: window.SUPABASE_ANON_KEY,
+                        Authorization: `Bearer ${window.SUPABASE_ANON_KEY}`,
+                    },
+                });
+                if (!res.ok) return;
+                const rows = await res.json();
+                bookmarkCounts = rows.reduce((acc, row) => {
+                    acc[row.entity_id] = Number(row.net_count || 0);
+                    return acc;
+                }, {});
+                renderFeaturedPoliticians();
+                renderPoliticians();
+            } catch {
+                bookmarkCounts = {};
+            }
+        }
+
+        function politicianSortKey(p) {
+            return (p.kana || p.name || '').replace(/\s+/g, '');
+        }
+
+        function politicianBookmarkCount(p) {
+            return Number(bookmarkCounts[p.id] || 0);
+        }
+
+        function sortPoliticianCards(list) {
+            return [...list].sort((a, b) => {
+                const countDiff = politicianBookmarkCount(b) - politicianBookmarkCount(a);
+                if (countDiff !== 0) return countDiff;
+                return politicianSortKey(a).localeCompare(politicianSortKey(b), 'ja');
+            });
+        }
+
+        function scrollToElement(el) {
+            if (!el) return;
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        window.guideFocusSearch = function() {
+            const searchSection = document.getElementById('site-search');
+            scrollToElement(searchSection);
+            searchSection.classList.add('is-guide-highlight');
+            setTimeout(() => searchSection.classList.remove('is-guide-highlight'), 1300);
+            setTimeout(() => searchInput.focus(), 450);
+        };
+
+        window.guideOpenArea = function() {
+            const modal = document.getElementById('area-modal');
+            if (modal) modal.classList.add('active');
+        };
+
+        window.guideShowElections = function(event) {
+            event.preventDefault();
+            searchMode = 'all';
+            searchInput.value = '';
+            document.querySelectorAll('.search-result-tab').forEach(tab => {
+                tab.classList.toggle('active', tab.dataset.searchMode === 'all');
+            });
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.category === 'all');
+            });
+            renderCards('all');
+            renderPoliticians();
+            updateSearchTabs();
+            scrollToElement(document.getElementById('election-results'));
+        };
+
+        function updateActionGuideState() {
+            const savedName = localStorage.getItem('my_area_name');
+            const areaStatus = document.getElementById('action-guide-area-status');
+            if (!areaStatus) return;
+            if (savedName) {
+                areaStatus.classList.add('is-set');
+                areaStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i>${savedName}に最適化中`;
+            } else {
+                areaStatus.classList.remove('is-set');
+                areaStatus.innerHTML = '<i class="fa-solid fa-circle"></i>エリア未設定';
+            }
+        }
 
         document.querySelector('.search-submit-btn').addEventListener('click', () => {
             const active = document.querySelector('.filter-btn.active');
@@ -311,17 +449,7 @@
             const row  = document.getElementById('featured-politicians-row');
             const bm   = window.pBookmarks;
             const all  = (window.politicians || []).filter(p => p.url);
-
-            // ブックマーク済み → エリア一致 → デフォルト順
-            const userArea = getUserArea();
-            const sorted = [...all].sort((a, b) => {
-                const aBm   = bm && bm.isBookmarked(a.id) ? 0 : 1;
-                const bBm   = bm && bm.isBookmarked(b.id) ? 0 : 1;
-                if (aBm !== bBm) return aBm - bBm;
-                const aArea = userArea && (a.area || '').includes(userArea) ? 0 : 1;
-                const bArea = userArea && (b.area || '').includes(userArea) ? 0 : 1;
-                return aArea - bArea;
-            });
+            const sorted = sortPoliticianCards(all);
 
             row.innerHTML = sorted.slice(0, 8).map(p => {
                 const saved = bm ? bm.isBookmarked(p.id) : false;
@@ -395,7 +523,7 @@
 
             section.style.display = 'block';
             featured.style.display = 'none';
-            grid.innerHTML = matched.map(p => `
+            grid.innerHTML = sortPoliticianCards(matched).map(p => `
                 <a href="${p.url}" style="
                     display:flex; align-items:center; gap:12px;
                     background:white; border-radius:12px; padding:14px 18px;
