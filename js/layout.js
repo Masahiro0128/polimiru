@@ -321,6 +321,9 @@ function loadFooter() {
                     <a href="https://www.instagram.com/polimiru?igsh=MXRjdXE2dG9vcHk0MA%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="footer-sns-btn">
                         <i class="fa-brands fa-instagram"></i><span>Instagram</span>
                     </a>
+                    <a href="https://www.youtube.com/channel/UClYqU-hXqLNrw082_7ksHTQ" target="_blank" rel="noopener" class="footer-sns-btn">
+                        <i class="fa-brands fa-youtube"></i><span>YouTube</span>
+                    </a>
                     <a href="https://note.com/limber_gibbon907" target="_blank" rel="noopener" class="footer-sns-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M17.5 0h-11C2.91 0 0 2.91 0 6.5v11C0 21.09 2.91 24 6.5 24h11c3.59 0 6.5-2.91 6.5-6.5v-11C24 2.91 21.09 0 17.5 0zm1.836 10.638l-1.628 6.001c-.133.484-.531.769-1.025.769-.133 0-.266-.019-.399-.057l-2.651-.72-1.529 1.12c-.19.133-.399.19-.608.19-.209 0-.418-.076-.589-.209-.342-.266-.513-.684-.437-1.102l.323-2.233-4.941-1.343c-.494-.133-.779-.57-.703-1.063.076-.494.456-.836.95-.836h.038l2.271.114 1.077-3.98c.209-.76.95-1.196 1.71-.988l5.777 1.571c.76.209 1.196.95.988 1.71l-.114.38 1.71.456c.494.133.779.57.703 1.063-.019.095-.057.19-.114.267z"/></svg>
                         <span>note</span>
