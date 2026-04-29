@@ -245,6 +245,23 @@ body.no-scroll {
     transition: border-color 0.15s, color 0.15s;
 }
 .footer-sns-btn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+.footer-policy-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+.footer-policy-row a {
+    color: rgba(255,255,255,0.48);
+    text-decoration: none;
+    font-size: 0.76rem;
+    font-weight: 700;
+    transition: color 0.15s;
+}
+.footer-policy-row a:hover {
+    color: #fff;
+}
 .footer-right {
     display: flex;
     align-items: center;
@@ -380,5 +397,6 @@ body.no-scroll {
     .footer-note-btn { width: 100%; justify-content: center; }
     .footer-bottom-bar { padding: 16px 20px; }
     .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
+    .footer-policy-row { justify-content: flex-start; }
     .footer-right { width: 100%; justify-content: space-between; }
 }

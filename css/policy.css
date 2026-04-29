@@ -1,0 +1,135 @@
+.policy-hero {
+    background: #f8f9fc;
+    border-bottom: 1px solid var(--border);
+    padding: 56px 20px 30px;
+}
+
+.policy-hero-inner,
+.policy-main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.policy-kicker {
+    margin: 0 0 8px;
+    color: var(--navy-700);
+    font-family: "Raleway", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.policy-title {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.policy-lead {
+    max-width: 760px;
+    margin: 14px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.85;
+}
+
+.policy-main {
+    padding: 34px 20px 70px;
+}
+
+.policy-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.policy-meta span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 10px;
+    border: 1px solid rgba(15, 31, 61, 0.12);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.policy-section {
+    padding: 26px 0;
+    border-top: 1px solid var(--border);
+}
+
+.policy-section:first-of-type {
+    border-top: 0;
+}
+
+.policy-section h2 {
+    margin: 0 0 12px;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    line-height: 1.45;
+}
+
+.policy-section h3 {
+    margin: 20px 0 8px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.policy-section p,
+.policy-section li {
+    color: var(--text-secondary);
+    font-size: 0.93rem;
+    line-height: 1.85;
+}
+
+.policy-section p {
+    margin: 0 0 12px;
+}
+
+.policy-section ul {
+    margin: 8px 0 0;
+    padding-left: 1.25rem;
+}
+
+.policy-note {
+    border-left: 4px solid var(--navy-700);
+    background: #f8fafc;
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+}
+
+.policy-note p:last-child {
+    margin-bottom: 0;
+}
+
+.policy-link {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.policy-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    .policy-hero {
+        padding: 42px 20px 26px;
+    }
+
+    .policy-main {
+        padding-bottom: 54px;
+    }
+
+    .policy-section {
+        padding: 22px 0;
+    }
+}
