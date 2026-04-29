@@ -23,6 +23,32 @@
         return `../../${url.replace(/^\.?\//, '')}`;
     }
 
+    function renderShareSection(name) {
+        const url = encodeURIComponent(location.href);
+        const text = encodeURIComponent(`${name}の公約・実績をチェック - Polimiru`);
+        const xUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+        const lineUrl = `https://social-plugins.line.me/lineit/share?url=${url}`;
+        return `
+            <section class="share-section">
+                <div class="section-label">
+                    <h2>このページを共有</h2>
+                    <span>share this page</span>
+                </div>
+                <div class="share-buttons">
+                    <a class="share-button share-x" href="${xUrl}" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-x-twitter"></i><span>Xでシェア</span>
+                    </a>
+                    <a class="share-button share-line" href="${lineUrl}" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-line"></i><span>LINEで送る</span>
+                    </a>
+                    <button class="share-button share-copy js-share-copy">
+                        <i class="fa-solid fa-link"></i><span>リンクをコピー</span>
+                    </button>
+                </div>
+            </section>
+        `;
+    }
+
     function renderSourceButtons(sources) {
         return (sources || []).slice(0, 3).map(source => `
             <a class="source-btn" href="${escapeHtml(source.url)}" target="_blank" rel="noopener">
@@ -247,6 +273,8 @@
                 </div>
             </section>
 
+            ${renderShareSection(data.name)}
+
             <div class="back-home"><a href="../../index.html">トップへ戻る</a></div>
         `;
 
@@ -259,6 +287,21 @@
                     window.pBookmarks.insertButton(id, root.querySelector('.source-buttons'));
                 }, { once: true });
             }
+        }
+
+        const copyBtn = root.querySelector('.js-share-copy');
+        if (copyBtn) {
+            copyBtn.addEventListener('click', function () {
+                navigator.clipboard.writeText(location.href).then(function () {
+                    const span = copyBtn.querySelector('span');
+                    span.textContent = 'コピーしました';
+                    copyBtn.classList.add('copied');
+                    setTimeout(function () {
+                        span.textContent = 'リンクをコピー';
+                        copyBtn.classList.remove('copied');
+                    }, 2000);
+                });
+            });
         }
 
         const backHome = root.querySelector('.back-home');

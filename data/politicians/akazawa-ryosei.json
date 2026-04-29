@@ -8,95 +8,196 @@
   "current_status": "経済産業大臣・衆議院議員（8期）",
   "photo_url": "https://www.jimin.jp/member/img/akazawa-ryosei.jpg",
   "official_url": "https://www.ryosei-akazawa.com/",
-  "accent": {"from": "#8c1515", "to": "#c9171e", "color": "#c9171e"},
+  "accent": {
+    "from": "#8c1515",
+    "to": "#c9171e",
+    "color": "#c9171e"
+  },
   "summary": "1960年生まれ。東京大学法学部卒・コーネル大学経営大学院修了（MBA）、元運輸省官僚。鳥取2区で8期当選。石破内閣で経済財政政策・経済再生担当大臣を務めた後、2025年10月の高市内閣で経済産業大臣に就任。GX・原子力・産業競争力強化・国際博覧会担当も兼務する。祖父は元自治大臣・赤沢正道。",
   "stats": [
-    {"label": "役職", "value": "経済産業大臣"},
-    {"label": "当選", "value": "8期"},
-    {"label": "国会", "value": "衆議院"},
-    {"label": "選挙区", "value": "鳥取2区"},
-    {"label": "生年", "value": "1960年"},
-    {"label": "前職", "value": "運輸省官僚"}
+    {
+      "label": "役職",
+      "value": "経済産業大臣"
+    },
+    {
+      "label": "当選",
+      "value": "8期"
+    },
+    {
+      "label": "国会",
+      "value": "衆議院"
+    },
+    {
+      "label": "選挙区",
+      "value": "鳥取2区"
+    },
+    {
+      "label": "生年",
+      "value": "1960年"
+    },
+    {
+      "label": "前職",
+      "value": "運輸省官僚"
+    }
   ],
   "career": [
-    {"period": "1960", "text": "生まれ"},
-    {"period": "1984", "text": "東京大学法学部第1類卒業、運輸省入省"},
-    {"period": "1991", "text": "コーネル大学経営大学院（MBA）修了"},
-    {"period": "〜2005", "text": "国土交通省で要職を歴任後退官"},
-    {"period": "2005", "text": "第44回衆院選で鳥取2区から初当選"},
-    {"period": "2023.11", "text": "財務副大臣"},
-    {"period": "2024.10", "text": "経済再生担当大臣（石破内閣）"},
-    {"period": "2025.10", "text": "経済産業大臣・GX実行推進担当・国際博覧会担当（高市内閣）"}
+    {
+      "period": "1960",
+      "text": "生まれ"
+    },
+    {
+      "period": "1984",
+      "text": "東京大学法学部第1類卒業、運輸省入省"
+    },
+    {
+      "period": "1991",
+      "text": "コーネル大学経営大学院（MBA）修了"
+    },
+    {
+      "period": "〜2005",
+      "text": "国土交通省で要職を歴任後退官"
+    },
+    {
+      "period": "2005",
+      "text": "第44回衆院選で鳥取2区から初当選"
+    },
+    {
+      "period": "2023.11",
+      "text": "財務副大臣"
+    },
+    {
+      "period": "2024.10",
+      "text": "経済再生担当大臣（石破内閣）"
+    },
+    {
+      "period": "2025.10",
+      "text": "経済産業大臣・GX実行推進担当・国際博覧会担当（高市内閣）"
+    }
   ],
   "promise_cycles": [
     {
       "id": "meti_takaichi2025",
       "title": "経済産業大臣としての主要課題（高市内閣）",
       "context": "高市内閣 経済産業大臣（2025年10月〜）",
-      "source": "経済産業省 政策",
+      "source": "経済産業省 政策・記者会見",
       "source_url": "https://www.meti.go.jp/",
       "reviewed_at": "2026-04-29T00:00:00Z",
-      "score": 30,
-      "total": 5,
-      "done": 0,
-      "started": 3,
+      "score": 42,
+      "total": 10,
+      "done": 2,
+      "started": 6,
       "pending": 2,
       "unknown": 0,
       "highlights": [
         {
-          "title": "GX（グリーントランスフォーメーション）の推進",
-          "category": "エネルギー・脱炭素",
+          "title": "ラピダスへの民間出資32社・1676億円を取りまとめ",
+          "category": "半導体・産業政策",
+          "status": "実現",
+          "evidence_source": {
+            "title": "日本経済新聞「ラピダスへの民間出資、32社1676億円 赤沢経産相が発表」",
+            "note": "2026年2月27日、赤澤経産相がラピダスへの民間出資として32社から計1676億円を集めたと発表。国家プロジェクトとして必ず成功させると明言。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA270F80X20C26A2000000/"
+        },
+        {
+          "title": "富士通・IBMなどラピダス顧客開拓支援に900億円補助を決定",
+          "category": "半導体・産業政策",
+          "status": "実現",
+          "evidence_source": {
+            "title": "日本経済新聞「富士通・IBMなどに900億円補助、ラピダスの顧客開拓を支援 経産省」",
+            "note": "2026年4月10日、経産省が富士通（AI向け超低消費電力半導体）・日本IBM（フィジカルAI用アクセラレーター）などの開発に計900億円を補助すると決定。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA102NL0Q6A410C2000000/"
+        },
+        {
+          "title": "ラピダスへの政府累計支援2.9兆円・2027年度量産開始に向けた推進",
+          "category": "半導体・産業政策",
           "status": "進行中",
-          "evidence_url": "https://www.meti.go.jp/policy/energy_environment/global_warming/gx_jisshi_kaigi.html",
+          "evidence_source": {
+            "title": "日本経済新聞「政府のラピダス支援、1兆円上積み方針 累計2.9兆円に」",
+            "note": "2025年1月に2026〜27年度で約1兆円追加支援を方針決定し累計2.9兆円。2026年度補助金6315億円確定。2027年2nmチップ量産開始・2031年度上場目標。赤澤経産相は「国益のために必ず成功させなければならない国家的プロジェクト」と発言。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA218OG0R21C25A1000000/"
+        },
+        {
+          "title": "核のごみ（高レベル放射性廃棄物）南鳥島での文献調査を申し入れ・推進",
+          "category": "原子力・エネルギー",
+          "status": "進行中",
+          "evidence_source": {
+            "title": "NHK「南鳥島で文献調査へ 小笠原村が受け入れ表明」/ 時事通信「地元説明踏まえ時期決定」",
+            "note": "2026年3月3日、赤澤経産相が小笠原村南鳥島への文献調査を申し入れ。「科学的特性マップで好ましい特性が確認できる可能性が相対的に高い。全島が国有地」と説明。4月21日に小笠原村長が事実上容認、赤澤経産相「国の判断として実施したい」と表明。時期は地元説明を踏まえ決定予定。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://news.web.nhk/shutoken/articles/101/031/89/"
+        },
+        {
+          "title": "GX推進法に基づく10年間150兆円のGX投資実行",
+          "category": "GX・脱炭素",
+          "status": "進行中",
           "evidence_source": {
             "title": "経済産業省 GX実行会議",
-            "accessed": "2026-04-29",
-            "note": "2023年成立のGX推進法に基づき10年間で150兆円投資の計画を推進中"
-          }
+            "note": "2023年成立のGX推進法に基づき官民合わせて10年間で150兆円超の投資を目指す計画を推進中。GX経済移行債の発行・GX市場メカニズムの整備が進行。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.meti.go.jp/policy/energy_environment/global_warming/gx_jisshi_kaigi.html"
         },
         {
-          "title": "原子力発電の最大限活用・次世代炉開発",
-          "category": "原子力",
+          "title": "原子力の最大限活用・既存炉運転延長・次世代炉開発の推進",
+          "category": "原子力・エネルギー",
           "status": "進行中",
-          "evidence_url": "https://www.meti.go.jp/press/2023/02/20230210002/20230210002.html",
           "evidence_source": {
             "title": "経済産業省 GX脱炭素電源法関連",
-            "accessed": "2026-04-29",
-            "note": "2023年成立のGX脱炭素電源法により原子力活用の方針が制度化。既存炉の運転延長・次世代炉開発が進行中"
-          }
+            "note": "2023年成立のGX脱炭素電源法により原子力活用の方針が制度化。既存炉の60年超運転延長・次世代革新炉の開発・建設推進。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.meti.go.jp/press/2023/02/20230210002/20230210002.html"
         },
         {
-          "title": "半導体・AI・量子など戦略分野への投資支援",
-          "category": "産業競争力",
+          "title": "スタートアップ育成5か年計画の推進（2027年までに投資額10倍）",
+          "category": "スタートアップ・中小企業",
           "status": "進行中",
-          "evidence_url": "https://www.meti.go.jp/policy/mono_info_service/joho/kakushin/",
           "evidence_source": {
-            "title": "経済産業省 半導体・デジタル産業戦略",
-            "accessed": "2026-04-29",
-            "note": "熊本・北海道への半導体工場誘致（TSMC等）が進行中。ラピダスへの支援も継続"
-          }
+            "title": "経済産業省 スタートアップ育成5か年計画",
+            "note": "2022年閣議決定のスタートアップ育成5か年計画（2027年までにスタートアップへの投資額を10倍・ユニコーン100社・スタートアップ10万社創出）を継続推進。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.meti.go.jp/policy/newbusiness/startups/index.html"
         },
         {
-          "title": "スタートアップ・中小企業の成長支援",
-          "category": "中小企業・スタートアップ",
-          "status": "公約",
-          "evidence_url": "https://www.meti.go.jp/policy/sme_chiiki/index.html",
+          "title": "経済安全保障・特定重要物資のサプライチェーン強靭化",
+          "category": "経済安全保障",
+          "status": "進行中",
           "evidence_source": {
-            "title": "経済産業省 中小企業庁",
-            "accessed": "2026-04-29",
-            "note": "スタートアップ育成5か年計画の推進・事業承継支援が継続中"
-          }
+            "title": "経済産業省 経済安全保障推進法関連",
+            "note": "2022年成立の経済安全保障推進法に基づく特定重要物資（半導体・蓄電池・重要鉱物等）の安定供給確保が進行中。重要鉱物の友好国調達・国内備蓄強化を推進。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.meti.go.jp/policy/economy/anzen_hosho/index.html"
         },
         {
-          "title": "経済安全保障の強化（サプライチェーン・重要物資）",
-          "category": "経済安保",
+          "title": "大阪・関西万博（2025年）の成功と産業活用",
+          "category": "国際博覧会",
           "status": "公約",
-          "evidence_url": "https://www.meti.go.jp/policy/economy/anzen_hosho/index.html",
           "evidence_source": {
-            "title": "経済産業省 経済安全保障",
-            "accessed": "2026-04-29",
-            "note": "2022年成立の経済安全保障推進法に基づく特定重要物資の安定供給確保が進行中"
-          }
+            "title": "内閣府 赤澤大臣担当分野（国際博覧会担当）",
+            "note": "国際博覧会担当大臣として2025年大阪万博の運営・日本館展示・中小企業・スタートアップの出展支援を担当。万博閉幕後の経済効果・レガシー活用策が問われる。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.cao.go.jp/minister/2510_r_akazawa/index.html"
+        },
+        {
+          "title": "エネルギー価格対策・電力の安定供給確保",
+          "category": "エネルギー価格",
+          "status": "公約",
+          "evidence_source": {
+            "title": "経済産業省 エネルギー政策",
+            "note": "電気・ガス料金の激変緩和措置の継続・電力安定供給確保が課題。再エネ賦課金・市場価格高騰への対応策の具体化が求められているが、恒久的な対策は未確定。",
+            "accessed": "2026-04-29"
+          },
+          "evidence_url": "https://www.meti.go.jp/policy/energy_environment/index.html"
         }
       ]
     }
@@ -114,8 +215,17 @@
     }
   ],
   "source_urls": [
-    {"label": "赤澤亮正 公式サイト", "url": "https://www.ryosei-akazawa.com/"},
-    {"label": "経済産業省 公式サイト", "url": "https://www.meti.go.jp/"},
-    {"label": "自民党 プロフィール", "url": "https://www.jimin.jp/member/100478.html"}
+    {
+      "label": "赤澤亮正 公式サイト",
+      "url": "https://www.ryosei-akazawa.com/"
+    },
+    {
+      "label": "経済産業省 公式サイト",
+      "url": "https://www.meti.go.jp/"
+    },
+    {
+      "label": "自民党 プロフィール",
+      "url": "https://www.jimin.jp/member/100478.html"
+    }
   ]
 }

@@ -167,11 +167,9 @@
         }
 
         function renderCard(c) {
-            const initial = (c.name || '?').replace(/\s+/g, '').slice(0, 1) || '?';
             const photo = c.image
-                ? `<img src="${c.image}" class="cand-card-photo" alt="${c.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` +
-                  `<div class="cand-card-photo-placeholder" style="display:none">${initial}</div>`
-                : `<div class="cand-card-photo-placeholder">${initial}</div>`;
+                ? `<img src="${c.image}" class="cand-card-photo" alt="${c.name}" onerror="this.style.display='none'">`
+                : `<div class="cand-card-photo-placeholder">👤</div>`;
 
             const roleBadge = c.role === 'incumbent'
                 ? '<span class="cand-badge cand-badge-incumbent">現職</span>'
@@ -183,20 +181,19 @@
                 ? '<span class="cand-badge cand-badge-unconfirmed">出馬未確定</span>'
                 : '';
 
-            const cardTag = c.profile_url ? 'a' : 'div';
-            const cardAttrs = c.profile_url
-                ? `href="${c.profile_url}"`
-                : `data-election="${ELECTION_KEY}" data-candidate-id="${c.id}" role="button" tabindex="0"`;
-
             return `
-                <${cardTag} class="cand-card ${partyHeaderClass(c.party)}" ${cardAttrs} style="text-decoration:none;color:inherit">
-                    ${photo}
-                    <div class="cand-card-name">${c.name}</div>
-                    <div class="cand-card-party">${c.party || ''}</div>
-                    <div class="cand-card-badges">${roleBadge}${unconfirmed}</div>
-                    ${renderScoreSummary(c)}
-                    <div class="cand-card-detail-hint">詳細を見る <i class="fa-solid fa-arrow-right" style="font-size:0.8em"></i></div>
-                </${cardTag}>`;
+                <div class="cand-card" data-election="${ELECTION_KEY}" data-candidate-id="${c.id}" role="button" tabindex="0">
+                    <div class="cand-card-header ${partyHeaderClass(c.party)}">
+                        ${photo}
+                    </div>
+                    <div class="cand-card-body">
+                        <div class="cand-card-name">${c.name}</div>
+                        <div class="cand-card-party">${c.party || ''}</div>
+                        <div class="cand-card-badges">${roleBadge}${unconfirmed}</div>
+                        ${renderScoreSummary(c)}
+                        <div class="cand-card-detail-hint">詳細を見る <i class="fa-solid fa-arrow-right" style="font-size:0.8em"></i></div>
+                    </div>
+                </div>`;
         }
 
         function getDataBase() {
