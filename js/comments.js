@@ -1,6 +1,7 @@
 (function () {
     const MIN_LEN = 5;
     const MAX_LEN = 500;
+    const COMMENT_STATUS_APPROVED = 'approved';
 
     function esc(str) {
         return String(str || '').replace(/[&<>"']/g, c =>
@@ -20,10 +21,10 @@
         return `${Math.floor(mo / 12)}年前`;
     }
 
-    function apiHeaders() {
+    function apiHeaders(accessToken) {
         return {
             apikey: window.SUPABASE_ANON_KEY,
-            Authorization: `Bearer ${window.SUPABASE_ANON_KEY}`,
+            Authorization: `Bearer ${accessToken || window.SUPABASE_ANON_KEY}`,
         };
     }
 
@@ -39,22 +40,26 @@
     async function fetchComments(politicianId) {
         const res = await fetch(
             `${window.SUPABASE_URL}/rest/v1/comments` +
-            `?politician_id=eq.${encodeURIComponent(politicianId)}&order=created_at.desc&limit=100`,
+            `?politician_id=eq.${encodeURIComponent(politicianId)}` +
+            `&status=eq.${COMMENT_STATUS_APPROVED}&order=created_at.desc&limit=100`,
             { headers: apiHeaders() }
         );
         if (!res.ok) throw new Error(res.status);
         return res.json();
     }
 
-    async function postComment(politicianId, nickname, body, sourceUrl) {
+    async function postComment(politicianId, user, session, body, sourceUrl) {
+        const nickname = window.pAuth?.displayName(user) || user?.email || 'ログインユーザー';
         const res = await fetch(`${window.SUPABASE_URL}/rest/v1/comments`, {
             method: 'POST',
-            headers: { ...apiHeaders(), 'Content-Type': 'application/json', Prefer: 'return=representation' },
+            headers: { ...apiHeaders(session.access_token), 'Content-Type': 'application/json', Prefer: 'return=representation' },
             body: JSON.stringify({
                 politician_id: politicianId,
+                user_id: user.id,
                 nickname: nickname.trim() || '匿名',
                 body: body.trim(),
                 source_url: sourceUrl.trim(),
+                status: 'pending',
             }),
         });
         if (!res.ok) throw new Error(res.status);
@@ -64,7 +69,7 @@
     function renderList(comments, listEl, countEl) {
         countEl.textContent = `${comments.length}件`;
         if (comments.length === 0) {
-            listEl.innerHTML = '<p class="cb-empty">まだ発言がありません。最初に発言してみましょう。</p>';
+            listEl.innerHTML = '<p class="cb-empty">承認済みの発言ログはまだありません。</p>';
             return;
         }
         listEl.innerHTML = comments.map(c => {
@@ -98,14 +103,32 @@
                 <h2 class="cb-title">発言ログ</h2>
                 <span class="cb-count" id="cb-count-${politicianId}">読み込み中…</span>
             </div>
-            <form class="cb-form" id="cb-form-${politicianId}" novalidate>
-                <p class="cb-guidance">
-                    発言・公約・実績の根拠リンクを添えて記録してください。確認できない噂や個人攻撃は載せないでください。
-                </p>
-                <div class="cb-form-row">
-                    <input class="cb-nick-input" type="text" placeholder="名前（省略可）" maxlength="30" autocomplete="off">
-                    <button class="cb-submit" type="submit">投稿する</button>
+            <div class="cb-auth-panel" id="cb-auth-${politicianId}">
+                <p class="cb-guidance">投稿にはアカウント登録が必要です。承認後に公開されます。</p>
+                <div class="cb-auth-actions">
+                    <button class="cb-auth-btn" type="button" data-auth-provider="google">
+                        <i class="fa-brands fa-google"></i>
+                        Googleで続ける
+                    </button>
+                    <button class="cb-auth-btn" type="button" data-auth-provider="apple">
+                        <i class="fa-brands fa-apple"></i>
+                        Appleで続ける
+                    </button>
                 </div>
+                <form class="cb-email-form" id="cb-email-form-${politicianId}" novalidate>
+                    <input class="cb-email-input" type="email" placeholder="メールアドレスでログインリンクを受け取る" autocomplete="email">
+                    <button class="cb-email-submit" type="submit">送信</button>
+                </form>
+                <div class="cb-auth-status" id="cb-auth-status-${politicianId}"></div>
+            </div>
+            <div class="cb-user-panel" id="cb-user-${politicianId}" hidden>
+                <span class="cb-user-label"></span>
+                <button class="cb-signout" type="button">ログアウト</button>
+            </div>
+            <form class="cb-form" id="cb-form-${politicianId}" novalidate hidden>
+                <p class="cb-guidance">
+                    発言・公約・実績の根拠リンクを添えて記録してください。確認できない噂や個人攻撃は載せないでください。投稿は承認後に公開されます。
+                </p>
                 <input class="cb-source-input" type="url" placeholder="根拠リンク（必須）https://..." autocomplete="off" required>
                 <textarea class="cb-body-input" placeholder="いつ・どこで・何を言っていたか（${MIN_LEN}〜${MAX_LEN}文字）"
                           maxlength="${MAX_LEN}" rows="3"></textarea>
@@ -113,6 +136,7 @@
                     <span class="cb-char">0 / ${MAX_LEN}</span>
                     <span class="cb-error" id="cb-err-${politicianId}"></span>
                 </div>
+                <button class="cb-submit" type="submit">承認待ちで投稿する</button>
             </form>
             <div class="cb-list" id="cb-list-${politicianId}">
                 <p class="cb-empty">読み込み中…</p>
@@ -124,8 +148,14 @@
         const listEl  = section.querySelector('.cb-list');
         const countEl = section.querySelector('.cb-count');
         const errEl   = section.querySelector('.cb-error');
+        const authPanel = section.querySelector('.cb-auth-panel');
+        const userPanel = section.querySelector('.cb-user-panel');
+        const userLabel = section.querySelector('.cb-user-label');
+        const signoutBtn = section.querySelector('.cb-signout');
+        const emailForm = section.querySelector('.cb-email-form');
+        const emailIn = section.querySelector('.cb-email-input');
+        const authStatus = section.querySelector('.cb-auth-status');
         const form    = section.querySelector('.cb-form');
-        const nickIn  = section.querySelector('.cb-nick-input');
         const sourceIn = section.querySelector('.cb-source-input');
         const bodyIn  = section.querySelector('.cb-body-input');
         const charEl  = section.querySelector('.cb-char');
@@ -145,8 +175,67 @@
         }
         load();
 
+        async function updateAuthUi() {
+            const user = await (window.pAuth?.getUser ? window.pAuth.getUser() : Promise.resolve(null));
+            const signedIn = !!user;
+            authPanel.hidden = signedIn;
+            userPanel.hidden = !signedIn;
+            form.hidden = !signedIn;
+            if (signedIn) {
+                userLabel.textContent = `${window.pAuth.displayName(user)} でログイン中`;
+            }
+        }
+
+        section.querySelectorAll('[data-auth-provider]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (!window.pAuth) {
+                    authStatus.textContent = 'ログイン設定を読み込めませんでした。';
+                    return;
+                }
+                window.pAuth.signInWithOAuth(btn.dataset.authProvider);
+            });
+        });
+
+        emailForm.addEventListener('submit', async e => {
+            e.preventDefault();
+            const email = emailIn.value.trim();
+            if (!email || !email.includes('@')) {
+                authStatus.textContent = 'メールアドレスを入力してください。';
+                return;
+            }
+            authStatus.textContent = '送信中…';
+            try {
+                await window.pAuth.sendMagicLink(email);
+                authStatus.textContent = 'ログインリンクを送信しました。メールを確認してください。';
+                emailIn.value = '';
+            } catch {
+                authStatus.textContent = '送信できませんでした。時間をおいて再試行してください。';
+            }
+        });
+
+        signoutBtn.addEventListener('click', async () => {
+            await window.pAuth.signOut();
+            await updateAuthUi();
+        });
+
+        document.addEventListener('pauthchange', updateAuthUi);
+        if (window.pAuth?.ready) {
+            window.pAuth.ready().then(updateAuthUi);
+        } else {
+            updateAuthUi();
+        }
+
         form.addEventListener('submit', async e => {
             e.preventDefault();
+            const [session, user] = await Promise.all([
+                window.pAuth?.getSession ? window.pAuth.getSession() : null,
+                window.pAuth?.getUser ? window.pAuth.getUser() : null,
+            ]);
+            if (!session || !user) {
+                errEl.textContent = '投稿にはログインが必要です。';
+                await updateAuthUi();
+                return;
+            }
             const body = bodyIn.value.trim();
             if (body.length < MIN_LEN) {
                 errEl.textContent = `${MIN_LEN}文字以上入力してください`;
@@ -162,16 +251,17 @@
             submitBtn.disabled = true;
             submitBtn.textContent = '投稿中…';
             try {
-                await postComment(politicianId, nickIn.value, body, sourceUrl);
+                await postComment(politicianId, user, session, body, sourceUrl);
                 bodyIn.value = '';
                 sourceIn.value = '';
                 charEl.textContent = `0 / ${MAX_LEN}`;
+                errEl.textContent = '投稿しました。確認後に公開されます。';
                 await load();
             } catch {
                 errEl.textContent = '投稿できませんでした。しばらくして再試行してください。';
             } finally {
                 submitBtn.disabled = false;
-                submitBtn.textContent = '投稿する';
+                submitBtn.textContent = '承認待ちで投稿する';
             }
         });
     }

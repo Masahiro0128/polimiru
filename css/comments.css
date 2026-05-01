@@ -14,6 +14,10 @@
     border-left: 4px solid var(--navy-700);
 }
 
+.cb-section [hidden] {
+    display: none !important;
+}
+
 .cb-title {
     margin: 0;
     font-size: 1.08rem;
@@ -28,6 +32,96 @@
 }
 
 /* フォーム */
+.cb-auth-panel,
+.cb-user-panel {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.cb-auth-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.cb-auth-btn,
+.cb-email-submit,
+.cb-signout {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--navy-900);
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.86rem;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cb-auth-btn:hover,
+.cb-email-submit:hover,
+.cb-signout:hover {
+    background: var(--navy-700);
+}
+
+.cb-email-form {
+    display: flex;
+    gap: 10px;
+}
+
+.cb-email-input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    background: var(--bg);
+    outline: none;
+}
+
+.cb-email-input:focus {
+    border-color: var(--navy-700);
+    background: #fff;
+}
+
+.cb-auth-status {
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.cb-user-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cb-user-label {
+    color: var(--text-secondary);
+    font-size: 0.84rem;
+    font-weight: 800;
+}
+
+.cb-signout {
+    background: transparent;
+    color: var(--navy-900);
+    flex-shrink: 0;
+}
+
 .cb-form {
     background: #fff;
     border: 1px solid var(--border);
@@ -188,6 +282,16 @@
 
 @media (max-width: 768px) {
     .cb-section   { padding: 32px 0 48px; }
-    .cb-form-row  { flex-direction: column; }
+    .cb-form-row,
+    .cb-auth-actions,
+    .cb-email-form,
+    .cb-user-panel {
+        flex-direction: column;
+    }
     .cb-submit    { width: 100%; padding: 10px; }
+    .cb-auth-btn,
+    .cb-email-submit,
+    .cb-signout {
+        width: 100%;
+    }
 }

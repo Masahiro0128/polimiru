@@ -1,10 +1,11 @@
 {
   "meta": {
     "election": "新潟県知事選挙 2026",
-    "election_day": "2026年6月（予定）",
+    "election_day": "2026年5月31日（日）投開票",
+    "announcement_day": "2026年5月14日（木）告示",
     "status": "upcoming",
-    "source_note": "新潟県選挙管理委員会",
-    "last_updated": "2026-04-25T00:00:00Z"
+    "source_note": "新潟県選挙管理委員会（https://www.pref.niigata.lg.jp/site/senkyo/r8chijisenkijitsu.html）",
+    "last_updated": "2026-04-30T00:00:00Z"
   },
   "candidates": [
     {
@@ -13,15 +14,45 @@
       "profile_url": "../../../politicians/hanakado-hideyo/index.html",
       "name": "花角 英世",
       "kana": "はなかど ひでよ",
-      "party": "無所属（自民・公明推薦）",
+      "party": "無所属（自民・公明・国民民主・維新 支持）",
       "role": "incumbent",
       "age": 68,
       "image": "https://www.pref.niigata.lg.jp/site/chiji/img/chiji_photo.jpg",
       "result": null,
       "score_incumbent": 42,
-      "score_status": "2022年公約の追跡スコア（2026-04-25時点）",
-      "confirmed": false,
-      "note": "現職知事として3選を目指すとみられる。柏崎刈羽原発の再稼働対応・人口減少対策が争点の中心。"
+      "score_status": "2022年公約の追跡スコア（2026-04-30時点）",
+      "confirmed": true,
+      "note": "現職知事として3選を目指す。政党推薦は受けず「県民党」として活動。4月26日に選対本部初会合。柏崎刈羽原発の再稼働判断・人口減少対策が争点の中心。（出典：新潟日報2026-04-26）"
+    },
+    {
+      "id": "tsuchida",
+      "person_id": null,
+      "profile_url": null,
+      "name": "土田 竜吾",
+      "kana": "つちだ りゅうご",
+      "party": "立憲民主党（新潟県議）",
+      "role": "challenger",
+      "age": 37,
+      "image": null,
+      "result": null,
+      "score_challenger": null,
+      "confirmed": true,
+      "note": "立憲民主党・連合新潟が推薦。共産党・社民党・市民連合＠新潟とも共闘調整中。3月27日に出馬表明。柏崎刈羽原発の再稼働判断プロセスを主要争点とする。大型連休明けに公約発表予定。（出典：新潟日報2026-03-27・2026-04-19）"
+    },
+    {
+      "id": "annaka",
+      "person_id": null,
+      "profile_url": null,
+      "name": "安中 聡",
+      "kana": "あんなか さとし",
+      "party": "無所属（元五泉市議）",
+      "role": "challenger",
+      "age": 48,
+      "image": null,
+      "result": null,
+      "score_challenger": null,
+      "confirmed": true,
+      "note": "草の根選挙。柏崎刈羽原発の停止・廃止と県民投票条例制定を前面に掲げる。SNS・動画中心の選挙戦略。3月31日に出馬表明。（出典：日本経済新聞2026-03-31）"
     }
   ]
 }
