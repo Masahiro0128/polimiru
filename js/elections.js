@@ -51,6 +51,18 @@ const elections = [
         "status": "予定"
     },
     {
+        "id": 3,
+        "title": "新潟県知事選挙 2026",
+        "category": "local",
+        "date": "2026年5月31日（日）投開票",
+        "prefecture": "新潟県",
+        "desc": "柏崎刈羽原発の再稼働判断が最大争点。現職・花角英世と新人2名の三つ巴。<br>5月14日告示、5月31日投開票。",
+        "image": "",
+        "url": "elections/niigata/2026_governor/index.html",
+        "badgeType": "local",
+        "status": "2026年 注目"
+    },
+    {
         "id": 10,
         "title": "大阪府知事選挙 2023",
         "category": "local",

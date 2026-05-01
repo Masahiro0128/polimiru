@@ -73,6 +73,19 @@ elections:
     hero_desc: "石木ダム問題の行方は？長崎県政の長期的な課題を検証します。"
     template: standard
 
+  - id: niigata_2026_governor
+    title: 新潟県知事選挙 2026
+    category: local
+    date: "2026年5月31日（日）投開票"
+    prefecture: 新潟県
+    badge_type: local
+    list_status: "2026年 注目"
+    list_id: 3
+    list_desc: "柏崎刈羽原発の再稼働判断が最大争点。現職・花角英世と新人2名の三つ巴。<br>5月14日告示、5月31日投開票。"
+    list_image: ""
+    output_path: elections/niigata/2026_governor/index.html
+    template: custom
+
   # ── アーカイブ ────────────────────────────────────────────────────────
   - id: osaka_2023_governor
     title: 大阪府知事選挙 2023
