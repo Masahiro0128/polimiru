@@ -43,19 +43,6 @@ elections:
     template: standard
 
   # ── 2026 国政・地方 ────────────────────────────────────────────────────
-  - id: shugiin_tokyo_2026
-    title: 第51回 衆議院議員総選挙（東京）
-    category: national
-    date: "2026年2月8日 投開票"
-    prefecture: 東京都
-    badge_type: national
-    list_status: "2026年 注目"
-    list_id: 11
-    list_desc: "東京の小選挙区と比例代表の最新情報を整理。<br>候補者データは順次更新。"
-    list_image: ""
-    output_path: elections/shugiin_tokyo_2026.html
-    template: custom
-
   - id: nagasaki_2026_governor
     title: 長崎県知事選挙 2026
     category: local

@@ -27,18 +27,6 @@ const elections = [
         "status": "2027年 注目"
     },
     {
-        "id": 11,
-        "title": "第51回 衆議院議員総選挙（東京）",
-        "category": "national",
-        "date": "2026年2月8日 投開票",
-        "prefecture": "東京都",
-        "desc": "東京の小選挙区と比例代表の最新情報を整理。<br>候補者データは順次更新。",
-        "image": "",
-        "url": "elections/shugiin_tokyo_2026.html",
-        "badgeType": "national",
-        "status": "2026年 注目"
-    },
-    {
         "id": 2,
         "title": "長崎県知事選挙 2026",
         "category": "local",
