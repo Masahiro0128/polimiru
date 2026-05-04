@@ -144,6 +144,96 @@
             padding: 4px 12px;
             border-radius: 999px;
         }
+
+        /* 発言比較ページへのリンクボタン（ヒーロー内） */
+        .hero-statements-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #fff;
+            color: #0b3d20;
+            border-radius: 999px;
+            font-weight: 800;
+            font-size: 0.92em;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .hero-statements-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(0,0,0,0.28);
+        }
+        .hero-statements-btn .btn-beta {
+            background: #1a6e3c;
+            color: #fff;
+            font-size: 0.72em;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+        .hero-statements-btn .btn-arrow {
+            font-size: 0.85em;
+            opacity: 0.75;
+        }
+
+        /* 発言比較バナー（ページ内） */
+        .statements-banner {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+            padding: 18px 22px;
+            background: linear-gradient(135deg, #0b3d20, #1a6e3c);
+            border-radius: 16px;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(11,61,32,0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .statements-banner:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(11,61,32,0.3);
+        }
+        .statements-banner-icon {
+            width: 46px;
+            height: 46px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            flex-shrink: 0;
+        }
+        .statements-banner-body {
+            flex: 1;
+        }
+        .statements-banner-title {
+            font-weight: 800;
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+        .statements-banner-title .beta-tag {
+            display: inline-block;
+            margin-left: 6px;
+            background: rgba(255,255,255,0.2);
+            font-size: 0.72em;
+            padding: 1px 8px;
+            border-radius: 999px;
+            vertical-align: middle;
+            font-weight: 700;
+        }
+        .statements-banner-desc {
+            font-size: 0.83em;
+            opacity: 0.85;
+        }
+        .statements-banner-arrow {
+            font-size: 1.2em;
+            opacity: 0.7;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body data-election-id="30">
@@ -163,6 +253,12 @@
                 <span class="issue-tag">農業振興</span>
                 <span class="issue-tag">北陸新幹線延伸</span>
             </div>
+            <a href="statements.html" class="hero-statements-btn">
+                <i class="fa-solid fa-layer-group"></i>
+                候補者の発言を争点で比較する
+                <span class="btn-beta">β</span>
+                <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </a>
         </div>
     </div>
 
@@ -183,6 +279,18 @@
                 <span class="context-issue"><i class="fa-solid fa-train"></i> 北陸新幹線・交通網</span>
             </div>
         </div>
+
+        <a href="statements.html" class="statements-banner">
+            <div class="statements-banner-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="statements-banner-body">
+                <div class="statements-banner-title">
+                    候補者の発言を争点で比較する
+                    <span class="beta-tag">β</span>
+                </div>
+                <div class="statements-banner-desc">原発・人口減少・農業など争点ごとに、3候補の主張を出典つきで並べて読む</div>
+            </div>
+            <i class="fa-solid fa-arrow-right statements-banner-arrow"></i>
+        </a>
 
         <div id="upcoming-banner" class="upcoming-banner" style="display:none">
             <span class="upcoming-banner-icon">📋</span>

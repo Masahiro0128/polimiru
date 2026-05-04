@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "election_id": "niigata_2026_governor",
+    "election": "新潟県知事選挙 2026",
+    "description": "候補者発言を争点別に比較するためのスターターデータ（告示前・随時更新）",
+    "last_updated": "2026-05-04T00:00:00Z",
+    "record_status": "pre_announcement"
+  },
+  "topics": [
+    {
+      "id": "nuclear",
+      "label": "柏崎刈羽原発",
+      "description": "再稼働の可否・判断プロセス・廃炉の方針"
+    },
+    {
+      "id": "population",
+      "label": "人口減少・移住促進",
+      "description": "若者流出の歯止め、移住定住施策、雇用創出"
+    },
+    {
+      "id": "agriculture",
+      "label": "農業・食の王国",
+      "description": "コメ価格・農家支援・ブランド戦略"
+    },
+    {
+      "id": "transport",
+      "label": "交通・北陸新幹線",
+      "description": "北陸新幹線延伸・日本海側の物流・交通網"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "press",
+      "label": "報道・会見"
+    },
+    {
+      "id": "official_site",
+      "label": "公式サイト"
+    },
+    {
+      "id": "sns",
+      "label": "公式SNS"
+    }
+  ],
+  "candidate_positions": [
+    {
+      "candidate_id": "hanakado",
+      "topic_id": "nuclear",
+      "stance_label": "再稼働を容認・安全最優先で判断",
+      "summary": "2022年に「地元同意」として再稼働を容認。安全規制への対応が整うことを条件に、東京電力の改革・安全対策を確認しながら進める立場をとる。",
+      "status": "supported",
+      "evidence_ids": ["stmt-hanakado-nuclear-01"],
+      "updated_at": "2026-05-04T00:00:00Z"
+    },
+    {
+      "candidate_id": "hanakado",
+      "topic_id": "population",
+      "stance_label": "移住定住施策・UIJターン支援を継続",
+      "summary": "「にいがた未来創造プラン」に基づき移住者受け入れ目標を掲げ、産業誘致と雇用創出を組み合わせた若者定着策を継続する方針。",
+      "status": "supported",
+      "evidence_ids": ["stmt-hanakado-pop-01"],
+      "updated_at": "2026-05-04T00:00:00Z"
+    },
+    {
+      "candidate_id": "tsuchida",
+      "topic_id": "nuclear",
+      "stance_label": "再稼働の判断プロセスを問題視・県民議論を要求",
+      "summary": "再稼働そのものの賛否よりも「県民への十分な説明・議論なく容認した」プロセスを批判。再稼働前に改めて県民的議論の場を設けるべきと主張している。",
+      "status": "watch",
+      "evidence_ids": ["stmt-tsuchida-nuclear-01"],
+      "updated_at": "2026-05-04T00:00:00Z"
+    },
+    {
+      "candidate_id": "tsuchida",
+      "topic_id": "population",
+      "stance_label": "整理中（公約発表待ち）",
+      "summary": "公約詳細は大型連休明けに発表予定（新潟日報2026-04-19）。若者雇用・奨学金返還支援が柱になる見通し。",
+      "status": "watch",
+      "evidence_ids": [],
+      "updated_at": "2026-05-04T00:00:00Z"
+    },
+    {
+      "candidate_id": "annaka",
+      "topic_id": "nuclear",
+      "stance_label": "運転停止・廃炉・県民投票条例の制定",
+      "summary": "柏崎刈羽原発の運転停止・廃炉を最優先に掲げ、賛否を問う県民投票条例の制定を公約の軸に据える。SNS・動画を中心とした草の根選挙戦略。",
+      "status": "supported",
+      "evidence_ids": ["stmt-annaka-nuclear-01"],
+      "updated_at": "2026-05-04T00:00:00Z"
+    }
+  ],
+  "statements": [
+    {
+      "id": "stmt-hanakado-nuclear-01",
+      "candidate_id": "hanakado",
+      "topic_id": "nuclear",
+      "platform": "press",
+      "platform_label": "報道・会見",
+      "date": "2022-10-18",
+      "summary": "花角知事が柏崎刈羽原発7号機の再稼働に同意。「安全が確認された」として地元同意を表明した。",
+      "quote_excerpt": "規制委員会の審査に合格し、安全が確認されたと判断した",
+      "source_title": "新潟日報「花角知事、柏崎刈羽7号機再稼働に同意」",
+      "source_url": "https://www.niigata-nippo.co.jp/",
+      "source_type": "secondary",
+      "verification_status": "needs_review",
+      "notes": "2022年10月の同意表明。在任中の主要決断のひとつ。記事URLは要確認。"
+    },
+    {
+      "id": "stmt-hanakado-pop-01",
+      "candidate_id": "hanakado",
+      "topic_id": "population",
+      "platform": "official_site",
+      "platform_label": "公式サイト",
+      "date": "2022-06-01",
+      "summary": "「にいがた未来創造プラン」でUIJターン移住者の受け入れ促進と産業集積を掲げる。",
+      "quote_excerpt": "移住定住を促進し、働く場を確保することで若者の流出に歯止めをかける",
+      "source_title": "新潟県「にいがた未来創造プラン」",
+      "source_url": "https://www.pref.niigata.lg.jp/sec/keikaku/",
+      "source_type": "primary",
+      "verification_status": "needs_review",
+      "notes": "計画書の具体的な目標数値は公式ページで要確認。"
+    },
+    {
+      "id": "stmt-tsuchida-nuclear-01",
+      "candidate_id": "tsuchida",
+      "topic_id": "nuclear",
+      "platform": "press",
+      "platform_label": "報道・出馬会見",
+      "date": "2026-03-27",
+      "summary": "土田氏が出馬表明会見で「花角知事の再稼働容認プロセスに県民への説明が不十分」と批判。改めて県民的議論の機会を設けると表明。",
+      "quote_excerpt": "再稼働の賛否より、県民が納得できるプロセスを踏んだかどうかが問題だ",
+      "source_title": "新潟日報「土田竜吾氏 知事選出馬表明」",
+      "source_url": "https://www.niigata-nippo.co.jp/",
+      "source_type": "secondary",
+      "verification_status": "needs_review",
+      "notes": "2026年3月27日の出馬会見から。記事URLは要確認。"
+    },
+    {
+      "id": "stmt-annaka-nuclear-01",
+      "candidate_id": "annaka",
+      "topic_id": "nuclear",
+      "platform": "press",
+      "platform_label": "報道・出馬会見",
+      "date": "2026-03-31",
+      "summary": "安中氏が出馬表明。柏崎刈羽原発の運転停止・廃炉と県民投票条例の制定を中心公約に掲げる。",
+      "quote_excerpt": "原発は止めて廃炉へ。県民が決める県民投票条例をつくる",
+      "source_title": "日本経済新聞「新潟知事選 安中聡氏が出馬表明」",
+      "source_url": "https://www.nikkei.com/",
+      "source_type": "secondary",
+      "verification_status": "needs_review",
+      "notes": "2026年3月31日の出馬表明から。記事URLは要確認。"
+    }
+  ]
+}
