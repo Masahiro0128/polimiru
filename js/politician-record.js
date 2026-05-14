@@ -197,8 +197,12 @@
         document.title = `${data.name} - polimiru`;
 
         const photoSrc = assetUrl(data.photo_url);
+        const photoStyle = [
+            data.photo_object_fit     ? `object-fit:${data.photo_object_fit}`         : '',
+            data.photo_object_position ? `object-position:${data.photo_object_position}` : '',
+        ].filter(Boolean).join(';');
         const photo = photoSrc
-            ? `<img class="record-photo" src="${escapeHtml(photoSrc)}" alt="${escapeHtml(data.name)}">`
+            ? `<img class="record-photo" src="${escapeHtml(photoSrc)}" alt="${escapeHtml(data.name)}"${photoStyle ? ` style="${photoStyle}"` : ''}>`
             : `<div class="record-photo-placeholder">${escapeHtml(initials(data.name))}</div>`;
 
         root.innerHTML = `
