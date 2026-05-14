@@ -250,6 +250,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    overflow: hidden;
     object-fit: cover;
     object-position: top;
     border: 2px solid var(--navy-200);

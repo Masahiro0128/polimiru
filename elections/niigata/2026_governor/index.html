@@ -351,9 +351,10 @@
 
         function renderCard(c) {
             const initial = (c.name || '?').replace(/\s+/g, '').slice(0, 1) || '?';
+            const bgSize = c.image_size || 'cover';
+            const bgPos  = c.image_position || 'center top';
             const photo = c.image
-                ? `<img src="${c.image}" class="cand-card-photo" alt="${c.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` +
-                  `<div class="cand-card-photo-placeholder" style="display:none">${initial}</div>`
+                ? `<div class="cand-card-photo" style="background-image:url('${c.image}');background-size:${bgSize};background-position:${bgPos};background-repeat:no-repeat;background-color:#e8ecf4;"></div>`
                 : `<div class="cand-card-photo-placeholder">${initial}</div>`;
 
             const roleBadge = c.role === 'incumbent'
