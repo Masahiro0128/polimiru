@@ -358,15 +358,19 @@
                 ${renderScoreCard(data)}
             </div>
 
-            ${data.promises_2023 && data.promises_2023.some(p => p.status) ? `
+            ${(function() {
+                const promises = Object.keys(data).filter(k => /^promises_\d+$/.test(k)).map(k => data[k]).find(arr => arr && arr.some(p => p.status));
+                if (!promises) return '';
+                return `
             <div class="cand-section">
                 <p class="cand-section-title">公約達成度の内訳</p>
-                ${renderProgressChart(data.progress, data.promises_2023)}
+                ${renderProgressChart(data.progress, promises)}
                 <div style="margin-top:12px">
-                    ${renderPromiseList(data.promises_2023)}
+                    ${renderPromiseList(promises)}
                 </div>
                 ${data.progress?.review_note ? `<p style="font-size:0.72rem;color:#bbb;margin:8px 0 0">${data.progress.review_note}</p>` : ''}
-            </div>` : ''}
+            </div>`;
+            })()}
 
             <div class="cand-section">
                 <p class="cand-section-title">公約・マニフェスト</p>

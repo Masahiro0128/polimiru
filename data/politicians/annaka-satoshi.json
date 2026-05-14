@@ -1,0 +1,103 @@
+{
+  "id": "annaka-satoshi",
+  "name": "安中 聡",
+  "kana": "あんなか さとし",
+  "party": "無所属",
+  "party_role": "元五泉市議・自営業",
+  "area": "新潟県",
+  "current_status": "新潟県知事選挙2026 立候補中",
+  "photo_url": "https://prod-cdn.go2senkyo.com/uploads/seijika/image_file_name/68401/thumb_f98466a36a1fc7d2a49576cb8deba77f.png",
+  "photo_credit": "選挙ドットコム",
+  "official_url": null,
+  "accent": {"from": "#4a5568", "to": "#2d3748", "color": "#4a5568"},
+  "summary": "新潟県五泉市在住。元五泉市議会議員・自営業者。2010年参院選・2018年新潟県知事選に出馬（いずれも落選）。2026年3月31日に知事選への出馬を表明し、4月14日に県庁での記者会見で公約を正式発表。柏崎刈羽原発の即時停止・廃炉を最重要公約に掲げる。3候補中もっとも踏み込んだ「廃炉」の立場。推薦政党なし、SNS・動画中心の草の根選挙。",
+  "stats": [
+    {"label": "年齢", "value": "48歳（2026年）"},
+    {"label": "元職", "value": "五泉市議会議員"},
+    {"label": "出身", "value": "新潟県五泉市"},
+    {"label": "推薦", "value": "なし（無所属）"}
+  ],
+  "career": [
+    {"period": "1978", "text": "新潟県生まれ（48歳・2026年時点）"},
+    {"period": "2010", "text": "参議院議員選挙 出馬（落選）"},
+    {"period": "〜2018", "text": "五泉市議会議員"},
+    {"period": "2018", "text": "新潟県知事選挙 出馬（落選）"},
+    {"period": "2026-03-31", "text": "新潟県知事選への出馬を表明"},
+    {"period": "2026-04-14", "text": "県庁記者会見で公約を正式発表"},
+    {"period": "現在", "text": "新潟県知事選挙2026 立候補中"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "annaka_2026",
+      "title": "2026年新潟県知事選公約",
+      "context": "2026年5月31日 新潟県知事選挙",
+      "source": "安中聡 2026年4月14日 県庁記者会見",
+      "source_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
+      "reviewed_at": "2026-05-14T00:00:00Z",
+      "status": "candidate",
+      "score": null,
+      "total": 4,
+      "done": 0,
+      "started": 0,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "柏崎刈羽原発の即時停止",
+          "category": "エネルギー・原発",
+          "status": "公約",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
+          "evidence_source": {
+            "title": "新潟日報 2026-04-14 安中氏公約発表",
+            "accessed": "2026-05-14",
+            "note": "2026年4月14日の県庁記者会見で表明。即時停止を最重要公約に掲げる。"
+          }
+        },
+        {
+          "title": "柏崎刈羽原発の廃炉（廃止）",
+          "category": "エネルギー・原発",
+          "status": "公約",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
+          "evidence_source": {
+            "title": "新潟日報 2026-04-14 安中氏公約発表",
+            "accessed": "2026-05-14",
+            "note": "「戦争など有事になれば原発は攻撃目標になる。放射能汚染が起きれば穀倉地帯の本県はダメージを受ける」と述べたと報じられている。3候補中もっとも踏み込んだ廃炉の立場。"
+          }
+        },
+        {
+          "title": "再稼働の是非を問う県民投票条例の制定",
+          "category": "行政改革",
+          "status": "公約",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
+          "evidence_source": {
+            "title": "新潟日報 2026-04-14 安中氏公約発表",
+            "accessed": "2026-05-14",
+            "note": "原発問題に特化した県民投票条例の制定を公約。土田氏の「常設型」と異なり原発に絞った内容。"
+          }
+        },
+        {
+          "title": "県補助金の施策評価を実施し利権構造からの脱却",
+          "category": "行政改革",
+          "status": "公約",
+          "evidence_url": "https://news.nsttv.com/post/20260513-00000001-nst/",
+          "evidence_source": {
+            "title": "NST新潟テレビ 2026-05-13 立候補予定者政策発表",
+            "accessed": "2026-05-14",
+            "note": "「原発反対・原発廃止をしっかりと掲げる」とともに、県補助金の施策評価により利権構造からの脱却を目指すと表明。"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "最大争点",
+      "title": "柏崎刈羽原発の廃炉を明言",
+      "desc": "花角氏の再稼働容認、土田氏の「県民投票で判断」に対し、安中氏は「即時停止・廃炉」を最重要公約として掲げる。3候補中もっとも明確な反原発の立場。"
+    }
+  ],
+  "source_urls": [
+    {"label": "新潟日報：安中氏が公約発表（2026-04-14）", "url": "https://www.niigata-nippo.co.jp/articles/-/814187"},
+    {"label": "日本経済新聞：安中氏が出馬表明（2026-03-31）", "url": "https://www.nikkei.com/article/DGXZQOCC315KT0R30C26A3000000/"}
+  ]
+}

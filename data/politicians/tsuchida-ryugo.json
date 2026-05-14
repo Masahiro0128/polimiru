@@ -1,0 +1,173 @@
+{
+  "id": "tsuchida-ryugo",
+  "name": "土田 竜吾",
+  "kana": "つちだ りゅうご",
+  "party": "無所属（立憲民主党・連合新潟 推薦）",
+  "party_role": "新潟県議会議員",
+  "area": "新潟県",
+  "current_status": "新潟県知事選挙2026 立候補中",
+  "photo_url": "https://prod-cdn.go2senkyo.com/uploads/seijika/image_file_name/186000/thumb_40a423b72475217692924443c79547596.png",
+  "photo_credit": "選挙ドットコム",
+  "official_url": "https://tsuchidaryugo.jp/",
+  "accent": {"from": "#1a3a8c", "to": "#0d2260", "color": "#1e3a8a"},
+  "summary": "上越市出身。2023年新潟県議会議員選挙で初当選（上越市選挙区、立憲民主党）。2026年3月27日に新潟県知事選への出馬を表明。「変える・止める・上げる」の3本柱を掲げ、常設型住民投票条例の制定・保育料無償化・水道基本料金無償化などを公約として発表した。立憲民主党・連合新潟が推薦、社民・共産・市民連合・緑の党が支持。",
+  "stats": [
+    {"label": "役職", "value": "新潟県議会議員"},
+    {"label": "当選", "value": "1期（県議）"},
+    {"label": "選挙区", "value": "上越市"},
+    {"label": "所属", "value": "立憲民主党"}
+  ],
+  "career": [
+    {"period": "1988", "text": "新潟県生まれ（38歳・2026年時点）"},
+    {"period": "2023", "text": "新潟県議会議員選挙 初当選（上越市・立憲民主党）"},
+    {"period": "2026-03-27", "text": "新潟県知事選への出馬を表明"},
+    {"period": "2026-04-19", "text": "総合選対本部発足"},
+    {"period": "2026-05-12", "text": "選挙公約を正式発表"},
+    {"period": "現在", "text": "新潟県知事選挙2026 立候補中"}
+  ],
+  "promise_cycles": [
+    {
+      "id": "tsuchida_2026",
+      "title": "2026年新潟県知事選公約",
+      "context": "2026年5月31日 新潟県知事選挙",
+      "source": "土田竜吾 公式サイト 2026年5月12日公約発表",
+      "source_url": "https://tsuchidaryugo.jp/",
+      "reviewed_at": "2026-05-14T00:00:00Z",
+      "status": "candidate",
+      "score": null,
+      "total": 10,
+      "done": 0,
+      "started": 0,
+      "pending": 10,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "常設型住民投票条例の制定（原発再稼働など重大課題を県民が直接判断）",
+          "category": "行政改革",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "2026-05-12の公約発表会見で表明。「原発再稼働など県民を二分する課題に県民が直接判断できる仕組みをつくる」と述べている。"
+          }
+        },
+        {
+          "title": "再生可能エネルギー立県（将来的に原発に依存しない社会へ）",
+          "category": "エネルギー",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "具体的な導入目標・期限は未発表。"
+          }
+        },
+        {
+          "title": "官製談合の再発防止と入札制度改革",
+          "category": "行政改革",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "県政刷新の柱のひとつ。"
+          }
+        },
+        {
+          "title": "若者・子育て世帯の賃貸住宅への定額家賃補助（月額1万円）",
+          "category": "人口・移住",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "月額1万円の数値を明示した具体的な公約。"
+          }
+        },
+        {
+          "title": "0〜5歳の保育料完全無償化",
+          "category": "子育て",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "国の無償化対象外の0〜2歳低所得世帯なども含む拡充を掲げる。"
+          }
+        },
+        {
+          "title": "小中学校給食費ゼロ",
+          "category": "子育て",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": ""
+          }
+        },
+        {
+          "title": "一般家庭の上水道基本料金を無償化（令和8年中）",
+          "category": "生活・物価",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "「令和8年中」という期限を明示。財源の詳細は未発表。"
+          }
+        },
+        {
+          "title": "農業者所得補償制度の実現（農産物価格が生産費を下回った際に差額補填）",
+          "category": "農業",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "補填水準・財源の詳細は未発表。"
+          }
+        },
+        {
+          "title": "女性の賃上げに取り組む企業への助成金制度の創設",
+          "category": "経済・雇用",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": "助成金の水準・財源は未発表。"
+          }
+        },
+        {
+          "title": "価格転嫁推進と持続的な賃上げ支援",
+          "category": "経済・雇用",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-14",
+            "note": ""
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "最大争点",
+      "title": "常設型住民投票条例で原発を県民判断へ",
+      "desc": "柏崎刈羽原発の再稼働について賛否を明示せず、「常設型住民投票条例」を制定し県民が直接判断できる仕組みを作ることを公約の柱に据える。"
+    },
+    {
+      "context": "経済・生活",
+      "title": "水道料金無償化・保育料ゼロ・給食費ゼロ",
+      "desc": "「上げる（所得向上）・止める（人口減少対策）」を軸に、水道基本料金無償化・保育料完全無償化・給食費ゼロなど生活負担軽減策を複数公約している。"
+    }
+  ],
+  "source_urls": [
+    {"label": "土田竜吾 公式サイト", "url": "https://tsuchidaryugo.jp/"},
+    {"label": "新潟県議会 議員情報", "url": "https://www.pref.niigata.lg.jp/site/gikai/tutidaryuugo.html"}
+  ]
+}

@@ -45,11 +45,16 @@
       "unknown": 0,
       "highlights": [
         {
-          "title": "原発の安全性確認・地域の理解なき再稼働は行わない",
+          "title": "柏崎刈羽原発6・7号機の再稼働判断（7条件付きで容認→6号機が2026年4月に営業運転再開）",
           "category": "エネルギー・原発",
           "status": "進行中",
-          "progress_score": 40,
-          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/"
+          "progress_score": 60,
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/kouhou/chijikaiken20251121.html",
+          "evidence_source": {
+            "title": "新潟県知事 臨時記者会見 2025-11-21",
+            "accessed": "2026-05-14",
+            "note": "2025年12月23日に赤沢経産相に7条件付きで再稼働容認を伝達。東京電力は2026年2月に6号機を再起動、2026年4月16日に営業運転を再開した（Bloomberg・日経報道）。7号機の再稼働時期は未定。"
+          }
         },
         {
           "title": "人口減少対策・移住定住促進",

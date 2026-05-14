@@ -81,8 +81,9 @@ Politician promises exist at two granularities:
 1. **Profile level** — `data/politicians/{id}.json` → `promise_cycles[].highlights[]`  
    A curated list of 5–15 key highlights with `evidence_url` and `evidence_source` objects. This is what renders on the politician profile page.
 
-2. **Election detail level** — `js/data/{election_key}/candidates/{id}.json` → `promises_2023[]` (or equivalent key)  
-   The full deduplicated list from the original manifesto (e.g. 161 items for yoshimura). Contains `id`, `text`, `category`, `section`, `status`, `evidence_url`, `evidence_source`.
+2. **Election detail level** — `js/data/{election_key}/candidates/{id}.json` → `promises_YYYY[]`  
+   The full deduplicated list from the original manifesto. Key name is year-specific: `promises_2023` for 2023 elections, `promises_2026` for 2026, etc. Contains `id`, `text`, `category`, `section`, `status`, `evidence_url`, `evidence_source`.
+   `js/candidate-modal.js` auto-detects any key matching `/^promises_\d+$/` — so use the correct year.
 
 When updating scores, sync both files: totals/counts in `data/politicians/` and the per-item statuses in `js/data/`.
 
@@ -151,12 +152,52 @@ Session is persisted in `localStorage` under key `polimiru_auth_session_v1`. Aut
 
 Supabase tables in use: `likes`, `comments` (with `source_url` column for per-page scoping), `contact_messages`, `bookmark_events`.
 
+### Election page meta.status and banners
+
+The `meta.status` field in `js/data/{election_key}/index.json` controls an inline banner on the election page:
+
+| value | banner shown |
+|---|---|
+| `"upcoming"` | 「告示日前の情報です」バナーを表示 |
+| `"announced"` | バナー非表示（告示日当日に切り替える） |
+| `"active"` | バナー非表示 |
+| `"finished"` | バナー非表示 |
+
+Update `status` from `"upcoming"` to `"announced"` on the 告示日.
+
+### Election templates: standard vs custom
+
+Defined in `data/elections.yaml` per election:
+
+- `template: standard` — `scripts/build.py` generates/regenerates `output_path` HTML from a shared template. Edit `data/elections.yaml` only; don't hand-edit the output HTML.
+- `template: custom` — HTML at `output_path` is hand-crafted. `build.py` skips regenerating it (but still includes it in `js/elections.js`). Niigata 2026 is custom.
+
+### Candidate pattern for election pages
+
+**Every candidate must have a politician profile page** — the candidate modal is not the intended pattern.
+
+For each candidate in `js/data/{election_key}/index.json`:
+- Set `person_id` to the politician's data file stem (e.g. `"tsuchida-ryugo"`)
+- Set `profile_url` to `"../../../politicians/{id}/index.html"`
+- Create `data/politicians/{id}.json` and `politicians/{id}/index.html`
+
+When `profile_url` is set the card renders as an `<a>` link to the profile page. When `profile_url` is null the card renders as a `<div>` that opens the candidate modal — **avoid this pattern**.
+
+For pre-election challenger profiles, use `promise_cycles[0].status: "candidate"` and `score: null`. Set all highlights to `status: "公約"`.
+
 ## Adding a new politician
 
-1. Add entry to `js/politicians.js` (home card, `photo` field)
+1. Add entry to `js/politicians.js` (home card, `photo` field)  — only for politicians featured on the home page
 2. Create `data/politicians/{id}.json` (profile JSON, `photo_url` field)
 3. Create `politicians/{id}/index.html` — copy an existing one, change `data-politician-id` on `<body>` and the `<title>`
 4. Optionally add `election_links` in the JSON to connect to election pages
+
+## Adding a new election
+
+1. Add entry to `data/elections.yaml` (choose `template: standard` or `custom`)
+2. Run `python scripts/build.py` — generates the election HTML and updates `js/elections.js`
+3. Create `js/data/{election_key}/index.json` with `meta` and `candidates[]`
+4. For each candidate, follow the **Candidate pattern** above
 
 # Claude Code instructions
 
