@@ -58,6 +58,30 @@ A politician appears in two different data files with different field names:
 
 Both must be updated when changing a photo.
 
+### Photo sourcing rules
+
+**Copyright**: Only use photos from sources that permit embedding (hotlinking). Priority order:
+1. Official campaign/politician website — almost always safe to hotlink
+2. Government/parliament official sites (`go.jp`, `lg.jp`, `pref.*.jp`) — public domain
+3. Party official sites (`jimin.jp`, `cdp-japan.jp`, etc.)
+4. **Never use** go2senkyo CDN (`prod-cdn.go2senkyo.com`) — blocks hotlinking for most politicians (403). Exception: some candidates load from there if the referer check passes, but this is unreliable.
+
+**Face framing in candidate cards** (80×80px circle, `.cand-card-photo`):
+
+The election page `renderCard` uses `background-image` on a div, allowing per-candidate control via `image_position` and `image_size` fields in `index.json`:
+
+```json
+{
+  "image": "https://example.com/photo.jpg",
+  "image_position": "center 5%",
+  "image_size": "cover"
+}
+```
+
+Target: face should occupy roughly 50–70% of the circle height — not cropped too tight (overwhelming) or too distant (hard to recognise). Adjust `image_position` (x% y%) to crop toward the face, and `image_size` (e.g. `"80%"`) only as a last resort when the source image is an unavoidably tight headshot.
+
+When choosing between available images from an official site, prefer a **chest-up portrait** (face + upper body visible) over a full-body or tight-headshot crop.
+
 ### Promise score formula
 
 `score = Math.round((done × 100 + started × 50) / total)`
