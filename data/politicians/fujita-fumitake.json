@@ -49,7 +49,7 @@
       "title": "2024年衆院選 日本維新の会公約 追跡",
       "context": "第50回衆議院議員総選挙（2024年10月）",
       "source": "日本維新の会 2024衆院選マニフェスト",
-      "source_url": "https://o-ishin.jp/action/manifesto/",
+      "source_url": "https://oneosaka.jp/policy/policydetail/",
       "reviewed_at": "2026-04-24T00:00:00Z",
       "status": "tracking",
       "score": 40,
@@ -64,35 +64,35 @@
           "category": "政治改革",
           "status": "法案提出",
           "progress_score": 35,
-          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+          "evidence_url": "https://oneosaka.jp/policy/policydetail/"
         },
         {
           "title": "高校・大学の授業料完全無償化",
           "category": "教育無償化",
           "status": "追跡中",
           "progress_score": 30,
-          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+          "evidence_url": "https://oneosaka.jp/policy/policydetail/"
         },
         {
           "title": "道州制の導入・地方分権の抜本強化",
           "category": "地方分権",
           "status": "検討中",
           "progress_score": 20,
-          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+          "evidence_url": "https://oneosaka.jp/policy/policydetail/"
         },
         {
           "title": "規制改革・行政のデジタル化推進",
           "category": "行政改革",
           "status": "追跡中",
           "progress_score": 40,
-          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+          "evidence_url": "https://oneosaka.jp/policy/policydetail/"
         },
         {
           "title": "憲法改正（緊急事態条項の整備）",
           "category": "憲法改正",
           "status": "公約",
           "progress_score": 20,
-          "evidence_url": "https://o-ishin.jp/action/manifesto/"
+          "evidence_url": "https://oneosaka.jp/policy/policydetail/"
         }
       ]
     },

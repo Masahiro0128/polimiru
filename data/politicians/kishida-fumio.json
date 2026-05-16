@@ -85,7 +85,7 @@
       "title": "岸田内閣（第100・101代）政策実績レビュー",
       "context": "2021年10月〜2024年10月 在任1094日間の主要政策達成状況",
       "source": "首相官邸・各省庁公式発表・報道",
-      "source_url": "https://www.kantei.go.jp/jp/101_kishida/",
+      "source_url": "https://kishida.gr.jp/",
       "reviewed_at": "2026-04-29T00:00:00Z",
       "status": "historical_review",
       "score": 77,
@@ -104,7 +104,7 @@
             "note": "国家安全保障戦略・国家防衛戦略・防衛力整備計画の3文書を閣議決定。2023〜2027年度の防衛費総額を約43兆円とし、2027年度にGDP比2%達成を目標として設定。従来のGDP比1%枠を廃止した歴史的転換。",
             "accessed": "2026-04-29"
           },
-          "evidence_url": "https://www.kantei.go.jp/jp/101_kishida/actions/202212/16nss.html"
+          "evidence_url": "https://www.cas.go.jp/jp/siryou/221216anzenhoshou.html"
         },
         {
           "title": "反撃能力（敵基地攻撃能力）の保有決定（2022年12月）",
@@ -115,7 +115,7 @@
             "note": "安保3文書改訂で、相手国のミサイル発射拠点等を直接打撃する「反撃能力」の保有を明記。1950年代以来の専守防衛政策の実質的転換。スタンド・オフ防衛能力（トマホーク等）の取得・配備を決定。",
             "accessed": "2026-04-29"
           },
-          "evidence_url": "https://www.kantei.go.jp/jp/101_kishida/actions/202212/16nss.html"
+          "evidence_url": "https://www.cas.go.jp/jp/siryou/221216anzenhoshou.html"
         },
         {
           "title": "こども家庭庁の設置（2023年4月1日発足）",
@@ -148,7 +148,7 @@
             "note": "被爆地・広島でのG7サミットを議長国として主催。G7史上初の核軍縮集中文書「G7首脳 広島ビジョン」を発出。ゼレンスキー大統領の電撃訪問も実現。クアッド首脳会合も広島で同時開催。",
             "accessed": "2026-04-29"
           },
-          "evidence_url": "https://www.kantei.go.jp/jp/101_kishida/statement/2023/0521kaiken.html"
+          "evidence_url": "https://kishida.gr.jp/"
         },
         {
           "title": "日韓シャトル外交正常化・徴用工問題の解決策で関係修復（2023年3月）",
@@ -282,7 +282,7 @@
     },
     {
       "label": "首相官邸 岸田内閣",
-      "url": "https://www.kantei.go.jp/jp/101_kishida/"
+      "url": "https://kishida.gr.jp/"
     },
     {
       "label": "首相官邸 外交・安全保障実績",

@@ -49,7 +49,7 @@
       "title": "2022年参院選 参政党公約 追跡",
       "context": "第26回参議院議員通常選挙（2022年7月）",
       "source": "参政党 2022年参院選政策・選挙公報",
-      "source_url": "https://sanseito.jp/election/sangiin2022/",
+      "source_url": "https://sanseito.jp/political_measures/",
       "reviewed_at": "2026-04-24T00:00:00Z",
       "status": "tracking",
       "score": 35,
@@ -64,35 +64,35 @@
           "category": "主権・安全保障",
           "status": "追跡中",
           "progress_score": 15,
-          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+          "evidence_url": "https://sanseito.jp/political_measures/"
         },
         {
           "title": "食の安全・農薬規制強化・有機農業推進",
           "category": "食・農業",
           "status": "追跡中",
           "progress_score": 30,
-          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+          "evidence_url": "https://sanseito.jp/political_measures/"
         },
         {
           "title": "歴史・伝統文化を重視した教育改革",
           "category": "教育",
           "status": "法案提出",
           "progress_score": 25,
-          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+          "evidence_url": "https://sanseito.jp/political_measures/"
         },
         {
           "title": "子育て支援・少子化対策の強化",
           "category": "少子化対策",
           "status": "公約",
           "progress_score": 20,
-          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+          "evidence_url": "https://sanseito.jp/political_measures/"
         },
         {
           "title": "グローバリズムに対抗する経済自立路線",
           "category": "経済政策",
           "status": "公約",
           "progress_score": 15,
-          "evidence_url": "https://sanseito.jp/election/sangiin2022/"
+          "evidence_url": "https://sanseito.jp/political_measures/"
         }
       ]
     },

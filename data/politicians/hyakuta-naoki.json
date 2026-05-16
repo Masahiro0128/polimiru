@@ -49,7 +49,7 @@
       "title": "2024年衆院選 日本保守党公約 追跡",
       "context": "第50回衆議院議員総選挙（2024年10月）",
       "source": "日本保守党 2024衆院選公約・政策",
-      "source_url": "https://hoshuto.jp/policies/",
+      "source_url": "https://hoshuto.jp/policy/",
       "reviewed_at": "2026-04-24T00:00:00Z",
       "status": "tracking",
       "score": 30,
@@ -64,35 +64,35 @@
           "category": "移民・外国人政策",
           "status": "追跡中",
           "progress_score": 30,
-          "evidence_url": "https://hoshuto.jp/policies/"
+          "evidence_url": "https://hoshuto.jp/policy/"
         },
         {
           "title": "NHK受信料制度の廃止・公共放送改革",
           "category": "メディア改革",
           "status": "公約",
           "progress_score": 10,
-          "evidence_url": "https://hoshuto.jp/policies/"
+          "evidence_url": "https://hoshuto.jp/policy/"
         },
         {
           "title": "憲法改正（緊急事態条項・自衛権の明記）",
           "category": "憲法改正",
           "status": "公約",
           "progress_score": 20,
-          "evidence_url": "https://hoshuto.jp/policies/"
+          "evidence_url": "https://hoshuto.jp/policy/"
         },
         {
           "title": "選択的夫婦別姓・LGBT法の見直し",
           "category": "家族制度・価値保守",
           "status": "公約",
           "progress_score": 15,
-          "evidence_url": "https://hoshuto.jp/policies/"
+          "evidence_url": "https://hoshuto.jp/policy/"
         },
         {
           "title": "対中強硬路線の実行と経済安全保障",
           "category": "外交・安全保障",
           "status": "公約",
           "progress_score": 20,
-          "evidence_url": "https://hoshuto.jp/policies/"
+          "evidence_url": "https://hoshuto.jp/policy/"
         }
       ]
     },

@@ -58,7 +58,7 @@
           "title": "プラスチック資源循環・廃棄物削減",
           "category": "循環経済",
           "status": "進行中",
-          "evidence_url": "https://www.env.go.jp/recycle/plastic/index.html",
+          "evidence_url": "https://www.env.go.jp/recycle/plastic/circulation.html",
           "evidence_source": {
             "title": "環境省 プラスチック資源循環",
             "accessed": "2026-04-29",
@@ -69,7 +69,7 @@
           "title": "生物多様性国家戦略（昆明・モントリオール目標への対応）",
           "category": "生物多様性",
           "status": "公約",
-          "evidence_url": "https://www.env.go.jp/nature/biodic/biodiversity/nbsap/index.html",
+          "evidence_url": "https://www.env.go.jp/nature/biodiversity/initiatives6.html",
           "evidence_source": {
             "title": "環境省 生物多様性国家戦略",
             "accessed": "2026-04-29",
@@ -80,7 +80,7 @@
           "title": "原子力防災体制の強化",
           "category": "原子力防災",
           "status": "公約",
-          "evidence_url": "https://www.env.go.jp/chemi/rhm/h29kisoshiryo/h29kiso-02-02.html",
+          "evidence_url": "https://www.env.go.jp/chemi/rhm/h29kisoshiryo/h29kiso-02index.html",
           "evidence_source": {
             "title": "環境省 放射線健康管理",
             "accessed": "2026-04-29",

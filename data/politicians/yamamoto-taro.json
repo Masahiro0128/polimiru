@@ -37,7 +37,7 @@
       "title": "2022年参院選 れいわ新選組公約",
       "context": "第26回参議院議員通常選挙（2022年7月）",
       "source": "れいわ新選組 参院選2022 政策集",
-      "source_url": "https://reiwa-shinsengumi.com/policy2022/",
+      "source_url": "https://reiwa-shinsengumi.com/sanin2022_kinkyu/",
       "reviewed_at": "2026-04-29T00:00:00Z",
       "score": 10,
       "total": 8,
@@ -50,7 +50,7 @@
           "title": "消費税を5%に引き下げ、その後廃止",
           "category": "税制",
           "status": "公約",
-          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_url": "https://reiwa-shinsengumi.com/sanin2022_kinkyu/",
           "evidence_source": {
             "title": "れいわ新選組 2022年参院選政策集",
             "accessed": "2026-04-29",
@@ -61,7 +61,7 @@
           "title": "奨学金の返済を全額帳消し",
           "category": "教育・生活支援",
           "status": "公約",
-          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_url": "https://reiwa-shinsengumi.com/sanin2022_kinkyu/",
           "evidence_source": {
             "title": "れいわ新選組 2022年参院選政策集",
             "accessed": "2026-04-29",
@@ -83,7 +83,7 @@
           "title": "原発の即時停止・廃炉",
           "category": "エネルギー",
           "status": "公約",
-          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_url": "https://reiwa-shinsengumi.com/sanin2022_kinkyu/",
           "evidence_source": {
             "title": "れいわ新選組 2022年参院選政策集",
             "accessed": "2026-04-29",
@@ -94,7 +94,7 @@
           "title": "医療・介護・教育の無償化（ベーシックサービス）",
           "category": "社会保障",
           "status": "公約",
-          "evidence_url": "https://reiwa-shinsengumi.com/policy2022/",
+          "evidence_url": "https://reiwa-shinsengumi.com/sanin2022_kinkyu/",
           "evidence_source": {
             "title": "れいわ新選組 2022年参院選政策集",
             "accessed": "2026-04-29",
@@ -157,7 +157,7 @@
   "source_urls": [
     {"label": "れいわ新選組 公式サイト", "url": "https://reiwa-shinsengumi.com/"},
     {"label": "山本太郎 プロフィール", "url": "https://reiwa-shinsengumi.com/member/yamamoto-taro/"},
-    {"label": "れいわ新選組 2022年参院選政策集", "url": "https://reiwa-shinsengumi.com/policy2022/"},
+    {"label": "れいわ新選組 2022年参院選政策集", "url": "https://reiwa-shinsengumi.com/sanin2022_kinkyu/"},
     {"label": "れいわ新選組 国会活動報告", "url": "https://reiwa-shinsengumi.com/activity/"}
   ]
 }

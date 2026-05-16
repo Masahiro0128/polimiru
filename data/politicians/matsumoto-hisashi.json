@@ -60,7 +60,7 @@
           "title": "行政手続きのオンライン化・書類撤廃",
           "category": "行政DX",
           "status": "進行中",
-          "evidence_url": "https://www.digital.go.jp/policies/digitalization",
+          "evidence_url": "https://www.digital.go.jp/policies/priority-policy-program",
           "evidence_source": {
             "title": "デジタル庁 デジタル化の推進",
             "accessed": "2026-04-29",
@@ -82,7 +82,7 @@
           "title": "デジタル行財政改革（業務効率化・人員最適化）",
           "category": "行財政改革",
           "status": "公約",
-          "evidence_url": "https://www.digital.go.jp/councils/digital-gyozaikaku",
+          "evidence_url": "https://www.cas.go.jp/jp/seisaku/digital_gyozaikaikaku/index.html",
           "evidence_source": {
             "title": "デジタル庁 デジタル行財政改革会議",
             "accessed": "2026-04-29",
@@ -93,7 +93,7 @@
           "title": "AI・量子・次世代半導体への政府投資",
           "category": "先端技術",
           "status": "公約",
-          "evidence_url": "https://www.digital.go.jp/policies/ai",
+          "evidence_url": "https://www.digital.go.jp/policies/genai",
           "evidence_source": {
             "title": "デジタル庁 AI政策",
             "accessed": "2026-04-29",

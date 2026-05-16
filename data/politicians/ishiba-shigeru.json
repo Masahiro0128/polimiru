@@ -141,7 +141,7 @@
       "title": "石破内閣（第103代）の政策トラック",
       "context": "2024年10月〜2025年10月 内閣総理大臣在任",
       "source": "首相官邸 石破内閣",
-      "source_url": "https://www.kantei.go.jp/jp/103_ishiba/",
+      "source_url": "https://www.kantei.go.jp/jp/103/actions/",
       "reviewed_at": "2026-04-25T00:00:00Z",
       "status": "historical_review",
       "score": 45,
@@ -156,28 +156,28 @@
           "category": "防災",
           "status": "実現",
           "progress_score": 100,
-          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+          "evidence_url": "https://www.kantei.go.jp/jp/103/actions/"
         },
         {
           "title": "少数与党での政権運営・野党との政策協議",
           "category": "政権運営",
           "status": "進行中",
           "progress_score": 45,
-          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+          "evidence_url": "https://www.kantei.go.jp/jp/103/actions/"
         },
         {
           "title": "物価高・賃上げ対策の実施",
           "category": "経済",
           "status": "進行中",
           "progress_score": 50,
-          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+          "evidence_url": "https://www.kantei.go.jp/jp/103/actions/"
         },
         {
           "title": "地方創生交付金の拡充",
           "category": "地方創生",
           "status": "公約",
           "progress_score": 35,
-          "evidence_url": "https://www.kantei.go.jp/jp/103_ishiba/"
+          "evidence_url": "https://www.kantei.go.jp/jp/103/actions/"
         }
       ]
     }
@@ -201,7 +201,7 @@
     },
     {
       "label": "首相官邸 石破内閣",
-      "url": "https://www.kantei.go.jp/jp/103_ishiba/"
+      "url": "https://www.kantei.go.jp/jp/103/actions/"
     }
   ]
 }
