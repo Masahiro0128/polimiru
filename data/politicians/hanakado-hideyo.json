@@ -35,54 +35,102 @@
       "context": "2022年6月 新潟県知事選挙（2期目）",
       "source": "花角英世 2022年知事選公約",
       "source_url": "https://www.pref.niigata.lg.jp/site/chiji/",
-      "reviewed_at": "2026-04-25T00:00:00Z",
+      "reviewed_at": "2026-05-19T00:00:00Z",
       "status": "tracking",
-      "score": 42,
-      "total": 5,
-      "done": 1,
-      "started": 3,
-      "pending": 1,
+      "score": 69,
+      "total": 8,
+      "done": 3,
+      "started": 5,
+      "pending": 0,
       "unknown": 0,
       "highlights": [
         {
-          "title": "柏崎刈羽原発6・7号機の再稼働判断（7条件付きで容認→6号機が2026年4月に営業運転再開）",
+          "title": "柏崎刈羽原発6号機の再稼働容認・営業運転再開（2026年4月16日）",
           "category": "エネルギー・原発",
-          "status": "進行中",
-          "progress_score": 60,
+          "status": "実現",
           "evidence_url": "https://www.pref.niigata.lg.jp/sec/kouhou/chijikaiken20251121.html",
           "evidence_source": {
             "title": "新潟県知事 臨時記者会見 2025-11-21",
-            "accessed": "2026-05-14",
-            "note": "2025年12月23日に赤沢経産相に7条件付きで再稼働容認を伝達。東京電力は2026年2月に6号機を再起動、2026年4月16日に営業運転を再開した（Bloomberg・日経報道）。7号機の再稼働時期は未定。"
+            "accessed": "2026-05-19",
+            "note": "2025年11月21日に7条件付きで再稼働容認を表明、12月23日に赤沢経産相へ正式伝達。東京電力は2026年2月に6号機を再起動し、2026年4月16日に営業運転を再開した。当初公約の「7条件が整った際に判断する」が実現。"
           }
         },
         {
-          "title": "人口減少対策・移住定住促進",
-          "category": "人口・地方創生",
+          "title": "柏崎刈羽原発7号機 特重施設工事（2029年完工へ大幅遅延）",
+          "category": "エネルギー・原発",
           "status": "進行中",
-          "progress_score": 40,
-          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/"
+          "evidence_url": "https://www.jaif.or.jp/journal/japan/26997.html",
+          "evidence_source": {
+            "title": "原子力産業新聞：柏崎刈羽6・7号機 特重施設整備時期変更",
+            "accessed": "2026-05-19",
+            "note": "東京電力は2025年2月27日、7号機の特定重大事故等対処施設（特重施設）の工事完了時期を2025年3月から2029年8月へ変更と発表。7号機再稼働時期は大幅に遅延する見通し。"
+          }
         },
         {
-          "title": "新潟県産米・農産物のブランド力強化",
+          "title": "佐渡島の金山 ユネスコ世界文化遺産登録（2024年7月）",
+          "category": "観光・文化",
+          "status": "実現",
+          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/",
+          "evidence_source": {
+            "title": "新潟県知事室",
+            "accessed": "2026-05-19",
+            "note": "2024年7月、ユネスコ世界文化遺産に「佐渡島の金山」が登録された。花角知事は就任以来、登録実現を県政の最重要課題の一つとして推進してきた。"
+          }
+        },
+        {
+          "title": "新潟県産米・農産物のブランド力強化（コシヒカリ・フードテックタウン構想）",
           "category": "農業振興",
           "status": "実現",
-          "progress_score": 70,
-          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/"
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/hisho/chiji.html",
+          "evidence_source": {
+            "title": "新潟県知事室 施策情報",
+            "accessed": "2026-05-19",
+            "note": "「新潟フードテックタウン」構想やオイシックス・ラ・大地との包括連携協定など農産物ブランド強化策を継続推進。2026年5月の選挙でも「農業の活性化を通じた経済好循環」を核心政策として訴えている。"
+          }
         },
         {
-          "title": "北陸新幹線延伸・交通インフラの整備",
+          "title": "人口減少対策・移住定住促進（ジェンダーギャップ解消を重点化）",
+          "category": "人口・地方創生",
+          "status": "進行中",
+          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/",
+          "evidence_source": {
+            "title": "新潟県知事室",
+            "accessed": "2026-05-19",
+            "note": "「ジェンダーギャップの解消に重点を置いて取り組む」と表明（2026年）。企業の賃上げ支援・移住促進策を継続するが、新潟県の人口流出は依然として続いている。"
+          }
+        },
+        {
+          "title": "北陸新幹線延伸（金沢〜敦賀開業済、新潟方面ルートは検討継続）",
           "category": "インフラ",
           "status": "進行中",
-          "progress_score": 35,
-          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/"
+          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/",
+          "evidence_source": {
+            "title": "新潟県知事室",
+            "accessed": "2026-05-19",
+            "note": "北陸新幹線の金沢〜敦賀間は2024年3月開業済み。新潟方面へのルート（上越妙高〜新潟）については国・JRとの調整が継続中で、具体的な開業時期は未定。"
+          }
         },
         {
-          "title": "産業振興・スタートアップ支援",
+          "title": "産業振興・スタートアップ支援（フードテック・DX等）",
           "category": "経済・産業",
-          "status": "公約",
-          "progress_score": 25,
-          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/"
+          "status": "進行中",
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/hisho/chiji.html",
+          "evidence_source": {
+            "title": "新潟県知事室 施策情報",
+            "accessed": "2026-05-19",
+            "note": "フードテック実装拠点「新潟フードテックタウン」構想を推進。2026年知事選でも「企業の稼ぐ力を高め賃金を上げる」経済戦略を前面に掲げている。スタートアップ支援の具体的予算規模は未公表。"
+          }
+        },
+        {
+          "title": "行財政改革・財政健全化の推進",
+          "category": "行政運営",
+          "status": "進行中",
+          "evidence_url": "https://www.pref.niigata.lg.jp/site/chiji/",
+          "evidence_source": {
+            "title": "新潟県知事室",
+            "accessed": "2026-05-19",
+            "note": "2期8年の実績として行財政改革を継続推進してきた。2026年知事選の公約でも「行財政改革」を継続課題として掲げている。具体的な削減額・指標の詳細は別途確認が必要。"
+          }
         }
       ]
     }

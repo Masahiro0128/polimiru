@@ -25,7 +25,8 @@
     {"period": "2018", "text": "新潟県知事選挙 出馬（落選）"},
     {"period": "2026-03-31", "text": "新潟県知事選への出馬を表明"},
     {"period": "2026-04-14", "text": "県庁記者会見で公約を正式発表"},
-    {"period": "現在", "text": "新潟県知事選挙2026 立候補中"}
+    {"period": "2026-05-14", "text": "新潟県知事選挙2026 告示日に正式立候補届出"},
+    {"period": "現在", "text": "新潟県知事選挙2026 選挙戦展開中（投開票：2026年5月31日）"}
   ],
   "promise_cycles": [
     {
@@ -34,7 +35,7 @@
       "context": "2026年5月31日 新潟県知事選挙",
       "source": "安中聡 2026年4月14日 県庁記者会見",
       "source_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
-      "reviewed_at": "2026-05-14T00:00:00Z",
+      "reviewed_at": "2026-05-19T00:00:00Z",
       "status": "candidate",
       "score": null,
       "total": 4,
