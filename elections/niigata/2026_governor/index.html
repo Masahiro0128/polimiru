@@ -234,6 +234,53 @@
             opacity: 0.7;
             flex-shrink: 0;
         }
+
+        /* 候補者スコア行 */
+        .cand-score-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+        .cand-score-pre {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: 999px;
+            border: 1.5px solid currentColor;
+            opacity: 0.9;
+        }
+        .cand-score-pre b { font-size: 1.1em; }
+        .cand-score-pre.grade-S { color: #7c3aed; background: rgba(124,58,237,0.07); }
+        .cand-score-pre.grade-A { color: #1d4ed8; background: rgba(29,78,216,0.07); }
+        .cand-score-pre.grade-B { color: #0369a1; background: rgba(3,105,161,0.07); }
+        .cand-score-pre.grade-C { color: #b45309; background: rgba(180,83,9,0.07); }
+        .cand-score-pre.grade-D { color: #b91c1c; background: rgba(185,28,28,0.07); }
+        .cand-score-pre.grade-none { color: #888; background: rgba(0,0,0,0.04); }
+        .cand-score-post {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: 999px;
+            border: 1.5px solid rgba(22,101,52,0.35);
+            color: #166534;
+            background: rgba(22,101,52,0.06);
+        }
+        .cand-score-post b { font-size: 1.1em; }
+        .cand-score-label-text {
+            font-size: 0.68em;
+            color: #999;
+            margin-top: 4px;
+            text-align: center;
+        }
     </style>
 </head>
 <body data-election-id="30">
@@ -326,27 +373,21 @@
         }
 
         function renderScoreSummary(c) {
-            if (c.role === 'incumbent') {
-                const v = c.score_incumbent;
-                return `
-                    <div class="cand-card-score-area">
-                        <span class="cand-card-score-label">現職評価（公約追跡スコア）</span>
-                        ${v !== null && v !== undefined
-                            ? `<span class="cand-card-score-value">${v}<small style="font-size:0.55em;color:#999"> /100</small></span>`
-                            : '<span class="cand-card-score-pending">集計中</span>'}
-                    </div>`;
+            const grade = c.pre_grade;
+            const gradeClass = grade ? `grade-${grade}` : 'grade-none';
+            const gradeLabel = grade || '－';
+
+            const preBadge = `<span class="cand-score-pre ${gradeClass}" title="選挙前評価（公約具体性・実績・財源など5軸）">選前 <b>${gradeLabel}</b></span>`;
+
+            let postBadge = '';
+            if (c.role === 'incumbent' && c.score_incumbent !== null && c.score_incumbent !== undefined) {
+                postBadge = `<span class="cand-score-post" title="当選後公約追跡スコア（2022年公約）">公約 <b>${c.score_incumbent}</b><small>/100</small></span>`;
             }
-            if (c.role === 'challenger') {
-                const v = c.score_challenger;
-                return `
-                    <div class="cand-card-score-area">
-                        <span class="cand-card-score-label">新人評価（公約具体性）</span>
-                        ${v !== null && v !== undefined
-                            ? `<span class="cand-card-score-value type-challenger">${v}<small style="font-size:0.55em;color:#999"> /100</small></span>`
-                            : '<span class="cand-card-score-pending">公約情報収集中</span>'}
-                    </div>`;
-            }
-            return `<div class="cand-card-score-area"><span class="cand-card-score-pending">情報準備中</span></div>`;
+
+            return `
+                <div class="cand-card-score-area">
+                    <div class="cand-score-row">${preBadge}${postBadge}</div>
+                </div>`;
         }
 
         function renderCard(c) {
