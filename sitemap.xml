@@ -1,32 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- トップ・固定ページ -->
   <url>
     <loc>https://polimiru.jp/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://polimiru.jp/about.html</loc>
-  </url>
-
-  <url>
-    <loc>https://polimiru.jp/method.html</loc>
-  </url>
-
   <url>
     <loc>https://polimiru.jp/news.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://polimiru.jp/elections/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/method.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://polimiru.jp/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
-
   <url>
     <loc>https://polimiru.jp/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://polimiru.jp/content-policy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- 選挙ページ（現在進行中・直近） -->
+  <url>
+    <loc>https://polimiru.jp/elections/niigata/2026_governor/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/elections/niigata/2026_governor/statements.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/elections/nagasaki/2026_governor/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/elections/osaka/2027_governor/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/elections/osaka/2027_mayor/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/elections/osaka/2023_governor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- 新潟県知事選2026 候補者（優先度高） -->
+  <url>
+    <loc>https://polimiru.jp/politicians/hanakado-hideyo/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/tsuchida-ryugo/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/annaka-satoshi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 政治家プロフィールページ -->
+  <url>
+    <loc>https://polimiru.jp/politicians/yoshimura-hirofumi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/koike-yuriko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/ishiba-shigeru/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/saito-motohiko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/koizumi-shinjiro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/tamaki-yuichiro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/takaichi-sanae/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/noda-yoshihiko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kamiya-souhei/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/akama-jiro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/akazawa-ryosei/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/arimura-haruko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/aso-taro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/fujita-fumitake/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/funayama-yasue/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/furukawa-motohisa/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/furuya-keiji/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/hamaguchi-makoto/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/hiraguchi-hiroshi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/hyakuta-naoki/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/ishihara-hirotaka/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kamikawa-yoko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kaneko-yasushi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kihara-minoru/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kikawada-hitoshi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kishida-fumio/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kiuchi-minoru/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kobayashi-takayuki/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kono-taro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/makino-takao/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/matsumoto-hisashi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/matsumoto-yohei/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/motegi-toshimitsu/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/oishi-akiko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/onoda-kimi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/saito-tetsuo/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/shimba-kazuya/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/suzuki-norikazu/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/suzuki-shunichi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/ueno-kenichiro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/yamamoto-taro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
