@@ -403,7 +403,8 @@
             const gradeClass = grade ? `grade-${grade}` : 'grade-none';
             const gradeLabel = grade || '－';
 
-            const preBadge = `<span class="cand-score-pre ${gradeClass}" title="選挙前評価（公約具体性・実績・財源など5軸）">選前 <b>${gradeLabel}</b></span>`;
+            const preTotal = c.pre_total !== null && c.pre_total !== undefined ? c.pre_total : null;
+            const preBadge = `<span class="cand-score-pre ${gradeClass}" title="選挙前評価（公約具体性・実績・財源など5軸）">選前 <b>${gradeLabel}</b>${preTotal !== null ? `<small> ${preTotal}/25</small>` : ''}</span>`;
 
             let postBadge = '';
             if (c.role === 'incumbent' && c.score_incumbent !== null && c.score_incumbent !== undefined) {
