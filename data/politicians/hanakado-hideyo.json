@@ -35,7 +35,7 @@
       "context": "2022年6月 新潟県知事選挙（2期目）",
       "source": "花角英世 2022年知事選公約",
       "source_url": "https://www.pref.niigata.lg.jp/site/chiji/",
-      "reviewed_at": "2026-05-19T00:00:00Z",
+      "reviewed_at": "2026-05-22T00:00:00Z",
       "status": "tracking",
       "score": 69,
       "total": 8,
@@ -130,6 +130,89 @@
             "title": "新潟県知事室",
             "accessed": "2026-05-19",
             "note": "2期8年の実績として行財政改革を継続推進してきた。2026年知事選の公約でも「行財政改革」を継続課題として掲げている。具体的な削減額・指標の詳細は別途確認が必要。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hanakado_2026",
+      "title": "2026年新潟県知事選公約（3選）",
+      "context": "2026年5月31日 新潟県知事選挙",
+      "source": "花角英世 2026年知事選 選挙公約・会見（NST・新潟日報・UX新潟テレビ21）",
+      "source_url": "https://www.pref.niigata.lg.jp/site/chiji/",
+      "reviewed_at": "2026-05-22T00:00:00Z",
+      "status": "candidate",
+      "score": null,
+      "total": 6,
+      "done": 0,
+      "started": 0,
+      "pending": 6,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "活力ある新潟：起業・創業支援と県内企業の稼ぐ力強化、外資・企業誘致",
+          "category": "経済・産業",
+          "status": "公約",
+          "evidence_url": "https://news.nsttv.com/post/20260512-00000001-nst/",
+          "evidence_source": {
+            "title": "NST新潟テレビ 2026-05-12 立候補予定者政策発表",
+            "accessed": "2026-05-22",
+            "note": "「人や企業・投資を呼び込む活力ある新潟」「若い世代が新潟で働きたい・生活したい・挑戦したいと思ってもらえるよう起業・創業・稼ぐ力の強化に注力する」と表明。"
+          }
+        },
+        {
+          "title": "子育てに優しい社会：保育・医療・教育の充実（継続・強化）",
+          "category": "子育て・教育",
+          "status": "公約",
+          "evidence_url": "https://news.nsttv.com/post/20260512-00000001-nst/",
+          "evidence_source": {
+            "title": "NST新潟テレビ 2026-05-12 立候補予定者政策発表",
+            "accessed": "2026-05-22",
+            "note": "2026年選挙公約の4本柱の第1として「子育てに優しい社会」を掲げる。具体的な数値目標は未発表で、2期の継続・強化として位置づけられている。"
+          }
+        },
+        {
+          "title": "病院の再編・医師看護師の確保と地域医療の質向上",
+          "category": "医療・福祉",
+          "status": "公約",
+          "evidence_url": "https://news.nsttv.com/post/20260512-00000001-nst/",
+          "evidence_source": {
+            "title": "NST新潟テレビ 2026-05-12 立候補予定者政策発表",
+            "accessed": "2026-05-22",
+            "note": "「持続可能な医療を目指し病院の再編・医師看護師の確保を進めながら、質の高い医療と県民の健康づくりを推進する」と表明。具体的な再編先・人数目標は未発表。"
+          }
+        },
+        {
+          "title": "柏崎刈羽7号機の再稼働推進（国・東電に安全対策の徹底を要求しつつ）",
+          "category": "エネルギー・原発",
+          "status": "公約",
+          "evidence_url": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOCC141310U6A510C2000000&scode=9501&ba=1",
+          "evidence_source": {
+            "title": "日本経済新聞 2026-05-14 新潟県知事選告示",
+            "accessed": "2026-05-22",
+            "note": "6号機（2026年4月営業運転再開済）に続き7号機についても「国や東京電力に安全対策の徹底を強く求める」としつつ容認路線を継続。「将来的には原発に依存しない社会の実現を目指す」とも言明。"
+          }
+        },
+        {
+          "title": "持続可能で暮らしやすい地域社会の実現（人口減少対策・ジェンダーギャップ解消継続）",
+          "category": "人口・地方創生",
+          "status": "公約",
+          "evidence_url": "https://news.nsttv.com/post/20260512-00000001-nst/",
+          "evidence_source": {
+            "title": "NST新潟テレビ 2026-05-12 立候補予定者政策発表",
+            "accessed": "2026-05-22",
+            "note": "2026年選挙公約の4本柱の第2「持続可能で暮らしやすい地域社会」として、移住定住・ジェンダーギャップ解消・賃上げ支援を継続推進する方針を示す。"
+          }
+        },
+        {
+          "title": "堅実な行財政運営（財政健全化の継続・無駄な歳出削減）",
+          "category": "行財政",
+          "status": "公約",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/808534",
+          "evidence_source": {
+            "title": "新潟日報 2026-05 花角氏・公約の継続性を重視",
+            "accessed": "2026-05-22",
+            "note": "2026年公約の4本柱の第4「堅実な行財政運営」として2期8年の行財政改革路線の継続を明示。「今までやってきたことの延長と思っている」と述べている。"
           }
         }
       ]

@@ -33,13 +33,13 @@
       "context": "2026年5月31日 新潟県知事選挙",
       "source": "土田竜吾 公式サイト 2026年5月12日公約発表",
       "source_url": "https://tsuchidaryugo.jp/",
-      "reviewed_at": "2026-05-19T00:00:00Z",
+      "reviewed_at": "2026-05-22T00:00:00Z",
       "status": "candidate",
       "score": null,
-      "total": 10,
+      "total": 12,
       "done": 0,
       "started": 0,
-      "pending": 10,
+      "pending": 12,
       "unknown": 0,
       "highlights": [
         {
@@ -148,8 +148,30 @@
           "evidence_url": "https://tsuchidaryugo.jp/",
           "evidence_source": {
             "title": "土田竜吾 公式サイト 政策",
-            "accessed": "2026-05-14",
-            "note": ""
+            "accessed": "2026-05-22",
+            "note": "中小企業の価格転嫁を県として支援し、持続的な賃上げにつなげる方針。具体的な支援手法・予算規模は未発表。"
+          }
+        },
+        {
+          "title": "全天候型子どもの遊び場の整備支援（屋内遊び場を県内各地に）",
+          "category": "子育て",
+          "status": "公約",
+          "evidence_url": "https://tsuchidaryugo.jp/",
+          "evidence_source": {
+            "title": "土田竜吾 公式サイト 政策",
+            "accessed": "2026-05-22",
+            "note": "子育て世代が雨天でも遊ばせられる全天候型の屋内遊び場を県内各地に整備・支援する公約。施設数・財源は未発表。"
+          }
+        },
+        {
+          "title": "東京電力へのチェック体制強化・原発避難道路の整備（安全対策）",
+          "category": "エネルギー・防災",
+          "status": "公約",
+          "evidence_url": "https://news.nsttv.com/post/20260512-00000001-nst/",
+          "evidence_source": {
+            "title": "NST新潟テレビ 2026-05-12 立候補予定者政策発表",
+            "accessed": "2026-05-22",
+            "note": "すでに再稼働した6号機の停止には踏み込まないが、東京電力へのチェック体制強化・避難道路整備など安全対策の充実を訴えている。「花角知事の約束違反（住民投票でなく議会信任を選択）」を批判した。"
           }
         }
       ]

@@ -35,13 +35,13 @@
       "context": "2026年5月31日 新潟県知事選挙",
       "source": "安中聡 2026年4月14日 県庁記者会見",
       "source_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
-      "reviewed_at": "2026-05-19T00:00:00Z",
+      "reviewed_at": "2026-05-22T00:00:00Z",
       "status": "candidate",
       "score": null,
-      "total": 4,
+      "total": 6,
       "done": 0,
       "started": 0,
-      "pending": 4,
+      "pending": 6,
       "unknown": 0,
       "highlights": [
         {
@@ -84,8 +84,30 @@
           "evidence_url": "https://news.nsttv.com/post/20260513-00000001-nst/",
           "evidence_source": {
             "title": "NST新潟テレビ 2026-05-13 立候補予定者政策発表",
-            "accessed": "2026-05-14",
-            "note": "「原発反対・原発廃止をしっかりと掲げる」とともに、県補助金の施策評価により利権構造からの脱却を目指すと表明。"
+            "accessed": "2026-05-22",
+            "note": "「原発反対・原発廃止をしっかりと掲げる」とともに、県補助金の施策評価により利権構造からの脱却を目指すと表明。評価の具体的な手法・対象補助金の詳細は未発表。"
+          }
+        },
+        {
+          "title": "有事・安全保障リスクの観点からの廃炉主張（原発は攻撃目標になりうる）",
+          "category": "エネルギー・安全保障",
+          "status": "公約",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/814187",
+          "evidence_source": {
+            "title": "新潟日報 2026-04-14 安中氏公約発表",
+            "accessed": "2026-05-22",
+            "note": "「戦争など有事になれば原発は攻撃目標になる。放射能汚染が起きれば穀倉地帯の本県はダメージを受ける」と述べており、安全保障・食の安全の観点から廃炉を主張する独自の論拠を掲げている。"
+          }
+        },
+        {
+          "title": "草の根民主主義の実践：SNS・動画配信を活用した県民との直接対話",
+          "category": "行政改革・民主主義",
+          "status": "公約",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOCC315KT0R30C26A3000000/",
+          "evidence_source": {
+            "title": "日本経済新聞 2026-03-31 安中氏出馬表明",
+            "accessed": "2026-05-22",
+            "note": "推薦政党なし・公式ウェブサイトなしのSNS・動画中心の草の根選挙を展開。「県民の声をちゃんと聞かなくてはだめ」という姿勢から、知事就任後もSNSを活用した直接対話型の県政を訴えている。"
           }
         }
       ]
