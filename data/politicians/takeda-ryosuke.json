@@ -1,0 +1,212 @@
+{
+  "id": "takeda-ryosuke",
+  "name": "武田 良介",
+  "kana": "たけだ りょうすけ",
+  "party": "無所属",
+  "party_role": "元参議院議員",
+  "area": "長野県",
+  "current_status": "長野県知事選挙2026候補",
+  "photo_url": "https://storage.googleapis.com/studio-design-asset-files/projects/9YWydnBkaM/s-896x1341_v-fms_webp_8f2fd783-7c07-42d6-9fcd-80e5bdc2d5ed.webp",
+  "photo_credit": "武田良介公式サイト",
+  "photo_object_fit": "cover",
+  "photo_object_position": "center 24%",
+  "official_url": "https://takeda-ryosuke.studio.site/",
+  "accent": {
+    "from": "#b34f62",
+    "to": "#713244",
+    "color": "#a33d56"
+  },
+  "summary": "長野県中野市出身。飯山北高校、信州大学教育学部卒業。日本民主青年同盟長野県委員長などを経て、2016年の参議院比例代表選挙で初当選し1期務めた。現在は日本共産党中央委員・同長野県委員会副委員長。2026年8月9日投票の長野県知事選挙には無所属で立候補した。",
+  "stats": [
+    {
+      "label": "肩書",
+      "value": "元参議院議員"
+    },
+    {
+      "label": "国政",
+      "value": "参議院1期"
+    },
+    {
+      "label": "生年",
+      "value": "1979年8月"
+    },
+    {
+      "label": "出身",
+      "value": "中野市"
+    },
+    {
+      "label": "学歴",
+      "value": "信州大学教育学部"
+    }
+  ],
+  "career": [
+    {
+      "period": "1979-08",
+      "text": "長野県中野市生まれ"
+    },
+    {
+      "period": "高校",
+      "text": "長野県飯山北高等学校卒業"
+    },
+    {
+      "period": "大学",
+      "text": "信州大学教育学部卒業"
+    },
+    {
+      "period": "その後",
+      "text": "日本民主青年同盟長野県委員長などを務める"
+    },
+    {
+      "period": "2016-07",
+      "text": "参議院比例代表選挙で初当選（日本共産党）"
+    },
+    {
+      "period": "現在",
+      "text": "日本共産党中央委員・同長野県委員会副委員長"
+    },
+    {
+      "period": "2026-07",
+      "text": "長野県知事選挙に無所属で立候補"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "長野県知事選挙2026",
+      "role": "新人候補",
+      "result": "2026年8月9日投票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "takeda_2026",
+      "title": "2026年知事選公約",
+      "context": "2026年8月 長野県知事選挙",
+      "source": "武田良介公式サイト・長野県選挙公報",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "reviewed_at": "2026-07-30T00:00:00Z",
+      "status": "candidate",
+      "score": null,
+      "total": 7,
+      "done": 0,
+      "started": 0,
+      "pending": 7,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "水道基本料金を2027年3月までゼロにする",
+          "category": "物価高対策",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        },
+        {
+          "title": "中小企業への直接支援で最低賃金時給1700円以上を目指す",
+          "category": "雇用・賃金",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        },
+        {
+          "title": "子ども医療費の500円負担廃止と中学校までの給食費無償化",
+          "category": "子育て・教育",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        },
+        {
+          "title": "国保・介護保険料の負担軽減、地域医療と公共交通の維持",
+          "category": "医療・福祉・交通",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        },
+        {
+          "title": "家族農業・中山間地農業を支え、価格・所得保障を国に求める",
+          "category": "農業",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        },
+        {
+          "title": "再生可能エネルギーを広げ、リニア中央新幹線はJRに一時中止を求める",
+          "category": "環境・大型事業",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        },
+        {
+          "title": "排外主義に反対し、多文化共生・ジェンダー平等を進める",
+          "category": "人権・共生",
+          "status": "公約",
+          "evidence_url": "https://takeda-ryosuke.studio.site/"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-07-30",
+      "election_key": "nagano_2026_governor",
+      "total": 19,
+      "max": 25,
+      "grade": "A",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 4,
+          "note": "水道基本料金の期限、最低賃金1700円、子ども医療費500円負担廃止など、確認可能な目標が複数ある。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 4,
+          "note": "参議院議員時代からの暮らし、農業、平和・人権重視の主張と一貫している。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 5,
+          "note": "参議院議員を1期務め、国政での議会活動経験が確認できる。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 2,
+          "note": "県が直接進められる施策もあるが、最低賃金、医療保険料、JRのリニア計画など国・市町村・民間の権限に依存する公約が多く、恒久財源の説明も限定的。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 4,
+          "note": "選挙公報と公式サイトで政策・経歴を公開し、財源の手掛かりも示す。一方、施策別の所要額や工程表は確認できない。"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "暮らし",
+      "title": "物価高への直接支援",
+      "desc": "水道基本料金ゼロ、医療費負担・給食費の軽減、中小企業支援を通じた賃上げを前面に出す。"
+    },
+    {
+      "context": "地域",
+      "title": "医療・交通・農業を維持",
+      "desc": "中山間地域の医療、公共交通、家族農業を県政の基盤として支える考え。"
+    },
+    {
+      "context": "評価ポイント",
+      "title": "数値目標と権限の距離",
+      "desc": "目標は比較的明確。国や市町村、JRの決定に左右される公約について実行手順と財源が検証点になる。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "武田良介 公式サイト",
+      "url": "https://takeda-ryosuke.studio.site/"
+    },
+    {
+      "label": "長野県 選挙公報",
+      "url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/documents/kouhou_chiji.pdf"
+    },
+    {
+      "label": "参議院 歴代議員一覧",
+      "url": "https://www.sangiin.go.jp/japanese/san60/giin/20250911rekidai_giin.pdf"
+    }
+  ]
+}

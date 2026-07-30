@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "election": "長野県知事選挙 2026",
+    "election_day": "2026年8月9日（日）投票",
+    "announcement_day": "2026年7月23日（木）告示",
+    "status": "active",
+    "source_note": "長野県選挙管理委員会（https://www.pref.nagano.lg.jp/senkan/chiji2026/chiji.html）",
+    "last_updated": "2026-07-30T00:00:00Z"
+  },
+  "candidates": [
+    {
+      "id": "abe",
+      "person_id": "abe-shuichi",
+      "profile_url": "../../../politicians/abe-shuichi/index.html",
+      "name": "阿部 守一",
+      "kana": "あべ しゅいち",
+      "party": "無所属",
+      "role": "incumbent",
+      "age": 65,
+      "image": "https://shuichi-abe.jp/_src/67507913/2026top.jpg?v=1784967742101",
+      "official_url": "https://shuichi-abe.jp/policy.html",
+      "image_position": "82% center",
+      "image_size": "cover",
+      "result": null,
+      "score_incumbent": 67,
+      "score_status": "県の2024年8月自己評価（121項目）をPolimiru基準で換算",
+      "pre_grade": "A",
+      "pre_total": 22,
+      "confirmed": true,
+      "note": "現職4期。2026年の政策集では「信州への投資」として7分野・21プロジェクト・88施策を掲げる。教育改革、AI・スタートアップと賃上げ、地域医療・公共交通、農林業、2030年度温室効果ガス60%削減などが柱。2022年公約は、県の2024年8月時点の自己評価121項目（◎25、○31、△49、□13、×3）をPolimiru基準で換算し67/100とした。"
+    },
+    {
+      "id": "takeda",
+      "person_id": "takeda-ryosuke",
+      "profile_url": "../../../politicians/takeda-ryosuke/index.html",
+      "name": "武田 良介",
+      "kana": "たけだ りょうすけ",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 46,
+      "image": "https://storage.googleapis.com/studio-design-asset-files/projects/9YWydnBkaM/s-896x1341_v-fms_webp_8f2fd783-7c07-42d6-9fcd-80e5bdc2d5ed.webp",
+      "official_url": "https://takeda-ryosuke.studio.site/",
+      "image_position": "center 24%",
+      "image_size": "cover",
+      "result": null,
+      "score_challenger": null,
+      "pre_grade": "A",
+      "pre_total": 19,
+      "confirmed": true,
+      "note": "元参議院議員。水道基本料金を2027年3月までゼロ、中学校までの給食費無償化、子ども医療費の500円負担廃止、中小企業への直接支援による最低賃金1700円以上などを掲げる。地域医療・公共交通・中山間地農業の維持、再生可能エネルギーの拡大、JRへのリニア中央新幹線一時中止要請も訴える。"
+    }
+  ]
+}

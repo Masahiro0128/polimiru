@@ -5,7 +5,7 @@
   "party": "無所属（立憲民主党・連合新潟 推薦）",
   "party_role": "新潟県議会議員",
   "area": "新潟県",
-  "current_status": "新潟県知事選挙2026 立候補中",
+  "current_status": "新潟県議会議員",
   "photo_url": "https://tsuchidaryugo.jp/assets/images/profile-casual.webp",
   "photo_credit": "土田竜吾公式サイト",
   "official_url": "https://tsuchidaryugo.jp/",
@@ -24,7 +24,8 @@
     {"period": "2026-04-19", "text": "総合選対本部発足"},
     {"period": "2026-05-12", "text": "選挙公約を正式発表"},
     {"period": "2026-05-14", "text": "新潟県知事選挙2026 告示日に正式立候補届出。第一声「新潟のことは新潟県民が決める。この当たり前を取り戻す」"},
-    {"period": "現在", "text": "新潟県知事選挙2026 選挙戦展開中（投開票：2026年5月31日）"}
+    {"period": "2026-05-31", "text": "新潟県知事選で230,721票を得たが落選"},
+    {"period": "現在", "text": "新潟県議会議員"}
   ],
   "promise_cycles": [
     {

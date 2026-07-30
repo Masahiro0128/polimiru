@@ -86,7 +86,7 @@ def generate(data):
     text(draw, (52, 30), name_clean, "bold", 66, WHITE)
 
     # 党名 + 役職
-    party_role = f'{data.get("party", "")}　{data.get("party_role") or data.get("current_status", "")}'
+    party_role = f'{data.get("party", "")} / {data.get("party_role") or data.get("current_status", "")}'
     if len(party_role) > 28:
         party_role = party_role[:28] + "…"
     text(draw, (54, 110), party_role, "regular", 22, (230, 238, 255))
@@ -103,8 +103,9 @@ def generate(data):
 
     # サイクルデータを取得
     cycles = data.get("promise_cycles") or []
-    if cycles:
-        cycle   = cycles[0]
+    scored_cycles = [cycle for cycle in cycles if cycle.get("score") is not None]
+    if scored_cycles:
+        cycle   = scored_cycles[0]
         title   = cycle.get("title", "")
         score   = cycle.get("score", 0) or 0
         total   = cycle.get("total", 0) or 0
@@ -160,8 +161,19 @@ def generate(data):
             text(draw, (cx, cy), f"確認日  {reviewed}", "regular", 17, MUTED)
 
     else:
-        # スコアデータなし
-        text(draw, (cx, cy + 40), "公約トラッキング準備中", "regular", 28, MUTED)
+        # 現職実績スコアがない候補者は、0/100 と誤表示せず選前評価を表示
+        pre = (data.get("candidate_score") or {}).get("pre") or {}
+        grade = pre.get("grade")
+        pre_total = pre.get("total")
+        if grade and pre_total is not None:
+            text(draw, (cx, cy), "候補者の選前評価", "regular", 22, MUTED)
+            cy += 52
+            text(draw, (cx, cy), str(grade), "bold", 112, "#1d4ed8")
+            text(draw, (cx + 108, cy + 58), f"{pre_total}/25", "semibold", 34, NAVY)
+            cy += 136
+            text(draw, (cx, cy), "公約の具体性 / 一貫性 / 実績 / 実現可能性 / 情報公開を評価", "regular", 21, MUTED)
+        else:
+            text(draw, (cx, cy + 40), "公約トラッキング準備中", "regular", 28, MUTED)
 
     # ── フッター ──
     FOOTER_H = 44

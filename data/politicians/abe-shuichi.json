@@ -1,0 +1,294 @@
+{
+  "id": "abe-shuichi",
+  "name": "阿部 守一",
+  "kana": "あべ しゅいち",
+  "party": "無所属",
+  "party_role": "長野県知事・全国知事会会長",
+  "area": "長野県",
+  "current_status": "長野県知事（4期目）・長野県知事選挙2026候補",
+  "photo_url": "https://shuichi-abe.jp/_src/67507913/2026top.jpg?v=1784967742101",
+  "photo_credit": "阿部守一公式サイト",
+  "photo_object_fit": "cover",
+  "photo_object_position": "82% center",
+  "official_url": "https://shuichi-abe.jp/",
+  "accent": {
+    "from": "#1e5f4a",
+    "to": "#103d31",
+    "color": "#187154"
+  },
+  "summary": "東京都出身。東京大学法学部卒業後、自治省に入省。長野県副知事、横浜市副市長、内閣府行政刷新会議事務局次長などを経て、2010年に長野県知事へ初当選。現在4期目で、2025年から全国知事会会長を務める。2026年8月9日投票の知事選に5選を目指して立候補した。",
+  "stats": [
+    {
+      "label": "役職",
+      "value": "長野県知事"
+    },
+    {
+      "label": "当選",
+      "value": "4期"
+    },
+    {
+      "label": "生年月日",
+      "value": "1960年12月21日"
+    },
+    {
+      "label": "学歴",
+      "value": "東京大学法学部"
+    },
+    {
+      "label": "現職",
+      "value": "全国知事会会長"
+    }
+  ],
+  "career": [
+    {
+      "period": "1960-12",
+      "text": "東京都生まれ"
+    },
+    {
+      "period": "1984",
+      "text": "東京大学法学部卒業、自治省入省"
+    },
+    {
+      "period": "2001",
+      "text": "長野県副知事"
+    },
+    {
+      "period": "2004",
+      "text": "総務省過疎対策室長"
+    },
+    {
+      "period": "2007",
+      "text": "横浜市副市長"
+    },
+    {
+      "period": "2009",
+      "text": "内閣府行政刷新会議事務局次長"
+    },
+    {
+      "period": "2010-08",
+      "text": "長野県知事に初当選"
+    },
+    {
+      "period": "2014-2022",
+      "text": "2014年、2018年、2022年の知事選で再選"
+    },
+    {
+      "period": "2025-09",
+      "text": "全国知事会会長に就任"
+    },
+    {
+      "period": "2026-07",
+      "text": "長野県知事選挙に5選を目指して立候補"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "長野県知事選挙2026",
+      "role": "現職候補",
+      "result": "2026年8月9日投票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "abe_2022",
+      "title": "2022年知事選公約 追跡",
+      "context": "2022年8月 長野県知事選挙（4期目）",
+      "source": "長野県「県民の皆様とのお約束の進捗状況」",
+      "source_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf",
+      "reviewed_at": "2024-08-30T00:00:00Z",
+      "status": "tracking",
+      "score": 67,
+      "total": 121,
+      "done": 56,
+      "started": 49,
+      "pending": 16,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "物価高騰の影響を受ける生活者・事業者への支援",
+          "category": "暮らし・経済",
+          "status": "実現",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf",
+          "evidence_source": {
+            "title": "県民の皆様とのお約束の進捗状況",
+            "accessed": "2026-07-30",
+            "note": "県の2024年8月時点の自己評価で、121項目のうち◎25、○31、△49、□13、×3。Polimiruでは◎・○を実現、△を進行中、□・×を未着手等として集計した。"
+          }
+        },
+        {
+          "title": "新型コロナ対策と医療提供体制の確保",
+          "category": "医療・危機管理",
+          "status": "実現",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+        },
+        {
+          "title": "流域治水・県土の強靱化と防災対策",
+          "category": "防災",
+          "status": "進行中",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+        },
+        {
+          "title": "2050ゼロカーボンに向けた再生可能エネルギーの普及",
+          "category": "環境・エネルギー",
+          "status": "進行中",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+        },
+        {
+          "title": "地域公共交通の維持・再構築",
+          "category": "交通",
+          "status": "進行中",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+        },
+        {
+          "title": "パートナーシップ届出制度の創設",
+          "category": "人権・共生",
+          "status": "実現",
+          "evidence_url": "https://www.pref.nagano.lg.jp/jinken-danjo/kurashi/jinkendanjo/jinken/partnership.html"
+        },
+        {
+          "title": "子どもの多様な学びの場と教育環境の充実",
+          "category": "教育",
+          "status": "進行中",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+        },
+        {
+          "title": "若者の海外留学支援など、未着手項目の具体化",
+          "category": "若者支援",
+          "status": "公約",
+          "evidence_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+        }
+      ]
+    },
+    {
+      "id": "abe_2026",
+      "title": "2026年知事選公約「信州への投資」",
+      "context": "2026年8月 長野県知事選挙",
+      "source": "阿部守一 2026政策集",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "reviewed_at": "2026-07-30T00:00:00Z",
+      "status": "candidate",
+      "score": null,
+      "total": 7,
+      "done": 0,
+      "started": 0,
+      "pending": 7,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "学びへの投資：一人ひとりに合った学び、不登校支援、高校改革",
+          "category": "教育",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        },
+        {
+          "title": "豊かさへの投資：AI・スタートアップ支援、売上10億円・100億円企業の創出、賃上げ",
+          "category": "経済・産業",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        },
+        {
+          "title": "共生への投資：子育て、女性・若者、誰もが働ける地域づくり",
+          "category": "子育て・共生",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        },
+        {
+          "title": "安心への投資：防災・医療・地域公共交通の再構築",
+          "category": "防災・医療・交通",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        },
+        {
+          "title": "地域への投資：農林業の稼ぐ力と信州ガストロノミー",
+          "category": "農林業・地域",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        },
+        {
+          "title": "地球への投資：2030年度温室効果ガス60%削減と再生可能エネルギー拡大",
+          "category": "環境・エネルギー",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        },
+        {
+          "title": "信州の魅力への投資：文化・観光・移住の価値向上",
+          "category": "観光・文化",
+          "status": "公約",
+          "evidence_url": "https://shuichi-abe.jp/policy.html"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-07-30",
+      "election_key": "nagano_2026_governor",
+      "total": 22,
+      "max": 25,
+      "grade": "A",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 3,
+          "note": "7分野・21プロジェクト・88施策まで整理され、2030年度の温室効果ガス削減目標など数値もある。一方、財源や期限が明示されない施策も多い。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 5,
+          "note": "教育、地域公共交通、ゼロカーボン、農林業など、4期目の重点政策を拡張する構成で一貫している。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 5,
+          "note": "長野県知事4期、長野県副知事、横浜市副市長などの行政経験があり、現職として政策執行の実績が確認できる。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 4,
+          "note": "県の既存施策と接続しており執行可能性は高いが、88施策全体の費用と優先順位は十分に示されていない。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 5,
+          "note": "政策集を公開し、現行公約についても県が121項目の進捗を段階評価している。"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "現職実績",
+      "title": "2022年公約の進捗",
+      "desc": "県の2024年8月自己評価をPolimiru基準に換算すると67/100。2025年8月には県が「十分・ほぼ」を合わせ約7割と説明した。"
+    },
+    {
+      "context": "2026公約",
+      "title": "7つの「信州への投資」",
+      "desc": "教育、産業、共生、安心、地域、環境、観光文化の7分野に21プロジェクト・88施策を配置。"
+    },
+    {
+      "context": "評価ポイント",
+      "title": "継続性と検証可能性",
+      "desc": "既存県政との接続と進捗公開は強み。大規模な政策群の財源・優先順位は今後の検証対象。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "長野県知事プロフィール",
+      "url": "https://www.pref.nagano.lg.jp/hisho/kensei/gaiyo/chiji/profile/index.html"
+    },
+    {
+      "label": "阿部守一 2026政策",
+      "url": "https://shuichi-abe.jp/policy.html"
+    },
+    {
+      "label": "長野県 公約進捗（2024）",
+      "url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+    }
+  ]
+}

@@ -343,7 +343,7 @@ python tools/candidate_score.py --review "masahiro"     # reviewed_by を設定
       "election_key": "niigata_2026_governor",
       "candidates": [
         {
-          "id": "hanakado-hideyo",
+          "id": "hanazumi-hideyo",
           "pre_total": 20,
           "pre_grade": "A",
           "post_score": 69,

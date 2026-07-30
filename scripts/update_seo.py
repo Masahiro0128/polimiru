@@ -179,6 +179,10 @@ def update_politician_page(id_, jdata, card):
     with open(html_path, encoding="utf-8") as f:
         content = f.read()
 
+    # 旧URLなどのリダイレクトページは、人物ページ用HTMLへ展開し直さない
+    if 'http-equiv="refresh"' in content.lower() and not jdata and not card:
+        return False
+
     head_end = re.search(r'</head>', content)
     if not head_end:
         return False

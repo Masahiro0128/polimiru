@@ -5,7 +5,7 @@
   "party": "無所属",
   "party_role": "元五泉市議・自営業",
   "area": "新潟県",
-  "current_status": "新潟県知事選挙2026 立候補中",
+  "current_status": "元五泉市議・自営業",
   "photo_url": "https://prod-cdn.go2senkyo.com/uploads/seijika/image_file_name/68401/f98466a36a1fc7d2a49576cb8deba77f.png",
   "photo_credit": "選挙ドットコム",
   "photo_object_fit": "contain",
@@ -26,7 +26,8 @@
     {"period": "2026-03-31", "text": "新潟県知事選への出馬を表明"},
     {"period": "2026-04-14", "text": "県庁記者会見で公約を正式発表"},
     {"period": "2026-05-14", "text": "新潟県知事選挙2026 告示日に正式立候補届出"},
-    {"period": "現在", "text": "新潟県知事選挙2026 選挙戦展開中（投開票：2026年5月31日）"}
+    {"period": "2026-05-31", "text": "新潟県知事選で43,089票を得たが落選"},
+    {"period": "現在", "text": "元五泉市議・自営業"}
   ],
   "promise_cycles": [
     {

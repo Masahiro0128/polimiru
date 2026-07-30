@@ -63,14 +63,27 @@ elections:
   - id: niigata_2026_governor
     title: 新潟県知事選挙 2026
     category: local
-    date: "2026年5月31日（日）投開票"
+    date: "2026年5月31日 投開票（終了）"
     prefecture: 新潟県
     badge_type: local
-    list_status: "2026年 注目"
+    list_status: 結果
     list_id: 3
-    list_desc: "柏崎刈羽原発の再稼働判断が最大争点。現職・花角英世と新人2名の三つ巴。<br>5月14日告示、5月31日投開票。"
+    list_desc: "花角英世氏が554,012票で3選。土田竜吾氏は230,721票、安中聡氏は43,089票。<br>投票率は47.40%。"
     list_image: ""
     output_path: elections/niigata/2026_governor/index.html
+    template: custom
+
+  - id: nagano_2026_governor
+    title: 長野県知事選挙 2026
+    category: local
+    date: "2026年8月9日（日）投開票"
+    prefecture: 長野県
+    badge_type: local
+    list_status: "選挙期間中"
+    list_id: 4
+    list_desc: "現職・阿部守一氏と元参議院議員・武田良介氏の一騎打ち。<br>暮らし、教育、地域経済、リニアをめぐる政策を比較。"
+    list_image: ""
+    output_path: elections/nagano/2026_governor/index.html
     template: custom
 
   # ── アーカイブ ────────────────────────────────────────────────────────

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "election_id": "nagano_2026_governor",
+    "election": "長野県知事選挙 2026",
+    "description": "2026年長野県知事選の候補者政策を争点別に比較するためのアーカイブ",
+    "last_updated": "2026-07-30T00:00:00Z",
+    "record_status": "active"
+  },
+  "topics": [
+    {
+      "id": "prices_wages",
+      "label": "物価高・賃金",
+      "description": "物価高への支援、賃上げ、中小企業政策"
+    },
+    {
+      "id": "children_education",
+      "label": "子育て・教育",
+      "description": "子どもの医療費、給食費、学校改革、多様な学び"
+    },
+    {
+      "id": "health_transport",
+      "label": "医療・公共交通",
+      "description": "地域医療、保険料、移動手段の確保"
+    },
+    {
+      "id": "agriculture",
+      "label": "農林業・地域経済",
+      "description": "農林業の所得、担い手、地域産業"
+    },
+    {
+      "id": "climate_energy",
+      "label": "環境・エネルギー",
+      "description": "温室効果ガス削減、再生可能エネルギー"
+    },
+    {
+      "id": "linear",
+      "label": "リニア中央新幹線",
+      "description": "工事・環境影響への対応と計画への姿勢"
+    },
+    {
+      "id": "diversity",
+      "label": "共生・ジェンダー",
+      "description": "女性・若者、多文化共生、人権政策"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "official_site",
+      "label": "公式サイト"
+    },
+    {
+      "id": "bulletin",
+      "label": "選挙公報"
+    },
+    {
+      "id": "prefecture",
+      "label": "長野県資料"
+    }
+  ],
+  "candidate_positions": [
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "prices_wages",
+      "stance_label": "AI・起業支援と企業成長を通じた賃上げ",
+      "summary": "政策集の「豊かさへの投資」で、AI活用、スタートアップ支援、売上10億円・100億円企業の創出、価格転嫁や生産性向上を通じた賃上げを掲げる。個人への一律給付より、産業政策と雇用の質の向上を重視する構成。（出典：阿部守一2026政策集）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "prices_wages",
+      "stance_label": "水道基本料金ゼロと最低賃金1700円以上",
+      "summary": "物価高対策として水道基本料金を2027年3月までゼロにするとし、中小企業への直接支援を組み合わせて最低賃金時給1700円以上を目指す。県予算と国の物価高対策交付金を財源の手掛かりとして示すが、制度全体の所要額は未提示。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "children_education",
+      "stance_label": "一人ひとりに合った学びと県立高校改革",
+      "summary": "「学びへの投資」を第1の柱に置き、個別最適な学び、フリースクールなど多様な学びの場、不登校支援、県立高校改革を進める。教育環境への投資を人口減少下の人材政策として位置付ける。（出典：阿部守一2026政策集）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "children_education",
+      "stance_label": "医療費500円負担廃止・中学校まで給食費無償化",
+      "summary": "子ども医療費の窓口負担500円をなくし、中学校までの学校給食費を無償化すると公約。教室へのエアコン設置やトイレ改修など、学校施設の改善も掲げる。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "health_transport",
+      "stance_label": "地域医療と公共交通を持続可能な仕組みに再構築",
+      "summary": "「安心への投資」で、医療提供体制、防災、地域公共交通を一体的な生活基盤として再構築する。現行県政からの継続策が中心で、地域ごとの具体的な工程は今後の検証対象。（出典：阿部守一2026政策集）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "health_transport",
+      "stance_label": "国保・介護保険料を軽減し地域医療・交通を守る",
+      "summary": "国民健康保険料と介護保険料の負担を軽くし、地域の病院・診療所、バスや鉄道を維持すると訴える。県が関与できる支援と、市町村・国・事業者の判断が必要な部分が混在する。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "agriculture",
+      "stance_label": "農林業の稼ぐ力と信州ガストロノミーを強化",
+      "summary": "農林業の生産性・付加価値を高め、観光や食文化と結び付ける「信州ガストロノミー」を推進。地域資源を使った所得向上と担い手確保を目指す。（出典：阿部守一2026政策集）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "agriculture",
+      "stance_label": "家族農業・中山間地農業への価格・所得保障",
+      "summary": "家族農業と中山間地農業を支える直接支援を強め、農産物価格と農家所得の保障を国に求める。県独自支援と国制度の拡充を組み合わせる立場。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "climate_energy",
+      "stance_label": "2030年度に温室効果ガス60%削減",
+      "summary": "2010年度比で2030年度の温室効果ガス排出量60%削減を掲げ、再生可能エネルギー導入と省エネを拡大する。数値目標が示された一方、部門別の実行工程は継続検証が必要。（出典：阿部守一2026政策集）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "climate_energy",
+      "stance_label": "原発に頼らず再生可能エネルギーを拡大",
+      "summary": "原発依存からの転換と、地域の自然環境に配慮した再生可能エネルギーの普及を掲げる。防災・気候対策も合わせて強化する立場。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "linear",
+      "stance_label": "県民生活と環境への影響を確認しながら対応",
+      "summary": "2026政策集ではリニアを単独の主要公約として前面には出さず、交通・地域・環境政策の枠組みで県民生活や工事影響への対応を進める。JRへの工事中止要求は掲げていない。（出典：阿部守一2026政策集）",
+      "status": "watch",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "linear",
+      "stance_label": "JR東海に工事の一時中止を求める",
+      "summary": "水資源、残土、工事の安全などへの懸念から、リニア中央新幹線工事の一時中止をJR東海に求める。知事が事業を直接中止できるわけではなく、事業者への要請と県の許認可・監督が手段となる。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "abe",
+      "source_url": "https://shuichi-abe.jp/policy.html",
+      "topic_id": "diversity",
+      "stance_label": "女性・若者・誰もが働き暮らせる共生社会",
+      "summary": "子育て、女性・若者の活躍、障害の有無や国籍などにかかわらず働ける地域を「共生への投資」として掲げる。これまでのパートナーシップ届出制度などを土台にする。（出典：阿部守一2026政策集）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    },
+    {
+      "candidate_id": "takeda",
+      "source_url": "https://takeda-ryosuke.studio.site/",
+      "topic_id": "diversity",
+      "stance_label": "排外主義に反対し、多文化共生・ジェンダー平等",
+      "summary": "外国人排斥や差別に反対し、多文化共生、ジェンダー平等、女性管理職の登用を進めると公約。平和と人権を県政の基本姿勢に置く。（出典：武田良介公式サイト・選挙公報）",
+      "status": "supported",
+      "evidence_ids": [],
+      "updated_at": "2026-07-30T00:00:00Z"
+    }
+  ],
+  "statements": []
+}

@@ -3,24 +3,29 @@
     "election": "新潟県知事選挙 2026",
     "election_day": "2026年5月31日（日）投開票",
     "announcement_day": "2026年5月14日（木）告示",
-    "status": "announced",
-    "source_note": "新潟県選挙管理委員会（https://www.pref.niigata.lg.jp/site/senkyo/r8chijisenkijitsu.html）",
-    "last_updated": "2026-05-14T00:00:00Z"
+    "status": "finished",
+    "source_note": "新潟県選挙管理委員会（https://www.pref.niigata.lg.jp/site/senkyo/r8chijisen-kekka.html）",
+    "last_updated": "2026-07-30T00:00:00Z",
+    "turnout": 47.40
   },
   "candidates": [
     {
-      "id": "hanakado",
-      "person_id": "hanakado-hideyo",
-      "profile_url": "../../../politicians/hanakado-hideyo/index.html",
+      "id": "hanazumi",
+      "person_id": "hanazumi-hideyo",
+      "profile_url": "../../../politicians/hanazumi-hideyo/index.html",
       "name": "花角 英世",
-      "kana": "はなかど ひでよ",
+      "kana": "はなずみ ひでよ",
       "party": "無所属（自民・公明・国民民主・維新 支持）",
       "role": "incumbent",
       "age": 68,
       "image": "https://www.pref.niigata.lg.jp/uploaded/image/142302.jpg",
       "image_position": "center 5%",
       "image_size": "cover",
-      "result": null,
+      "result": {
+        "elected": true,
+        "votes": 554012,
+        "rank": 1
+      },
       "score_incumbent": 69,
       "score_status": "2022年公約の追跡スコア（2026-05-19時点）",
       "pre_grade": "A",
@@ -40,7 +45,11 @@
       "image": "https://tsuchidaryugo.jp/assets/images/hero-main.webp",
       "image_position": "30% 5%",
       "image_size": "cover",
-      "result": null,
+      "result": {
+        "elected": false,
+        "votes": 230721,
+        "rank": 2
+      },
       "score_challenger": null,
       "pre_grade": "B",
       "pre_total": 18,
@@ -59,7 +68,11 @@
       "image": "https://prod-cdn.go2senkyo.com/uploads/seijika/image_file_name/68401/f98466a36a1fc7d2a49576cb8deba77f.png",
       "image_position": "center 5%",
       "image_size": "80%",
-      "result": null,
+      "result": {
+        "elected": false,
+        "votes": 43089,
+        "rank": 3
+      },
       "score_challenger": null,
       "pre_grade": "C",
       "pre_total": 12,

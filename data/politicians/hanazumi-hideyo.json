@@ -1,19 +1,19 @@
 {
-  "id": "hanakado-hideyo",
+  "id": "hanazumi-hideyo",
   "name": "花角 英世",
-  "kana": "はなかど ひでよ",
-  "party": "無所属（自民・公明推薦）",
+  "kana": "はなずみ ひでよ",
+  "party": "無所属",
   "party_role": "新潟県知事",
   "area": "新潟県",
-  "current_status": "新潟県知事（2期目）",
+  "current_status": "新潟県知事（3期目）",
   "photo_url": "https://www.hanazumi-h.jp/contents/home/img/profile_img.png",
   "photo_credit": "はなずみ英世後援会",
   "official_url": "https://www.pref.niigata.lg.jp/site/chiji/",
   "accent": {"from": "#1a6e3c", "to": "#0b3d20", "color": "#166534"},
-  "summary": "新潟県佐渡市（旧佐渡郡金井町）出身。東京大学法学部卒業後、運輸省（現国土交通省）入省。新潟市副市長・国土交通省北陸地方整備局長などを経て、2018年新潟県知事初当選。柏崎刈羽原発の再稼働判断・人口減少対策・農業振興を主な政策課題とし、2022年2期目当選。",
+  "summary": "新潟県佐渡市（旧佐渡郡金井町）出身。東京大学法学部卒業後、運輸省（現国土交通省）入省。新潟市副市長・国土交通省北陸地方整備局長などを経て、2018年新潟県知事初当選。2026年5月31日の知事選で554,012票を得て3選した。",
   "stats": [
     {"label": "役職", "value": "新潟県知事"},
-    {"label": "当選", "value": "2期"},
+    {"label": "当選", "value": "3期"},
     {"label": "出身", "value": "佐渡市（旧金井町）"},
     {"label": "学歴", "value": "東京大学法学部"},
     {"label": "元職", "value": "国土交通省（旧運輸省）"}
@@ -26,11 +26,12 @@
     {"period": "2015-2017", "text": "内閣府地方創生推進室次長"},
     {"period": "2018-06", "text": "新潟県知事選に出馬・初当選（自民・公明推薦）"},
     {"period": "2022-06", "text": "新潟県知事選2期目当選"},
-    {"period": "現在", "text": "新潟県知事（2期目）"}
+    {"period": "2026-05", "text": "新潟県知事選で554,012票を得て3選"},
+    {"period": "現在", "text": "新潟県知事（3期目）"}
   ],
   "promise_cycles": [
     {
-      "id": "hanakado_2022",
+      "id": "hanazumi_2022",
       "title": "2022年新潟県知事選公約 追跡",
       "context": "2022年6月 新潟県知事選挙（2期目）",
       "source": "花角英世 2022年知事選公約",
@@ -135,13 +136,13 @@
       ]
     },
     {
-      "id": "hanakado_2026",
+      "id": "hanazumi_2026",
       "title": "2026年新潟県知事選公約（3選）",
       "context": "2026年5月31日 新潟県知事選挙",
       "source": "花角英世 2026年知事選 選挙公約・会見（NST・新潟日報・UX新潟テレビ21）",
       "source_url": "https://www.pref.niigata.lg.jp/site/chiji/",
       "reviewed_at": "2026-05-22T00:00:00Z",
-      "status": "candidate",
+      "status": "tracking",
       "score": null,
       "total": 6,
       "done": 0,
