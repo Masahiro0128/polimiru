@@ -1,0 +1,228 @@
+{
+  "id": "sueyoshi-masahiro",
+  "name": "末吉 正弘",
+  "kana": "すえよし まさひろ",
+  "party": "無所属",
+  "party_role": "医療法人会長",
+  "area": "沖縄県",
+  "current_status": "沖縄県知事選挙2026に出馬（落選）",
+  "photo_url": null,
+  "official_url": null,
+  "accent": {
+    "from": "#4d7354",
+    "to": "#29452e",
+    "color": "#426a49"
+  },
+  "summary": "伊是名村出身。沖縄大学卒業。医療法人会長として福祉事業に携わり、2026年9月の沖縄県知事選挙に無所属で立候補した。選挙公報では高齢者・こどもの貧困と生活困窮者への直接支援を中心に掲げる。 同選挙で2,270票を得て落選。",
+  "stats": [
+    {
+      "label": "肩書",
+      "value": "医療法人会長"
+    },
+    {
+      "label": "生年月日",
+      "value": "1952年11月11日"
+    },
+    {
+      "label": "出身",
+      "value": "伊是名村"
+    },
+    {
+      "label": "学歴",
+      "value": "沖縄大学"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "1952-11",
+      "text": "伊是名村生まれ"
+    },
+    {
+      "period": "大学",
+      "text": "沖縄大学卒業"
+    },
+    {
+      "period": "現在",
+      "text": "医療法人会長として福祉事業に携わる"
+    },
+    {
+      "period": "2026-08",
+      "text": "沖縄県知事選挙に立候補"
+    },
+    {
+      "period": "2026-09",
+      "text": "沖縄県知事選挙で落選（2,270票）"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "沖縄県知事選挙2026",
+      "role": "新人候補",
+      "result": "落選・2,270票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "sueyoshi_2026",
+      "title": "2026年知事選 基本政策",
+      "context": "2026年9月 沖縄県知事選挙",
+      "source": "沖縄県選挙公報",
+      "source_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+      "reviewed_at": "2026-09-05T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 7,
+      "done": 0,
+      "started": 0,
+      "pending": 7,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "高齢者の貧困をなくす",
+          "category": "高齢者福祉",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+          "evidence_source": {
+            "title": "令和8年沖縄県知事選挙 選挙公報",
+            "accessed": "2026-09-05",
+            "note": "候補者提出原稿の『基本政策』7項目を整理。"
+          }
+        },
+        {
+          "title": "こどもの貧困をなくす",
+          "category": "こども",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "生活が厳しい人を支援する",
+          "category": "生活支援",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "個人・中小企業を支え、倒産を防ぐ",
+          "category": "中小企業",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "ものづくりと地元産業を支え、雇用と所得を安定",
+          "category": "産業・雇用",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "離島・過疎地域の農漁業と地元産業を支援",
+          "category": "離島・農漁業",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "県民の生活を大切にする助け合いの県政",
+          "category": "県政運営",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-09-05",
+      "election_key": "okinawa_2026_governor",
+      "total": 13,
+      "max": 25,
+      "grade": "C",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 1,
+          "note": "重点対象は明確だが、数値、期限、制度設計は選挙公報で確認できない。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 5,
+          "note": "選挙公報、琉球新報、OTVの各回答で、高齢者・子どもの貧困、生活困窮者、地場企業支援を優先する主張が一貫している。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 3,
+          "note": "医療法人・福祉事業の運営経験は確認できるが、公職経験は確認できない。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 2,
+          "note": "県の福祉・産業施策として扱える分野だが、対象、費用、財源、実施手順が示されていない。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 2,
+          "note": "公式政策サイトは確認できない。選挙公報と第一声動画、琉球新報・OTVアンケートはあるが、琉球新報38問では6問の選択肢が無回答。"
+        }
+      ],
+      "summary": "福祉・医療法人の運営経験と困窮者支援の優先順位は明確。ただし、数値目標、対象要件、所要額、工程がほぼ示されず、実施後の検証基準を置きにくい。",
+      "scored_by": "polimiru-rubric-v1",
+      "reviewed_by": null,
+      "review_sources": [
+        {
+          "label": "沖縄県選挙公報",
+          "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "label": "琉球新報 38問アンケート",
+          "url": "https://ryukyushimpo.jp/special/qahome-okinawa-governor-election2026.html"
+        },
+        {
+          "label": "OTV 政策アンケート",
+          "url": "https://kenchiji2026.otv.jp/prof_sueyoshi.html"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "福祉",
+      "title": "貧困・生活困窮への支援",
+      "desc": "高齢者、こども、生活が厳しい人を取り残さないことを最優先に置く。"
+    },
+    {
+      "context": "産業",
+      "title": "中小企業と地元産業",
+      "desc": "倒産防止、雇用安定、所得向上、離島の農漁業支援を掲げる。"
+    },
+    {
+      "context": "検証点",
+      "title": "制度設計と財源",
+      "desc": "支援対象、給付や事業の規模、必要予算と工程を確認する必要がある。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "沖縄県選管 候補者情報・選挙公報",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+    }
+  ],
+  "last_updated": "2026-10-11"
+}

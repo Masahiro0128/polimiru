@@ -1,0 +1,140 @@
+{
+  "id": "kanayama-jun",
+  "name": "金山 屯",
+  "kana": "かなやま じゅん",
+  "party": "無所属",
+  "party_role": "自然塾 白河乗馬学校代表",
+  "current_status": "福島県知事選挙2026に立候補",
+  "area": "福島県",
+  "photo_url": null,
+  "official_url": "https://www.youtube.com/@Jun.Kanayama",
+  "accent": {
+    "from": "#185b54",
+    "to": "#103e3a",
+    "color": "#185b54"
+  },
+  "summary": "自然塾 白河乗馬学校代表。2026年福島県知事選挙に無所属で立候補。選挙公報では「八紘一宇」を掲げ、非核三原則の厳守、女性天皇を可能とする皇室典範改正、郡山を首都とする構想を示している。",
+  "stats": [
+    {
+      "label": "職業（届出時）",
+      "value": "自然塾 白河乗馬学校代表"
+    },
+    {
+      "label": "年齢（届出時）",
+      "value": "86歳"
+    },
+    {
+      "label": "住所（市町村）",
+      "value": "福島県白河市"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "2026-10-08",
+      "text": "福島県知事選挙に立候補を届け出",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "evidence_source": {
+        "title": "福島県選管「立候補届出状況（確定）」",
+        "accessed": "2026-10-12",
+        "note": "2026年10月8日の届出氏名・党派・年齢・職業を確認。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "福島県知事選挙2026",
+      "role": "候補",
+      "result": "2026年10月25日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "kanayama-jun_2026",
+      "title": "2026年福島県知事選 公約の要点",
+      "context": "選挙公報の要約／実績評価は未実施",
+      "source": "福島県選管「第23回福島県知事選挙 選挙公報」",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 3,
+      "done": 0,
+      "started": 0,
+      "pending": 3,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "非核三原則の徹底厳守",
+          "category": "平和・安全保障",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "女性天皇を可能とする皇室典範改正",
+          "category": "皇室制度",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "「首都・郡山」構想の実現",
+          "category": "地域構想",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "県選管 選挙公報",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "accessed": "2026-10-12",
+      "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+    },
+    {
+      "label": "県選管 届出一覧（確定）",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "accessed": "2026-10-12",
+      "note": "氏名・ふりがな・党派・職業・届出時年齢・住所の市町村を確認。"
+    },
+    {
+      "label": "県選管 選挙情報",
+      "url": "https://www.pref.fukushima.lg.jp/sec/62010a/23-chiji.html",
+      "accessed": "2026-10-12",
+      "note": "告示日10月8日・投開票日10月25日を確認。"
+    },
+    {
+      "label": "県選管届出の本人ウェブサイト等",
+      "url": "https://www.youtube.com/@Jun.Kanayama",
+      "accessed": "2026-10-12",
+      "note": "県選管の届出一覧に掲載された本人ウェブサイト等。プロフィール・公約の要約は選挙公報と届出一覧による。"
+    }
+  ],
+  "last_updated": "2026-10-12",
+  "focus_cards": [
+    {
+      "context": "公約を読む観点",
+      "title": "国の制度と県の役割",
+      "desc": "皇室典範の改正や首都構想など、県政以外の制度も含む提案を掲げている。実施主体と県知事として取り組める範囲が確認点となる。"
+    }
+  ]
+}

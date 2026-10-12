@@ -1,11 +1,31 @@
 {
   "meta": {
     "election": "長野県知事選挙 2026",
-    "election_day": "2026年8月9日（日）投票",
+    "election_day": "2026年8月9日（日）投開票（終了）",
     "announcement_day": "2026年7月23日（木）告示",
-    "status": "active",
-    "source_note": "長野県選挙管理委員会（https://www.pref.nagano.lg.jp/senkan/chiji2026/chiji.html）",
-    "last_updated": "2026-07-30T00:00:00Z"
+    "status": "finished",
+    "source_note": "長野県選挙管理委員会の確定開票結果・都道府県選挙管理委員会連合会",
+    "last_updated": "2026-10-11T00:00:00Z",
+    "early_voting_period": "2026年7月24日（金）〜8月8日（土）",
+    "official_election_url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/top.html",
+    "official_candidate_url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/chiji.html",
+    "official_results_url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/toukaihyoukekka.html",
+    "official_results_note": "2026年8月9日22時52分開票完了（開票率100%）",
+    "turnout": 40.53,
+    "result_sources": [
+      {
+        "title": "長野県選挙管理委員会「長野県知事選挙 開票結果」",
+        "url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/documents/05kaikekka.pdf",
+        "accessed": "2026-10-11",
+        "note": "2026年8月9日22時52分完了、開票率100%。阿部守一氏573,742票、武田良介氏92,366票。"
+      },
+      {
+        "title": "都道府県選挙管理委員会連合会「都道府県の選挙」",
+        "url": "https://todofuken-senkan.jp/pref/",
+        "accessed": "2026-10-11",
+        "note": "長野県の2026年8月9日知事選。投票率40.53%、阿部守一氏の当選、当選回数5回。"
+      }
+    ]
   },
   "candidates": [
     {
@@ -21,13 +41,17 @@
       "official_url": "https://shuichi-abe.jp/policy.html",
       "image_position": "82% center",
       "image_size": "cover",
-      "result": null,
+      "result": {
+        "elected": true,
+        "votes": 573742,
+        "rank": 1
+      },
       "score_incumbent": 67,
       "score_status": "県の2024年8月自己評価（121項目）をPolimiru基準で換算",
       "pre_grade": "A",
       "pre_total": 22,
       "confirmed": true,
-      "note": "現職4期。2026年の政策集では「信州への投資」として7分野・21プロジェクト・88施策を掲げる。教育改革、AI・スタートアップと賃上げ、地域医療・公共交通、農林業、2030年度温室効果ガス60%削減などが柱。2022年公約は、県の2024年8月時点の自己評価121項目（◎25、○31、△49、□13、×3）をPolimiru基準で換算し67/100とした。"
+      "note": "選挙時は現職4期。2026年8月9日の選挙で573,742票を得て5選。2026年の政策集では「信州への投資」として7分野・21プロジェクト・88施策を掲げる。教育改革、AI・スタートアップと賃上げ、地域医療・公共交通、農林業、2030年度温室効果ガス60%削減などが柱。2022年公約は、県の2024年8月時点の自己評価121項目（◎25、○31、△49、□13、×3）をPolimiru基準で換算し67/100とした。"
     },
     {
       "id": "takeda",
@@ -42,12 +66,16 @@
       "official_url": "https://takeda-ryosuke.studio.site/",
       "image_position": "center 24%",
       "image_size": "cover",
-      "result": null,
+      "result": {
+        "elected": false,
+        "votes": 92366,
+        "rank": 2
+      },
       "score_challenger": null,
       "pre_grade": "A",
       "pre_total": 19,
       "confirmed": true,
-      "note": "元参議院議員。水道基本料金を2027年3月までゼロ、中学校までの給食費無償化、子ども医療費の500円負担廃止、中小企業への直接支援による最低賃金1700円以上などを掲げる。地域医療・公共交通・中山間地農業の維持、再生可能エネルギーの拡大、JRへのリニア中央新幹線一時中止要請も訴える。"
+      "note": "2026年8月9日の選挙で92,366票を得て落選。元参議院議員。水道基本料金を2027年3月までゼロ、中学校までの給食費無償化、子ども医療費の500円負担廃止、中小企業への直接支援による最低賃金1700円以上などを掲げる。地域医療・公共交通・中山間地農業の維持、再生可能エネルギーの拡大、JRへのリニア中央新幹線一時中止要請も訴える。"
     }
   ]
 }

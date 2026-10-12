@@ -1,0 +1,228 @@
+{
+  "id": "kaneshima-shun",
+  "name": "兼島 俊",
+  "kana": "かねしま しゅん",
+  "party": "無所属",
+  "party_role": "IT会社代表",
+  "area": "沖縄県",
+  "current_status": "沖縄県知事選挙2026に出馬（落選）",
+  "photo_url": null,
+  "official_url": "https://www.instagram.com/kaneshima_okinawa",
+  "accent": {
+    "from": "#3f5f76",
+    "to": "#243846",
+    "color": "#35566d"
+  },
+  "summary": "沖縄市出身。IT会社代表。2018年の沖縄県知事選挙に立候補した経歴を持ち、2026年9月の県知事選に無所属で立候補した。選挙公報ではデジタル技術を使った政策・議員・公約の可視化を中心に掲げる。 同選挙で4,657票を得て落選。",
+  "stats": [
+    {
+      "label": "肩書",
+      "value": "IT会社代表"
+    },
+    {
+      "label": "生年月日",
+      "value": "1978年1月28日"
+    },
+    {
+      "label": "出身",
+      "value": "沖縄市"
+    },
+    {
+      "label": "学歴",
+      "value": "陽明高校"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "1978-01",
+      "text": "沖縄市生まれ"
+    },
+    {
+      "period": "高校",
+      "text": "沖縄県立陽明高等学校卒業"
+    },
+    {
+      "period": "2018",
+      "text": "沖縄県知事選挙に立候補"
+    },
+    {
+      "period": "現在",
+      "text": "IT会社代表"
+    },
+    {
+      "period": "2026-08",
+      "text": "沖縄県知事選挙に立候補"
+    },
+    {
+      "period": "2026-09",
+      "text": "沖縄県知事選挙で落選（4,657票）"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "沖縄県知事選挙2026",
+      "role": "新人候補",
+      "result": "落選・4,657票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "kaneshima_2026",
+      "title": "2026年知事選公約『沖縄の政治をOSアップデート』",
+      "context": "2026年9月 沖縄県知事選挙",
+      "source": "沖縄県選挙公報",
+      "source_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+      "reviewed_at": "2026-09-05T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 5,
+      "done": 0,
+      "started": 0,
+      "pending": 5,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "41市町村の地域課題ランキングを公開",
+          "category": "地域課題",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+          "evidence_source": {
+            "title": "令和8年沖縄県知事選挙 選挙公報",
+            "accessed": "2026-09-05",
+            "note": "候補者提出原稿に記載された5項目を整理。"
+          }
+        },
+        {
+          "title": "議会活動・発言・実績を一枚で示す議員カルテを作成",
+          "category": "議会情報",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "公約進捗を0〜100%で見える化",
+          "category": "公約検証",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "41市町村の投票率ランキングを公開",
+          "category": "投票参加",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "投票日前に比較できる選挙前チェックシートを作成",
+          "category": "選挙情報",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-09-05",
+      "election_key": "okinawa_2026_governor",
+      "total": 16,
+      "max": 25,
+      "grade": "B",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 3,
+          "note": "『地声』は任期中に県内41市町村へ導入する工程、本人確認、紙対応まで示す。所得・子育てなど他分野は数値目標や期限が少ない。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 5,
+          "note": "2018年知事選の『目安箱システム』から2026年の『地声』まで、県民の声をデジタルで県政に反映する軸が継続し、今回の公報・アンケート間でも一致する。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 2,
+          "note": "IT企業経営と2018年知事選への立候補歴は確認できるが、公職での政策執行経験は確認できない。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 3,
+          "note": "『地声』は既存台帳・広報予算の活用、県庁内試行、条例・予算案、41市町村展開という手順がある。一方、他分野の財源説明は限定的。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 3,
+          "note": "独立した政策サイトは確認できないが、公式Instagram、選挙公報、第一声動画に加え、琉球新報38問とOTV政策アンケートへ回答している。"
+        }
+      ],
+      "summary": "県民参加型システム『地声』は実施手順まで具体的で、2018年からの問題意識も一貫する。他の県政分野では数値・期限・財源の説明が薄く、検証可能性に差がある。",
+      "scored_by": "polimiru-rubric-v1",
+      "reviewed_by": null,
+      "review_sources": [
+        {
+          "label": "沖縄県選挙公報",
+          "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "label": "琉球新報 38問アンケート",
+          "url": "https://ryukyushimpo.jp/special/qahome-okinawa-governor-election2026.html"
+        },
+        {
+          "label": "OTV 政策アンケート",
+          "url": "https://kenchiji2026.otv.jp/prof_kaneshima.html"
+        },
+        {
+          "label": "2018年マニフェスト",
+          "url": "https://area34.smp.ne.jp/area/card/14892/6Kttgk/M?S=qjlar0pfo0k"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "デジタル",
+      "title": "政治情報の可視化",
+      "desc": "地域課題、議員活動、公約進捗、投票率をオンラインで見えるようにする構想。"
+    },
+    {
+      "context": "投票",
+      "title": "選挙前の比較支援",
+      "desc": "候補者を横並びで比較できるチェックシートの提供を掲げる。"
+    },
+    {
+      "context": "検証点",
+      "title": "県政全般の政策",
+      "desc": "経済、福祉、基地、交通など他分野の方針と実施体制の確認が必要。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "沖縄県選管 候補者情報・選挙公報",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html"
+    },
+    {
+      "label": "県選管掲載の公式Instagram",
+      "url": "https://www.instagram.com/kaneshima_okinawa"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+    }
+  ],
+  "last_updated": "2026-10-11"
+}

@@ -1,0 +1,277 @@
+{
+  "id": "koja-genta",
+  "name": "古謝 玄太",
+  "kana": "こじゃ げんた",
+  "party": "無所属",
+  "party_role": "沖縄県知事",
+  "area": "沖縄県",
+  "current_status": "沖縄県知事（1期目）",
+  "photo_url": "https://kojagenta.com/wp-content/themes/kojagenta_2607/assets/img/front-page/profile/profile-image.webp?ver=1787392477",
+  "photo_credit": "古謝玄太公式サイト",
+  "photo_object_fit": "cover",
+  "photo_object_position": "center 18%",
+  "official_url": "https://kojagenta.com/",
+  "accent": {
+    "from": "#ef6c2f",
+    "to": "#b63d20",
+    "color": "#d65328"
+  },
+  "summary": "那覇市出身。東京大学薬学部卒業後、総務省、内閣官房、長崎県、復興庁、民間企業を経て、2022年12月から2026年2月まで那覇市副市長を務めた。2022年参議院沖縄選挙区に立候補。2026年9月の沖縄県知事選挙に無所属で立候補した。 同選挙で423,124票を得て初当選。",
+  "stats": [
+    {
+      "label": "肩書",
+      "value": "沖縄県知事"
+    },
+    {
+      "label": "生年月日",
+      "value": "1983年10月23日"
+    },
+    {
+      "label": "出身",
+      "value": "那覇市"
+    },
+    {
+      "label": "学歴",
+      "value": "東京大学薬学部"
+    },
+    {
+      "label": "推薦",
+      "value": "自民・維新・国民・参政・日本保守・公明県本"
+    },
+    {
+      "label": "知事当選",
+      "value": "1回"
+    }
+  ],
+  "career": [
+    {
+      "period": "1983-10",
+      "text": "那覇市生まれ"
+    },
+    {
+      "period": "2006",
+      "text": "東京大学薬学部卒業"
+    },
+    {
+      "period": "2008-04",
+      "text": "総務省入省"
+    },
+    {
+      "period": "2013",
+      "text": "内閣官房副長官補付"
+    },
+    {
+      "period": "2014-2018",
+      "text": "長崎県で国際課長、財政課長などを歴任"
+    },
+    {
+      "period": "2019",
+      "text": "復興庁参事官補佐"
+    },
+    {
+      "period": "2020",
+      "text": "NTTデータ経営研究所へ転職"
+    },
+    {
+      "period": "2022",
+      "text": "参議院沖縄選挙区に立候補"
+    },
+    {
+      "period": "2022-2026",
+      "text": "那覇市副市長"
+    },
+    {
+      "period": "2026-08",
+      "text": "沖縄県知事選挙に立候補"
+    },
+    {
+      "period": "2026-09",
+      "text": "沖縄県知事選挙で初当選（423,124票）"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "沖縄県知事選挙2026",
+      "role": "新人候補",
+      "result": "当選（初当選）・423,124票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "koja_2026",
+      "title": "2026年知事選公約『沖縄を、前に。』",
+      "context": "2026年9月 沖縄県知事選挙",
+      "source": "古謝玄太公式サイト・沖縄県選挙公報",
+      "source_url": "https://kojagenta.com/",
+      "reviewed_at": "2026-09-05T00:00:00+09:00",
+      "status": "tracking",
+      "score": null,
+      "total": 6,
+      "done": 0,
+      "started": 0,
+      "pending": 6,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "県民所得・手取りの倍増を目指す",
+          "category": "所得・経済",
+          "status": "公約",
+          "evidence_url": "https://kojagenta.com/",
+          "evidence_source": {
+            "title": "古謝玄太 公式政策",
+            "accessed": "2026-09-05",
+            "note": "『3つの主要政策』として県民所得倍増を掲載。達成時期や算定方法は継続確認が必要。"
+          }
+        },
+        {
+          "title": "中小企業のDX・AI導入と新5K経済を推進",
+          "category": "産業",
+          "status": "公約",
+          "evidence_url": "https://kojagenta.com/"
+        },
+        {
+          "title": "子育て支援予算を倍増し、保育・教育・給食の無償化を加速",
+          "category": "子育て・教育",
+          "status": "公約",
+          "evidence_url": "https://kojagenta.com/"
+        },
+        {
+          "title": "観光消費を倍増し、空港機能と海外航空路線を強化",
+          "category": "観光",
+          "status": "公約",
+          "evidence_url": "https://kojagenta.com/"
+        },
+        {
+          "title": "交通ネットワークと離島・過疎地域振興を進める",
+          "category": "交通・地域",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "県・市町村・経済界・中央政府の対話と連携を強化",
+          "category": "県政運営",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-09-05",
+      "election_key": "okinawa_2026_governor",
+      "total": 21,
+      "max": 25,
+      "grade": "A",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 4,
+          "note": "県民所得を231.5万円から10年で500万円、観光消費額を約1兆円から2兆円、こども未来部予算を任期4年で1000億円規模とする数値目標がある。一方、分野によっては期限・成果指標がない。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 5,
+          "note": "公式政策、選挙公報、琉球新報38問、OTVアンケートで、所得向上・子育て支援と辺野古移設容認の核心的な立場が一致している。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 4,
+          "note": "国・県・市の行政実務と那覇市副市長の経験が確認できる。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 3,
+          "note": "交付金活用、既存事業の組み換え、税収増を財源として示すが、所得500万円など大型目標の年度別工程・所要額・効果試算は未提示。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 5,
+          "note": "詳細な公式政策、経歴、動画を公開し、琉球新報38問とOTV政策アンケートにも全項目回答している。"
+        }
+      ],
+      "summary": "数値目標と行政経験があり、後から検証しやすい公約が多い。大幅な所得・観光目標について、年度別工程と費用対効果の開示が今後の確認点。",
+      "scored_by": "polimiru-rubric-v1",
+      "reviewed_by": null,
+      "review_sources": [
+        {
+          "label": "沖縄県選挙公報",
+          "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "label": "公式政策",
+          "url": "https://kojagenta.com/"
+        },
+        {
+          "label": "琉球新報 38問アンケート",
+          "url": "https://ryukyushimpo.jp/special/qahome-okinawa-governor-election2026.html"
+        },
+        {
+          "label": "OTV 政策アンケート",
+          "url": "https://kenchiji2026.otv.jp/prof_koja.html"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "経済",
+      "title": "3つの倍増",
+      "desc": "県民所得、子育て支援予算、観光消費を倍増する目標を掲げる。"
+    },
+    {
+      "context": "行政",
+      "title": "国・県・市の経験",
+      "desc": "総務省、長崎県、那覇市副市長などの行政経験を実行力の根拠とする。"
+    },
+    {
+      "context": "検証点",
+      "title": "期限・財源・算定基準",
+      "desc": "倍増目標の基準年、期限、財源と途中指標を確認する必要がある。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "沖縄県選管 候補者情報・選挙公報",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html"
+    },
+    {
+      "label": "古謝玄太 公式サイト",
+      "url": "https://kojagenta.com/"
+    },
+    {
+      "label": "古謝玄太 公式プロフィール",
+      "url": "https://kojagenta.com/profile/"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+    },
+    {
+      "label": "沖縄県「知事のプロフィール」",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/kencho/1001519/1001520.html",
+      "accessed": "2026-10-11",
+      "note": "古謝玄太氏が2026年9月に沖縄県知事に初当選。東京大学薬学部卒業は2006年、総務省入省は2008年4月。"
+    },
+    {
+      "label": "沖縄県「2026年9月30日 古謝知事就任挨拶」",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/kencho/1001519/1001555/1001556/1041582/index.html",
+      "accessed": "2026-10-11",
+      "note": "古謝玄太氏の就任記者会見。現職知事であることを確認。"
+    }
+  ],
+  "last_updated": "2026-10-11"
+}

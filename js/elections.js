@@ -3,6 +3,30 @@
 // 選挙を追加・変更するには data/elections.yaml を編集してください。
 const elections = [
     {
+        "id": 6,
+        "title": "福島県知事選挙 2026",
+        "category": "local",
+        "date": "2026年10月25日 投開票",
+        "prefecture": "福島県",
+        "desc": "10月8日告示、10月25日投開票。届出済み7候補の公約を選挙公報から整理。<br>期日前投票は10月9日〜24日。",
+        "image": "",
+        "url": "elections/fukushima/2026_governor/index.html",
+        "badgeType": "local",
+        "status": "選挙期間中"
+    },
+    {
+        "id": 7,
+        "title": "愛媛県知事選挙 2026",
+        "category": "local",
+        "date": "2026年11月15日 投開票予定",
+        "prefecture": "愛媛県",
+        "desc": "10月29日告示、11月15日投開票予定。出馬表明した3名の人物情報と確認済みの政策を整理。<br>届出候補者・選挙公報は告示後に確認。",
+        "image": "",
+        "url": "elections/ehime/2026_governor/index.html",
+        "badgeType": "local",
+        "status": "告示前・注目"
+    },
+    {
         "id": 20,
         "title": "大阪府知事選挙 2027",
         "category": "local",
@@ -30,13 +54,13 @@ const elections = [
         "id": 2,
         "title": "長崎県知事選挙 2026",
         "category": "local",
-        "date": "2026年2月 予定",
+        "date": "2026年2月8日 投開票（終了）",
         "prefecture": "長崎県",
-        "desc": "石木ダム問題の行方は？<br>県政の長期的な課題を検証します。",
+        "desc": "平田研氏が287,134票で当選。大石賢吾氏は280,346票、つつい涼介氏は26,390票。<br>投票率は57.27%。",
         "image": "",
         "url": "elections/nagasaki/2026_governor/index.html",
         "badgeType": "local",
-        "status": "予定"
+        "status": "結果"
     },
     {
         "id": 3,
@@ -54,13 +78,25 @@ const elections = [
         "id": 4,
         "title": "長野県知事選挙 2026",
         "category": "local",
-        "date": "2026年8月9日（日）投開票",
+        "date": "2026年8月9日 投開票（終了）",
         "prefecture": "長野県",
-        "desc": "現職・阿部守一氏と元参議院議員・武田良介氏の一騎打ち。<br>暮らし、教育、地域経済、リニアをめぐる政策を比較。",
+        "desc": "阿部守一氏が573,742票で5選。武田良介氏は92,366票。<br>投票率は40.53%。候補者の公約・発言も比較。",
         "image": "",
         "url": "elections/nagano/2026_governor/index.html",
         "badgeType": "local",
-        "status": "選挙期間中"
+        "status": "結果"
+    },
+    {
+        "id": 5,
+        "title": "沖縄県知事選挙 2026",
+        "category": "local",
+        "date": "2026年9月13日 投開票（終了）",
+        "prefecture": "沖縄県",
+        "desc": "古謝玄太氏が423,124票で初当選。玉城デニー氏は276,060票。<br>投票率は61.57%。6候補の結果と公約を掲載。",
+        "image": "",
+        "url": "elections/okinawa/2026_governor/index.html",
+        "badgeType": "local",
+        "status": "結果"
     },
     {
         "id": 10,

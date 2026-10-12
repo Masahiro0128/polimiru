@@ -1,0 +1,253 @@
+{
+  "id": "nakamura-tokihiro",
+  "name": "中村 時広",
+  "kana": "なかむら ときひろ",
+  "party": "無所属",
+  "party_role": "愛媛県知事（4期目）",
+  "current_status": "愛媛県知事選挙2026に立候補予定（出馬表明）",
+  "area": "愛媛県",
+  "photo_url": null,
+  "official_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+  "accent": {
+    "from": "#8a491f",
+    "to": "#51301c",
+    "color": "#8a491f"
+  },
+  "summary": "愛媛県知事。県議、衆議院議員、松山市長を経て、2010年12月から知事を務める。2026年10月8日、無所属で5選を目指す出馬を表明したと報じられた。会見報道では、防災・減災、人口減少対策、地域経済を柱とする政策を掲げている。今回は次期公約の整理までとし、過去の任期の実績評価は未実施。",
+  "stats": [
+    {
+      "label": "生年月日",
+      "value": "1960年1月25日"
+    },
+    {
+      "label": "出身",
+      "value": "愛媛県松山市"
+    },
+    {
+      "label": "学歴",
+      "value": "慶應義塾大学法学部法律学科"
+    },
+    {
+      "label": "現在の役職",
+      "value": "愛媛県知事（4期目）"
+    }
+  ],
+  "career": [
+    {
+      "period": "1982-04",
+      "text": "三菱商事株式会社に入社",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "1987-04",
+      "text": "愛媛県議会議員",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "1993-07",
+      "text": "衆議院議員",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "1999-05",
+      "text": "松山市長（連続3期）",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2010-12",
+      "text": "愛媛県知事1期目",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2014-12",
+      "text": "愛媛県知事2期目",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2018-12",
+      "text": "愛媛県知事3期目",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2022-12",
+      "text": "愛媛県知事4期目",
+      "evidence_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2026-10-08",
+      "text": "愛媛県知事選への出馬表明（報道）",
+      "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+      "evidence_source": {
+        "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+        "accessed": "2026-10-12",
+        "note": "出馬表明の日付。告示日の立候補届出を意味しない。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "愛媛県知事選挙2026",
+      "role": "現職・立候補予定",
+      "result": "出馬表明／10月29日告示・11月15日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "nakamura-tokihiro_2026",
+      "title": "2026年知事選 公約の要点（会見報道から）",
+      "context": "告示前の情報／政策原文・選挙公報の確認待ち",
+      "source": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+      "source_url": "https://www.fnn.jp/articles/-/1129122",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 6,
+      "done": 0,
+      "started": 0,
+      "pending": 6,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "災害への備えと被害軽減を政策の柱に据える",
+          "category": "防災・減災",
+          "status": "公約",
+          "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+          "evidence_source": {
+            "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "若者・女性の県外流出を抑えるため、地域と連携して働く環境の魅力を伝える",
+          "category": "人口減少",
+          "status": "公約",
+          "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+          "evidence_source": {
+            "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "官民の協力と若者・女性の視点を取り入れ、地域経済を活性化",
+          "category": "地域経済",
+          "status": "公約",
+          "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+          "evidence_source": {
+            "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "データセンターや半導体関連企業を誘致",
+          "category": "産業",
+          "status": "公約",
+          "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+          "evidence_source": {
+            "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "松山空港と台湾・高雄を結ぶ直行便の実現を目指す",
+          "category": "観光・交流",
+          "status": "公約",
+          "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+          "evidence_source": {
+            "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "松山市のまちづくりと連携し、県民文化会館の国際会議・展示会等の機能を強化",
+          "category": "文化・交流",
+          "status": "公約",
+          "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+          "evidence_source": {
+            "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "確認状況・比較の観点",
+      "title": "次期公約と実績を分けて確認",
+      "desc": "2026年に掲げる政策と、4期目までに実施した事業を分けて確認する。今回、過去の公約の達成度は採点していない。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+      "url": "https://www.fnn.jp/articles/-/1129122",
+      "accessed": "2026-10-12",
+      "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+    },
+    {
+      "label": "愛媛県 知事プロフィール",
+      "url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "accessed": "2026-10-12",
+      "note": "生年月日・出身・学歴・職歴・知事の任期を確認。"
+    },
+    {
+      "label": "愛媛県選管 2026年の選挙日程",
+      "url": "https://www.pref.ehime.jp/page/128211.html",
+      "accessed": "2026-10-12",
+      "note": "告示日2026年10月29日、選挙期日11月15日、任期満了日11月30日。"
+    },
+    {
+      "label": "毎日新聞 出馬状況（TNC配信、2026年10月8日）",
+      "url": "https://news.tnc.ne.jp/politics/940399_1.html",
+      "accessed": "2026-10-12",
+      "note": "3名の出馬表明、無所属での立候補予定を確認。"
+    }
+  ],
+  "last_updated": "2026-10-12"
+}

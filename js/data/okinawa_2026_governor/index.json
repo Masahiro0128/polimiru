@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "election": "沖縄県知事選挙 2026",
+    "election_day": "2026年9月13日（日）投開票（終了）",
+    "announcement_day": "2026年8月27日（木）告示",
+    "status": "finished",
+    "source_note": "沖縄県選挙管理委員会の投票・開票確定結果（2026年9月16日訂正版）",
+    "last_updated": "2026-10-11T00:00:00+09:00",
+    "early_voting_period": "2026年8月28日（金）〜9月12日（土）",
+    "official_election_url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html",
+    "official_candidate_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji_kohoshaichiran.pdf",
+    "official_bulletin_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+    "turnout": 61.57,
+    "official_results_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+    "official_results_note": "開票率100%の最終確定結果（2026年9月16日訂正）",
+    "result_sources": [
+      {
+        "title": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+        "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+        "accessed": "2026-10-11",
+        "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+      },
+      {
+        "title": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+        "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+        "accessed": "2026-10-11",
+        "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "koja",
+      "person_id": "koja-genta",
+      "profile_url": "../../../politicians/koja-genta/index.html",
+      "name": "古謝 玄太",
+      "kana": "こじゃ げんた",
+      "party": "無所属（自民・維新・国民・参政・日本保守・公明県本 推薦）",
+      "role": "challenger",
+      "age": 42,
+      "image": "https://kojagenta.com/wp-content/themes/kojagenta_2607/assets/img/front-page/profile/profile-image.webp?ver=1787392477",
+      "official_url": "https://kojagenta.com/",
+      "image_position": "center 18%",
+      "image_size": "cover",
+      "result": {
+        "elected": true,
+        "votes": 423124,
+        "rank": 1
+      },
+      "score_challenger": null,
+      "pre_grade": "A",
+      "pre_total": 21,
+      "confirmed": true,
+      "note": "2026年9月13日の選挙で423,124票を得て初当選。前那覇市副市長。県民所得、子育て支援予算、観光消費の『3つの倍増』を掲げる。中小企業のDX・AI導入、保育・教育・給食の負担軽減、空港機能強化などを柱とする。"
+    },
+    {
+      "id": "kaneshima",
+      "person_id": "kaneshima-shun",
+      "profile_url": "../../../politicians/kaneshima-shun/index.html",
+      "name": "兼島 俊",
+      "kana": "かねしま しゅん",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 48,
+      "image": null,
+      "official_url": "https://www.instagram.com/kaneshima_okinawa",
+      "result": {
+        "elected": false,
+        "votes": 4657,
+        "rank": 3
+      },
+      "score_challenger": null,
+      "pre_grade": "B",
+      "pre_total": 16,
+      "confirmed": true,
+      "note": "2026年9月13日の選挙で4,657票を得て落選。IT会社代表。『沖縄の政治をOSアップデートする』として、地域課題ランキング、議員カルテ、公約進捗トラッカー、投票率ランキング、選挙前チェックシートの5つを掲げる。"
+    },
+    {
+      "id": "sueyoshi",
+      "person_id": "sueyoshi-masahiro",
+      "profile_url": "../../../politicians/sueyoshi-masahiro/index.html",
+      "name": "末吉 正弘",
+      "kana": "すえよし まさひろ",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 73,
+      "image": null,
+      "official_url": null,
+      "result": {
+        "elected": false,
+        "votes": 2270,
+        "rank": 6
+      },
+      "score_challenger": null,
+      "pre_grade": "C",
+      "pre_total": 13,
+      "confirmed": true,
+      "note": "2026年9月13日の選挙で2,270票を得て落選。医療法人会長。高齢者・こどもの貧困対策、生活困窮者への支援、個人・中小企業の倒産防止、離島・過疎地域の農漁業支援を基本政策に掲げる。"
+    },
+    {
+      "id": "tamaki",
+      "person_id": "tamaki-denny",
+      "profile_url": "../../../politicians/tamaki-denny/index.html",
+      "name": "玉城 デニー",
+      "kana": "たまき でにー",
+      "party": "無所属（立憲・共産・社民・沖縄社大・レキオ・いのち 推薦・支援）",
+      "role": "incumbent",
+      "age": 66,
+      "image": "https://tamakidenny.com/wp2/wp-content/themes/basetemplate/images/top_images_26/denny3.jpg",
+      "official_url": "https://tamakidenny.com/policy2026/",
+      "image_position": "center 20%",
+      "image_size": "cover",
+      "result": {
+        "elected": false,
+        "votes": 276060,
+        "rank": 2
+      },
+      "score_incumbent": 53,
+      "score_status": "主要公約18項目：達成5・進行中9・未着手／実現せず4",
+      "pre_grade": "B",
+      "pre_total": 18,
+      "confirmed": true,
+      "note": "2026年9月13日の選挙で276,060票を得て落選。選挙時は現職2期。今回の政策資料は項目数が多い一方、財源・期限がない提案や国との調整が前提の政策も多い。過去の主要公約18項目は、達成5・進行中9・未着手／実現せず4として53/100。"
+    },
+    {
+      "id": "higa",
+      "person_id": "higa-takashi",
+      "profile_url": "../../../politicians/higa-takashi/index.html",
+      "name": "比嘉 隆",
+      "kana": "ひが たかし",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 49,
+      "image": null,
+      "official_url": null,
+      "result": {
+        "elected": false,
+        "votes": 3542,
+        "rank": 4
+      },
+      "score_challenger": null,
+      "pre_grade": "C",
+      "pre_total": 12,
+      "confirmed": true,
+      "note": "2026年9月13日の選挙で3,542票を得て落選。会社代表。新型コロナワクチン接種の中止、県庁内の後遺症対策部設置、被害を訴える人への月10万円支給と救済制度の創設を掲げる。"
+    },
+    {
+      "id": "yara",
+      "person_id": "yara-chosuke",
+      "profile_url": "../../../politicians/yara-chosuke/index.html",
+      "name": "屋良 朝助",
+      "kana": "やら ちょうすけ",
+      "party": "琉球独立党",
+      "role": "challenger",
+      "age": 74,
+      "image": null,
+      "official_url": "https://www.ntt-i.net/kariyushi/",
+      "result": {
+        "elected": false,
+        "votes": 2467,
+        "rank": 5
+      },
+      "score_challenger": null,
+      "pre_grade": "C",
+      "pre_total": 13,
+      "confirmed": true,
+      "note": "2026年9月13日の選挙で2,467票を得て落選。琉球独立党代表。琉球の自治共和国化、基地の九州以北への移転、日米合同委員会の廃止、辺野古基地を保養施設へ転用する構想などを掲げる。"
+    }
+  ]
+}

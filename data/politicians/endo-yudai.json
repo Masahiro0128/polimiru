@@ -1,0 +1,162 @@
+{
+  "id": "endo-yudai",
+  "name": "遠藤 雄大",
+  "kana": "えんどう ゆうだい",
+  "party": "無所属",
+  "party_role": "会社経営",
+  "current_status": "福島県知事選挙2026に立候補",
+  "area": "福島県",
+  "photo_url": null,
+  "official_url": "https://www.youtube.com/@Yudai.Endo.Fukushima",
+  "accent": {
+    "from": "#185b54",
+    "to": "#103e3a",
+    "color": "#185b54"
+  },
+  "summary": "会社経営。2026年福島県知事選挙に無所属で立候補。選挙公報では農林水産物のブランド力向上、地域の特色をつなぐ産業振興、子育て・教育・仕事の支援などを掲げている。一人ひとりの選択と自立を地域で支える「個立型社会」を示している。",
+  "stats": [
+    {
+      "label": "職業（届出時）",
+      "value": "会社経営"
+    },
+    {
+      "label": "年齢（届出時）",
+      "value": "41歳"
+    },
+    {
+      "label": "住所（市町村）",
+      "value": "福島県いわき市"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "2026-10-08",
+      "text": "福島県知事選挙に立候補を届け出",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "evidence_source": {
+        "title": "福島県選管「立候補届出状況（確定）」",
+        "accessed": "2026-10-12",
+        "note": "2026年10月8日の届出氏名・党派・年齢・職業を確認。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "福島県知事選挙2026",
+      "role": "候補",
+      "result": "2026年10月25日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "endo-yudai_2026",
+      "title": "2026年福島県知事選 公約の要点",
+      "context": "選挙公報の要約／実績評価は未実施",
+      "source": "福島県選管「第23回福島県知事選挙 選挙公報」",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 5,
+      "done": 0,
+      "started": 0,
+      "pending": 5,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "県産農林水産物のブランド力を高め、付加価値を向上",
+          "category": "農林水産業",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "農業の担い手と中山間地域の農業を支援",
+          "category": "農業",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "浜通り・中通り・会津の特色をつなぎ、産業の連携を促進",
+          "category": "産業・地域",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "子育て・教育・仕事を支え、若者が選べる福島をつくる",
+          "category": "子育て・雇用",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "一人ひとりの選択と自立を地域で支える「個立型社会」を目指す",
+          "category": "地域社会",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "県選管 選挙公報",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "accessed": "2026-10-12",
+      "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+    },
+    {
+      "label": "県選管 届出一覧（確定）",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "accessed": "2026-10-12",
+      "note": "氏名・ふりがな・党派・職業・届出時年齢・住所の市町村を確認。"
+    },
+    {
+      "label": "県選管 選挙情報",
+      "url": "https://www.pref.fukushima.lg.jp/sec/62010a/23-chiji.html",
+      "accessed": "2026-10-12",
+      "note": "告示日10月8日・投開票日10月25日を確認。"
+    },
+    {
+      "label": "県選管届出の本人ウェブサイト等",
+      "url": "https://www.youtube.com/@Yudai.Endo.Fukushima",
+      "accessed": "2026-10-12",
+      "note": "県選管の届出一覧に掲載された本人ウェブサイト等。プロフィール・公約の要約は選挙公報と届出一覧による。"
+    }
+  ],
+  "last_updated": "2026-10-12",
+  "focus_cards": [
+    {
+      "context": "公約を読む観点",
+      "title": "地域産業の連携",
+      "desc": "浜通り・中通り・会津の特色をつなぐ産業振興と農林水産業支援を掲げている。具体的な連携事業と担い手支援の内容が確認点となる。"
+    }
+  ]
+}

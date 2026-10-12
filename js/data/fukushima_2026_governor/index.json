@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "election": "福島県知事選挙 2026",
+    "election_day": "2026年10月25日（日）投開票",
+    "announcement_day": "2026年10月8日（木）告示",
+    "status": "active",
+    "early_voting_period": "2026年10月9日（金）〜10月24日（土）",
+    "last_updated": "2026-10-12T00:00:00+09:00",
+    "source_note": "福島県選管の立候補届出一覧（確定）・選挙公報に基づく。候補者は届出受理番号順。",
+    "official_election_url": "https://www.pref.fukushima.lg.jp/sec/62010a/23-chiji.html",
+    "official_candidate_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+    "official_bulletin_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf"
+  },
+  "candidates": [
+    {
+      "id": "kanayama-jun",
+      "person_id": "kanayama-jun",
+      "profile_url": "../../../politicians/kanayama-jun/index.html",
+      "name": "金山 屯",
+      "kana": "かなやま じゅん",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 86,
+      "occupation": "自然塾 白河乗馬学校代表",
+      "image": null,
+      "official_url": "https://www.youtube.com/@Jun.Kanayama",
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "自然塾 白河乗馬学校代表。2026年福島県知事選挙に無所属で立候補。選挙公報では「八紘一宇」を掲げ、非核三原則の厳守、女性天皇を可能とする皇室典範改正、郡山を首都とする構想を示している。",
+      "policy_summary": [
+        "非核三原則の徹底厳守",
+        "女性天皇を可能とする皇室典範改正",
+        "「首都・郡山」構想の実現"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "id": "uchibori-masao",
+      "person_id": "uchibori-masao",
+      "profile_url": "../../../politicians/uchibori-masao/index.html",
+      "name": "内堀 雅雄",
+      "kana": "うちぼり まさお",
+      "party": "無所属",
+      "role": "incumbent",
+      "age": 62,
+      "occupation": "福島県知事",
+      "image": null,
+      "official_url": "https://2026uchibori.jimdofree.com",
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "福島県知事。2014年に初当選し、2026年知事選に無所属で立候補。選挙公報では子育て・教育、原子力災害からの復興・再生、産業振興、農林水産業、観光・交流、地域の基盤整備など8つの政策の柱を掲げている。今回のページは2026年の公約を整理したもので、過去の任期の実績評価は未実施。",
+      "policy_summary": [
+        "結婚・妊娠・出産の希望を支え、子育て・教育環境を充実",
+        "医療・福祉を充実し、誰もが暮らし働ける地域をつくる",
+        "避難地域の帰還・生業・営農再開と暮らしの再建を支援",
+        "廃炉・汚染水・処理水対策を厳格に監視し、国・東京電力へ対処を求める",
+        "防災・減災、鳥獣対策、感染症対策で安全・安心を確保",
+        "中小企業振興とDX・AI、再エネ・医療・ロボット等の新産業を推進",
+        "農林水産物のブランド力向上、担い手支援、スマート農業を推進",
+        "観光・交流を拡大し、2050年カーボンニュートラルを推進",
+        "道路・河川・交通ネットワークなど地域の社会基盤を整備"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "id": "oyamada-tomoko",
+      "person_id": "oyamada-tomoko",
+      "profile_url": "../../../politicians/oyamada-tomoko/index.html",
+      "name": "小山田 友子",
+      "kana": "おやまだ ともこ",
+      "party": "日本共産党",
+      "role": "challenger",
+      "age": 33,
+      "occupation": "政党役員",
+      "image": null,
+      "official_url": "https://oyamadatomoko.hp.peraichi.com/",
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "政党役員。2026年福島県知事選挙に日本共産党から立候補。選挙公報では保育料・学校給食費の完全無償化、学費無償化と奨学金返済支援、賃上げ支援、公共交通や医療・介護の充実、原発ゼロなどを掲げている。",
+      "policy_summary": [
+        "保育料・学校給食費を完全無償化",
+        "学費無償化と奨学金返済支援を進める",
+        "中小企業の賃上げ支援と県独自の物価高対策を実施",
+        "ケア労働者の処遇を改善し、医療・介護を充実",
+        "シルバーパスなど公共交通の利用支援を充実",
+        "県独自の農家直接支援制度をつくる",
+        "原発ゼロと地域が主役の再生可能エネルギーを推進",
+        "高校統廃合の見直しと防災・減災を進める"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "id": "tsukakoshi-hidemitsu",
+      "person_id": "tsukakoshi-hidemitsu",
+      "profile_url": "../../../politicians/tsukakoshi-hidemitsu/index.html",
+      "name": "塚越 栄光",
+      "kana": "つかこし ひでみつ",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 51,
+      "occupation": "造園業",
+      "image": null,
+      "official_url": "https://note.com/hide_tsukakoshi",
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "造園業。2026年福島県知事選挙に無所属で立候補。選挙公報では物価高への生活支援、公共交通など地域の移動手段、医療・介護、子育て・教育と若者の育成を掲げている。",
+      "policy_summary": [
+        "長期化する物価高に対して生活を支援",
+        "公共交通など地域の移動手段を確保",
+        "医療・介護による安心な暮らしを支える",
+        "子育て・教育と若者の育成を支援"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=3",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "3ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "id": "endo-yudai",
+      "person_id": "endo-yudai",
+      "profile_url": "../../../politicians/endo-yudai/index.html",
+      "name": "遠藤 雄大",
+      "kana": "えんどう ゆうだい",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 41,
+      "occupation": "会社経営",
+      "image": null,
+      "official_url": "https://www.youtube.com/@Yudai.Endo.Fukushima",
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "会社経営。2026年福島県知事選挙に無所属で立候補。選挙公報では農林水産物のブランド力向上、地域の特色をつなぐ産業振興、子育て・教育・仕事の支援などを掲げている。一人ひとりの選択と自立を地域で支える「個立型社会」を示している。",
+      "policy_summary": [
+        "県産農林水産物のブランド力を高め、付加価値を向上",
+        "農業の担い手と中山間地域の農業を支援",
+        "浜通り・中通り・会津の特色をつなぎ、産業の連携を促進",
+        "子育て・教育・仕事を支え、若者が選べる福島をつくる",
+        "一人ひとりの選択と自立を地域で支える「個立型社会」を目指す"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "id": "fujimoto-shoichi",
+      "person_id": "fujimoto-shoichi",
+      "profile_url": "../../../politicians/fujimoto-shoichi/index.html",
+      "name": "藤本 昭一",
+      "kana": "ふじもと しょういち",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 61,
+      "occupation": "無職",
+      "image": null,
+      "official_url": "https://note.com/clean_sloth492",
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "2026年福島県知事選挙に無所属で立候補。届出一覧の職業は無職。選挙公報では多選への反対、従来の基本的な政治方針の踏襲、ハラスメントを減らす職場づくり、情報公開と意見を出し合える県政を掲げている。",
+      "policy_summary": [
+        "知事の多選に反対",
+        "従来の基本的な政治方針を踏襲",
+        "セクハラ・パワハラを減らし、働きやすい職場をつくる",
+        "情報公開と誰もが意見を出し合える県政を進める"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "id": "hasenuma-kunihiko",
+      "person_id": "hasenuma-kunihiko",
+      "profile_url": "../../../politicians/hasenuma-kunihiko/index.html",
+      "name": "長谷沼 邦彦",
+      "kana": "はせぬま くにひこ",
+      "party": "無所属",
+      "role": "challenger",
+      "age": 59,
+      "occupation": "会社経営",
+      "image": null,
+      "official_url": null,
+      "confirmed": true,
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "会社経営。2026年福島県知事選挙に無所属で立候補。選挙公報では一世帯あたり年間10万円の支援、福島第一原発の廃炉と再稼働への反対、農家収入の倍増、AI産業の振興などを掲げている。",
+      "policy_summary": [
+        "物価高・子育て・経済対策として一世帯あたり年間10万円を支援",
+        "福島第一原発の廃炉に取り組み、再稼働に反対",
+        "農業改革と農家収入の倍増を目指す",
+        "AI産業を振興"
+      ],
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    }
+  ]
+}

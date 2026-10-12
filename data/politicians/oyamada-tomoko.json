@@ -1,0 +1,195 @@
+{
+  "id": "oyamada-tomoko",
+  "name": "小山田 友子",
+  "kana": "おやまだ ともこ",
+  "party": "日本共産党",
+  "party_role": "政党役員",
+  "current_status": "福島県知事選挙2026に立候補",
+  "area": "福島県",
+  "photo_url": null,
+  "official_url": "https://oyamadatomoko.hp.peraichi.com/",
+  "accent": {
+    "from": "#185b54",
+    "to": "#103e3a",
+    "color": "#185b54"
+  },
+  "summary": "政党役員。2026年福島県知事選挙に日本共産党から立候補。選挙公報では保育料・学校給食費の完全無償化、学費無償化と奨学金返済支援、賃上げ支援、公共交通や医療・介護の充実、原発ゼロなどを掲げている。",
+  "stats": [
+    {
+      "label": "職業（届出時）",
+      "value": "政党役員"
+    },
+    {
+      "label": "年齢（届出時）",
+      "value": "33歳"
+    },
+    {
+      "label": "住所（市町村）",
+      "value": "福島県双葉郡楢葉町"
+    },
+    {
+      "label": "党派",
+      "value": "日本共産党"
+    }
+  ],
+  "career": [
+    {
+      "period": "2026-10-08",
+      "text": "福島県知事選挙に立候補を届け出",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "evidence_source": {
+        "title": "福島県選管「立候補届出状況（確定）」",
+        "accessed": "2026-10-12",
+        "note": "2026年10月8日の届出氏名・党派・年齢・職業を確認。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "福島県知事選挙2026",
+      "role": "候補",
+      "result": "2026年10月25日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "oyamada-tomoko_2026",
+      "title": "2026年福島県知事選 公約の要点",
+      "context": "選挙公報の要約／実績評価は未実施",
+      "source": "福島県選管「第23回福島県知事選挙 選挙公報」",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 8,
+      "done": 0,
+      "started": 0,
+      "pending": 8,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "保育料・学校給食費を完全無償化",
+          "category": "子育て・教育",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "学費無償化と奨学金返済支援を進める",
+          "category": "教育",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "中小企業の賃上げ支援と県独自の物価高対策を実施",
+          "category": "雇用・物価高",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "ケア労働者の処遇を改善し、医療・介護を充実",
+          "category": "医療・介護",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "シルバーパスなど公共交通の利用支援を充実",
+          "category": "公共交通",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "県独自の農家直接支援制度をつくる",
+          "category": "農業",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "原発ゼロと地域が主役の再生可能エネルギーを推進",
+          "category": "原発・エネルギー",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "高校統廃合の見直しと防災・減災を進める",
+          "category": "教育・防災",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "県選管 選挙公報",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=1",
+      "accessed": "2026-10-12",
+      "note": "1ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+    },
+    {
+      "label": "県選管 届出一覧（確定）",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "accessed": "2026-10-12",
+      "note": "氏名・ふりがな・党派・職業・届出時年齢・住所の市町村を確認。"
+    },
+    {
+      "label": "県選管 選挙情報",
+      "url": "https://www.pref.fukushima.lg.jp/sec/62010a/23-chiji.html",
+      "accessed": "2026-10-12",
+      "note": "告示日10月8日・投開票日10月25日を確認。"
+    },
+    {
+      "label": "県選管届出の本人ウェブサイト等",
+      "url": "https://oyamadatomoko.hp.peraichi.com/",
+      "accessed": "2026-10-12",
+      "note": "県選管の届出一覧に掲載された本人ウェブサイト等。プロフィール・公約の要約は選挙公報と届出一覧による。"
+    }
+  ],
+  "last_updated": "2026-10-12",
+  "focus_cards": [
+    {
+      "context": "公約を読む観点",
+      "title": "無償化・生活支援の設計",
+      "desc": "保育料・学校給食費の完全無償化や物価高対策を掲げている。対象、財源、実施時期が比較の観点となる。"
+    }
+  ]
+}

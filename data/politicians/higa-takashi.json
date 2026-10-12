@@ -1,0 +1,222 @@
+{
+  "id": "higa-takashi",
+  "name": "比嘉 隆",
+  "kana": "ひが たかし",
+  "party": "無所属",
+  "party_role": "会社代表",
+  "area": "沖縄県",
+  "current_status": "沖縄県知事選挙2026に出馬（落選）",
+  "photo_url": null,
+  "official_url": null,
+  "accent": {
+    "from": "#5e586d",
+    "to": "#383342",
+    "color": "#50495e"
+  },
+  "summary": "宜野湾市出身。運輸省・国土交通省、本部町、宜野湾市での勤務を経て、現在は法人企業2社の代表取締役。2026年9月の沖縄県知事選挙に無所属で立候補した。 同選挙で3,542票を得て落選。",
+  "stats": [
+    {
+      "label": "肩書",
+      "value": "会社代表"
+    },
+    {
+      "label": "生年月日",
+      "value": "1977年7月24日"
+    },
+    {
+      "label": "出身",
+      "value": "宜野湾市"
+    },
+    {
+      "label": "学歴",
+      "value": "沖縄国際大学商経学部"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "1977-07",
+      "text": "宜野湾市生まれ"
+    },
+    {
+      "period": "学歴",
+      "text": "球陽高校理数科、沖縄国際大学商経学部経済学科卒業"
+    },
+    {
+      "period": "職歴",
+      "text": "運輸省・国土交通省職員"
+    },
+    {
+      "period": "職歴",
+      "text": "本部町職員、宜野湾市長秘書"
+    },
+    {
+      "period": "現在",
+      "text": "法人企業2社の代表取締役"
+    },
+    {
+      "period": "2026-08",
+      "text": "沖縄県知事選挙に立候補"
+    },
+    {
+      "period": "2026-09",
+      "text": "沖縄県知事選挙で落選（3,542票）"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "沖縄県知事選挙2026",
+      "role": "新人候補",
+      "result": "落選・3,542票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "higa_2026",
+      "title": "2026年知事選公約",
+      "context": "2026年9月 沖縄県知事選挙",
+      "source": "沖縄県選挙公報",
+      "source_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+      "reviewed_at": "2026-09-05T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 4,
+      "done": 0,
+      "started": 0,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "新型コロナワクチン接種を中止する",
+          "category": "保健医療",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+          "evidence_source": {
+            "title": "令和8年沖縄県知事選挙 選挙公報",
+            "accessed": "2026-09-05",
+            "note": "候補者提出原稿の訴えをそのまま政策項目として整理。医学的妥当性を評価したものではない。"
+          }
+        },
+        {
+          "title": "県庁にワクチン後遺症対策部を設置",
+          "category": "行政組織",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "ワクチン被害を訴える人に毎月10万円を支給",
+          "category": "生活支援",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "ワクチン被害者の救済制度を創設",
+          "category": "救済制度",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-09-05",
+      "election_key": "okinawa_2026_governor",
+      "total": 12,
+      "max": 25,
+      "grade": "C",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 2,
+          "note": "ワクチン接種中止、県庁内の対策部、月10万円支給という具体項目はあるが、対象認定、期間、予算総額、他の県政分野の公約が示されていない。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 5,
+          "note": "2025年参院選、2026年衆院選、今回の選挙公報・第一声で、ワクチン中止と健康被害を訴える人への支援を一貫して掲げている。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 3,
+          "note": "国・町・市の行政職と企業経営の経験が公報で示されている。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 1,
+          "note": "接種は国の制度や医療判断とも関係し、支給対象の認定基準、財源、既存救済制度との関係が示されていない。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 1,
+          "note": "選挙公報と第一声動画はあるが公式政策サイトは確認できず、琉球新報38問とOTVの主要政策質問はワクチン以外すべて無回答。"
+        }
+      ],
+      "summary": "単一テーマでは金額を含む提案があり、過去の選挙から主張も一貫する。一方、対象認定・財源・県権限との整理がなく、基地、経済、子育てなど主要県政課題への回答がない。",
+      "scored_by": "polimiru-rubric-v1",
+      "reviewed_by": null,
+      "review_sources": [
+        {
+          "label": "沖縄県選挙公報",
+          "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "label": "琉球新報 38問アンケート",
+          "url": "https://ryukyushimpo.jp/special/qahome-okinawa-governor-election2026.html"
+        },
+        {
+          "label": "OTV 政策アンケート",
+          "url": "https://kenchiji2026.otv.jp/prof_higa.html"
+        },
+        {
+          "label": "RBC 2026衆院選アンケート",
+          "url": "https://www.rbc.co.jp/wordpress/wp-content/uploads/2%E5%8C%BA%E3%80%902026%E8%A1%86%E9%99%A2%E9%81%B8%E3%80%91-%E6%94%BF%E7%AD%96%E3%82%A2%E3%83%B3%E3%82%B1%E3%83%BC%E3%83%88%EF%BC%88%E6%AF%94%E5%98%89%E9%9A%86%EF%BC%89.pdf"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "保健",
+      "title": "ワクチン政策に集中",
+      "desc": "接種中止、後遺症対策部、月10万円支給、救済制度を主要公約に置く。"
+    },
+    {
+      "context": "経験",
+      "title": "行政と企業経営",
+      "desc": "国・町・市の職員経験と企業経営経験を県政運営に生かすとする。"
+    },
+    {
+      "context": "検証点",
+      "title": "医学的根拠と制度設計",
+      "desc": "国の制度との整合、認定基準、財源、県の権限を確認する必要がある。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "沖縄県選管 候補者情報・選挙公報",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+    }
+  ],
+  "last_updated": "2026-10-11"
+}

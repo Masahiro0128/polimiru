@@ -1,0 +1,85 @@
+{
+  "id": "wada-tsukasa",
+  "name": "和田 宰",
+  "kana": "わだ つかさ",
+  "party": "無所属",
+  "party_role": "市民団体事務局長",
+  "current_status": "愛媛県知事選挙2026に立候補予定（出馬表明）",
+  "area": "愛媛県",
+  "photo_url": null,
+  "official_url": null,
+  "accent": {
+    "from": "#8a491f",
+    "to": "#51301c",
+    "color": "#8a491f"
+  },
+  "summary": "市民団体事務局長。2026年9月25日に愛媛県知事選への出馬を表明したと報じられた。知事選の党派は無所属と報じられている。現在、2026年知事選に向けた政策原文を確認中。政策がないという意味ではなく、確認できた原文の掲載を待っている。",
+  "stats": [
+    {
+      "label": "肩書（報道時）",
+      "value": "市民団体事務局長"
+    },
+    {
+      "label": "年齢（2026年9月報道）",
+      "value": "74歳"
+    },
+    {
+      "label": "知事選の党派（表明時）",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "2026-09-25",
+      "text": "愛媛県知事選への出馬表明（報道）",
+      "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2967746?display=1",
+      "evidence_source": {
+        "title": "あいテレビ 出馬表明報道（2026年9月25日）",
+        "accessed": "2026-10-12",
+        "note": "出馬表明の日付。告示日の立候補届出を意味しない。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "愛媛県知事選挙2026",
+      "role": "立候補予定",
+      "result": "出馬表明／10月29日告示・11月15日投開票予定"
+    }
+  ],
+  "promise_cycles": [],
+  "focus_cards": [
+    {
+      "context": "確認状況・比較の観点",
+      "title": "政策原文を確認中",
+      "desc": "告示後の選挙公報や最新の本人政策資料の確認待ち。未確認の政策項目やスコアは掲載していない。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "あいテレビ 出馬表明報道（2026年9月25日）",
+      "url": "https://newsdig.tbs.co.jp/articles/itv/2967746?display=1",
+      "accessed": "2026-10-12",
+      "note": "記事見出しと掲載日で氏名・年齢・出馬表明を確認。政策原文の根拠には使用していない。"
+    },
+    {
+      "label": "あいテレビ 知事選情勢（2026年10月6日）",
+      "url": "https://newsdig.tbs.co.jp/articles/-/2993807?display=1",
+      "accessed": "2026-10-12",
+      "note": "市民団体事務局長という肩書と、立候補を表明していることを確認。"
+    },
+    {
+      "label": "毎日新聞 出馬状況（TNC配信、2026年10月8日）",
+      "url": "https://news.tnc.ne.jp/politics/940399_1.html",
+      "accessed": "2026-10-12",
+      "note": "中村氏・宮澤氏・和田氏の出馬表明と無所属での立候補予定を確認。"
+    },
+    {
+      "label": "愛媛県選管 2026年の選挙日程",
+      "url": "https://www.pref.ehime.jp/page/128211.html",
+      "accessed": "2026-10-12",
+      "note": "告示日2026年10月29日、選挙期日11月15日、任期満了日11月30日。"
+    }
+  ],
+  "last_updated": "2026-10-12"
+}

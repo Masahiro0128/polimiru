@@ -1,0 +1,326 @@
+{
+  "id": "tamaki-denny",
+  "name": "玉城 デニー",
+  "kana": "たまき でにー",
+  "party": "無所属",
+  "party_role": "前沖縄県知事",
+  "area": "沖縄県",
+  "current_status": "前沖縄県知事（2期）・沖縄県知事選挙2026に出馬（落選）",
+  "photo_url": "https://tamakidenny.com/wp2/wp-content/themes/basetemplate/images/top_images_26/denny3.jpg",
+  "photo_credit": "玉城デニー公式サイト",
+  "photo_object_fit": "cover",
+  "photo_object_position": "center 20%",
+  "official_url": "https://tamakidenny.com/",
+  "accent": {
+    "from": "#26a7b8",
+    "to": "#126477",
+    "color": "#1d8fa2"
+  },
+  "summary": "旧与那城村（現うるま市）出身。沖縄市議会議員、衆議院議員4期を経て、2018年に沖縄県知事へ初当選し、2022年に再選。2026年9月の沖縄県知事選挙に3選を目指して立候補した。 同選挙で276,060票を得て落選。",
+  "stats": [
+    {
+      "label": "役職",
+      "value": "前沖縄県知事"
+    },
+    {
+      "label": "当選",
+      "value": "2期"
+    },
+    {
+      "label": "生年月日",
+      "value": "1959年10月13日"
+    },
+    {
+      "label": "出身",
+      "value": "旧与那城村（現うるま市）"
+    },
+    {
+      "label": "国政",
+      "value": "衆議院4期"
+    }
+  ],
+  "career": [
+    {
+      "period": "1959-10",
+      "text": "旧与那城村（現うるま市）生まれ"
+    },
+    {
+      "period": "学歴",
+      "text": "上智社会福祉専門学校卒業"
+    },
+    {
+      "period": "2002-09",
+      "text": "沖縄市議会議員に初当選（1期）"
+    },
+    {
+      "period": "2009-08",
+      "text": "衆議院議員に初当選（通算4期）"
+    },
+    {
+      "period": "2018-09",
+      "text": "沖縄県知事に初当選"
+    },
+    {
+      "period": "2022-09",
+      "text": "沖縄県知事に再選"
+    },
+    {
+      "period": "2026-08",
+      "text": "沖縄県知事選挙に3選を目指して立候補"
+    },
+    {
+      "period": "2026-09",
+      "text": "沖縄県知事選挙で落選（276,060票）"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "沖縄県知事選挙2026",
+      "role": "現職候補",
+      "result": "落選・276,060票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "tamaki_2018_2022",
+      "title": "2018・2022年知事選 主要公約の追跡",
+      "context": "知事2期8年の主要18項目",
+      "source": "シマナビ（県公式資料・統計・報道との照合）",
+      "source_url": "https://shimanavi.org/tamaki-kensho",
+      "reviewed_at": "2026-08-19T00:00:00+09:00",
+      "status": "tracking",
+      "score": 53,
+      "total": 18,
+      "done": 5,
+      "started": 9,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "こども医療費の通院対象を高校卒業相当まで拡大",
+          "category": "子育て",
+          "status": "実現",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "ヤングケアラーの実態調査と支援",
+          "category": "子育て",
+          "status": "実現",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "学校給食費の無償化",
+          "category": "教育",
+          "status": "進行中",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "待機児童ゼロ",
+          "category": "子育て",
+          "status": "進行中",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "本島縦貫鉄軌道の導入",
+          "category": "交通",
+          "status": "公約",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "辺野古新基地を造らせない（実現せず）",
+          "category": "基地・平和",
+          "status": "公約",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "一人当たり県民所得の全国最下位脱却（実現せず）",
+          "category": "経済・雇用",
+          "status": "公約",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        },
+        {
+          "title": "日米地位協定の抜本改定（実現せず）",
+          "category": "基地・平和",
+          "status": "公約",
+          "evidence_url": "https://shimanavi.org/tamaki-kensho"
+        }
+      ]
+    },
+    {
+      "id": "tamaki_2026",
+      "title": "2026年知事選公約『新時代沖縄』",
+      "context": "2026年9月 沖縄県知事選挙（3期目）",
+      "source": "玉城デニー2026政策・沖縄県選挙公報",
+      "source_url": "https://tamakidenny.com/policy2026/",
+      "reviewed_at": "2026-09-05T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 7,
+      "done": 0,
+      "started": 0,
+      "pending": 7,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "『おきなわゆいまーる基金事業』を創設",
+          "category": "生活・福祉",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/",
+          "evidence_source": {
+            "title": "2026年玉城デニー政策",
+            "accessed": "2026-09-05",
+            "note": "3つの約束と7つの大項目を掲げた公式政策ページ。"
+          }
+        },
+        {
+          "title": "18歳までの窓口医療費、学校給食費、待機児童、病児保育利用料の『4つのゼロ』",
+          "category": "子育て",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/"
+        },
+        {
+          "title": "物価高を上回る賃金水準の引き上げと中小企業支援",
+          "category": "経済・雇用",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/"
+        },
+        {
+          "title": "本島南北をつなぐ鉄軌道、LRT・BRT、広域バスを推進",
+          "category": "交通",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/"
+        },
+        {
+          "title": "専門医巡回・遠隔医療と島外通院費支援を拡充",
+          "category": "離島・医療",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/"
+        },
+        {
+          "title": "PFAS汚染の基地内調査・浄化を日米両政府に要求",
+          "category": "環境・基地",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/"
+        },
+        {
+          "title": "普天間飛行場の早期閉鎖・撤去と辺野古新基地建設中止を求める",
+          "category": "基地・平和",
+          "status": "公約",
+          "evidence_url": "https://tamakidenny.com/policy2026/"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-09-05",
+      "election_key": "okinawa_2026_governor",
+      "total": 18,
+      "max": 25,
+      "grade": "B",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 3,
+          "note": "県民所得291万円など一部に数値目標はあるが、多くの提案は対象・期限・所要額の全てがそろっておらず、実施後の判定条件が限定的。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 4,
+          "note": "子ども・福祉、地域振興、辺野古新基地反対という主要方針は過去2期と一致する。一方、未達の鉄軌道や基地政策も再掲しており、継続性と達成度は分けて見る必要がある。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 5,
+          "note": "沖縄県知事2期、衆議院議員4期、沖縄市議1期の公職経験がある。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 2,
+          "note": "辺野古、日米地位協定、鉄軌道など国の判断や大規模財源に依存する政策が多く、2期で未達の項目にも合意形成・財源・工程の具体化がない。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 4,
+          "note": "政策本文、実績ページ、候補者アンケートは公開している。ただし過去公約を統一基準で達成・進行中・未達に分けた全件一覧は示していない。"
+        }
+      ],
+      "summary": "知事2期の経験と公開資料の多さは確認できるが、それ自体を達成実績とは扱わない。数値・期限・財源がそろわない提案や、2期で未達のまま再掲された大型政策を減点した。",
+      "scored_by": "polimiru-rubric-v1",
+      "reviewed_by": null,
+      "review_sources": [
+        {
+          "label": "沖縄県選挙公報",
+          "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "label": "2026年公式政策",
+          "url": "https://tamakidenny.com/policy2026/"
+        },
+        {
+          "label": "琉球新報 38問アンケート",
+          "url": "https://ryukyushimpo.jp/special/qahome-okinawa-governor-election2026.html"
+        },
+        {
+          "label": "OTV 政策アンケート",
+          "url": "https://kenchiji2026.otv.jp/prof_tamaki.html"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "暮らし",
+      "title": "基金と子育て4つのゼロ",
+      "desc": "制度の隙間を埋める基金と、医療・給食・待機児童・病児保育の負担軽減を掲げる。"
+    },
+    {
+      "context": "交通・地域",
+      "title": "鉄軌道と離島支援",
+      "desc": "鉄軌道・LRT・BRT・広域バスと、離島の医療・移動支援を進める。"
+    },
+    {
+      "context": "基地・平和",
+      "title": "辺野古新基地に反対",
+      "desc": "普天間の早期閉鎖・撤去、辺野古建設中止、南西諸島の軍事負担軽減を求める。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "沖縄県選管 候補者情報・選挙公報",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html"
+    },
+    {
+      "label": "玉城デニー 2026政策",
+      "url": "https://tamakidenny.com/policy2026/"
+    },
+    {
+      "label": "玉城デニー 公式サイト",
+      "url": "https://tamakidenny.com/"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+    },
+    {
+      "label": "沖縄県「知事のプロフィール」",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/kencho/1001519/1001520.html",
+      "accessed": "2026-10-11",
+      "note": "2026年10月11日時点の沖縄県知事は古謝玄太氏。玉城氏の現職表記を前知事へ更新。"
+    }
+  ],
+  "last_updated": "2026-10-11"
+}

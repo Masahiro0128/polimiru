@@ -5,7 +5,7 @@
   "party": "無所属",
   "party_role": "長野県知事・全国知事会会長",
   "area": "長野県",
-  "current_status": "長野県知事（4期目）・長野県知事選挙2026候補",
+  "current_status": "長野県知事（5期目）",
   "photo_url": "https://shuichi-abe.jp/_src/67507913/2026top.jpg?v=1784967742101",
   "photo_credit": "阿部守一公式サイト",
   "photo_object_fit": "cover",
@@ -16,7 +16,7 @@
     "to": "#103d31",
     "color": "#187154"
   },
-  "summary": "東京都出身。東京大学法学部卒業後、自治省に入省。長野県副知事、横浜市副市長、内閣府行政刷新会議事務局次長などを経て、2010年に長野県知事へ初当選。現在4期目で、2025年から全国知事会会長を務める。2026年8月9日投票の知事選に5選を目指して立候補した。",
+  "summary": "東京都出身。東京大学法学部卒業後、自治省に入省。長野県副知事、横浜市副市長、内閣府行政刷新会議事務局次長などを経て、2010年に長野県知事へ初当選。現在5期目で、2025年から全国知事会会長を務める。2026年8月9日の知事選で573,742票を得て5選を果たした。",
   "stats": [
     {
       "label": "役職",
@@ -24,7 +24,7 @@
     },
     {
       "label": "当選",
-      "value": "4期"
+      "value": "5期"
     },
     {
       "label": "生年月日",
@@ -79,13 +79,22 @@
     {
       "period": "2026-07",
       "text": "長野県知事選挙に5選を目指して立候補"
+    },
+    {
+      "period": "2026-08",
+      "text": "長野県知事選挙で5選（573,742票）"
+    },
+    {
+      "period": "2026-09",
+      "text": "長野県知事5期目が開始"
     }
   ],
   "election_links": [
     {
       "title": "長野県知事選挙2026",
       "role": "現職候補",
-      "result": "2026年8月9日投票"
+      "result": "当選（5選）・573,742票",
+      "url": "../../elections/nagano/2026_governor/index.html"
     }
   ],
   "promise_cycles": [
@@ -165,8 +174,8 @@
       "context": "2026年8月 長野県知事選挙",
       "source": "阿部守一 2026政策集",
       "source_url": "https://shuichi-abe.jp/policy.html",
-      "reviewed_at": "2026-07-30T00:00:00Z",
-      "status": "candidate",
+      "reviewed_at": "2026-08-07T00:00:00Z",
+      "status": "tracking",
       "score": null,
       "total": 7,
       "done": 0,
@@ -221,7 +230,7 @@
   ],
   "candidate_score": {
     "pre": {
-      "reviewed_at": "2026-07-30",
+      "reviewed_at": "2026-08-07",
       "election_key": "nagano_2026_governor",
       "total": 22,
       "max": 25,
@@ -279,6 +288,10 @@
   ],
   "source_urls": [
     {
+      "label": "長野県選管 候補者・選挙公報",
+      "url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/chiji.html"
+    },
+    {
       "label": "長野県知事プロフィール",
       "url": "https://www.pref.nagano.lg.jp/hisho/kensei/gaiyo/chiji/profile/index.html"
     },
@@ -289,6 +302,25 @@
     {
       "label": "長野県 公約進捗（2024）",
       "url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/chijikaiken/2024/documents/20240830kaikenshiryo5.pdf"
+    },
+    {
+      "label": "長野県選挙管理委員会「長野県知事選挙 開票結果」",
+      "url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/documents/05kaikekka.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年8月9日22時52分完了、開票率100%。阿部守一氏573,742票、武田良介氏92,366票。"
+    },
+    {
+      "label": "都道府県選挙管理委員会連合会「都道府県の選挙」",
+      "url": "https://todofuken-senkan.jp/pref/",
+      "accessed": "2026-10-11",
+      "note": "長野県の2026年8月9日知事選。投票率40.53%、阿部守一氏の当選、当選回数5回。"
+    },
+    {
+      "label": "長野県「阿部知事のプロフィール」",
+      "url": "https://www.pref.nagano.lg.jp/hisho/kensei/gaiyo/chiji/profile/index.html",
+      "accessed": "2026-10-11",
+      "note": "2026年9月から長野県知事5期目。"
     }
-  ]
+  ],
+  "last_updated": "2026-10-11"
 }

@@ -1,0 +1,232 @@
+{
+  "id": "yara-chosuke",
+  "name": "屋良 朝助",
+  "kana": "やら ちょうすけ",
+  "party": "琉球独立党",
+  "party_role": "琉球独立党代表",
+  "area": "沖縄県",
+  "current_status": "沖縄県知事選挙2026に出馬（落選）",
+  "photo_url": null,
+  "official_url": "https://www.ntt-i.net/kariyushi/",
+  "accent": {
+    "from": "#774f77",
+    "to": "#442e4d",
+    "color": "#694469"
+  },
+  "summary": "那覇市出身。政治団体・琉球独立党代表。那覇市議会議員選挙への立候補などを通じて琉球の独立・自治拡大を訴えてきた。2026年9月の沖縄県知事選挙に琉球独立党から立候補した。 同選挙で2,467票を得て落選。",
+  "stats": [
+    {
+      "label": "肩書",
+      "value": "琉球独立党代表"
+    },
+    {
+      "label": "生年月日",
+      "value": "1952年1月14日"
+    },
+    {
+      "label": "出身",
+      "value": "那覇市"
+    },
+    {
+      "label": "学歴",
+      "value": "那覇高校"
+    },
+    {
+      "label": "党派",
+      "value": "琉球独立党"
+    }
+  ],
+  "career": [
+    {
+      "period": "1952-01",
+      "text": "那覇市生まれ"
+    },
+    {
+      "period": "高校",
+      "text": "沖縄県立那覇高等学校卒業"
+    },
+    {
+      "period": "2005",
+      "text": "琉球独立党・かりゆしクラブの活動を再開"
+    },
+    {
+      "period": "2017",
+      "text": "那覇市議会議員選挙に立候補"
+    },
+    {
+      "period": "現在",
+      "text": "琉球独立党代表、会社経営"
+    },
+    {
+      "period": "2026-08",
+      "text": "沖縄県知事選挙に立候補"
+    },
+    {
+      "period": "2026-09",
+      "text": "沖縄県知事選挙で落選（2,467票）"
+    }
+  ],
+  "election_links": [
+    {
+      "title": "沖縄県知事選挙2026",
+      "role": "新人候補",
+      "result": "落選・2,467票"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "yara_2026",
+      "title": "2026年知事選公約『琉球独立は平和への道』",
+      "context": "2026年9月 沖縄県知事選挙",
+      "source": "琉球独立党公式サイト・沖縄県選挙公報",
+      "source_url": "https://www.ntt-i.net/kariyushi/",
+      "reviewed_at": "2026-09-05T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 5,
+      "done": 0,
+      "started": 0,
+      "pending": 5,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "琉球が自治共和国の地位を得る『四者条約』を提案",
+          "category": "自治・統治",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf",
+          "evidence_source": {
+            "title": "令和8年沖縄県知事選挙 選挙公報",
+            "accessed": "2026-09-05",
+            "note": "候補者が提唱する米国・中国・日本・琉球の『四者条約』構想を整理。"
+          }
+        },
+        {
+          "title": "米軍基地を九州以北へ移す",
+          "category": "基地",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "日米合同委員会の廃止と地位協定の見直し",
+          "category": "外交・基地",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "辺野古基地を病院や保養施設に変更",
+          "category": "辺野古",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "title": "東アジアの武力衝突を避ける合意形成",
+          "category": "平和・安全保障",
+          "status": "公約",
+          "evidence_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        }
+      ]
+    }
+  ],
+  "candidate_score": {
+    "pre": {
+      "reviewed_at": "2026-09-05",
+      "election_key": "okinawa_2026_governor",
+      "total": 13,
+      "max": 25,
+      "grade": "C",
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "公約の具体性",
+          "score": 2,
+          "note": "四者条約、10年後所得280万円、基地の九州以北移転など到達像はあるが、条約交渉・自治制度移行の工程、期限、法的手続が示されていない。"
+        },
+        {
+          "id": "consistency",
+          "label": "政策の一貫性",
+          "score": 5,
+          "note": "長年にわたり琉球独立・自治拡大を中心政策として継続している。"
+        },
+        {
+          "id": "track_record",
+          "label": "実績・経験",
+          "score": 1,
+          "note": "政治団体運営と選挙活動は確認できるが、公職での政策執行経験は確認できない。"
+        },
+        {
+          "id": "feasibility",
+          "label": "実現可能性",
+          "score": 1,
+          "note": "独立・国際条約・基地移転は県知事の権限だけでは実現できない。税収5000億円などの主張はあるが、関係国・国政・県民の合意形成や法的手順が未提示。"
+        },
+        {
+          "id": "transparency",
+          "label": "情報公開",
+          "score": 4,
+          "note": "公式サイト、選挙公報、第一声動画があり、琉球新報38問とOTV政策アンケートにも全項目回答している。"
+        }
+      ],
+      "summary": "長年の主張と今回の回答は一貫し、政策の到達像も公開している。ただし、県知事の権限を越える国際条約・独立が多くの施策の前提で、法的手順と合意形成工程が示されていない。",
+      "scored_by": "polimiru-rubric-v1",
+      "reviewed_by": null,
+      "review_sources": [
+        {
+          "label": "沖縄県選挙公報",
+          "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/r8chiji-senkyokoho.pdf"
+        },
+        {
+          "label": "琉球独立党 公式サイト",
+          "url": "https://www.ntt-i.net/kariyushi/"
+        },
+        {
+          "label": "琉球新報 38問アンケート",
+          "url": "https://ryukyushimpo.jp/special/qahome-okinawa-governor-election2026.html"
+        },
+        {
+          "label": "OTV 政策アンケート",
+          "url": "https://kenchiji2026.otv.jp/prof_yara.html"
+        }
+      ]
+    }
+  },
+  "focus_cards": [
+    {
+      "context": "自治",
+      "title": "琉球の自治共和国化",
+      "desc": "米国・中国・日本・琉球の四者条約による自治共和国化を中心に据える。"
+    },
+    {
+      "context": "基地・平和",
+      "title": "基地移転と条約見直し",
+      "desc": "基地の九州以北移転、日米合同委員会廃止、辺野古転用を掲げる。"
+    },
+    {
+      "context": "検証点",
+      "title": "知事権限と合意形成",
+      "desc": "国際条約や独立を県政でどう進めるか、法的手順と関係者の合意形成が最大の検証点。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "沖縄県選管 候補者情報・選挙公報",
+      "url": "https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html"
+    },
+    {
+      "label": "琉球独立党 公式サイト",
+      "url": "https://www.ntt-i.net/kariyushi/"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 開票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年9月13日執行。開票率100%。6候補の県合計得票数、有効投票712,120票。"
+    },
+    {
+      "label": "沖縄県選管「沖縄県知事選挙 投票確定（9月16日訂正）」",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf",
+      "accessed": "2026-10-11",
+      "note": "投票率61.57%。当日有権者1,165,704人、投票者717,713人。"
+    }
+  ],
+  "last_updated": "2026-10-11"
+}

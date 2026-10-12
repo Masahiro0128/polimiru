@@ -5,7 +5,7 @@
   "party": "無所属",
   "party_role": "元参議院議員",
   "area": "長野県",
-  "current_status": "長野県知事選挙2026候補",
+  "current_status": "元参議院議員・長野県知事選挙2026に出馬（落選）",
   "photo_url": "https://storage.googleapis.com/studio-design-asset-files/projects/9YWydnBkaM/s-896x1341_v-fms_webp_8f2fd783-7c07-42d6-9fcd-80e5bdc2d5ed.webp",
   "photo_credit": "武田良介公式サイト",
   "photo_object_fit": "cover",
@@ -16,7 +16,7 @@
     "to": "#713244",
     "color": "#a33d56"
   },
-  "summary": "長野県中野市出身。飯山北高校、信州大学教育学部卒業。日本民主青年同盟長野県委員長などを経て、2016年の参議院比例代表選挙で初当選し1期務めた。現在は日本共産党中央委員・同長野県委員会副委員長。2026年8月9日投票の長野県知事選挙には無所属で立候補した。",
+  "summary": "長野県中野市出身。飯山北高校、信州大学教育学部卒業。日本民主青年同盟長野県委員長などを経て、2016年の参議院比例代表選挙で初当選し1期務めた。現在は日本共産党中央委員・同長野県委員会副委員長。2026年8月9日投票の長野県知事選挙には無所属で立候補した。 同選挙で92,366票を得て落選。",
   "stats": [
     {
       "label": "肩書",
@@ -67,13 +67,18 @@
     {
       "period": "2026-07",
       "text": "長野県知事選挙に無所属で立候補"
+    },
+    {
+      "period": "2026-08",
+      "text": "長野県知事選挙で落選（92,366票）"
     }
   ],
   "election_links": [
     {
       "title": "長野県知事選挙2026",
       "role": "新人候補",
-      "result": "2026年8月9日投票"
+      "result": "落選・92,366票",
+      "url": "../../elections/nagano/2026_governor/index.html"
     }
   ],
   "promise_cycles": [
@@ -83,7 +88,7 @@
       "context": "2026年8月 長野県知事選挙",
       "source": "武田良介公式サイト・長野県選挙公報",
       "source_url": "https://takeda-ryosuke.studio.site/",
-      "reviewed_at": "2026-07-30T00:00:00Z",
+      "reviewed_at": "2026-08-07T00:00:00Z",
       "status": "candidate",
       "score": null,
       "total": 7,
@@ -139,7 +144,7 @@
   ],
   "candidate_score": {
     "pre": {
-      "reviewed_at": "2026-07-30",
+      "reviewed_at": "2026-08-07",
       "election_key": "nagano_2026_governor",
       "total": 19,
       "max": 25,
@@ -197,6 +202,10 @@
   ],
   "source_urls": [
     {
+      "label": "長野県選管 候補者・選挙公報",
+      "url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/chiji.html"
+    },
+    {
       "label": "武田良介 公式サイト",
       "url": "https://takeda-ryosuke.studio.site/"
     },
@@ -207,6 +216,19 @@
     {
       "label": "参議院 歴代議員一覧",
       "url": "https://www.sangiin.go.jp/japanese/san60/giin/20250911rekidai_giin.pdf"
+    },
+    {
+      "label": "長野県選挙管理委員会「長野県知事選挙 開票結果」",
+      "url": "https://www.pref.nagano.lg.jp/senkan/chiji2026/documents/05kaikekka.pdf",
+      "accessed": "2026-10-11",
+      "note": "2026年8月9日22時52分完了、開票率100%。阿部守一氏573,742票、武田良介氏92,366票。"
+    },
+    {
+      "label": "都道府県選挙管理委員会連合会「都道府県の選挙」",
+      "url": "https://todofuken-senkan.jp/pref/",
+      "accessed": "2026-10-11",
+      "note": "長野県の2026年8月9日知事選。投票率40.53%、阿部守一氏の当選、当選回数5回。"
     }
-  ]
+  ],
+  "last_updated": "2026-10-11"
 }

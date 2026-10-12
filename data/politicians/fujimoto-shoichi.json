@@ -1,0 +1,151 @@
+{
+  "id": "fujimoto-shoichi",
+  "name": "藤本 昭一",
+  "kana": "ふじもと しょういち",
+  "party": "無所属",
+  "party_role": "無職",
+  "current_status": "福島県知事選挙2026に立候補",
+  "area": "福島県",
+  "photo_url": null,
+  "official_url": "https://note.com/clean_sloth492",
+  "accent": {
+    "from": "#185b54",
+    "to": "#103e3a",
+    "color": "#185b54"
+  },
+  "summary": "2026年福島県知事選挙に無所属で立候補。届出一覧の職業は無職。選挙公報では多選への反対、従来の基本的な政治方針の踏襲、ハラスメントを減らす職場づくり、情報公開と意見を出し合える県政を掲げている。",
+  "stats": [
+    {
+      "label": "職業（届出時）",
+      "value": "無職"
+    },
+    {
+      "label": "年齢（届出時）",
+      "value": "61歳"
+    },
+    {
+      "label": "住所（市町村）",
+      "value": "福島県福島市"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "2026-10-08",
+      "text": "福島県知事選挙に立候補を届け出",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "evidence_source": {
+        "title": "福島県選管「立候補届出状況（確定）」",
+        "accessed": "2026-10-12",
+        "note": "2026年10月8日の届出氏名・党派・年齢・職業を確認。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "福島県知事選挙2026",
+      "role": "候補",
+      "result": "2026年10月25日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "fujimoto-shoichi_2026",
+      "title": "2026年福島県知事選 公約の要点",
+      "context": "選挙公報の要約／実績評価は未実施",
+      "source": "福島県選管「第23回福島県知事選挙 選挙公報」",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 4,
+      "done": 0,
+      "started": 0,
+      "pending": 4,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "知事の多選に反対",
+          "category": "県政運営",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "従来の基本的な政治方針を踏襲",
+          "category": "県政運営",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "セクハラ・パワハラを減らし、働きやすい職場をつくる",
+          "category": "労働環境",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "情報公開と誰もが意見を出し合える県政を進める",
+          "category": "情報公開・参加",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "県選管 選挙公報",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "accessed": "2026-10-12",
+      "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+    },
+    {
+      "label": "県選管 届出一覧（確定）",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "accessed": "2026-10-12",
+      "note": "氏名・ふりがな・党派・職業・届出時年齢・住所の市町村を確認。"
+    },
+    {
+      "label": "県選管 選挙情報",
+      "url": "https://www.pref.fukushima.lg.jp/sec/62010a/23-chiji.html",
+      "accessed": "2026-10-12",
+      "note": "告示日10月8日・投開票日10月25日を確認。"
+    },
+    {
+      "label": "県選管届出の本人ウェブサイト等",
+      "url": "https://note.com/clean_sloth492",
+      "accessed": "2026-10-12",
+      "note": "県選管の届出一覧に掲載された本人ウェブサイト等。プロフィール・公約の要約は選挙公報と届出一覧による。"
+    }
+  ],
+  "last_updated": "2026-10-12",
+  "focus_cards": [
+    {
+      "context": "公約を読む観点",
+      "title": "県政運営と情報公開",
+      "desc": "多選への反対、ハラスメント対策、情報公開を掲げている。制度や運用としてどのように実施するかが確認点となる。"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "miyazawa-hiroyuki",
+  "name": "宮澤 博行",
+  "kana": "みやざわ ひろゆき",
+  "party": "無所属",
+  "party_role": "元衆議院議員・元防衛副大臣",
+  "current_status": "愛媛県知事選挙2026に立候補予定（出馬表明）",
+  "area": "愛媛県",
+  "photo_url": null,
+  "official_url": null,
+  "accent": {
+    "from": "#8a491f",
+    "to": "#51301c",
+    "color": "#8a491f"
+  },
+  "summary": "元衆議院議員、元防衛副大臣。2012年の衆院選で初当選し、2024年に議員を辞職。2026年8月17日、愛媛県知事選に無所属での出馬を表明したと報じられた。会見報道では2期8年での成果、かんきつ類の輸出拡大、造船業の受注や観光客の誘致、県民・自治体・業界との対話を掲げている。",
+  "stats": [
+    {
+      "label": "生年月日",
+      "value": "1975年1月10日"
+    },
+    {
+      "label": "出身",
+      "value": "静岡県磐田郡龍山村（当時）"
+    },
+    {
+      "label": "学歴",
+      "value": "東京大学法学部"
+    },
+    {
+      "label": "過去の役職",
+      "value": "防衛副大臣兼内閣府副大臣"
+    }
+  ],
+  "career": [
+    {
+      "period": "1997-03",
+      "text": "東京大学法学部卒業",
+      "evidence_url": "https://warp.ndl.go.jp/web/20231201214138/https%3A//www.kantei.go.jp/jp/101_kishida/meibo/fukudaijin/miyazawa_hiroyuki.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2012-12",
+      "text": "衆議院議員に初当選",
+      "evidence_url": "https://warp.ndl.go.jp/web/20231201214138/https%3A//www.kantei.go.jp/jp/101_kishida/meibo/fukudaijin/miyazawa_hiroyuki.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2016-08",
+      "text": "防衛大臣政務官兼内閣府大臣政務官",
+      "evidence_url": "https://warp.ndl.go.jp/web/20231201214138/https%3A//www.kantei.go.jp/jp/101_kishida/meibo/fukudaijin/miyazawa_hiroyuki.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2021-10",
+      "text": "衆議院議員4期目",
+      "evidence_url": "https://warp.ndl.go.jp/web/20231201214138/https%3A//www.kantei.go.jp/jp/101_kishida/meibo/fukudaijin/miyazawa_hiroyuki.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2023-09〜2023-12",
+      "text": "防衛副大臣兼内閣府副大臣",
+      "evidence_url": "https://www.mod.go.jp/j/profile/minister/vice-minister/miyazawa/index.html",
+      "evidence_source": {
+        "title": "公式略歴・職歴資料",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2024-04",
+      "text": "衆議院議員を辞職",
+      "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+      "evidence_source": {
+        "title": "あいテレビ 出馬会見報道",
+        "accessed": "2026-10-12",
+        "note": "記載された過去の職歴を確認。役職はその時点のもの。"
+      }
+    },
+    {
+      "period": "2026-08-17",
+      "text": "愛媛県知事選への出馬表明（報道）",
+      "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+      "evidence_source": {
+        "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+        "accessed": "2026-10-12",
+        "note": "出馬表明の日付。告示日の立候補届出を意味しない。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "愛媛県知事選挙2026",
+      "role": "立候補予定",
+      "result": "出馬表明／10月29日告示・11月15日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "miyazawa-hiroyuki_2026",
+      "title": "2026年知事選 公約の要点（会見報道から）",
+      "context": "告示前の情報／政策原文・選挙公報の確認待ち",
+      "source": "あいテレビ 出馬会見報道（2026年8月17日）",
+      "source_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 5,
+      "done": 0,
+      "started": 0,
+      "pending": 5,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "2期8年で成果を出し、長期政権を残さない方針",
+          "category": "県政運営",
+          "status": "公約",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+          "evidence_source": {
+            "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "知事自らの売り込みで、かんきつ類の輸出を倍増",
+          "category": "農業・輸出",
+          "status": "公約",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+          "evidence_source": {
+            "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "造船業で警備用船舶の受注を獲得",
+          "category": "産業",
+          "status": "公約",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+          "evidence_source": {
+            "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "観光客の誘致を進める",
+          "category": "観光",
+          "status": "公約",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+          "evidence_source": {
+            "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        },
+        {
+          "title": "県民の意見を聴き、自治体・各業界との対話と連携を重視",
+          "category": "対話・連携",
+          "status": "公約",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+          "evidence_source": {
+            "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+            "accessed": "2026-10-12",
+            "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "focus_cards": [
+    {
+      "context": "確認状況・比較の観点",
+      "title": "産業振興と任期の方針",
+      "desc": "輸出や受注の目標について、対象、工程、県が担う役割を確認する。2期8年という任期の方針も比較の観点となる。"
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "あいテレビ 出馬会見報道（2026年8月17日）",
+      "url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+      "accessed": "2026-10-12",
+      "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+    },
+    {
+      "label": "防衛省 過去の副大臣記録",
+      "url": "https://www.mod.go.jp/j/profile/minister/vice-minister/miyazawa/index.html",
+      "accessed": "2026-10-12",
+      "note": "氏名・読み、2023年9月15日〜12月14日の防衛副大臣在任期間。現職を示す資料ではない。"
+    },
+    {
+      "label": "首相官邸 2023年当時の略歴（国会図書館保存）",
+      "url": "https://warp.ndl.go.jp/web/20231201214138/https%3A//www.kantei.go.jp/jp/101_kishida/meibo/fukudaijin/miyazawa_hiroyuki.html",
+      "accessed": "2026-10-12",
+      "note": "防衛省のプロフィールリンク先。生年月日・出身・学歴・2012〜2023年の職歴を確認。"
+    },
+    {
+      "label": "愛媛県選管 2026年の選挙日程",
+      "url": "https://www.pref.ehime.jp/page/128211.html",
+      "accessed": "2026-10-12",
+      "note": "告示日2026年10月29日、選挙期日11月15日、任期満了日11月30日。"
+    },
+    {
+      "label": "毎日新聞 出馬状況（TNC配信、2026年10月8日）",
+      "url": "https://news.tnc.ne.jp/politics/940399_1.html",
+      "accessed": "2026-10-12",
+      "note": "3名の出馬表明、無所属での立候補予定を確認。"
+    }
+  ],
+  "last_updated": "2026-10-12"
+}

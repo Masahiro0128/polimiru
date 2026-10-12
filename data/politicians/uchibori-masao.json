@@ -1,0 +1,236 @@
+{
+  "id": "uchibori-masao",
+  "name": "内堀 雅雄",
+  "kana": "うちぼり まさお",
+  "party": "無所属",
+  "party_role": "福島県知事",
+  "current_status": "福島県知事選挙2026に立候補",
+  "area": "福島県",
+  "photo_url": null,
+  "official_url": "https://2026uchibori.jimdofree.com",
+  "accent": {
+    "from": "#185b54",
+    "to": "#103e3a",
+    "color": "#185b54"
+  },
+  "summary": "福島県知事。2014年に初当選し、2026年知事選に無所属で立候補。選挙公報では子育て・教育、原子力災害からの復興・再生、産業振興、農林水産業、観光・交流、地域の基盤整備など8つの政策の柱を掲げている。今回のページは2026年の公約を整理したもので、過去の任期の実績評価は未実施。",
+  "stats": [
+    {
+      "label": "職業（届出時）",
+      "value": "福島県知事"
+    },
+    {
+      "label": "年齢（届出時）",
+      "value": "62歳"
+    },
+    {
+      "label": "住所（市町村）",
+      "value": "福島県福島市"
+    },
+    {
+      "label": "党派",
+      "value": "無所属"
+    }
+  ],
+  "career": [
+    {
+      "period": "2014-11",
+      "text": "福島県知事に初当選",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "period": "2018-11",
+      "text": "福島県知事2期目",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "period": "2022-11",
+      "text": "福島県知事3期目",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "evidence_source": {
+        "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+        "accessed": "2026-10-12",
+        "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+      }
+    },
+    {
+      "period": "2026-10-08",
+      "text": "福島県知事選挙に立候補を届け出",
+      "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "evidence_source": {
+        "title": "福島県選管「立候補届出状況（確定）」",
+        "accessed": "2026-10-12",
+        "note": "2026年10月8日の届出氏名・党派・年齢・職業を確認。"
+      }
+    }
+  ],
+  "election_links": [
+    {
+      "title": "福島県知事選挙2026",
+      "role": "現職候補",
+      "result": "2026年10月25日投開票予定"
+    }
+  ],
+  "promise_cycles": [
+    {
+      "id": "uchibori-masao_2026",
+      "title": "2026年福島県知事選 公約の要点",
+      "context": "選挙公報の要約／実績評価は未実施",
+      "source": "福島県選管「第23回福島県知事選挙 選挙公報」",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "reviewed_at": "2026-10-12T00:00:00+09:00",
+      "status": "candidate",
+      "score": null,
+      "total": 9,
+      "done": 0,
+      "started": 0,
+      "pending": 9,
+      "unknown": 0,
+      "highlights": [
+        {
+          "title": "結婚・妊娠・出産の希望を支え、子育て・教育環境を充実",
+          "category": "子育て・教育",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "医療・福祉を充実し、誰もが暮らし働ける地域をつくる",
+          "category": "医療・福祉",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "避難地域の帰還・生業・営農再開と暮らしの再建を支援",
+          "category": "復興・再生",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "廃炉・汚染水・処理水対策を厳格に監視し、国・東京電力へ対処を求める",
+          "category": "原子力災害",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "防災・減災、鳥獣対策、感染症対策で安全・安心を確保",
+          "category": "防災・生活",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "中小企業振興とDX・AI、再エネ・医療・ロボット等の新産業を推進",
+          "category": "産業・雇用",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "農林水産物のブランド力向上、担い手支援、スマート農業を推進",
+          "category": "農林水産業",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "観光・交流を拡大し、2050年カーボンニュートラルを推進",
+          "category": "観光・環境",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        },
+        {
+          "title": "道路・河川・交通ネットワークなど地域の社会基盤を整備",
+          "category": "社会基盤",
+          "status": "公約",
+          "evidence_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+          "evidence_source": {
+            "title": "福島県選管「第23回福島県知事選挙 選挙公報」",
+            "accessed": "2026-10-12",
+            "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+          }
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    {
+      "label": "県選管 選挙公報",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766690.pdf#page=2",
+      "accessed": "2026-10-12",
+      "note": "2ページの候補者提出原稿を要約。政策は候補者の主張であり、実現性・達成度の評価ではない。"
+    },
+    {
+      "label": "県選管 届出一覧（確定）",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/766449.pdf",
+      "accessed": "2026-10-12",
+      "note": "氏名・ふりがな・党派・職業・届出時年齢・住所の市町村を確認。"
+    },
+    {
+      "label": "県選管 選挙情報",
+      "url": "https://www.pref.fukushima.lg.jp/sec/62010a/23-chiji.html",
+      "accessed": "2026-10-12",
+      "note": "告示日10月8日・投開票日10月25日を確認。"
+    },
+    {
+      "label": "県選管届出の本人ウェブサイト等",
+      "url": "https://2026uchibori.jimdofree.com",
+      "accessed": "2026-10-12",
+      "note": "県選管の届出一覧に掲載された本人ウェブサイト等。プロフィール・公約の要約は選挙公報と届出一覧による。"
+    }
+  ],
+  "last_updated": "2026-10-12",
+  "focus_cards": [
+    {
+      "context": "公約を読む観点",
+      "title": "継続する県政の検証",
+      "desc": "復興・子育て・産業などの政策について、今回の公約と過去の任期の実績を分けて確認する。過去の実績スコアは今回未評価。"
+    }
+  ]
+}

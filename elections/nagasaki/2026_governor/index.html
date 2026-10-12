@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>polimiru | 長崎県知事選挙 2026</title>
+    <title>長崎県知事選挙2026 結果｜平田研氏が当選 - Polimiru</title>
+    <meta name="description" content="2026年2月8日投開票の長崎県知事選挙結果。平田研氏287,134票、大石賢吾氏280,346票、つつい涼介氏26,390票。投票率57.27%。">
+    <link rel="canonical" href="https://polimiru.jp/elections/nagasaki/2026_governor/">
     <meta property="og:title" content="polimiru | 長崎県知事選挙 2026">
-    <meta property="og:description" content="石木ダム問題の行方は？長崎県政の長期的な課題を検証します。">
+    <meta property="og:description" content="平田研氏が287,134票で当選。投票率57.27%。公式の投開票結果を掲載。">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../../../css/base.css">
@@ -98,11 +100,11 @@
     <div class="election-hero">
         <div class="election-hero-inner">
             <h1>長崎県知事選挙 2026</h1>
-            <p>石木ダム問題の行方は？長崎県政の長期的な課題を検証します。</p>
+            <p>平田研氏が287,134票で当選。投票率57.27%。公式の投開票結果を掲載。</p>
             <div class="election-hero-meta">
-                <span><i class="fa-regular fa-calendar"></i> 2026年2月 予定</span>
+                <span><i class="fa-regular fa-calendar"></i> 2026年2月8日 投開票（終了）</span>
                 <span><i class="fa-solid fa-location-dot"></i> 長崎県</span>
-                <span id="last-updated-chip"><i class="fa-regular fa-clock"></i> 取得中...</span>
+                <span id="last-updated-chip"><i class="fa-regular fa-clock"></i> 更新: 2026/10/11</span>
             </div>
         </div>
     </div>
@@ -112,140 +114,35 @@
             <i class="fa-solid fa-arrow-left"></i> トップへ戻る
         </a>
 
-        <div id="upcoming-banner" class="upcoming-banner" style="display:none">
-            <span class="upcoming-banner-icon">📋</span>
-            <div>
-                <strong>候補者情報は選挙公示後に更新されます。</strong><br>
-                現時点では現職情報のみ掲載しています。立候補が確定した候補者から順次追加されます。
-            </div>
-        </div>
-
-        <div class="section-head">
-            <h2>候補者一覧</h2>
-            <span class="count" id="candidate-count"></span>
-        </div>
-
-        <div id="loading-msg">候補者データを読み込み中...</div>
-        <div class="candidate-grid" id="candidate-grid"></div>
+        <section aria-labelledby="result-heading" style="background:#fff;padding:24px;border-radius:12px;line-height:1.8">
+            <h2 id="result-heading">開票結果（確定）</h2>
+            <p><strong>平田研氏が287,134票で当選。</strong>大石賢吾氏との差は6,788票でした。</p>
+            <p>投票率：<strong>57.27%</strong> ／ 有権者数：1,055,583人 ／ 投票者数：604,530人</p>
+            <table style="width:100%;border-collapse:collapse;text-align:left">
+                <caption style="text-align:left">候補者別得票数（得票順）</caption>
+                <thead><tr><th scope="col">候補者</th><th scope="col">得票数</th><th scope="col">結果</th></tr></thead>
+                <tbody>
+                    <tr><th scope="row">平田研氏</th><td>287,134票</td><td>当選</td></tr>
+                    <tr><th scope="row">大石賢吾氏</th><td>280,346票</td><td>落選</td></tr>
+                    <tr><th scope="row">つつい涼介氏</th><td>26,390票</td><td>落選</td></tr>
+                </tbody>
+            </table>
+            <p>有効投票：593,870票 ／ 無効投票：10,646票</p>
+            <p>候補者名は、県の開票結果と知事プロフィールの表記に基づき掲載しています。</p>
+        </section>
+        <section aria-labelledby="sources-heading" style="margin-top:24px;line-height:1.8;overflow-wrap:anywhere">
+            <h2 id="sources-heading">出典</h2>
+            <ul>
+                <li><a href="https://www.pref.nagasaki.lg.jp/doc/page-321245.html">長崎県「長崎県知事選挙の結果」</a>：2026年2月8日の選挙執行日。</li>
+                <li><a href="https://www.pref.nagasaki.lg.jp/uploads/2026/02/1771978239.pdf">長崎県「長崎県知事選挙 開票結果」（PDF）</a>：候補者別得票数、有効・無効投票数、開票進捗率100%。</li>
+                <li><a href="https://www.pref.nagasaki.jp/uploads/2026/02/1771978201.pdf">長崎県「長崎県知事選挙 投票結果」（PDF）</a>：投票率、有権者数、投票者数。</li>
+                <li><a href="https://www.pref.nagasaki.jp/governor/profile.html">長崎県「知事プロフィール」</a>：平田研氏の氏名と知事就任。</li>
+            </ul>
+            <p>出典確認・最終更新：<time datetime="2026-10-11">2026年10月11日</time></p>
+        </section>
     </div>
 
     <script src="../../../js/layout.js?v=999"></script>
-    <script src="../../../js/candidate-modal.js"></script>
-    <script>
-        const ELECTION_KEY = 'nagasaki_2026_governor';
-
-        function partyHeaderClass(party) {
-            if (!party) return '';
-            if (party.includes('維新')) return 'party-ishin';
-            if (party.includes('自由民主') || party.includes('自民')) return 'party-jimin';
-            if (party.includes('公明')) return 'party-komei';
-            return 'party-other';
-        }
-
-        function renderScoreSummary(c) {
-            if (c.role === 'incumbent') {
-                const v = c.score_incumbent;
-                return `
-                    <div class="cand-card-score-area">
-                        <span class="cand-card-score-label">現職評価（総合）</span>
-                        ${v !== null && v !== undefined
-                            ? `<span class="cand-card-score-value">${v}<small style="font-size:0.55em;color:#999"> /100</small></span>`
-                            : '<span class="cand-card-score-pending">集計中</span>'}
-                    </div>`;
-            }
-            if (c.role === 'challenger') {
-                const v = c.score_challenger;
-                return `
-                    <div class="cand-card-score-area">
-                        <span class="cand-card-score-label">新人評価（公約具体性）</span>
-                        ${v !== null && v !== undefined
-                            ? `<span class="cand-card-score-value type-challenger">${v}<small style="font-size:0.55em;color:#999"> /100</small></span>`
-                            : '<span class="cand-card-score-pending">公約情報収集中</span>'}
-                    </div>`;
-            }
-            return `<div class="cand-card-score-area"><span class="cand-card-score-pending">情報準備中</span></div>`;
-        }
-
-        function renderCard(c) {
-            const photo = c.image
-                ? `<img src="${c.image}" class="cand-card-photo" alt="${c.name}" onerror="this.style.display='none'">`
-                : `<div class="cand-card-photo-placeholder">👤</div>`;
-
-            const roleBadge = c.role === 'incumbent'
-                ? '<span class="cand-badge cand-badge-incumbent">現職</span>'
-                : c.role === 'challenger'
-                    ? '<span class="cand-badge cand-badge-challenger">新人</span>'
-                    : '';
-
-            const unconfirmed = !c.confirmed
-                ? '<span class="cand-badge cand-badge-unconfirmed">出馬未確定</span>'
-                : '';
-
-            return `
-                <div class="cand-card" data-election="${ELECTION_KEY}" data-candidate-id="${c.id}" role="button" tabindex="0">
-                    <div class="cand-card-header ${partyHeaderClass(c.party)}">
-                        ${photo}
-                    </div>
-                    <div class="cand-card-body">
-                        <div class="cand-card-name">${c.name}</div>
-                        <div class="cand-card-party">${c.party || ''}</div>
-                        <div class="cand-card-badges">${roleBadge}${unconfirmed}</div>
-                        ${renderScoreSummary(c)}
-                        <div class="cand-card-detail-hint">詳細を見る <i class="fa-solid fa-arrow-right" style="font-size:0.8em"></i></div>
-                    </div>
-                </div>`;
-        }
-
-        function getDataBase() {
-            const path = window.location.pathname;
-            const dir  = path.replace(/\/[^\/]*$/, '/');
-            if (dir.includes('/polimiru/')) {
-                const subdir = dir.replace(/^.*\/polimiru\//, '');
-                const depth  = subdir.split('/').filter(Boolean).length;
-                return '../'.repeat(depth) || './';
-            }
-            const parts = dir.split('/').filter(Boolean);
-            return parts.length === 0 ? './' : '../'.repeat(parts.length);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const base = getDataBase();
-            fetch(`${base}js/data/${ELECTION_KEY}/index.json`)
-                .then(r => r.json())
-                .then(data => {
-                    const grid   = document.getElementById('candidate-grid');
-                    const msg    = document.getElementById('loading-msg');
-                    const count  = document.getElementById('candidate-count');
-                    const chip   = document.getElementById('last-updated-chip');
-                    const banner = document.getElementById('upcoming-banner');
-
-                    msg.style.display = 'none';
-
-                    const candidates = data.candidates || [];
-                    count.textContent = `${candidates.length}名`;
-
-                    if (data.meta?.status === 'upcoming') {
-                        banner.style.display = 'flex';
-                    }
-
-                    if (data.meta?.last_updated) {
-                        const d = new Date(data.meta.last_updated);
-                        chip.innerHTML = `<i class="fa-regular fa-clock"></i> 更新: ${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
-                    }
-
-                    grid.innerHTML = candidates.map(renderCard).join('');
-
-                    grid.querySelectorAll('.cand-card').forEach(el => {
-                        el.addEventListener('keydown', e => {
-                            if (e.key === 'Enter' || e.key === ' ') el.click();
-                        });
-                    });
-                })
-                .catch(() => {
-                    document.getElementById('loading-msg').textContent = 'データを取得できませんでした。';
-                });
-        });
-    </script>
 
 </body>
 </html>

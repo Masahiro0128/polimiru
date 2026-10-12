@@ -45,6 +45,11 @@
 
   <!-- 選挙ページ（現在進行中・直近） -->
   <url>
+    <loc>https://polimiru.jp/elections/okinawa/2026_governor/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://polimiru.jp/elections/nagano/2026_governor/</loc>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
@@ -112,6 +117,38 @@
     <loc>https://polimiru.jp/politicians/takeda-ryosuke/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- 沖縄県知事選2026 候補者（優先度高） -->
+  <url>
+    <loc>https://polimiru.jp/politicians/koja-genta/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kaneshima-shun/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/sueyoshi-masahiro/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/tamaki-denny/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/higa-takashi/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/yara-chosuke/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- 政治家プロフィールページ -->
@@ -321,4 +358,76 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://polimiru.jp/elections/fukushima/2026_governor/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/kanayama-jun/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/uchibori-masao/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/oyamada-tomoko/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/tsukakoshi-hidemitsu/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/endo-yudai/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/fujimoto-shoichi/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/hasenuma-kunihiko/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/elections/ehime/2026_governor/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/nakamura-tokihiro/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/miyazawa-hiroyuki/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://polimiru.jp/politicians/wada-tsukasa/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

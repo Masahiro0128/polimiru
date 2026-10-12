@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沖縄県知事選挙2026 結果・公約比較｜古謝玄太氏が初当選 - Polimiru</title>
+    <meta name="description" content="2026年9月13日投開票の沖縄県知事選挙結果。古謝玄太氏423,124票で初当選、玉城デニー氏276,060票。投票率61.57%。県の9月16日訂正版に基づき6候補の結果と公約を掲載。">
+    <meta name="keywords" content="沖縄県知事選挙,沖縄知事選2026,玉城デニー,古謝玄太,候補者比較,公約,辺野古">
+    <link rel="canonical" href="https://polimiru.jp/elections/okinawa/2026_governor/">
+    <meta property="og:title" content="沖縄県知事選挙2026 結果・公約比較 - Polimiru">
+    <meta property="og:description" content="古謝玄太氏423,124票で初当選、玉城デニー氏276,060票。投票率61.57%。6候補の確定結果と公約を掲載。">
+    <meta property="og:url" content="https://polimiru.jp/elections/okinawa/2026_governor/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Polimiru">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="沖縄県知事選挙2026 結果・公約比較 - Polimiru">
+    <meta name="twitter:description" content="古謝玄太氏423,124票で初当選、玉城デニー氏276,060票。投票率61.57%。6候補の確定結果と公約を掲載。">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "沖縄県知事選挙2026",
+      "startDate": "2026-08-27",
+      "endDate": "2026-09-13",
+      "eventStatus": "https://schema.org/EventCompleted",
+      "location": {
+        "@type": "Place",
+        "name": "沖縄県",
+        "address": { "@type": "PostalAddress", "addressRegion": "沖縄県", "addressCountry": "JP" }
+      },
+      "description": "2026年9月13日投開票の沖縄県知事選挙。古謝玄太氏が423,124票で初当選。投票率61.57%。",
+      "url": "https://polimiru.jp/elections/okinawa/2026_governor/"
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header-footer.css">
+    <link rel="stylesheet" href="../../../css/elections.css">
+    <link rel="stylesheet" href="../../../css/modal.css">
+    <link rel="stylesheet" href="../../../css/candidate-modal.css">
+
+    <style>
+        body { background: #f5f2ec; }
+
+        .election-hero {
+            background: linear-gradient(135deg, #075985, #0e7490);
+            color: #fff;
+            padding: 40px 20px 32px;
+        }
+        .election-hero-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .election-hero h1 {
+            margin: 0 0 8px;
+            font-size: 1.7em;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+        .election-hero p {
+            margin: 0 0 16px;
+            opacity: 0.88;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+        .election-hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.82em;
+            opacity: 0.85;
+        }
+        .election-hero-meta span {
+            background: rgba(255,255,255,0.15);
+            padding: 3px 10px;
+            border-radius: 999px;
+        }
+
+        .issue-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .issue-tag {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: rgba(255,255,255,0.95);
+            font-size: 0.78em;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+
+        .page-body {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 28px 16px 60px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+        .back-link:hover { color: #333; }
+
+        .section-head {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            border-left: 4px solid #0e7490;
+            padding-left: 12px;
+        }
+        .section-head h2 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #1a2e45;
+        }
+        .section-head .count {
+            font-size: 0.82em;
+            color: #999;
+        }
+
+        #loading-msg {
+            padding: 40px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        .context-panel {
+            background: #fff;
+            border: 1px solid rgba(15,31,61,0.09);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 16px rgba(15,31,61,0.06);
+        }
+        .context-panel h3 {
+            margin: 0 0 10px;
+            font-size: 0.92em;
+            color: #0f1f3d;
+            font-weight: 800;
+        }
+        .context-panel p {
+            margin: 0 0 8px;
+            font-size: 0.85em;
+            color: #445566;
+            line-height: 1.75;
+        }
+        .context-panel p:last-child { margin: 0; }
+        .context-issues {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .context-issue {
+            background: #f0faf4;
+            border: 1px solid #bbddc9;
+            color: #166534;
+            font-size: 0.78em;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+
+        /* 発言比較ページへのリンクボタン（ヒーロー内） */
+        .hero-statements-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #fff;
+            color: #075985;
+            border-radius: 999px;
+            font-weight: 800;
+            font-size: 0.92em;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .hero-statements-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(0,0,0,0.28);
+        }
+        .hero-statements-btn .btn-beta {
+            background: #0e7490;
+            color: #fff;
+            font-size: 0.72em;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+        .hero-statements-btn .btn-arrow {
+            font-size: 0.85em;
+            opacity: 0.75;
+        }
+
+        /* 発言比較バナー（ページ内） */
+        .statements-banner {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+            padding: 18px 22px;
+            background: linear-gradient(135deg, #075985, #0e7490);
+            border-radius: 16px;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(11,61,32,0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .statements-banner:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(11,61,32,0.3);
+        }
+        .statements-banner-icon {
+            width: 46px;
+            height: 46px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            flex-shrink: 0;
+        }
+        .statements-banner-body {
+            flex: 1;
+        }
+        .statements-banner-title {
+            font-weight: 800;
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+        .statements-banner-title .beta-tag {
+            display: inline-block;
+            margin-left: 6px;
+            background: rgba(255,255,255,0.2);
+            font-size: 0.72em;
+            padding: 1px 8px;
+            border-radius: 999px;
+            vertical-align: middle;
+            font-weight: 700;
+        }
+        .statements-banner-desc {
+            font-size: 0.83em;
+            opacity: 0.85;
+        }
+        .statements-banner-arrow {
+            font-size: 1.2em;
+            opacity: 0.7;
+            flex-shrink: 0;
+        }
+
+        /* 候補者スコアブロック */
+        .cand-score-block {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(15,31,61,0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+        }
+        .cand-score-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cand-score-item-label {
+            font-size: 0.72em;
+            color: #8fa0b5;
+            font-weight: 600;
+        }
+        .cand-score-item-value {
+            font-size: 0.82em;
+            font-weight: 800;
+            letter-spacing: 0.01em;
+        }
+        .cand-score-item-value small {
+            font-weight: 500;
+            font-size: 0.85em;
+            color: #aaa;
+        }
+        .grade-S { color: #7c3aed; }
+        .grade-A { color: #1d4ed8; }
+        .grade-B { color: #0369a1; }
+        .grade-C { color: #b45309; }
+        .grade-D { color: #b91c1c; }
+        .grade-none { color: #aaa; }
+
+        .cand-badge-result { background:#e5e7eb; color:#475569; }
+        .cand-badge-result.is-elected { background:#fff3c4; color:#9a6700; }
+    </style>
+</head>
+<body data-election-id="5">
+
+    <div class="election-hero">
+        <div class="election-hero-inner">
+            <h1>沖縄県知事選挙 2026</h1>
+            <p>古謝玄太氏が423,124票で初当選。玉城デニー氏は276,060票、投票率は61.57%。<br>6候補の確定結果と、選挙時の公約比較を掲載しています。</p>
+            <div class="election-hero-meta">
+                <span><i class="fa-regular fa-calendar"></i> 2026年8月27日告示 / 9月13日投開票（終了）</span>
+                <span><i class="fa-solid fa-location-dot"></i> 沖縄県</span>
+                <span id="last-updated-chip"><i class="fa-regular fa-clock"></i> 取得中...</span>
+            </div>
+            <div class="issue-tags">
+                <span class="issue-tag">所得・物価高</span>
+                <span class="issue-tag">子育て・教育</span>
+                <span class="issue-tag">交通・離島</span>
+                <span class="issue-tag">基地・安全保障</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-body">
+        <a href="../../../index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> トップへ戻る
+        </a>
+
+        <section class="context-panel" aria-labelledby="result-heading">
+            <h2 id="result-heading">開票結果（確定）</h2>
+            <p><strong>古謝玄太氏が423,124票で初当選。</strong>投票率は61.57%でした。</p>
+            <table style="width:100%;border-collapse:collapse;text-align:left">
+                <caption style="text-align:left">候補者別得票数（得票順）</caption>
+                <thead><tr><th scope="col">候補者</th><th scope="col">得票数</th><th scope="col">結果</th></tr></thead>
+                <tbody>
+                    <tr><th scope="row">古謝玄太氏</th><td>423,124票</td><td>当選</td></tr>
+                    <tr><th scope="row">玉城デニー氏</th><td>276,060票</td><td>落選</td></tr>
+                    <tr><th scope="row">兼島俊氏</th><td>4,657票</td><td>落選</td></tr>
+                    <tr><th scope="row">比嘉隆氏</th><td>3,542票</td><td>落選</td></tr>
+                    <tr><th scope="row">屋良朝助氏</th><td>2,467票</td><td>落選</td></tr>
+                    <tr><th scope="row">末吉正弘氏</th><td>2,270票</td><td>落選</td></tr>
+                </tbody>
+            </table>
+            <p>開票率100%。沖縄県選管が公表した2026年9月16日訂正版を反映しています。</p>
+            <p>出典：<a href="https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisenkaihyou_teisei.pdf">沖縄県選管「開票確定（9月16日訂正）」（PDF）</a>（各候補の得票数・開票率）、<a href="https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/040/303/chijisentouhyo1930_teisei.pdf">沖縄県選管「投票確定（9月16日訂正）」（PDF）</a>（投票率）。確認日：<time datetime="2026-10-11">2026年10月11日</time>。</p>
+        </section>
+
+        <div class="context-panel">
+            <h3>この選挙の背景と主な争点</h3>
+            <p>任期満了に伴う選挙で、2026年8月27日の告示日に過去最多の6名が立候補を届け出た。当時現職で3選を目指した玉城デニー氏に、前那覇市副市長の古謝玄太氏ら新人5名が挑み、古謝氏が初当選した。</p>
+            <p>玉城氏は<strong>ゆいまーる基金、子育て「4つのゼロ」、鉄軌道・LRT・BRT、辺野古新基地建設反対</strong>を掲げる。古謝氏は<strong>県民所得、子育て支援予算、観光消費の「3つの倍増」</strong>を前面に出す。他の4候補も貧困対策、政治情報の可視化、ワクチン政策、琉球の独立・自治をそれぞれ訴える。</p>
+            <p>物価高の中で県民所得と暮らしをどう支えるか、子育てと教育、慢性的な交通渋滞と離島の生活基盤、米軍基地・辺野古・安全保障にどう向き合うかが主な比較軸となる。</p>
+            <div class="context-issues">
+                <span class="context-issue"><i class="fa-solid fa-wallet"></i> 所得・物価高</span>
+                <span class="context-issue"><i class="fa-solid fa-graduation-cap"></i> 子育て・教育</span>
+                <span class="context-issue"><i class="fa-solid fa-train"></i> 交通・離島</span>
+                <span class="context-issue"><i class="fa-solid fa-shield-halved"></i> 基地・安全保障</span>
+            </div>
+        </div>
+
+        <div id="election-status-banner" class="upcoming-banner" style="display:none">
+            <span class="upcoming-banner-icon">🗳️</span>
+            <div>
+                <strong id="election-status-title">2026年9月13日の選挙は終了しました。</strong><br>
+                <span id="election-status-detail">確定した投開票結果を掲載しています。</span>
+                <div>
+                    <a id="official-election-link" href="https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html" target="_blank" rel="noopener">沖縄県選管の選挙情報 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <span aria-hidden="true"> / </span>
+                    <a id="official-results-link" href="https://www.pref.okinawa.lg.jp/kensei/senkyo/1005009/1023802/1040303/index.html" target="_blank" rel="noopener">確定開票結果（9月16日訂正） <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-head">
+            <h2>候補者一覧（肩書・評価は選挙時点）</h2>
+            <span class="count" id="candidate-count"></span>
+        </div>
+
+        <div id="loading-msg">候補者データを読み込み中...</div>
+        <div class="candidate-grid" id="candidate-grid"></div>
+    </div>
+
+    <script src="../../../js/supabase-config.js"></script>
+    <script src="../../../js/likes.js"></script>
+    <script src="../../../js/layout.js?v=999"></script>
+    <script src="../../../js/candidate-modal.js"></script>
+    <script>
+        const ELECTION_KEY = 'okinawa_2026_governor';
+
+        function partyHeaderClass(party) {
+            if (!party) return '';
+            if (party.includes('自由民主') || party.includes('自民')) return 'party-jimin';
+            if (party.includes('公明')) return 'party-komei';
+            if (party.includes('立憲')) return 'party-rikken';
+            if (party.includes('共産')) return 'party-kyosan';
+            return 'party-other';
+        }
+
+        function renderScoreSummary(c) {
+            const grade    = c.pre_grade;
+            const gradeClass = grade ? `grade-${grade}` : 'grade-none';
+            const gradeLabel = grade || '－';
+            const preTotal = c.pre_total != null ? c.pre_total : null;
+
+            const preRow = `
+                <div class="cand-score-item">
+                    <span class="cand-score-item-label">選前評価</span>
+                    <span class="cand-score-item-value ${gradeClass}">
+                        ${gradeLabel}${preTotal != null ? `<small> ${preTotal}/25</small>` : ''}
+                    </span>
+                </div>`;
+
+            let postRow = '';
+            if (c.role === 'incumbent' && c.score_incumbent != null) {
+                postRow = `
+                <div class="cand-score-item">
+                    <span class="cand-score-item-label">公約実績</span>
+                    <span class="cand-score-item-value" style="color:#166534">${c.score_incumbent}<small>/100</small></span>
+                </div>`;
+            }
+
+            return `
+                <div class="cand-card-score-area">
+                    <div class="cand-score-block">${preRow}${postRow}</div>
+                </div>`;
+        }
+
+        function renderCard(c) {
+            const initial = (c.name || '?').replace(/\s+/g, '').slice(0, 1) || '?';
+            const bgSize = c.image_size || 'cover';
+            const bgPos  = c.image_position || 'center top';
+            const photo = c.image
+                ? `<div class="cand-card-photo" style="background-image:url('${c.image}');background-size:${bgSize};background-position:${bgPos};background-repeat:no-repeat;background-color:#e8ecf4;"></div>`
+                : `<div class="cand-card-photo-placeholder">${initial}</div>`;
+
+            const roleBadge = c.role === 'incumbent'
+                ? '<span class="cand-badge cand-badge-incumbent">現職</span>'
+                : c.role === 'challenger'
+                    ? '<span class="cand-badge cand-badge-challenger">新人</span>'
+                    : '';
+
+            const unconfirmed = !c.confirmed
+                ? '<span class="cand-badge cand-badge-unconfirmed">出馬未確定</span>'
+                : '';
+
+            const resultBadge = c.result
+                ? `<span class="cand-badge cand-badge-result ${c.result.elected ? 'is-elected' : ''}">${c.result.elected ? '当選' : '落選'}・${Number(c.result.votes).toLocaleString('ja-JP')}票</span>`
+                : '';
+
+            const cardTag = c.profile_url ? 'a' : 'div';
+            const cardAttrs = c.profile_url
+                ? `href="${c.profile_url}"`
+                : `data-election="${ELECTION_KEY}" data-candidate-id="${c.id}" role="button" tabindex="0"`;
+
+            return `
+                <${cardTag} class="cand-card ${partyHeaderClass(c.party)}" ${cardAttrs} style="text-decoration:none;color:inherit">
+                    ${photo}
+                    <div class="cand-card-name">${c.name}</div>
+                    <div class="cand-card-party">${c.party || ''}</div>
+                    <div class="cand-card-badges">${roleBadge}${unconfirmed}${resultBadge}</div>
+                    ${renderScoreSummary(c)}
+                    <div class="cand-card-detail-hint">詳細を見る <i class="fa-solid fa-arrow-right" style="font-size:0.8em"></i></div>
+                </${cardTag}>`;
+        }
+
+        function getDataBase() {
+            const path = window.location.pathname;
+            const dir  = path.replace(/\/[^\/]*$/, '/');
+            if (dir.includes('/polimiru/')) {
+                const subdir = dir.replace(/^.*\/polimiru\//, '');
+                const depth  = subdir.split('/').filter(Boolean).length;
+                return '../'.repeat(depth) || './';
+            }
+            const parts = dir.split('/').filter(Boolean);
+            return parts.length === 0 ? './' : '../'.repeat(parts.length);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const base = getDataBase();
+            fetch(`${base}js/data/${ELECTION_KEY}/index.json?v=20261011-1`)
+                .then(r => r.json())
+                .then(data => {
+                    const grid   = document.getElementById('candidate-grid');
+                    const msg    = document.getElementById('loading-msg');
+                    const count  = document.getElementById('candidate-count');
+                    const chip   = document.getElementById('last-updated-chip');
+                    const banner = document.getElementById('election-status-banner');
+                    const statusTitle = document.getElementById('election-status-title');
+                    const statusDetail = document.getElementById('election-status-detail');
+                    const officialLink = document.getElementById('official-election-link');
+                    const resultsLink = document.getElementById('official-results-link');
+
+                    msg.style.display = 'none';
+
+                    const candidates = data.candidates || [];
+                    count.textContent = `${candidates.length}名`;
+                    if (data.meta?.status === 'finished') {
+                        statusTitle.textContent = '2026年9月13日の選挙は終了しました。';
+                        statusDetail.textContent = '確定した投開票結果を掲載しています。';
+                        banner.style.display = 'flex';
+                    } else if (data.meta?.status === 'upcoming') {
+                        statusTitle.textContent = `${data.meta.announcement_day || '告示日'}より前の情報です。`;
+                        statusDetail.textContent = '候補者情報は立候補届出後に再確認します。';
+                        banner.style.display = 'flex';
+                    } else if (data.meta?.status === 'announced' || data.meta?.status === 'active') {
+                        statusTitle.textContent = `${data.meta.election_day || '2026年9月13日（日）投票'}です。`;
+                        statusDetail.textContent = data.meta.early_voting_period
+                            ? `期日前投票：${data.meta.early_voting_period}。`
+                            : '期日前投票の日程は沖縄県選管でご確認ください。';
+                        banner.style.display = 'flex';
+                    }
+
+                    if (data.meta?.official_election_url) {
+                        officialLink.href = data.meta.official_election_url;
+                    }
+                    if (data.meta?.official_results_url) {
+                        resultsLink.href = data.meta.official_results_url;
+                        if (data.meta.official_results_note) {
+                            resultsLink.title = data.meta.official_results_note;
+                        }
+                    } else {
+                        resultsLink.style.display = 'none';
+                        resultsLink.previousElementSibling.style.display = 'none';
+                    }
+
+                    if (data.meta?.last_updated) {
+                        const d = new Date(data.meta.last_updated);
+                        chip.innerHTML = `<i class="fa-regular fa-clock"></i> 更新: ${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+                    }
+
+                    grid.innerHTML = candidates.map(renderCard).join('');
+
+                    grid.querySelectorAll('.cand-card').forEach(el => {
+                        el.addEventListener('keydown', e => {
+                            if (e.key === 'Enter' || e.key === ' ') el.click();
+                        });
+                    });
+                })
+                .catch(() => {
+                    document.getElementById('loading-msg').textContent = 'データを取得できませんでした。';
+                });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "election": "愛媛県知事選挙 2026",
+    "announcement_day": "2026年10月29日（木）告示予定",
+    "election_day": "2026年11月15日（日）投開票予定",
+    "status": "upcoming",
+    "last_updated": "2026-10-12T00:00:00+09:00",
+    "official_election_url": "https://www.pref.ehime.jp/page/128211.html",
+    "official_candidate_url": null,
+    "official_bulletin_url": null,
+    "source_note": "告示前の立候補予定者。3名を掲載、届出候補者総数ではない。日程は県選管、出馬表明・政策の一部は会見報道で補完。五十音順。",
+    "sources": [
+      {
+        "label": "愛媛県選管 2026年の選挙日程",
+        "url": "https://www.pref.ehime.jp/page/128211.html",
+        "accessed": "2026-10-12",
+        "note": "告示日2026年10月29日、選挙期日11月15日、任期満了日11月30日。"
+      },
+      {
+        "label": "松山市 選挙の案内",
+        "url": "https://www.city.matsuyama.ehime.jp/shisei/senkyo/senkyochiji/r8chijisityo_annnai.html",
+        "accessed": "2026-10-12",
+        "note": "知事選の告示日・投開票日と、松山市長選との同日実施。"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "nakamura-tokihiro",
+      "person_id": "nakamura-tokihiro",
+      "profile_url": "../../../politicians/nakamura-tokihiro/index.html",
+      "name": "中村 時広",
+      "kana": "なかむら ときひろ",
+      "party": "無所属（出馬表明時）",
+      "role": "incumbent",
+      "age": 66,
+      "age_note": "2026年の出馬会見報道時",
+      "occupation": "愛媛県知事（4期目）",
+      "image": null,
+      "official_url": "https://www.pref.ehime.jp/site/chiji/10563.html",
+      "confirmed": false,
+      "candidacy_status": "announced_intent",
+      "announced_at": "2026-10-08",
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "愛媛県知事。県議、衆議院議員、松山市長を経て、2010年12月から知事を務める。2026年10月8日、無所属で5選を目指す出馬を表明したと報じられた。会見報道では、防災・減災、人口減少対策、地域経済を柱とする政策を掲げている。今回は次期公約の整理までとし、過去の任期の実績評価は未実施。",
+      "policy_status": "reported_summary",
+      "policy_summary": [
+        "災害への備えと被害軽減を政策の柱に据える",
+        "若者・女性の県外流出を抑えるため、地域と連携して働く環境の魅力を伝える",
+        "官民の協力と若者・女性の視点を取り入れ、地域経済を活性化",
+        "データセンターや半導体関連企業を誘致",
+        "松山空港と台湾・高雄を結ぶ直行便の実現を目指す",
+        "松山市のまちづくりと連携し、県民文化会館の国際会議・展示会等の機能を強化"
+      ],
+      "evidence_url": "https://www.fnn.jp/articles/-/1129122",
+      "evidence_source": {
+        "title": "テレビ愛媛 出馬会見報道（2026年10月8日）",
+        "accessed": "2026-10-12",
+        "note": "出馬表明と次期公約の概要を確認。政策原文を直接取得できなかったため、会見報道で補完。全公約の一覧ではない。"
+      }
+    },
+    {
+      "id": "miyazawa-hiroyuki",
+      "person_id": "miyazawa-hiroyuki",
+      "profile_url": "../../../politicians/miyazawa-hiroyuki/index.html",
+      "name": "宮澤 博行",
+      "kana": "みやざわ ひろゆき",
+      "party": "無所属（出馬表明時）",
+      "role": "challenger",
+      "age": 51,
+      "age_note": "2026年の出馬会見報道時",
+      "occupation": "元衆議院議員・元防衛副大臣",
+      "image": null,
+      "official_url": null,
+      "confirmed": false,
+      "candidacy_status": "announced_intent",
+      "announced_at": "2026-08-17",
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "元衆議院議員、元防衛副大臣。2012年の衆院選で初当選し、2024年に議員を辞職。2026年8月17日、愛媛県知事選に無所属での出馬を表明したと報じられた。会見報道では2期8年での成果、かんきつ類の輸出拡大、造船業の受注や観光客の誘致、県民・自治体・業界との対話を掲げている。",
+      "policy_status": "reported_summary",
+      "policy_summary": [
+        "2期8年で成果を出し、長期政権を残さない方針",
+        "知事自らの売り込みで、かんきつ類の輸出を倍増",
+        "造船業で警備用船舶の受注を獲得",
+        "観光客の誘致を進める",
+        "県民の意見を聴き、自治体・各業界との対話と連携を重視"
+      ],
+      "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2876803?display=1",
+      "evidence_source": {
+        "title": "あいテレビ 出馬会見報道（2026年8月17日）",
+        "accessed": "2026-10-12",
+        "note": "出馬表明と公約の概要を確認。最新の本人政策原文を確認できなかったため、会見報道で補完。全公約の一覧ではない。"
+      }
+    },
+    {
+      "id": "wada-tsukasa",
+      "person_id": "wada-tsukasa",
+      "profile_url": "../../../politicians/wada-tsukasa/index.html",
+      "name": "和田 宰",
+      "kana": "わだ つかさ",
+      "party": "無所属（出馬表明時）",
+      "role": "challenger",
+      "age": 74,
+      "age_note": "2026年の出馬会見報道時",
+      "occupation": "市民団体事務局長",
+      "image": null,
+      "official_url": null,
+      "confirmed": false,
+      "candidacy_status": "announced_intent",
+      "announced_at": "2026-09-25",
+      "score_incumbent": null,
+      "score_challenger": null,
+      "pre_grade": null,
+      "pre_total": null,
+      "note": "市民団体事務局長。2026年9月25日に愛媛県知事選への出馬を表明したと報じられた。知事選の党派は無所属と報じられている。現在、2026年知事選に向けた政策原文を確認中。政策がないという意味ではなく、確認できた原文の掲載を待っている。",
+      "policy_status": "awaiting_primary_source",
+      "policy_summary": [],
+      "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/2967746?display=1",
+      "evidence_source": {
+        "title": "あいテレビ 出馬表明報道（2026年9月25日）",
+        "accessed": "2026-10-12",
+        "note": "記事見出しと掲載日で氏名・年齢・出馬表明を確認。政策原文の根拠には使用していない。"
+      }
+    }
+  ]
+}
